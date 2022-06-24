@@ -13,7 +13,7 @@ services:
       - SKIP_WCT_SAUCE_POSTINSTALL_DOWNLOAD=1
       - artifactory_user=${artifactory_user}
       - artifactory_password=${artifactory_password}
-    command: "npm run release --qliksense-template:version=${release_version}"
+    command: "npm run release --omgevingshandhavingsrapportage:version=${release_version}"
     extra_hosts:
       - "repository.milieuinfo.be:${REPOSITORY_FIXED_IP}"
     working_dir: /data
