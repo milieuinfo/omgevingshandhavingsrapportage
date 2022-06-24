@@ -1,0 +1,17 @@
+{
+  "name": "omgevingshandhavingsrapportage",
+  "version": "0.0.1",
+  "dependencies": {},
+  "scripts": {
+    "release": "npm install && npm run build && npm version $npm_package_config_version && git push && npm publish"
+  },
+  "files": [
+    "index.html"
+  ],
+  "publishConfig": {
+    "registry": "https://repo.omgeving.vlaanderen.be/artifactory/api/npm/local-npm/"
+  },
+  "engines": {
+    "node": "0.8.x"
+  }
+}
