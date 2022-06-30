@@ -5,15 +5,17 @@ import { analysis } from "../templates/analysis";
 import { embed } from '@nebula.js/stardust';
 import { page } from "../templates/page";
 export class StrafrechtelijkAnalyseView extends LitElement {
+
+
   render() {
     return page({
       children: html`   
 <section is="vl-region">
   <div is="vl-layout">
-  <div is="vl-grid" data-vl-is-stacked>
+  <div is="vl-grid">
   <div is="vl-column">
   <vl-typography>
-  <h3>Strafrechtelijk en bestuurlijk vervolgtraject</h3>
+  <h3 is="vl-h3">Strafrechtelijk en bestuurlijk vervolgtraject</h3>
   <p>
     In deze datasets wordt het verdere verloop van twee handhavingsinstrumenten weergegeven:
   </p>

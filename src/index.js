@@ -53,33 +53,16 @@ import connect from './connect';
 import snKpi from "@nebula.js/sn-kpi"
 import table from '@nebula.js/sn-table';
 import pivotTable from '@nebula.js/sn-pivot-table';
-import enigma from "enigma.js";
-import schema from "enigma.js/schemas/12.170.2.json";
-import { Gewestelijk } from "./views/Gewestelijk"
-import React, { useState, useEffect } from 'react';
 
 
-
-// when cliclk hamburger menu
-/*
-document.querySelector('.navbar-toggler').onclick = function() {
-  // if menu is opening, close menu
-  if(document.getElementById('navbar').classList.contains('show')) {
-      document.querySelector('#navbar').classList.remove('show');
-  } else {
-    document.querySelector('#navbar').classList.add('show');
-  }
-}
-
-*/
-
-//React Routes for navigation
+//Routes
 const routes = [
   {
     path: "/",
     component: "start-view",
     action: async () => {
       await import("./views/start");
+      
     },
   },
   {
@@ -111,17 +94,12 @@ const routes = [
     },
   },
   {
-    path: "/upload",
-    component: "upload-view",
-    action: async () => {
-      await import("./views/upload");
-    },
-  },
-  {
     path: "/GewestelijkAnalyse",
     component: "GewestelijkAnalyse-view",
     action: async () => {
       await import("./views/GewestelijkAnalyse");
+      init();
+      
     },
   },
   {
@@ -143,6 +121,7 @@ const routes = [
     component: "provinciaalAnalyse-view",
     action: async () => {
       await import("./views/provinciaalAnalyse");
+      init();
     },
   },
   {
@@ -157,6 +136,7 @@ const routes = [
     component: "strafrechtelijkAnalyse-view",
     action: async() => {
       await import ("./views/strafrechtelijk");
+      init();
     }
   },
   {
@@ -164,6 +144,7 @@ const routes = [
     component: "strafrechtelijktest-view",
     action: async() => {
       await import ("./views/strafrechtelijktest");
+      init();
     }
   }
 ];
@@ -171,8 +152,8 @@ const routes = [
 export const router = new Router(document.getElementById("app"));
 router.setRoutes(routes);
 
-/*End of routes definitions*/
-/* Enigma Config met Nebula Stardust start*/
+
+/* Enigma Config met Nebula Stardust*/
 const config = {
   local: true,
   url: "http://10.38.15.2",
@@ -197,6 +178,8 @@ const types = [
     load: () => Promise.resolve(pivotTable),
   }
 ];
+
+//Rendering
 async function init() {
 
   let app;
@@ -211,35 +194,6 @@ async function init() {
         theme: 'myTheme',
       },
     });
-
-    /*
-    nebbie.render({
-      element: document.querySelector('.Tabel1'),
-      type: 'table',
-      properties: {
-        qHyperCubeDef: {
-          qDimensions: [
-            { qDef: { qFieldDefs: ['Case Owner Group'] }, qNullSuppression: true, qLabel: 'Department' },
-            { qDef: { qFieldDefs: ['Priority'] }, qNullSuppression: true },
-          ],
-          qMeasures: [
-            { qDef: { qDef: 'Avg([Case Duration Time])', autoSort: false }, qSortBy: { qSortByNumeric: -1 }, qLabel: 'Avg Duration' },
-          ],
-          qInterColumnSortOrder: [2, 0, 1],
-          qInitialDataFetch: [{
-            qWidth: 3,
-            qHeight: 3000,
-          }],
-        },
-        showTitles: true,
-        title: 'Table',
-        subtitle: 'Sample supernova table',
-        footnote: '',
-        totals: {
-          show: true,
-        },
-      },
-    }); */
     nebbie.render({ 
       element: document.querySelector('.Tabel1'),
       id: "XBDmJ",
@@ -267,9 +221,9 @@ async function init() {
     });
    
   //Get toolbar of application and define it as a class of toolbar => To be used in HTML page
-   (await nebbie.selections().then((s) => s.mount(document.querySelector('.toolbar')))); 
+  const toolbar =  (await nebbie.selections().then((s) => s.mount(document.querySelector('.toolbar')))); 
    
-   //Rendering Objects made in Qlik Sense
+  //Rendering Objects made in Qlik Sense
   /* Define with queryselector the class name of div tag which will be used as a placeholder */
   //if statement for performance to not render all the charts when not on the page
   if(window.location.pathname == '/gewestelijkanalyse') {
@@ -357,7 +311,7 @@ async function init() {
       element: document.querySelector('.MIL-Barchart-Controles'),
       id: "FrnBLn",
     });
-    /************************ */
+    /********** Ruimtelijke ordening ************** */
     nebbie.render({ 
       element: document.querySelector('.RO-KPI-Stedenbouwkundige'),
       id: "590fe9ed-596a-47be-9b8f-8f183e9dcb2c",
@@ -455,9 +409,6 @@ async function init() {
     }
     else if(window.location.pathname == '/provinciaalAnalyse')
     {
-      /*
-      const fieldNameProv = 'Provincie'; // Should refer to a field in your app
-      (await nebbie.field(fieldNameProv)).mount(document.querySelector('.listboxProv')); */
       nebbie.field('Provincie').then((s) =>
       s.mount(document.querySelector('.listboxProv'), {
         properties: {
@@ -598,63 +549,7 @@ async function init() {
       });
       
     }
-    
-
-     // Similar to componentDidMount and componentDidUpdate:
-
-    
-    /*
-    document.querySelector('.theme').addEventListener('click', () => {
-      themeCounter ? nebbie.context({ theme: 'otherTheme' }) : nebbie.context({ theme: 'myTheme' });
-      themeCounter = !themeCounter;
-    }); */
-    
-    /*
-    document.querySelector('.css').addEventListener('click', () => {
-      if (styleNode) {
-        document.head.removeChild(styleNode);
-        styleNode = null;
-      } else {
-        const css = `
-        div.njs-cell {
-          background: maroon;
-        }
-        p.njs-cell-footer, h6.njs-cell-title, p.njs-cell-sub-title {
-          color: white;
-        }
-        button.njs-cell-action {
-          color: white;
-        }
-        div.njs-action-toolbar-popover {
-          background: darkolivegreen;
-        }
-        `;
-        styleNode = document.createElement('style');
-        document.head.appendChild(styleNode);
-        styleNode.appendChild(document.createTextNode(css));
-      }
-    }); - */
-    /*
-    let typeIndex = 0;
-    document.querySelectorAll('.object').forEach(async (el) => {
-      if (types[typeIndex]) {
-        nebbie.render({
-          type: types[typeIndex].name,
-          element: el,
-          fields: ['title', '=rand()-0.5'],
-          properties: types[typeIndex].name !== "piechart" ? {
-            showTitles: true,
-            title: 'Main title',
-            subtitle: 'subtitle',
-            footnote: 'footer',
-          } : null,
-        });
-        typeIndex++;
-      }
-    }); */
 }
-
-init()
 
 
 

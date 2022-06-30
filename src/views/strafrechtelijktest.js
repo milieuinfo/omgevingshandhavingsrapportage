@@ -5,6 +5,17 @@ import { analysis } from "../templates/analysis";
 import { embed } from '@nebula.js/stardust';
 import { page } from "../templates/page";
 export class StrafrechtelijktestView extends LitElement {
+  constructor() {
+    super();
+   
+  }
+  firstUpdated() {
+  const chart1 = 
+  nebbie.render({ 
+    element: document.querySelector('.Tabel1'),
+    id: "XBDmJ",
+  });
+  }
   render() {
     return page({
       children: html`   

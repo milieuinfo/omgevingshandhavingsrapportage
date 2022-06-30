@@ -10,23 +10,22 @@ export class Start extends LitElement {
   <section is="vl-region">
     <div is="vl-layout" class="vl-layout">
       <div is="vl-grid" data-vl-align-center>
-        <div is="vl-column">
+       
           <h3 is="vl-h3" data-vl-align-center>
             Een kijkje naar de handhavingsactiviteiten van 2021
           </h3>
-        </div>
 
         <div style="max-width: 800px">
     <img
       is="vl-image"
       sizes="100vw"
-      src="assets/images/placeholder.png"
+      src="assets/images/info.jpg"
       alt="Autoloze zondag in Brussel"
     />
   
   </div>
   
-  </script>
+
   
       </section>
     
@@ -64,7 +63,7 @@ export class Start extends LitElement {
 
   <section is="vl-region">
   <div is="vl-layout" class="vl-layout">
-    <div is="vl-grid" data-vl-align-space-between><vl-description-data
+    <div is="vl-grid"  data-vl-align-center><vl-description-data
       data-vl-items-size=12
       data-vl-items-max-size=4
       data-vl-items-medium-size=4
@@ -82,13 +81,11 @@ export class Start extends LitElement {
       <vl-description-data-item data-vl-label="Publicatietype" data-vl-value="Webapplicatie"></vl-description-data-item>
       <vl-description-data-item
         data-vl-label="Categorie"
-        data-vl-value="Omgevingshandhavingsrapportage"
+        data-vl-value="Handhaving"
       ></vl-description-data-item>
     </vl-description-data></div>
     </div>
 </section>
-  
-  
   `,
       title: "Start",
     });

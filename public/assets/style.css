@@ -81,7 +81,9 @@ body {
   transform: scaleX(1);
   transform-origin: center;
 }
-
+hr.solid {
+  border-right: 3px solid #bbb;
+}
 div.qvobject,
 div.qvplaceholder {
   padding: 0px 10px 10px 10px;
@@ -127,4 +129,34 @@ div.qvobject500 {
   margin-left: auto !important;
   margin-right: auto !important;
   padding: 0px !important;
+}
+
+.navbarcustomList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #E9EBEE;
+  
+}
+
+.navbarcustom {
+  float: left;
+}
+
+.navbarcustom a {
+  display: block;
+  color: rgb(41, 0, 188);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbarcustom a:visited {
+  
+  color: rgb(41, 0, 188);
+}
+
+/* Change the link color to #111 (black) on hover */
+.navbarcustom a:hover {
+  text-decoration: underline;
 }
