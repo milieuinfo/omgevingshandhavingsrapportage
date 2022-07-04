@@ -46,6 +46,7 @@ import "uig-webcomponents/lib/components/description-data"
 import "uig-webcomponents/lib/components/icon"
 import "uig-webcomponents/lib/components/icon/styles.css"
 import "uig-webcomponents/lib/components/document"
+import { useEffect } from "@nebula.js/stardust"
 //Imports API calls
 import * as stardust from '@nebula.js/stardust'
 import barChart from '@nebula.js/sn-bar-chart';
@@ -135,15 +136,15 @@ const routes = [
     path:"/strafrechtelijk",
     component: "strafrechtelijkAnalyse-view",
     action: async() => {
-      await import ("./views/strafrechtelijk");
-      init();
+      await import ("./views/strafrechtelijk")
+      init()
     }
   },
   {
-    path:"/strafrechtelijktest",
-    component: "strafrechtelijktest-view",
+    path:"/hogeraad",
+    component: "hogeraad-view",
     action: async() => {
-      await import ("./views/strafrechtelijktest");
+      await import ("./views/hogeraad");
       init();
     }
   }
@@ -155,7 +156,6 @@ router.setRoutes(routes);
 
 /* Enigma Config met Nebula Stardust*/
 const config = {
-  local: true,
   url: "http://10.38.15.2",
   appId: "ef67df6b-e8dc-40f5-a56d-89b65e902609",
 };
@@ -181,8 +181,12 @@ const types = [
 
 //Rendering
 async function init() {
-
-  let app;
+  const classExists = document.getElementsByClassName(
+    'chart'
+   ).length > 0;
+ 
+  if(!classExists) {
+    let app;
     app = await connect(config);
 
     /*Set theme to charts*/
@@ -191,17 +195,66 @@ async function init() {
       //themes,
       context: {
         language: 'nl-NL',
-        theme: 'myTheme',
+        theme: 'light',
       },
     });
+
+    nebbie.render({ 
+      element: document.querySelector('.HRCInstroom'),
+      id: "hMQjGg",
+    });
+  
+    nebbie.render({ 
+      element: document.querySelector('.HRCAdviezen'),
+      id: "mQsBhY",
+    });
+  
+    nebbie.render({ 
+      element: document.querySelector('.HRCBemiddeling'),
+      id: "YjpufbM",
+    });
+  
+    nebbie.render({ 
+      element: document.querySelector('.HRCBindendeadviesTabel'),
+      id: "BuWTbhf",
+    });
+    nebbie.render({ 
+      element: document.querySelector('.HRCBindendeadviesChart'),
+      id: "vNpDF",
+    });
+
     nebbie.render({ 
       element: document.querySelector('.Tabel1'),
       id: "XBDmJ",
     });
-    nebbie.render({ 
+    nebbie.render({
+      type: 'table',
       element: document.querySelector('.Tabel2'),
-      id: "cLquW",
+      fields: ['subrubriek','hoofdrubriek', '=Sum(waarde)'],
     });
+    nebbie.render({
+      type: 'table',
+      element: document.querySelector('.Tabelvooruitgangstaat'),
+      fields: ['categorieVooruitgangsstraat','VGSAfval','VGSMest','VGSVegunningen','VGSMilieubeheerrecht', 'VGSEmissies', 'VGSRuimtelijkeOrdening', 'VGSH'],
+    });
+
+    nebbie.render({
+      type: 'table',
+      element: document.querySelector('.GewestBB'),
+      fields: ['GWSCat', 'GWSMIS', 'GWSIN'],
+    });
+
+    nebbie.render({
+      type: 'table',
+      element: document.querySelector('.GewestBH'),
+      fields: ['GWSBehandelingCAT', 'GWSPV', 'GWSVAST'],
+    });
+    
+    nebbie.render({ 
+      element: document.querySelector('.DrillBar'),
+      id: "aWqZQtS",
+    });
+    
     nebbie.render({ 
       element: document.querySelector('.TabelVooruitgangs'),
       id: "PdSJJ",
@@ -221,12 +274,12 @@ async function init() {
     });
    
   //Get toolbar of application and define it as a class of toolbar => To be used in HTML page
-  const toolbar =  (await nebbie.selections().then((s) => s.mount(document.querySelector('.toolbar')))); 
+  (await nebbie.selections().then((s) => s.mount(document.querySelector('.toolbar')))); 
+  
    
   //Rendering Objects made in Qlik Sense
   /* Define with queryselector the class name of div tag which will be used as a placeholder */
   //if statement for performance to not render all the charts when not on the page
-  if(window.location.pathname == '/gewestelijkanalyse') {
     nebbie.render({ 
       element: document.querySelector('.MIL-Barchart-VTE'),
       id: "cPNUApf",
@@ -406,9 +459,7 @@ async function init() {
     const fieldName = 'Naam Handhavinginstantie'; // Should refer to a field in your app
     (await nebbie.field(fieldName))
     .mount(document.querySelector('.listbox'),{search:false,title:"Gewestelijke handhavingsactoren",checkboxes:false});
-    }
-    else if(window.location.pathname == '/provinciaalAnalyse')
-    {
+
       nebbie.field('Provincie').then((s) =>
       s.mount(document.querySelector('.listboxProv'), {
         properties: {
@@ -546,9 +597,9 @@ async function init() {
       nebbie.render({ 
         element: document.querySelector('.mapprovincies'),
         id: "gmkbzX",
-      });
-      
-    }
+      });  
+  }
+ 
 }
 
 

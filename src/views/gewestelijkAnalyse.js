@@ -7,12 +7,6 @@ import { render } from 'lit';
 
 
 export class GewestelijkAnalyseView extends LitElement {
-    constructor() {
-       super();
-      }
-     
-     
-    
   render() {
     return analysis({
       children: html

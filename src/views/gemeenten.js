@@ -65,17 +65,17 @@ export class Gemeenten extends LitElement {
               <div is="vl_grid">
                 <div class="vl-column">
                   <div style="max-width: 400px">
-                    <a is="vl-doormat" href="/gemeentenAnalyse" target="_blank" ?data-vl-alt="alt">
+                    <a is="vl-doormat" href="#" target="_blank" ?data-vl-alt="alt">
                       <h2 is="vl-doormat-title">Analyseer de cijfers</h2>
                       <div is="vl-doormat-text">
-                        ° Op kaart
+                        ° Dashboard
                       </div>
                     </a>
                   </div>
                 </div>
                 <div class="vl-column">
                   <div style="max-width: 400px">
-                    <a is="vl-doormat" href="dashboard/testGewest.html" target="_blank" ?data-vl-alt="alt">
+                    <a is="vl-doormat" href="/gemeentenAnalyse" target="_blank" ?data-vl-alt="alt">
                       <h2 is="vl-doormat-title">Analyseer de cijfers</h2>
                       <div is="vl-doormat-text">
                         ° Op kaart

@@ -8,8 +8,6 @@ body {
   max-width: 800px;
 }
 
-
-
 .MIL-Barchart-VTE {
   height: 600px;
   width:500px;
@@ -41,10 +39,16 @@ body {
   height: 350px !important;
 }
 
-.chartTable {
-  height:100% !important;
+.chartTabel {
   width:100% !important;
+  height: 550px !important;
 }
+
+.chartTabelsm {
+  width:100% !important;
+  height: 250px !important;
+}
+
 
 .chart2 {
   height: 300px !important;
@@ -81,9 +85,7 @@ body {
   transform: scaleX(1);
   transform-origin: center;
 }
-hr.solid {
-  border-right: 3px solid #bbb;
-}
+
 div.qvobject,
 div.qvplaceholder {
   padding: 0px 10px 10px 10px;
@@ -110,11 +112,6 @@ div.qvobject500 {
   height: 500px;
 }
 
-.current-page {
-  font-weight: bold !important;
-  text-decoration: underline !important;
-}
-
 .listboxProv {
   height:250px;
 }
@@ -136,12 +133,17 @@ div.qvobject500 {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #E9EBEE;
+  background-color: #f8f9fa;
   
+}
+
+.widthpivot {
+  width:300px;
 }
 
 .navbarcustom {
   float: left;
+  display: flex;
 }
 
 .navbarcustom a {
@@ -160,3 +162,13 @@ div.qvobject500 {
 .navbarcustom a:hover {
   text-decoration: underline;
 }
+
+@media only screen and (max-width: 600px)
+{
+  .navbarcustom {
+    display: block;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+

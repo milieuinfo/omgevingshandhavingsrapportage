@@ -49,7 +49,11 @@ src="assets/images/header.jpg"/>
 
   <li class="navbarcustom"><a href="/provinciaal">Provincies</a></li>
   <li class="navbarcustom"><a href="/gemeenten">Gemeenten</a></li>
-  <li class="navbarcustom"><a href="#">Hoge raad voor de handhavingsuitvoering</a></li>
-  <li class="navbarcustom"><a href="/strafrechtelijktest">Strafrechtelijk en bestuurlijk vervolgtraject</a></li>
+  <li class="navbarcustom"><a href="/hogeraad">Hoge raad voor de handhavingsuitvoering</a></li>
+  <li class="navbarcustom"><a href="/strafrechtelijk">Strafrechtelijk en bestuurlijk vervolgtraject</a></li>
 </ul></nav>
-${children}`;
+<section is="vl-region">
+<div is="vl-layout">
+  <div is="vl-grid" data-vl-is-stacked>${children}</div>
+</div>
+</section>`;
