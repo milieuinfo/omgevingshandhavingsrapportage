@@ -19,7 +19,7 @@ export class Start extends LitElement {
     <img
       is="vl-image"
       sizes="100vw"
-      src="assets/images/info.jpg"
+      src="assets/images/placeholder.png"
       alt="Autoloze zondag in Brussel"
     />
   

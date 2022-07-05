@@ -77,7 +77,7 @@ export class ProvinciaalAnalyseView extends LitElement {
                                           Bestuurlijke maatregelen</span>
                                           <div slot="content">
                                              
-                                              <div class="BESTM object"></div>
+                                              <div class="BESTM chart"></div>
                                           </div>
                                       </vl-info-tile>
 
@@ -319,49 +319,18 @@ export class ProvinciaalAnalyseView extends LitElement {
   
                       </section>
   
-                      <section id="content-3-2" is="vl-region">
-                      <div is="vl-grid">
-                         <h3 is="vl-h3">Andere beschikbare analyses</h3>
-                  </div>
-                          <div is="vl-grid">
-                              <div is="vl-column" id="content-3-1" vl-data-size=3>
-                                  <div style="max-width: 200px">
-                                      <a is="vl-doormat" href="/gewestelijkAnalyse"
-                                          data-vl-alt="Ga naar gewestelijke actoren">
-                                          <h2 is="vl-doormat-title">Cijfers van handhaving voor het gewest</h2>
-                                      </a>
-                                  </div>
-                              </div>
-                          </div>
-                      </section>
-                      <section id="content-3-3" is="vl-region">
-                          <div is="vl-grid">
-                              <div is="vl-column" id="content-3-2" vl-data-size=3>
-                                  <div style="max-width: 200px">
-                                      <a is="vl-doormat" href="/" data-vl-alt="Ga naar cijfers voor gemeenten">
-                                          <h2 is="vl-doormat-title">Cijfers voor handhaving in gemeenten</h2>
-                                      </a>
-                                  </div>
-                              </div>
-                          </div>
-                      </section>
-                      <section id="content-3-4" is="vl-region">
-  
-  
-                          <div is="vl-grid">
-                              <div is="vl-column" id="content-3-2" vl-data-size=3>
-                                  <div style="max-width: 200px">
-                                      <a is="vl-doormat" href="/" data-vl-alt="Ga naar cijfers voor vervolgtraject">
-                                          <h2 is="vl-doormat-title">Cijfers voor strafrechtelijk en bestuurlijk
-                                              vervolgtraject</h2>
-                                      </a>
-                                  </div>
-                              </div>
-                          </div>
-  
-  
-  
-                      </section>
+                      <section is="vl-region" id="content-4">
+                      <h3 is="vl-h3">Bekijk cijfers voor andere thema's</h3>
+                      <vl-alert data-vl-closable=false data-vl-icon="info-circle"
+                          data-vl-title="Bekijk de cijfers van andere thema's" data-vl-type="info">
+                          <p>
+                              <a is="vl-link-button" href="/provinciaalAnalyse">Provinciaal</a>
+                              <a is="vl-link-button" href="/provinciaalAnalyse">Gemeentelijk</a>
+                              <a is="vl-link-button" href="/provinciaalAnalyse">Strafrechtelijk en bestuurlijk
+                                  vervolgtraject</a>
+                          </p>
+                      </vl-alert>
+                  </section>
   
   
                   </div>

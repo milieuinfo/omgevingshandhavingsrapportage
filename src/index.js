@@ -184,21 +184,21 @@ async function init() {
   const classExists = document.getElementsByClassName(
     'chart'
    ).length > 0;
+
+   let app;
+   app = await connect(config);
+
+   /*Set theme to charts*/
+ const nebbie = stardust.embed(app, {
+     types,
+     //themes,
+     context: {
+       language: 'nl-NL',
+       theme: 'light',
+     },
+   });
  
   if(!classExists) {
-    let app;
-    app = await connect(config);
-
-    /*Set theme to charts*/
-  const nebbie = stardust.embed(app, {
-      types,
-      //themes,
-      context: {
-        language: 'nl-NL',
-        theme: 'light',
-      },
-    });
-
     nebbie.render({ 
       element: document.querySelector('.HRCInstroom'),
       id: "hMQjGg",
@@ -208,7 +208,7 @@ async function init() {
       element: document.querySelector('.HRCAdviezen'),
       id: "mQsBhY",
     });
-  
+   
     nebbie.render({ 
       element: document.querySelector('.HRCBemiddeling'),
       id: "YjpufbM",
@@ -280,6 +280,123 @@ async function init() {
   //Rendering Objects made in Qlik Sense
   /* Define with queryselector the class name of div tag which will be used as a placeholder */
   //if statement for performance to not render all the charts when not on the page
+  nebbie.render({ 
+    element: document.querySelector('.ToezichthoudersProv'),
+    id: "vtQuSsz",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.Bestuurlijk-maatregel-provinciegouverneur'),
+    id: "XjBqeE",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.Veiligheidsmaatregelen-provinciegouverneur'),
+    id: "Gchmsr",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.VTEHandhaving'),
+    id: "CptELfD",
+  });
+  
+  nebbie.render({ 
+    element: document.querySelector('.Klachten'),
+    id: "JvKBje",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.Controles'),
+    id: "JAGuhL",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.Aanvankelijkecontrolesmetovertreding'),
+    id: "JPctuae",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.Bestuurlijkmaatregelen'),
+    id: "XjBqeE",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.Bestuurlijkmaatregelen-zonder-dwangsom'),
+    id: "RXcjfDd",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.Bestuurlijkmaatregelen-tijdig-uitgevoerd'),
+    id: "gTxNP",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.Bestuurlijkmaatregelen-metdwangsom'),
+    id: "czJPhQ",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.Bestuurlijkmaatregelen-tijdig'),
+    id: "aPHqXZ",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.Bestuurlijkmaatregelen-veiligheidsmaatregelen'),
+    id: "mwzmBf",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.Bestuurlijkmaatregelen-veiligheidsmaatregelen-tijdig'),
+    id: "hcsvJ",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.Provincialetoezichthouders'),
+    id: "fpdhcD",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.TotaalVTE'),
+    id: "QCjyv",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.TotaalVTEChart'),
+    id: "FPsjMJ",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.KlachtenChart'),
+    id: "skLPSt",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.ControlesChart'),
+    id: "UxdjFsS",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.Raadgeving'),
+    id: "ZjSzs",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.Aanmaning'),
+    id: "MqRzq",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.Procesverbaal'),
+    id: "ZncUmUP",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.BESTM'),
+    id: "QcUjLd",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.BESTM-zonderdw'),
+    id: "PBLBHyp",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.BESTM-zonderdw-percent'),
+    id: "KVpU",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.BESTM-metdwangsom'),
+    id: "FPvJJ",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.BESTM-metdwangsom-percent'),
+    id: "Pwq",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.Veiligheidsmaatregel'),
+    id: "PjxFwJ",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.Veiligheidsmaatregel-percent'),
+    id: "rcDAPp",
+  });
     nebbie.render({ 
       element: document.querySelector('.MIL-Barchart-VTE'),
       id: "cPNUApf",
@@ -460,6 +577,10 @@ async function init() {
     (await nebbie.field(fieldName))
     .mount(document.querySelector('.listbox'),{search:false,title:"Gewestelijke handhavingsactoren",checkboxes:false});
 
+   
+    
+    
+ 
       nebbie.field('Provincie').then((s) =>
       s.mount(document.querySelector('.listboxProv'), {
         properties: {
@@ -478,126 +599,6 @@ async function init() {
         },
       })
     )
-      nebbie.render({ 
-        element: document.querySelector('.Bestuurlijk-maatregel-provinciegouverneur'),
-        id: "XjBqeE",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.Veiligheidsmaatregelen-provinciegouverneur'),
-        id: "Gchmsr",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.VTEHandhaving'),
-        id: "CptELfD",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.ToezichthoudersProv'),
-        id: "vtQuSsz",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.Klachten'),
-        id: "JvKBje",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.Controles'),
-        id: "JAGuhL",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.Aanvankelijkecontrolesmetovertreding'),
-        id: "JPctuae",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.Bestuurlijkmaatregelen'),
-        id: "XjBqeE",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.Bestuurlijkmaatregelen-zonder-dwangsom'),
-        id: "RXcjfDd",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.Bestuurlijkmaatregelen-tijdig-uitgevoerd'),
-        id: "gTxNP",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.Bestuurlijkmaatregelen-metdwangsom'),
-        id: "czJPhQ",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.Bestuurlijkmaatregelen-tijdig'),
-        id: "aPHqXZ",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.Bestuurlijkmaatregelen-veiligheidsmaatregelen'),
-        id: "mwzmBf",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.Bestuurlijkmaatregelen-veiligheidsmaatregelen-tijdig'),
-        id: "hcsvJ",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.Provincialetoezichthouders'),
-        id: "fpdhcD",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.TotaalVTE'),
-        id: "QCjyv",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.TotaalVTEChart'),
-        id: "FPsjMJ",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.KlachtenChart'),
-        id: "skLPSt",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.ControlesChart'),
-        id: "UxdjFsS",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.Raadgeving'),
-        id: "ZjSzs",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.Aanmaning'),
-        id: "MqRzq",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.Procesverbaal'),
-        id: "ZncUmUP",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.BESTM'),
-        id: "QcUjLd",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.BESTM-zonderdw'),
-        id: "PBLBHyp",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.BESTM-zonderdw-percent'),
-        id: "KVpU",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.BESTM-metdwangsom'),
-        id: "FPvJJ",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.BESTM-metdwangsom-percent'),
-        id: "Pwq",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.Veiligheidsmaatregel'),
-        id: "PjxFwJ",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.Veiligheidsmaatregel-percent'),
-        id: "rcDAPp",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.mapprovincies'),
-        id: "gmkbzX",
-      });  
   }
  
 }

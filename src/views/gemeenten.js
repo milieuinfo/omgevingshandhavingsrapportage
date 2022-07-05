@@ -49,12 +49,7 @@ export class Gemeenten extends LitElement {
                       <i class="vl-vi vl-vi-arrow-right-fat"></i>
                     </a>
                   </li>
-                  <li is="vl-side-navigation-item" data-vl-parent="content-3">
-                    <a is="vl-side-navigation-toggle" href="#content-3" data-vl-child="content-3">
-                      content 3
-                      <i class="vl-vi vl-vi-arrow-right-fat"></i>
-                    </a>
-                  </li>
+                 
                 </ul>
               </div>
             </nav>
