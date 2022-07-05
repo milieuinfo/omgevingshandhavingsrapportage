@@ -33,9 +33,9 @@
   "files": [
     "index.html"
   ],
-  "directories":{
-        "src": "src",
-        "public": "public"
+  "directories": {
+    "src": "src",
+    "public": "public"
   },
   "publishConfig": {
     "registry": "https://repo.omgeving.vlaanderen.be/artifactory/api/npm/local-npm/"
