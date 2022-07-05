@@ -55,7 +55,7 @@ import table from '@nebula.js/sn-table';
 import pivotTable from '@nebula.js/sn-pivot-table';
 import enigma from "enigma.js";
 import schema from "enigma.js/schemas/12.170.2.json";
-import { Gewestelijk } from "./views/Gewestelijk"
+import { Gewestelijk } from "./views/gewestelijk"
 import React, { useState, useEffect } from 'react';
 
 
@@ -93,7 +93,7 @@ const routes = [
     path: "/gewestelijk",
     component: "gewestelijk-view",
     action: async () => {
-      await import("./views/Gewestelijk");
+      await import("./views/gewestelijk");
     },
   },
   {
@@ -118,14 +118,14 @@ const routes = [
     },
   },
   {
-    path: "/GewestelijkAnalyse",
-    component: "GewestelijkAnalyse-view",
+    path: "/gewestelijkAnalyse",
+    component: "gewestelijkAnalyse-view",
     action: async () => {
-      await import("./views/GewestelijkAnalyse");
+      await import("./views/gewestelijkAnalyse");
     },
   },
   {
-    path: "/Gemeenten",
+    path: "/gemeenten",
     component: "gemeenten-view",
     action: async () => {
       await import("./views/gemeenten");
