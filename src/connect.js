@@ -27,7 +27,7 @@ async function getEnigmaApp({ host, appId, headers }) {
   const enigmaGlobal = await enigma
     .create({
       schema,
-      url: `wss://${host}/app/${appId}?${params}`,
+      url: `ws://${host}/app/${appId}?${params}`,
     })
     .open();
 
