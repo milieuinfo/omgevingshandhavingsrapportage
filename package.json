@@ -31,12 +31,8 @@
     "release": "npm install && npm run build && npm version $npm_package_config_version && git push && npm publish"
   },
   "files": [
-    "index.html"
+   "src", "public"
   ],
-  "directories": {
-    "src": "src",
-    "public": "public"
-  },
   "publishConfig": {
     "registry": "https://repo.omgeving.vlaanderen.be/artifactory/api/npm/local-npm/"
   },
