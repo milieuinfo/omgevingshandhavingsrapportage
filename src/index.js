@@ -76,7 +76,7 @@ document.querySelector('.navbar-toggler').onclick = function() {
 //React Routes for navigation
 const routes = [
   {
-    path: "/",
+    path: "/public/",
     component: "start-view",
     action: async () => {
       await import("./views/start");
