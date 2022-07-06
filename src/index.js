@@ -83,14 +83,14 @@ const routes = [
     },
   },
   {
-    path: "/home",
+    path: "/public/home",
     component: "home-view",
     action: async () => {
       await import("./views/home");
     },
   },
   {
-    path: "/gewestelijk",
+    path: "/public/gewestelijk",
     component: "gewestelijk-view",
     action: async () => {
       await import("./views/gewestelijk");
