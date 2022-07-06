@@ -9,7 +9,7 @@ module.exports = {
     modules: [path.resolve(__dirname, 'src'), path.resolve(__dirname,'node_modules')],
  },
  output: {
-  path: "/public",
+  path: path.join(__dirname, './public'),,
   filename: "bundle.js",
   },
  devServer: {
