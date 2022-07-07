@@ -76,7 +76,7 @@ document.querySelector('.navbar-toggler').onclick = function() {
 //Routes
 const routes = [
   {
-    path: "/",
+    path: "/public/",
     component: "start-view",
     action: async () => {
       await import("./views/start");
@@ -84,35 +84,35 @@ const routes = [
     },
   },
   {
-    path: "/home",
+    path: "/public/home",
     component: "home-view",
     action: async () => {
       await import("./views/home");
     },
   },
   {
-    path: "/gewestelijk",
+    path: "/public/gewestelijk",
     component: "gewestelijk-view",
     action: async () => {
       await import("./views/gewestelijk");
     },
   },
   {
-    path: "/provinciaal",
+    path: "/public/provinciaal",
     component: "provinciaal-view",
     action: async () => {
       await import("./views/provinciaal");
     },
   },
   {
-    path: "/map",
+    path: "/public/map",
     component: "map-view",
     action: async () => {
       await import("./views/map");
     },
   },
   {
-    path: "/gewestelijkAnalyse",
+    path: "/public/gewestelijkAnalyse",
     component: "GewestelijkAnalyse-view",
     action: async () => {
       await import("./views/gewestelijkAnalyse");
@@ -121,21 +121,21 @@ const routes = [
     },
   },
   {
-    path: "/gemeenten",
+    path: "/public/gemeenten",
     component: "gemeenten-view",
     action: async () => {
       await import("./views/gemeenten");
     },
   },
   {
-    path: "/toegankelijkheid",
+    path: "/public/toegankelijkheid",
     component: "toegankelijkheid-view",
     action: async () => {
       await import("./views/toegankelijkheid");
     },
   },
   {
-    path: "/provinciaalAnalyse",
+    path: "/public/provinciaalAnalyse",
     component: "provinciaalAnalyse-view",
     action: async () => {
       await import("./views/provinciaalAnalyse");
@@ -143,21 +143,21 @@ const routes = [
     },
   },
   {
-    path:"/gemeentenAnalyse",
+    path:"/public/gemeentenAnalyse",
     component: "gemeentenAnalyse-view",
     action: async() => {
       await import ("./views/gemeentenAnalyse");
     }
   },
   {
-    path:"/hogeraadAnalyse",
+    path:"/public/hogeraadAnalyse",
     component: "hogeraadAnalyse-view",
     action: async() => {
       await import ("./views/hogeraadAnalyse");
     }
   },
   {
-    path:"/strafrechtelijk",
+    path:"/public/strafrechtelijk",
     component: "strafrechtelijkAnalyse-view",
     action: async() => {
       await import ("./views/strafrechtelijk")
@@ -165,7 +165,7 @@ const routes = [
     }
   },
   {
-    path:"/hogeraad",
+    path:"/public/hogeraad",
     component: "hogeraad-view",
     action: async() => {
       await import ("./views/hogeraad");
@@ -173,7 +173,7 @@ const routes = [
     }
   },
   {
-    path:"/strafrechtelijkAnalyse",
+    path:"/public/strafrechtelijkAnalyse",
     component: "strafrechtelijkanalyseanalyse-view",
     action: async() => {
       await import ("./views/strafrechtelijkAnalyse");
