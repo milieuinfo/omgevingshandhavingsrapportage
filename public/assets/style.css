@@ -8,8 +8,6 @@ body {
   max-width: 800px;
 }
 
-
-
 .MIL-Barchart-VTE {
   height: 600px;
   width:500px;
@@ -41,10 +39,16 @@ body {
   height: 350px !important;
 }
 
-.chartTable {
-  height:100% !important;
+.chartTabel {
   width:100% !important;
+  height: 550px !important;
 }
+
+.chartTabelsm {
+  width:100% !important;
+  height: 250px !important;
+}
+
 
 .chart2 {
   height: 300px !important;
@@ -108,11 +112,6 @@ div.qvobject500 {
   height: 500px;
 }
 
-.current-page {
-  font-weight: bold !important;
-  text-decoration: underline !important;
-}
-
 .listboxProv {
   height:250px;
 }
@@ -128,3 +127,48 @@ div.qvobject500 {
   margin-right: auto !important;
   padding: 0px !important;
 }
+
+.navbarcustomList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f8f9fa;
+  
+}
+
+.widthpivot {
+  width:300px;
+}
+
+.navbarcustom {
+  float: left;
+  display: flex;
+}
+
+.navbarcustom a {
+  display: block;
+  color: rgb(41, 0, 188);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbarcustom a:visited {
+  
+  color: rgb(41, 0, 188);
+}
+
+/* Change the link color to #111 (black) on hover */
+.navbarcustom a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px)
+{
+  .navbarcustom {
+    display: block;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
