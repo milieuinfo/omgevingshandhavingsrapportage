@@ -49,12 +49,7 @@ export class Gemeenten extends LitElement {
                       <i class="vl-vi vl-vi-arrow-right-fat"></i>
                     </a>
                   </li>
-                  <li is="vl-side-navigation-item" data-vl-parent="content-3">
-                    <a is="vl-side-navigation-toggle" href="#content-3" data-vl-child="content-3">
-                      content 3
-                      <i class="vl-vi vl-vi-arrow-right-fat"></i>
-                    </a>
-                  </li>
+                 
                 </ul>
               </div>
             </nav>
@@ -65,17 +60,17 @@ export class Gemeenten extends LitElement {
               <div is="vl_grid">
                 <div class="vl-column">
                   <div style="max-width: 400px">
-                    <a is="vl-doormat" href="/gemeentenAnalyse" target="_blank" ?data-vl-alt="alt">
+                    <a is="vl-doormat" href="#" target="_blank" ?data-vl-alt="alt">
                       <h2 is="vl-doormat-title">Analyseer de cijfers</h2>
                       <div is="vl-doormat-text">
-                        ° Op kaart
+                        ° Dashboard
                       </div>
                     </a>
                   </div>
                 </div>
                 <div class="vl-column">
                   <div style="max-width: 400px">
-                    <a is="vl-doormat" href="dashboard/testGewest.html" target="_blank" ?data-vl-alt="alt">
+                    <a is="vl-doormat" href="/public/gemeentenAnalyse" target="_blank" ?data-vl-alt="alt">
                       <h2 is="vl-doormat-title">Analyseer de cijfers</h2>
                       <div is="vl-doormat-text">
                         ° Op kaart

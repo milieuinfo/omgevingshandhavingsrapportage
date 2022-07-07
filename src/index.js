@@ -73,24 +73,25 @@ document.querySelector('.navbar-toggler').onclick = function() {
 
 */
 
-//React Routes for navigation
+//Routes
 const routes = [
   {
-    path: "/public/",
+    path: "/",
     component: "start-view",
     action: async () => {
       await import("./views/start");
+      
     },
   },
   {
-    path: "/public/home",
+    path: "/home",
     component: "home-view",
     action: async () => {
       await import("./views/home");
     },
   },
   {
-    path: "/public/gewestelijk",
+    path: "/gewestelijk",
     component: "gewestelijk-view",
     action: async () => {
       await import("./views/gewestelijk");
@@ -111,17 +112,12 @@ const routes = [
     },
   },
   {
-    path: "/upload",
-    component: "upload-view",
-    action: async () => {
-      await import("./views/upload");
-    },
-  },
-  {
     path: "/gewestelijkAnalyse",
-    component: "gewestelijkAnalyse-view",
+    component: "GewestelijkAnalyse-view",
     action: async () => {
       await import("./views/gewestelijkAnalyse");
+      init();
+      
     },
   },
   {
@@ -143,6 +139,7 @@ const routes = [
     component: "provinciaalAnalyse-view",
     action: async () => {
       await import("./views/provinciaalAnalyse");
+      init();
     },
   },
   {
@@ -153,17 +150,34 @@ const routes = [
     }
   },
   {
-    path:"/strafrechtelijk",
-    component: "strafrechtelijkAnalyse-view",
+    path:"/hogeraadAnalyse",
+    component: "hogeraadAnalyse-view",
     action: async() => {
-      await import ("./views/strafrechtelijk");
+      await import ("./views/hogeraadAnalyse");
     }
   },
   {
-    path:"/strafrechtelijktest",
-    component: "strafrechtelijktest-view",
+    path:"/strafrechtelijk",
+    component: "strafrechtelijkAnalyse-view",
     action: async() => {
-      await import ("./views/strafrechtelijktest");
+      await import ("./views/strafrechtelijk")
+      init()
+    }
+  },
+  {
+    path:"/hogeraad",
+    component: "hogeraad-view",
+    action: async() => {
+      await import ("./views/hogeraad");
+      init();
+    }
+  },
+  {
+    path:"/strafrechtelijkAnalyse",
+    component: "strafrechtelijkanalyseanalyse-view",
+    action: async() => {
+      await import ("./views/strafrechtelijkAnalyse");
+      init();
     }
   }
 ];
@@ -171,10 +185,9 @@ const routes = [
 export const router = new Router(document.getElementById("app"));
 router.setRoutes(routes);
 
-/*End of routes definitions*/
-/* Enigma Config met Nebula Stardust start*/
+
+/* Enigma Config met Nebula Stardust*/
 const config = {
-  local: true,
   url: "http://10.38.15.2",
   appId: "ef67df6b-e8dc-40f5-a56d-89b65e902609",
 };
@@ -197,57 +210,83 @@ const types = [
     load: () => Promise.resolve(pivotTable),
   }
 ];
+
+//Rendering
 async function init() {
+  const classExists = document.getElementsByClassName(
+    'chart'
+   ).length > 0;
 
-  let app;
-    app = await connect(config);
+   let app;
+   app = await connect(config);
 
-    /*Set theme to charts*/
-  const nebbie = stardust.embed(app, {
-      types,
-      //themes,
-      context: {
-        language: 'nl-NL',
-        theme: 'myTheme',
-      },
+   /*Set theme to charts*/
+ const nebbie = stardust.embed(app, {
+     types,
+     //themes,
+     context: {
+       language: 'nl-NL',
+       theme: 'light',
+     },
+   });
+ 
+  if(!classExists) {
+    nebbie.render({ 
+      element: document.querySelector('.HRCInstroom'),
+      id: "hMQjGg",
+    });
+  
+    nebbie.render({ 
+      element: document.querySelector('.HRCAdviezen'),
+      id: "mQsBhY",
+    });
+   
+    nebbie.render({ 
+      element: document.querySelector('.HRCBemiddeling'),
+      id: "YjpufbM",
+    });
+  
+    nebbie.render({ 
+      element: document.querySelector('.HRCBindendeadviesTabel'),
+      id: "BuWTbhf",
+    });
+    nebbie.render({ 
+      element: document.querySelector('.HRCBindendeadviesChart'),
+      id: "vNpDF",
     });
 
-    /*
-    nebbie.render({
-      element: document.querySelector('.Tabel1'),
-      type: 'table',
-      properties: {
-        qHyperCubeDef: {
-          qDimensions: [
-            { qDef: { qFieldDefs: ['Case Owner Group'] }, qNullSuppression: true, qLabel: 'Department' },
-            { qDef: { qFieldDefs: ['Priority'] }, qNullSuppression: true },
-          ],
-          qMeasures: [
-            { qDef: { qDef: 'Avg([Case Duration Time])', autoSort: false }, qSortBy: { qSortByNumeric: -1 }, qLabel: 'Avg Duration' },
-          ],
-          qInterColumnSortOrder: [2, 0, 1],
-          qInitialDataFetch: [{
-            qWidth: 3,
-            qHeight: 3000,
-          }],
-        },
-        showTitles: true,
-        title: 'Table',
-        subtitle: 'Sample supernova table',
-        footnote: '',
-        totals: {
-          show: true,
-        },
-      },
-    }); */
     nebbie.render({ 
       element: document.querySelector('.Tabel1'),
       id: "XBDmJ",
     });
-    nebbie.render({ 
+    nebbie.render({
+      type: 'table',
       element: document.querySelector('.Tabel2'),
-      id: "cLquW",
+      fields: ['subrubriek','hoofdrubriek', '=Sum(waarde)'],
     });
+    nebbie.render({
+      type: 'table',
+      element: document.querySelector('.Tabelvooruitgangstaat'),
+      fields: ['categorieVooruitgangsstraat','VGSAfval','VGSMest','VGSVegunningen','VGSMilieubeheerrecht', 'VGSEmissies', 'VGSRuimtelijkeOrdening', 'VGSH'],
+    });
+
+    nebbie.render({
+      type: 'table',
+      element: document.querySelector('.GewestBB'),
+      fields: ['GWSCat', 'GWSMIS', 'GWSIN'],
+    });
+
+    nebbie.render({
+      type: 'table',
+      element: document.querySelector('.GewestBH'),
+      fields: ['GWSBehandelingCAT', 'GWSPV', 'GWSVAST'],
+    });
+    
+    nebbie.render({ 
+      element: document.querySelector('.DrillBar'),
+      id: "aWqZQtS",
+    });
+    
     nebbie.render({ 
       element: document.querySelector('.TabelVooruitgangs'),
       id: "PdSJJ",
@@ -267,12 +306,129 @@ async function init() {
     });
    
   //Get toolbar of application and define it as a class of toolbar => To be used in HTML page
-   (await nebbie.selections().then((s) => s.mount(document.querySelector('.toolbar')))); 
+  (await nebbie.selections().then((s) => s.mount(document.querySelector('.toolbar')))); 
+  
    
-   //Rendering Objects made in Qlik Sense
+  //Rendering Objects made in Qlik Sense
   /* Define with queryselector the class name of div tag which will be used as a placeholder */
   //if statement for performance to not render all the charts when not on the page
-  if(window.location.pathname == '/gewestelijkanalyse') {
+  nebbie.render({ 
+    element: document.querySelector('.ToezichthoudersProv'),
+    id: "vtQuSsz",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.Bestuurlijk-maatregel-provinciegouverneur'),
+    id: "XjBqeE",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.Veiligheidsmaatregelen-provinciegouverneur'),
+    id: "Gchmsr",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.VTEHandhaving'),
+    id: "CptELfD",
+  });
+  
+  nebbie.render({ 
+    element: document.querySelector('.Klachten'),
+    id: "JvKBje",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.Controles'),
+    id: "JAGuhL",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.Aanvankelijkecontrolesmetovertreding'),
+    id: "JPctuae",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.Bestuurlijkmaatregelen'),
+    id: "XjBqeE",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.Bestuurlijkmaatregelen-zonder-dwangsom'),
+    id: "RXcjfDd",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.Bestuurlijkmaatregelen-tijdig-uitgevoerd'),
+    id: "gTxNP",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.Bestuurlijkmaatregelen-metdwangsom'),
+    id: "czJPhQ",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.Bestuurlijkmaatregelen-tijdig'),
+    id: "aPHqXZ",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.Bestuurlijkmaatregelen-veiligheidsmaatregelen'),
+    id: "mwzmBf",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.Bestuurlijkmaatregelen-veiligheidsmaatregelen-tijdig'),
+    id: "hcsvJ",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.Provincialetoezichthouders'),
+    id: "fpdhcD",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.TotaalVTE'),
+    id: "QCjyv",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.TotaalVTEChart'),
+    id: "FPsjMJ",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.KlachtenChart'),
+    id: "skLPSt",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.ControlesChart'),
+    id: "UxdjFsS",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.Raadgeving'),
+    id: "ZjSzs",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.Aanmaning'),
+    id: "MqRzq",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.Procesverbaal'),
+    id: "ZncUmUP",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.BESTM'),
+    id: "QcUjLd",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.BESTM-zonderdw'),
+    id: "PBLBHyp",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.BESTM-zonderdw-percent'),
+    id: "KVpU",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.BESTM-metdwangsom'),
+    id: "FPvJJ",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.BESTM-metdwangsom-percent'),
+    id: "Pwq",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.Veiligheidsmaatregel'),
+    id: "PjxFwJ",
+  });
+  nebbie.render({ 
+    element: document.querySelector('.Veiligheidsmaatregel-percent'),
+    id: "rcDAPp",
+  });
     nebbie.render({ 
       element: document.querySelector('.MIL-Barchart-VTE'),
       id: "cPNUApf",
@@ -357,7 +513,7 @@ async function init() {
       element: document.querySelector('.MIL-Barchart-Controles'),
       id: "FrnBLn",
     });
-    /************************ */
+    /********** Ruimtelijke ordening ************** */
     nebbie.render({ 
       element: document.querySelector('.RO-KPI-Stedenbouwkundige'),
       id: "590fe9ed-596a-47be-9b8f-8f183e9dcb2c",
@@ -452,12 +608,11 @@ async function init() {
     const fieldName = 'Naam Handhavinginstantie'; // Should refer to a field in your app
     (await nebbie.field(fieldName))
     .mount(document.querySelector('.listbox'),{search:false,title:"Gewestelijke handhavingsactoren",checkboxes:false});
-    }
-    else if(window.location.pathname == '/provinciaalAnalyse')
-    {
-      /*
-      const fieldNameProv = 'Provincie'; // Should refer to a field in your app
-      (await nebbie.field(fieldNameProv)).mount(document.querySelector('.listboxProv')); */
+
+   
+    
+    
+ 
       nebbie.field('Provincie').then((s) =>
       s.mount(document.querySelector('.listboxProv'), {
         properties: {
@@ -476,188 +631,6 @@ async function init() {
         },
       })
     )
-      nebbie.render({ 
-        element: document.querySelector('.Bestuurlijk-maatregel-provinciegouverneur'),
-        id: "XjBqeE",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.Veiligheidsmaatregelen-provinciegouverneur'),
-        id: "Gchmsr",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.VTEHandhaving'),
-        id: "CptELfD",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.ToezichthoudersProv'),
-        id: "vtQuSsz",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.Klachten'),
-        id: "JvKBje",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.Controles'),
-        id: "JAGuhL",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.Aanvankelijkecontrolesmetovertreding'),
-        id: "JPctuae",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.Bestuurlijkmaatregelen'),
-        id: "XjBqeE",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.Bestuurlijkmaatregelen-zonder-dwangsom'),
-        id: "RXcjfDd",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.Bestuurlijkmaatregelen-tijdig-uitgevoerd'),
-        id: "gTxNP",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.Bestuurlijkmaatregelen-metdwangsom'),
-        id: "czJPhQ",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.Bestuurlijkmaatregelen-tijdig'),
-        id: "aPHqXZ",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.Bestuurlijkmaatregelen-veiligheidsmaatregelen'),
-        id: "mwzmBf",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.Bestuurlijkmaatregelen-veiligheidsmaatregelen-tijdig'),
-        id: "hcsvJ",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.Provincialetoezichthouders'),
-        id: "fpdhcD",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.TotaalVTE'),
-        id: "QCjyv",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.TotaalVTEChart'),
-        id: "FPsjMJ",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.KlachtenChart'),
-        id: "skLPSt",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.ControlesChart'),
-        id: "UxdjFsS",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.Raadgeving'),
-        id: "ZjSzs",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.Aanmaning'),
-        id: "MqRzq",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.Procesverbaal'),
-        id: "ZncUmUP",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.BESTM'),
-        id: "QcUjLd",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.BESTM-zonderdw'),
-        id: "PBLBHyp",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.BESTM-zonderdw-percent'),
-        id: "KVpU",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.BESTM-metdwangsom'),
-        id: "FPvJJ",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.BESTM-metdwangsom-percent'),
-        id: "Pwq",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.Veiligheidsmaatregel'),
-        id: "PjxFwJ",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.Veiligheidsmaatregel-percent'),
-        id: "rcDAPp",
-      });
-      nebbie.render({ 
-        element: document.querySelector('.mapprovincies'),
-        id: "gmkbzX",
-      });
-      
-    }
-    
-
-     // Similar to componentDidMount and componentDidUpdate:
-
-    
-    /*
-    document.querySelector('.theme').addEventListener('click', () => {
-      themeCounter ? nebbie.context({ theme: 'otherTheme' }) : nebbie.context({ theme: 'myTheme' });
-      themeCounter = !themeCounter;
-    }); */
-    
-    /*
-    document.querySelector('.css').addEventListener('click', () => {
-      if (styleNode) {
-        document.head.removeChild(styleNode);
-        styleNode = null;
-      } else {
-        const css = `
-        div.njs-cell {
-          background: maroon;
-        }
-        p.njs-cell-footer, h6.njs-cell-title, p.njs-cell-sub-title {
-          color: white;
-        }
-        button.njs-cell-action {
-          color: white;
-        }
-        div.njs-action-toolbar-popover {
-          background: darkolivegreen;
-        }
-        `;
-        styleNode = document.createElement('style');
-        document.head.appendChild(styleNode);
-        styleNode.appendChild(document.createTextNode(css));
-      }
-    }); - */
-    /*
-    let typeIndex = 0;
-    document.querySelectorAll('.object').forEach(async (el) => {
-      if (types[typeIndex]) {
-        nebbie.render({
-          type: types[typeIndex].name,
-          element: el,
-          fields: ['title', '=rand()-0.5'],
-          properties: types[typeIndex].name !== "piechart" ? {
-            showTitles: true,
-            title: 'Main title',
-            subtitle: 'subtitle',
-            footnote: 'footer',
-          } : null,
-        });
-        typeIndex++;
-      }
-    }); */
+  }
+ 
 }
-
-init()
-
-
-
-
-
-
