@@ -104,7 +104,7 @@ const routes = [
     },
   },
   {
-    path: "/map",
+    path: "/public/map",
     component: "map-view",
     action: async () => {
       await import("./views/map");
@@ -180,6 +180,8 @@ const routes = [
     }
   }
 ];
+      
+  
 
 export const router = new Router(document.getElementById("app"));
 router.setRoutes(routes);
