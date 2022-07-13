@@ -45,7 +45,7 @@ src="assets/images/header.jpg"/>
   <ul class="vl-layout">
   <li class="navbarcustom"><a href="/public/">Start</a></li>
   <li class="navbarcustom"><a href="/public/home">Inleiding</a></li>
-  <li class="navbarcustom"><a href="/public/gewestelijk">Gewesten</a></li>
+  <li class="navbarcustom"><a href="/public/gewestelijk">Gewest</a></li>
 
   <li class="navbarcustom"><a href="/public/provinciaal">Provincies</a></li>
   <li class="navbarcustom"><a href="/public/gemeenten">Gemeenten</a></li>
