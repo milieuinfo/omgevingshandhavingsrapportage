@@ -3,12 +3,12 @@ import schema from "enigma.js/schemas/12.170.2.json";
 
 async function getQCSHeaders({ webIntegrationId, url }) {
   const response = await fetch(`${url}`, {
-   // credentials: "include",
+    // credentials: "include",
   });
   if (response.status === 401) {
     const loginUrl = new URL(`${url}/login`);
     loginUrl.searchParams.append("returnto", window.location.href);
-   /* loginUrl.searchParams.append("qlik-web-integration-id", webIntegrationId);*/
+    /* loginUrl.searchParams.append("qlik-web-integration-id", webIntegrationId);*/
     window.location.href = loginUrl;
     return undefined;
   }
@@ -27,7 +27,7 @@ async function getEnigmaApp({ host, appId, headers }) {
   const enigmaGlobal = await enigma
     .create({
       schema,
-      url: `ws://${host}/app/${appId}?${params}`,
+      url: `wss://${host}/app/${appId}?${params}`,
     })
     .open();
 
@@ -36,9 +36,8 @@ async function getEnigmaApp({ host, appId, headers }) {
 
 async function connect({ url, appId }) {
   const host = url.replace(/^https?:\/\//, "").replace(/\/?/, "");
-const headers = await getQCSHeaders({ url/*, webIntegrationId*/ });
+  const headers = await getQCSHeaders({ url /*, webIntegrationId*/ });
   return getEnigmaApp({ host, headers, appId });
 }
 
 export default connect;
-
