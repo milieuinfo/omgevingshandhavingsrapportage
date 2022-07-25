@@ -71,7 +71,7 @@ export class Gemeenten extends LitElement {
                       <div is="vl_grid">
                           <div class="vl-column">
                               <div style="max-width: 400px">
-                                  <a is="vl-doormat" href="#">
+                                  <a is="vl-doormat" href="/public/gemeentenDashboard">
                                       <h2 is="vl-doormat-title">Analyseer de cijfers</h2>
                                       <div is="vl-doormat-text">
                                           ° Dashboard

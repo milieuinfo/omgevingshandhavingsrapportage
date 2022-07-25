@@ -1,16 +1,10 @@
 import { LitElement, html } from "lit-element";
-import { page } from "../templates/page";
+import "uig-webcomponents/lib/components/accessibility";
+import { blank, toegankelijkheid } from "../templates/toegankelijkheid";
 export class Toegankelijkheid extends LitElement {
     
   render() {
-        return page({
-            childeren: html`
-            <vl-accessibility
-          >
-          <h1>Test</h1>
-          
-          </vl-accessibility>`
-          ,
+        return toegankelijkheid({
           title: "Toegankelijkheid",
         }); 
       }

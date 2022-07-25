@@ -366,10 +366,12 @@ export class ProvinciaalAnalyseView extends LitElement {
                           <vl-alert data-vl-icon="info-circle" data-vl-title="Bekijk de cijfers van andere thema's"
                               data-vl-type="info">
                               <p>
-                                  <a is="vl-link-button" href="/public/gewestelijk">per gewest</a>
-                                  <a is="vl-link-button" href="/public/gemeenten">per gemeente</a>
-                                  <a is="vl-link-button" href="/public/hogeraad">Hoge raad</a>
-                              </p>
+                              <a is="vl-link-button" href="/public/gewestelijk">Gewest</a>
+                              <a is="vl-link-button" href="/public/gemeenten">Gemeenten</a>
+                              <a is="vl-link-button" href="/public/hogeraad">Hoge raad</a>
+                              <a is="vl-link-button" href="/public/strafrechtelijk">Strafrechtelijk en bestuurlijk
+                                  vervolgtraject</a>
+                          </p>
                               <br>
                               <p>
                                   <a is="vl-link-button" href="/public/strafrechtelijk">Strafrechtelijk en bestuurlijk

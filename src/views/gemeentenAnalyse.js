@@ -8,7 +8,6 @@ export class GemeentenAnalyseView extends LitElement {
 render() {
     return analysis({
       children: html`
-
       <vl-functional-header data-vl-back="Terug" data-vl-back-link="/public/gemeenten"
       data-vl-title="Cijfers van de gemeenten" data-vl-sub-title="Een analyse van de activiteiten van de gemeenten"
       data-vl-link="Gemeente">
@@ -44,6 +43,7 @@ render() {
           </div>
       </vl-info-tile>
   </div>
+</div>
 </div>
   </div>
       `,

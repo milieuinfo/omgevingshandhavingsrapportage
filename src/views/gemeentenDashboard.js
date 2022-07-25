@@ -2,19 +2,17 @@ import { LitElement, html } from "lit-element";
 import "uig-webcomponents/lib/components/doormat";
 import "uig-webcomponents/lib/components/doormat/styles.css";
 import { analysis } from "../templates/analysis";
-import { embed, useEffect } from "@nebula.js/stardust";
-import { render } from 'lit';
-
-
-export class GewestelijkAnalyseView extends LitElement {
-  render() {
+import { embed } from '@nebula.js/stardust';
+export class GemeentenDashboardView extends LitElement {
+    
+render() {
     return analysis({
-      children: html
-      `
-      <vl-functional-header data-vl-back="Terug" data-vl-back-link="/public/gewestelijk"
-      data-vl-title="Cijfers van gewestelijke handhavingsactoren"
-      data-vl-sub-title="Een analyse van de gewestelijke handhavingsactoren"
-      data-vl-link="Gewestelijke handhavingsactoren">
+      children: html`
+
+      <vl-functional-header data-vl-back="Terug" data-vl-back-link="/public/gemeenten"
+      data-vl-title="Cijfers van gemeentelijke handhavingsactoren"
+      data-vl-sub-title="Een analyse van de gemeentelijke handhavingsactoren"
+      data-vl-link="Gemeentelijke handhavingsactoren">
   </vl-functional-header>
   <section is="vl-region">
       <div is="vl-layout">
@@ -25,7 +23,7 @@ export class GewestelijkAnalyseView extends LitElement {
                       <section id="content-1" is="vl-region">
                           <h2 is="vl-h2">Een wegwijzer doorheen de cijfers en grafieken</h2>
                           <p>
-                              Deze pagina toont een inzichtelijke beeld over de cijfers van gewestelijke
+                              Deze pagina toont een inzichtelijke beeld over de cijfers van gemeentelijke
                               handhavingsactoren.
                               De grafieken zijn volledig interactief en de cijfers zullen worden gewijzigd naargelang de
                               gekozen filtering.
@@ -36,43 +34,102 @@ export class GewestelijkAnalyseView extends LitElement {
                       <section id="content-1-1" is="vl-region">
                           <div class="toolbar"></div>
                           <div is="vl-grid">
-                              <div is="vl-column" data-vl-size=4>
+                          <div is="vl-column" data-vl-size=12>
+                          <vl-infoblock data-vl-title="Selectiebalk" data-vl-icon="cursor-finger-up">
+                              Hierboven staan uw actieve selecties op de pagina en zullen de cijfers aangepast
+                              worden op basis van
+                              de geselecteerde
+                              gemeenten. Dit selectiebalk is interactief en u kunt selecties
+                              aanpassen of
+                              toevoegen.
+                          </vl-infoblock>
+                          <vl-infoblock data-vl-title="Uw selectie mogelijkheden"
+                              data-vl-icon="cursor-finger-down">
+                              In de filterpaneel staan de mogelijke selecties dat u kunt uitvoeren op de pagina.
+                              U kunt meerdere gewestelijke handhavingsactoren aanduiden en de cijfers en grafieken
+                              zullen
+                              aangepast worden
+                              op basis van uw selecties.
+                          </vl-infoblock>
+                              </div>
+                              </div>
+                                <br/>
+                                <div is="vl-grid">
+
+                                  <div is="vl-column" data-vl-size=6>
                                   <vl-info-tile data-vl-auto-open=true>
                                       <div slot="content">
-                                          <div class="listbox"></div>
+                                          <div class="listboxGEM listboxProvStyle"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
-                              <div is="vl-column">
-                                  <vl-infoblock data-vl-title="Selectiebalk" data-vl-icon="cursor-finger-up">
-                                      Hierboven staan uw actieve selecties op de pagina en zullen de cijfers aangepast
-                                      worden op basis van
-                                      de geselecteerde
-                                      gewestelijke handhavingsactor. Dit selectiebalk is interactief en u kunt selecties
-                                      aanpassen of
-                                      toevoegen.
-                                  </vl-infoblock>
-  
-  
-                                  <vl-infoblock data-vl-title="Uw selectie mogelijkheden"
-                                      data-vl-icon="cursor-finger-left">
-                                      In de filterpaneel staan de mogelijke selecties dat u kunt uitvoeren op de pagina.
-                                      U kunt meerdere gewestelijke handhavingsactoren aanduiden en de cijfers en grafieken
-                                      zullen
-                                      aangepast worden
-                                      op basis van uw selecties.
-                                  </vl-infoblock>
-                              </div>
-                          </div>
+                              <div is="vl-column" data-vl-size=6>
+                                  <vl-info-tile data-vl-auto-open=true>
+                                      <div slot="content">
+                                          <div class="listboxGEMGAS listboxProvStyle"></div>
+                                      </div>
+                                  </vl-info-tile>
+                              </div></div>
                       </section>
+                      <section id="content-1-2" is="vl-region">
+                      <h3 is="vl-h3">Cijfers voor milieu handhaving</h3>
+                      <div is="vl-grid">
+                          <div is="vl-column data-vl-size=12 class=" data-top-bot">
+                              <vl-infoblock data-vl-title="Burgemeester"
+                                  data-vl-icon="business-graph-bar">
+                              </vl-infoblock>
+                          </div>
+                      </div>
+
+                      <div is="vl-grid">
+                          <div is="vl-column" data-vl-size=12 class="data-top-bot">
+                              <vl-info-tile data-vl-auto-open=true>
+                                  <span slot="title">Bestuurlijke maatregelen</span>
+                                  <div slot="content">
+                                      <img class="icon" src="assets/icons/PNG-natuurlijke persoon.png">
+                                      <div class="GEM-burgbestm object"></div>
+                                  </div>
+                              </vl-info-tile>
+                          </div></div>
+
+                          <div is="vl-grid">
+                          <div is="vl-column" data-vl-size=4 class="data-top-bot">
+                              <vl-info-tile data-vl-auto-open=true>
+                                  <span slot="title">Bestuurlijke maatregel zonder dwangsom</span>
+                                  <div slot="content">
+                                      <img class="icon" src="">
+                                      <div class="GEM-burgbestzonder object"></div>
+                                  </div>
+                              </vl-info-tile>
+                          </div>
+                          <div is="vl-column" data-vl-size=4 class="data-top-bot">
+                          <vl-info-tile data-vl-auto-open=true>
+                              <span slot="title">Bestuurlijke maatregel met dwangsom</span>
+                              <div slot="content">
+                                  <img class="icon" src="">
+                                  <div class="GEM-burgbestmet object"></div>
+                              </div>
+                          </vl-info-tile>
+                      </div>
+                      <div is="vl-column" data-vl-size=4 class="data-top-bot">
+                      <vl-info-tile data-vl-auto-open=true>
+                          <span slot="title">Veiligheidsmaatregelen met % tijdig uitgevoerd</span>
+                          <div slot="content">
+                              <img class="icon" src="">
+                              <div class="GEM-burgveilig object"></div>
+                          </div>
+                      </vl-info-tile>
+                  </div>
+                      </div>
+                  </section>
   
                       <section id="content-1-2" is="vl-region">
-                          <h3 is="vl-h3">Cijfers voor milieu handhaving</h3>
+                          <h3 is="vl-h3">Cijfers voor milieuhandhaving</h3>
                           <div is="vl-grid">
                               <div is="vl-column data-vl-size=12 class=" data-top-bot">
-                                  <vl-infoblock data-vl-title="Gewestelijke toezichthouders en VTE"
+                                  <vl-infoblock data-vl-title="Gemeentelijke toezichthouders en VTE"
                                       data-vl-icon="business-graph-bar">
-                                      In deze sectie worden de aantal gewestelijke toezichthouders aangegeven met de
+                                      In deze sectie worden de aantal gemeentelijke toezichthouders aangegeven met de
                                       totaal
                                       aantal besteed
                                       aan VTE.
@@ -89,7 +146,7 @@ export class GewestelijkAnalyseView extends LitElement {
                                       <span slot="title">Aantal toezichthouders</span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-natuurlijke persoon.png">
-                                          <div class="MIL-KPI-Toezichthouder object"></div>
+                                          <div class="GEM-Toezicthouders object"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -98,19 +155,28 @@ export class GewestelijkAnalyseView extends LitElement {
                                       <span slot="title">Totaal VTE</span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-trainer_B.png">
-                                          <div class="MIL-KPI-VTE object"></div>
+                                          <div class="GEM-TotaalVTE object"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
                           </div>
                           <div is="vl-grid">
-                              <div is="vl-column" data-vl-size=12>
+                              <div is="vl-column" data-vl-size=5>
+                                  <vl-info-tile data-vl-auto-open=true>
+                                      <span slot="title">Toezicthouders onderverdeling<br>Hover op de grafiek voor meer info
+                                      </span>
+                                      <div slot="content">
+                                          <div class="GEM-PieToezicthouders chart"></div>
+                                      </div>
+                                  </vl-info-tile>
+                              </div>
+                              <div is="vl-column" data-vl-size=7>
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Verdeling van VTE toezichthouders en administratieve en
                                           juridische ondersteuning
                                       </span>
                                       <div slot="content">
-                                          <div class="MIL-Barchart-VTE chart"></div>
+                                          <div class="GEM-VTEBar chart"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -138,7 +204,7 @@ export class GewestelijkAnalyseView extends LitElement {
                                       </span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-Meld_verdachte_handelingen.png">
-                                          <div class="MIL-KPI-Klachten object"></div>
+                                          <div class="GEM-klachten object"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -147,7 +213,7 @@ export class GewestelijkAnalyseView extends LitElement {
                                       <span slot="title">Aantal klachten per milieucategorie</span>
   
                                       <div slot="content">
-                                          <div class="MIL-Barchart-Klachten chart"></div>
+                                          <div class="GEM-KlachtenBar chart"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -173,7 +239,7 @@ export class GewestelijkAnalyseView extends LitElement {
                                       </span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-onderzoek.png">
-                                          <div class="MIL-KPI-Controles object"></div>
+                                          <div class="GEM-controles object"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -181,7 +247,7 @@ export class GewestelijkAnalyseView extends LitElement {
                                   <vl-info-tile data-vl-auto-open=true><span slot="title">Verdeling controles per
                                           categorie</span>
                                       <div slot="content">
-                                          <div class="MIL-Barchart-Controles chart"></div>
+                                          <div class="GEM-ControlesBar chart"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -207,7 +273,7 @@ export class GewestelijkAnalyseView extends LitElement {
                                       <span slot="title">Verdeling controles per categorie</span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-fout.png">
-                                          <div class="MIL-KPI-Aanvankelijke-Controles object"></div>
+                                          <div class="GEM-AAControles object"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -216,7 +282,7 @@ export class GewestelijkAnalyseView extends LitElement {
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Verdeling controles per categorie</span>
                                       <div slot="content">
-                                          <div class="MIL-bar-Aanvankelijke-Controles chart"></div>
+                                          <div class="GEM-AAControlesBar chart"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -240,7 +306,7 @@ export class GewestelijkAnalyseView extends LitElement {
                                       <span slot="title">Raadgeving</span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-Kalender.png">
-                                          <div class="MIL-KPI-Raadgeving object"></div>
+                                          <div class="GEM-Raadgeving object"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -250,7 +316,7 @@ export class GewestelijkAnalyseView extends LitElement {
                                       <span slot="title">Aanmaning</span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-Kalender.png">
-                                          <div class="MIL-KPI-Aanmaning object"></div>
+                                          <div class="GEM-Aanmaning object"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -262,7 +328,7 @@ export class GewestelijkAnalyseView extends LitElement {
                                       <span slot="title">Proces-verbaal</span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-time-out.png">
-                                          <div class="MIL-KPI-Proces-verbaal object"></div>
+                                          <div class="GEM-pv object"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -271,7 +337,7 @@ export class GewestelijkAnalyseView extends LitElement {
                                       <span slot="title">Verslag van vaststelling</span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-klipbord.png">
-                                          <div class="MIL-KPI-Verslag-van-vastelling objectinstrumentarium"></div>
+                                          <div class="GEM-verslagvastelling objectinstrumentarium"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -284,7 +350,7 @@ export class GewestelijkAnalyseView extends LitElement {
                                       <span slot="title">Bestuurlijk maatregel</span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-risicoanalyse.png">
-                                          <div class="MIL-KPI-Bestuurlijk-maatregel object"></div>
+                                          <div class="GEM-bestuurlijkmaatregel object"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -294,7 +360,7 @@ export class GewestelijkAnalyseView extends LitElement {
   
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-risicoanalyse.png">
-                                          <div class="MIL-KPI-Bestuurlijk-maatregel-met-dwangsom objectinstrumentarium">
+                                          <div class="GEM-bestuurlijkmaatregelmet objectinstrumentarium">
                                           </div>
                                       </div>
                                   </vl-info-tile>
@@ -305,7 +371,7 @@ export class GewestelijkAnalyseView extends LitElement {
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-risicoanalyse.png">
                                           <div
-                                              class="MIL-KPI-Bestuurlijk-maatregel-zonder-dwangsom objectinstrumentarium">
+                                              class="GEM-bestuurlijkmaatregelzonder objectinstrumentarium">
                                           </div>
                                       </div>
                                   </vl-info-tile>
@@ -317,7 +383,7 @@ export class GewestelijkAnalyseView extends LitElement {
                                   <vl-info-tile data-vl-auto-open=true><span slot="title">Veiligheidsmaatregel</span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-opgepast.png">
-                                          <div class="MIL-KPI-Veiligheidsmaatregel object"></div>
+                                          <div class="GEM-veiligheids object"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -350,7 +416,7 @@ export class GewestelijkAnalyseView extends LitElement {
                                           </span></span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-natuurlijke persoon.png">
-                                          <div class="RO-KPI-Stedenbouwkundige object"></div>
+                                          <div class="GEM-Vebalitisanten object"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -360,7 +426,7 @@ export class GewestelijkAnalyseView extends LitElement {
                                           </span></span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-natuurlijke persoon.png">
-                                          <div class="RO-KPI-Verbalitisanten objectinstrumentarium"></div>
+                                          <div class="GEM-stedenbouwkundige objectinstrumentarium"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -371,7 +437,7 @@ export class GewestelijkAnalyseView extends LitElement {
                                           </span></span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-natuurlijke persoon.png">
-                                          <div class="RO-KPI-Gecombi objectinstrumentarium"></div>
+                                          <div class="GEM-stedenbouwkundigeinspec objectinstrumentarium"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -395,7 +461,7 @@ export class GewestelijkAnalyseView extends LitElement {
                                       </span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-trainer_B.png">
-                                          <div class="RO-KPI-VTE object"></div>
+                                          <div class="GEM-totaalvtero object"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -405,7 +471,7 @@ export class GewestelijkAnalyseView extends LitElement {
                                       </span>
                                       <div slot="content">
   
-                                          <div class="RO-Barchart-VTE chart"></div>
+                                          <div class="GEM-charttotaalvtero chart"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -431,7 +497,7 @@ export class GewestelijkAnalyseView extends LitElement {
                                       </span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-Meld_verdachte_handelingen.png">
-                                          <div class="RO-KPI-Klachten object"></div>
+                                          <div class="Gem-ro-klachten object"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -441,7 +507,7 @@ export class GewestelijkAnalyseView extends LitElement {
                                       </span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-onderzoek.png">
-                                          <div class="RO-KPI-Controles object"></div>
+                                          <div class="Gem-ro-controles object"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -452,7 +518,7 @@ export class GewestelijkAnalyseView extends LitElement {
                                       </span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-onderzoek.png">
-                                          <div class="RO-KPI-Aanvankelijke-Controles objectinstrumentarium"></div>
+                                          <div class="Gem-ro-AAcontroles objectinstrumentarium"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -480,13 +546,41 @@ export class GewestelijkAnalyseView extends LitElement {
                                       </span>
                                       <div slot="content">
   
-                                          <div class="RO-Barchart-Controles chart"></div>
+                                          <div class="Gem-ro-barcontroles chart"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
                           </div>
   
                       </section>
+                      <section id="content-3-5" is="vl-region">
+                      <div is="vl-grid">
+                          <div is="vl-column" data-vl-size=12 class="data-top-bot">
+                              <vl-infoblock data-vl-title="Overtredingsgraad" data-vl-icon="business-graph-bar">
+                                  
+                              </vl-infoblock>
+                          </div>
+                      </div>
+
+
+                      <div is="vl-grid">
+
+
+                          <div is="vl-column" data-vl-size=12>
+                              <vl-info-tile data-vl-auto-open=true><span slot="title">Overtredingsgraad<span
+                                          slot="subtitle">
+                                      </span>
+                                  </span>
+                                  <div slot="content">
+
+                                      <div class="Gem-ro-overtredingsgraad object"></div>
+                                  </div>
+                              </vl-info-tile>
+                          </div>
+                      </div>
+
+                  </section>
+                      <!--
                       <section id="content-3-5" is="vl-region">
   
                           <div is="vl-grid">
@@ -651,19 +745,19 @@ export class GewestelijkAnalyseView extends LitElement {
   
                           </div>
   
-                      </section>
+                      </section>-->
   
                       <section is="vl-region" id="content-4">
                           <h3 is="vl-h3">Bekijk cijfers voor andere thema's</h3>
                           <vl-alert data-vl-icon="info-circle" data-vl-title="Bekijk de cijfers van andere thema's"
                               data-vl-type="info">
                               <p>
-                              <a is="vl-link-button" href="/public/provinciaal">Provinciaal</a>
-                              <a is="vl-link-button" href="/public/gemeenten">Gemeenten</a>
-                              <a is="vl-link-button" href="/public/hogeraad">Hoge raad</a>
-                              <a is="vl-link-button" href="/public/strafrechtelijk">Strafrechtelijk en bestuurlijk
-                                  vervolgtraject</a>
-                          </p>
+                                  <a is="vl-link-button" href="/public/gewestelijk">Gewest</a>
+                                  <a is="vl-link-button" href="/public/provinciaal">Provinciaal</a>
+                                  <a is="vl-link-button" href="/public/hogeraad">Hoge raad</a>
+                                  <a is="vl-link-button" href="/public/strafrechtelijk">Strafrechtelijk en bestuurlijk
+                                      vervolgtraject</a>
+                              </p>
                           </vl-alert>
                       </section>
                   </div>
@@ -711,6 +805,7 @@ export class GewestelijkAnalyseView extends LitElement {
                                               <a href="#content-1-6" data-vl-parent="content-1">Instrumentarium</a>
                                           </div>
                                       </li>
+                                      
                                   </ul>
                               </li>
                               <li is="vl-side-navigation-item" data-vl-parent="content-3">
@@ -740,11 +835,7 @@ export class GewestelijkAnalyseView extends LitElement {
                                               <a href="#content-3-4" data-vl-parent="content-3">Controles</a>
                                           </div>
                                       </li>
-                                      <li is="vl-side-navigation-item">
-                                          <div>
-                                              <a href="#content-3-5" data-vl-parent="content-3">Instrumentarium</a>
-                                          </div>
-                                      </li>
+                                     
                                   </ul>
                               </li>
                               <li is="vl-side-navigation-item" data-vl-parent="content-4">
@@ -760,14 +851,13 @@ export class GewestelijkAnalyseView extends LitElement {
           </div>
       </div>
   </section>
-
       `,
-      title: "GewestelijkAnalyseView",
+      title: "GemeentenDashboardView",
     });
   }
-  
+
   createRenderRoot() {
     return this;
   }
 }
-customElements.define("gewestelijkanalyse-view", GewestelijkAnalyseView);
+customElements.define("gemeentendashboard-view", GemeentenDashboardView);

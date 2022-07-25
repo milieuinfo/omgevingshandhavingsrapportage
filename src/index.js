@@ -53,10 +53,7 @@ import connect from './connect';
 import snKpi from "@nebula.js/sn-kpi"
 import table from '@nebula.js/sn-table';
 import pivotTable from '@nebula.js/sn-pivot-table';
-import enigma from "enigma.js";
-import schema from "enigma.js/schemas/12.170.2.json";
-import { Gewestelijk } from "./views/gewestelijk"
-import React, { useState, useEffect } from 'react';
+import snPieChart from "@nebula.js/sn-pie-chart"
 
 
 
@@ -104,7 +101,7 @@ const routes = [
     },
   },
   {
-    path: "/public/map",
+    path: "/map",
     component: "map-view",
     action: async () => {
       await import("./views/map");
@@ -127,10 +124,17 @@ const routes = [
     },
   },
   {
-    path: "/public/toegankelijkheid",
+    path: "/toegankelijkheid",
     component: "toegankelijkheid-view",
     action: async () => {
       await import("./views/toegankelijkheid");
+    },
+  },
+  {
+    path: "/privacy",
+    component: "privacy-view",
+    action: async () => {
+      await import("./views/privacy");
     },
   },
   {
@@ -146,6 +150,14 @@ const routes = [
     component: "gemeentenAnalyse-view",
     action: async() => {
       await import ("./views/gemeentenAnalyse");
+    }
+  },
+  {
+    path:"/public/gemeentenDashboard",
+    component: "gemeentenDashboard-view",
+    action: async() => {
+      await import ("./views/gemeentenDashboard");
+      gemeentendashboard();
     }
   },
   {
@@ -210,6 +222,10 @@ const types = [
   {
     name: 'pivot-table',
     load: () => Promise.resolve(pivotTable),
+  },
+  {
+    name: "piechart",
+    load: () => Promise.resolve(snPieChart),
   }
 ];
 
@@ -738,4 +754,190 @@ async function strafrechtelijkanalyserendering() {
     });
    
   }
+}
+async function gemeentendashboard() {
+  
+  const classExistsInit = document.getElementsByClassName(
+    'chart'
+   ).length > 0;
+   let app;
+   app = await connect(config);
+   /*Set theme to charts*/
+ const nebbie = stardust.embed(app, {
+     types,
+     //themes,
+     context: {
+       language: 'nl-NL',
+       theme: 'light',
+     },
+   });
+  if(!classExistsInit) {
+    //Get toolbar of application and define it as a class of toolbar => To be used in HTML page
+  (await nebbie.selections().then((s) => s.mount(document.querySelector('.toolbar'))));
+}
+
+ /* Get fieldvalues of the field Naam Gemeente in Qlik model and mount it in placeholder listbox*/
+ 
+ const fieldNameProvincie = 'Gemeente'; // Should refer to a field in your app
+ (await nebbie.field(fieldNameProvincie))
+ .mount(document.querySelector('.listboxGEM'),{search:true,title:"Gemeente",checkboxes:false});
+
+ const fieldNameGAS = 'Gas-Regelement - Milieugerelateerde overlast'; // Should refer to a field in your app
+ (await nebbie.field(fieldNameGAS))
+ .mount(document.querySelector('.listboxGEMGAS'),{search:false,title:"GAS - milieugerelateerde overlast",checkboxes:false});
+
+ nebbie.render({ 
+  element: document.querySelector('.GEM-Toezicthouders'),
+  id: "GtNeXHa",
+});
+
+nebbie.render({ 
+  element: document.querySelector('.GEM-TotaalVTE'),
+  id: "PcZq",
+});
+
+nebbie.render({ 
+  element: document.querySelector('.GEM-klachten'),
+  id: "pYNrv",
+});
+nebbie.render({ 
+  element: document.querySelector('.GEM-controles'),
+  id: "pVsppX",
+});
+nebbie.render({ 
+  element: document.querySelector('.GEM-AAControles'),
+  id: "mSpEef",
+});
+nebbie.render({ 
+  element: document.querySelector('.GEM-PieToezicthouders'),
+  id: "QRJzm",
+});
+
+nebbie.render({ 
+  element: document.querySelector('.GEM-VTEBar'),
+  id: "Kareq",
+});
+
+nebbie.render({ 
+  element: document.querySelector('.GEM-KlachtenBar'),
+  id: "WhgamS",
+  
+});
+
+
+nebbie.render({ 
+  element: document.querySelector('.GEM-ControlesBar'),
+  id: "RgmLzT",
+});
+nebbie.render({ 
+  element: document.querySelector('.GEM-AAControlesBar'),
+  id: "NChXtq",
+});
+
+nebbie.render({ 
+  element: document.querySelector('.GEM-Raadgeving'),
+  id: "EqXUZq",
+});
+
+nebbie.render({ 
+  element: document.querySelector('.GEM-Aanmaning'),
+  id: "QxmppR",
+});
+
+nebbie.render({ 
+  element: document.querySelector('.GEM-pv'),
+  id: "LDtznSZ",
+});
+
+nebbie.render({ 
+  element: document.querySelector('.GEM-bestuurlijkmaatregel'),
+  id: "PzymKk",
+});
+
+nebbie.render({ 
+  element: document.querySelector('.GEM-bestuurlijkmaatregelzonder'),
+  id: "FktUZc",
+});
+
+nebbie.render({ 
+  element: document.querySelector('.GEM-bestuurlijkmaatregelmet'),
+  id: "nKRnXj",
+});
+nebbie.render({ 
+  element: document.querySelector('.GEM-veiligheids'),
+  id: "PdFpSe",
+});
+
+nebbie.render({ 
+  element: document.querySelector('.GEM-burgbestm'),
+  id: "Jpmwen",
+});
+nebbie.render({ 
+  element: document.querySelector('.GEM-burgbestzonder'),
+  id: "PQJZuSS",
+});
+
+nebbie.render({ 
+  element: document.querySelector('.GEM-burgbestmet'),
+  id: "emApAF",
+});
+
+nebbie.render({ 
+  element: document.querySelector('.GEM-burgveilig'),
+  id: "QJFCBz",
+});
+
+
+nebbie.render({ 
+  element: document.querySelector('.GEM-verslagvastelling'),
+  id: "bJJPTT",
+});
+
+nebbie.render({ 
+  element: document.querySelector('.GEM-Vebalitisanten'),
+  id: "VmPkER",
+});
+
+
+nebbie.render({ 
+  element: document.querySelector('.GEM-stedenbouwkundige'),
+  id: "cKYxLcB",
+});
+
+nebbie.render({ 
+  element: document.querySelector('.GEM-stedenbouwkundigeinspec'),
+  id: "mXXuFgn",
+});
+
+nebbie.render({ 
+  element: document.querySelector('.GEM-totaalvtero'),
+  id: "Svt",
+});
+
+nebbie.render({ 
+  element: document.querySelector('.GEM-charttotaalvtero'),
+  id: "fdrJW",
+});
+nebbie.render({ 
+  element: document.querySelector('.Gem-ro-klachten'),
+  id: "GBZEvm",
+});
+nebbie.render({ 
+  element: document.querySelector('.Gem-ro-controles'),
+  id: "pYcZZVf",
+});
+
+nebbie.render({ 
+  element: document.querySelector('.Gem-ro-AAcontroles'),
+  id: "sPvuYp",
+});
+nebbie.render({ 
+  element: document.querySelector('.Gem-ro-barcontroles'),
+  id: "myXZwVj",
+});
+nebbie.render({ 
+  element: document.querySelector('.Gem-ro-overtredingsgraad'),
+  id: "VRpG",
+});
+
 }
