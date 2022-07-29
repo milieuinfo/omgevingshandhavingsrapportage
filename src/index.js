@@ -131,13 +131,6 @@ const routes = [
     },
   },
   {
-    path: "/privacy",
-    component: "privacy-view",
-    action: async () => {
-      await import("./views/privacy");
-    },
-  },
-  {
     path: "/public/provinciaalAnalyse",
     component: "provinciaalAnalyse-view",
     action: async () => {
