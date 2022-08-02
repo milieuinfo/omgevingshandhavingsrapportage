@@ -817,7 +817,6 @@ nebbie.render({
   
 });
 
-
 nebbie.render({ 
   element: document.querySelector('.GEM-ControlesBar'),
   id: "RgmLzT",
@@ -890,7 +889,6 @@ nebbie.render({
   element: document.querySelector('.GEM-Vebalitisanten'),
   id: "VmPkER",
 });
-
 
 nebbie.render({ 
   element: document.querySelector('.GEM-stedenbouwkundige'),
