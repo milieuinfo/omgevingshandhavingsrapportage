@@ -63,14 +63,59 @@ render() {
                                       </div>
                                   </vl-info-tile>
                               </div>
-                              <div is="vl-column" data-vl-size=6>
-                                  <vl-info-tile data-vl-auto-open=true>
-                                      <div slot="content">
-                                          <div class="listboxGEMGAS listboxProvStyle"></div>
-                                      </div>
-                                  </vl-info-tile>
-                              </div></div>
+                              </div>
                       </section>
+                      <section id="content-1-2" is="vl-region">
+                      
+                      <div is="vl-grid">
+                          <div is="vl-column data-vl-size=12 class=" data-top-bot">
+                              <vl-infoblock data-vl-title="GAS-reglement - milieugerelateerde overlast "
+                                  data-vl-icon="business-graph-bar">
+                              </vl-infoblock>
+                          </div>
+                      </div>
+
+                      <div is="vl-grid">
+                          <div is="vl-column" data-vl-size=12 class="data-top-bot">
+                              <vl-info-tile data-vl-auto-open=true>
+                                  <span slot="title">GAS-reglement - milieugerelateerde overlast </span>
+                                  <div slot="content">
+                                      
+                                      <div class="GEM-Bar-GAS chart"></div>
+                                  </div>
+                              </vl-info-tile>
+                          </div></div>
+
+                          <div is="vl-grid">
+                          <div is="vl-column" data-vl-size=4 class="data-top-bot">
+                              <vl-info-tile data-vl-auto-open=true>
+                                  <span slot="title">Klasse 1 - Inrichtingen</span>
+                                  <div slot="content">
+                                      <img class="icon" src="">
+                                      <div class="GEM-KPI-Klasse1 object"></div>
+                                  </div>
+                              </vl-info-tile>
+                          </div>
+                          <div is="vl-column" data-vl-size=4 class="data-top-bot">
+                          <vl-info-tile data-vl-auto-open=true>
+                              <span slot="title">Klasse 2 - Inrichtingen</span>
+                              <div slot="content">
+                                  <img class="icon" src="">
+                                  <div class="GEM-KPI-Klasse2 object"></div>
+                              </div>
+                          </vl-info-tile>
+                      </div>
+                      <div is="vl-column" data-vl-size=4 class="data-top-bot">
+                      <vl-info-tile data-vl-auto-open=true>
+                          <span slot="title">Klasse 3 - Inrichtingen</span>
+                          <div slot="content">
+                              <img class="icon" src="">
+                              <div class="GEM-KPI-Klasse3 object"></div>
+                          </div>
+                      </vl-info-tile>
+                  </div>
+                      </div>
+                  </section>
                       <section id="content-1-2" is="vl-region">
                       <h3 is="vl-h3">Cijfers voor milieu handhaving</h3>
                       <div is="vl-grid">
@@ -141,7 +186,7 @@ render() {
                           </div>
   
                           <div is="vl-grid">
-                              <div is="vl-column" data-vl-size=6 class="data-top-bot">
+                              <div is="vl-column" data-vl-size=5 class="data-top-bot">
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Aantal toezichthouders</span>
                                       <div slot="content">
@@ -150,7 +195,7 @@ render() {
                                       </div>
                                   </vl-info-tile>
                               </div>
-                              <div is="vl-column" data-vl-size=6 class="data-top-bot">
+                              <div is="vl-column" data-vl-size=7 class="data-top-bot">
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Totaal VTE</span>
                                       <div slot="content">
@@ -197,7 +242,7 @@ render() {
                           </div>
   
                           <div is="vl-grid">
-                              <div is="vl-column" data-vl-size=4>
+                              <div is="vl-column" data-vl-size=5>
   
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Aantal klachten
@@ -207,8 +252,14 @@ render() {
                                           <div class="GEM-klachten object"></div>
                                       </div>
                                   </vl-info-tile>
+                                  <vl-info-tile data-vl-auto-open=true>
+                                  <div slot="content">
+                                      <div class="GEM-Klachten-pie chartTabelsm"></div>
+                                  </div>
+                              </vl-info-tile>
+                                  
                               </div>
-                              <div is="vl-column" data-vl-size=8>
+                              <div is="vl-column" data-vl-size=7>
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Aantal klachten per milieucategorie</span>
   
@@ -232,7 +283,7 @@ render() {
                           </div>
   
                           <div is="vl-grid">
-                              <div is="vl-column" data-vl-size=4>
+                              <div is="vl-column" data-vl-size=5>
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Aantal controles
   
@@ -242,14 +293,20 @@ render() {
                                           <div class="GEM-controles object"></div>
                                       </div>
                                   </vl-info-tile>
+                                  <vl-info-tile data-vl-auto-open=true>
+                                  <div slot="content">
+                                      <div class="GEM-Controles-pie chartTabelsm"></div>
+                                  </div>
+                              </vl-info-tile>
                               </div>
-                              <div is="vl-column" data-vl-size=8>
+                              <div is="vl-column" data-vl-size=7>
                                   <vl-info-tile data-vl-auto-open=true><span slot="title">Verdeling controles per
                                           categorie</span>
                                       <div slot="content">
                                           <div class="GEM-ControlesBar chart"></div>
                                       </div>
                                   </vl-info-tile>
+                                 
                               </div>
                           </div>
                       </section>
@@ -268,7 +325,7 @@ render() {
                           </div>
   
                           <div is="vl-grid">
-                              <div is="vl-column" data-vl-size=4>
+                              <div is="vl-column" data-vl-size=5>
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Verdeling controles per categorie</span>
                                       <div slot="content">
@@ -276,9 +333,14 @@ render() {
                                           <div class="GEM-AAControles object"></div>
                                       </div>
                                   </vl-info-tile>
+                                  <vl-info-tile data-vl-auto-open=true>
+                                  <div slot="content">
+                                      <div class="GEM-AAControles-pie chartTabelsm"></div>
+                                  </div>
+                              </vl-info-tile>
                               </div>
   
-                              <div is="vl-column" data-vl-size=8>
+                              <div is="vl-column" data-vl-size=7>
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Verdeling controles per categorie</span>
                                       <div slot="content">
@@ -301,12 +363,16 @@ render() {
                               </div>
                           </div>
                           <div is="vl-grid">
+                          <h4 is="vl-h4">Gemeente</h4>
+
+                          </div>
+                          <div is="vl-grid">
                               <div is="vl-column" data-vl-size=3>
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Raadgeving</span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-Kalender.png">
-                                          <div class="GEM-Raadgeving object"></div>
+                                          <div class="GEM-RaadgevingGEM object"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -316,19 +382,16 @@ render() {
                                       <span slot="title">Aanmaning</span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-Kalender.png">
-                                          <div class="GEM-Aanmaning object"></div>
+                                          <div class="GEM-AanmaningGEM object"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
-  
-  
-  
                               <div is="vl-column" data-vl-size=3>
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Proces-verbaal</span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-time-out.png">
-                                          <div class="GEM-pv object"></div>
+                                          <div class="GEM-pvGEM object"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -337,20 +400,21 @@ render() {
                                       <span slot="title">Verslag van vaststelling</span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-klipbord.png">
-                                          <div class="GEM-verslagvastelling objectinstrumentarium"></div>
+                                          <div class="GEM-verslagvastellingGEM objectinstrumentarium"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
                           </div>
   
                           <br>
+                          
                           <div is="vl-grid">
                               <div is="vl-column" data-vl-size=4>
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Bestuurlijk maatregel</span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-risicoanalyse.png">
-                                          <div class="GEM-bestuurlijkmaatregel object"></div>
+                                          <div class="GEM-bestuurlijkmaatregelGEM object"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -360,7 +424,7 @@ render() {
   
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-risicoanalyse.png">
-                                          <div class="GEM-bestuurlijkmaatregelmet objectinstrumentarium">
+                                          <div class="GEM-bestuurlijkmaatregelmetGEM objectinstrumentarium">
                                           </div>
                                       </div>
                                   </vl-info-tile>
@@ -371,24 +435,210 @@ render() {
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-risicoanalyse.png">
                                           <div
-                                              class="GEM-bestuurlijkmaatregelzonder objectinstrumentarium">
+                                              class="GEM-bestuurlijkmaatregelzonderGEM objectinstrumentarium">
                                           </div>
                                       </div>
                                   </vl-info-tile>
                               </div>
                           </div>
                           <br>
+                         
                           <div is="vl-grid">
                               <div is="vl-column" data-vl-size=4>
                                   <vl-info-tile data-vl-auto-open=true><span slot="title">Veiligheidsmaatregel</span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-opgepast.png">
-                                          <div class="GEM-veiligheids object"></div>
+                                          <div class="GEM-veiligheidsGEM object"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
                           </div>
   
+                          <div is="vl-grid" class="data-top-bot">
+                          <h4 is="vl-h4">Intergemeentelijke vereniging</h4>
+                          </div>
+
+                          <div is="vl-grid">
+                          <div is="vl-column" data-vl-size=3>
+                              <vl-info-tile data-vl-auto-open=true>
+                                  <span slot="title">Raadgeving</span>
+                                  <div slot="content">
+                                      <img class="icon" src="assets/icons/PNG-Kalender.png">
+                                      <div class="GEM-RaadgevingIGS object"></div>
+                                  </div>
+                              </vl-info-tile>
+                          </div>
+
+                          <div is="vl-column" data-vl-size=3>
+                              <vl-info-tile data-vl-auto-open=true>
+                                  <span slot="title">Aanmaning</span>
+                                  <div slot="content">
+                                      <img class="icon" src="assets/icons/PNG-Kalender.png">
+                                      <div class="GEM-AanmaningIGS object"></div>
+                                  </div>
+                              </vl-info-tile>
+                          </div>
+                          <div is="vl-column" data-vl-size=3>
+                              <vl-info-tile data-vl-auto-open=true>
+                                  <span slot="title">Proces-verbaal</span>
+                                  <div slot="content">
+                                      <img class="icon" src="assets/icons/PNG-time-out.png">
+                                      <div class="GEM-pvIGS object"></div>
+                                  </div>
+                              </vl-info-tile>
+                          </div>
+                          <div is="vl-column" data-vl-size=3>
+                              <vl-info-tile data-vl-auto-open=true>
+                                  <span slot="title">Verslag van vaststelling</span>
+                                  <div slot="content">
+                                      <img class="icon" src="assets/icons/PNG-klipbord.png">
+                                      <div class="GEM-verslagvastellingIGS objectinstrumentarium"></div>
+                                  </div>
+                              </vl-info-tile>
+                          </div>
+                      </div>
+
+                      <br>
+                      
+                      <div is="vl-grid">
+                          <div is="vl-column" data-vl-size=4>
+                              <vl-info-tile data-vl-auto-open=true>
+                                  <span slot="title">Bestuurlijk maatregel</span>
+                                  <div slot="content">
+                                      <img class="icon" src="assets/icons/PNG-risicoanalyse.png">
+                                      <div class="GEM-bestuurlijkmaatregelIGS object"></div>
+                                  </div>
+                              </vl-info-tile>
+                          </div>
+                          <div is="vl-column" data-vl-size=4>
+                              <vl-info-tile data-vl-auto-open=true><span slot="title">Bestuurlijk maatregel met
+                                      dwangsom </span>
+
+                                  <div slot="content">
+                                      <img class="icon" src="assets/icons/PNG-risicoanalyse.png">
+                                      <div class="GEM-bestuurlijkmaatregelmetIGS objectinstrumentarium">
+                                      </div>
+                                  </div>
+                              </vl-info-tile>
+                          </div>
+                          <div is="vl-column" data-vl-size=4>
+                              <vl-info-tile data-vl-auto-open=true>
+                                  <span slot="title">Bestuurlijk maatregel zonder dwangsom</span>
+                                  <div slot="content">
+                                      <img class="icon" src="assets/icons/PNG-risicoanalyse.png">
+                                      <div
+                                          class="GEM-bestuurlijkmaatregelzonderIGS objectinstrumentarium">
+                                      </div>
+                                  </div>
+                              </vl-info-tile>
+                          </div>
+                      </div>
+                      <br>
+                     
+                      <div is="vl-grid">
+                          <div is="vl-column" data-vl-size=4>
+                              <vl-info-tile data-vl-auto-open=true><span slot="title">Veiligheidsmaatregel</span>
+                                  <div slot="content">
+                                      <img class="icon" src="assets/icons/PNG-opgepast.png">
+                                      <div class="GEM-veiligheidsIGS object"></div>
+                                  </div>
+                              </vl-info-tile>
+                          </div>
+                      </div>
+
+                      <div is="vl-grid" class="data-top-bot">
+                      <h4 is="vl-h4">Lokale politie</h4>
+                      </div>
+
+                      <div is="vl-grid">
+                      <div is="vl-column" data-vl-size=3>
+                          <vl-info-tile data-vl-auto-open=true>
+                              <span slot="title">Raadgeving</span>
+                              <div slot="content">
+                                  <img class="icon" src="assets/icons/PNG-Kalender.png">
+                                  <div class="GEM-RaadgevingLP object"></div>
+                              </div>
+                          </vl-info-tile>
+                      </div>
+
+                      <div is="vl-column" data-vl-size=3>
+                          <vl-info-tile data-vl-auto-open=true>
+                              <span slot="title">Aanmaning</span>
+                              <div slot="content">
+                                  <img class="icon" src="assets/icons/PNG-Kalender.png">
+                                  <div class="GEM-AanmaningLP object"></div>
+                              </div>
+                          </vl-info-tile>
+                      </div>
+                      <div is="vl-column" data-vl-size=3>
+                          <vl-info-tile data-vl-auto-open=true>
+                              <span slot="title">Proces-verbaal</span>
+                              <div slot="content">
+                                  <img class="icon" src="assets/icons/PNG-time-out.png">
+                                  <div class="GEM-pvLP object"></div>
+                              </div>
+                          </vl-info-tile>
+                      </div>
+                      <div is="vl-column" data-vl-size=3>
+                          <vl-info-tile data-vl-auto-open=true>
+                              <span slot="title">Verslag van vaststelling</span>
+                              <div slot="content">
+                                  <img class="icon" src="assets/icons/PNG-klipbord.png">
+                                  <div class="GEM-verslagvastellingLP objectinstrumentarium"></div>
+                              </div>
+                          </vl-info-tile>
+                      </div>
+                  </div>
+
+                  <br>
+                  
+                  <div is="vl-grid">
+                      <div is="vl-column" data-vl-size=4>
+                          <vl-info-tile data-vl-auto-open=true>
+                              <span slot="title">Bestuurlijk maatregel</span>
+                              <div slot="content">
+                                  <img class="icon" src="assets/icons/PNG-risicoanalyse.png">
+                                  <div class="GEM-bestuurlijkmaatregelLP object"></div>
+                              </div>
+                          </vl-info-tile>
+                      </div>
+                      <div is="vl-column" data-vl-size=4>
+                          <vl-info-tile data-vl-auto-open=true><span slot="title">Bestuurlijk maatregel met
+                                  dwangsom </span>
+
+                              <div slot="content">
+                                  <img class="icon" src="assets/icons/PNG-risicoanalyse.png">
+                                  <div class="GEM-bestuurlijkmaatregelmetLP objectinstrumentarium">
+                                  </div>
+                              </div>
+                          </vl-info-tile>
+                      </div>
+                      <div is="vl-column" data-vl-size=4>
+                          <vl-info-tile data-vl-auto-open=true>
+                              <span slot="title">Bestuurlijk maatregel zonder dwangsom</span>
+                              <div slot="content">
+                                  <img class="icon" src="assets/icons/PNG-risicoanalyse.png">
+                                  <div
+                                      class="GEM-bestuurlijkmaatregelzonderLP objectinstrumentarium">
+                                  </div>
+                              </div>
+                          </vl-info-tile>
+                      </div>
+                  </div>
+                  <br>
+                 
+                  <div is="vl-grid">
+                      <div is="vl-column" data-vl-size=4>
+                          <vl-info-tile data-vl-auto-open=true><span slot="title">Veiligheidsmaatregel</span>
+                              <div slot="content">
+                                  <img class="icon" src="assets/icons/PNG-opgepast.png">
+                                  <div class="GEM-veiligheidsLP object"></div>
+                              </div>
+                          </vl-info-tile>
+                      </div>
+                  </div>
+
+
                       </section>
   
                       <section id="content-2" is="vl-region">
@@ -420,19 +670,41 @@ render() {
                                       </div>
                                   </vl-info-tile>
                               </div>
+                              <div is="vl-column" data-vl-size=8>
+                              <vl-info-tile data-vl-auto-open=true>
+                                 
+                                  <div slot="content">
+                                      
+                                      <div class="GEM-PIE-Verbalitisanten chartTabelsm"></div>
+                                  </div>
+                              </vl-info-tile>
+                          </div>
+                          </div>
+                          <div is="vl-grid" class="data-top-bot">
+                             
+                          <div is="vl-column" data-vl-size=4>
+                              <vl-info-tile data-vl-auto-open=true>
+                              <span slot="title">Stedenbouwkundige inspecteurs<span
+                                          slot="subtitle">
+                                      </span></span>
+                                  <div slot="content">
+                                      <div class="GEM-stedenbouwkundige object"></div>
+                                  </div>
+                              </vl-info-tile>
+                          </div>
+                          <div is="vl-column" data-vl-size=8>
+                              <vl-info-tile data-vl-auto-open=true>
+                                  
+                                  <div slot="content">
+                                      <div class="GEM-PIE-StedenBKVerb chartTabelsm"></div>
+                                  </div>
+                              </vl-info-tile>
+                          </div>
+                      </div>
+                          <div is="vl-grid" class="data-top-bot">
                               <div is="vl-column" data-vl-size=4>
                                   <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Stedenbouwkundige inspecteurs<span slot="subtitle">
-                                          </span></span>
-                                      <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-natuurlijke persoon.png">
-                                          <div class="GEM-stedenbouwkundige objectinstrumentarium"></div>
-                                      </div>
-                                  </vl-info-tile>
-                              </div>
-                              <div is="vl-column" data-vl-size=4>
-                                  <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Stedenbouwkundige inspecteurs/Verbalitisanten<span
+                                      <span slot="title">Stedenbouwkundige inspecteurs/Verbalisanten<span
                                               slot="subtitle">
                                           </span></span>
                                       <div slot="content">
@@ -441,7 +713,17 @@ render() {
                                       </div>
                                   </vl-info-tile>
                               </div>
+                              <div is="vl-column" data-vl-size=8>
+                                  <vl-info-tile data-vl-auto-open=true>
+                                      
+                                      <div slot="content">
+                                       
+                                          <div class="GEM-PIE-StedenBK chartTabelsm"></div>
+                                      </div>
+                                  </vl-info-tile>
+                              </div>
                           </div>
+                         
                       </section>
   
                       <section id="content-3-2" is="vl-region">
@@ -562,10 +844,7 @@ render() {
                           </div>
                       </div>
 
-
                       <div is="vl-grid">
-
-
                           <div is="vl-column" data-vl-size=12>
                               <vl-info-tile data-vl-auto-open=true><span slot="title">Overtredingsgraad<span
                                           slot="subtitle">
@@ -578,11 +857,9 @@ render() {
                               </vl-info-tile>
                           </div>
                       </div>
-
                   </section>
-                      <!--
+                    
                       <section id="content-3-5" is="vl-region">
-  
                           <div is="vl-grid">
                               <div is="vl-column" data-vl-size=12 class="data-top-bot">
                                   <vl-infoblock data-vl-title="Instrumentarium" data-vl-icon="business-graph-bar">
@@ -593,7 +870,7 @@ render() {
                               </div>
                           </div>
   
-  
+                        <!--
                           <div is="vl-grid">
                               <div is="vl-column" data-vl-size=3>
                                   <vl-info-tile data-vl-auto-open=true><span slot="title">Raadgeving<span slot="subtitle">
@@ -743,9 +1020,9 @@ render() {
                                   </vl-info-tile>
                               </div>
   
-                          </div>
+                          </div>-->
   
-                      </section>-->
+                      </section>
   
                       <section is="vl-region" id="content-4">
                           <h3 is="vl-h3">Bekijk cijfers voor andere thema's</h3>
