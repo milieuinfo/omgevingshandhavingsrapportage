@@ -775,10 +775,6 @@ async function gemeentendashboard() {
  (await nebbie.field(fieldNameProvincie))
  .mount(document.querySelector('.listboxGEM'),{search:true,title:"Gemeente",checkboxes:false});
 
- const fieldNameGAS = 'Gas-Regelement - Milieugerelateerde overlast'; // Should refer to a field in your app
- (await nebbie.field(fieldNameGAS))
- .mount(document.querySelector('.listboxGEMGAS'),{search:false,title:"GAS - milieugerelateerde overlast",checkboxes:false});
-
  nebbie.render({ 
   element: document.querySelector('.GEM-Toezicthouders'),
   id: "GtNeXHa",
