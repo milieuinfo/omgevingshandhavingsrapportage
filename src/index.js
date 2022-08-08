@@ -755,6 +755,7 @@ async function gemeentendashboard() {
    ).length > 0;
    let app;
    app = await connect(config);
+   
    /*Set theme to charts*/
  const nebbie = stardust.embed(app, {
      types,
@@ -764,10 +765,11 @@ async function gemeentendashboard() {
        theme: 'light',
      },
    });
+   
   if(!classExistsInit) {
     //Get toolbar of application and define it as a class of toolbar => To be used in HTML page
   (await nebbie.selections().then((s) => s.mount(document.querySelector('.toolbar'))));
-}
+
 
  /* Get fieldvalues of the field Naam Gemeente in Qlik model and mount it in placeholder listbox*/
  
@@ -778,6 +780,38 @@ async function gemeentendashboard() {
  nebbie.render({ 
   element: document.querySelector('.GEM-Toezicthouders'),
   id: "GtNeXHa",
+});
+
+nebbie.render({ 
+  element: document.querySelector('.GEM-Bar-GAS'),
+  id: "JPXeWk",
+});
+
+nebbie.render({ 
+  element: document.querySelector('.GEM-KPI-Klasse1'),
+  id: "nawRLV",
+});
+
+nebbie.render({ 
+  element: document.querySelector('.GEM-KPI-Klasse2'),
+  id: "BSvPAHp",
+});
+nebbie.render({ 
+  element: document.querySelector('.GEM-KPI-Klasse3'),
+  id: "ujXmqs",
+});
+nebbie.render({ 
+  element: document.querySelector('.GEM-Klachten-pie'),
+  id: "jQdLF",
+});
+nebbie.render({ 
+  element: document.querySelector('.GEM-Controles-pie'),
+  id: "wvuFWcw",
+});
+
+nebbie.render({ 
+  element: document.querySelector('.GEM-AAControles-pie'),
+  id: "FKJAgf",
 });
 
 nebbie.render({ 
@@ -812,7 +846,6 @@ nebbie.render({
   id: "WhgamS",
   
 });
-
 nebbie.render({ 
   element: document.querySelector('.GEM-ControlesBar'),
   id: "RgmLzT",
@@ -823,37 +856,105 @@ nebbie.render({
 });
 
 nebbie.render({ 
-  element: document.querySelector('.GEM-Raadgeving'),
+  element: document.querySelector('.GEM-RaadgevingGEM'),
   id: "EqXUZq",
 });
+nebbie.render({ 
+  element: document.querySelector('.GEM-RaadgevingIGS'),
+  id: "AgXjnnC",
+});
+nebbie.render({ 
+  element: document.querySelector('.GEM-RaadgevingLP'),
+  id: "AcQWjU",
+});
 
 nebbie.render({ 
-  element: document.querySelector('.GEM-Aanmaning'),
+  element: document.querySelector('.GEM-AanmaningGEM'),
   id: "QxmppR",
 });
-
 nebbie.render({ 
-  element: document.querySelector('.GEM-pv'),
-  id: "LDtznSZ",
+  element: document.querySelector('.GEM-AanmaningIGS'),
+  id: "UxkmGT",
+});
+nebbie.render({ 
+  element: document.querySelector('.GEM-AanmaningLP'),
+  id: "mtVpjT",
 });
 
 nebbie.render({ 
-  element: document.querySelector('.GEM-bestuurlijkmaatregel'),
-  id: "PzymKk",
+  element: document.querySelector('.GEM-pvGEM'),
+  id: "MQxJKJ",
+});
+nebbie.render({ 
+  element: document.querySelector('.GEM-pvIGS'),
+  id: "HYQSX",
+});
+nebbie.render({ 
+  element: document.querySelector('.GEM-pvLP'),
+  id: "pdXc",
 });
 
 nebbie.render({ 
-  element: document.querySelector('.GEM-bestuurlijkmaatregelzonder'),
-  id: "FktUZc",
+  element: document.querySelector('.GEM-bestuurlijkmaatregelGEM'),
+  id: "ywktLz",
+});
+nebbie.render({ 
+  element: document.querySelector('.GEM-bestuurlijkmaatregelIGS'),
+  id: "QpqBt",
+});
+nebbie.render({ 
+  element: document.querySelector('.GEM-bestuurlijkmaatregelLP'),
+  id: "PeVCcVw",
 });
 
 nebbie.render({ 
-  element: document.querySelector('.GEM-bestuurlijkmaatregelmet'),
-  id: "nKRnXj",
+  element: document.querySelector('.GEM-bestuurlijkmaatregelzonderGEM'),
+  id: "ptTCeM",
 });
 nebbie.render({ 
-  element: document.querySelector('.GEM-veiligheids'),
-  id: "PdFpSe",
+  element: document.querySelector('.GEM-bestuurlijkmaatregelzonderIGS'),
+  id: "jebuf",
+});
+nebbie.render({ 
+  element: document.querySelector('.GEM-bestuurlijkmaatregelzonderLP'),
+  id: "eVSmDJy",
+});
+
+nebbie.render({ 
+  element: document.querySelector('.GEM-bestuurlijkmaatregelmetGEM'),
+  id: "pBwU",
+});
+nebbie.render({ 
+  element: document.querySelector('.GEM-bestuurlijkmaatregelmetIGS'),
+  id: "BxmSrM",
+});
+nebbie.render({ 
+  element: document.querySelector('.GEM-bestuurlijkmaatregelmetLP'),
+  id: "VFjDssL",
+});
+nebbie.render({ 
+  element: document.querySelector('.GEM-veiligheidsGEM'),
+  id: "hSjPNuJ",
+});
+nebbie.render({ 
+  element: document.querySelector('.GEM-veiligheidsIGS'),
+  id: "pswvgAp",
+});
+nebbie.render({ 
+  element: document.querySelector('.GEM-veiligheidsLP'),
+  id: "aNCJtYU",
+});
+nebbie.render({ 
+  element: document.querySelector('.GEM-PIE-Verbalitisanten'),
+  id: "YKcxBs",
+});
+nebbie.render({ 
+  element: document.querySelector('.GEM-PIE-StedenBK'),
+  id: "MazX",
+});
+nebbie.render({ 
+  element: document.querySelector('.GEM-PIE-StedenBKVerb'),
+  id: "JpbAjkH",
 });
 
 nebbie.render({ 
@@ -877,14 +978,23 @@ nebbie.render({
 
 
 nebbie.render({ 
-  element: document.querySelector('.GEM-verslagvastelling'),
-  id: "bJJPTT",
+  element: document.querySelector('.GEM-verslagvastellingGEM'),
+  id: "YBbmqpJ",
+});
+nebbie.render({ 
+  element: document.querySelector('.GEM-verslagvastellingIGS'),
+  id: "ackyug",
+});
+nebbie.render({ 
+  element: document.querySelector('.GEM-verslagvastellingLP'),
+  id: "QrkRHsD",
 });
 
 nebbie.render({ 
   element: document.querySelector('.GEM-Vebalitisanten'),
   id: "VmPkER",
 });
+
 
 nebbie.render({ 
   element: document.querySelector('.GEM-stedenbouwkundige'),
@@ -902,8 +1012,21 @@ nebbie.render({
 });
 
 nebbie.render({ 
+  element: document.querySelector('.GEM-BARKlachten'),
+  id: "EJUvZWY",
+});
+nebbie.render({ 
+  element: document.querySelector('.GEM-BARControles'),
+  id: "MXVjp",
+});
+nebbie.render({ 
+  element: document.querySelector('.GEM-BARAAControles'),
+  id: "fSgdsk",
+});
+
+nebbie.render({ 
   element: document.querySelector('.GEM-charttotaalvtero'),
-  id: "fdrJW",
+  id: "sjckS",
 });
 nebbie.render({ 
   element: document.querySelector('.Gem-ro-klachten'),
