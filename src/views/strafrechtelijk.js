@@ -8,30 +8,15 @@ export class StrafrechtelijkAnalyseView extends LitElement {
   render() {
     return page({
       children: html`   
-      <section is="vl-region">
+     <section is="vl-region">
       <div is="vl-layout">
           <div is="vl-grid" data-vl-is-stacked>
               <div is="vl-column" data-vl-size="8" data-vl-medium-size="8" data-vl-small-size="8"
                   data-vl-extra-small-size="12">
                   <div is="vl-side-navigation-reference">
                       <section id="content-1" is="vl-region">
-                          <h3 is="vl-h3">Strafrechtelijk en bestuurlijk vervolgtraject</h3>
-                          <div is="vl-grid">
-                              <div is="vl-column">
-                                  <div style="max-width: 400px" id="content-2" class="data-top-bot">
-                                      <a is="vl-doormat" href="/public/strafrechtelijkAnalyse">
-                                          <h2 is="vl-doormat-title">Analyseer de cijfers</h2>
-                                          <div is="vl-doormat-text">
-                                              Bekijk de cijfers voor strafrechtelijk en bestuurlijk vervolgtraject
-                                          </div>
-                                      </a>
-                                  </div>
-                              </div>
-                          </div>
-                      </section>
-  
-                      <section id="content-1-1" is="vl-region">
-                          <h3 is="vl-h3">Over de cijfers en procedure</h3>
+                          <h3 is="vl-h3">Strafrechtelijke en bestuurlijke vervolgtraject</h3>
+                          <h4 is="vl-h4">Over de cijfers en procedure</h3>
   
                           <vl-typography>
                               <p>
@@ -39,8 +24,8 @@ export class StrafrechtelijkAnalyseView extends LitElement {
                               </p>
                               <ul>
                                   <li>Het proces-verbaal dat werd opgemaakt bij de vaststelling van een misdrijf en dat
-                                      wordt overgemaakt aan de parketten bij de rechtebanken van eerste aanleg met het oog
-                                      op een strafrechtelijke afhandeling</li>
+                                      wordt overgemaakt aan de parketten bij de rechtbanken van eerste aanleg met het oog
+                                      op een strafrechtelijke afhandeling.</li>
                                   <li>
                                       het verslag van vastelling dat werd opgemaakt bij de vastelling van een inbreuk en
                                       dat wordt overgemaakt aan de gewestelijke beboetingsentiteit met het oog op een
@@ -285,9 +270,20 @@ export class StrafrechtelijkAnalyseView extends LitElement {
                               </switch>
                           </svg>
                       </section>
-  
-  
-  
+                      <section>
+                      <div is="vl-grid">
+                      <div is="vl-column">
+                          <div style="max-width: 400px" id="content-2" class="data-top-bot">
+                              <a is="vl-doormat" href="/public/strafrechtelijkAnalyse">
+                                  <h2 is="vl-doormat-title">Analyseer de cijfers</h2>
+                                  <div is="vl-doormat-text">
+                                      Bekijk de cijfers inzake het strafrechtelijke en bestuurlijke vervolgtraject.
+                                  </div>
+                              </a>
+                          </div>
+                      </div>
+                    </div>
+                    <section>
                   </div>
               </div>
               <div is="vl-column" data-vl-size="4" data-vl-medium-size="4" data-vl-small-size="4"
@@ -298,19 +294,14 @@ export class StrafrechtelijkAnalyseView extends LitElement {
                           <ul is="vl-side-navigation-group">
                               <li is="vl-side-navigation-item" data-vl-parent="content-1">
                                   <a is="vl-side-navigation-toggle" href="#content-1" data-vl-child="content-1">
-                                      Strafrechtelijk en bestuurlijk vervolgtraject
+                                      Strafrechtelijk en bestuurlijke vervolgtraject
                                       <i class="vl-vi vl-vi-arrow-right-fat"></i>
                                   </a>
                                   <ul>
                                       <li is="vl-side-navigation-item">
                                           <div>
                                               <a href="#content-1-1" data-vl-parent="content-1">Over cijfers en
-                                                  grafieken</a>
-                                          </div>
-                                      </li>
-                                      <li is="vl-side-navigation-item">
-                                          <div>
-                                              <a href="#content-1-2" data-vl-parent="content-1">Bekijk de cijfers</a>
+                                                  procedure</a>
                                           </div>
                                       </li>
                                   </ul>
