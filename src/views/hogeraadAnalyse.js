@@ -25,11 +25,8 @@ export class HogeraadAnalyseView extends LitElement {
                       <section id="content-1" is="vl-region">
                           <h2 is="vl-h2">Een wegwijzer doorheen de cijfers en grafieken</h2>
                           <p>
-                              Deze pagina toont een inzichtelijke beeld over de cijfers van hoge raad van
-                              handhavingsuitvoeringen.
-                              De grafieken zijn volledig interactief en de cijfers zullen worden gewijzigd naargelang de
-                              gekozen filtering.
-                              Uw aangeduide filtering kan op elk moment verwijderd worden met de selectiebalk hieronder.
+                              Deze pagina toont een overzichtelijk beeld van de activiteiten van de Hoge Raad voor 
+                              de Handhavingsuitvoering in het voorafgaande jaar.
                           </p>
                       </section>
   
@@ -72,8 +69,8 @@ export class HogeraadAnalyseView extends LitElement {
                       </section>
   
                       <section is="vl-region" id="content-4">
-                          <h3 is="vl-h3">Bekijk cijfers voor andere thema's</h3>
-                          <vl-alert data-vl-icon="info-circle" data-vl-title="Bekijk de cijfers van andere thema's"
+            
+                          <vl-alert data-vl-icon="info-circle" data-vl-title="Cijfers andere handhavingsactoren"
                               data-vl-type="info">
                               <p>
                                   <a is="vl-link-button" href="/public/gewestelijk">per gewest</a>
@@ -86,6 +83,14 @@ export class HogeraadAnalyseView extends LitElement {
                                       vervolgtraject</a>
                               </p>
                           </vl-alert>
+                          <vl-alert
+                          
+                          data-vl-icon="info-circle"
+                          data-vl-title="Download de data"
+                          data-vl-type="info"
+                        >
+                          <p><a href="/documents/Data Hoge Raad.zip" download>Download de data</a></p>
+                        </vl-alert>
                       </section>
                   </div>
               </div>

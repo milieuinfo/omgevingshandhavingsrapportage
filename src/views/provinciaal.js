@@ -30,7 +30,7 @@ export class Provinciaal extends LitElement {
                           <div is="vl-grid">
                               <div is="vl-column">
                                   <div style="max-width: 600px">
-                                      <a is="vl-doormat" href="/provinciaalAnalyse">
+                                      <a is="vl-doormat" href="/public/provinciaalAnalyse">
                                           <h2 is="vl-doormat-title">Analyseer de cijfers</h2>
                                           <div is="vl-doormat-text">
                                             De cijfers geven een totaalbeeld van de handhavingsactiviteiten van de provincies samen in het voorgaande jaar. Bij selectie van een provincie, wordt in de individuele handhavingsfiche van deze provincie gerapporteerd over de uitvoering van de handhavingsactiviteiten in het voorgaande jaar.
