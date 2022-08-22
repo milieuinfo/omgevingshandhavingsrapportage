@@ -7,7 +7,7 @@ export class Gewestelijk extends LitElement {
     return page({
       children: html`
 
-      <section is="vl-region">
+     <section is="vl-region">
     <div is="vl-layout">
         <div is="vl-grid" data-vl-is-stacked>
             <div is="vl-column" data-vl-size="8" data-vl-medium-size="8" data-vl-small-size="8"
@@ -19,25 +19,13 @@ export class Gewestelijk extends LitElement {
                                 Verschillende gewestelijke actoren hebben handhavingsbevoegdheden ten aanzien van de
                                 milieuregelgeving en/of de regelgeving inzake ruimtelijke ordening.
                             </p>
-                            <div style="max-width: 500px" id="content-1-2" class="data-top-bot">
-                                <a is="vl-doormat" href="/public/gewestelijkanalyse" ?data-vl-alt="alt">
-                                    <h2 is="vl-doormat-title">Analyseer de cijfers</h2>
-                                    <div is="vl-doormat-text">
-                                        In de individuele handhavingsfiches wordt gerapporteerd over de uitvoering van
-                                        hun handhavingsactiviteiten in het voorgaand jaar. Klik op analyseer de cijfers
-                                        om de data van de individuele gewestelijke handhavingsactoren te raadplegen.
-                                    </div>
-                                </a>
-                            </div>
                     </section>
-                    <section id="content-1-3" is="vl-region">
+                    <section id="content-1-2" is="vl-region">
                         <div is="vl-grid" id="content-1">
-                            <h4 is="vl-h4">Overzichtstabel voor gewestelijke handhavingsactoren</h4>
+                            <h4 is="vl-h4">Overzichtstabel gewestelijke handhavingsactoren</h4>
                             <vl-typography>
                                 <table>
-                                    <caption>
-                                        Gewestelijke actoren
-                                    </caption>
+                                 
                                     <thead>
                                         <tr>
                                             <th>Handhavingsactor</th>
@@ -69,13 +57,13 @@ export class Gewestelijk extends LitElement {
                                                     target="_blank">Milieu</a></td>
                                         </tr>
                                         <tr>
-                                            <td>Departement Omgeving,Afdeling Gebiedsontwikkeling, Omgevingsplanning en
+                                            <td>Departement Omgeving, Afdeling Gebiedsontwikkeling, Omgevingsplanning en
                                                 -projecten</td>
                                             <td><a href="https://navigator.emis.vito.be/mijn-navigator?woId=25213&woLang=nl&woVersion=2022-03-11"
                                                     target="_blank">Milieu</a></td>
                                         </tr>
                                         <tr>
-                                            <td>Departement Omgeving,Vlaams Planbureau voor Omgeving</td>
+                                            <td>Departement Omgeving, Vlaams Planbureau voor Omgeving</td>
                                             <td><a href="https://navigator.emis.vito.be/mijn-navigator?woId=25215&woLang=nl&woVersion=2022-03-11"
                                                     target="_blank">Milieu</a></td>
                                         </tr>
@@ -96,7 +84,7 @@ export class Gewestelijk extends LitElement {
                                                     target="_blank">Milieu</a></td>
                                         </tr>
                                         <tr>
-                                            <td>Agentschap Wonen Vlaanderen - afdeling Woonkwaliteit -Vlaamse
+                                            <td>Agentschap Wonen Vlaanderen - Afdeling Woonkwaliteit - Vlaamse
                                                 Wooninspectie</td>
                                             <td><a href="https://navigator.emis.vito.be/mijn-navigator?woId=74328&woLang=nl&woVersion=2022-03-11"
                                                     target="_blank">Ruimtelijke ordening</a></td>
@@ -120,13 +108,16 @@ export class Gewestelijk extends LitElement {
                                 </table>
                             </vl-typography>
                         </div>
-                        <p is="vl-text">
-                        <p is="vl-text">
-                            In onderstaande weergave worden de gegevens van de gewestelijke handhavingsactoren gebundeld
-                            om zo een globaal beeld te krijgen van de handhavingsactiviteiten aangaande het DABM en de
-                            VCRO op gewestelijk niveau.
-                        </p>
-                        </p>
+                        <div style="max-width: 500px" id="content-1-3" class="data-top-bot">
+                        <a is="vl-doormat" href="/public/gewestelijkanalyse">
+                            <h2 is="vl-doormat-title">Analyseer de cijfers</h2>
+                            <div is="vl-doormat-text">
+                               De cijfers geven eene totaalbeeld van de handhavingsactiviteiten van de gewestelijke handhavingsactoren
+                               samen in het voorgaande jaar. Bij selectie van een actor, wordt in de individuele handhavingsfiche van deze gewestelijke
+                               handhavingsactor gerapporteerd over de uitvoering van de handhavingsactiviteiten in het voorgaande jaar.
+                            </div>
+                        </a>
+                    </div>
                     </section>
                 </div>
             </div>
@@ -149,13 +140,13 @@ export class Gewestelijk extends LitElement {
                                     </li>
                                     <li is="vl-side-navigation-item">
                                         <div>
-                                            <a href="#content-1-2" data-vl-parent="content-1">Analyseer de cijfers</a>
+                                            <a href="#content-1-2" data-vl-parent="content-1">Gewestelijke actoren
+                                            overzicht</a>
                                         </div>
                                     </li>
                                     <li is="vl-side-navigation-item">
                                         <div>
-                                            <a href="#content-1-3" data-vl-parent="content-1">Gewestelijke actoren
-                                                overzicht</a>
+                                            <a href="#content-1-3" data-vl-parent="content-1">Analyseer de cijfers</a>
                                         </div>
                                     </li>
                                 </ul>
