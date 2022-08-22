@@ -6,7 +6,7 @@ export class Provinciaal extends LitElement {
   render() {
     return page({
       children: html`
-      <section is="vl-region">
+          <section is="vl-region">
       <div is="vl-layout">
           <div is="vl-grid" data-vl-is-stacked>
               <div is="vl-column" data-vl-size="8" data-vl-medium-size="8" data-vl-small-size="8"
@@ -30,26 +30,15 @@ export class Provinciaal extends LitElement {
                           <div is="vl-grid">
                               <div is="vl-column">
                                   <div style="max-width: 600px">
-                                      <a is="vl-doormat" href="/public/provinciaalAnalyse">
+                                      <a is="vl-doormat" href="/provinciaalAnalyse">
                                           <h2 is="vl-doormat-title">Analyseer de cijfers</h2>
                                           <div is="vl-doormat-text">
-                                              In de individuele handhavingsfiches wordt gerapporteerd over de uitvoering
-                                              van hun handhavingsactiviteiten in het voorgaand jaar. Klik op analyseer de
-                                              cijfers om de data van de individuele gewestelijke handhavingsactoren te
-                                              raadplegen.
+                                            De cijfers geven een totaalbeeld van de handhavingsactiviteiten van de provincies samen in het voorgaande jaar. Bij selectie van een provincie, wordt in de individuele handhavingsfiche van deze provincie gerapporteerd over de uitvoering van de handhavingsactiviteiten in het voorgaande jaar.
                                           </div>
                                       </a>
                                   </div>
                               </div>
                           </div>
-                      </section>
-  
-                      <section id="content-1-3" is="vl-region">
-                          <p is="vl-text">
-                              In onderstaande weergave worden de gegevens van de provinciale handhavingsactoren gebundeld
-                              om zo een globaal beeld te krijgen van de handhavingsactiviteiten aangaande het DABM op
-                              provinciaal niveau.
-                          </p>
                       </section>
                   </div>
               </div>
@@ -61,7 +50,7 @@ export class Provinciaal extends LitElement {
                           <ul is="vl-side-navigation-group">
                               <li is="vl-side-navigation-item" data-vl-parent="content-1">
                                   <a is="vl-side-navigation-toggle" href="#content-1" data-vl-child="content-1">
-                                      Provinciaal handhavingsactoren
+                                      Provinciale handhavingsactoren
                                       <i class="vl-vi vl-vi-arrow-right-fat"></i>
                                   </a>
                                   <ul>
@@ -75,12 +64,6 @@ export class Provinciaal extends LitElement {
                                               <a href="#content-1-2" data-vl-parent="content-1">Analyseer de cijfers</a>
                                           </div>
                                       </li>
-                                      <li is="vl-side-navigation-item">
-                                          <div>
-                                              <a href="#content-1-3" data-vl-parent="content-1">Infographic</a>
-                                          </div>
-                                      </li>
-  
                                   </ul>
                               </li>
                           </ul>
