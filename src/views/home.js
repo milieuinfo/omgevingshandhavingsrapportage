@@ -51,35 +51,16 @@ export class Home extends LitElement {
                                   gegevens niet worden ingevuld, wordt automatisch “niet gekend” ingevuld. Indien de
                                   handhavingsactor niet
                                   ingaat op de bevraging, wordt deze actor als een non-respons weergegeven.
-                                  <br /><br />Deze bevraging levert geen 100% responsgraad op, hetgeen implicaties heeft
-                                  op de
-                                  interpreteerbaarheid van de cijfergegevens. Wanneer totalen worden getoond, betreft dit
-                                  steeds de
-                                  gerapporteerde en enkel de gekende aantallen. Bij analyses van de data dient rekening te
-                                  worden gehouden met
-                                  deze beperking.
+                               </p>
+                                <br/>
+                               <p is="vl-text">
+                               Deze bevraging levert geen 100% responsgraad op, hetgeen implicaties heeft op de interpreteerbaarheid van de cijfergegevens. Wanneer totalen worden getoond, betreft dit steeds enkel de gerapporteerde en gekende aantallen. Bij analyses van de data dient rekening te worden gehouden met deze beperking.
                               </p>
-  
+                                <br/>
                               <p is="vl-text">
-                                  De jaarlijkse invoer van de cijfers wordt verwacht in de periode april-juni. De
-                                  gepresenteerde data hebben
-                                  dan betrekking op het voorgaande kalenderjaar en op de handhavingsactiviteiten tussen 1
-                                  januari en 31
-                                  december.<br /> Wanneer evoluties over meerdere jaren worden getoond, worden de
-                                  jaartallen vermeld.
-                                  De legende van de gebruikte iconen kan hier worden teruggevonden.
-                                  In onderstaande infographic wordt de omgevingshandhavingsuitvoering in het Vlaamse
-                                  Gewest in het
-                                  voorbijgaande jaar in een notendop weergegeven.
+                              De jaarlijkse invoer van de cijfers wordt verwacht in de periode april-juni. De gepresenteerde data hebben dan betrekking op het voorgaande kalenderjaar en op de handhavingsactiviteiten tussen 1 januari en 31 december. 
+                              De data aangaande 2021 vormen een nulmeting. Door de komende jaren dezelfde data te verzamelen, zal het mogelijk worden om evoluties in de tijd te tonen.                              
                               </p>
-                      </section>
-  
-                      <section id="content-1-2" is="vl-region">
-                          <p is="vl-text">
-                              In onderstaande weergave worden de gegevens van de provinciale handhavingsactoren gebundeld
-                              om zo een globaal beeld te krijgen van de handhavingsactiviteiten aangaande het DABM op
-                              provinciaal niveau.
-                          </p>
                       </section>
                   </div>
               </div>
@@ -98,11 +79,6 @@ export class Home extends LitElement {
                                       <li is="vl-side-navigation-item">
                                           <div>
                                               <a href="#content-1-1" data-vl-parent="content-1">Inleiding</a>
-                                          </div>
-                                      </li>
-                                      <li is="vl-side-navigation-item">
-                                          <div>
-                                              <a href="#content-1-2" data-vl-parent="content-1">Infographic</a>
                                           </div>
                                       </li>
                                   </ul>
