@@ -8,27 +8,23 @@ export class HogeRaadView extends LitElement {
   render() {
     return page({
       children: html`
-      <section is="vl-region">
+        <section is="vl-region">
       <div is="vl-layout">
           <div is="vl-grid" data-vl-is-stacked>
               <div is="vl-column" data-vl-size="8" data-vl-medium-size="8" data-vl-small-size="8"
                   data-vl-extra-small-size="12">
                   <div is="vl-side-navigation-reference">
                       <section id="content-1" is="vl-region">
-                          <h3 is="vl-h3">Hoge raad voor handhavingsuitvoeringen</h2>
+                          <h3 is="vl-h3">Hoge raad voor de Handhavingsuitvoering</h2>
                               <p>
-                                  Deze pagina toont een inzichtelijke beeld over de cijfers
-                                  van de hoge raad voor handhavingsactoren. De grafieken
-                                  zijn volledig interactief en de cijfers zullen worden
-                                  gewijzigd naargelang de gekozen filtering. Uw aangeduide
-                                  filtering kan op elk moment verwijderd worden met de
-                                  selectiebalk hieronder.
+                                  Deze pagina toont een overzichtelijk beeld van de activiteiten van de Hoge Raad voor de
+                                  Handhavingsuitvoering in het voorafgaande jaar.
                               </p>
                               <br>
                               <p>
                                   Voor meer informatie over de Hoge raad voor de Handhavingsuitvoering: <br />
                                   <a is="vl-link"
-                                      href="https://www.hogeraadvoordehandhavingsuitvoering.be/over-de-hoge-raad-voor-de-handhavingsuitvoering"
+                                      href="https://www.hogeraadvoordehandhavingsuitvoering.be/over-de-hoge-raad-voor-de-handhavingsuitvoering" target="_blank"
                                       data-vl-block=true>Hoge raad voor de Handhavingsuitvoering</a>
                               </p>
                               <div is="vl-grid">
@@ -37,7 +33,7 @@ export class HogeRaadView extends LitElement {
                                           <a is="vl-doormat" href="/public/hogeraadAnalyse">
                                               <h2 is="vl-doormat-title">Analyseer de cijfers</h2>
                                               <div is="vl-doormat-text">
-                                                  Bekijk de cijfers voor hoge raad van handhavingsactiviteiten
+                                                  Bekijk de cijfers van de Hoge Raad voor de Handhavingsuitvoering
                                               </div>
                                           </a>
                                       </div>
