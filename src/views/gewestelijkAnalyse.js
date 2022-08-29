@@ -16,6 +16,7 @@ export class GewestelijkAnalyseView extends LitElement {
       data-vl-sub-title="Een analyse van de gewestelijke handhavingsactoren"
       data-vl-link="Gewestelijke handhavingsactoren">
   </vl-functional-header>
+  
   <section is="vl-region">
       <div is="vl-layout">
           <div is="vl-grid" data-vl-is-stacked>
@@ -23,13 +24,13 @@ export class GewestelijkAnalyseView extends LitElement {
                   data-vl-extra-small-size="12">
                   <div is="vl-side-navigation-reference">
                       <section id="content-1" is="vl-region">
-                          <h2 is="vl-h2">Een wegwijzer doorheen de cijfers en grafieken</h2>
+                          <h2 is="vl-h2">Een wegwijzer doorheen de cijfers</h2>
                           <p>
-                              Deze pagina toont een inzichtelijke beeld over de cijfers van gewestelijke
-                              handhavingsactoren.
-                              De grafieken zijn volledig interactief en de cijfers zullen worden gewijzigd naargelang de
-                              gekozen filtering.
-                              Uw aangeduide filtering kan op elk moment verwijderd worden met de selectiebalk hieronder.
+                              Deze pagina toont een overzichtelijk beeld van de handhavingsactiviteiten van de
+                              gewestelijke handhavingsactoren.
+                              De grafieken zijn interactief en de cijfers zullen wijzigen naargelang de gekozen filtering.
+                              De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk
+                              hieronder.
                           </p>
                       </section>
   
@@ -45,40 +46,30 @@ export class GewestelijkAnalyseView extends LitElement {
                               </div>
                               <div is="vl-column">
                                   <vl-infoblock data-vl-title="Selectiebalk" data-vl-icon="cursor-finger-up">
-                                      Hierboven staan uw actieve selecties op de pagina en zullen de cijfers aangepast
-                                      worden op basis van
-                                      de geselecteerde
-                                      gewestelijke handhavingsactor. Dit selectiebalk is interactief en u kunt selecties
-                                      aanpassen of
-                                      toevoegen.
+                                      Hierboven staan de actieve selecties op deze pagina.
+                                      De cijfers worden aangepast op basis van de geselecteerde gewestelijke
+                                      handhavingsactoren.
+                                      Deze selectiebalk is interactief; er kunnen selecties worden aangepast of
+                                      toegevoegd.
                                   </vl-infoblock>
   
   
                                   <vl-infoblock data-vl-title="Uw selectie mogelijkheden"
                                       data-vl-icon="cursor-finger-left">
-                                      In de filterpaneel staan de mogelijke selecties dat u kunt uitvoeren op de pagina.
-                                      U kunt meerdere gewestelijke handhavingsactoren aanduiden en de cijfers en grafieken
-                                      zullen
-                                      aangepast worden
-                                      op basis van uw selecties.
+                                      In het filterpaneel staan de mogelijke selecties die kunnen worden uitgevoerd op
+                                      deze pagina. Er kunnen meerdere gewestelijke handhavingsactoren aangeduid worden.
+                                      De cijfers en grafieken zullen worden aangepast op basis van de selecties.
                                   </vl-infoblock>
                               </div>
                           </div>
                       </section>
   
                       <section id="content-1-2" is="vl-region">
-                          <h3 is="vl-h3">Cijfers voor milieu handhaving</h3>
+                          <h2 is="vl-h2">Cijfers milieuhandhaving</h2>
                           <div is="vl-grid">
                               <div is="vl-column data-vl-size=12 class=" data-top-bot">
                                   <vl-infoblock data-vl-title="Gewestelijke toezichthouders en VTE"
                                       data-vl-icon="business-graph-bar">
-                                      In deze sectie worden de aantal gewestelijke toezichthouders aangegeven met de
-                                      totaal
-                                      aantal besteed
-                                      aan VTE.
-                                      De grafiek toont de verdeling aan van de VTE toezicthouders ten opzichte van de
-                                      administratieve en
-                                      jurisdische ondersteuning.
                                   </vl-infoblock>
                               </div>
                           </div>
@@ -106,8 +97,7 @@ export class GewestelijkAnalyseView extends LitElement {
                           <div is="vl-grid">
                               <div is="vl-column" data-vl-size=12>
                                   <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Verdeling van VTE toezichthouders en administratieve en
-                                          juridische ondersteuning
+                                      <span slot="title">Classificatie VTE
                                       </span>
                                       <div slot="content">
                                           <div class="MIL-Barchart-VTE chart"></div>
@@ -120,12 +110,14 @@ export class GewestelijkAnalyseView extends LitElement {
                       <section id="content-1-3" is="vl-region">
   
                           <div is="vl-grid">
+                              <vl-tooltip data-vl-placement=bottom>De som van de gegevens uit de verschillende categorieën
+                                  kan verschillen van het totaal aantal aangezien niet alle actoren het totaal aantal
+                                  kennen, maar wel gegevens aanleveren in de categorieën.
+                              </vl-tooltip>
                               <div is="vl-column" data-vl-size=12 class="data-top-bot">
                                   <vl-infoblock data-vl-title="Klachten" data-vl-icon="business-graph-bar">
-                                      De klachten voor milieu worden onderverdeeld in negen milieucategoriën.
-                                      In de grafiek wordt de verdeling van de totale hoeveelheid klachten onderverdeeld in
-                                      de
-                                      overeenkomstige milieucategoriën.
+                                      De klachten voor milieu worden in de grafiek onderverdeeld in negen thematische
+                                      categorieën.
                                   </vl-infoblock>
                               </div>
                           </div>
@@ -144,7 +136,7 @@ export class GewestelijkAnalyseView extends LitElement {
                               </div>
                               <div is="vl-column" data-vl-size=8>
                                   <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Aantal klachten per milieucategorie</span>
+                                      <span slot="title">Aantal klachten per categorie</span>
   
                                       <div slot="content">
                                           <div class="MIL-Barchart-Klachten chart"></div>
@@ -156,16 +148,28 @@ export class GewestelijkAnalyseView extends LitElement {
                       <section id="content-1-4" is="vl-region">
   
                           <div is="vl-grid">
+                              <vl-tooltip data-vl-placement=bottom>De som van de gegevens uit de verschillende categorieën
+                                  kan verschillen van het totaal aantal aangezien niet alle actoren het totaal aantal
+                                  kennen, maar wel gegevens aanleveren in de categorieën.
+                              </vl-tooltip>
                               <div is="vl-column" data-vl-size=12 class="data-top-bot">
                                   <vl-infoblock data-vl-title="Controles" data-vl-icon="business-graph-bar">
-                                      Hieronder bevindt zich een overzicht van de cijfers voor de controles van de
-                                      omgevingshandhavingsrapportage.
-                                      De grafiek wordt toont de verdeling van controles per controletype.
+                                      De controles worden in de grafiek onderverdeeld in 5 categoriën:
+                                      <vl-typography>
+                                          <ul>
+                                              <li>Initiële controles</li>
+                                              <li>Navolgende controles</li>
+                                              <li>Controles naar aanleiding van klachten</li>
+                                              <li>Controles naar aanleiding van meldingen</li>
+                                              <li>Controles op eigen initiatief</li>
+                                          </ul>
+                                          <vl-typography>
                                   </vl-infoblock>
                               </div>
                           </div>
   
                           <div is="vl-grid">
+  
                               <div is="vl-column" data-vl-size=4>
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Aantal controles
@@ -178,7 +182,7 @@ export class GewestelijkAnalyseView extends LitElement {
                                   </vl-info-tile>
                               </div>
                               <div is="vl-column" data-vl-size=8>
-                                  <vl-info-tile data-vl-auto-open=true><span slot="title">Verdeling controles per
+                                  <vl-info-tile data-vl-auto-open=true><span slot="title">Aantal controles per
                                           categorie</span>
                                       <div slot="content">
                                           <div class="MIL-Barchart-Controles chart"></div>
@@ -189,34 +193,45 @@ export class GewestelijkAnalyseView extends LitElement {
                       </section>
   
                       <section id="content-1-5" is="vl-region">
-  
-  
                           <div is="vl-grid">
+                              <vl-tooltip data-vl-placement=bottom>De som van de gegevens uit de verschillende categorieën
+                                  kan verschillen van het totaal aantal aangezien niet alle actoren het totaal aantal
+                                  kennen, maar wel gegevens aanleveren in de categorieën.
+                              </vl-tooltip>
                               <div is="vl-column" data-vl-size=12 class="data-top-bot">
-                                  <vl-infoblock data-vl-title="Aanvankelijke controles met overtreding"
+                                  <vl-infoblock data-vl-title="Aanvankelijke controles met schending"
                                       data-vl-icon="business-graph-bar">
-                                      Hierbij worden de controles weergegeven met een overtreding. De grafiek toont aan
-                                      de cateogriën met de meeste overtredingen.
+                                      De aanvankelijke controles met schending worden in de grafiek onderverdeeld in negen
+                                      thematische categorieën. De overtredingsgraad wordt - indien de data gekend zijn -
+                                      berekend aan de hand van de verhouding van het totaal aantal aanvankelijke controles
+                                      met schending ten opzichte van het aantal aanvankelijke controles naar aanleiding
+                                      van klachten en meldingen en het aantal aanvankelijke controles op eigen initiatief.
                                   </vl-infoblock>
                               </div>
                           </div>
-  
                           <div is="vl-grid">
                               <div is="vl-column" data-vl-size=4>
                                   <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Verdeling controles per categorie</span>
+                                      <span slot="title">Aantal aanvankelijke controles met schending</span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-fout.png">
                                           <div class="MIL-KPI-Aanvankelijke-Controles object"></div>
+                                      </div>
+                                  </vl-info-tile>
+                                  <vl-info-tile data-vl-auto-open=true>
+                                      <span slot="title">Overtredingsgraad</span>
+                                      <div slot="content">
+                                          <img class="icon" src="assets/icons/PNG-barometer.png">
+                                          <div class="MIL-KPI-Overtredingsgraad object"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
   
                               <div is="vl-column" data-vl-size=8>
                                   <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Verdeling controles per categorie</span>
+                                      <span slot="title">Aantal aanvankelijke controles met schending per categorie</span>
                                       <div slot="content">
-                                          <div class="MIL-bar-Aanvankelijke-Controles chart"></div>
+                                          <div class="MIL-bar-Aanvankelijke-Controles chart2"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -227,25 +242,21 @@ export class GewestelijkAnalyseView extends LitElement {
                           <div is="vl-grid">
                               <div is="vl-column" data-vl-size=12 class="data-top-bot">
                                   <vl-infoblock data-vl-title="Instrumentarium" data-vl-icon="business-graph-bar">
-                                      De instrumentarium is een verzameling van verschillende handelingen die worden
-                                      uitgevoerd in kader
-                                      van milieuhandhaving.
-  
                                   </vl-infoblock>
                               </div>
                           </div>
                           <div is="vl-grid">
-                              <div is="vl-column" data-vl-size=3>
+                              <div is="vl-column" data-vl-size=6>
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Raadgeving</span>
                                       <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-Kalender.png">
+                                          <img class="icon" src="assets/icons/PNG-Informatie.png">
                                           <div class="MIL-KPI-Raadgeving object"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
   
-                              <div is="vl-column" data-vl-size=3>
+                              <div is="vl-column" data-vl-size=6>
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Aanmaning</span>
                                       <div slot="content">
@@ -254,66 +265,68 @@ export class GewestelijkAnalyseView extends LitElement {
                                       </div>
                                   </vl-info-tile>
                               </div>
+                          </div>
   
+                          <div is="vl-grid" class=data-top-bot>
   
-  
-                              <div is="vl-column" data-vl-size=3>
-                                  <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Proces-verbaal</span>
-                                      <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-time-out.png">
-                                          <div class="MIL-KPI-Proces-verbaal object"></div>
-                                      </div>
-                                  </vl-info-tile>
-                              </div>
-                              <div is="vl-column" data-vl-size=3>
+                              <div is="vl-column" data-vl-size=6>
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Verslag van vaststelling</span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-klipbord.png">
-                                          <div class="MIL-KPI-Verslag-van-vastelling objectinstrumentarium"></div>
+                                          <div class="MIL-KPI-Verslag-van-vastelling object"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
-                          </div>
   
-                          <br>
-                          <div is="vl-grid">
-                              <div is="vl-column" data-vl-size=4>
+                              <div is="vl-column" data-vl-size=6>
                                   <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Bestuurlijk maatregel</span>
+                                      <span slot="title">Proces-verbaal</span>
+                                      <div slot="content">
+                                          <img class="icon" src="assets/icons/PNG-PV.png">
+                                          <div class="MIL-KPI-Proces-verbaal object"></div>
+                                      </div>
+                                  </vl-info-tile>
+                              </div>
+  
+                          </div>
+                          <div is="vl-grid" class=data-top-bot>
+                              <div is="vl-column" data-vl-size=12>
+                                  <vl-info-tile data-vl-auto-open=true>
+                                      <span slot="title">Bestuurlijke maatregelen</span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-risicoanalyse.png">
                                           <div class="MIL-KPI-Bestuurlijk-maatregel object"></div>
-                                      </div>
-                                  </vl-info-tile>
-                              </div>
-                              <div is="vl-column" data-vl-size=4>
-                                  <vl-info-tile data-vl-auto-open=true><span slot="title">Bestuurlijk maatregel met
-                                          dwangsom </span>
+                                          <div is="vl-grid">
+                                              <div is="vl-column" data-vl-size=6>
+                                                  <vl-info-tile data-vl-auto-open=true>
+                                                      <span slot="title">Met dwangsom</span>
+                                                      <div slot="content">
+                                                          <div class="MIL-KPI-Bestuurlijk-maatregel-met-dwangsom object">
+                                                          </div>
+                                                      </div>
+                                                  </vl-info-tile>
+                                              </div>
+                                              <div is="vl-column" data-vl-size=6>
+                                                  <vl-info-tile data-vl-auto-open=true>
+                                                      <span slot="title">Zonder dwangsom</span>
+                                                      <div slot="content">
   
-                                      <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-risicoanalyse.png">
-                                          <div class="MIL-KPI-Bestuurlijk-maatregel-met-dwangsom objectinstrumentarium">
-                                          </div>
-                                      </div>
-                                  </vl-info-tile>
-                              </div>
-                              <div is="vl-column" data-vl-size=4>
-                                  <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Bestuurlijk maatregel zonder dwangsom</span>
-                                      <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-risicoanalyse.png">
-                                          <div
-                                              class="MIL-KPI-Bestuurlijk-maatregel-zonder-dwangsom objectinstrumentarium">
+                                                          <div
+                                                              class="MIL-KPI-Bestuurlijk-maatregel-zonder-dwangsom object">
+                                                          </div>
+                                                      </div>
+                                                  </vl-info-tile>
+                                              </div>
                                           </div>
                                       </div>
                                   </vl-info-tile>
                               </div>
                           </div>
-                          <br>
-                          <div is="vl-grid">
-                              <div is="vl-column" data-vl-size=4>
+  
+  
+                          <div is="vl-grid" class=data-top-bot>
+                              <div is="vl-column" data-vl-size=12>
                                   <vl-info-tile data-vl-auto-open=true><span slot="title">Veiligheidsmaatregel</span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-opgepast.png">
@@ -325,347 +338,409 @@ export class GewestelijkAnalyseView extends LitElement {
   
                       </section>
   
-                      <section id="content-2" is="vl-region">
-  
-                      </section>
-                      <section is="vl-region">
-                          <div is="vl-grid" id="content-3">
-                              <h2 is="vl-h2">Cijfers voor ruimtelijke ordening</h2>
-                          </div>
-  
-                          <div is="vl-grid" id="content-3-1">
+                      <section id="content-1-6" is="vl-region">
+                          <div is="vl-grid">
                               <div is="vl-column" data-vl-size=12 class="data-top-bot">
-                                  <vl-infoblock data-vl-title="Verbalitisanten en stedenbouwkundige inspecteurs"
+                                  <vl-infoblock data-vl-title="Opmerking handhavingsactor"
                                       data-vl-icon="business-graph-bar">
-                                      Hieronder bevindt zich een overzicht van de cijfers voor verbalitisanten en
-                                      inspecteurs voor ruimtelijke ordening.
+                                      <div class="opmerking-mil-hha chartTabelsm"></div>
                                   </vl-infoblock>
                               </div>
                           </div>
   
-                          <div is="vl-grid">
-                              <div is="vl-column" data-vl-size=4>
-                                  <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Verbalitisanten<span slot="subtitle">
-                                          </span></span>
-                                      <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-natuurlijke persoon.png">
-                                          <div class="RO-KPI-Stedenbouwkundige object"></div>
-                                      </div>
-                                  </vl-info-tile>
+                          <section is="vl-region">
+                              <div is="vl-grid" id="content-3">
+                                  <h2 is="vl-h2">Cijfers handhaving ruimtelijke ordening</h2>
                               </div>
-                              <div is="vl-column" data-vl-size=4>
-                                  <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Stedenbouwkundige inspecteurs<span slot="subtitle">
-                                          </span></span>
-                                      <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-natuurlijke persoon.png">
-                                          <div class="RO-KPI-Verbalitisanten objectinstrumentarium"></div>
-                                      </div>
-                                  </vl-info-tile>
-                              </div>
-                              <div is="vl-column" data-vl-size=4>
-                                  <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Stedenbouwkundige inspecteurs/Verbalitisanten<span
-                                              slot="subtitle">
-                                          </span></span>
-                                      <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-natuurlijke persoon.png">
-                                          <div class="RO-KPI-Gecombi objectinstrumentarium"></div>
-                                      </div>
-                                  </vl-info-tile>
-                              </div>
-                          </div>
-                      </section>
   
-                      <section id="content-3-2" is="vl-region">
-                          <div is="vl-grid">
-                              <div is="vl-column" data-vl-size=12 class="data-top-bot">
-                                  <vl-infoblock data-vl-title="Totaal VTE" data-vl-icon="business-graph-bar">
-                                      In deze sectie wordt de Totaal besteed aan VTE weergegeven voor ruimtelijke
-                                      ordening.
-                                  </vl-infoblock>
+                              <div is="vl-grid" id="content-3-1">
+                                  <div is="vl-column" data-vl-size=12 class="data-top-bot">
+                                      <vl-infoblock data-vl-title="Verbalisanten en stedenbouwkundige inspecteurs"
+                                          data-vl-icon="business-graph-bar">
+                                      </vl-infoblock>
+                                  </div>
                               </div>
-                          </div>
   
-                          <div is="vl-grid">
-                              <div is="vl-column" data-vl-size=4>
-                                  <vl-info-tile data-vl-auto-open=true><span slot="title">Totaal VTE<span slot="subtitle">
+                              <div is="vl-grid">
+                                  <div is="vl-column" data-vl-size=6>
+                                      <vl-info-tile data-vl-auto-open=true>
+                                          <span slot="title">Verbalisanten<span slot="subtitle">
+                                              </span></span>
+                                          <div slot="content">
+                                              <img class="icon" src="assets/icons/PNG-natuurlijke persoon.png">
+                                              <div class="RO-KPI-Stedenbouwkundige object"></div>
+                                          </div>
+                                      </vl-info-tile>
+                                  </div>
+                                  <div is="vl-column" data-vl-size=6>
+                                      <vl-info-tile data-vl-auto-open=true>
+                                          <span slot="title">Stedenbouwkundige inspecteurs<span slot="subtitle">
+                                              </span></span>
+                                          <div slot="content">
+                                              <img class="icon" src="assets/icons/PNG-natuurlijke persoon.png">
+                                              <div class="RO-KPI-Verbalitisanten object"></div>
+                                          </div>
+                                      </vl-info-tile>
+                                  </div>
+                              </div>
+                              <div is="vl-grid">
+                                  <div is="vl-column" data-vl-size=12>
+                                      <vl-info-tile data-vl-auto-open=true>
+                                          <span slot="title">Verbalisanten/stedenbouwkundige inspecteurs<span
+                                                  slot="subtitle">
+                                              </span></span>
+                                          <div slot="content">
+                                              <img class="icon" src="assets/icons/PNG-natuurlijke persoon.png">
+                                              <div class="RO-KPI-Gecombi object"></div>
+                                          </div>
+                                      </vl-info-tile>
+                                  </div>
+                              </div>
+                          </section>
+  
+                          <section id="content-3-2" is="vl-region">
+                              <div is="vl-grid">
+                                  <div is="vl-column" data-vl-size=12 class="data-top-bot">
+                                      <vl-infoblock data-vl-title="Totaal VTE" data-vl-icon="business-graph-bar">
+  
+                                      </vl-infoblock>
+                                  </div>
+                              </div>
+  
+                              <div is="vl-grid">
+                                  <div is="vl-column" data-vl-size=4>
+                                      <vl-info-tile data-vl-auto-open=true><span slot="title">Totaal VTE<span
+                                                  slot="subtitle">
+                                              </span>
                                           </span>
-                                      </span>
-                                      <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-trainer_B.png">
-                                          <div class="RO-KPI-VTE object"></div>
-                                      </div>
-                                  </vl-info-tile>
-                              </div>
-                              <div is="vl-column" data-vl-size=8>
-                                  <vl-info-tile data-vl-auto-open=true><span slot="title">Totaal VTE<span slot="subtitle">
+                                          <div slot="content">
+                                              <img class="icon" src="assets/icons/PNG-trainer_B.png">
+                                              <div class="RO-KPI-VTE object"></div>
+                                          </div>
+                                      </vl-info-tile>
+                                  </div>
+                                  <div is="vl-column" data-vl-size=8>
+                                      <vl-info-tile data-vl-auto-open=true><span slot="title">Classificatie VTE<span
+                                                  slot="subtitle">
+                                              </span>
                                           </span>
-                                      </span>
-                                      <div slot="content">
+                                          <div slot="content">
   
-                                          <div class="RO-Barchart-VTE chart"></div>
-                                      </div>
-                                  </vl-info-tile>
+                                              <div class="RO-Barchart-VTE chart"></div>
+                                          </div>
+                                      </vl-info-tile>
+                                  </div>
                               </div>
-                          </div>
-                      </section>
+                          </section>
+                          <section id="content-3-3" is="vl-region">
+                              <div is="vl-grid">
+                                  <div is="vl-column" data-vl-size=12 class="data-top-bot">
+                                      <vl-infoblock data-vl-title="Klachten" data-vl-icon="business-graph-bar">
   
-                      <section id="content-3-3" is="vl-region">
-                          <div is="vl-grid">
-                              <div is="vl-column" data-vl-size=12 class="data-top-bot">
-                                  <vl-infoblock data-vl-title="Een overzicht voor ruimtelijke ordening"
-                                      data-vl-icon="business-graph-bar">
-                                      Hieronder bevindt zich een overzicht voor de klachten en controles voor ruimtelijk
-                                      ordening.
-                                      Bij de aanvankelijk controles wordt ook de overtredingsgraad weergegeven.
-                                  </vl-infoblock>
+                                      </vl-infoblock>
+                                  </div>
                               </div>
-                          </div>
   
-                          <div is="vl-grid">
-                              <div is="vl-column" data-vl-size=4>
-                                  <vl-info-tile data-vl-auto-open=true><span slot="title">Klachten<span slot="subtitle">
+                              <div is="vl-grid">
+  
+                                  <div is="vl-column" data-vl-size=12>
+                                      <vl-info-tile data-vl-auto-open=true><span slot="title">Klachten<span
+                                                  slot="subtitle">
+                                              </span>
                                           </span>
-                                      </span>
-                                      <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-Meld_verdachte_handelingen.png">
-                                          <div class="RO-KPI-Klachten object"></div>
-                                      </div>
-                                  </vl-info-tile>
+                                          <div slot="content">
+                                              <img class="icon" src="assets/icons/PNG-Meld_verdachte_handelingen.png">
+                                              <div class="RO-KPI-Klachten object"></div>
+                                          </div>
+                                      </vl-info-tile>
+                                  </div>
+  
                               </div>
-                              <div is="vl-column" data-vl-size=4>
-                                  <vl-info-tile data-vl-auto-open=true><span slot="title">Controles<span slot="subtitle">
+                          </section>
+  
+                          <section id="content-3-4" is="vl-region">
+                              <div is="vl-grid">
+                                  <div is="vl-column" data-vl-size=12 class="data-top-bot">
+                                      <vl-infoblock data-vl-title="Controles" data-vl-icon="business-graph-bar">
+  
+                                          De controles worden in de grafiek onderverdeeld in 5 categoriën:
+                                          <vl-typography>
+                                              <ul>
+                                                  <li>Initiële controles</li>
+                                                  <li>Navolgende controles</li>
+                                                  <li>Controles naar aanleiding van klachten</li>
+                                                  <li>Controles naar aanleiding van meldingen</li>
+                                                  <li>Controles op eigen initiatief</li>
+                                              </ul>
+                                              <vl-typography>
+                                      </vl-infoblock>
+                                  </div>
+                              </div>
+  
+                              <div is="vl-grid">
+  
+                                  <div is="vl-column" data-vl-size=4>
+                                      <vl-tooltip data-vl-placement=left>
+                                          De som van de gegevens uit de verschillende categorieën kan verschillen van het
+                                          totaal aantal aangezien niet alle actoren het totaal aantal kennen, maar wel
+                                          gegevens aanleveren in de categorieën
+                                      </vl-tooltip>
+                                      <vl-info-tile data-vl-auto-open=true><span slot="title">Controles<span
+                                                  slot="subtitle">
+                                              </span>
                                           </span>
-                                      </span>
-                                      <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-onderzoek.png">
-                                          <div class="RO-KPI-Controles object"></div>
-                                      </div>
-                                  </vl-info-tile>
-                              </div>
-                              <div is="vl-column" data-vl-size=4>
-                                  <vl-info-tile data-vl-auto-open=true><span slot="title">Aanvankelijke controles met
-                                          overtreding<span slot="subtitle">
+                                          <div slot="content">
+                                              <img class="icon" src="assets/icons/PNG-Meld_verdachte_handelingen.png">
+                                              <div class="RO-KPI-Controles object"></div>
+                                          </div>
+                                      </vl-info-tile>
+                                  </div>
+                                  <div is="vl-column" data-vl-size=8>
+                                      <vl-info-tile data-vl-auto-open=true><span slot="title">Aantal controles per
+                                              categorie<span slot="subtitle">
+                                              </span>
                                           </span>
-                                      </span>
-                                      <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-onderzoek.png">
-                                          <div class="RO-KPI-Aanvankelijke-Controles objectinstrumentarium"></div>
-                                      </div>
-                                  </vl-info-tile>
+                                          <div slot="content">
+  
+                                              <div class="RO-Barchart-Controles chart"></div>
+                                          </div>
+                                      </vl-info-tile>
+                                  </div>
+  
                               </div>
-                          </div>
-                      </section>
+                          </section>
   
-                      <section id="content-3-4" is="vl-region">
-                          <div is="vl-grid">
-                              <div is="vl-column" data-vl-size=12 class="data-top-bot">
-                                  <vl-infoblock data-vl-title="Controles" data-vl-icon="business-graph-bar">
-                                      Hieronder bevindt zich een verdeling van de controles voor ruimtelijke ordening
-                                      onderverdeeld in verschillende categoriën.
-                                  </vl-infoblock>
+                          <section id="content-3-5" is="vl-region">
+                              <div is="vl-grid">
+                                  <div is="vl-column" data-vl-size=12 class="data-top-bot">
+                                      <vl-infoblock data-vl-title="Aantal aanvankelijke controles met schending"
+                                          data-vl-icon="business-graph-bar">
+                                          De overtredingsgraad wordt - indien de data gekend zijn - berekend aan de hand
+                                          van de verhouding van het totaal aantal aanvankelijke controles met schending
+                                          ten opzichte van het aantal aanvankelijke controles naar aanleiding van klachten
+                                          en meldingen en het aantal aanvankelijke controles op eigen initiatief.
+                                      </vl-infoblock>
+                                  </div>
                               </div>
-                          </div>
   
-  
-                          <div is="vl-grid">
-  
-  
-                              <div is="vl-column" data-vl-size=12>
-                                  <vl-info-tile data-vl-auto-open=true><span slot="title">Verdeling van controles<span
-                                              slot="subtitle">
+                              <div is="vl-grid">
+                                  <div is="vl-column" data-vl-size=6>
+                                      <vl-info-tile data-vl-auto-open=true><span slot="title">Aanvankelijke controles met
+                                              schending<span slot="subtitle">
+                                              </span>
                                           </span>
-                                      </span>
-                                      <div slot="content">
-  
-                                          <div class="RO-Barchart-Controles chart"></div>
-                                      </div>
-                                  </vl-info-tile>
-                              </div>
-                          </div>
-  
-                      </section>
-                      <section id="content-3-5" is="vl-region">
-  
-                          <div is="vl-grid">
-                              <div is="vl-column" data-vl-size=12 class="data-top-bot">
-                                  <vl-infoblock data-vl-title="Instrumentarium" data-vl-icon="business-graph-bar">
-                                      De instrumentarium is een verzameling van verschillende handelingen die worden
-                                      uitgevoerd in kader
-                                      van ruimtelijke ordening.
-                                  </vl-infoblock>
-                              </div>
-                          </div>
-  
-  
-                          <div is="vl-grid">
-                              <div is="vl-column" data-vl-size=3>
-                                  <vl-info-tile data-vl-auto-open=true><span slot="title">Raadgeving<span slot="subtitle">
+                                          <div slot="content">
+                                              <img class="icon" src="assets/icons/PNG-Fout.png">
+                                              <div class="RO-KPI-Aanvankelijke-Controles object"></div>
+                                          </div>
+                                      </vl-info-tile>
+                                  </div>
+                                  <div is="vl-column" data-vl-size=6>
+                                      <vl-info-tile data-vl-auto-open=true><span slot="title">Overtredingsgraad<span
+                                                  slot="subtitle">
+                                              </span>
                                           </span>
-                                      </span>
-                                      <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-Kalender.png">
-                                          <div class="RO-KPI-Raadgeving object"></div>
-                                      </div>
-                                  </vl-info-tile>
+                                          <div slot="content">
+                                              <img class="icon" src="assets/icons/PNG-barometer.png">
+                                              <div class="RO-KPI-Overtredingsgraad object"></div>
+                                          </div>
+                                      </vl-info-tile>
+                                  </div>
+                              </div>
+                          </section>
+                          <section id="content-3-6" is="vl-region">
+  
+                              <div is="vl-grid">
+                                  <div is="vl-column" data-vl-size=12 class="data-top-bot">
+                                      <vl-infoblock data-vl-title="Instrumentarium" data-vl-icon="business-graph-bar">
+  
+                                      </vl-infoblock>
+                                  </div>
                               </div>
   
-                              <div is="vl-column" data-vl-size=3>
-                                  <vl-info-tile data-vl-auto-open=true><span slot="title">Aanmaning<span slot="subtitle">
-                                          </span>
-                                      </span>
-                                      <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-Kalender.png">
-                                          <div class="RO-KPI-Aanmaning object"></div>
-                                      </div>
-                                  </vl-info-tile>
-                              </div>
-                              <div is="vl-column" data-vl-size=3>
-                                  <vl-info-tile data-vl-auto-open=true><span slot="title">Proces-verbaal<span
-                                              slot="subtitle">
-                                          </span>
-                                      </span>
-                                      <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-time-out.png">
-                                          <div class="RO-KPI-Proces-verbaal object"></div>
-                                      </div>
-                                  </vl-info-tile>
-                              </div>
-                              <div is="vl-column" data-vl-size=3>
-                                  <vl-info-tile data-vl-auto-open=true><span slot="title">Verslag van vaststelling<span
-                                              slot="subtitle">
-                                          </span>
-                                      </span>
-                                      <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-klipbord.png">
-                                          <div class="RO-KPI-Verslag-van-vastelling objectinstrumentarium"></div>
-                                      </div>
-                                  </vl-info-tile>
-                              </div>
-                          </div>
   
-                          <br>
-                          <div is="vl-grid">
-                              <div is="vl-column" data-vl-size=3>
-                                  <vl-info-tile data-vl-auto-open=true><span slot="title">Bestuurlijk maatregel<span
-                                              slot="subtitle">
+                              <div is="vl-grid">
+                                  <div is="vl-column" data-vl-size=6>
+                                      <vl-info-tile data-vl-auto-open=true><span slot="title">Raadgeving<span
+                                                  slot="subtitle">
+                                              </span>
                                           </span>
-                                      </span>
-                                      <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-Kalender.png">
-                                          <div class="RO-KPI-Bestuurlijk-maatregel object"></div>
-                                      </div>
-                                  </vl-info-tile>
+                                          <div slot="content">
+                                              <img class="icon" src="assets/icons/PNG-Informatie.png">
+                                              <div class="RO-KPI-Raadgeving object"></div>
+                                          </div>
+                                      </vl-info-tile>
+                                  </div>
+  
+                                  <div is="vl-column" data-vl-size=6>
+                                      <vl-info-tile data-vl-auto-open=true><span slot="title">Aanmaning<span
+                                                  slot="subtitle">
+                                              </span>
+                                          </span>
+                                          <div slot="content">
+                                              <img class="icon" src="assets/icons/PNG-Kalender.png">
+                                              <div class="RO-KPI-Aanmaning object"></div>
+                                          </div>
+                                      </vl-info-tile>
+                                  </div>
                               </div>
   
-                              <div is="vl-column" data-vl-size=4>
-                                  <vl-info-tile data-vl-auto-open=true><span slot="title">Bestuurlijk maatregel met
-                                          dwangsom<span slot="subtitle">
-                                          </span>
-                                      </span>
-                                      <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-Kalender.png">
-                                          <div class="RO-KPI-Bestuurlijk-maatregel-met-dwangsom object"></div>
-                                      </div>
-                                  </vl-info-tile>
-                              </div>
-                              <div is="vl-column" data-vl-size=5>
-                                  <vl-info-tile data-vl-auto-open=true><span slot="title">Bestuurlijk maatregel zonder
-                                          dwangsom<span slot="subtitle">
-                                          </span>
-                                      </span>
-                                      <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-time-out.png">
-                                          <div class="RO-KPI-Bestuurlijk-maatregel-zonder-dwangsom object"></div>
+                              <div is="vl-grid" class="data-top-bot">
   
-                                      </div>
-                                  </vl-info-tile>
-                              </div>
-                          </div>
-                          <br />
-  
-                          <div is="vl-grid">
-                              <div is="vl-column" data-vl-size=3>
-                                  <vl-info-tile data-vl-auto-open=true><span slot="title">Bevel tot staking<span
-                                              slot="subtitle">
+                                  <div is="vl-column" data-vl-size=6>
+                                      <vl-info-tile data-vl-auto-open=true><span slot="title">Verslag van
+                                              vaststelling<span slot="subtitle">
+                                              </span>
                                           </span>
-                                      </span>
-                                      <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-Kalender.png">
-                                          <div class="RO-KPI-Beveltotstaking object"></div>
-                                      </div>
-                                  </vl-info-tile>
+                                          <div slot="content">
+                                              <img class="icon" src="assets/icons/PNG-klipbord.png">
+                                              <div class="RO-KPI-Verslag-van-vastelling object"></div>
+                                          </div>
+                                      </vl-info-tile>
+                                  </div>
+                                  <div is="vl-column" data-vl-size=6>
+                                      <vl-info-tile data-vl-auto-open=true><span slot="title">Proces-verbaal<span
+                                                  slot="subtitle">
+                                              </span>
+                                          </span>
+                                          <div slot="content">
+                                              <img class="icon" src="assets/icons/PNG-PV.png">
+                                              <div class="RO-KPI-Proces-verbaal object"></div>
+                                          </div>
+                                      </vl-info-tile>
+                                  </div>
                               </div>
   
-                              <div is="vl-column" data-vl-size=4>
-                                  <vl-info-tile data-vl-auto-open=true><span slot="title">Afgesloten minnelijke
-                                          schikking<span slot="subtitle">
+  
+                              <div is="vl-grid" class="data-top-bot">
+                                  <div is="vl-column" data-vl-size=12>
+                                      <vl-info-tile data-vl-auto-open=true><span slot="title">Bevel tot staking<span
+                                                  slot="subtitle">
+                                              </span>
                                           </span>
-                                      </span>
-                                      <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-Kalender.png">
-                                          <div class="RO-KPI-minnelijk objectinstrumentarium"></div>
-                                      </div>
-                                  </vl-info-tile>
-                              </div>
-                              <div is="vl-column" data-vl-size=5>
-                                  <vl-info-tile data-vl-auto-open=true><span slot="title">Ambtshalve uitvoering
-                                          gerechtelijke herstelvordering<span slot="subtitle">
-                                          </span>
-                                      </span>
-                                      <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-Kalender.png">
-                                          <div class="RO-KPI-gerechtambt objectinstrumentarium"></div>
-                                      </div>
-                                  </vl-info-tile>
+                                          <div slot="content">
+                                              <img class="icon" src="assets/icons/PNG-time-out.png">
+                                              <div class="RO-KPI-Beveltotstaking object"></div>
+                                          </div>
+                                      </vl-info-tile>
+                                  </div>
                               </div>
   
-                          </div>
-                          <br>
-                          <div is="vl-grid">
-                              <div is="vl-column" data-vl-size=6>
-                                  <vl-info-tile data-vl-auto-open=true><span slot="title">Herstelvordering: openbaar
-                                          ministerie<span slot="subtitle">
-                                          </span>
-                                      </span>
-                                      <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-Kalender.png">
-                                          <div class="RO-KPI-openbaarmin object"></div>
-                                      </div>
-                                  </vl-info-tile>
+                              <div is="vl-grid" class="data-top-bot">
+                                  <div is="vl-column" data-vl-size=12>
+                                      <vl-info-tile data-vl-auto-open=true>
+                                          <span slot="title">Bestuurlijke maatregelen</span>
+                                          <div slot="content">
+                                              <img class="icon" src="assets/icons/PNG-risicoanalyse.png">
+                                              <div class="RO-KPI-Bestuurlijk-maatregel object"></div>
+                                              <div is="vl-grid">
+                                                  <div is="vl-column" data-vl-size=6>
+                                                      <vl-info-tile data-vl-auto-open=true>
+                                                          <span slot="title">Met dwangsom</span>
+                                                          <div slot="content">
+                                                              <div
+                                                                  class="RO-KPI-Bestuurlijk-maatregel-met-dwangsom object">
+                                                              </div>
+                                                          </div>
+                                                      </vl-info-tile>
+                                                  </div>
+                                                  <div is="vl-column" data-vl-size=6>
+                                                      <vl-info-tile data-vl-auto-open=true>
+                                                          <span slot="title">Zonder dwangsom</span>
+                                                          <div slot="content">
+  
+                                                              <div
+                                                                  class="RO-KPI-Bestuurlijk-maatregel-zonder-dwangsom object">
+                                                              </div>
+                                                          </div>
+                                                      </vl-info-tile>
+                                                  </div>
+                                              </div>
+                                          </div>
+  
+                                      </vl-info-tile>
+  
+                                  </div>
                               </div>
   
-                              <div is="vl-column" data-vl-size=6>
-                                  <vl-info-tile data-vl-auto-open=true><span slot="title">Herstelvordering: burgerlijk
-                                          rechter<span slot="subtitle">
+                              <div is="vl-grid">
+                                  <div is="vl-column" data-vl-size=5>
+                                      <vl-info-tile data-vl-auto-open=true><span slot="title">Afgesloten minnelijke
+                                              schikking<span slot="subtitle">
+                                              </span>
                                           </span>
-                                      </span>
-                                      <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-Kalender.png">
-                                          <div class="RO-KPI-burgerlijkrechter object"></div>
-                                      </div>
-                                  </vl-info-tile>
+                                          <div slot="content">
+                                              <img class="icon" src="assets/icons/PNG-justitie.png">
+                                              <div class="RO-KPI-minnelijk object"></div>
+                                          </div>
+                                      </vl-info-tile>
+                                  </div>
+  
+                                  <div is="vl-column" data-vl-size=7>
+                                      <vl-info-tile data-vl-auto-open=true><span slot="title">Ingeleide herstelvordering
+                                              bij Openbaar Ministerie
+                                          </span>
+                                          <div slot="content">
+                                              <img class="icon" src="assets/icons/PNG-overeenkomst.png">
+                                              <div class="RO-KPI-openbaarmin object"></div>
+                                          </div>
+                                      </vl-info-tile>
+                                  </div>
                               </div>
   
-                          </div>
+                              <div is="vl-grid" class="data-top-bot">
+                                  <div is="vl-column" data-vl-size=5>
+                                      <vl-info-tile data-vl-auto-open=true><span slot="title">Herstel gevorderd bij
+                                              burgelijke rechter
+                                          </span>
+                                          <div slot="content">
+                                              <img class="icon" src="assets/icons/PNG-overeenkomst.png">
+                                              <div class="RO-KPI-burgerlijkrechter object"></div>
+                                          </div>
+                                      </vl-info-tile>
+                                  </div>
+                                  <div is="vl-column" data-vl-size=7>
+                                      <vl-info-tile data-vl-auto-open=true><span slot="title">Ambtshalve uitvoering
+                                              gerechtelijke<br /> herstelmaatregel
+                                          </span>
+                                          <div slot="content">
+                                              <img class="icon" src="assets/icons/PNG-justitie.png">
+                                              <div class="RO-KPI-gerechtambt object"></div>
+                                          </div>
+                                      </vl-info-tile>
+                                  </div>
+                              </div>
+                          </section>
   
-                      </section>
   
-                      <section is="vl-region" id="content-4">
-                          <h3 is="vl-h3">Bekijk cijfers voor andere thema's</h3>
-                          <vl-alert data-vl-icon="info-circle" data-vl-title="Bekijk de cijfers van andere thema's"
-                              data-vl-type="info">
-                              <p>
-                              <a is="vl-link-button" href="/public/provinciaal">Provinciaal</a>
-                              <a is="vl-link-button" href="/public/gemeenten">Gemeenten</a>
-                              <a is="vl-link-button" href="/public/hogeraad">Hoge raad</a>
-                              <a is="vl-link-button" href="/public/strafrechtelijk">Strafrechtelijk en bestuurlijk
-                                  vervolgtraject</a>
-                          </p>
-                          </vl-alert>
-                      </section>
+  
+                          <section id="content-1-6" is="vl-region">
+                              <div is="vl-grid">
+                                  <div is="vl-column" data-vl-size=12 class="data-top-bot">
+                                      <vl-infoblock data-vl-title="Opmerking handhavingsactor"
+                                          data-vl-icon="business-graph-bar">
+                                          <div class="opmerking-ro-hha chartTabelsm"></div>
+                                      </vl-infoblock>
+                                  </div>
+                              </div>
+  
+                              <section is="vl-region" id="content-4">
+                                  <h3 is="vl-h3">Cijfers andere handhavingsactoren</h3>
+                                  <vl-alert data-vl-icon="info-circle" data-vl-title="Cijfers andere handhavingsactoren"
+                                      data-vl-type="info">
+                                      <p>
+                                          <a is="vl-link-button" href="/public/provinciaal">Provinciaal</a>
+                                          <a is="vl-link-button" href="/public/gemeenten">Gemeenten</a>
+                                          <a is="vl-link-button" href="/public/hogeraad">Hoge raad</a>
+                                      </p><br />
+                                      <p>
+                                          <a is="vl-link-button" href="/public/strafrechtelijk">Strafrechtelijk en
+                                              bestuurlijk
+                                              vervolgtraject</a>
+                                      <p>
+  
+                                  </vl-alert>
+                              </section>
                   </div>
               </div>
               <div is="vl-column" data-vl-size="4" data-vl-medium-size="4" data-vl-small-size="4"
@@ -676,7 +751,7 @@ export class GewestelijkAnalyseView extends LitElement {
                           <ul is="vl-side-navigation-group">
                               <li is="vl-side-navigation-item" data-vl-parent="content-1">
                                   <a is="vl-side-navigation-toggle" href="#content-1" data-vl-child="content-1">
-                                      Cijfers voor milieu
+                                      Cijfers milieuhandhaving
                                       <i class="vl-vi vl-vi-arrow-right-fat"></i>
                                   </a>
                                   <ul>
@@ -703,7 +778,7 @@ export class GewestelijkAnalyseView extends LitElement {
                                       <li is="vl-side-navigation-item">
                                           <div>
                                               <a href="#content-1-5" data-vl-parent="content-1">Aanvankelijke controles
-                                                  met overtreding</a>
+                                                  met schending</a>
                                           </div>
                                       </li>
                                       <li is="vl-side-navigation-item">
@@ -715,13 +790,13 @@ export class GewestelijkAnalyseView extends LitElement {
                               </li>
                               <li is="vl-side-navigation-item" data-vl-parent="content-3">
                                   <a is="vl-side-navigation-toggle" href="#content-3" data-vl-child="content-3">
-                                      Cijfers voor ruimtelijke ordening
+                                      Cijfers handhaving ruimtelijke ordening
                                       <i class="vl-vi vl-vi-arrow-right-fat"></i>
                                   </a>
                                   <ul>
                                       <li is="vl-side-navigation-item">
                                           <div>
-                                              <a href="#content-3-1" data-vl-parent="content-3">Verbalitisanten en
+                                              <a href="#content-3-1" data-vl-parent="content-3">Verbalisanten en
                                                   stedenbouwkundige inspecteurs</a>
                                           </div>
                                       </li>
@@ -732,24 +807,29 @@ export class GewestelijkAnalyseView extends LitElement {
                                       </li>
                                       <li is="vl-side-navigation-item">
                                           <div>
-                                              <a href="#content-3-3" data-vl-parent="content-3">Overzicht</a>
+                                              <a href="#content-3-3" data-vl-parent="content-3">Klachten</a>
                                           </div>
                                       </li>
                                       <li is="vl-side-navigation-item">
                                           <div>
                                               <a href="#content-3-4" data-vl-parent="content-3">Controles</a>
+                                          </div
+                                          <li is="vl-side-navigation-item">
+                                          <div>
+                                              <a href="#content-3-5" data-vl-parent="content-3">Aanvankelijke controles met schending</a>
                                           </div>
+                                      </li>
                                       </li>
                                       <li is="vl-side-navigation-item">
                                           <div>
-                                              <a href="#content-3-5" data-vl-parent="content-3">Instrumentarium</a>
+                                              <a href="#content-3-6" data-vl-parent="content-3">Instrumentarium</a>
                                           </div>
                                       </li>
                                   </ul>
                               </li>
                               <li is="vl-side-navigation-item" data-vl-parent="content-4">
                                   <a is="vl-side-navigation-toggle" href="#content-4" data-vl-child="content-4">
-                                      Andere thema's
+                                      Bekijk ook andere thema's
                                       <i class="vl-vi vl-vi-arrow-right-fat"></i>
                                   </a>
                               </li>
@@ -760,7 +840,6 @@ export class GewestelijkAnalyseView extends LitElement {
           </div>
       </div>
   </section>
-
       `,
       title: "GewestelijkAnalyseView",
     });

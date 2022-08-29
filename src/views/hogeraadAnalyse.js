@@ -31,8 +31,7 @@ export class HogeraadAnalyseView extends LitElement {
                       </section>
   
                       <section id="content-1-1" is="vl-region">
-                          <div class="toolbar"></div>
-                          <div is="vl-grid">
+                          <div is="vl-grid" id="content-1-2">
                               <vl-infoblock data-vl-icon="business-graph-bar" id="content-1-2">
                                   <h2 slot="title">Instroom</h2>
   
@@ -42,7 +41,9 @@ export class HogeraadAnalyseView extends LitElement {
                       </section>
   
                       <section id="content-1-3" is="vl-region">
+                      <div class="toolbar"></div>
                           <div is="vl-grid">
+                          
                               <vl-infoblock data-vl-icon="business-graph-bar">
                                   <h2 slot="title">Behandeling - bindende adviezen</h2>
                               </vl-infoblock>
@@ -69,13 +70,13 @@ export class HogeraadAnalyseView extends LitElement {
                       </section>
   
                       <section is="vl-region" id="content-4">
-            
-                          <vl-alert data-vl-icon="info-circle" data-vl-title="Cijfers andere handhavingsactoren"
-                              data-vl-type="info">
+                      <vl-typography>
+                        <h4>Cijfers andere handhavingsactoren</h4></vl-typography>
+                          <vl-alert>
                               <p>
-                                  <a is="vl-link-button" href="/public/gewestelijk">per gewest</a>
-                                  <a is="vl-link-button" href="/public/provinciaal">per provincie</a>
-                                  <a is="vl-link-button" href="/public/gemeenten">per gemeenten</a>
+                                  <a is="vl-link-button" href="/public/gewestelijk">Per gewest</a>
+                                  <a is="vl-link-button" href="/public/provinciaal">Per provincie</a>
+                                  <a is="vl-link-button" href="/public/gemeenten">Per gemeenten</a>
                               </p>
                               <br>
                               <p>
@@ -85,11 +86,9 @@ export class HogeraadAnalyseView extends LitElement {
                           </vl-alert>
                           <vl-alert
                           
-                          data-vl-icon="info-circle"
-                          data-vl-title="Download de data"
-                          data-vl-type="info"
-                        >
-                          <p><a href="/documents/Data Hoge Raad.zip" download>Download de data</a></p>
+                          
+                          data-vl-title="Download de data">
+                          <p><a href="/documents/Data Hoge Raad.zip" download>Klik hier om de download te starten</a></p>
                         </vl-alert>
                       </section>
                   </div>
@@ -147,7 +146,6 @@ export class HogeraadAnalyseView extends LitElement {
           </div>
       </div>
   </section>
-
       `,
       title: "HogeraadAnalyseView",
     });

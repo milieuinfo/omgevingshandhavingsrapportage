@@ -3,11 +3,12 @@ import "uig-webcomponents/lib/components/doormat";
 import "uig-webcomponents/lib/components/doormat/styles.css";
 import { analysis } from "../templates/analysis";
 import { embed } from '@nebula.js/stardust';
-export class GemeentenAnalyseView extends LitElement {
-    
+export class GemeentenAnalyseView extends LitElement { 
 render() {
+    
     return analysis({
       children: html`
+
       <vl-functional-header data-vl-back="Terug" data-vl-back-link="/public/gemeenten"
       data-vl-title="Cijfers van de gemeenten op kaart"
       data-vl-sub-title="Een geografische analyse van de activiteiten van de gemeenten" data-vl-link="Gemeente">
@@ -22,12 +23,24 @@ render() {
                       <section id="content-1" is="vl-region">
                           <h2 is="vl-h2">Hoe interpreteer ik de kaarten?</h2>
                           <p>
-                              Deze pagina toont een inzichtelijke beeld over de cijfers van gemeentelijke
-                              handhavingsactoren.
-                              De grafieken zijn volledig interactief en de cijfers zullen worden gewijzigd naargelang de
-                              gekozen filtering.
-                              Uw aangeduide filtering kan op elk moment verwijderd worden met de selectiebalk hieronder.
-                          </p>
+                              De kaarten zijn onderverdeeld in twee categoriën voor de meeste thema's:</p>
+                              <vl-typography>
+
+                                <li>Milieuhandhaving : groene kaarten</li>
+                                <li>Ruimtelijke ordening: oranje kaarten</li>
+
+                              </vl-typography>
+                                <br/>
+                              <p>De gradatie van de kleuren is weergegeven op basis van per 1000 inwoners van de gemeente.</p>
+                              <p>Bij hoveren op een gemeente worden twee cijfers meegeven: relatieve waarde per 1000 inwoners en absolute waarde voor de gemeente.</p>
+
+                              <br/>
+                              
+                              <p>
+                              De responsgraad voor deze bevraging is geen 100% waardoor sommige gemeenten als waarde "niet gekend" of "non-reponse" bezitten.
+                              Deze worden respectievelijk met de kleur donkergrijs en rood weergegeven op de kaarten.
+                              </p>
+                          
                       </section>
   
                       <section id="content-1-1" is="vl-region">
@@ -44,16 +57,14 @@ render() {
                           <div is="vl-grid">
                               <div is="vl-column" data-vl-size=10>
                                   <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Aantal VTE Milieuhandhaving</span>
+                                      <span slot="title">Aantal toezichthouders (milieu)</span>
                                       <span slot="subtitle">Per 1000 inwoners</span>
                                       <div slot="content">
-                                          <iframe title="" aria-label="Map" id="datawrapper-chart-9tSSJ"
-                                              src=https://datawrapper.dwcdn.net/9tSSJ/2/ scrolling="no" frameborder="0"
-                                              style="width: 0; min-width: 100% !important; border: none;"
-                                              height="264"></iframe>
-                                          <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (e) { if (void 0 !== e.data["datawrapper-height"]) { var t = document.querySelectorAll("iframe"); for (var a in e.data["datawrapper-height"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px" } } })) }();
-                                          </script>
-  
+                                      <iframe title="toezichthouders" aria-label="Map" id="datawrapper-chart-fwlfs" src=https://datawrapper.dwcdn.net/fwlfs/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+                                      </script>
+                                      <p><span class="grijsnietgekend">&#x2022 niet gekend</span></p>
+                                      <p><span class="roodnonrespons">&#x2022 non-respons</span></p>
+                                      
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -62,16 +73,14 @@ render() {
                           <div is="vl-grid" class="data-top-bot">
                               <div is="vl-column" data-vl-size=10>
                                   <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Aantal VTE Ruimtelijke Ordening</span>
+                                      <span slot="title">Aantal verbalisanten/stedenbouwkundige inspecteurs</span>
                                       <span slot="subtitle">Per 1000 inwoners</span>
                                       <div slot="content">
-                                          <iframe title="" aria-label="Map" id="datawrapper-chart-R3OOe"
-                                              src="https://datawrapper.dwcdn.net/R3OOe/1/" scrolling="no" frameborder="0"
-                                              style="width: 0; min-width: 100% !important; border: none;"
-                                              height="264"></iframe>
-                                          <script
-                                              type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (e) { if (void 0 !== e.data["datawrapper-height"]) { var t = document.querySelectorAll("iframe"); for (var a in e.data["datawrapper-height"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px" } } })) }();</script>
-  
+                                      <iframe title="verbalisanten
+                                      " aria-label="Map" id="datawrapper-chart-m7Ir2" src=https://datawrapper.dwcdn.net/m7Ir2/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+                                      </script>
+                                      <p><span class="grijsnietgekend">&#x2022 niet gekend</span></p>
+                                      <p><span class="roodnonrespons">&#x2022 non-respons</span></p>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -95,10 +104,12 @@ render() {
                                       <span slot="title">Aantal VTE Milieuhandhaving</span>
                                       <span slot="subtitle">Per 1000 inwoners</span>
                                       <div slot="content">
-                                      <iframe title="" aria-label="Map" id="datawrapper-chart-9tSSJ" src=https://datawrapper.dwcdn.net/9tSSJ/2/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+                                      <iframe title="VTE" aria-label="Map" id="datawrapper-chart-0M8Uz" src=https://datawrapper.dwcdn.net/0M8Uz/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
                                       </script>
                                       
-  
+                                      
+                                      <p><span class="grijsnietgekend">&#x2022 niet gekend</span></p>
+                                      <p><span class="roodnonrespons">&#x2022 non-respons</span></p>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -110,17 +121,19 @@ render() {
                                       <span slot="title">Aantal VTE ruimtelijke ordening</span>
                                       <span slot="subtitle">Per 1000 inwoners</span>
                                       <div slot="content">
-                                      <iframe title="" aria-label="Map" id="datawrapper-chart-92pBZ" src=https://datawrapper.dwcdn.net/92pBZ/2/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+                                      <iframe title="vte" aria-label="Map" id="datawrapper-chart-S8OjO" src=https://datawrapper.dwcdn.net/S8OjO/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
                                       </script>
                                       
-  
+                                      
+                                      <p><span class="grijsnietgekend">&#x2022 niet gekend</span></p>
+                                      <p><span class="roodnonrespons">&#x2022 non-respons</span></p>
                                       </div>
                                   </vl-info-tile>
                               </div>
                           </div>
                       </section>
   
-                      <section id="content-1-2" is="vl-region">
+                      <section id="content-1-3" is="vl-region">
   
                           <div is="vl-grid">
                               <div is="vl-column data-vl-size=12 class=" data-top-bot">
@@ -129,6 +142,7 @@ render() {
                                   </vl-infoblock>
                               </div>
                           </div>
+                          
   
                           <div is="vl-grid">
                               <div is="vl-column" data-vl-size=10>
@@ -136,25 +150,31 @@ render() {
                                       <span slot="title">Aantal klachten (milieu)</span>
                                       <span slot="subtitle">Per 1000 inwoners</span>
                                       <div slot="content">
-                                      <iframe title="" aria-label="Map" id="datawrapper-chart-V6HHj" src=https://datawrapper.dwcdn.net/V6HHj/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-                                      </script>
+                                      <iframe title="Klachten" aria-label="Map" id="datawrapper-chart-r5JOS" src=https://datawrapper.dwcdn.net/r5JOS/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
+
                                       
-  
+<p><span class="grijsnietgekend">&#x2022 niet gekend</span></p>
+<p><span class="roodnonrespons">&#x2022 non-respons</span></p>
                                       </div>
                                   </vl-info-tile>
                               </div>
                           </div>
-  
+                          
+
+
                           <div is="vl-grid" class="data-top-bot">
                               <div is="vl-column" data-vl-size=10>
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Aantal klachten (ruimtelijke ordening)</span>
                                       <span slot="subtitle">Per 1000 inwoners</span>
                                       <div slot="content">
-                                      <iframe title="" aria-label="Map" id="datawrapper-chart-KDA1H" src=https://datawrapper.dwcdn.net/KDA1H/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+                                      <iframe title="Klachten" aria-label="Map" id="datawrapper-chart-imxGZ" src=https://datawrapper.dwcdn.net/imxGZ/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
                                       </script>
                                       
-  
+                                      
+                                      <p><span class="grijsnietgekend">&#x2022 niet gekend</span></p>
+                                      <p><span class="roodnonrespons">&#x2022 non-respons</span></p>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -163,7 +183,7 @@ render() {
   
                       </section>
   
-                      <section id="content-1-2" is="vl-region">
+                      <section id="content-1-4" is="vl-region">
   
                           <div is="vl-grid">
                               <div is="vl-column data-vl-size=12 class=" data-top-bot">
@@ -179,10 +199,12 @@ render() {
                                       <span slot="title">Aantal controles (milieu)</span>
                                       <span slot="subtitle">Per 1000 inwoners</span>
                                       <div slot="content">
-                                      <iframe title="" aria-label="Map" id="datawrapper-chart-VVCOy" src=https://datawrapper.dwcdn.net/VVCOy/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+                                      <iframe title="controles" aria-label="Map" id="datawrapper-chart-TgLaI" src=https://datawrapper.dwcdn.net/TgLaI/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
                                       </script>
                                       
-  
+                                      
+                                      <p><span class="grijsnietgekend">&#x2022 niet gekend</span></p>
+                                      <p><span class="roodnonrespons">&#x2022 non-respons</span></p>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -194,10 +216,12 @@ render() {
                                       <span slot="title">Aantal controles (ruimtelijke ordening)</span>
                                       <span slot="subtitle">Per 1000 inwoners</span>
                                       <div slot="content">
-                                      <iframe title="" aria-label="Map" id="datawrapper-chart-sLfx7" src=https://datawrapper.dwcdn.net/sLfx7/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-                                      </script>
+                                      <iframe title="controles" aria-label="Map" id="datawrapper-chart-5h0uH" src=https://datawrapper.dwcdn.net/5h0uH/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
+
                                       
-  
+<p><span class="grijsnietgekend">&#x2022 niet gekend</span></p>
+<p><span class="roodnonrespons">&#x2022 non-respons</span></p>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -206,7 +230,7 @@ render() {
   
                       </section>
   
-                      <section id="content-1-2" is="vl-region">
+                      <section id="content-1-5" is="vl-region">
   
                           <div is="vl-grid">
                               <div is="vl-column data-vl-size=12 class=" data-top-bot">
@@ -222,10 +246,12 @@ render() {
                                       <span slot="title">Aantal aanvankelijke controles met schending (milieu)</span>
                                       <span slot="subtitle">Per 1000 inwoners</span>
                                       <div slot="content">
-                                      <iframe title="" aria-label="Map" id="datawrapper-chart-rq5Mb" src=https://datawrapper.dwcdn.net/rq5Mb/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+                                      <iframe title="AAcontroles" aria-label="Map" id="datawrapper-chart-1vJCs" src=https://datawrapper.dwcdn.net/1vJCs/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
                                       </script>
                                       
-  
+                                      
+                                      <p><span class="grijsnietgekend">&#x2022 niet gekend</span></p>
+                                      <p><span class="roodnonrespons">&#x2022 non-respons</span></p>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -237,10 +263,12 @@ render() {
                                       <span slot="title">Aantal aanvankelijke controles met schending (ruimtelijke ordening)</span>
                                       <span slot="subtitle">Per 1000 inwoners</span>
                                       <div slot="content">
-                                      <iframe title="" aria-label="Map" id="datawrapper-chart-Pd98T" src=https://datawrapper.dwcdn.net/Pd98T/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-                                      </script>
+                                      <iframe title="aacontroles" aria-label="Map" id="datawrapper-chart-J46eb" src=https://datawrapper.dwcdn.net/J46eb/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
+
                                       
-  
+<p><span class="grijsnietgekend">&#x2022 niet gekend</span></p>
+<p><span class="roodnonrespons">&#x2022 non-respons</span></p>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -249,7 +277,7 @@ render() {
   
                       </section>
   
-                      <section id="content-1-2" is="vl-region">
+                      <section id="content-1-6" is="vl-region">
   
                           <div is="vl-grid">
                               <div is="vl-column data-vl-size=12 class=" data-top-bot">
@@ -264,9 +292,11 @@ render() {
                                       <span slot="title">Aantal aanmaningen (milieu)</span>
                                       <span slot="subtitle">Per 1000 inwoners</span>
                                       <div slot="content">
-                                      <iframe title="" aria-label="Map" id="datawrapper-chart-Am9eA" src=https://datawrapper.dwcdn.net/Am9eA/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-                                      </script>
-                                      
+                                      <iframe title="aanmaningen" aria-label="Map" id="datawrapper-chart-7v1Wk" src=https://datawrapper.dwcdn.net/7v1Wk/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
+
+<p><span class="grijsnietgekend">&#x2022 niet gekend</span></p>
+<p><span class="roodnonrespons">&#x2022 non-respons</span></p>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -278,7 +308,10 @@ render() {
                                       <span slot="title">Aantal aanmaningen (ruimtelijke ordening)</span>
                                       <span slot="subtitle">Per 1000 inwoners</span>
                                       <div slot="content">
-                                      <iframe title="aanmaningen" aria-label="Map" id="datawrapper-chart-D1Du0" src="https://datawrapper.dwcdn.net/D1Du0/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
+                                      <iframe title="aanmaningen" aria-label="Map" id="datawrapper-chart-JJ5bS" src=https://datawrapper.dwcdn.net/JJ5bS/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+                                      </script>
+                                      <p><span class="grijsnietgekend">&#x2022 niet gekend</span></p>
+                                      <p><span class="roodnonrespons">&#x2022 non-respons</span></p>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -287,7 +320,7 @@ render() {
   
                       </section>
   
-                      <section id="content-1-2" is="vl-region">
+                      <section id="content-1-7" is="vl-region">
   
                           <div is="vl-grid">
                               <div is="vl-column data-vl-size=12 class=" data-top-bot">
@@ -302,10 +335,12 @@ render() {
                                       <span slot="title">Aantal processen-verbalen (milieu)</span>
                                       <span slot="subtitle">Per 1000 inwoners</span>
                                       <div slot="content">
-                                      <iframe title="" aria-label="Map" id="datawrapper-chart-0dqIk" src=https://datawrapper.dwcdn.net/0dqIk/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-                                      </script>
+                                      <iframe title="PV" aria-label="Map" id="datawrapper-chart-x5ZVJ" src=https://datawrapper.dwcdn.net/x5ZVJ/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
+
                                       
-  
+<p><span class="grijsnietgekend">&#x2022 niet gekend</span></p>
+<p><span class="roodnonrespons">&#x2022 non-respons</span></p>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -317,7 +352,10 @@ render() {
                                       <span slot="title">Aantal processen-verbalen (ruimtelijke ordening)</span>
                                       <span slot="subtitle">Per 1000 inwoners</span>
                                       <div slot="content">
-                                      <iframe title="PVRO" aria-label="Map" id="datawrapper-chart-5sRYh" src="https://datawrapper.dwcdn.net/5sRYh/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
+                                      <iframe title="pv" aria-label="Map" id="datawrapper-chart-hnEKG" src=https://datawrapper.dwcdn.net/hnEKG/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
+<p><span class="grijsnietgekend">&#x2022 niet gekend</span></p>
+                                      <p><span class="roodnonrespons">&#x2022 non-respons</span></p>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -326,7 +364,7 @@ render() {
   
                       </section>
   
-                      <section id="content-1-2" is="vl-region">
+                      <section id="content-1-8" is="vl-region">
   
                           <div is="vl-grid">
                               <div is="vl-column data-vl-size=12 class=" data-top-bot">
@@ -342,10 +380,12 @@ render() {
                                       <span slot="title">Aantal verslagen van vastelling (milieu)</span>
                                       <span slot="subtitle">Per 1000 inwoners</span>
                                       <div slot="content">
-                                      <iframe title="" aria-label="Map" id="datawrapper-chart-0L4iz" src=https://datawrapper.dwcdn.net/0L4iz/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+                                      <iframe title="Verslagen van vastelling" aria-label="Map" id="datawrapper-chart-SAC6L" src=https://datawrapper.dwcdn.net/SAC6L/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
                                       </script>
                                       
-  
+                                      
+                                      <p><span class="grijsnietgekend">&#x2022 niet gekend</span></p>
+                                      <p><span class="roodnonrespons">&#x2022 non-respons</span></p>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -357,7 +397,10 @@ render() {
                                       <span slot="title">Verslagen van vastelling (ruimtelijke ordening)</span>
                                       <span slot="subtitle">Per 1000 inwoners</span>
                                       <div slot="content">
-                                      <iframe title="verslag vastelling ro" aria-label="Map" id="datawrapper-chart-w3pgv" src="https://datawrapper.dwcdn.net/w3pgv/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
+                                      <iframe title="verslagen van vaststelling" aria-label="Map" id="datawrapper-chart-47tM2" src=https://datawrapper.dwcdn.net/47tM2/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
+<p><span class="grijsnietgekend">&#x2022 niet gekend</span></p>
+                                      <p><span class="roodnonrespons">&#x2022 non-respons</span></p>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -366,7 +409,7 @@ render() {
   
                       </section>
   
-                      <section id="content-1-2" is="vl-region">
+                      <section id="content-1-9" is="vl-region">
   
                           <div is="vl-grid">
                               <div is="vl-column data-vl-size=12 class=" data-top-bot">
@@ -380,7 +423,10 @@ render() {
                                       <span slot="title">Aantal stakingsbevelen (ruimtelijke ordening)</span>
                                       <span slot="subtitle">Per 1000 inwoners</span>
                                       <div slot="content">
-                                      <iframe title="bevel tot staking" aria-label="Map" id="datawrapper-chart-qy3rp" src="https://datawrapper.dwcdn.net/qy3rp/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
+                                      <iframe title="stakingsbevel" aria-label="Map" id="datawrapper-chart-8mUxd" src=https://datawrapper.dwcdn.net/8mUxd/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
+<p><span class="grijsnietgekend">&#x2022 niet gekend</span></p>
+                                      <p><span class="roodnonrespons">&#x2022 non-respons</span></p>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -389,7 +435,7 @@ render() {
   
                       </section>
   
-                      <section id="content-1-2" is="vl-region">
+                      <section id="content-1-10" is="vl-region">
   
                           <div is="vl-grid">
                               <div is="vl-column data-vl-size=12 class=" data-top-bot">
@@ -405,9 +451,11 @@ render() {
                                       <span slot="title">Aantal bestuurlijke maatregelen (milieu)</span>
                                       <span slot="subtitle">Per 1000 inwoners</span>
                                       <div slot="content">
-                                      <iframe title="" aria-label="Map" id="datawrapper-chart-IUFFN" src=https://datawrapper.dwcdn.net/IUFFN/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-                                      </script>
-                                      
+                                      <iframe title="bestuurlijke maatregel" aria-label="Map" id="datawrapper-chart-yNv5H" src=https://datawrapper.dwcdn.net/yNv5H/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
+
+<p><span class="grijsnietgekend">&#x2022 niet gekend</span></p>
+<p><span class="roodnonrespons">&#x2022 non-respons</span></p>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -419,7 +467,10 @@ render() {
                                       <span slot="title">Aantal bestuurlijke maatregelen (ruimtelijke ordening)</span>
                                       <span slot="subtitle">Per 1000 inwoners</span>
                                       <div slot="content">
-                                      <iframe title="bestuurlijke maatregel ro" aria-label="Map" id="datawrapper-chart-8mvaC" src="https://datawrapper.dwcdn.net/8mvaC/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
+                                      <iframe title="bestuurlijke maatregel" aria-label="Map" id="datawrapper-chart-EelUS" src=https://datawrapper.dwcdn.net/EelUS/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
+<p><span class="grijsnietgekend">&#x2022 niet gekend</span></p>
+                                      <p><span class="roodnonrespons">&#x2022 non-respons</span></p>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -429,7 +480,7 @@ render() {
                       </section>
                       <section is="vl-region" id="content-4">
                           <h3 is="vl-h3">Bekijk cijfers voor andere thema's</h3>
-                          <vl-alert data-vl-icon="info-circle" data-vl-title="Bekijk de cijfers van andere thema's"
+                          <vl-alert data-vl-title="Bekijk de cijfers van andere thema's"
                               data-vl-type="info">
                               <p>
                                   <a is="vl-link-button" href="/public/gewestelijk">Gewest</a>
@@ -450,18 +501,18 @@ render() {
                           <ul is="vl-side-navigation-group">
                               <li is="vl-side-navigation-item" data-vl-parent="content-1">
                                   <a is="vl-side-navigation-toggle" href="#content-1" data-vl-child="content-1">
-                                      Cijfers voor milieu
+                                      Thema's
                                       <i class="vl-vi vl-vi-arrow-right-fat"></i>
                                   </a>
                                   <ul>
                                       <li is="vl-side-navigation-item">
                                           <div>
-                                              <a href="#content-1-1" data-vl-parent="content-1">Selecties</a>
+                                              <a href="#content-1-1" data-vl-parent="content-1">Toezichthouders/verbalisanten</a>
                                           </div>
                                       </li>
                                       <li is="vl-side-navigation-item">
                                           <div>
-                                              <a href="#content-1-2" data-vl-parent="content-1">Toezichthouders en VTE</a>
+                                              <a href="#content-1-2" data-vl-parent="content-1">VTE handhaving</a>
                                           </div>
                                       </li>
                                       <li is="vl-side-navigation-item">
@@ -477,44 +528,34 @@ render() {
                                       <li is="vl-side-navigation-item">
                                           <div>
                                               <a href="#content-1-5" data-vl-parent="content-1">Aanvankelijke controles
-                                                  met overtreding</a>
+                                                  met schending</a>
                                           </div>
                                       </li>
                                       <li is="vl-side-navigation-item">
                                           <div>
-                                              <a href="#content-1-6" data-vl-parent="content-1">Instrumentarium</a>
+                                              <a href="#content-1-6" data-vl-parent="content-1">Aanmaning</a>
                                           </div>
                                       </li>
-  
-                                  </ul>
+                                      <li is="vl-side-navigation-item">
+                                          <div>
+                                              <a href="#content-1-7" data-vl-parent="content-1">Processen-verbaal</a>
+                                          </div>
+                                      </li>
+                                      <li is="vl-side-navigation-item">
+                                      <div>
+                                          <a href="#content-1-8" data-vl-parent="content-1">Verslagen van vaststelling</a>
+                                      </div>
+                                  </li>
+                                  <li is="vl-side-navigation-item">
+                                      <div>
+                                          <a href="#content-1-9" data-vl-parent="content-1">Stakingsbevelen</a>
+                                      </div>
+                                  </li>
+                                  <li is="vl-side-navigation-item">
+                                  <div>
+                                      <a href="#content-1-10" data-vl-parent="content-1">Bestuurlijke maatregelen</a>
+                                  </div>
                               </li>
-                              <li is="vl-side-navigation-item" data-vl-parent="content-3">
-                                  <a is="vl-side-navigation-toggle" href="#content-3" data-vl-child="content-3">
-                                      Cijfers voor ruimtelijke ordening
-                                      <i class="vl-vi vl-vi-arrow-right-fat"></i>
-                                  </a>
-                                  <ul>
-                                      <li is="vl-side-navigation-item">
-                                          <div>
-                                              <a href="#content-3-1" data-vl-parent="content-3">Verbalitisanten en
-                                                  stedenbouwkundige inspecteurs</a>
-                                          </div>
-                                      </li>
-                                      <li is="vl-side-navigation-item">
-                                          <div>
-                                              <a href="#content-3-2" data-vl-parent="content-3">VTE</a>
-                                          </div>
-                                      </li>
-                                      <li is="vl-side-navigation-item">
-                                          <div>
-                                              <a href="#content-3-3" data-vl-parent="content-3">Overzicht</a>
-                                          </div>
-                                      </li>
-                                      <li is="vl-side-navigation-item">
-                                          <div>
-                                              <a href="#content-3-4" data-vl-parent="content-3">Controles</a>
-                                          </div>
-                                      </li>
   
                                   </ul>
                               </li>
@@ -532,6 +573,8 @@ render() {
       </div>
   </section>
 
+
+  
       `,
       title: "GemeentenAnalyseView",
     });

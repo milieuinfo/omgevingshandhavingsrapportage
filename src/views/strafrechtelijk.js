@@ -8,7 +8,7 @@ export class StrafrechtelijkAnalyseView extends LitElement {
   render() {
     return page({
       children: html`   
-     <section is="vl-region">
+      <section is="vl-region">
       <div is="vl-layout">
           <div is="vl-grid" data-vl-is-stacked>
               <div is="vl-column" data-vl-size="8" data-vl-medium-size="8" data-vl-small-size="8"
@@ -312,7 +312,8 @@ export class StrafrechtelijkAnalyseView extends LitElement {
               </div>
           </div>
       </div>
-  </section>
+  </section>                       
+
       `,
       title: "StrafrechtelijkAnalyseView",
       

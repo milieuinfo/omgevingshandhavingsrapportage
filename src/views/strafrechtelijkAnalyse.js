@@ -5,15 +5,14 @@ import { analysis } from "../templates/analysis";
 import { embed, useEffect } from "@nebula.js/stardust";
 import { render } from 'lit';
 
-
 export class StrafrechtelijkAnalyseAnalyseView extends LitElement {
   render() {
     return analysis({
       children: html
       `
       <vl-functional-header data-vl-back="Terug" data-vl-back-link="/public/strafrechtelijk"
-      data-vl-title="Cijfers voor strafrechtelijk en bestuurlijk vervolgtraject"
-      data-vl-sub-title="Een analyse van strafrechtelijk en bestuurlijk vervolgtraject"
+      data-vl-title="Cijfers voor het strafrechtelijk en bestuurlijk vervolgtraject"
+      data-vl-sub-title="Een analyse van het strafrechtelijk en bestuurlijk vervolgtraject"
       data-vl-link="Strafrechtelijk en bestuurlijk vervolgtraject">
   </vl-functional-header>
   <section is="vl-region">
@@ -30,111 +29,151 @@ export class StrafrechtelijkAnalyseAnalyseView extends LitElement {
               <section id="content-1" is="vl-region">
                 <h2 is="vl-h2">Een wegwijzer doorheen de cijfers en grafieken</h2>
                 <p>
-                    Deze pagina toont een inzichtelijke beeld over de cijfers van hoge raad van
-                    handhavingsuitvoeringen.
-                    De grafieken zijn volledig interactief en de cijfers zullen worden gewijzigd naargelang de
-                    gekozen filtering.
-                    Uw aangeduide filtering kan op elk moment verwijderd worden met de selectiebalk hieronder.
+                    Deze pagina toont een overzichtelijk beeld van he strafrechtelijke en bestuurlijke vervolgtraject van de instrumenten
+                    proces-verbaal en verslag van vastelling. De grafieken zijn iteractief en de cijfers zullen wijzigen naargelang de gekozen filtering.
+                    De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk.
                 </p>
               </section>
     
               <section id="content-1-1" is="vl-region">
               <h3 is="vl-h3">Bekijk de cijfers</h3>
+              <hr>
              
-              <div class="toolbar"></div>
+            
               <vl-infoblock data-vl-icon="business-graph-bar">
               <h2 slot="title">Openbaar ministerie</h2>
-              Hieronder kan u de bestand downloaden in PDF formaat van de duiding van strafrechtelijk 
+              Hieronder kan een bestand worden gedownload met duiding bij de statische bijdrage van het Openbaar Ministerie:
               <vl-document data-vl-href="documents/Duiding bij de statistische bijdrage van het Openbaar Ministerie.pdf">
               <span slot="type">PDF</span>
               <span slot="title">Duiding bij de statische bijdrage</span>
               <span slot="metadata">PDF - 580 kB</span>
             </vl-document>
             </vl-infoblock>
-            <div is="vl-grid">
+            <hr>
+            <div is="vl-grid" class="data-top-bot">
            
-            <p>Instroom - herkomst</p>
-            <div class="Tabel1 chart"></div>
+            <h5
+            is="vl-h5"
+            
+          >
+            Instroom - herkomst
+          </h5>
+            <div class="Tabel1 chartTabelsm"></div>
             </div>
 
+            <div class="toolbar"></div>
             <div is="vl-grid">
-            <vl-infoblock data-vl-icon="business-graph-bar">
-            <h2 slot="title">Instroom -thematisch</h2>
-            Hieronder kan u de bestand downloaden in PDF formaat van de duiding van strafrechtelijk 
-            <vl-document data-vl-href="">
-            <span slot="type">CSV</span>
-            <span slot="title">Download data van onderstaande visualisatie</span>
-            <span slot="metadata">CSV - 580 kB</span>
-          </vl-document>
-          </vl-infoblock>
+            <h5 is="vl-h5">Instroom - thematisch</h5></div>
+            <div is="vl-grid">
+            <vl-typography>
+            <p><span class="ondertitel">Selecteer een thema voor gedetailleerdere informatie</span></p></vl-typography>
             <div class="DrillBar chart"></div>
           
             </div>
-            <div is="vl-grid">
-            <vl-infoblock data-vl-icon="business-graph-bar">
-            <h2 slot="title">Vooruitgangsstaat</h2>
-            Hieronder kan u de bestand downloaden in PDF formaat van de duiding van strafrechtelijk 
-            <vl-document data-vl-href="">
-            <span slot="type">CSV</span>
-            <span slot="title">Download data van onderstaande visualisatie</span>
-            <span slot="metadata">CSV - 580 kB</span>
-          </vl-document>
-          </vl-infoblock>
+            <div is="vl-grid" class="data-top-bot">
+            <h5
+            is="vl-h5"
+            
+          >
+            Vooruitgangstaat
+          </h5>
             <div class="Tabelvooruitgangstaat chartTabel"></div>
             </div>
 
-            <div is="vl-grid">
-            <vl-infoblock data-vl-icon="business-graph-bar">
-            <h2 slot="title">Motieven tot seponering</h2>
-            Hieronder kan u de bestand downloaden in PDF formaat van de duiding van strafrechtelijk 
-            <vl-document data-vl-href="">
-            <span slot="type">CSV</span>
-            <span slot="title">Download data van onderstaande visualisatie</span>
-            <span slot="metadata">CSV - 580 kB</span>
-          </vl-document>
-          </vl-infoblock>
+            <div is="vl-grid" class="data-top-bot">
+            <h5
+            is="vl-h5"
+            
+          >
+            Motieven tot seponering
+          </h5>
 
+          <div class="Tabelseponering chartTabel"></div>
             </div>
               </section>
     
               <section id="content-1-2" is="vl-region">
+              <hr>
               <vl-infoblock data-vl-icon="business-graph-bar">
-              <h2 slot="title">Gewestelijke beboetingsentiteit - Instroom</h2>
-              Hieronder kan u navigeren naar de regelgeving van dit thema.
+              <h2 slot="title">Gewestelijke beboetingsentiteit</h2>
+              Voor informatie over de gewestelijke beboetingsentiteit kan u navigeren naar
               <vl-document>
               <span slot="type">URL</span>
               <span slot="title"><a href="https://navigator.emis.vito.be/mijn-navigator?woId=39023">Naar regelgeving</a></span>
-             
             </vl-document>
             </vl-infoblock>
-            <div is="vl-grid">
-            <div class="GewestBB chart"></div></div>
-
-            <vl-infoblock data-vl-icon="business-graph-bar">
-              <h2 slot="title">Gewestelijke beboetingsentiteit - Behandeling</h2>
-              Hieronder kan u navigeren naar de regelgeving van dit thema.
-              <vl-document>
-              <span slot="type">URL</span>
-              <span slot="title"><a href="https://navigator.emis.vito.be/mijn-navigator?woId=39023">Naar regelgeving</a></span>
-             
-            </vl-document>
+            <hr>
             </vl-infoblock>
             <div is="vl-grid">
+            <h5
+            is="vl-h5">Instroom</h5>
+            <div class="GewestBB chart"></div>
+            </div>
 
-            <div class="GewestBH chart"></div></div>
+            <h5
+            is="vl-h5">Behandeling</h5>
+            <div is="vl-grid">
+
+            <div class="GewestBH chartTabelsm"></div></div>
+
+            <div is="vl-grid">
+            <vl-typography>
+            <h5 is="vl-h5">Behandeling - thematisch</h5>
+            <h6>Milieu</h6></vl-typography>
+            <div class="milieubehandelingthem chartTabel"></div></div>
+            
+            <div is="vl-grid">
+            <vl-typography>
+            <h5 is="vl-h5">Behandeling - thematisch</h5>
+            <h6>Ruimtelijke ordening</h6></vl-typography>
+            <div class="RObehandelingthem chartTabelsm"></div></div>
+            
               </section>
+
     
               <section id="content-1-3" is="vl-region">
+              <hr>
               <vl-infoblock data-vl-icon="business-graph-bar">
               <h2 slot="title">Handhavingscollege  – beroepen tav bestuurlijke geldboeten</h2>
-              Hieronder kan u navigeren naar de regelgeving van dit thema.
+              Voor informatie over het Handhavingscollege kan u navigeren naar
               <vl-document>
               <span slot="type">URL</span>
               <span slot="title"><a href="https://navigator.emis.vito.be/mijn-navigator?woId=22487" target="_blank">Naar regelgeving</a></span>
              
             </vl-document>
             </vl-infoblock>
+            <hr>
+
+            <div is="vl-grid">
+            <h5
+            is="vl-h5">Instroom</h5>
+            <div class="HHCTabel1 object"></div></div>
+
+            <div is="vl-grid">
+            <h5
+            is="vl-h5">Behandeling</h5>
+            <div class="HHCTabel2 chartTabelmd"></div></div>
               </section>
+
+              <section is="vl-region" id="content-4">
+              <h3 is="vl-h3">Bekijk cijfers voor andere thema's</h3>
+              <vl-alert data-vl-title="Cijfers andere handhavingsactoren"
+                  data-vl-type="info">
+                  <p>
+                      <a is="vl-link-button" href="/public/gewestelijk">per gewest</a>
+                      <a is="vl-link-button" href="/public/provinciaal">per provincie</a>
+                      <a is="vl-link-button" href="/public/gemeenten">per gemeenten</a>
+                      <a is="vl-link-button" href="/public/hogeraad">Hoge raad</a>
+                  </p>
+                
+              </vl-alert>
+              <vl-alert             
+              data-vl-title="Download de data"
+              data-vl-type="info"
+            >
+              <p><a href="/documents/Strafrechtelijkdata.zip" download>Klik hier om de download te starten</a></p>
+            </vl-alert>
+          </section>
             </div>
           </div>
           <div
@@ -188,8 +227,6 @@ export class StrafrechtelijkAnalyseAnalyseView extends LitElement {
         </div>
       </div>
     </section>
-
-
       `,
       title: "StrafrechtelijkAnalyseAnalyseView",
     });

@@ -13,25 +13,21 @@ export class ProvinciaalAnalyseView extends LitElement {
   </vl-functional-header>
   
   
-  <section is="vl-region">
+  <section is="vl-region" >
       <div is="vl-layout">
           <div is="vl-grid" data-vl-is-stacked>
               <div is="vl-column" data-vl-size="8" data-vl-medium-size="8" data-vl-small-size="8"
                   data-vl-extra-small-size="12">
                   <div is="vl-side-navigation-reference">
                       <section id="content-1" is="vl-region">
-                          <h2 is="vl-h2">Een wegwijzer doorheen de cijfers en grafieken</h2>
+                          <h2 is="vl-h2">Een wegwijzer doorheen de cijfers</h2>
                           <p>
-                              Deze pagina toont een inzichtelijke beeld over de cijfers van provinciale
-                              handhavingsactoren.
-                              De grafieken zijn volledig interactief en de cijfers zullen worden gewijzigd naargelang de
-                              gekozen filtering.
-                              Uw aangeduide filtering kan op elk moment verwijderd worden met de selectiebalk hieronder.
+                              Deze pagina toont een overzichtelijk beeld van de handhavingsactiviteiten van de provinciale handhavingsactoren.
+                              De grafieken zijn interactief en de cijfers zullen wijzigen naargelang de gekozen filtering. 
+                              De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk hieronder.
                           </p>
                           <br>
-                          <p><a is="vl-link"
-                                  href="https://navigator.emis.vito.be/mijn-navigator?woId=25226&woLang=nl&woVersion=2022-03-11"
-                                  target="_blank">Bekijk de bevoegheden van de provincies</a></p>
+                         
                       </section>
   
                       <section is="vl-region">
@@ -50,22 +46,23 @@ export class ProvinciaalAnalyseView extends LitElement {
                               </div>
                               <div is="vl-column" data-vl-size=8>
                                   <vl-infoblock data-vl-title="Selectiebalk" data-vl-icon="cursor-finger-up">
-                                      Hierboven staan uw actieve selecties op de pagina en zullen de cijfers aangepast
-                                      worden op basis van de geselecteerde
-                                      gewestelijke handhavingsactor. Dit selectiebalk is interactief en u kunt selecties
-                                      aanpassen of toevoegen.
+                                     Hierboven staan de actieve selecties op deze pagina. De cijfers worden aangepast op basis van de geselecteerde provincie(s). Deze selectiebalk is interactief; er kunnen selecties worden aangepast of toegevoegd.
                                   </vl-infoblock>
                                   <vl-infoblock data-vl-title="Uw selectie mogelijkheden"
                                       data-vl-icon="cursor-finger-left">
-                                      In de filterpaneel staan de mogelijke selecties dat u kunt uitvoeren op de pagina.
-                                      U kunt meerdere gewestelijke handhavingsactoren aanduiden en de cijfers en grafieken
-                                      zullen aangepast worden
-                                      op basis van uw selecties.
+                                     In het filterpaneel staan de mogelijke selecties die kunnen worden uitgevoerd op deze pagina. Er kunnen meerdere provincies aangeduid worden.
+                                     De cijfers en grafieken zullen worden aangepast op basis van de selecties.
                                   </vl-infoblock>
                               </div>
                           </div>
                       </section>
                       <section id="content-1-1" is="vl-region">
+                      <div is="vl-grid">
+                     
+    <p><a is="vl-link"
+    href="https://navigator.emis.vito.be/mijn-navigator?woId=25226&woLang=nl&woVersion=2022-03-11"
+    target="_blank">Bekijk de bevoegheden van de provincies</a></p>
+                     </div>
                           <div is="vl-grid">
                               <div is="vl-column" data-vl-size=12 class="data-top-bot">
                                   <vl-infoblock data-vl-title="Provinciegouverneur" data-vl-icon="business-graph-bar">
@@ -73,44 +70,42 @@ export class ProvinciaalAnalyseView extends LitElement {
                               </div>
                           </div>
                           <div is="vl-grid">
-                              <div is="vl-column" data-vl-size=3>
+                              <div is="vl-column" data-vl-size=8>
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Bestuurlijke maatregelen</span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-risicoanalyse.png">
                                           <div class="BESTM object"></div>
-                                      </div>
-                                  </vl-info-tile>
-                              </div>
-                              <div is="vl-column" data-vl-size=3>
-                                  <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Veiligheids maatregelen</span>
+                                          <div is="vl-grid">
+                                          <div is="vl-column" data-vl-size=6>
+                                          <vl-info-tile data-vl-auto-open=true>
+                                          <span slot="title">Met dwangsom</span>
+                                          <div slot="content">
+                                              <div class="PROV-KPI-GOV-met-dwangsom object"></div>
+                                          </div>
+                                      </vl-info-tile></div>
+                                      <div is="vl-column" data-vl-size=6>
+                                      <vl-info-tile data-vl-auto-open=true>
+                                      <span slot="title">Zonder dwangsom</span>
                                       <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-opgepast.png">
-                                          <div class="PROV-KPI-GOV-veiligsheidsmaatregel object"></div>
-                                      </div>
-                                  </vl-info-tile>
-                              </div>
-                              <div is="vl-column" data-vl-size=3>
-                                  <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Bestuurlijke maatregelen met dwangsom</span>
-                                      <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-risicoanalyse.png">
-                                          <div class="PROV-KPI-GOV-met-dwangsom object"></div>
-                                      </div>
-                                  </vl-info-tile>
-                              </div>
-  
-                              <div is="vl-column" data-vl-size=3>
-                                  <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Bestuurlijke maatregelen zonder dwangsom</span>
-                                      <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-risicoanalyse.png">
+                                          
                                           <div class="PROV-KPI-GOV-zonder-dwangsom object"></div>
                                       </div>
+                                  </vl-info-tile></div>
+                                      </div></div>
+                                  
                                   </vl-info-tile>
+                                
                               </div>
-  
+                              <div is="vl-column" data-vl-size=4>
+                              <vl-info-tile data-vl-auto-open=true>
+                                  <span slot="title">Veiligheidsmaatregelen</span>
+                                  <div slot="content">
+                                      <img class="icon" src="assets/icons/PNG-opgepast.png">
+                                      <div class="PROV-KPI-GOV-veiligsheidsmaatregel object"></div>
+                                  </div>
+                              </vl-info-tile>
+                          </div>
                           </div>
                       </section>
   
@@ -119,10 +114,6 @@ export class ProvinciaalAnalyseView extends LitElement {
                               <div is="vl-column" data-vl-size=12 class="data-top-bot">
                                   <vl-infoblock data-vl-title="Provinciale toezichthouders en VTE"
                                       data-vl-icon="business-graph-bar">
-                                      De klachten voor milieu worden onderverdeeld in negen milieucategoriën.
-                                      In de grafiek wordt de verdeling van de totale hoeveelheid klachten onderverdeeld in
-                                      de
-                                      overeenkomstige milieucategoriën.
                                   </vl-infoblock>
                               </div>
                           </div>
@@ -152,7 +143,7 @@ export class ProvinciaalAnalyseView extends LitElement {
   
                               <div is="vl-column" data-vl-size=12>
                                   <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Totaal VTE</span>
+                                      <span slot="title">Classificatie VTE</span>
                                       <div slot="content">
                                           <div class="TotaalVTEChart chart"></div>
                                       </div>
@@ -163,12 +154,15 @@ export class ProvinciaalAnalyseView extends LitElement {
   
                       <section id="content-1-3" is="vl-region">
                           <div is="vl-grid">
+                          <vl-tooltip data-vl-placement=bottom
+      >De som van de gegevens uit de verschillende categorieën kan verschillen van het totaal aantal aangezien niet alle actoren het totaal aantal kennen, maar wel gegevens aanleveren in de categorieën
+      De klachten voor milieu worden in de grafiek onderverdeeld in negen thematische categorieën.</vl-tooltip
+    >
                               <div is="vl-column" data-vl-size=12 class="data-top-bot">
+                            
                                   <vl-infoblock data-vl-title="Klachten" data-vl-icon="business-graph-bar">
-                                      De klachten voor milieu worden onderverdeeld in negen milieucategoriën.
-                                      In de grafiek wordt de verdeling van de totale hoeveelheid klachten onderverdeeld in
-                                      de
-                                      overeenkomstige milieucategoriën.
+                                     De klachten voor milieu worden in de grafiek onderverdeeld in negen thematische categorieën.
+                                    
                                   </vl-infoblock>
                               </div>
                           </div>
@@ -186,7 +180,7 @@ export class ProvinciaalAnalyseView extends LitElement {
   
                               <div is="vl-column" data-vl-size=8 class="data-top-bot">
                                   <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Verdeling van aantal klachten per categorie</span>
+                                      <span slot="title">Aantal klachten per categorie</span>
                                       <div slot="content">
                                           <div class="KlachtenChart chart"></div>
                                       </div>
@@ -197,16 +191,31 @@ export class ProvinciaalAnalyseView extends LitElement {
   
                       <section id="content-1-4" is="vl-region">
                           <div is="vl-grid">
+                          <vl-tooltip data-vl-placement=bottom
+      >De som van de gegevens uit de verschillende categorieën kan verschillen van het totaal aantal aangezien niet alle actoren het totaal aantal kennen, maar wel gegevens aanleveren in de categoriën
+      De klachten voor milieu worden in de grafiek onderverdeeld in negen thematische categorieën.</vl-tooltip
+    >
                               <div is="vl-column" data-vl-size=12 class="data-top-bot">
                                   <vl-infoblock data-vl-title="Controles" data-vl-icon="business-graph-bar">
-                                      De klachten voor milieu worden onderverdeeld in negen milieucategoriën.
-                                      In de grafiek wordt de verdeling van de totale hoeveelheid klachten onderverdeeld in
-                                      de
-                                      overeenkomstige milieucategoriën.
+                                        De controles worden in de grafiek onderverdeeld in 5 categoriën:
+                                        <vl-typography>
+                                        <ul>
+                                        <li>Initiële controles</li>
+                                        <li>Navolgende controles</li>
+                                        <li>Controles naar aanleiding van klachten</li>
+                                        <li>Controles naar aanleiding van meldingen</li>
+                                        <li>Controles op eigen initiatief</li>
+                                      </ul>
+                                      <vl-typography>
                                   </vl-infoblock>
                               </div>
                           </div>
                           <div is="vl-grid">
+                          <vl-tooltip data-vl-placement=bottom
+                          >De som van de gegevens uit de verschillende categorieën kan verschillen van het totaal aantal aangezien niet alle actoren het totaal aantal kennen, maar wel gegevens aanleveren in de categoriën
+                         </vl-tooltip>
+                        </div>
+                        <div is="vl-grid">
                               <div is="vl-column" data-vl-size=4 class="data-top-bot">
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Aantal controles</span>
@@ -221,7 +230,6 @@ export class ProvinciaalAnalyseView extends LitElement {
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Aantal controles per categorie</span>
                                       <div slot="content">
-  
                                           <div class="ControlesChart chart"></div>
                                       </div>
                                   </vl-info-tile>
@@ -232,13 +240,14 @@ export class ProvinciaalAnalyseView extends LitElement {
   
                       <section id="content-1-5" is="vl-region">
                           <div is="vl-grid">
+                          <vl-tooltip data-vl-placement=bottom
+                          >De som van de gegevens uit de verschillende categorieën kan verschillen van het totaal aantal aangezien niet alle actoren het totaal aantal kennen, maar wel gegevens aanleveren in de categoriën
+                         </vl-tooltip>
+                        
                               <div is="vl-column" data-vl-size=12 class="data-top-bot">
-                                  <vl-infoblock data-vl-title="Aanvankelijk controles met schending"
+                                  <vl-infoblock data-vl-title="Aanvankelijke controles met schending"
                                       data-vl-icon="business-graph-bar">
-                                      De klachten voor milieu worden onderverdeeld in negen milieucategoriën.
-                                      In de grafiek wordt de verdeling van de totale hoeveelheid klachten onderverdeeld in
-                                      de
-                                      overeenkomstige milieucategoriën.
+                                   De aanvankelijke controles met schending worden in de grafiek onderverdeeld in negen thematische categorieën. De overtredingsgraad wordt - indien de data gekend zijn - berekend aan de hand van de verhouding van het totaal aanvankelijke controles met overtreding ten opzichte van het aantal aanvankelijke controles naar aanleiding van klachten en meldingen en het aantal aanvankelijke controles op eigen initiatief.
                                   </vl-infoblock>
                               </div>
                           </div>
@@ -247,47 +256,50 @@ export class ProvinciaalAnalyseView extends LitElement {
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Aanvankelijke controles met schending</span>
                                       <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-onderzoek.png">
+                                          <img class="icon" src="assets/icons/PNG-fout.png">
                                           <div class="Aanvankelijkecontrolesmetovertreding object"></div>
                                       </div>
                                   </vl-info-tile>
+                                  <vl-info-tile data-vl-auto-open=true>
+                                  <span slot="title">Overtredingsgraad</span>
+                                  <div slot="content">
+                                      <img class="icon" src="assets/icons/PNG-barometer.png">
+                                      <div class="PROV-KPI-Overtredingsgraad object"></div>
+                                  </div>
+                              </vl-info-tile>
                               </div>
   
                               <div is="vl-column" data-vl-size=8 class="data-top-bot">
                                   <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Verdeling aanvankelijke controles met schending</span>
+                                      <span slot="title">Aantal aanvankelijke controles met schending per categorie</span>
                                       <div slot="content">
-  
-                                          <div class="PROV-BAR-Controles chart"></div>
+                                          <div class="PROV-BAR-Controles chart2"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
                           </div>
-  
                       </section>
   
-                      <section id="content-2" is="vl-region">
+                      <section id="content-1-6" is="vl-region">
                           <div is="vl-grid">
                               <div is="vl-column" data-vl-size=12 class="data-top-bot">
                                   <vl-infoblock data-vl-title="Instrumentarium" data-vl-icon="business-graph-bar">
-                                      De klachten voor milieu worden onderverdeeld in negen milieucategoriën.
-                                      In de grafiek wordt de verdeling van de totale hoeveelheid klachten onderverdeeld in
-                                      de
-                                      overeenkomstige milieucategoriën.
                                   </vl-infoblock>
                               </div>
                           </div>
+
+                          <!--Instrumentarium-->
                           <div is="vl-grid">
-                              <div is="vl-column" data-vl-size=3 class="data-top-bot">
+                              <div is="vl-column" data-vl-size=6 class="data-top-bot">
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Raadgeving</span>
                                       <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-Kalender.png">
+                                          <img class="icon" src="assets/icons/PNG-Informatie.png">
                                           <div class="Raadgeving object"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
-                              <div is="vl-column" data-vl-size=3 class="data-top-bot">
+                              <div is="vl-column" data-vl-size=6 class="data-top-bot">
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Aanmaning</span>
                                       <div slot="content">
@@ -296,58 +308,56 @@ export class ProvinciaalAnalyseView extends LitElement {
                                       </div>
                                   </vl-info-tile>
                               </div>
-                              <div is="vl-column" data-vl-size=3 class="data-top-bot">
+                              </div>
+                              <div is="vl-grid">
+                              <div is="vl-column" data-vl-size=6 class="data-top-bot">
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Verslag van vaststelling</span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-klipbord.png">
-                                          <div class="PROV-KPI-verslagvanvastelling objectinstrumentarium"></div>
+                                          <div class="PROV-KPI-verslagvanvastelling object"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
-                              <div is="vl-column" data-vl-size=3 class="data-top-bot">
+                              <div is="vl-column" data-vl-size=6 class="data-top-bot">
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Proces-verbaal</span>
                                       <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-time-out.png">
+                                          <img class="icon" src="assets/icons/PNG-PV.png">
                                           <div class="Procesverbaal object"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
                           </div>
-  
+
                           <div is="vl-grid">
-                              <div is="vl-column" data-vl-size=4 class="data-top-bot">
-                                  <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Bestuurlijke maatregel</span>
+                          <div is="vl-column" data-vl-size=12>
+                              <vl-info-tile data-vl-auto-open=true>
+                                  <span slot="title">Bestuurlijke maatregelen</span>
+                                  <div slot="content">
+                                      <img class="icon" src="assets/icons/PNG-risicoanalyse.png">
+                                      <div class="PROV-KPI-BestuurlijkmaatregelInstrumentarium object"></div>
+                                      <div is="vl-grid">
+                                      <div is="vl-column" data-vl-size=6>
+                                      <vl-info-tile data-vl-auto-open=true>
+                                      <span slot="title">Met dwangsom</span>
                                       <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-risicoanalyse.png">
-                                          <div class="PROV-KPI-BestuurlijkmaatregelInstrumentarium object"></div>
+                                          <div class="PROV-KPI-BestuurlijkmaatregelInstrumentariummetdwangsom object"></div>
                                       </div>
-                                  </vl-info-tile>
-                              </div>
-                              <div is="vl-column" data-vl-size=4 class="data-top-bot">
+                                  </vl-info-tile></div>
+                                  <div is="vl-column" data-vl-size=6>
                                   <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Bestuurlijke maatregel met dwangsom</span>
-                                      <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-risicoanalyse.png">
-                                          <div
-                                              class="PROV-KPI-BestuurlijkmaatregelInstrumentariummetdwangsom objectinstrumentarium">
-                                          </div>
-                                      </div>
-                                  </vl-info-tile>
-                              </div>
-                              <div is="vl-column" data-vl-size=4 class="data-top-bot">
-                                  <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Bestuurlijke maatregel zonder dwangsom</span>
-                                      <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-risicoanalyse.png">
-                                          <div
-                                              class="PROV-KPI-BestuurlijkmaatregelInstrumentariumzonderdwangsom objectinstrumentarium">
-                                          </div>
-                                      </div>
-                                  </vl-info-tile>
-                              </div>
+                                  <span slot="title">Zonder dwangsom</span>
+                                  <div slot="content">
+                                      
+                                      <div class="PROV-KPI-BestuurlijkmaatregelInstrumentariumzonderdwangsom object"></div>
+                                  </div>
+                              </vl-info-tile></div>
+                                  </div></div>
+                              
+                              </vl-info-tile>
+                            
+                          </div>
                           </div>
                           <div is="vl-grid">
                               <div is="vl-column" data-vl-size=12 class="data-top-bot">
@@ -359,11 +369,32 @@ export class ProvinciaalAnalyseView extends LitElement {
                                       </div>
                                   </vl-info-tile>
                               </div>
-                      </section>
-  
-                      <section is="vl-region" id="content-3">
-                          <h3 is="vl-h3">Bekijk cijfers voor andere thema's</h3>
-                          <vl-alert data-vl-icon="info-circle" data-vl-title="Bekijk de cijfers van andere thema's"
+                              </div>                             
+                              </section>
+
+
+                              <section id="content-1-7" is="vl-region">
+                          <div is="vl-grid">
+                              <div is="vl-column" data-vl-size=12 class="data-top-bot">
+                                  <vl-infoblock data-vl-title="Opmerking handhavingsactor" data-vl-icon="business-graph-bar">
+                                  </vl-infoblock>
+                              </div>
+                          </div>
+                          <div is="vl-grid">
+                          <div is="vl-column" data-vl-size=12 class="data-top-bot">
+                              <vl-info-tile data-vl-auto-open=true>
+                                  <span slot="title">Opmerking handhavingsactor</span>
+                                  <div slot="content">
+                                  <div class="PROV-Opmerking chartTabelsm"></div>
+                                  </div>
+                              </vl-info-tile>
+                          </div>
+                          </div>
+                          </section>
+                    
+                      <section is="vl-region" id="content-2">
+                          <h3 is="vl-h3">Cijfers andere handhavingsactoren</h3>
+                          <vl-alert data-vl-title="Bekijk de cijfers van andere thema's"
                               data-vl-type="info">
                               <p>
                               <a is="vl-link-button" href="/public/gewestelijk">Gewest</a>
@@ -372,15 +403,12 @@ export class ProvinciaalAnalyseView extends LitElement {
                               <a is="vl-link-button" href="/public/strafrechtelijk">Strafrechtelijk en bestuurlijk
                                   vervolgtraject</a>
                           </p>
-                              <br>
-                              <p>
-                                  <a is="vl-link-button" href="/public/strafrechtelijk">Strafrechtelijk en bestuurlijk
-                                      vervolgtraject</a>
-                              </p>
                           </vl-alert>
+                          <vl-alert data-vl-type="info"
+                          data-vl-title="Download de data">
+                          <p><a href="/data/OH2021 Provincies dataset.xlsx" download>Klik hier om de download te starten</a></p>
+                        </vl-alert>
                       </section>
-  
-  
                   </div>
               </div>
               <div is="vl-column" data-vl-size="4" data-vl-medium-size="4" data-vl-small-size="4"
@@ -397,12 +425,12 @@ export class ProvinciaalAnalyseView extends LitElement {
                                   <ul>
                                       <li is="vl-side-navigation-item">
                                           <div>
-                                              <a href="#content-1-1" data-vl-parent="content-1">Provinciegouverneurs</a>
+                                              <a href="#content-1-1" data-vl-parent="content-1">Provinciegouverneur</a>
                                           </div>
                                       </li>
                                       <li is="vl-side-navigation-item">
                                           <div>
-                                              <a href="#content-1-2" data-vl-parent="content-1">Toezichthouders en VTE</a>
+                                              <a href="#content-1-2" data-vl-parent="content-1">Provinciale toezichthouders en VTE</a>
                                           </div>
                                       </li>
                                       <li is="vl-side-navigation-item">
@@ -421,39 +449,23 @@ export class ProvinciaalAnalyseView extends LitElement {
                                                   met schending</a>
                                           </div>
                                       </li>
+                                      <li is="vl-side-navigation-item">
+                                          <div>
+                                              <a href="#content-1-6" data-vl-parent="content-1">Instrumentarium</a>
+                                          </div>
+                                      </li>
+                                      <li is="vl-side-navigation-item">
+                                          <div>
+                                              <a href="#content-1-7" data-vl-parent="content-1">Opmerking handhavingsactor</a>
+                                          </div>
+                                      </li>
                                   </ul>
                               </li>
                               <li is="vl-side-navigation-item" data-vl-parent="content-2">
                                   <a is="vl-side-navigation-toggle" href="#content-2" data-vl-child="content-2">
-                                      Instrumenatarium
+                                      Cijfers andere handhavingsactoren
                                       <i class="vl-vi vl-vi-arrow-right-fat"></i>
                                   </a>
-                              </li>
-                              <li is="vl-side-navigation-item" data-vl-parent="content-3">
-                                  <a is="vl-side-navigation-toggle" href="#content-3" data-vl-child="content-3">
-                                      Bekijk ook andere thema's
-                                      <i class="vl-vi vl-vi-arrow-right-fat"></i>
-                                  </a>
-                                  <ul>
-                                      <li is="vl-side-navigation-item">
-                                          <div>
-                                              <a href="#content-3-1" data-vl-parent="content-3">Gewestelijke
-                                                  handhavingsactoren</a>
-                                          </div>
-                                      </li>
-                                      <li is="vl-side-navigation-item">
-                                          <div>
-                                              <a href="#content-3-2" data-vl-parent="content-3">Handhaving in
-                                                  gemeenten</a>
-                                          </div>
-                                      </li>
-                                      <li is="vl-side-navigation-item">
-                                          <div>
-                                              <a href="#content-3-3" data-vl-parent="content-3">Strafrechtelijk en
-                                                  bestuurlijk vervolgtraject</a>
-                                          </div>
-                                      </li>
-                                  </ul>
                               </li>
                           </ul>
                       </div>

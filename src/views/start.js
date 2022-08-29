@@ -3,19 +3,32 @@ import "uig-webcomponents/lib/legacy/tabs";
 import { page } from "../templates/page";
 
 export class Start extends LitElement {
-  
-  render() {
+
+  render() { 
+
     return page({
-      children: html`
+      children: html
+      `
       <section is="vl-region">
     <div is="vl-layout" class="vl-layout">
         <div is="vl-grid" data-vl-align-center>
             <h3 is="vl-h3" data-vl-align-center>
                 Omgevingshandhavingsuitvoering in 2021 in een notendop
-            </h3>
-            <div style="max-width: 800px">
-                <img is="vl-image" sizes="100vw" src="assets/images/Presentation1.gif" alt="Infographic" />
+            </h3></div>
+            <div is="vl-grid"data-vl-align-center>
+            <div vl-column data-vl-align-space-between>
+                <button is="vl-button" @click="${this._milieu}">
+                Bekijk voor milieuhandhaving</button>
             </div>
+            <div vl-column data-vl-align-space-between>
+            <button is="vl-button" @click="${this._ro}"> Bekijk voor ruimtelijke ordening </button>
+            </div>
+            </div>
+            
+            <div is="vl-grid" class="data-top-bot" data-vl-align-center>
+            <div style="max-width: 800px">
+                <img is="vl-image" sizes="100vw" id="pic" src="assets/images/infomil.png" alt="Infographic" />
+            </div></div>
 </section>
 
 
@@ -60,7 +73,7 @@ export class Start extends LitElement {
                 data-vl-items-extra-small-size=4 data-vl-items-extra-small-max-size=4>
                 <vl-description-data-item data-vl-label="Uitgever" data-vl-value="Departement Omgeving">
                 </vl-description-data-item>
-                <vl-description-data-item data-vl-label="Publicatiedatum" data-vl-value="Juli 2022">
+                <vl-description-data-item data-vl-label="Publicatiedatum" data-vl-value="September 2022">
                 </vl-description-data-item>
                 <vl-description-data-item data-vl-label="Publicatietype" data-vl-value="Webapplicatie">
                 </vl-description-data-item>
@@ -73,6 +86,25 @@ export class Start extends LitElement {
   `,
       title: "Start",
     });
+  }
+  
+
+  _milieu(e) {
+    var img1 = "assets/images/infomil.png"
+    var img2 = "assets/images/inforo.png"
+    var page = document.getElementById("pic");
+  if(page.src = img2) {
+    page.src= img1
+  }
+  }
+  _ro(e) {
+    var img1 = "assets/images/infomil.png"
+    var img2 = "assets/images/inforo.png"
+    var page = document.getElementById("pic");
+  
+  if(page.src = img1) {
+    page.src= img2
+  }
   }
 
   createRenderRoot() {

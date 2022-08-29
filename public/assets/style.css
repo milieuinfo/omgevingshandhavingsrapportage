@@ -18,8 +18,6 @@ body {
   width:500px;
 }
 
-
-
 .bg {
   background-color: azure;
 }
@@ -51,6 +49,31 @@ body {
   height: 350px !important;
 }
 
+.chartgemeenten {
+  width:100% !important;
+  height: 439px !important;
+}
+
+.chart2 {
+  width:100% !important;
+  height: 364px !important;
+}
+
+.grijsnietgekend
+{
+  color: #727272 !important;
+  font-weight: 450 !important;
+}
+
+#pic {
+  border-radius: 5px;
+}
+.roodnonrespons
+{
+  color: #c71e1d !important;
+  font-weight:450 !important;
+}
+
 .chartTabel {
   width:100% !important;
   height: 550px !important;
@@ -61,11 +84,11 @@ body {
   height: 250px !important;
 }
 
-
-.chart2 {
-  height: 300px !important;
-  width:500px;
+.chartTabelmd {
+  width:100% !important;
+  height: 350px !important;
 }
+
 
 .data-top-bot {
   margin-bottom: 20px !important;

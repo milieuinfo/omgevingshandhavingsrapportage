@@ -6,8 +6,7 @@ export class Gewestelijk extends LitElement {
   render() {
     return page({
       children: html`
-
-     <section is="vl-region">
+<section is="vl-region">
     <div is="vl-layout">
         <div is="vl-grid" data-vl-is-stacked>
             <div is="vl-column" data-vl-size="8" data-vl-medium-size="8" data-vl-small-size="8"
@@ -112,7 +111,7 @@ export class Gewestelijk extends LitElement {
                         <a is="vl-doormat" href="/public/gewestelijkanalyse">
                             <h2 is="vl-doormat-title">Analyseer de cijfers</h2>
                             <div is="vl-doormat-text">
-                               De cijfers geven eene totaalbeeld van de handhavingsactiviteiten van de gewestelijke handhavingsactoren
+                               De cijfers geven een totaalbeeld van de handhavingsactiviteiten van de gewestelijke handhavingsactoren
                                samen in het voorgaande jaar. Bij selectie van een actor, wordt in de individuele handhavingsfiche van deze gewestelijke
                                handhavingsactor gerapporteerd over de uitvoering van de handhavingsactiviteiten in het voorgaande jaar.
                             </div>
