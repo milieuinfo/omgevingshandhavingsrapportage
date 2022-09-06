@@ -188,7 +188,7 @@ const routes = [
     }
   },
   {
-    path:"/gemeentenDashboardro",
+    path:"/public/gemeentenDashboardro",
     component: "gemeentendashboardro-view",
     action: async() => {
       await import ("./views/gemeentenDashboardro");
