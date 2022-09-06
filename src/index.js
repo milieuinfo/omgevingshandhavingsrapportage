@@ -186,7 +186,15 @@ const routes = [
       await import ("./views/strafrechtelijkAnalyse");
       strafrechtelijkanalyserendering();
     }
+  },
+  {
+    path:"/gemeentenDashboardro",
+    component: "gemeentendashboardro-view",
+    action: async() => {
+      await import ("./views/gemeentenDashboardro");
+      gemeentendashboardro();
   }
+}
 ];
       
   
@@ -936,16 +944,14 @@ async function gemeentendashboard() {
 
  /* Get fieldvalues of the field Naam Gemeente in Qlik model and mount it in placeholder listbox*/
  
- const fieldNameProvincie = 'Gemeente'; // Should refer to a field in your app
- (await nebbie.field(fieldNameProvincie))
+ const fieldNameGem = 'Gemeente'; // Should refer to a field in your app
+ (await nebbie.field(fieldNameGem))
  .mount(document.querySelector('.listboxGEM'),{search:true,title:"Gemeente",checkboxes:false});
 
  nebbie.render({ 
   element: document.querySelector('.GEM-Toezicthouders'),
   id: "GtNeXHa",
 });
-
-
 
 nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-Bar-GAS'),
@@ -1017,7 +1023,6 @@ nebbie.render({
 });
 nebbie.render({ 
   element: document.querySelector('.GEM-AAControlesBar'),
-  
   id: "WhgamS",
 });
 
@@ -1111,19 +1116,6 @@ nebbie.render({
   id: "aNCJtYU",
 });
 nebbie.render({ 
-  element: document.querySelector('.GEM-PIE-Verbalitisanten'),
-  id: "YKcxBs",
-});
-nebbie.render({ 
-  element: document.querySelector('.GEM-PIE-StedenBK'),
-  id: "MazX",
-});
-nebbie.render({ 
-  element: document.querySelector('.GEM-PIE-StedenBKVerb'),
-  id: "JpbAjkH",
-});
-
-nebbie.render({ 
   element: document.querySelector('.GEM-burgbestm'),
   id: "Jpmwen",
 });
@@ -1131,7 +1123,6 @@ nebbie.render({
   element: document.querySelector('.GEM-burgbestzonder'),
   id: "PQJZuSS",
 });
-
 nebbie.render({ 
   element: document.querySelector('.GEM-burgbestmet'),
   id: "emApAF",
@@ -1141,7 +1132,6 @@ nebbie.render({
   element: document.querySelector('.GEM-burgveilig'),
   id: "QJFCBz",
 });
-
 
 nebbie.render({ 
   element: document.querySelector('.GEM-verslagvastellingGEM'),
@@ -1155,6 +1145,69 @@ nebbie.render({
   element: document.querySelector('.GEM-verslagvastellingLP'),
   id: "QrkRHsD",
 });
+
+nebbie.render({ 
+  element: document.querySelector('.Gem-veiligheidsmaatregel-igs'),
+  id: "bTCRdV",
+});
+nebbie.render({ 
+  element: document.querySelector('.Gem-overtredingsgraad-edit'),
+  id: "zRspBS",
+});
+nebbie.render({ 
+  element: document.querySelector('.Gem-opmerking-gem'),
+  id: "jFgHzvw",
+});
+nebbie.render({ 
+  element: document.querySelector('.Gem-opmerking-igs'),
+  id: "hQJkPB",
+});
+nebbie.render({ 
+  element: document.querySelector('.Gem-opmerking-lp'),
+  id: "aDveZHw",
+});
+}
+}
+
+async function gemeentendashboardro() {
+  
+  const classExistsInit = document.getElementsByClassName(
+    'chart'
+   ).length > 0;
+   let app;
+   app = await connect(config);
+   
+   /*Set theme to charts*/
+ const nebbie = stardust.embed(app, {
+     types,
+     //themes,
+     context: {
+       language: 'nl-NL',
+       theme: 'light',
+     },
+   });
+
+   const nebbieNoselectionGem = stardust.embed(app, {
+    types,
+    //themes,
+    context: {
+      language: 'nl-NL',
+      theme: 'light',
+      constraints: { select: true },
+    },
+  });
+   
+  if(!classExistsInit) {
+    //Get toolbar of application and define it as a class of toolbar => To be used in HTML page
+  (await nebbie.selections().then((s) => s.mount(document.querySelector('.toolbar'))));
+
+
+ /* Get fieldvalues of the field Naam Gemeente in Qlik model and mount it in placeholder listbox*/
+ 
+ const fieldNameProvincie = 'Gemeente'; // Should refer to a field in your app
+ (await nebbie.field(fieldNameProvincie))
+ .mount(document.querySelector('.listboxGEM'),{search:true,title:"Gemeente",checkboxes:false});
+
 
 nebbie.render({ 
   element: document.querySelector('.GEM-Vebalitisanten'),
@@ -1229,6 +1282,18 @@ nebbie.render({
   id: "mSkpJ",
 });
 
+nebbie.render({ 
+  element: document.querySelector('.GEM-PIE-Verbalitisanten'),
+  id: "YKcxBs",
+});
+nebbie.render({ 
+  element: document.querySelector('.GEM-PIE-StedenBK'),
+  id: "MazX",
+});
+nebbie.render({ 
+  element: document.querySelector('.GEM-PIE-StedenBKVerb'),
+  id: "JpbAjkH",
+});
 nebbie.render({ 
   element: document.querySelector('.Gem-ro-inst-pv'),
   id: "PUkJxcn",
@@ -1355,22 +1420,5 @@ nebbie.render({
   id: "FWbjZh",
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 }
-

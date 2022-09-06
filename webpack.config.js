@@ -18,9 +18,8 @@ module.exports = {
    },
   compress: true,
   port: 8080,
-  historyApiFallback: {
-      index:'/public/index.html'
-  },
+  historyApiFallback: true,
+  hot: true,
   },
   module: {
    rules: [

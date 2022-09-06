@@ -3,11 +3,10 @@ import "uig-webcomponents/lib/legacy/tabs";
 import { page } from "../templates/page";
 
 export class Gemeenten extends LitElement {
-
   render() {
     return page({
       children: html`
-           <section is="vl-region">
+      <section is="vl-region">
       <div is="vl-layout">
           <div is="vl-grid" data-vl-is-stacked>
               <div is="vl-column" data-vl-size="8" data-vl-medium-size="8" data-vl-small-size="8"
@@ -37,19 +36,25 @@ export class Gemeenten extends LitElement {
                                   en/of een intergemeentelijke vereniging en/of intergemeentelijke vereniging en/of de lokale politie.
                                   In de individuele handhavingsfiches en in de cartografische weergaves wordt gerapporteerd over de
                                   uitvoering
-                                  van hun handhavingsactiviteiten in het voorgaand jaar. Zie analyseer cijfers op kaart om voor een
-                                  bepaalde
-                                  set van indicatoren de data geografisch op een vergelijkende wijze te raadplegen en zie analyseer
-                                  cijfers
-                                  individuele gemeenten om de data van de individuele gemeenten te raadplegen.
+                                  van hun handhavingsactiviteiten in het voorgaand jaar.
                               </p>
                               <div is="vl-grid">
                                   <div is="vl-column">
                                       <div style="max-width: 400px" id="content-2" class="data-top-bot">
                                           <a is="vl-doormat" href="/public/gemeentenDashboard">
-                                              <h2 is="vl-doormat-title">Analyseer de cijfers</h2>
+                                              <h2 is="vl-doormat-title">Analyseer de cijfers voor milieuhandhaving</h2>
                                               <div is="vl-doormat-text">
-                                                  ° Dashboard - individuele gemeenten
+                                              &#x2022 Dashboard - individuele gemeenten
+                                              </div>
+                                          </a>
+                                      </div>
+                                  </div>
+                                  <div is="vl-column">
+                                      <div style="max-width: 400px" id="content-2" class="data-top-bot">
+                                          <a is="vl-doormat" href="/public/gemeentenDashboardro">
+                                              <h2 is="vl-doormat-title">Analyseer de cijfers voor ruimtelijke ordening</h2>
+                                              <div is="vl-doormat-text">
+                                              &#x2022 Dashboard - individuele gemeenten
                                               </div>
                                           </a>
                                       </div>
@@ -61,7 +66,7 @@ export class Gemeenten extends LitElement {
                                           <a is="vl-doormat" href="/public/gemeentenAnalyse">
                                               <h2 is="vl-doormat-title">Analyseer de cijfers</h2>
                                               <div is="vl-doormat-text">
-                                                  ° Op kaart
+                                              &#x2022 Op kaart
                                               </div>
                                           </a>
                                       </div>
