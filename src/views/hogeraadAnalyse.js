@@ -85,10 +85,8 @@ export class HogeraadAnalyseView extends LitElement {
                               </p>
                           </vl-alert>
                           <vl-alert
-                          
-                          
                           data-vl-title="Download de data">
-                          <p><a href="/documents/Data Hoge Raad.zip" download>Klik hier om de download te starten</a></p>
+                          <p><a href="/data/DataHogeRaad.zip" download>Klik hier om de data te downloaden</a></p>
                         </vl-alert>
                       </section>
                   </div>
@@ -105,11 +103,6 @@ export class HogeraadAnalyseView extends LitElement {
                                       <i class="vl-vi vl-vi-arrow-right-fat"></i>
                                   </a>
                                   <ul>
-                                      <li is="vl-side-navigation-item">
-                                          <div>
-                                              <a href="#content-1-1" data-vl-parent="content-1">Selecties</a>
-                                          </div>
-                                      </li>
                                       <li is="vl-side-navigation-item">
                                           <div>
                                               <a href="#content-1-2" data-vl-parent="content-1">Instroom</a>

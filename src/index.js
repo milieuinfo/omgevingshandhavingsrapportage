@@ -70,34 +70,33 @@ document.querySelector('.navbar-toggler').onclick = function() {
     document.querySelector('#navbar').classList.add('show');
   }
 }
-
 */
 
 //Routes
 const routes = [
   {
-    path: "/public/",
+    path: "/",
     component: "start-view",
     action: async () => {
       await import("./views/start");
     },
   },
   {
-    path: "/public/home",
+    path: "/home",
     component: "home-view",
     action: async () => {
       await import("./views/home");
     },
   },
   {
-    path: "/public/gewestelijk",
+    path: "/gewestelijk",
     component: "gewestelijk-view",
     action: async () => {
       await import("./views/gewestelijk");
     },
   },
   {
-    path: "/public/provinciaal",
+    path: "/provinciaal",
     component: "provinciaal-view",
     action: async () => {
       await import("./views/provinciaal");
@@ -111,7 +110,7 @@ const routes = [
     },
   },
   {
-    path: "/public/gewestelijkAnalyse",
+    path: "/gewestelijkAnalyse",
     component: "GewestelijkAnalyse-view",
     action: async () => {
       await import("./views/gewestelijkAnalyse");
@@ -120,7 +119,7 @@ const routes = [
     },
   },
   {
-    path: "/public/gemeenten",
+    path: "/gemeenten",
     component: "gemeenten-view",
     action: async () => {
       await import("./views/gemeenten");
@@ -134,7 +133,7 @@ const routes = [
     },
   },
   {
-    path: "/public/provinciaalAnalyse",
+    path: "/provinciaalAnalyse",
     component: "provinciaalAnalyse-view",
     action: async () => {
       await import("./views/provinciaalAnalyse");
@@ -142,14 +141,14 @@ const routes = [
     },
   },
   {
-    path:"/public/gemeentenAnalyse",
+    path:"/gemeentenAnalyse",
     component: "gemeentenAnalyse-view",
     action: async() => {
       await import ("./views/gemeentenAnalyse");
     }
   },
   {
-    path:"/public/gemeentenDashboard",
+    path:"/gemeentenDashboard",
     component: "gemeentenDashboard-view",
     action: async() => {
       await import ("./views/gemeentenDashboard");
@@ -157,7 +156,7 @@ const routes = [
     }
   },
   {
-    path:"/public/hogeraadAnalyse",
+    path:"/hogeraadAnalyse",
     component: "hogeraadAnalyse-view",
     action: async() => {
       await import ("./views/hogeraadAnalyse");
@@ -165,7 +164,7 @@ const routes = [
     }
   },
   {
-    path:"/public/strafrechtelijk",
+    path:"/strafrechtelijk",
     component: "strafrechtelijkAnalyse-view",
     action: async() => {
       await import ("./views/strafrechtelijk")
@@ -173,14 +172,14 @@ const routes = [
     }
   },
   {
-    path:"/public/hogeraad",
+    path:"/hogeraad",
     component: "hogeraad-view",
     action: async() => {
       await import ("./views/hogeraad");
     }
   },
   {
-    path:"/public/strafrechtelijkAnalyse",
+    path:"/strafrechtelijkAnalyse",
     component: "strafrechtelijkanalyseanalyse-view",
     action: async() => {
       await import ("./views/strafrechtelijkAnalyse");
@@ -188,7 +187,7 @@ const routes = [
     }
   },
   {
-    path:"/public/gemeentenDashboardro",
+    path:"/gemeentenDashboardro",
     component: "gemeentendashboardro-view",
     action: async() => {
       await import ("./views/gemeentenDashboardro");
@@ -196,9 +195,6 @@ const routes = [
   }
 }
 ];
-      
-  
-
 export const router = new Router(document.getElementById("app"));
 router.setRoutes(routes);
 
@@ -722,9 +718,6 @@ async function hogeraadanalyserendering() {
       constraints: { select: true },
     },
   });
-   
-
- 
   if(!classExistsHR) {
     //Get toolbar of application and define it as a class of toolbar => To be used in HTML page
   (await nebbie.selections().then((s) => s.mount(document.querySelector('.toolbar'))));
@@ -780,22 +773,21 @@ async function strafrechtelijkanalyserendering() {
     //Get toolbar of application and define it as a class of toolbar => To be used in HTML page
   (await nebbie.selections().then((s) => s.mount(document.querySelector('.toolbar'))));
 
+  //Openbaar Ministerie 
+  //Instroom 
     nebbieNoselection.render({ 
       element: document.querySelector('.Tabel1'),
       id: "XBDmJ",
     });
-    nebbie.render({
-      type: 'table',
-      element: document.querySelector('.Tabel2'),
-      fields: ['subrubriek','hoofdrubriek', '=Sum(waarde)'],
-    });
+
+  //Tabel Vooruitgangsstaat
     nebbieNoselection.render({
       type: 'table',
       element: document.querySelector('.Tabelvooruitgangstaat'),
       properties: {
         qHyperCubeDef: {
           qDimensions: [
-            { qDef: { qFieldDefs: ['categorieVooruitgangsstraat'], qFallbackTitle: 'Categorie vooruitgangstaat'},  qNullSuppression: true },
+            { qDef: { qFieldDefs: ['categorieVooruitgangsstraat'], qFallbackTitle: 'Categorie vooruitgangsstaat'},  qNullSuppression: true },
           ],
           qMeasures: [
             { qDef: { qDef: 'Sum([VGSAfval])', autoSort: false, qLabel: 'Afval'}},
@@ -810,9 +802,7 @@ async function strafrechtelijkanalyserendering() {
             qWidth: 3,
             qHeight: 3000,
           }],
-         
         },
-        
       },
     });
 
@@ -830,6 +820,8 @@ async function strafrechtelijkanalyserendering() {
     });
     
 
+    //Gewestelijke beboetingsentiteit
+    //Instroom
     nebbieNoselection.render({
       type: 'table',
       element: document.querySelector('.GewestBB'),
@@ -840,7 +832,7 @@ async function strafrechtelijkanalyserendering() {
           ],
           qMeasures: [
             { qDef: { qDef: 'Sum([Misdrijven - ontvangen PV OM])', autoSort: false, qLabel: 'Misdrijven-ontvangen processen-verbaal OM', qShowTotalsAbove:true }},
-            { qDef: { qDef: 'Sum([Misdrijven - onvangen veslag van vastelling])', autoSort: false, qLabel: 'Inbreuken-ontvangen verslag van vastelling'}},
+            { qDef: { qDef: 'Sum([Misdrijven - onvangen veslag van vastelling])', autoSort: false, qLabel: 'Inbreuken-ontvangen verslagen van vaststelling'}},
           ],
           qInitialDataFetch: [{
             qWidth: 3,
@@ -861,19 +853,21 @@ async function strafrechtelijkanalyserendering() {
           ],
           qMeasures: [
             { qDef: { qDef: 'Sum([Aantal behandelde PV])', autoSort: false, qLabel: 'Aantal behandelde processen-verbaal'}, qShowTotalsAbove:true},
-            { qDef: { qDef: 'Sum([Aantal behandelde verslagen van vaststelling])', autoSort: false, qLabel: 'Aantal behandelde verslagen van vastelling'}, qShowTotalsAbove:true},
+            { qDef: { qDef: 'Sum([Aantal behandelde verslagen van vaststelling])', autoSort: false, qLabel: 'Aantal behandelde verslagen van vaststelling'}, qShowTotalsAbove:true},
           ],
           qInitialDataFetch: [{
             qWidth: 3,
             qHeight: 3000,
           }],
         },
+        
       },
     });
     nebbieNoselection.render({ 
       element: document.querySelector('.Tabelseponering'),
       id: "mDDkX",
     });
+
     
     nebbieNoselection.render({ 
       element: document.querySelector('.HHCTabel1'),

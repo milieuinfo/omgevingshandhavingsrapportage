@@ -25,6 +25,7 @@ export class ProvinciaalAnalyseView extends LitElement {
                               Deze pagina toont een overzichtelijk beeld van de handhavingsactiviteiten van de provinciale handhavingsactoren.
                               De grafieken zijn interactief en de cijfers zullen wijzigen naargelang de gekozen filtering. 
                               De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk hieronder.
+                              Als de gegevens niet gekend zijn, verschijnt - of wordt aangegeven dat de data niet beschikbaar zijn.
                           </p>
                           <br>
                          
@@ -155,8 +156,7 @@ export class ProvinciaalAnalyseView extends LitElement {
                       <section id="content-1-3" is="vl-region">
                           <div is="vl-grid">
                           <vl-tooltip data-vl-placement=bottom
-      >De som van de gegevens uit de verschillende categorieën kan verschillen van het totaal aantal aangezien niet alle actoren het totaal aantal kennen, maar wel gegevens aanleveren in de categorieën
-      De klachten voor milieu worden in de grafiek onderverdeeld in negen thematische categorieën.</vl-tooltip
+      >De som van de gegevens uit de verschillende categorieën kan verschillen van het totaal aantal aangezien niet alle actoren het totaal aantal kennen, maar wel gegevens aanleveren in de categorieën.</vl-tooltip
     >
                               <div is="vl-column" data-vl-size=12 class="data-top-bot">
                             
@@ -192,27 +192,19 @@ export class ProvinciaalAnalyseView extends LitElement {
                       <section id="content-1-4" is="vl-region">
                           <div is="vl-grid">
                           <vl-tooltip data-vl-placement=bottom
-      >De som van de gegevens uit de verschillende categorieën kan verschillen van het totaal aantal aangezien niet alle actoren het totaal aantal kennen, maar wel gegevens aanleveren in de categoriën
-      De klachten voor milieu worden in de grafiek onderverdeeld in negen thematische categorieën.</vl-tooltip
+      >De som van de gegevens uit de verschillende categorieën kan verschillen van het totaal aantal aangezien niet alle actoren het totaal aantal kennen, maar wel gegevens aanleveren in de categorieën.</vl-tooltip
     >
                               <div is="vl-column" data-vl-size=12 class="data-top-bot">
                                   <vl-infoblock data-vl-title="Controles" data-vl-icon="business-graph-bar">
-                                        De controles worden in de grafiek onderverdeeld in 5 categoriën:
-                                        <vl-typography>
-                                        <ul>
-                                        <li>Initiële controles</li>
-                                        <li>Navolgende controles</li>
-                                        <li>Controles naar aanleiding van klachten</li>
-                                        <li>Controles naar aanleiding van meldingen</li>
-                                        <li>Controles op eigen initiatief</li>
-                                      </ul>
-                                      <vl-typography>
+                                  De controles worden in de grafiek onderverdeeld in categorieën:
+                                  <br/>
+                                  initiële en navolgende controles; en controles naar aanleiding van klachten en meldingen en controles op eigen initiatief.
                                   </vl-infoblock>
                               </div>
                           </div>
                           <div is="vl-grid">
                           <vl-tooltip data-vl-placement=bottom
-                          >De som van de gegevens uit de verschillende categorieën kan verschillen van het totaal aantal aangezien niet alle actoren het totaal aantal kennen, maar wel gegevens aanleveren in de categoriën
+                          >De som van de gegevens uit de verschillende categorieën kan verschillen van het totaal aantal aangezien niet alle actoren het totaal aantal kennen, maar wel gegevens aanleveren in de categorieën.
                          </vl-tooltip>
                         </div>
                         <div is="vl-grid">
@@ -241,7 +233,7 @@ export class ProvinciaalAnalyseView extends LitElement {
                       <section id="content-1-5" is="vl-region">
                           <div is="vl-grid">
                           <vl-tooltip data-vl-placement=bottom
-                          >De som van de gegevens uit de verschillende categorieën kan verschillen van het totaal aantal aangezien niet alle actoren het totaal aantal kennen, maar wel gegevens aanleveren in de categoriën
+                          >De som van de gegevens uit de verschillende categorieën kan verschillen van het totaal aantal aangezien niet alle actoren het totaal aantal kennen, maar wel gegevens aanleveren in de categorieën.
                          </vl-tooltip>
                         
                               <div is="vl-column" data-vl-size=12 class="data-top-bot">
@@ -406,7 +398,7 @@ export class ProvinciaalAnalyseView extends LitElement {
                           </vl-alert>
                           <vl-alert data-vl-type="info"
                           data-vl-title="Download de data">
-                          <p><a href="/data/OH2021 Provincies dataset.xlsx" download>Klik hier om de download te starten</a></p>
+                          <p><a href="documents/OH2021 Provincies dataset.xlsx" download>Klik hier om de download te starten</a></p>
                         </vl-alert>
                       </section>
                   </div>

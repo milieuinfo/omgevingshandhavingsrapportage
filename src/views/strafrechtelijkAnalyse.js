@@ -30,8 +30,9 @@ export class StrafrechtelijkAnalyseAnalyseView extends LitElement {
                 <h2 is="vl-h2">Een wegwijzer doorheen de cijfers en grafieken</h2>
                 <p>
                     Deze pagina toont een overzichtelijk beeld van he strafrechtelijke en bestuurlijke vervolgtraject van de instrumenten
-                    proces-verbaal en verslag van vastelling. De grafieken zijn iteractief en de cijfers zullen wijzigen naargelang de gekozen filtering.
+                    proces-verbaal en verslag van vaststelling. De grafieken zijn interactief en de cijfers zullen wijzigen naargelang de gekozen filtering.
                     De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk.
+                    Als de gegevens niet gekend zijn, verschijnt - of wordt aangegeven dat de data niet beschikbaar zijn.
                 </p>
               </section>
     
@@ -42,24 +43,19 @@ export class StrafrechtelijkAnalyseAnalyseView extends LitElement {
             
               <vl-infoblock data-vl-icon="business-graph-bar">
               <h2 slot="title">Openbaar ministerie</h2>
-              Hieronder kan een bestand worden gedownload met duiding bij de statische bijdrage van het Openbaar Ministerie:
+              Hieronder kan een bestand worden gedownload met duiding bij de statistische bijdrage van het Openbaar Ministerie:
               <vl-document data-vl-href="documents/Duiding bij de statistische bijdrage van het Openbaar Ministerie.pdf">
               <span slot="type">PDF</span>
-              <span slot="title">Duiding bij de statische bijdrage</span>
+              <span slot="title">Duiding bij de statistische bijdrage</span>
               <span slot="metadata">PDF - 580 kB</span>
             </vl-document>
             </vl-infoblock>
             <hr>
+
             <div is="vl-grid" class="data-top-bot">
-           
-            <h5
-            is="vl-h5"
-            
-          >
-            Instroom - herkomst
-          </h5>
-            <div class="Tabel1 chartTabelsm"></div>
-            </div>
+            <h5 is="vl-h5">
+            Instroom - herkomst</h5>
+            <div class="Tabel1 chartTabelsm"></div></div>
 
             <div class="toolbar"></div>
             <div is="vl-grid">
@@ -71,20 +67,14 @@ export class StrafrechtelijkAnalyseAnalyseView extends LitElement {
           
             </div>
             <div is="vl-grid" class="data-top-bot">
-            <h5
-            is="vl-h5"
-            
-          >
-            Vooruitgangstaat
+            <h5 is="vl-h5">
+            Vooruitgangsstaat
           </h5>
             <div class="Tabelvooruitgangstaat chartTabel"></div>
             </div>
 
             <div is="vl-grid" class="data-top-bot">
-            <h5
-            is="vl-h5"
-            
-          >
+            <h5 is="vl-h5">
             Motieven tot seponering
           </h5>
 
@@ -171,7 +161,7 @@ export class StrafrechtelijkAnalyseAnalyseView extends LitElement {
               data-vl-title="Download de data"
               data-vl-type="info"
             >
-              <p><a href="/documents/Strafrechtelijkdata.zip" download>Klik hier om de download te starten</a></p>
+              <p><a href="documents/Strafrechtelijkdata.zip" download>Klik hier om de data te downloaden</a></p>
             </vl-alert>
           </section>
             </div>

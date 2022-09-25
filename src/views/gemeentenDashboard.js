@@ -26,6 +26,7 @@ render() {
                           Deze pagina toont een overzichtelijk beeld van de handhavingsactiviteiten van de gemeenten.
                           De grafieken zijn interactief en de cijfers zullen wijzigen naargelang de gekozen filtering. 
                           De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk hieronder.
+                          Als de gegevens niet gekend zijn, verschijnt - of wordt aangegeven dat de data niet beschikbaar zijn.
                           </p>
                       </section>
   
@@ -331,8 +332,6 @@ render() {
                       </section>
   
                       <section id="content-1-7" is="vl-region">
-  
-  
                           <div is="vl-grid">
                           <vl-tooltip data-vl-placement=bottom>De som van de gegevens uit de verschillende categorieën
                           kan verschillen van het totaal aantal aangezien niet alle actoren het totaal aantal
@@ -341,7 +340,7 @@ render() {
                               <div is="vl-column" data-vl-size=12 class="data-top-bot">
                                   <vl-infoblock data-vl-title="Aanvankelijke controles met schending"
                                       data-vl-icon="business-graph-bar">
-                                      De aanvankelijke controles met schending worden in de grafiek onderverdeeld in negen thematische categorieën. De overtredingsgraad wordt - indien de data gekend zijn - berekend aan de hand van de verhouding van het totaal aanvankelijke controles met overtreding ten opzichte van het aantal aanvankelijke controles naar aanleiding van klachten en meldingen en het aantal aanvankelijke controles op eigen initiatief.
+                                      De aanvankelijke controles met schending worden in de grafiek onderverdeeld in negen thematische categorieën. De overtredingsgraad wordt - indien de data gekend zijn - berekend aan de hand van de verhouding van het totaal aantal aanvankelijke controles met schending ten opzichte van het aantal aanvankelijke controles naar aanleiding van klachten en meldingen en het aantal aanvankelijke controles op eigen initiatief.
                                   </vl-infoblock>
                               </div>
                           </div>
@@ -387,7 +386,7 @@ render() {
                       </div>
                           </div>
                       </section>
-  
+
                       <section id="content-1-8" is="vl-region">
                           <div is="vl-grid">
                               <div is="vl-column" data-vl-size=12 class="data-top-bot">
@@ -395,14 +394,33 @@ render() {
                                   </vl-infoblock>
                               </div>
                           </div>
-                          <div is="vl-grid">
-                          <h4 is="vl-h4">Gemeente</h4>
 
-                          </div>
                           <div is="vl-grid" class="data-top-bot">
                               <div is="vl-column" data-vl-size=6>
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Raadgeving</span>
+                                      <span slot="subtitle">Cijfers voor gemeente</span>
+                                      <div slot="content">
+                                          <img class="icon" src="assets/icons/PNG-Informatie.png">
+                                          <div class="GEM-RaadgevingGEM object"></div>
+                                      </div>
+                                  </vl-info-tile>
+                                </div>
+                                  <div is="vl-column" data-vl-size=6>
+                                  <vl-info-tile data-vl-auto-open=true>
+                                      <span slot="title">Raadgeving</span>
+                                      <span slot="subtitle">Cijfers voor gemeente</span>
+                                      <div slot="content">
+                                          <img class="icon" src="assets/icons/PNG-Kalender.png">
+                                          <div class="GEM-AanmaningGEM object"></div>
+                                      </div>
+                                  </vl-info-tile>
+                              </div>
+                              </div>
+                              <div is="vl-grid" class="data-top-bot">
+                              <div is="vl-column" data-vl-size=6>
+                                  <vl-info-tile data-vl-auto-open=true>
+                                      <span slot="title">Aanmaningen</span>
                                       <span slot="subtitle">Cijfers voor gemeente</span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-Informatie.png">
@@ -434,7 +452,7 @@ render() {
                             </div>
                               <div is="vl-column" data-vl-size=6>
                                   <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Proces-verbaal</span>
+                                      <span slot="title">Verslag van vaststelling</span>
                                       <span slot="subtitle">Cijfers voor gemeente</span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-PV.png">
@@ -443,10 +461,31 @@ render() {
                                   </vl-info-tile>
                               </div>
                               </div>
+                              <div is="vl-grid" class="data-top-bot">
+                              <div is="vl-column" data-vl-size=6>
+                              <vl-info-tile data-vl-auto-open=true>
+                                  <span slot="title">Proces-verbaal</span>
+                                  <span slot="subtitle">Cijfers voor gemeente</span>
+                                  <div slot="content">
+                                      <img class="icon" src="assets/icons/PNG-klipbord.png">
+                                      <div class="GEM-verslagvastellingGEM object"></div>
+                                  </div>
+                              </vl-info-tile>
+                          </div>
+                            <div is="vl-column" data-vl-size=6>
+                                <vl-info-tile data-vl-auto-open=true>
+                                    <span slot="title">Proces-verbaal</span>
+                                    <span slot="subtitle">Cijfers voor gemeente</span>
+                                    <div slot="content">
+                                        <img class="icon" src="assets/icons/PNG-PV.png">
+                                        <div class="GEM-pvGEM object"></div>
+                                    </div>
+                                </vl-info-tile>
+                            </div>
+                            </div>
                              
-  
                           <div is="vl-grid" class="data-top-bot">
-                          <div is="vl-column" data-vl-size=12>
+                          <div is="vl-column" data-vl-size=6>
                               <vl-info-tile data-vl-auto-open=true>
                                   <span slot="title">Bestuurlijke maatregelen</span>
                                   <span slot="subtitle">Cijfers voor gemeente</span>
@@ -456,7 +495,7 @@ render() {
                                       <div is="vl-grid">
                                       <div is="vl-column" data-vl-size=6>
                                       <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Met dwangsom</span>
+                                      <span slot="title">Met<br/> dwangsom</span>
                                       <div slot="content">
                                       <div class="GEM-bestuurlijkmaatregelmetGEM objectinstrumentarium">
                                       </div></div>
@@ -469,14 +508,22 @@ render() {
                                   </div>
                               </vl-info-tile></div>
                                   </div></div>
-                              
                               </vl-info-tile>
-                            
                           </div>
+                          <div is="vl-column" data-vl-size=6>
+                                <vl-info-tile data-vl-auto-open=true>
+                                    <span slot="title">Proces-verbaal</span>
+                                    <span slot="subtitle">Cijfers voor gemeente</span>
+                                    <div slot="content">
+                                        <img class="icon" src="assets/icons/PNG-PV.png">
+                                        <div class="GEM-pvGEM object"></div>
+                                    </div>
+                                </vl-info-tile>
+                            </div>
                           </div>
                           
                           <div is="vl-grid" class=data-top-bot">
-                              <div is="vl-column" data-vl-size=12>
+                              <div is="vl-column" data-vl-size=6>
                                   <vl-info-tile data-vl-auto-open=true><span slot="title">Veiligheidsmaatregelen</span>
                                   <span slot="subtitle">Cijfers voor gemeente</span>
                                       <div slot="content">
@@ -485,192 +532,17 @@ render() {
                                       </div>
                                   </vl-info-tile>
                               </div>
-                          </div>
-  
-                          <div is="vl-grid" class="data-top-bot">
-                          <h4 is="vl-h4">Intergemeentelijke vereniging</h4>
-                          </div>
-
-                          <div is="vl-grid" class="data-top-bot">
-                          <div is="vl-column" data-vl-size=6>
-                              <vl-info-tile data-vl-auto-open=true>
-                                  <span slot="title">Raadgeving</span>
-                                  <span slot="subtitle">Cijfers voor intergemeentelijke vereninging</span>
-                                  <div slot="content">
-                                      <img class="icon" src="assets/icons/PNG-Informatie.png">
-                                      <div class="GEM-RaadgevingIGS object"></div>
-                                  </div>
-                              </vl-info-tile>
-                            </div>
                               <div is="vl-column" data-vl-size=6>
-                              <vl-info-tile data-vl-auto-open=true>
-                                  <span slot="title">Aanmaning</span>
-                                  <span slot="subtitle">Cijfers voor intergemeentelijke vereninging</span>
+                              <vl-info-tile data-vl-auto-open=true><span slot="title">Veiligheidsmaatregelen</span>
+                              <span slot="subtitle">Cijfers voor gemeente</span>
                                   <div slot="content">
-                                      <img class="icon" src="assets/icons/PNG-Kalender.png">
-                                      <div class="GEM-AanmaningIGS object"></div>
+                                      <img class="icon" src="assets/icons/PNG-opgepast.png">
+                                      <div class="GEM-veiligheidsGEM object"></div>
                                   </div>
                               </vl-info-tile>
                           </div>
                           </div>
-                            <div is="vl-grid" class="data-top-bot">
-                            <div is="vl-column" data-vl-size=6>
-                            <vl-info-tile data-vl-auto-open=true>
-                                <span slot="title">Verslag van vaststelling</span>
-                                <span slot="subtitle">Cijfers voor intergemeentelijke vereninging</span>
-                                <div slot="content">
-                                    <img class="icon" src="assets/icons/PNG-klipbord.png">
-                                    <div class="GEM-verslagvastellingIGS object"></div>
-                                </div>
-                            </vl-info-tile>
-                        </div>
-                          <div is="vl-column" data-vl-size=6>
-                              <vl-info-tile data-vl-auto-open=true>
-                                  <span slot="title">Proces-verbaal</span>
-                                  <span slot="subtitle">Cijfers voor intergemeentelijke vereninging</span>
-                                  <div slot="content">
-                                      <img class="icon" src="assets/icons/PNG-PV.png">
-                                      <div class="GEM-pvIGS object"></div>
-                                  </div>
-                              </vl-info-tile>
-                          </div>
-                          </div>
-                         
-
-                      <div is="vl-grid" class="data-top-bot">
-                      <div is="vl-column" data-vl-size=12>
-                          <vl-info-tile data-vl-auto-open=true>
-                              <span slot="title">Bestuurlijke maatregelen</span>
-                              <span slot="subtitle">Cijfers voor intergemeentelijke vereninging</span>
-                              <div slot="content">
-                                  <img class="icon" src="assets/icons/PNG-risicoanalyse.png">
-                                  <div class="GEM-bestuurlijkmaatregelIGS object"></div>
-                                  <div is="vl-grid">
-                                  <div is="vl-column" data-vl-size=6>
-                                  <vl-info-tile data-vl-auto-open=true>
-                                  <span slot="title">Met dwangsom</span>
-                                  <div slot="content">
-                                  <div class="GEM-bestuurlijkmaatregelmetIGS objectinstrumentarium">
-                                  </div></div>
-                              </vl-info-tile></div>
-                              <div is="vl-column" data-vl-size=6>
-                              <vl-info-tile data-vl-auto-open=true>
-                              <span slot="title">Zonder dwangsom</span>
-                              <div slot="content">
-                              <div class="GEM-bestuurlijkmaatregelzonderIGS objectinstrumentarium"></div>
-                              </div>
-                          </vl-info-tile></div>
-                              </div></div>
-                          
-                          </vl-info-tile>
-                      </div>
-                      </div>
-                      <div is="vl-grid">
-                      <div is="vl-column" data-vl-size=12>
-                          <vl-info-tile data-vl-auto-open=true><span slot="title">Veiligheidsmaatregelen</span>
-                          <span slot="subtitle">Cijfers voor intergemeentelijke vereninging</span>
-                              <div slot="content">
-                                  <img class="icon" src="assets/icons/PNG-opgepast.png">
-                                  <div class="Gem-veiligheidsmaatregel-igs object"></div>
-                              </div>
-                          </vl-info-tile>
-                      </div>
-                  </div>
-                      
-                      <div is="vl-grid" class="data-top-bot">
-                      <h4 is="vl-h4">Lokale politie</h4>
-                      </div>
-
-                      <div is="vl-grid" class="data-top-bot">
-                      <div is="vl-column" data-vl-size=6>
-                          <vl-info-tile data-vl-auto-open=true>
-                              <span slot="title">Raadgeving</span>
-                              <span slot="subtitle">Cijfers voor lokale politie</span>
-                              <div slot="content">
-                                  <img class="icon" src="assets/icons/PNG-Informatie.png">
-                                  <div class="GEM-RaadgevingLP object"></div>
-                              </div>
-                          </vl-info-tile>
-                        </div>
-                          <div is="vl-column" data-vl-size=6>
-                          <vl-info-tile data-vl-auto-open=true>
-                              <span slot="title">Aanmaning</span>
-                              <span slot="subtitle">Cijfers voor lokale politie</span>
-                              <div slot="content">
-                                  <img class="icon" src="assets/icons/PNG-Kalender.png">
-                                  <div class="GEM-AanmaningLP object"></div>
-                              </div>
-                          </vl-info-tile>
-                      </div>
-                      </div>
-                        <div is="vl-grid" class="data-top-bot">
-                        <div is="vl-column" data-vl-size=6>
-                        <vl-info-tile data-vl-auto-open=true>
-                            <span slot="title">Verslag van vaststelling</span>
-                            <span slot="subtitle">Cijfers voor lokale politie</span>
-                            <div slot="content">
-                                <img class="icon" src="assets/icons/PNG-klipbord.png">
-                                <div class="GEM-verslagvastellingLP object"></div>
-                            </div>
-                        </vl-info-tile>
-                    </div>
-                      <div is="vl-column" data-vl-size=6>
-                          <vl-info-tile data-vl-auto-open=true>
-                              <span slot="title">Proces-verbaal</span>
-                              <span slot="subtitle">Cijfers voor lokale politie</span>
-                              <div slot="content">
-                                  <img class="icon" src="assets/icons/PNG-time-out.png">
-                                  <div class="GEM-pvLP object"></div>
-                              </div>
-                          </vl-info-tile>
-                      </div>
-                      </div>
-                     
-
-                  <div is="vl-grid" class="data-top-bot">
-                  <div is="vl-column" data-vl-size=12>
-                      <vl-info-tile data-vl-auto-open=true>
-                          <span slot="title">Bestuurlijke maatregelen</span>
-                          <span slot="subtitle">Cijfers voor lokale politie</span>
-                          <div slot="content">
-                              <img class="icon" src="assets/icons/PNG-risicoanalyse.png">
-                              <div class="GEM-bestuurlijkmaatregelLP object"></div>
-                              <div is="vl-grid">
-                              <div is="vl-column" data-vl-size=6>
-                              <vl-info-tile data-vl-auto-open=true>
-                              <span slot="title">Met dwangsom</span>
-                              <div slot="content">
-                              <div class="GEM-bestuurlijkmaatregelmetLP objectinstrumentarium">
-                              </div></div>
-                          </vl-info-tile></div>
-                          <div is="vl-column" data-vl-size=6>
-                          <vl-info-tile data-vl-auto-open=true>
-                          <span slot="title">Zonder dwangsom</span>
-                          <div slot="content">
-                          <div class="GEM-bestuurlijkmaatregelzonderLP objectinstrumentarium"></div>
-                          </div>
-                      </vl-info-tile></div>
-                          </div></div>
-                      
-                      </vl-info-tile>
-                    
-                  </div>
-                  </div>
-                  <div is="vl-grid">
-                      <div is="vl-column" data-vl-size=12>
-                          <vl-info-tile data-vl-auto-open=true><span slot="title">Veiligheidsmaatregelen</span>
-                          <span slot="subtitle">Cijfers voor lokale politie</span>
-                              <div slot="content">
-                                  <img class="icon" src="assets/icons/PNG-opgepast.png">
-                                  <div class="GEM-veiligheidsLP object"></div>
-                              </div>
-                          </vl-info-tile>
-                      </div>
-                  </div>
-                
                       </section>
-
-                      
                       <section id="content-1-7" is="vl-region">
                           <div is="vl-grid">
                               <div is="vl-column" data-vl-size=12 class="data-top-bot">

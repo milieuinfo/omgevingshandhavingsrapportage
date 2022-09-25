@@ -21,8 +21,7 @@ export class Provinciaal extends LitElement {
                                   een aanzienlijk risico voor mens of milieu. De provinciale toezichthouders oefenen
                                   daarnaast het toezicht uit op de toepassing van specifieke milieuvoorschriften.
                                   In de individuele handhavingsfiches wordt per provincie gerapporteerd over de uitvoering
-                                  van hun handhavingsactiviteiten in het voorgaand jaar. Zie analyseer cijfers om de data
-                                  van de individuele provincies te raadplegen.
+                                  van hun handhavingsactiviteiten in het voorgaand jaar.
                               </p>
                       </section>
   
