@@ -26,7 +26,7 @@ render() {
                               De kaarten worden onderverdeeld in twee categorieën:</p>
                               <vl-typography>
 
-                                <li>Milieuhandhaving : groene kaarten</li>
+                                <li>Milieu : groene kaarten</li>
                                 <li>Ruimtelijke ordening: oranje kaarten</li>
 
                               </vl-typography>
