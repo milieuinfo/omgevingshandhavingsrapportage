@@ -507,7 +507,7 @@ export class GewestelijkAnalyseView extends LitElement {
                                               </span>
                                           </span>
                                           <div slot="content">
-                                              <img class="icon" src="assets/icons/PNG-Fout.png">
+                                              <img class="icon" src="assets/icons/PNG-fout.png">
                                               <div class="RO-KPI-Aanvankelijke-Controles object"></div>
                                           </div>
                                       </vl-info-tile>

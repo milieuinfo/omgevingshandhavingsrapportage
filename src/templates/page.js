@@ -38,8 +38,8 @@ body {
 <vl-content-header>
 <img is="vl-image" slot="image" sizes="100vw"
 src="assets/images/header.jpg"/>
-    <a slot="context-link" href="/">Omgevingshandhavingsrapportage</a>
-    <a slot="title-link" href="/">Cijfers van 2021</a>
+    <a slot="context-link" href="/public/">Omgevingshandhavingsrapportage</a>
+    <a slot="title-link">Cijfers van 2021</a>
   </vl-content-header>
   <nav class="navbarcustomList">
   <ul class="vl-layout">
