@@ -75,28 +75,28 @@ document.querySelector('.navbar-toggler').onclick = function() {
 //Routes
 const routes = [
   {
-    path: "/",
+    path: "/public/",
     component: "start-view",
     action: async () => {
       await import("./views/start");
     },
   },
   {
-    path: "/home",
+    path: "/public/home",
     component: "home-view",
     action: async () => {
       await import("./views/home");
     },
   },
   {
-    path: "/gewestelijk",
+    path: "/public/gewestelijk",
     component: "gewestelijk-view",
     action: async () => {
       await import("./views/gewestelijk");
     },
   },
   {
-    path: "/provinciaal",
+    path: "/public/provinciaal",
     component: "provinciaal-view",
     action: async () => {
       await import("./views/provinciaal");
@@ -110,7 +110,7 @@ const routes = [
     },
   },
   {
-    path: "/gewestelijkAnalyse",
+    path: "/public/gewestelijkAnalyse",
     component: "GewestelijkAnalyse-view",
     action: async () => {
       await import("./views/gewestelijkAnalyse");
@@ -119,7 +119,7 @@ const routes = [
     },
   },
   {
-    path: "/gemeenten",
+    path: "/public/gemeenten",
     component: "gemeenten-view",
     action: async () => {
       await import("./views/gemeenten");
@@ -133,7 +133,21 @@ const routes = [
     },
   },
   {
-    path: "/provinciaalAnalyse",
+    path: "/privacy",
+    component: "privacy-view",
+    action: async () => {
+      await import("./views/privacy");
+    },
+  },
+  {
+    path: "/cookieverklaring",
+    component: "cookieverklaring-view",
+    action: async () => {
+      await import("./views/cookieverklaring");
+    },
+  },
+  {
+    path: "/public/provinciaalAnalyse",
     component: "provinciaalAnalyse-view",
     action: async () => {
       await import("./views/provinciaalAnalyse");
@@ -141,14 +155,14 @@ const routes = [
     },
   },
   {
-    path:"/gemeentenAnalyse",
+    path:"/public/gemeentenAnalyse",
     component: "gemeentenAnalyse-view",
     action: async() => {
       await import ("./views/gemeentenAnalyse");
     }
   },
   {
-    path:"/gemeentenDashboard",
+    path:"/public/gemeentenDashboard",
     component: "gemeentenDashboard-view",
     action: async() => {
       await import ("./views/gemeentenDashboard");
@@ -156,7 +170,7 @@ const routes = [
     }
   },
   {
-    path:"/hogeraadAnalyse",
+    path:"/public/hogeraadAnalyse",
     component: "hogeraadAnalyse-view",
     action: async() => {
       await import ("./views/hogeraadAnalyse");
@@ -164,7 +178,7 @@ const routes = [
     }
   },
   {
-    path:"/strafrechtelijk",
+    path:"/public/strafrechtelijk",
     component: "strafrechtelijkAnalyse-view",
     action: async() => {
       await import ("./views/strafrechtelijk")
@@ -172,14 +186,14 @@ const routes = [
     }
   },
   {
-    path:"/hogeraad",
+    path:"/public/hogeraad",
     component: "hogeraad-view",
     action: async() => {
       await import ("./views/hogeraad");
     }
   },
   {
-    path:"/strafrechtelijkAnalyse",
+    path:"/public/strafrechtelijkAnalyse",
     component: "strafrechtelijkanalyseanalyse-view",
     action: async() => {
       await import ("./views/strafrechtelijkAnalyse");
@@ -187,7 +201,7 @@ const routes = [
     }
   },
   {
-    path:"/gemeentenDashboardro",
+    path:"/public/gemeentenDashboardro",
     component: "gemeentendashboardro-view",
     action: async() => {
       await import ("./views/gemeentenDashboardro");
@@ -276,29 +290,27 @@ async function gewestelijkanalyserendering() {
     id: "39444ce5-84e1-4964-be44-1d791438e603",
   });
   
-  
-
   nebbieNodebbie.render({ 
     element: document.querySelector('.RO-KPI-Beveltotstaking'),
     id: "mCPXYJ",
   });
 
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.RO-KPI-minnelijk'),
     id: "ANNZETg",
   });
 
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.RO-KPI-openbaarmin'),
     id: "TFxWKk",
   });
 
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.RO-KPI-burgerlijkrechter'),
     id: "WxpfLj",
   });
 
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.RO-KPI-gerechtambt'),
     id: "JjNJFP",
   });
@@ -306,72 +318,72 @@ async function gewestelijkanalyserendering() {
     element: document.querySelector('.MIL-Barchart-VTE'),
     id: "cPNUApf",
   });
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.MIL-KPI-VTE'),
     id: "HmeFbmd",
   });
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.MIL-KPI-Toezichthouder'),
     id: "yjAMg",
   });
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.MIL-KPI-Klachten'),
     id: "JFzHHx",
   });
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.MIL-KPI-Controles'),
     id: "QqPsxa",
   });
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.MIL-KPI-Aanvankelijke-Controles'),
     id: "kxjKVfR",
   });
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.MIL-bar-Aanvankelijke-Controles'),
     id: "mPuBHk",
   });
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.MIL-KPI-Raadgeving'),
     id: "DdSpDj",
   });
   
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.MIL-KPI-Aanmaning'),
     id: "JaKhF",
   });
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.MIL-KPI-Verslag-van-vastelling'),
     id: "YmmVmY",
   });
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.MIL-KPI-Proces-verbaal'),
     id: "cBUU",
   });
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.MIL-KPI-Bestuurlijk-maatregel'),
     id: "jXa",
   });
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.MIL-KPI-Bestuurlijk-maatregel-zonder-dwangsom'),
     id: "MGcspm",
   });
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.MIL-KPI-Bestuurlijk-maatregel-zonder-dwangsom-percent'),
     id: "JhfJ",
   });
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.MIL-KPI-Bestuurlijk-maatregel-met-dwangsom'),
     id: "HjDSC",
   });
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.MIL-KPI-Bestuurlijk-maatregel-met-dwangsom-percent'),
     id: "fYhpTj",
   });
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.MIL-KPI-Veiligheidsmaatregel'),
     id: "KNCw",
   });
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.MIL-KPI-Veiligheidsmaatregel-percent'),
     id: "nUWpf",
   });
@@ -387,110 +399,106 @@ async function gewestelijkanalyserendering() {
     element: document.querySelector('.opmerking-ro-hha'),
     id: "cEyQB",
   });
-  
-  
-  
   nebbieNodebbie.render({ 
     element: document.querySelector('.MIL-Barchart-Klachten'),
     id: "fjPmJQ",
   });
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.MIL-Barchart-Controles'),
     id: "FrnBLn",
   });
   /********** Ruimtelijke ordening ************** */
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.RO-KPI-Stedenbouwkundige'),
     id: "590fe9ed-596a-47be-9b8f-8f183e9dcb2c",
   });
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.RO-KPI-VTE'),
     id: "547c2be7-842f-4c0e-a092-a14552a62b43",
   });
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.RO-Barchart-VTE'),
     id: "fa4bd7f8-77a9-429f-9117-cf3bdfc62fd9",
   });
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.RO-KPI-Klachten'),
     id: "cdd825e1-08a0-4a90-89ad-09deef2c5a5b",
   });
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.RO-KPI-Controles'),
     id: "f4306632-1e0c-4262-bf5a-3e2b262704ea",
   });
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.RO-KPI-Aanvankelijke-Controles'),
     id: "dc23a492-5c6f-4143-b7aa-5490b2913564",
   });
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.RO-KPI-Raadgeving'),
     id: "c7e581e9-c70c-4060-8872-2415b00b8afa",
   });
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.RO-KPI-Aanmaning'),
     id: "4fbef0ac-ccda-4fbe-8ba8-07691fb730fd",
   });
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.RO-KPI-Verslag-van-vastelling'),
     id: "c838cdf0-098f-400a-8219-a4636db4a0df",
   });
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.RO-KPI-Proces-verbaal'),
     id: "34c6cdc5-adff-439b-b9c9-1f83366580f4",
   });
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.RO-KPI-Bestuurlijk-maatregel'),
     id: "755ce05d-5c46-4ce6-97a5-41997abaa387",
   });
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.RO-KPI-Bestuurlijk-maatregel-zonder-dwangsom'),
     id: "7b1c2234-b5f4-4a61-b9e6-83731632525a",
   });
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.RO-KPI-Bestuurlijk-maatregel-zonder-dwangsom-percent'),
     id: "1f83ab34-d3a0-441a-9ccb-80d4a9cc14f3",
   });
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.RO-KPI-Bestuurlijk-maatregel-met-dwangsom'),
     id: "f3858870-dce3-47a3-9836-30a6aa676057",
   });
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.RO-KPI-Bestuurlijk-maatregel-met-dwangsom-percent'),
     id: "e71feba5-90df-4f90-b8c0-ac14b12cdf29",
   });
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.RO-KPI-Veiligheidsmaatregel'),
     id: "39444ce5-84e1-4964-be44-1d791438e603",
   });
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.RO-KPI-Verbalitisanten'),
     id: "ZZxXrq",
   });
 
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.RO-Barchart-Controles'),
     id: "AwzbN",
   });
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.RO-KPI-Herstelbaar'),
     id: "WTBuPU",
   });
 
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.RO-KPI-Herstelvordering'),
     id: "JqwMRw",
   });
-  nebbie.render({ 
+  nebbieNodebbie.render({ 
     element: document.querySelector('.RO-KPI-ambtshaleveuitvoering'),
     id: "GTvAFY",
   });
-
   /* Get fieldvalues of the field Naam Handhavingsinstantie in Qlik model and mount it in placeholder listbox*/
   const fieldName = 'Naam Handhavinginstantie'; // Should refer to a field in your app
   (await nebbie.field(fieldName))
   .mount(document.querySelector('.listbox'),{search:true,title:"Gewestelijke handhavingsactoren",checkboxes:false});
-}
+  }
 }
 
 //Rendering Provinciaalanalyse
@@ -867,8 +875,6 @@ async function strafrechtelijkanalyserendering() {
       element: document.querySelector('.Tabelseponering'),
       id: "mDDkX",
     });
-
-    
     nebbieNoselection.render({ 
       element: document.querySelector('.HHCTabel1'),
       id: "ahhjph",
@@ -961,6 +967,11 @@ nebbieNoselectionGem.render({
   element: document.querySelector('.GEM-KPI-Klasse2'),
   id: "BSvPAHp",
 });
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.GEM-Hinderlijk'),
+  id: "JJtSuw",
+});
+
 nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-KPI-Klasse3'),
   id: "ujXmqs",
@@ -1160,6 +1171,34 @@ nebbie.render({
   element: document.querySelector('.Gem-opmerking-lp'),
   id: "aDveZHw",
 });
+
+
+//instrumentarium
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.Gem-pie-raadgeving'),
+  id: "PXYJP",
+});
+nebbie.render({ 
+  element: document.querySelector('.Gem-pie-aanmaning'),
+  id: "vmckAq",
+});
+nebbie.render({ 
+  element: document.querySelector('.Gem-pie-verslag'),
+  id: "RhGcVr",
+});
+nebbie.render({ 
+  element: document.querySelector('.Gem-pie-pv'),
+  id: "MzdR",
+});
+nebbie.render({ 
+  element: document.querySelector('.Gem-pie-bestmaatregel'),
+  id: "WdpDMs",
+});
+nebbie.render({ 
+  element: document.querySelector('.Gem-pie-veiligheids'),
+  id: "ZEQGgeD",
+});
+
 }
 }
 
@@ -1202,8 +1241,7 @@ async function gemeentendashboardro() {
  (await nebbie.field(fieldNameProvincie))
  .mount(document.querySelector('.listboxGEM'),{search:true,title:"Gemeente",checkboxes:false});
 
-
-nebbie.render({ 
+ nebbie.render({ 
   element: document.querySelector('.GEM-Vebalitisanten'),
   id: "VmPkER",
 });
@@ -1414,5 +1452,80 @@ nebbie.render({
   id: "FWbjZh",
 });
 
-}
+
+//instrumentarium
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.Gem-ro-onder-raadgeven'),
+  id: "QzxjPDU",
+});
+//instrumentarium
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.Gem-ro-onder-aanmaning'),
+  id: "tVGPVR",
+});
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.Gem-ro-onder-verslag'),
+  id: "Ezpxd",
+});
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.Gem-ro-onder-PV'),
+  id: "nqCu",
+});
+
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.Gem-ro-onder-staking'),
+  id: "jNfvTcr",
+});
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.Gem-ro-onder-afgeslotenmin'),
+  id: "yjgjcbE",
+});
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.Gem-ro-onder-ingeleid'),
+  id: "JBjGHpP",
+});
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.Gem-ro-onder-burgelijkrechter'),
+  id: "YVSnmb",
+});
+
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.Gem-ro-onder-ambachts'),
+  id: "pdky",
+});
+
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.Gem-ro-kpi-ambachts'),
+  id: "dtRYDjk",
+});
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.Gem-ro-opmerking-gem'),
+  id: "NpUPqP",
+});
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.Gem-ro-opmerking-igs'),
+  id: "CkEstYn",
+});
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.Gem-ro-opmerking-lp'),
+  id: "QgDgFz",
+});
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.Gem-ro-bestm-kpi'),
+  id: "EfxBZV",
+});
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.Gem-ro-bestm-kpi-zwd'),
+  id: "hpuvuu",
+});
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.Gem-ro-bestm-kpi-mdw'),
+  id: "epPFzCU",
+});
+
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.Gem-ro-bestm-onder'),
+  id: "JPARv",
+});
+} 
 }

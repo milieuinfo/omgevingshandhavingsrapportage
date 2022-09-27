@@ -86,7 +86,7 @@ export class HogeraadAnalyseView extends LitElement {
                           </vl-alert>
                           <vl-alert
                           data-vl-title="Download de data">
-                          <p><a href="/data/DataHogeRaad.zip" download>Klik hier om de data te downloaden</a></p>
+                          <p><a href="documents/data qlik HRH.xlsx" download>Klik hier om de data te downloaden</a></p>
                         </vl-alert>
                       </section>
                   </div>

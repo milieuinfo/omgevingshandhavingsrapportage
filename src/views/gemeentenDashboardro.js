@@ -198,16 +198,9 @@ render() {
                           <div is="vl-grid">
                               <div is="vl-column" data-vl-size=12 class="data-top-bot">
                                   <vl-infoblock data-vl-title="Controles" data-vl-icon="business-graph-bar">
-                                  De controles worden in de grafiek onderverdeeld in 5 categoriën:
-                                  <vl-typography>
-                                  <ul>
-                                  <li>Initiële controles</li>
-                                  <li>Navolgende controles</li>
-                                  <li>Controles naar aanleiding van klachten</li>
-                                  <li>Controles naar aanleiding van meldingen</li>
-                                  <li>Controles op eigen initiatief</li>
-                                </ul>
-                                <vl-typography>
+                                  De controles worden in de grafiek onderverdeeld in categorieën:
+                                  <br/>
+                                  initiële en navolgende controles; en controles naar aanleiding van klachten en meldingen en controles op eigen initiatief.
                                   </vl-infoblock>
                               </div>
                           </div>
@@ -275,340 +268,298 @@ render() {
                       </diV>
                     
                   </section>
-                     
-                      <section id="content-1-6" is="vl-region">
+                  <section id="content-1-6" is="vl-region">
                           <div is="vl-grid">
                               <div is="vl-column" data-vl-size=12 class="data-top-bot">
                                   <vl-infoblock data-vl-title="Instrumentarium" data-vl-icon="business-graph-bar">
-                                      De instrumentarium is een verzameling van verschillende handelingen die worden
-                                      uitgevoerd in kader
-                                      van ruimtelijke ordening.
                                   </vl-infoblock>
                               </div>
                           </div>
-  
-                          <div is="vl-grid">
-                          <h4 is="vl-h4">Gemeente</h4>
 
-                          </div>
                           <div is="vl-grid" class="data-top-bot">
-                              <div is="vl-column" data-vl-size=6>
+                              <div is="vl-column" data-vl-size=4>
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Raadgeving</span>
-                                      <span slot="subtitle">Cijfer voor gemeente</span>
+                                      
                                       <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-Informatie.png">
+                                      <img class="icon" src="assets/icons/PNG-Informatie.png">
                                           <div class="Gem-ro-inst-raadgeving object"></div>
                                       </div>
                                   </vl-info-tile>
                                 </div>
-                                  <div is="vl-column" data-vl-size=6>
+                                  <div is="vl-column" data-vl-size=8>
                                   <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Aanmaning</span>
-                                      <span slot="subtitle">Cijfer voor gemeente</span>
+                                      <span slot="title">Onderverdeling raadgevingen</span>
+                                      
                                       <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-Kalender.png">
+                                          <div class="Gem-ro-onder-raadgeven chart"></div>
+                                      </div>
+                                  </vl-info-tile>
+                              </div>
+                              </div>
+                              <div is="vl-grid" class="data-top-bot">
+                              <div is="vl-column" data-vl-size=4>
+                                  <vl-info-tile data-vl-auto-open=true>
+                                      <span slot="title">Aanmaningen</span>
+                                      
+                                      <div slot="content">
+                                      <img class="icon" src="assets/icons/PNG-Kalender.png">
                                           <div class="Gem-ro-inst-aanmaning object"></div>
+                                      </div>
+                                  </vl-info-tile>
+                                </div>
+                                  <div is="vl-column" data-vl-size=8>
+                                  <vl-info-tile data-vl-auto-open=true>
+                                      <span slot="title">Onderverdeling aanmaningen</span>
+                                      <div slot="content">
+                                          <div class="Gem-ro-onder-aanmaning chart"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
                               </div>
                                 <div is="vl-grid" class="data-top-bot">
-                              <div is="vl-column" data-vl-size=6>
+                                <div is="vl-column" data-vl-size=4>
+                                <vl-info-tile data-vl-auto-open=true>
+                                    <span slot="title">Verslag van vaststelling</span>
+                                    
+                                    <div slot="content">
+                                    <img class="icon" src="assets/icons/PNG-klipbord.png">
+                                        <div class="Gem-ro-inst-verslagvaststelling object"></div>
+                                    </div>
+                                </vl-info-tile>
+                            </div>
+                              <div is="vl-column" data-vl-size=8>
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Verslag van vaststelling</span>
-                                      <span slot="subtitle">Cijfer voor gemeente</span>
+                                      
                                       <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-Klipbord.png">
-                                          <div class="Gem-ro-inst-verslagvaststelling object"></div>
+                                          
+                                          <div class="Gem-ro-onder-verslag chart"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
-                              <div is="vl-column" data-vl-size=6>
+                              </div>
+                              <div is="vl-grid" class="data-top-bot">
+                              <div is="vl-column" data-vl-size=4>
                               <vl-info-tile data-vl-auto-open=true>
                                   <span slot="title">Proces-verbaal</span>
-                                  <span slot="subtitle">Cijfer voor gemeente</span>
+                                  
                                   <div slot="content">
-                                      <img class="icon" src="assets/icons/PNG-pv.png">
+                                  <img class="icon" src="assets/icons/PNG-PV.png">
                                       <div class="Gem-ro-inst-pv object"></div>
                                   </div>
                               </vl-info-tile>
                           </div>
-                              </div>
-                              <div is="vl-grid" class="data-top-bot">
-                              <div is="vl-column" data-vl-size=12>
-                              <vl-info-tile data-vl-auto-open=true>
-                                  <span slot="title">Bevel tot staking</span>
-                                  <span slot="subtitle">Cijfer voor gemeente</span>
-                                  <div slot="content">
-                                      <img class="icon" src="assets/icons/PNG-time-out.png">
-                                      <div class="Gem-ro-inst-beveltotstaking object"></div>
-                                  </div>
-                              </vl-info-tile>
-                          </div>
-                          </div>
-  
+                            <div is="vl-column" data-vl-size=8>
+                                <vl-info-tile data-vl-auto-open=true>
+                                    <span slot="title">Proces-verbaal</span>
+                                    
+                                    <div slot="content">
+                                       
+                                        <div class="Gem-ro-onder-PV chart"></div>
+                                    </div>
+                                </vl-info-tile>
+                            </div>
+                            </div>
+
+                            <div is="vl-grid" class="data-top-bot">
+                            <div is="vl-column" data-vl-size=4>
+                            <vl-info-tile data-vl-auto-open=true>
+                                <span slot="title">Bevel tot staking</span>
+                                <span slot="subtitle">Cijfer voor gemeente</span>
+                                <div slot="content">
+                                <img class="icon" src="assets/icons/PNG-time-out.png">
+                                    <div class="Gem-ro-inst-beveltotstaking object"></div>
+                                </div>
+                            </vl-info-tile>
+                        </div>
+                        <div is="vl-column" data-vl-size=8>
+                        <vl-info-tile data-vl-auto-open=true>
+                            <span slot="title">Proces-verbaal</span>
+                            
+                            <div slot="content">
+                               
+                                <div class="Gem-ro-onder-staking chart"></div>
+                            </div>
+                        </vl-info-tile>
+                    </div>
+                        </div>
+                             
                           <div is="vl-grid" class="data-top-bot">
-                          <div is="vl-column" data-vl-size=12>
+                          <div is="vl-column" data-vl-size=6>
                               <vl-info-tile data-vl-auto-open=true>
                                   <span slot="title">Bestuurlijke maatregelen</span>
-                                  <span slot="subtitle">Cijfers voor gemeente</span>
+                                 
                                   <div slot="content">
                                       <img class="icon" src="assets/icons/PNG-risicoanalyse.png">
-                                      <div class="Gem-ro-inst-bestmaatregel object"></div>
+                                      <div class="Gem-ro-bestm-kpi object"></div>
                                       <div is="vl-grid">
                                       <div is="vl-column" data-vl-size=6>
                                       <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Met dwangsom</span>
+                                      <span slot="title">Met<br/> dwangsom</span>
                                       <div slot="content">
-                                      <div class="Gem-ro-inst-bestmaatregel-mdwsom objectinstrumentarium">
+                                      <div class="Gem-ro-bestm-kpi-mdw objectinstrumentarium">
                                       </div></div>
                                   </vl-info-tile></div>
                                   <div is="vl-column" data-vl-size=6>
                                   <vl-info-tile data-vl-auto-open=true>
                                   <span slot="title">Zonder dwangsom</span>
                                   <div slot="content">
-                                  <div class="Gem-ro-inst-bestmaatregel-zdwsm objectinstrumentarium"></div>
+                                  <div class="Gem-ro-bestm-kpi-zwd objectinstrumentarium"></div>
                                   </div>
                               </vl-info-tile></div>
                                   </div></div>
-                              
                               </vl-info-tile>
-                            
                           </div>
+                          <div is="vl-column" data-vl-size=6>
+                                <vl-info-tile data-vl-auto-open=true>
+                                    <span slot="title">Onderverdeling bestuurlijke maatregel</span>
+                                    
+                                    <div slot="content">
+                                       
+                                        <div class="Gem-ro-bestm-onder chart"></div>
+                                    </div>
+                                </vl-info-tile>
+                            </div>
                           </div>
                           
                           <div is="vl-grid" class="data-top-bot">
-                              <div is="vl-column" data-vl-size=12>
+                              <div is="vl-column" data-vl-size=4>
                                   <vl-info-tile data-vl-auto-open=true><span slot="title">Afgesloten minnelijke schikking</span>
-                                  <span slot="subtitle">Cijfer voor gemeente</span>
+                                
                                       <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-overeenkomst.png">
+                                      <img class="icon" src="assets/icons/PNG-overeenkomst.png">
                                           <div class="Gem-ro-inst-afgeslotenminschik object"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
+                              <div is="vl-column" data-vl-size=8>
+                              <vl-info-tile data-vl-auto-open=true><span slot="title">Afgesloten minnelijke schikking</span>
+                              
+                                  <div slot="content">
+                                      
+                                      <div class="Gem-ro-onder-afgeslotenmin chart"></div>
+                                  </div>
+                              </vl-info-tile>
+                          </div>
                           </div>
 
                           <div is="vl-grid" class="data-top-bot">
-                              <div is="vl-column" data-vl-size=6>
+                              <div is="vl-column" data-vl-size=4>
                                   <vl-info-tile data-vl-auto-open=true><span slot="title">Herstelvordering</span>
                                   <span slot="subtitle">Ingeleid bij Openbaar ministerie</span>
                                       <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-justitie.png">
+                                      <img class="icon" src="assets/icons/PNG-EHBO.png">
                                           <div class="Gem-ro-inst-ingeleidOM object"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
-                              <div is="vl-column" data-vl-size=6>
-                              <vl-info-tile data-vl-auto-open=true><span slot="title">Herstelvordering</span>
-                              <span slot="subtitle">Ingeleid bij Openbaar ministerie</span>
+                              <div is="vl-column" data-vl-size=8>
+                              <vl-info-tile data-vl-auto-open=true><span slot="title">Afgesloten minnelijke schikking</span>
+                             
                                   <div slot="content">
-                                      <img class="icon" src="assets/icons/PNG-justitie.png">
+                                    
+                                      <div class="Gem-ro-onder-ingeleid chart"></div>
+                                  </div>
+                              </vl-info-tile>
+                          </div>
+                          </div>
+                          <div is="vl-grid" class="data-top-bot">
+                          <div is="vl-column" data-vl-size=4>
+                              <vl-info-tile data-vl-auto-open=true><span slot="title">Herstelvordering</span>
+                              <span slot="subtitle">Gevorderd bij Burgelijke rechter</span>
+                                  <div slot="content">
+                                  <img class="icon" src="assets/icons/PNG-EHBO.png">
                                       <div class="Gem-ro-inst-ingeleidBR object"></div>
                                   </div>
                               </vl-info-tile>
                           </div>
-                          </div>
+                          <div is="vl-column" data-vl-size=8>
+                          <vl-info-tile data-vl-auto-open=true><span slot="title">Onderverdeling</span>
+                        
+                              <div slot="content">
+                                
+                                  <div class="Gem-ro-onder-burgelijkrechter chart"></div>
+                              </div>
+                          </vl-info-tile>
+                      </div>
+                      </div>
 
                           <div is="vl-grid" class="data-top-bot">
-                          <div is="vl-column" data-vl-size=12>
+                          <div is="vl-column" data-vl-size=4>
                               <vl-info-tile data-vl-auto-open=true><span slot="title">Ambtshalve uitvoering gerechtelijke herstelvordering</span>
                               <span slot="subtitle">Cijfer voor gemeente</span>
                                   <div slot="content">
-                                      <img class="icon" src="">
-                                      <div class="Gem-ro-inst-ambtshalve object"></div>
-                                  </div>
-                              </vl-info-tile>
-                          </div>
-                      </div>
-  
-                          <div is="vl-grid" class="data-top-bot">
-                          <h4 is="vl-h4">Intergemeentelijke vereniging</h4>
-                          </div>
-
-                          <div is="vl-grid" class="data-top-bot">
-                          <div is="vl-column" data-vl-size=6>
-                              <vl-info-tile data-vl-auto-open=true>
-                                  <span slot="title">Raadgeving</span>
-                                  <span slot="subtitle">Cijfer voor gemeente</span>
-                                  <div slot="content">
-                                  <img class="icon" src="assets/icons/PNG-Informatie.png">
-                                      <div class="Gem-ro-inst-raadgeving-igs object"></div>
-                                  </div>
-                              </vl-info-tile>
-                            </div>
-                              <div is="vl-column" data-vl-size=6>
-                              <vl-info-tile data-vl-auto-open=true>
-                                  <span slot="title">Aanmaning</span>
-                                  <span slot="subtitle">Cijfer voor gemeente</span>
-                                  <div slot="content">
-                                      <img class="icon" src="assets/icons/PNG-Kalender.png">
-                                      <div class="Gem-ro-inst-aanmaning-igs object"></div>
-                                  </div>
-                              </vl-info-tile>
-                          </div>
-                          </div>
-                            <div is="vl-grid" class="data-top-bot">
-                          <div is="vl-column" data-vl-size=6>
-                              <vl-info-tile data-vl-auto-open=true>
-                                  <span slot="title">Verslag van vaststelling</span>
-                                  <span slot="subtitle">Cijfer voor gemeente</span>
-                                  <div slot="content">
-                                      <img class="icon" src="assets/icons/PNG-klipbord.png">
-                                      <div class="Gem-ro-inst-verslagvanvastelling-igs object"></div>
-                                  </div>
-                              </vl-info-tile>
-                          </div>
-                          <div is="vl-column" data-vl-size=6>
-                          <vl-info-tile data-vl-auto-open=true>
-                              <span slot="title">Proces-verbaal</span>
-                              <span slot="subtitle">Cijfer voor gemeente</span>
-                              <div slot="content">
-                                  <img class="icon" src="assets/icons/PNG-PV.png">
-                                  <div class="Gem-ro-inst-PV-igs object"></div>
-                              </div>
-                          </vl-info-tile>
-                      </div>
-                          </div>
-                          <div is="vl-grid" class="data-top-bot">
-                          <div is="vl-column" data-vl-size=12>
-                          <vl-info-tile data-vl-auto-open=true>
-                              <span slot="title">Bevel tot staking</span>
-                              <span slot="subtitle">Cijfer voor gemeente</span>
-                              <div slot="content">
-                                  <img class="icon" src="assets/icons/PNG-time-out.png">
-                                  <div class="Gem-ro-inst-beveltotstaking-igs object"></div>
-                              </div>
-                          </vl-info-tile>
-                      </div>
-                      </div>
-
-                      <div is="vl-grid" class="data-top-bot">
-                      <div is="vl-column" data-vl-size=12>
-                          <vl-info-tile data-vl-auto-open=true>
-                              <span slot="title">Bestuurlijke maatregelen</span>
-                              <span slot="subtitle">Cijfers voor gemeente</span>
-                              <div slot="content">
-                                  <img class="icon" src="assets/icons/PNG-risicoanalyse.png">
-                                  <div class="Gem-ro-inst-bestmaatregel-igs object"></div>
-                                  <div is="vl-grid">
-                                  <div is="vl-column" data-vl-size=6>
-                                  <vl-info-tile data-vl-auto-open=true>
-                                  <span slot="title">Met dwangsom</span>
-                                  <div slot="content">
-                                  <div class="Gem-ro-inst-bestmaatregel-igs-mdwsom objectinstrumentarium">
-                                  </div></div>
-                              </vl-info-tile></div>
-                              <div is="vl-column" data-vl-size=6>
-                              <vl-info-tile data-vl-auto-open=true>
-                              <span slot="title">Zonder dwangsom</span>
-                              <div slot="content">
-                              <div class="Gem-ro-inst-bestmaatregel-igs-zdwsom objectinstrumentarium"></div>
-                              </div>
-                          </vl-info-tile></div>
-                              </div></div>
-                          
-                          </vl-info-tile>
-                        
-                      </div>
-                      </div>
-                      
-                      <div is="vl-grid" class="data-top-bot">
-                          <div is="vl-column" data-vl-size=12>
-                              <vl-info-tile data-vl-auto-open=true><span slot="title">Afgesloten minnelijke schikking</span>
-                              <span slot="subtitle">Cijfer voor gemeente</span>
-                                  <div slot="content">
-                                      <img class="icon" src="assets/icons/PNG-overeenkomst.png">
-                                      <div class="Gem-ro-inst-afgeslotenminnelijke-igs object"></div>
-                                  </div>
-                              </vl-info-tile>
-                          </div>
-                      </div>
-
-                      <div is="vl-grid" class="data-top-bot">
-                          <div is="vl-column" data-vl-size=6>
-                              <vl-info-tile data-vl-auto-open=true><span slot="title">Herstelvordering</span>
-                              <span slot="subtitle">Ingeleid bij Openbaar ministerie</span>
-                                  <div slot="content">
-                                      <img class="icon" src="assets/icons/PNG-justitie.png">
-                                      <div class="Gem-ro-inst-herstelvorderingOM-igs object"></div>
-                                  </div>
-                              </vl-info-tile>
-                          </div>
-                          <div is="vl-column" data-vl-size=6>
-                          <vl-info-tile data-vl-auto-open=true><span slot="title">Herstelvordering</span>
-                          <span slot="subtitle">Ingeleid bij Openbaar ministerie</span>
-                              <div slot="content">
                                   <img class="icon" src="assets/icons/PNG-justitie.png">
-                                  <div class="Gem-ro-inst-herstelvorderingBR-igs object"></div>
-                              </div>
-                          </vl-info-tile>
+                                      <div class="Gem-ro-kpi-ambachts object"></div>
+                                  </div>
+                              </vl-info-tile>
+                          </div>
+                          <div is="vl-column" data-vl-size=8>
+                              <vl-info-tile data-vl-auto-open=true><span slot="title">Ambtshalve uitvoering gerechtelijke herstelvordering</span>
+                              
+                                  <div slot="content">
+                                      
+                                      <div class="Gem-ro-onder-ambachts chart"></div>
+                                  </div>
+                              </vl-info-tile>
+                          </div>
                       </div>
-                      </div>
-
-                      <div is="vl-grid" class="data-top-bot">
-                      <div is="vl-column" data-vl-size=12>
-                          <vl-info-tile data-vl-auto-open=true><span slot="title">Ambtshalve uitvoering gerechtelijke herstelvordering</span>
-                          <span slot="subtitle">Cijfer voor gemeente</span>
-                              <div slot="content">
-                                  <img class="icon" src="">
-                                  <div class="Gem-ro-inst-ambsthalvei-igs object"></div>
-                              </div>
-                          </vl-info-tile>
-                      </div>
-                  </div>
-                      
-                      <div is="vl-grid" class="data-top-bot">
-                      <h4 is="vl-h4">Lokale politie</h4>
-                      </div>
-
-                      <div is="vl-grid" class="data-top-bot">
-                      <div is="vl-column" data-vl-size=6>
-                          <vl-info-tile data-vl-auto-open=true>
-                              <span slot="title">Raadgeving</span>
-                              <span slot="subtitle">Cijfers voor lokale politie</span>
-                              <div slot="content">
-                                  <img class="icon" src="assets/icons/PNG-Informatie.png">
-                                  <div class="Gem-ro-inst-raadgeving-lp object"></div>
-                              </div>
-                          </vl-info-tile>
-                        </div>
-                          <div is="vl-column" data-vl-size=6>
-                          <vl-info-tile data-vl-auto-open=true>
-                              <span slot="title">Verslag van vaststelling</span>
-                              <span slot="subtitle">Cijfers voor lokale politie</span>
-                              <div slot="content">
-                                  <img class="icon" src="assets/icons/PNG-klipbord.png">
-                                  <div class="Gem-ro-inst-verslagvastelling-lp object"></div>
-                              </div>
-                          </vl-info-tile>
-                      </div>
-                      </div>
-                        <div is="vl-grid" class="data-top-bot">
-                      <div is="vl-column" data-vl-size=6>
-                          <vl-info-tile data-vl-auto-open=true>
-                              <span slot="title">Proces-verbaal</span>
-                              <span slot="subtitle">Cijfers voor lokale politie</span>
-                              <div slot="content">
-                                  <img class="icon" src="assets/icons/PNG-PV.png">
-                                  <div class="Gem-ro-inst-pv-lp object"></div>
-                              </div>
-                          </vl-info-tile>
-                      </div>
-                      <div is="vl-column" data-vl-size=6>
-                          <vl-info-tile data-vl-auto-open=true>
-                              <span slot="title">Bevel tot staking</span>
-                              <span slot="subtitle">Cijfers voor lokale politie</span>
-                              <div slot="content">
-                                  <img class="icon" src="assets/icons/PNG-time-out.png">
-                                  <div class="Gem-ro-inst-beveltotstaking-lp object"></div>
-                              </div>
-                          </vl-info-tile>
-                      </div>
-                      </div>                        
                       </section>
-  
+
+                      <section id="content-1-7" is="vl-region">
+                          <div is="vl-grid">
+                              <div is="vl-column" data-vl-size=12 class="data-top-bot">
+                                  <vl-infoblock data-vl-title="Opmerking handhavingsactor" data-vl-icon="business-graph-bar">
+                                  </vl-infoblock>
+                              </div>
+                          </div>
+                          <div is="vl-grid">
+                            <vl-typography>
+                                <h3>Gemeente</h3>
+                            </vl-typography>
+                          </div>
+                          <div is="vl-grid">
+                          <div is="vl-column" data-vl-size=12 class="data-top-bot">
+                              <vl-info-tile data-vl-auto-open=true>
+                                  <span slot="title">Opmerking handhavingsactor</span>
+                                  <div slot="content">
+                                  <div class="Gem-ro-opmerking-gem chartTabelsm"></div>
+                                  </div>
+                              </vl-info-tile>
+                          </div>
+                          </div>
+                          <div is="vl-grid">
+                            <vl-typography>
+                                <h3>Intergemeentelijke vereniging</h3>
+                            </vl-typography>
+                          </div>
+                          <div is="vl-grid">
+                          <div is="vl-column" data-vl-size=12 class="data-top-bot">
+                              <vl-info-tile data-vl-auto-open=true>
+                                  <span slot="title">Opmerking handhavingsactor</span>
+                                  <div slot="content">
+                                  <div class="Gem-ro-opmerking-igs chartTabelsm"></div>
+                                  </div>
+                              </vl-info-tile>
+                          </div>
+                          </div>
+                          <div is="vl-grid">
+                            <vl-typography>
+                                <h3>Lokale politie</h3>
+                            </vl-typography>
+                          </div>
+                          <div is="vl-grid">
+                          <div is="vl-column" data-vl-size=12 class="data-top-bot">
+                              <vl-info-tile data-vl-auto-open=true>
+                                  <span slot="title">Opmerking handhavingsactor</span>
+                                  <div slot="content">
+                                  <div class="Gem-ro-opmerking-lp chartTabelsm"></div>
+                                  </div>
+                              </vl-info-tile>
+                          </div>
+                          </div>
+                          </section>
                       <section is="vl-region" id="content-4">
                           <h3 is="vl-h3">Bekijk cijfers voor andere thema's</h3>
                           <vl-alert data-vl-icon="info-circle" data-vl-title="Bekijk de cijfers van andere thema's"
@@ -621,6 +572,10 @@ render() {
                                       vervolgtraject</a>
                               </p>
                           </vl-alert>
+                          <vl-alert
+                                data-vl-title="Download de data">
+                                <p><a href="data/data gemeenten qlik.xlsx" download>Klik hier om de data te downloaden</a></p>
+                              </vl-alert>
                       </section>
                   </div>
               </div>
@@ -665,6 +620,11 @@ render() {
                                       <li is="vl-side-navigation-item">
                                       <div>
                                           <a href="#content-1-6" data-vl-parent="content-1">Instrumentarium</a>
+                                      </div>
+                                  </li>
+                                  <li is="vl-side-navigation-item">
+                                      <div>
+                                          <a href="#content-1-7" data-vl-parent="content-1">Opmerking handhavingsactor</a>
                                       </div>
                                   </li>
                                      

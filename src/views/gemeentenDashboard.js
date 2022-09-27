@@ -118,7 +118,7 @@ render() {
                           <span slot="title">Hinderlijke maar niet vergunde inrichtingen</span>
                           <div slot="content">
                               <img class="icon" src="assets/icons/Klas3.png">
-                              <div class="GEM-KPI-Klasse3 object"></div>
+                              <div class="GEM-Hinderlijk object"></div>
                           </div>
                       </vl-info-tile>
                   </div>
@@ -286,16 +286,9 @@ render() {
                       </vl-tooltip>
                               <div is="vl-column" data-vl-size=12 class="data-top-bot">
                                   <vl-infoblock data-vl-title="Controles" data-vl-icon="business-graph-bar">
-                                  De controles worden in de grafiek onderverdeeld in 5 categorieën:
-                                      <vl-typography>
-                                          <ul>
-                                              <li>Initiële controles</li>
-                                              <li>Navolgende controles</li>
-                                              <li>Controles naar aanleiding van klachten</li>
-                                              <li>Controles naar aanleiding van meldingen</li>
-                                              <li>Controles op eigen initiatief</li>
-                                          </ul>
-                                          <vl-typography>
+                                  De controles worden in de grafiek onderverdeeld in categorieën:
+                                  <br/>
+                                  initiële en navolgende controles; en controles naar aanleiding van klachten en meldingen en controles op eigen initiatief.
                                   </vl-infoblock>
                               </div>
                           </div>
@@ -396,51 +389,48 @@ render() {
                           </div>
 
                           <div is="vl-grid" class="data-top-bot">
-                              <div is="vl-column" data-vl-size=6>
+                              <div is="vl-column" data-vl-size=4>
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Raadgeving</span>
-                                      <span slot="subtitle">Cijfers voor gemeente</span>
+                                      
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-Informatie.png">
                                           <div class="GEM-RaadgevingGEM object"></div>
                                       </div>
                                   </vl-info-tile>
                                 </div>
-                                  <div is="vl-column" data-vl-size=6>
+                                  <div is="vl-column" data-vl-size=8>
                                   <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Raadgeving</span>
-                                      <span slot="subtitle">Cijfers voor gemeente</span>
+                                      <span slot="title">Onderverdeling raadgevingen</span>
+                                      
                                       <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-Kalender.png">
-                                          <div class="GEM-AanmaningGEM object"></div>
+                                          <div class="Gem-pie-raadgeving chart"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
                               </div>
                               <div is="vl-grid" class="data-top-bot">
-                              <div is="vl-column" data-vl-size=6>
+                              <div is="vl-column" data-vl-size=4>
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Aanmaningen</span>
-                                      <span slot="subtitle">Cijfers voor gemeente</span>
+                                      
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-Informatie.png">
-                                          <div class="GEM-RaadgevingGEM object"></div>
+                                          <div class="GEM-AanmaningGEM object"></div>
                                       </div>
                                   </vl-info-tile>
                                 </div>
-                                  <div is="vl-column" data-vl-size=6>
+                                  <div is="vl-column" data-vl-size=8>
                                   <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Aanmaning</span>
-                                      <span slot="subtitle">Cijfers voor gemeente</span>
+                                      <span slot="title">Onderverdeling aanmaningen</span>
                                       <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-Kalender.png">
-                                          <div class="GEM-AanmaningGEM object"></div>
+                                          <div class="Gem-pie-aanmaning chart"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
                               </div>
                                 <div is="vl-grid" class="data-top-bot">
-                                <div is="vl-column" data-vl-size=6>
+                                <div is="vl-column" data-vl-size=4>
                                 <vl-info-tile data-vl-auto-open=true>
                                     <span slot="title">Verslag van vaststelling</span>
                                     <span slot="subtitle">Cijfers voor gemeente</span>
@@ -450,35 +440,35 @@ render() {
                                     </div>
                                 </vl-info-tile>
                             </div>
-                              <div is="vl-column" data-vl-size=6>
+                              <div is="vl-column" data-vl-size=8>
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Verslag van vaststelling</span>
-                                      <span slot="subtitle">Cijfers voor gemeente</span>
+                                      
                                       <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-PV.png">
-                                          <div class="GEM-pvGEM object"></div>
+                                          
+                                          <div class="Gem-pie-verslag chart"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
                               </div>
                               <div is="vl-grid" class="data-top-bot">
-                              <div is="vl-column" data-vl-size=6>
+                              <div is="vl-column" data-vl-size=4>
                               <vl-info-tile data-vl-auto-open=true>
                                   <span slot="title">Proces-verbaal</span>
                                   <span slot="subtitle">Cijfers voor gemeente</span>
                                   <div slot="content">
                                       <img class="icon" src="assets/icons/PNG-klipbord.png">
-                                      <div class="GEM-verslagvastellingGEM object"></div>
+                                      <div class="GEM-pvGEM object"></div>
                                   </div>
                               </vl-info-tile>
                           </div>
-                            <div is="vl-column" data-vl-size=6>
+                            <div is="vl-column" data-vl-size=8>
                                 <vl-info-tile data-vl-auto-open=true>
                                     <span slot="title">Proces-verbaal</span>
-                                    <span slot="subtitle">Cijfers voor gemeente</span>
+                                    
                                     <div slot="content">
-                                        <img class="icon" src="assets/icons/PNG-PV.png">
-                                        <div class="GEM-pvGEM object"></div>
+                                       
+                                        <div class="Gem-pie-pv chart"></div>
                                     </div>
                                 </vl-info-tile>
                             </div>
@@ -512,18 +502,18 @@ render() {
                           </div>
                           <div is="vl-column" data-vl-size=6>
                                 <vl-info-tile data-vl-auto-open=true>
-                                    <span slot="title">Proces-verbaal</span>
-                                    <span slot="subtitle">Cijfers voor gemeente</span>
+                                    <span slot="title">Onderverdeling bestuurlijke maatregel</span>
+                                    
                                     <div slot="content">
-                                        <img class="icon" src="assets/icons/PNG-PV.png">
-                                        <div class="GEM-pvGEM object"></div>
+                                       
+                                        <div class="Gem-pie-bestmaatregel chart"></div>
                                     </div>
                                 </vl-info-tile>
                             </div>
                           </div>
                           
                           <div is="vl-grid" class=data-top-bot">
-                              <div is="vl-column" data-vl-size=6>
+                              <div is="vl-column" data-vl-size=4>
                                   <vl-info-tile data-vl-auto-open=true><span slot="title">Veiligheidsmaatregelen</span>
                                   <span slot="subtitle">Cijfers voor gemeente</span>
                                       <div slot="content">
@@ -532,12 +522,12 @@ render() {
                                       </div>
                                   </vl-info-tile>
                               </div>
-                              <div is="vl-column" data-vl-size=6>
-                              <vl-info-tile data-vl-auto-open=true><span slot="title">Veiligheidsmaatregelen</span>
-                              <span slot="subtitle">Cijfers voor gemeente</span>
+                              <div is="vl-column" data-vl-size=8>
+                              <vl-info-tile data-vl-auto-open=true><span slot="title">Onderverdeling veiligheidsmaatregelen</span>
+                              
                                   <div slot="content">
-                                      <img class="icon" src="assets/icons/PNG-opgepast.png">
-                                      <div class="GEM-veiligheidsGEM object"></div>
+                                      
+                                      <div class="Gem-pie-veiligheids chart"></div>
                                   </div>
                               </vl-info-tile>
                           </div>
@@ -596,7 +586,6 @@ render() {
                           </div>
                           </div>
                           </section>
-
                       <section is="vl-region" id="content-2">
                           <h3 is="vl-h3">Bekijk cijfers voor andere thema's</h3>
                           <vl-alert data-vl-icon="info-circle" data-vl-title="Bekijk de cijfers van andere thema's"
@@ -609,6 +598,10 @@ render() {
                                       vervolgtraject</a>
                               </p>
                           </vl-alert>
+                          <vl-alert
+                                data-vl-title="Download de data">
+                                <p><a href="data/data gemeenten qlik.xlsx" download>Klik hier om de data te downloaden</a></p>
+                              </vl-alert>
                       </section>
                   </div>
               </div>

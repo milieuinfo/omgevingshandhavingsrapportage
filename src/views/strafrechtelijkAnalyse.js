@@ -55,7 +55,7 @@ export class StrafrechtelijkAnalyseAnalyseView extends LitElement {
             <div is="vl-grid" class="data-top-bot">
             <h5 is="vl-h5">
             Instroom - herkomst</h5>
-            <div class="Tabel1 chartTabelsm"></div></div>
+            <div class="Tabel1 chart"></div></div>
 
             <div class="toolbar"></div>
             <div is="vl-grid">
@@ -197,7 +197,7 @@ export class StrafrechtelijkAnalyseAnalyseView extends LitElement {
                       <li is="vl-side-navigation-item">
                         <div>
                           <a href="#content-1-2" data-vl-parent="content-1"
-                            >Gewestelijke beboetingsentiteiten</a
+                            >Gewestelijke beboetingsentiteit</a
                           >
                         </div>
                       </li>
