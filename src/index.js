@@ -257,7 +257,6 @@ async function gewestelijkanalyserendering() {
       theme: 'light',
     },
   });
-  
   const nebbieNodebbie = stardust.embed(app, {
     types,
     //themes,
@@ -764,28 +763,8 @@ async function strafrechtelijkanalyserendering() {
     });
   //Tabel Vooruitgangsstaat
     nebbieNoselection.render({
-      type: 'table',
       element: document.querySelector('.Tabelvooruitgangstaat'),
-      properties: {
-        qHyperCubeDef: {
-          qDimensions: [
-            { qDef: { qFieldDefs: ['categorieVooruitgangsstraat'], qFallbackTitle: 'Categorie vooruitgangsstaat'},  qNullSuppression: true },
-          ],
-          qMeasures: [
-            { qDef: { qDef: 'Sum([VGSAfval])', autoSort: false, qLabel: 'Afval'}},
-            { qDef: { qDef: 'Sum([VGSMest])', autoSort: false, qLabel: 'Mest'}},
-            { qDef: { qDef: 'Sum([VGSVegunningen])', autoSort: false, qLabel: 'Vergunningen'},},
-            { qDef: { qDef: 'Sum([VGSMilieubeheerrecht])', autoSort: false, qLabel: 'Milieubeheerrecht'}},
-            { qDef: { qDef: 'Sum([VGSEmissies])', autoSort: false, qLabel: 'Emissies'} },
-            { qDef: { qDef: 'Sum([VGSRuimtelijkeOrdening])', autoSort: false, qLabel: 'Ruimtelijke ordening'}},
-            { qDef: { qDef: 'Sum([VGSH])', autoSort: false, qLabel: 'Totaal'}},
-          ],
-          qInitialDataFetch: [{
-            qWidth: 3,
-            qHeight: 3000,
-          }],
-        },
-      },
+      id: "FDhFmj"
     });
     nebbieNoselection.render({
       type:'pivot-table',
@@ -837,9 +816,9 @@ async function strafrechtelijkanalyserendering() {
         },
       },
     });
-    nebbieNoselection.render({ 
+    nebbie.render({ 
       element: document.querySelector('.Tabelseponering'),
-      id: "mDDkX",
+      id: "AAJvdg",
     });
     nebbieNoselection.render({ 
       element: document.querySelector('.HHCTabel1'),
@@ -864,11 +843,6 @@ async function strafrechtelijkanalyserendering() {
     nebbie.render({ 
       element: document.querySelector('.GewestelijkBBInstroom'),
       id: "NnTrfSB",
-    });
-    nebbie.render({ 
-      element: document.querySelector('.GewestelijkBBBehandeling'),
-      id: "wLLgTk",
-      footnote: "Hello"
     });
   }
 }

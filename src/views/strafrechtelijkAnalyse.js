@@ -39,6 +39,7 @@ export class StrafrechtelijkAnalyseAnalyseView extends LitElement {
               <vl-infoblock data-vl-icon="business-graph-bar">
               <h2 slot="title">Openbaar ministerie</h2>
               Hieronder kan een bestand worden gedownload met duiding bij de statistische bijdrage van het Openbaar Ministerie:
+              <span slot="type">URL</span>
               <p>
               <span slot="title"><a href="https://drive.google.com/drive/folders/1WTo0_wMdlJxqIuW4lSV8-fK8DuHRI3_w?usp=sharing" target="_blank">Duiding bij de statistische bijdrage</a></span></p>
             </vl-infoblock>
@@ -56,17 +57,19 @@ export class StrafrechtelijkAnalyseAnalyseView extends LitElement {
             <div class="DrillBar chart"></div>
             </div>
             <div is="vl-grid" class="data-top-bot">
+            <vl-typography>
+            <h5>Motieven tot seponering </h5>
+            <p><span class="ondertitel">Selecteer een thema voor gedetailleerdere informatie</span></p></vl-typography>
+         
+          <div class="Tabelseponering chartTabel"></div>
+            </div>
+            <div is="vl-grid" class="data-top-bot">
             <h5 is="vl-h5">
             Vooruitgangsstaat
           </h5>
             <div class="Tabelvooruitgangstaat chartTabel"></div>
             </div>
-            <div is="vl-grid" class="data-top-bot">
-            <h5 is="vl-h5">
-            Motieven tot seponering
-          </h5>
-          <div class="Tabelseponering chartTabel"></div>
-            </div>
+           
               </section>
               <section id="content-1-2" is="vl-region">
               <hr>
