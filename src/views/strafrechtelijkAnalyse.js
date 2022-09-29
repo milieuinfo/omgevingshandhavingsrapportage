@@ -39,11 +39,8 @@ export class StrafrechtelijkAnalyseAnalyseView extends LitElement {
               <vl-infoblock data-vl-icon="business-graph-bar">
               <h2 slot="title">Openbaar ministerie</h2>
               Hieronder kan een bestand worden gedownload met duiding bij de statistische bijdrage van het Openbaar Ministerie:
-              <vl-document data-vl-href="documents/Duiding bij de statistische bijdrage van het Openbaar Ministerie.pdf">
-              <span slot="type">PDF</span>
-              <span slot="title">Duiding bij de statistische bijdrage</span>
-              <span slot="metadata">PDF - 580 kB</span>
-            </vl-document>
+              <p>
+              <span slot="title"><a href="https://drive.google.com/drive/folders/1WTo0_wMdlJxqIuW4lSV8-fK8DuHRI3_w?usp=sharing" target="_blank">Duiding bij de statistische bijdrage</a></span></p>
             </vl-infoblock>
             <hr>
             <div is="vl-grid" class="data-top-bot">
