@@ -73,7 +73,7 @@ export class Start extends LitElement {
                 data-vl-items-extra-small-size=4 data-vl-items-extra-small-max-size=4>
                 <vl-description-data-item data-vl-label="Uitgever" data-vl-value="Departement Omgeving">
                 </vl-description-data-item>
-                <vl-description-data-item data-vl-label="Publicatiedatum" data-vl-value="Juli 2022">
+                <vl-description-data-item data-vl-label="Publicatiedatum" data-vl-value="Oktober 2022">
                 </vl-description-data-item>
                 <vl-description-data-item data-vl-label="Publicatietype" data-vl-value="Webapplicatie">
                 </vl-description-data-item>
