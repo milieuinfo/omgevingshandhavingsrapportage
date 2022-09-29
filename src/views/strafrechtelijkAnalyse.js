@@ -136,7 +136,7 @@ export class StrafrechtelijkAnalyseAnalyseView extends LitElement {
               <vl-alert             
               data-vl-title="Download de data"
               data-vl-type="info">
-              <p><a href="data/Strafrechtelijkdata.zip" download>Klik hier om de data te downloaden</a></p>
+              <p><a href="https://drive.google.com/drive/folders/1WTo0_wMdlJxqIuW4lSV8-fK8DuHRI3_w?usp=sharing" target="_blank">Klik hier om de data te downloaden</a></p>
             </vl-alert>
           </section>
             </div>
