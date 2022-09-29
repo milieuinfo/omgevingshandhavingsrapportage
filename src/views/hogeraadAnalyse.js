@@ -10,8 +10,7 @@ export class HogeraadAnalyseView extends LitElement {
   render() {
     return analysis({
       children: html
-      `
-      <vl-functional-header data-vl-back="Terug" data-vl-back-link="/public/hogeraad"
+      `<vl-functional-header data-vl-back="Terug" data-vl-back-link="/public/hogeraad"
       data-vl-title="Cijfers voor hoge raad van handhavingsactoren"
       data-vl-sub-title="Een analyse van hoge raad van handhavingsactoren"
       data-vl-link="Hoge raad van handhavingsactoren">
@@ -86,7 +85,7 @@ export class HogeraadAnalyseView extends LitElement {
                           </vl-alert>
                           <vl-alert
                           data-vl-title="Download de data">
-                          <p><a href="documents/data qlik HRH.xlsx" download>Klik hier om de data te downloaden</a></p>
+                          <p><a href="/data/DataHogeRaad.zip" download>Klik hier om de data te downloaden</a></p>
                         </vl-alert>
                       </section>
                   </div>
@@ -138,12 +137,10 @@ export class HogeraadAnalyseView extends LitElement {
               </div>
           </div>
       </div>
-  </section>
-      `,
+  </section>`,
       title: "HogeraadAnalyseView",
     });
   }
-  
   createRenderRoot() {
     return this;
   }

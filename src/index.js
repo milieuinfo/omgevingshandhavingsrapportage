@@ -246,13 +246,10 @@ const types = [
 //Rendering Gewestelijk
 async function gewestelijkanalyserendering() {
   const classExists = document.getElementsByClassName(
-    'chart'
-   ).length > 0;
-
-   let app;
-   app = await connect(config);
-
-   const nebbie = stardust.embed(app, {
+    'chart').length > 0;
+  let app;
+  app = await connect(config);
+  const nebbie = stardust.embed(app, {
     types,
     //themes,
     context: {
@@ -260,7 +257,7 @@ async function gewestelijkanalyserendering() {
       theme: 'light',
     },
   });
-
+  
   const nebbieNodebbie = stardust.embed(app, {
     types,
     //themes,
@@ -272,11 +269,8 @@ async function gewestelijkanalyserendering() {
   });
 
   if(!classExists) {
-    const selections = await nebbie.selections();
-  selections.unmount('.toolbar');
-    //Get toolbar of application and define it as a class of toolbar => To be used in HTML page
+  //Get toolbar of application and define it as a class of toolbar => To be used in HTML page
   (await nebbie.selections().then((s) => s.mount(document.querySelector('.toolbar')))); 
-
   nebbieNodebbie.render({ 
     element: document.querySelector('.RO-KPI-Gecombi'),
     id: "mesXM",
@@ -289,27 +283,22 @@ async function gewestelijkanalyserendering() {
     element: document.querySelector('.RO-KPI-Overtredingsgraad'),
     id: "39444ce5-84e1-4964-be44-1d791438e603",
   });
-  
   nebbieNodebbie.render({ 
     element: document.querySelector('.RO-KPI-Beveltotstaking'),
     id: "mCPXYJ",
   });
-
   nebbieNodebbie.render({ 
     element: document.querySelector('.RO-KPI-minnelijk'),
     id: "ANNZETg",
   });
-
   nebbieNodebbie.render({ 
     element: document.querySelector('.RO-KPI-openbaarmin'),
     id: "TFxWKk",
   });
-
   nebbieNodebbie.render({ 
     element: document.querySelector('.RO-KPI-burgerlijkrechter'),
     id: "WxpfLj",
   });
-
   nebbieNodebbie.render({ 
     element: document.querySelector('.RO-KPI-gerechtambt'),
     id: "JjNJFP",
@@ -346,7 +335,6 @@ async function gewestelijkanalyserendering() {
     element: document.querySelector('.MIL-KPI-Raadgeving'),
     id: "DdSpDj",
   });
-  
   nebbieNodebbie.render({ 
     element: document.querySelector('.MIL-KPI-Aanmaning'),
     id: "JaKhF",
@@ -407,6 +395,7 @@ async function gewestelijkanalyserendering() {
     element: document.querySelector('.MIL-Barchart-Controles'),
     id: "FrnBLn",
   });
+
   /********** Ruimtelijke ordening ************** */
   nebbieNodebbie.render({ 
     element: document.querySelector('.RO-KPI-Stedenbouwkundige'),
@@ -476,7 +465,6 @@ async function gewestelijkanalyserendering() {
     element: document.querySelector('.RO-KPI-Verbalitisanten'),
     id: "ZZxXrq",
   });
-
   nebbieNodebbie.render({ 
     element: document.querySelector('.RO-Barchart-Controles'),
     id: "AwzbN",
@@ -485,7 +473,6 @@ async function gewestelijkanalyserendering() {
     element: document.querySelector('.RO-KPI-Herstelbaar'),
     id: "WTBuPU",
   });
-
   nebbieNodebbie.render({ 
     element: document.querySelector('.RO-KPI-Herstelvordering'),
     id: "JqwMRw",
@@ -500,7 +487,6 @@ async function gewestelijkanalyserendering() {
   .mount(document.querySelector('.listbox'),{search:true,title:"Gewestelijke handhavingsactoren",checkboxes:false});
   }
 }
-
 //Rendering Provinciaalanalyse
 async function provinciaalanalyserendering() {
   const classExists = document.getElementsByClassName(
@@ -509,8 +495,6 @@ async function provinciaalanalyserendering() {
 
    let app;
    app = await connect(config);
-
-   /*Set theme to charts*/
  const nebbie = stardust.embed(app, {
      types,
      //themes,
@@ -519,7 +503,6 @@ async function provinciaalanalyserendering() {
        theme: 'light',
      },
    });
-
    const nebbieNoselectionProv = stardust.embed(app, {
     types,
     //themes,
@@ -531,111 +514,109 @@ async function provinciaalanalyserendering() {
   });
  
   if(!classExists) {
-    //Get toolbar of application and define it as a class of toolbar => To be used in HTML page
-    
+  //Get toolbar of application and define it as a class of toolbar => To be used in HTML page
   (await nebbie.selections().then((s) => s.mount(document.querySelector('.toolbar')))); 
   nebbieNoselectionProv.render({ 
     element: document.querySelector('.PROV-BAR-Controles'),
     id: "tabKzVP",
   });
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.PROV-KPI-GOV-zonder-dwangsom'),
     id: "RXcjfDd",
   });
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.PROV-KPI-GOV-met-dwangsom'),
     id: "czJPhQ",
   });
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.PROV-KPI-Overtredingsgraad'),
     id: "sFGJrvB",
   });
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.PROV-Opmerking'),
     id: "qgGXNW",
   });
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.PROV-KPI-GOV-veiligsheidsmaatregel'),
     id: "mwzmBf",
   });
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.PROV-KPI-verslagvanvastelling'),
     id: "HTUwQG",
   });
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.PROV-KPI-BestuurlijkmaatregelInstrumentarium'),
     id: "QcUjLd",
   });
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.PROV-KPI-BestuurlijkmaatregelInstrumentariumzonderdwangsom'),
     id: "PBLBHyp",
   });
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.PROV-KPI-BestuurlijkmaatregelInstrumentariummetdwangsom'),
     id: "FPvJJ",
   });
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.ToezichthoudersProv'),
     id: "vtQuSsz",
   });
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.Bestuurlijk-maatregel-provinciegouverneur'),
     id: "XjBqeE",
   });
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.Veiligheidsmaatregelen-provinciegouverneur'),
     id: "Gchmsr",
   });
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.VTEHandhaving'),
     id: "CptELfD",
   });
-  
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.Klachten'),
     id: "JvKBje",
   });
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.Controles'),
     id: "JAGuhL",
   });
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.Aanvankelijkecontrolesmetovertreding'),
     id: "JPctuae",
   });
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.Bestuurlijkmaatregelen'),
     id: "XjBqeE",
   });
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.Bestuurlijkmaatregelen-zonder-dwangsom'),
     id: "RXcjfDd",
   });
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.Bestuurlijkmaatregelen-tijdig-uitgevoerd'),
     id: "gTxNP",
   });
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.Bestuurlijkmaatregelen-metdwangsom'),
     id: "czJPhQ",
   });
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.Bestuurlijkmaatregelen-tijdig'),
     id: "aPHqXZ",
   });
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.Bestuurlijkmaatregelen-veiligheidsmaatregelen'),
     id: "mwzmBf",
   });
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.Bestuurlijkmaatregelen-veiligheidsmaatregelen-tijdig'),
     id: "hcsvJ",
   });
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.Provincialetoezichthouders'),
     id: "fpdhcD",
   });
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.TotaalVTE'),
     id: "QCjyv",
   });
@@ -647,47 +628,47 @@ async function provinciaalanalyserendering() {
     element: document.querySelector('.KlachtenChart'),
     id: "skLPSt",
   });
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.ControlesChart'),
     id: "UxdjFsS",
   });
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.Raadgeving'),
     id: "ZjSzs",
   });
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.Aanmaning'),
     id: "MqRzq",
   });
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.Procesverbaal'),
     id: "ZncUmUP",
   });
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.BESTM'),
     id: "QcUjLd",
   });
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.BESTM-zonderdw'),
     id: "PBLBHyp",
   });
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.BESTM-zonderdw-percent'),
     id: "KVpU",
   });
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.BESTM-metdwangsom'),
     id: "FPvJJ",
   });
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.BESTM-metdwangsom-percent'),
     id: "Pwq",
   });
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.Veiligheidsmaatregel'),
     id: "PjxFwJ",
   });
-  nebbie.render({ 
+  nebbieNoselectionProv.render({ 
     element: document.querySelector('.Veiligheidsmaatregel-percent'),
     id: "rcDAPp",
   });
@@ -697,16 +678,13 @@ async function provinciaalanalyserendering() {
  (await nebbie.field(fieldNameProvincie))
  .mount(document.querySelector('.listboxProv'),{search:false,title:"Provinciale handhavingsactoren",checkboxes:false});
 }
-
 //Rendering hoge raad
 async function hogeraadanalyserendering() {
   const classExistsHR = document.getElementsByClassName(
     'chart'
    ).length > 0;
-
    let app;
    app = await connect(config);
-
    /*Set theme to charts*/
  const nebbie = stardust.embed(app, {
      types,
@@ -716,7 +694,6 @@ async function hogeraadanalyserendering() {
        theme: 'light',
      },
    });
-
    const nebbieNoselectionHRC = stardust.embed(app, {
     types,
     //themes,
@@ -745,13 +722,12 @@ async function hogeraadanalyserendering() {
       element: document.querySelector('.HRCBindendeadviesTabel'),
       id: "BuWTbhf",
     });
-    nebbie.render({ 
+    nebbieNoselectionHRC.render({ 
       element: document.querySelector('.HRCBindendeadviesChart'),
       id: "vNpDF",
     });
 }
 }
-
 //Rendering strafrechtelijk
 async function strafrechtelijkanalyserendering() {
   const classExistsInit = document.getElementsByClassName(
@@ -780,14 +756,12 @@ async function strafrechtelijkanalyserendering() {
   if(!classExistsInit) {
     //Get toolbar of application and define it as a class of toolbar => To be used in HTML page
   (await nebbie.selections().then((s) => s.mount(document.querySelector('.toolbar'))));
-
   //Openbaar Ministerie 
   //Instroom 
     nebbieNoselection.render({ 
       element: document.querySelector('.Tabel1'),
       id: "XBDmJ",
     });
-
   //Tabel Vooruitgangsstaat
     nebbieNoselection.render({
       type: 'table',
@@ -813,21 +787,16 @@ async function strafrechtelijkanalyserendering() {
         },
       },
     });
-
-
     nebbieNoselection.render({
       type:'pivot-table',
       element: document.querySelector('.milieubehandelingthem'),
       id: "qPwSv"
     });
-
     nebbieNoselection.render({
       type:'pivot-table',
       element: document.querySelector('.RObehandelingthem'),
       id: "aNaXzf"
     });
-    
-
     //Gewestelijke beboetingsentiteit
     //Instroom
     nebbieNoselection.render({
@@ -849,8 +818,6 @@ async function strafrechtelijkanalyserendering() {
         },
       },
     });
-
-    
     nebbieNoselection.render({
       type: 'table',
       element: document.querySelector('.GewestBH'),
@@ -868,7 +835,6 @@ async function strafrechtelijkanalyserendering() {
             qHeight: 3000,
           }],
         },
-        
       },
     });
     nebbieNoselection.render({ 
@@ -883,7 +849,6 @@ async function strafrechtelijkanalyserendering() {
       element: document.querySelector('.HHCTabel2'),
       id: "QznbVm",
     });
-    
     nebbie.render({ 
       element: document.querySelector('.DrillBar'),
       id: "aWqZQtS",
@@ -905,20 +870,16 @@ async function strafrechtelijkanalyserendering() {
       id: "wLLgTk",
       footnote: "Hello"
     });
-   
   }
 }
-
 async function gemeentendashboard() {
-  
   const classExistsInit = document.getElementsByClassName(
     'chart'
    ).length > 0;
    let app;
    app = await connect(config);
-   
    /*Set theme to charts*/
- const nebbie = stardust.embed(app, {
+  const nebbie = stardust.embed(app, {
      types,
      //themes,
      context: {
@@ -926,8 +887,7 @@ async function gemeentendashboard() {
        theme: 'light',
      },
    });
-
-   const nebbieNoselectionGem = stardust.embed(app, {
+  const nebbieNoselectionGem = stardust.embed(app, {
     types,
     //themes,
     context: {
@@ -936,19 +896,14 @@ async function gemeentendashboard() {
       constraints: { select: true },
     },
   });
-   
   if(!classExistsInit) {
-    //Get toolbar of application and define it as a class of toolbar => To be used in HTML page
+  //Get toolbar of application and define it as a class of toolbar => To be used in HTML page
   (await nebbie.selections().then((s) => s.mount(document.querySelector('.toolbar'))));
-
-
- /* Get fieldvalues of the field Naam Gemeente in Qlik model and mount it in placeholder listbox*/
- 
- const fieldNameGem = 'Gemeente'; // Should refer to a field in your app
- (await nebbie.field(fieldNameGem))
- .mount(document.querySelector('.listboxGEM'),{search:true,title:"Gemeente",checkboxes:false});
-
- nebbie.render({ 
+  /* Get fieldvalues of the field Naam Gemeente in Qlik model and mount it in placeholder listbox*/
+  const fieldNameGem = 'Gemeente'; // Should refer to a field in your app
+  (await nebbie.field(fieldNameGem))
+  .mount(document.querySelector('.listboxGEM'),{search:true,title:"Gemeente",checkboxes:false});
+  nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-Toezicthouders'),
   id: "GtNeXHa",
 });
@@ -980,228 +935,253 @@ nebbieNoselectionGem.render({
   element: document.querySelector('.GEM-Klachten-pie'),
   id: "jQdLF",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-Controles-pie'),
   id: "wvuFWcw",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-AAControles-pie'),
   id: "FKJAgf",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-TotaalVTE'),
   id: "PcZq",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-klachten'),
   id: "pYNrv",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-controles'),
   id: "pVsppX",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-AAControles'),
   id: "mSpEef",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-PieToezicthouders'),
   id: "QRJzm",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-VTEBar'),
   id: "Kareq",
 });
-
 nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-KlachtenBar'),
   id: "NChXtq",
-  
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-ControlesBar'),
   id: "RgmLzT",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-AAControlesBar'),
   id: "WhgamS",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-RaadgevingGEM'),
   id: "EqXUZq",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-RaadgevingIGS'),
   id: "AgXjnnC",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-RaadgevingLP'),
   id: "AcQWjU",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-AanmaningGEM'),
   id: "QxmppR",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-AanmaningIGS'),
   id: "UxkmGT",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-AanmaningLP'),
   id: "mtVpjT",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-pvGEM'),
   id: "MQxJKJ",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-pvIGS'),
   id: "HYQSX",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-pvLP'),
   id: "pdXc",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-bestuurlijkmaatregelGEM'),
   id: "ywktLz",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-bestuurlijkmaatregelIGS'),
   id: "QpqBt",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-bestuurlijkmaatregelLP'),
   id: "PeVCcVw",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-bestuurlijkmaatregelzonderGEM'),
   id: "ptTCeM",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-bestuurlijkmaatregelzonderIGS'),
   id: "jebuf",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-bestuurlijkmaatregelzonderLP'),
   id: "eVSmDJy",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-bestuurlijkmaatregelmetGEM'),
   id: "pBwU",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-bestuurlijkmaatregelmetIGS'),
   id: "BxmSrM",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-bestuurlijkmaatregelmetLP'),
   id: "VFjDssL",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-veiligheidsGEM'),
   id: "hSjPNuJ",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-veiligheidsIGS'),
   id: "pswvgAp",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-veiligheidsLP'),
   id: "aNCJtYU",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-burgbestm'),
   id: "Jpmwen",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-burgbestzonder'),
   id: "PQJZuSS",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-burgbestmet'),
   id: "emApAF",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-burgveilig'),
   id: "QJFCBz",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-verslagvastellingGEM'),
   id: "YBbmqpJ",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-verslagvastellingIGS'),
   id: "ackyug",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-verslagvastellingLP'),
   id: "QrkRHsD",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-veiligheidsmaatregel-igs'),
   id: "bTCRdV",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-overtredingsgraad-edit'),
   id: "zRspBS",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-opmerking-gem'),
   id: "jFgHzvw",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-opmerking-igs'),
   id: "hQJkPB",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-opmerking-lp'),
   id: "aDveZHw",
 });
-
-
 //instrumentarium
 nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-pie-raadgeving'),
   id: "PXYJP",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-pie-aanmaning'),
   id: "vmckAq",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-pie-verslag'),
   id: "RhGcVr",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-pie-pv'),
   id: "MzdR",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-pie-bestmaatregel'),
   id: "WdpDMs",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-pie-veiligheids'),
   id: "ZEQGgeD",
 });
 
-}
-}
+//Naam gemeente
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.Gem-ORG-NaamGEM'),
+  id: "xDATvX",
+});
 
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.Gem-ORG-GEM'),
+  id: "kwsakS",
+});
+
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.Gem-ORG-IGS'),
+  id: "BDukJu",
+});
+
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.Gem-ORG-LP'),
+  id: "vNPApmL",
+});
+
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.Gem-ORG-INW'),
+  id: "JPBBzB",
+});
+
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.GemORGlokaal'),
+  id: "pueLkze",
+});
+
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.Gem-ORG-RO-IGS'),
+  id: "YCjBKha",
+});
+
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.Gem-ORG-RO-LP'),
+  id: "JjxFhy",
+});
+
+
+
+  }
+}
 async function gemeentendashboardro() {
   
   const classExistsInit = document.getElementsByClassName(
@@ -1231,228 +1211,194 @@ async function gemeentendashboardro() {
   });
    
   if(!classExistsInit) {
-    //Get toolbar of application and define it as a class of toolbar => To be used in HTML page
-  (await nebbie.selections().then((s) => s.mount(document.querySelector('.toolbar'))));
-
-
- /* Get fieldvalues of the field Naam Gemeente in Qlik model and mount it in placeholder listbox*/
- 
+  //Get toolbar of application and define it as a class of toolbar => To be used in HTML page
+  (nebbie.selections().then((s) => s.mount(document.querySelector('.toolbar'))));
+  /* Get fieldvalues of the field Naam Gemeente in Qlik model and mount it in placeholder listbox*/
  const fieldNameProvincie = 'Gemeente'; // Should refer to a field in your app
  (await nebbie.field(fieldNameProvincie))
  .mount(document.querySelector('.listboxGEM'),{search:true,title:"Gemeente",checkboxes:false});
+ 
 
- nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-Vebalitisanten'),
   id: "VmPkER",
 });
-
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-stedenbouwkundige'),
   id: "cKYxLcB",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-stedenbouwkundigeinspec'),
   id: "mXXuFgn",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-totaalvtero'),
   id: "Svt",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-BARKlachten'),
   id: "EJUvZWY",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-BARControles'),
   id: "MXVjp",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-BARAAControles'),
   id: "fSgdsk",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-charttotaalvtero'),
   id: "sjckS",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-klachten'),
   id: "GBZEvm",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-controles'),
   id: "pYcZZVf",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-AAcontroles'),
   id: "sPvuYp",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-barcontroles'),
   id: "myXZwVj",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-overtredingsgraad'),
   id: "VRpG",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-inst-raadgeving'),
   id: "TxMejt",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-inst-aanmaning'),
   id: "RJszj",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-inst-verslagvaststelling'),
   id: "mSkpJ",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-PIE-Verbalitisanten'),
   id: "YKcxBs",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-PIE-StedenBK'),
   id: "MazX",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.GEM-PIE-StedenBKVerb'),
   id: "JpbAjkH",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-inst-pv'),
   id: "PUkJxcn",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-inst-vvt'),
   id: "mSkpJ",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-inst-beveltotstaking'),
   id: "jcqGSD",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-inst-afgeslotenminschik'),
   id: "jFqSu",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-inst-ambtshalve'),
   id: "JYeCdB",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-inst-raadgeving-igs'),
   id: "LuMZJT",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-inst-aanmaning-igs'),
   id: "FJCSAND",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-inst-verslagvanvastelling-igs'),
   id: "EGYPF",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-inst-PV-igs'),
   id: "JzzZjnC",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-inst-beveltotstaking-igs'),
   id: "LajcS",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-inst-afgeslotenminnelijke-igs'),
   id: "npvDrPz",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-inst-herstelvorderingOM-igs'),
   id: "KPukVKS",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-inst-herstelvorderingBR-igs'),
   id: "WPZdtc",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-inst-ambsthalvei-igs'),
   id: "WyVumvu",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-inst-raadgeving-lp'),
   id: "KHUnM",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-inst-verslagvastelling-lp'),
   id: "TWJjJ",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-inst-pv-lp'),
   id: "rJjf",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-inst-beveltotstaking-lp'),
   id: "UpBZR",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-inst-ingeleidOM'),
   id: "EuufvjC",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-inst-ingeleidBR'),
   id: "bHHWpyh",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-inst-bestmaatregel'),
   id: "EfxBZV",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-inst-bestmaatregel-zdwsm'),
   id: "hpuvuu",
 });
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-inst-bestmaatregel-mdwsom'),
   id: "epPFzCU",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-inst-bestmaatregel-igs-mdwsom'),
   id: "JJUvm",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-inst-bestmaatregel-igs'),
   id: "qDrufGR",
 });
-
-nebbie.render({ 
+nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-inst-bestmaatregel-igs-zdwsom'),
   id: "FWbjZh",
 });
-
-
 //instrumentarium
 nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-onder-raadgeven'),
@@ -1471,7 +1417,6 @@ nebbieNoselectionGem.render({
   element: document.querySelector('.Gem-ro-onder-PV'),
   id: "nqCu",
 });
-
 nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-onder-staking'),
   id: "jNfvTcr",
@@ -1488,12 +1433,10 @@ nebbieNoselectionGem.render({
   element: document.querySelector('.Gem-ro-onder-burgelijkrechter'),
   id: "YVSnmb",
 });
-
 nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-onder-ambachts'),
   id: "pdky",
 });
-
 nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-kpi-ambachts'),
   id: "dtRYDjk",
@@ -1522,10 +1465,64 @@ nebbieNoselectionGem.render({
   element: document.querySelector('.Gem-ro-bestm-kpi-mdw'),
   id: "epPFzCU",
 });
-
 nebbieNoselectionGem.render({ 
   element: document.querySelector('.Gem-ro-bestm-onder'),
   id: "JPARv",
 });
-} 
+//Naam gemeente
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.Gem-ORG-NaamGEM'),
+  id: "xDATvX",
+});
+
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.Gem-ORG-GEM'),
+  id: "kwsakS",
+});
+
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.Gem-ORG-IGS'),
+  id: "BDukJu",
+});
+
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.Gem-ORG-LP'),
+  id: "vNPApmL",
+});
+
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.Gem-ORG-INW'),
+  id: "JPBBzB",
+});
+
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.GemORGlokaal'),
+  id: "pueLkze",
+});
+
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.Gem-ORG-RO-IGS'),
+  id: "YCjBKha",
+});
+
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.Gem-ORG-RO-LP'),
+  id: "JjxFhy",
+});
+
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.Gem-Onderverdeling-klachten'),
+  id: "BQBs",
+});
+
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.Gem-Onderverdeling-controles'),
+  id: "nhEJPj",
+});
+nebbieNoselectionGem.render({ 
+  element: document.querySelector('.Gem-Onderverdeling-aacontroles'),
+  id: "HknzBB",
+});
+
+  }
 }

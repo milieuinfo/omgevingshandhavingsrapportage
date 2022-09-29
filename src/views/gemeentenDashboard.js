@@ -4,11 +4,9 @@ import "uig-webcomponents/lib/components/doormat/styles.css";
 import { analysis } from "../templates/analysis";
 import { embed } from '@nebula.js/stardust';
 export class GemeentenDashboardView extends LitElement {
-    
 render() {
     return analysis({
       children: html`
-
       <vl-functional-header data-vl-back="Terug" data-vl-back-link="/public/gemeenten"
       data-vl-title="Cijfers van gemeentelijke handhavingsactoren"
       data-vl-sub-title="Een analyse van de gemeentelijke handhavingsactoren"
@@ -56,10 +54,101 @@ render() {
                               </div>
                               </div>
                       </section>
+                      <section>
+                            <vl-infoblock data-vl-title="Organisatie lokale handhaving" data-vl-icon="business-graph-bar"></vl-infoblock>
+                      </section>
+
+                      <section>
+                      <div is="vl-grid">
+                      <div is="vl-column" data-vl-size=6 class="data-top-bot">
+                      <vl-info-tile data-vl-auto-open=true>
+                          <span slot="title">Naam <br/>gemeente<br/><span class="hidden">.</span></span>
+                          <div slot="content">
+                              <div class="Gem-ORG-NaamGEM object"></div>
+                          </div>
+                      </vl-info-tile>
+                  </div>
+                  <div is="vl-column" data-vl-size=6 class="data-top-bot">
+                      <vl-info-tile data-vl-auto-open=true>
+                          <span slot="title">Inwonersaantal<span class="hidden"><br/>.<br/>.</span></span>
+                          <div slot="content">
+                              <div class="Gem-ORG-INW object"></div>
+                          </div>
+                      </vl-info-tile>
+                  </div>
+
+                      </div>
+                      <div is="vl-grid">
+                      <div is="vl-column" data-vl-size = "12">
+                      <vl-typography>
+                            <h4>Milieuhandhaving</<h4><hr/>
+                      </vl-typography>
+                      </div>
+                      </div>
+                      <div is="vl-grid" data-vl-v-stretch>
+                      <div is="vl-column" data-vl-size=4 class="data-top-bot">
+                      <vl-info-tile data-vl-auto-open=true>
+                          <span slot="title">Gemeente<br/><span class="hidden">.<br/>.</span></span>
+                          <div slot="content">
+                              <div class="Gem-ORG-GEM object"></div>
+                          </div>
+                      </vl-info-tile>
+                  </div>
+                  <div is="vl-column" data-vl-size=4 class="data-top-bot">
+                  <vl-info-tile data-vl-auto-open=true>
+                      <span slot="title">Intergemeentelijke<br/> samenwerkings-<br/>verband</span>
+                      <div slot="content">
+                          <div class="Gem-ORG-IGS object"></div>
+                      </div>
+                  </vl-info-tile>
+              </div>
+              <div is="vl-column" data-vl-size=4 class="data-top-bot">
+                  <vl-info-tile data-vl-auto-open=true>
+                      <span slot="title">Lokale politie<br/><span class="hidden">.<br/>.</span></span>
+                      <div slot="content">
+                          <div class="Gem-ORG-LP object"></div>
+                      </div>
+                  </vl-info-tile>
+              </div>
+                  </div>
+                  <div is="vl-grid">
+                  <div is="vl-column" data-vl-size = "12">
+                  <vl-typography>
+                        <h4>Handhaving ruimtelijke ordening (RO)<h4><hr/>
+                  </vl-typography>
+                  </div>
+                  </div>
+                  <div is="vl-grid" data-vl-v-stretch>
+                  <div is="vl-column" data-vl-size=4 class="data-top-bot">
+                  <vl-info-tile data-vl-auto-open=true>
+                      <span slot="title">Gemeente<span class="hidden"><br/>.<br/>.</span></span>
+                      <div slot="content">
+                          <div class="GemORGlokaal object"></div>
+                      </div>
+                  </vl-info-tile>
+              </div>
+              <div is="vl-column" data-vl-size=4 class="data-top-bot">
+              <vl-info-tile data-vl-auto-open=true>
+                  <span slot="title">Intergemeentelijk samenwerkings-<br/>verband</span>
+                  <div slot="content">
+                      <div class="Gem-ORG-RO-IGS object"></div>
+                  </div>
+              </vl-info-tile>
+          </div>
+          <div is="vl-column" data-vl-size=4 class="data-top-bot">
+              <vl-info-tile data-vl-auto-open=true>
+                  <span slot="title">Lokale politie<br/><span class="hidden">.<br/>.</span></span>
+                  <div slot="content">
+                      <div class="Gem-ORG-RO-LP object"></div>
+                  </div>
+              </vl-info-tile>
+          </div>
+              </div>
+                      </section>
                       <section id="content-1-2" is="vl-region">
                       <div is="vl-grid">
                       <h3 is="vl-h3">Cijfers voor milieu handhaving</h3>
-                          <div is="vl-column data-vl-size=12 class=" data-top-bot">
+                          <div is="vl-column data-vl-size=12 class="data-top-bot">
                               <vl-infoblock data-vl-title="GAS-reglement - milieugerelateerde overlast "
                                   data-vl-icon="business-graph-bar">
                               </vl-infoblock>
@@ -88,7 +177,7 @@ render() {
                           <div is="vl-grid">
                           <div is="vl-column" data-vl-size=3 class="data-top-bot">
                               <vl-info-tile data-vl-auto-open=true>
-                                  <span slot="title">Klasse 1 - Inrichtingen</span>
+                                  <span slot="title">Klasse 1 - Inrichtingen<br/><span class="hidden">.</span></span>
                                   <div slot="content">
                                       <img class="icon" src="assets/icons/Klas1.png">
                                       <div class="GEM-KPI-Klasse1 object"></div>
@@ -97,7 +186,7 @@ render() {
                           </div>
                           <div is="vl-column" data-vl-size=3 class="data-top-bot">
                           <vl-info-tile data-vl-auto-open=true>
-                              <span slot="title">Klasse 2 - Inrichtingen</span>
+                              <span slot="title">Klasse 2 - Inrichtingen<br/><span class="hidden">.</span></span>
                               <div slot="content">
                                   <img class="icon" src="assets/icons/Klas2.png">
                                   <div class="GEM-KPI-Klasse2 object"></div>
@@ -106,7 +195,7 @@ render() {
                       </div>
                       <div is="vl-column" data-vl-size=3 class="data-top-bot">
                       <vl-info-tile data-vl-auto-open=true>
-                          <span slot="title">Klasse 3 - Inrichtingen <br/></span>
+                          <span slot="title">Klasse 3 - Inrichtingen<br/><span class="hidden">.</span></span>
                           <div slot="content">
                               <img class="icon" src="assets/icons/Klas3.png">
                               <div class="GEM-KPI-Klasse3 object"></div>
@@ -355,7 +444,6 @@ render() {
                                   </div>
                               </vl-info-tile>
                               </div>
-  
                               <div is="vl-column" data-vl-size=7>
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Aantal aanvankelijke controles met schending per categorie</span>
@@ -365,9 +453,7 @@ render() {
                                   </vl-info-tile>
                               </div>
                           </div>
-
                           <div is="vl-grid" class="data-top-bot">
-
                           <div is="vl-column" data-vl-size=12>
                           <vl-info-tile data-vl-auto-open=true>
                               <span slot="title">Overtredingsgraad</span>
@@ -379,7 +465,6 @@ render() {
                       </div>
                           </div>
                       </section>
-
                       <section id="content-1-8" is="vl-region">
                           <div is="vl-grid">
                               <div is="vl-column" data-vl-size=12 class="data-top-bot">
@@ -387,12 +472,10 @@ render() {
                                   </vl-infoblock>
                               </div>
                           </div>
-
                           <div is="vl-grid" class="data-top-bot">
                               <div is="vl-column" data-vl-size=4>
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Raadgeving</span>
-                                      
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-Informatie.png">
                                           <div class="GEM-RaadgevingGEM object"></div>
@@ -413,7 +496,6 @@ render() {
                               <div is="vl-column" data-vl-size=4>
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Aanmaningen</span>
-                                      
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-Informatie.png">
                                           <div class="GEM-AanmaningGEM object"></div>
@@ -433,7 +515,6 @@ render() {
                                 <div is="vl-column" data-vl-size=4>
                                 <vl-info-tile data-vl-auto-open=true>
                                     <span slot="title">Verslag van vaststelling</span>
-                                    <span slot="subtitle">Cijfers voor gemeente</span>
                                     <div slot="content">
                                         <img class="icon" src="assets/icons/PNG-klipbord.png">
                                         <div class="GEM-verslagvastellingGEM object"></div>
@@ -443,9 +524,7 @@ render() {
                               <div is="vl-column" data-vl-size=8>
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Verslag van vaststelling</span>
-                                      
                                       <div slot="content">
-                                          
                                           <div class="Gem-pie-verslag chart"></div>
                                       </div>
                                   </vl-info-tile>
@@ -455,7 +534,6 @@ render() {
                               <div is="vl-column" data-vl-size=4>
                               <vl-info-tile data-vl-auto-open=true>
                                   <span slot="title">Proces-verbaal</span>
-                                  <span slot="subtitle">Cijfers voor gemeente</span>
                                   <div slot="content">
                                       <img class="icon" src="assets/icons/PNG-klipbord.png">
                                       <div class="GEM-pvGEM object"></div>
@@ -465,20 +543,16 @@ render() {
                             <div is="vl-column" data-vl-size=8>
                                 <vl-info-tile data-vl-auto-open=true>
                                     <span slot="title">Proces-verbaal</span>
-                                    
                                     <div slot="content">
-                                       
                                         <div class="Gem-pie-pv chart"></div>
                                     </div>
                                 </vl-info-tile>
                             </div>
                             </div>
-                             
                           <div is="vl-grid" class="data-top-bot">
                           <div is="vl-column" data-vl-size=6>
                               <vl-info-tile data-vl-auto-open=true>
                                   <span slot="title">Bestuurlijke maatregelen</span>
-                                  <span slot="subtitle">Cijfers voor gemeente</span>
                                   <div slot="content">
                                       <img class="icon" src="assets/icons/PNG-risicoanalyse.png">
                                       <div class="GEM-bestuurlijkmaatregelGEM object"></div>
@@ -511,11 +585,9 @@ render() {
                                 </vl-info-tile>
                             </div>
                           </div>
-                          
                           <div is="vl-grid" class=data-top-bot">
                               <div is="vl-column" data-vl-size=4>
                                   <vl-info-tile data-vl-auto-open=true><span slot="title">Veiligheidsmaatregelen</span>
-                                  <span slot="subtitle">Cijfers voor gemeente</span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-opgepast.png">
                                           <div class="GEM-veiligheidsGEM object"></div>
@@ -600,7 +672,7 @@ render() {
                           </vl-alert>
                           <vl-alert
                                 data-vl-title="Download de data">
-                                <p><a href="documents/data gemeenten qlik.xlsx" download>Klik hier om de data te downloaden</a></p>
+                                <p><a href="documents/data gewestelijke actoren.xlsx" download>Klik hier om de data te downloaden</a></p>
                               </vl-alert>
                       </section>
                   </div>
@@ -672,12 +744,10 @@ render() {
               </div>
           </div>
       </div>
-  </section>
-      `,
+  </section>`,
       title: "GemeentenDashboardView",
     });
   }
-
   createRenderRoot() {
     return this;
   }

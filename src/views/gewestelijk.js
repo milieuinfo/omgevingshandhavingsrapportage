@@ -156,16 +156,12 @@ export class Gewestelijk extends LitElement {
             </div>
         </div>
     </div>
-</section>
-  
-  `,
+</section>`,
       title: "Gewestelijk",
     });
   }
-
   createRenderRoot() {
     return this;
   }
 }
-
 customElements.define("gewestelijk-view", Gewestelijk);

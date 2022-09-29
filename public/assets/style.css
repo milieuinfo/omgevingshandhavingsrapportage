@@ -44,7 +44,10 @@ body {
   width: 50%;
 }
 
-
+.hidden {
+  font-size: 1px;
+  color: #FFFFFF;
+}
 
 .chart {
   width:100% !important;

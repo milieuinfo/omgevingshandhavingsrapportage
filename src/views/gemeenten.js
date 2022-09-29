@@ -42,7 +42,7 @@ export class Gemeenten extends LitElement {
                                   <div is="vl-column">
                                       <div style="max-width: 400px" id="content-2" class="data-top-bot">
                                           <a is="vl-doormat" href="/public/gemeentenDashboard">
-                                              <h2 is="vl-doormat-title">Analyseer de cijfers voor milieuhandhaving</h2>
+                                              <h2 is="vl-doormat-title">Analyseer de cijfers voor milieu</h2>
                                               <div is="vl-doormat-text">
                                               &#x2022 Dashboard - individuele gemeenten
                                               </div>
@@ -93,15 +93,12 @@ export class Gemeenten extends LitElement {
               </div>
           </div>
       </div>
-  </section>
-      `,
+  </section>`,
       title: "Gemeenten",
     });
   }
-
   createRenderRoot() {
     return this;
   }
 }
-
 customElements.define("gemeenten-view", Gemeenten);

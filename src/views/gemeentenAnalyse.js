@@ -5,15 +5,12 @@ import { analysis } from "../templates/analysis";
 import { embed } from '@nebula.js/stardust';
 export class GemeentenAnalyseView extends LitElement { 
 render() {
-    
     return analysis({
       children: html`
-
       <vl-functional-header data-vl-back="Terug" data-vl-back-link="/public/gemeenten"
       data-vl-title="Cijfers van de gemeenten op kaart"
       data-vl-sub-title="Een geografische analyse van de activiteiten van de gemeenten" data-vl-link="Gemeente">
   </vl-functional-header>
-  
   <section is="vl-region">
       <div is="vl-layout">
           <div is="vl-grid" data-vl-is-stacked>
@@ -26,7 +23,7 @@ render() {
                               De kaarten worden onderverdeeld in twee categorieën:</p>
                               <vl-typography>
 
-                                <li>Milieu : groene kaarten</li>
+                                <li>Milieu: groene kaarten</li>
                                 <li>Ruimtelijke ordening: oranje kaarten</li>
 
                               </vl-typography>
@@ -581,15 +578,10 @@ render() {
               </div>
           </div>
       </div>
-  </section>
-
-
-  
-      `,
+  </section>`,
       title: "GemeentenAnalyseView",
     });
   }
-
   createRenderRoot() {
     return this;
   }

@@ -67,12 +67,10 @@ export class HogeRaadView extends LitElement {
               </div>
           </div>
       </div>
-  </section>
-      `,
+  </section>`,
       title: "HogeRaadView",
     });
   }
-
   createRenderRoot() {
     return this;
   }

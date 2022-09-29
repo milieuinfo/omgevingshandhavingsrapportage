@@ -71,15 +71,12 @@ export class Provinciaal extends LitElement {
               </div>
           </div>
       </div>
-  </section>
-      `,
+  </section>`,
       title: "Provinciaal",
     });
   }
-
   createRenderRoot() {
     return this;
   }
 }
-
 customElements.define("provinciaal-view", Provinciaal);

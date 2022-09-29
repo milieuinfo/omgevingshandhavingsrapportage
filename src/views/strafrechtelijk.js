@@ -85,17 +85,11 @@ export class StrafrechtelijkAnalyseView extends LitElement {
               </div>
           </div>
       </div>
-  </section>                       
-
-      `,
+  </section>`,
       title: "StrafrechtelijkAnalyseView",
-      
     });
-    
   }
-
   createRenderRoot() {
-    
     return this;
   }
 }

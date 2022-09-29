@@ -10,8 +10,7 @@ export class GewestelijkAnalyseView extends LitElement {
   render() {
     return analysis({
       children: html
-      `
-      <vl-functional-header data-vl-back="Terug" data-vl-back-link="/public/gewestelijk"
+      `<vl-functional-header data-vl-back="Terug" data-vl-back-link="/public/gewestelijk"
       data-vl-title="Cijfers van gewestelijke handhavingsactoren"
       data-vl-sub-title="Een analyse van de gewestelijke handhavingsactoren"
       data-vl-link="Gewestelijke handhavingsactoren">
@@ -332,7 +331,7 @@ export class GewestelijkAnalyseView extends LitElement {
   
                       </section>
   
-                      <section id="content-1-6" is="vl-region">
+                      <section id="content-1-7" is="vl-region">
                           <div is="vl-grid">
                               <div is="vl-column" data-vl-size=12 class="data-top-bot">
                                   <vl-infoblock data-vl-title="Opmerking handhavingsactor"
@@ -766,6 +765,11 @@ export class GewestelijkAnalyseView extends LitElement {
                                               <a href="#content-1-6" data-vl-parent="content-1">Instrumentarium</a>
                                           </div>
                                       </li>
+                                      <li is="vl-side-navigation-item">
+                                          <div>
+                                              <a href="#content-1-7" data-vl-parent="content-1">Opmerking handhavingsactor</a>
+                                          </div>
+                                      </li>
                                   </ul>
                               </li>
                               <li is="vl-side-navigation-item" data-vl-parent="content-3">
@@ -820,12 +824,10 @@ export class GewestelijkAnalyseView extends LitElement {
               </div>
           </div>
       </div>
-  </section>
-      `,
+  </section>`,
       title: "GewestelijkAnalyseView",
     });
   }
-  
   createRenderRoot() {
     return this;
   }

@@ -11,8 +11,6 @@ export class ProvinciaalAnalyseView extends LitElement {
       data-vl-title="Cijfers van provinciale handhavingsactoren"
       data-vl-sub-title="Een analyse van de provinciale handhavingsactoren" data-vl-link="Provinciale handhavingsactoren">
   </vl-functional-header>
-  
-  
   <section is="vl-region" >
       <div is="vl-layout">
           <div is="vl-grid" data-vl-is-stacked>
@@ -386,7 +384,7 @@ export class ProvinciaalAnalyseView extends LitElement {
                     
                       <section is="vl-region" id="content-2">
                           <h3 is="vl-h3">Cijfers andere handhavingsactoren</h3>
-                          <vl-alert data-vl-title="Bekijk de cijfers van andere thema's"
+                          <vl-alert
                               data-vl-type="info">
                               <p>
                               <a is="vl-link-button" href="/public/gewestelijk">Gewest</a>
@@ -465,12 +463,10 @@ export class ProvinciaalAnalyseView extends LitElement {
               </div>
           </div>
       </div>
-  </section>
-      `,
+  </section>`,
       title: "ProvinciaalAnalyseView",
     });
   }
-
   createRenderRoot() {
     return this;
   }
