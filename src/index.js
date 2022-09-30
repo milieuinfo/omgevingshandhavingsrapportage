@@ -721,7 +721,7 @@ async function hogeraadanalyserendering() {
       element: document.querySelector('.HRCBindendeadviesTabel'),
       id: "BuWTbhf",
     });
-    nebbieNoselectionHRC.render({ 
+    nebbie.render({ 
       element: document.querySelector('.HRCBindendeadviesChart'),
       id: "vNpDF",
     });

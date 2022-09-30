@@ -30,7 +30,7 @@ export class StrafrechtelijkAnalyseAnalyseView extends LitElement {
                     Deze pagina toont een overzichtelijk beeld van he strafrechtelijke en bestuurlijke vervolgtraject van de instrumenten
                     proces-verbaal en verslag van vaststelling. De grafieken zijn interactief en de cijfers zullen wijzigen naargelang de gekozen filtering.
                     De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk.
-                    Als de gegevens niet gekend zijn, verschijnt - of wordt aangegeven dat de data niet beschikbaar zijn.
+                    
                 </p>
               </section>
               <section id="content-1-1" is="vl-region">
@@ -56,20 +56,21 @@ export class StrafrechtelijkAnalyseAnalyseView extends LitElement {
             <p><span class="ondertitel">Selecteer een thema voor gedetailleerdere informatie</span></p></vl-typography>
             <div class="DrillBar chart"></div>
             </div>
+
+            <div class="Tabelseponering chartTabel"></div>
+            </div>
+            <div is="vl-grid" class="data-top-bot">
+            <h5 is="vl-h5">
+            Vooruitgangsstaat
+            </h5>
+            <div class="Tabelvooruitgangstaat chartTabel"></div>
+            </div>
+
             <div is="vl-grid" class="data-top-bot">
             <vl-typography>
             <h5>Motieven tot seponering </h5>
             <p><span class="ondertitel">Selecteer een thema voor gedetailleerdere informatie</span></p></vl-typography>
          
-          <div class="Tabelseponering chartTabel"></div>
-            </div>
-            <div is="vl-grid" class="data-top-bot">
-            <h5 is="vl-h5">
-            Vooruitgangsstaat
-          </h5>
-            <div class="Tabelvooruitgangstaat chartTabel"></div>
-            </div>
-           
               </section>
               <section id="content-1-2" is="vl-region">
               <hr>

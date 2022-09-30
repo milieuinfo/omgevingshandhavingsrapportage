@@ -30,7 +30,7 @@ export class GewestelijkAnalyseView extends LitElement {
                               De grafieken zijn interactief en de cijfers zullen wijzigen naargelang de gekozen filtering.
                               De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk
                               hieronder.
-                              Als de gegevens niet gekend zijn, verschijnt - of wordt aangegeven dat de data niet beschikbaar zijn.
+                            
                           </p>
                       </section>
   

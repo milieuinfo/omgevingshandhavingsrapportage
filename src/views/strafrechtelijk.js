@@ -15,7 +15,7 @@ export class StrafrechtelijkAnalyseView extends LitElement {
                   data-vl-extra-small-size="12">
                   <div is="vl-side-navigation-reference">
                       <section id="content-1" is="vl-region">
-                          <h3 is="vl-h3">Strafrechtelijke en bestuurlijke vervolgtraject</h3>
+                          <h3 is="vl-h3">Strafrechtelijk en bestuurlijk vervolgtraject</h3>
                           <h4 is="vl-h4">Over de cijfers en procedure</h3>
   
                           <vl-typography>
