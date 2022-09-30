@@ -55,89 +55,96 @@ render() {
                       </section>
 
                       <section>
-                      <div is="vl-grid">
-                      <div is="vl-column" data-vl-size = "12">
-                      <vl-typography>
-                            <h4>Milieuhandhaving</<h4><hr/>
-                      </vl-typography>
-                      </div>
-                      </div>
-                      <div is="vl-grid" data-vl-v-stretch>
-                      <div is="vl-column" data-vl-size=3 class="data-top-bot">
-                          <vl-info-tile data-vl-auto-open=true>
-                              <span slot="title">Naam <br/>gemeente<br/><span class="hidden">.</span></span>
-                              <div slot="content">
-                                  <div class="Gem-ORG-NaamGEM object"></div>
-                              </div>
-                          </vl-info-tile>
-                      </div>
-                      <div is="vl-column" data-vl-size=3 class="data-top-bot">
-                      <vl-info-tile data-vl-auto-open=true>
-                          <span slot="title">Gemeente<br/><span class="hidden">.<br/>.</span></span>
-                          <div slot="content">
-                              <div class="Gem-ORG-GEM object"></div>
-                          </div>
-                      </vl-info-tile>
-                  </div>
-                  <div is="vl-column" data-vl-size=3 class="data-top-bot">
-                  <vl-info-tile data-vl-auto-open=true>
-                      <span slot="title">Intergemeentelijke<br/> samenwerkings-<br/>verband</span>
-                      <div slot="content">
-                          <div class="Gem-ORG-IGS object"></div>
-                      </div>
-                  </vl-info-tile>
-              </div>
-              <div is="vl-column" data-vl-size=3 class="data-top-bot">
-                  <vl-info-tile data-vl-auto-open=true>
-                      <span slot="title">Lokale politie<br/><span class="hidden">.<br/>.</span></span>
-                      <div slot="content">
-                          <div class="Gem-ORG-LP object"></div>
-                      </div>
-                  </vl-info-tile>
-              </div>
-                  </div>
-                  <div is="vl-grid">
-                  <div is="vl-column" data-vl-size = "12">
-                  <vl-typography>
-                        <h4>Handhaving ruimtelijke ordening (RO)<h4><hr/>
-                  </vl-typography>
-                  </div>
-                  </div>
-                  <div is="vl-grid" data-vl-v-stretch>
-                  <div is="vl-column" data-vl-size=3 class="data-top-bot">
-                      <vl-info-tile data-vl-auto-open=true>
-                          <span slot="title">Inwonersaantal<span class="hidden"><br/>.<br/>.</span></span>
-                          <div slot="content">
-                              <div class="Gem-ORG-INW object"></div>
-                          </div>
-                      </vl-info-tile>
-                  </div>
-                  <div is="vl-column" data-vl-size=3 class="data-top-bot">
-                  <vl-info-tile data-vl-auto-open=true>
-                      <span slot="title">Gemeente<span class="hidden"><br/>.<br/>.</span></span>
-                      <div slot="content">
-                          <div class="GemORGlokaal object"></div>
-                      </div>
-                  </vl-info-tile>
-              </div>
-              <div is="vl-column" data-vl-size=3 class="data-top-bot">
-              <vl-info-tile data-vl-auto-open=true>
-                  <span slot="title">Intergemeentelijk samenwerkings-<br/>verband</span>
-                  <div slot="content">
-                      <div class="Gem-ORG-RO-IGS object"></div>
-                  </div>
-              </vl-info-tile>
-          </div>
-          <div is="vl-column" data-vl-size=3 class="data-top-bot">
-              <vl-info-tile data-vl-auto-open=true>
-                  <span slot="title">Lokale politie<br/><span class="hidden">.<br/>.</span></span>
-                  <div slot="content">
-                      <div class="Gem-ORG-RO-LP object"></div>
-                  </div>
-              </vl-info-tile>
-          </div>
-              </div>
-                      </section>
+                      <vl-infoblock data-vl-title="Organisatie lokale handhaving" data-vl-icon="business-graph-bar"></vl-infoblock>
+                </section>
+
+                <section>
+                <div is="vl-grid">
+                <div is="vl-column" data-vl-size=6 class="data-top-bot">
+                <vl-info-tile data-vl-auto-open=true>
+                    <span slot="title">Naam <br/>gemeente<br/><span class="hidden">.</span></span>
+                    <div slot="content">
+                        <div class="Gem-ORG-NaamGEM object"></div>
+                    </div>
+                </vl-info-tile>
+            </div>
+            <div is="vl-column" data-vl-size=6 class="data-top-bot">
+                <vl-info-tile data-vl-auto-open=true>
+                    <span slot="title">Inwonersaantal<span class="hidden"><br/>.<br/>.</span></span>
+                    <div slot="content">
+                        <div class="Gem-ORG-INW object"></div>
+                    </div>
+                </vl-info-tile>
+            </div>
+
+                </div>
+                <div is="vl-grid">
+                <div is="vl-column" data-vl-size = "12">
+                <vl-typography>
+                      <h4>Milieuhandhaving</<h4><hr/>
+                </vl-typography>
+                </div>
+                </div>
+                <div is="vl-grid" data-vl-v-stretch>
+                <div is="vl-column" data-vl-size=4 class="data-top-bot">
+                <vl-info-tile data-vl-auto-open=true>
+                    <span slot="title">Gemeente<br/><span class="hidden">.<br/>.</span></span>
+                    <div slot="content">
+                        <div class="Gem-ORG-GEM object"></div>
+                    </div>
+                </vl-info-tile>
+            </div>
+            <div is="vl-column" data-vl-size=4 class="data-top-bot">
+            <vl-info-tile data-vl-auto-open=true>
+                <span slot="title">Intergemeentelijke<br/> samenwerkings-<br/>verband</span>
+                <div slot="content">
+                    <div class="Gem-ORG-IGS object"></div>
+                </div>
+            </vl-info-tile>
+        </div>
+        <div is="vl-column" data-vl-size=4 class="data-top-bot">
+            <vl-info-tile data-vl-auto-open=true>
+                <span slot="title">Lokale politie<br/><span class="hidden">.<br/>.</span></span>
+                <div slot="content">
+                    <div class="Gem-ORG-LP object"></div>
+                </div>
+            </vl-info-tile>
+        </div>
+            </div>
+            <div is="vl-grid">
+            <div is="vl-column" data-vl-size = "12">
+            <vl-typography>
+                  <h4>Handhaving ruimtelijke ordening (RO)<h4><hr/>
+            </vl-typography>
+            </div>
+            </div>
+            <div is="vl-grid" data-vl-v-stretch>
+            <div is="vl-column" data-vl-size=4 class="data-top-bot">
+            <vl-info-tile data-vl-auto-open=true>
+                <span slot="title">Gemeente<span class="hidden"><br/>.<br/>.</span></span>
+                <div slot="content">
+                    <div class="GemORGlokaal object"></div>
+                </div>
+            </vl-info-tile>
+        </div>
+        <div is="vl-column" data-vl-size=4 class="data-top-bot">
+        <vl-info-tile data-vl-auto-open=true>
+            <span slot="title">Intergemeentelijk samenwerkings-<br/>verband</span>
+            <div slot="content">
+                <div class="Gem-ORG-RO-IGS object"></div>
+            </div>
+        </vl-info-tile>
+    </div>
+    <div is="vl-column" data-vl-size=4 class="data-top-bot">
+        <vl-info-tile data-vl-auto-open=true>
+            <span slot="title">Lokale politie<br/><span class="hidden">.<br/>.</span></span>
+            <div slot="content">
+                <div class="Gem-ORG-RO-LP object"></div>
+            </div>
+        </vl-info-tile>
+    </div>
+        </div>
+                </section>
 
                       <section id="content-1-1" is="vl-region">
                           <div is="vl-grid" id="content-1-1">
