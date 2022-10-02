@@ -497,7 +497,7 @@ render() {
                                   <vl-info-tile data-vl-auto-open=true>
                                       <span slot="title">Aanmaningen</span>
                                       <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-Informatie.png">
+                                      <img class="icon" src="assets/icons/PNG-Kalender.png">
                                           <div class="GEM-AanmaningGEM object"></div>
                                       </div>
                                   </vl-info-tile>
@@ -523,7 +523,7 @@ render() {
                             </div>
                               <div is="vl-column" data-vl-size=8>
                                   <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Verslag van vaststelling</span>
+                                      <span slot="title">Onderverdeling verslag van vaststelling</span>
                                       <div slot="content">
                                           <div class="Gem-pie-verslag chart"></div>
                                       </div>
@@ -535,14 +535,14 @@ render() {
                               <vl-info-tile data-vl-auto-open=true>
                                   <span slot="title">Proces-verbaal</span>
                                   <div slot="content">
-                                      <img class="icon" src="assets/icons/PNG-klipbord.png">
+                                  <img class="icon" src="assets/icons/PNG-PV.png">
                                       <div class="GEM-pvGEM object"></div>
                                   </div>
                               </vl-info-tile>
                           </div>
                             <div is="vl-column" data-vl-size=8>
                                 <vl-info-tile data-vl-auto-open=true>
-                                    <span slot="title">Proces-verbaal</span>
+                                    <span slot="title">Onderverdeling proces-verbaal</span>
                                     <div slot="content">
                                         <div class="Gem-pie-pv chart"></div>
                                     </div>
@@ -605,7 +605,7 @@ render() {
                           </div>
                           </div>
                       </section>
-                      <section id="content-1-7" is="vl-region">
+                      <section id="content-1-9" is="vl-region">
                           <div is="vl-grid">
                               <div is="vl-column" data-vl-size=12 class="data-top-bot">
                                   <vl-infoblock data-vl-title="Opmerking handhavingsactor" data-vl-icon="business-graph-bar">
@@ -727,6 +727,11 @@ render() {
                                       <li is="vl-side-navigation-item">
                                       <div>
                                           <a href="#content-1-8" data-vl-parent="content-1">Instrumentarium</a>
+                                      </div>
+                                  </li>
+                                  <li is="vl-side-navigation-item">
+                                      <div>
+                                          <a href="#content-1-9" data-vl-parent="content-1">Opmerking handhavingsactor</a>
                                       </div>
                                   </li>
                                       
