@@ -39,7 +39,7 @@ export class Start extends LitElement {
         </vl-typography>
         <div is="vl-grid">
             <div style="max-width: 400px">
-                <a is="vl-doormat" href="/public/gewestelijkanalyse" ?data-vl-alt="test">
+                <a is="vl-doormat" href="/public/gewestelijkAnalyse">
                     <h2 is="vl-doormat-title">Cijfers gewestelijke actoren</h2>
                     <div is="vl-doormat-text">
                         In deze analyse worden de handhavingsactiviteiten van de gewestelijke handhavingsactoren weergegeven.
@@ -47,7 +47,7 @@ export class Start extends LitElement {
                 </a>
             </div>
             <div style="max-width: 400px">
-                <a is="vl-doormat" href="/public/provinciaalAnalyse" ?data-vl-alt="test">
+                <a is="vl-doormat" href="/public/provinciaalAnalyse">
                     <h2 is="vl-doormat-title">Cijfers provincies</h2>
                     <div is="vl-doormat-text">
                         In deze analyse worden de handhavingsactiviteiten van de provinciale handhavingsactoren weergegeven.
@@ -55,7 +55,7 @@ export class Start extends LitElement {
                 </a>
             </div>
             <div style="max-width: 400px">
-                <a is="vl-doormat" href="/public/gemeetenAnalyse" ?data-vl-alt="test">
+                <a is="vl-doormat" href="/public/gemeenten">
                     <h2 is="vl-doormat-title">Cijfers gemeenten</h2>
                     <div is="vl-doormat-text">
                         In deze analyse worden de handhavingsactiviteiten van de lokale handhavingsactoren weergegeven.
