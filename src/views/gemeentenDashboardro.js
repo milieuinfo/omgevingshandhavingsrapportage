@@ -348,7 +348,7 @@ render() {
                       <div is="vl-grid">
                           <div is="vl-column" data-vl-size=12 class="data-top-bot">
                               <vl-infoblock data-vl-title="Aanvankelijke controles met schending" data-vl-icon="business-graph-bar">
-                                 
+                              De overtredingsgraad wordt - indien de data gekend zijn - berekend aan de hand van de verhouding van het totaal aantal aanvankelijke controles met schending ten opzichte van het aantal aanvankelijke controles naar aanleiding van klachten en meldingen en het aantal aanvankelijke controles op eigen initiatief.
                               </vl-infoblock>
                           </div>
                       </div>
