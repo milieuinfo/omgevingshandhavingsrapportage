@@ -96,7 +96,7 @@ render() {
             </div>
             <div is="vl-column" data-vl-size=4 class="data-top-bot">
             <vl-info-tile data-vl-auto-open=true>
-                <span slot="title">Intergemeentelijke<br/> samenwerkings-<br/>verband</span>
+                <span slot="title">Intergemeentelijk<br/> samenwerkings-<br/>verband</span>
                 <div slot="content">
                     <div class="Gem-ORG-IGS object"></div>
                 </div>
@@ -197,7 +197,7 @@ render() {
                               <vl-info-tile data-vl-auto-open=true>
                               <span slot="title">Onderverdeling stedenbouwkundige inspecteurs</span>
                                   <div slot="content">
-                                      <div class="GEM-PIE-StedenBKVerb chartTabelsm"></div>
+                                      <div class="GEM-PIE-StedenBK chartTabelsm"></div>
                                   </div>
                               </vl-info-tile>
                           </div>
@@ -219,7 +219,7 @@ render() {
                                   <span slot="title">Onderverdeling stedenbouwkundige inspecteurs/Verbalisanten</span>
                                       <div slot="content">
                                        
-                                          <div class="GEM-PIE-StedenBK chartTabelsm"></div>
+                                          <div class="GEM-PIE-StedenBKVerb chartTabelsm"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -269,7 +269,7 @@ render() {
                           </div>
                           <div is="vl-grid">
                               <div is="vl-column" data-vl-size=4>
-                                  <vl-info-tile data-vl-auto-open=true><span slot="title">Klachten<span slot="subtitle">
+                                  <vl-info-tile data-vl-auto-open=true><span slot="title">Aantal klachten<span slot="subtitle">
                                           </span>
                                       </span>
                                       <div slot="content">
@@ -280,7 +280,7 @@ render() {
                               </div>
                               <div is="vl-column" data-vl-size=8>
                               <vl-info-tile data-vl-auto-open=true>
-                              <span slot="title">Onderverdeling klachten</span>
+                              <span slot="title">Klachten onderverdeling</span>
                                   <div slot="content">
                                       <div class="Gem-Onderverdeling-klachten chartTabelsm"></div>
                                   </div>
@@ -307,7 +307,7 @@ render() {
   
                           <div is="vl-grid">
                           <div is="vl-column" data-vl-size=4>
-                          <vl-info-tile data-vl-auto-open=true><span slot="title">Controles<span slot="subtitle">
+                          <vl-info-tile data-vl-auto-open=true><span slot="title">Aantal controles<span slot="subtitle">
                                   </span>
                               </span>
                               <div slot="content">
@@ -334,7 +334,7 @@ render() {
 
                             <div is="vl-column" data-vl-size=12 class="data-top-bot">
                             <vl-info-tile data-vl-auto-open=true>
-                            <span slot="title">Onderverdeling controles</span>
+                            <span slot="title">Controles onderverdeling</span>
                                 <div slot="content">
                                     <div class="Gem-Onderverdeling-controles chartTabelsm"></div>
                                 </div>
@@ -347,7 +347,7 @@ render() {
                       <section id="content-1-5" is="vl-region">
                       <div is="vl-grid">
                           <div is="vl-column" data-vl-size=12 class="data-top-bot">
-                              <vl-infoblock data-vl-title="Aanvankelijke controles" data-vl-icon="business-graph-bar">
+                              <vl-infoblock data-vl-title="Aanvankelijke controles met schending" data-vl-icon="business-graph-bar">
                                  
                               </vl-infoblock>
                           </div>
@@ -405,7 +405,7 @@ render() {
                           <div is="vl-grid" class="data-top-bot">
                               <div is="vl-column" data-vl-size=4>
                                   <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Raadgeving</span>
+                                      <span slot="title">Raadgeving / gewezen op wettelijke verplichting</span>
                                       
                                       <div slot="content">
                                       <img class="icon" src="assets/icons/PNG-Informatie.png">

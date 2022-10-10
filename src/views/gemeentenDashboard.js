@@ -96,7 +96,7 @@ render() {
                   </div>
                   <div is="vl-column" data-vl-size=4 class="data-top-bot">
                   <vl-info-tile data-vl-auto-open=true>
-                      <span slot="title">Intergemeentelijke<br/> samenwerkings-<br/>verband</span>
+                      <span slot="title">Intergemeentelijk<br/> samenwerkings-<br/>verband</span>
                       <div slot="content">
                           <div class="Gem-ORG-IGS object"></div>
                       </div>
