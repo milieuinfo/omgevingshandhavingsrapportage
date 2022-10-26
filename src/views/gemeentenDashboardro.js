@@ -26,11 +26,6 @@ render() {
                           De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk hieronder.
                         
                           </p>
-                          <a
-                          is="vl-link-button"
-                          href="/gemeentenDashboard"
-                          >Bekijk cijfers voor milieu</a
-                        >
                       </section>
                      
                       <section id="content-1" is="vl-region">
