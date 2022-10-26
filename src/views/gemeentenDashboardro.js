@@ -26,6 +26,11 @@ render() {
                           De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk hieronder.
                         
                           </p>
+                          <a
+                          is="vl-link-button"
+                          href="/gemeentenDashboard"
+                          >Bekijk cijfers voor milieu</a
+                        >
                       </section>
                      
                       <section id="content-1" is="vl-region">
@@ -43,7 +48,7 @@ render() {
                               </div>
                               </div>
                                 <br/>
-                                <div is="vl-grid">
+                                <div is="vl-grid" class="gemro">
                                   <div is="vl-column" data-vl-size=6>
                                   <vl-info-tile data-vl-auto-open=true>
                                       <div slot="content">
@@ -295,6 +300,10 @@ render() {
   
                       <section id="content-1-4" is="vl-region">
                           <div is="vl-grid">
+                          <vl-tooltip data-vl-placement=bottom>De som van de gegevens uit de verschillende categorieën
+                          kan verschillen van het totaal aantal aangezien niet alle actoren het totaal aantal
+                          kennen, maar wel gegevens aanleveren in de categorieën.
+                         </vl-tooltip>
                               <div is="vl-column" data-vl-size=12 class="data-top-bot">
                                   <vl-infoblock data-vl-title="Controles" data-vl-icon="business-graph-bar">
                                   De controles worden in de grafiek onderverdeeld in categorieën:
@@ -318,7 +327,7 @@ render() {
                       </div>
   
                               <div is="vl-column" data-vl-size=8>
-                                  <vl-info-tile data-vl-auto-open=true><span slot="title">Verdeling van controles<span
+                                  <vl-info-tile data-vl-auto-open=true><span slot="title">Aantal controles per categorie<span
                                               slot="subtitle">
                                           </span>
                                       </span>
@@ -334,7 +343,7 @@ render() {
 
                             <div is="vl-column" data-vl-size=12 class="data-top-bot">
                             <vl-info-tile data-vl-auto-open=true>
-                            <span slot="title">Controles onderverdeling</span>
+                            <span slot="title">Onderverdeling controles</span>
                                 <div slot="content">
                                     <div class="Gem-Onderverdeling-controles chartTabelsm"></div>
                                 </div>
@@ -761,6 +770,12 @@ render() {
                               <li is="vl-side-navigation-item" data-vl-parent="content-2">
                                   <a is="vl-side-navigation-toggle" href="#content-2" data-vl-child="content-4">
                                       Andere thema's
+                                      <i class="vl-vi vl-vi-arrow-right-fat"></i>
+                                  </a>
+                              </li>
+                              <li is="vl-side-navigation-item" data-vl-parent="content-3">
+                                  <a is="vl-side-navigation-toggle" href="/public/gemeentendashboard" data-vl-child="content-4">
+                                      Bekijk cijfers voor milieu
                                       <i class="vl-vi vl-vi-arrow-right-fat"></i>
                                   </a>
                               </li>

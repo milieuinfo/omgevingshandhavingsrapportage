@@ -30,7 +30,7 @@ render() {
   
                       <section id="content-1-1" is="vl-region">
                           <div class="toolbar"></div>
-                          <div is="vl-grid">
+                          <div is="vl-grid" class="gemmil">
                           <div is="vl-column" data-vl-size=12>
                           <vl-infoblock data-vl-title="Selectiebalk" data-vl-icon="cursor-finger-up">
                           Hierboven staan de actieve selecties op deze pagina. De cijfers worden aangepast op basis van de geselecteerde gemeeenten. Deze selectiebalk is interactief; er kunnen selecties worden aangepast of toegevoegd.
@@ -743,6 +743,12 @@ render() {
                                       <i class="vl-vi vl-vi-arrow-right-fat"></i>
                                   </a>
                               </li>
+                              <li is="vl-side-navigation-item" data-vl-parent="content-3">
+                              <a is="vl-side-navigation-toggle" href="/public/gemeentendashboardro" data-vl-child="content-4">
+                                  Bekijk cijfers voor ruimtelijke ordening
+                                  <i class="vl-vi vl-vi-arrow-right-fat"></i>
+                              </a>
+                          </li>
                           </ul>
                       </div>
                   </nav>

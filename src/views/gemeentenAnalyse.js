@@ -122,8 +122,7 @@ render() {
                                       <span slot="title">Aantal VTE handhaving ruimtelijke ordening</span>
                                       <span slot="subtitle">Per 1000 inwoners</span>
                                       <div slot="content">
-                                      <iframe title="vte" aria-label="Map" id="datawrapper-chart-S8OjO" src=https://datawrapper.dwcdn.net/S8OjO/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-                                      </script>
+                                      <iframe title="vte" aria-label="Map" id="datawrapper-chart-S8OjO" src="https://datawrapper.dwcdn.net/S8OjO/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="263"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
                                       
                                       <p><img src="assets/legends/legendvtero.png" width=200/></p>
                                       <p><span class="grijsnietgekend">&#x2022 niet gekend</span></p>
@@ -170,7 +169,7 @@ render() {
                                       <span slot="title">Aantal klachten ruimtelijke ordening</span>
                                       <span slot="subtitle">Per 1000 inwoners</span>
                                       <div slot="content">
-                                      <iframe title="Klachten" aria-label="Map" id="datawrapper-chart-imxGZ" src=https://datawrapper.dwcdn.net/imxGZ/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+                                      <iframe title="Klachten" aria-label="Map" id="datawrapper-chart-imxGZ" src="https://datawrapper.dwcdn.net/imxGZ/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
                                       </script>
                                       
                                       <p><img src="assets/legends/legendklachtenro.png" width=200/></p>  
@@ -293,8 +292,8 @@ render() {
                                       <span slot="title">Aantal aanmaningen milieu</span>
                                       <span slot="subtitle">Per 1000 inwoners</span>
                                       <div slot="content">
-                                      <iframe title="aanmaningen" aria-label="Map" id="datawrapper-chart-7v1Wk" src=https://datawrapper.dwcdn.net/7v1Wk/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
+                                      <iframe title="aanmaningen" aria-label="Map" id="datawrapper-chart-7v1Wk" src="https://datawrapper.dwcdn.net/7v1Wk/6/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+                                      </script>
 <p><img src="assets/legends/legendaanmaningmil2.png" width=200/></p> 
 <p><span class="grijsnietgekend">&#x2022 niet gekend</span></p>
 <p><span class="roodnonrespons">&#x2022 non-respons</span></p>
@@ -337,10 +336,10 @@ render() {
                                       <span slot="title">Aantal processen-verbaal milieu</span>
                                       <span slot="subtitle">Per 1000 inwoners</span>
                                       <div slot="content">
-                                      <iframe title="PV" aria-label="Map" id="datawrapper-chart-x5ZVJ" src=https://datawrapper.dwcdn.net/x5ZVJ/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+                                      <iframe title="PV" aria-label="Map" id="datawrapper-chart-x5ZVJ" src="https://datawrapper.dwcdn.net/x5ZVJ/5/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="263"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
 </script>
 
-<p><img src="assets/legends/legendpvmil.png" width=200/></p>                               
+<p><img src="assets/legends/legendpvmilpng" width=200/></p>                               
 <p><span class="grijsnietgekend">&#x2022 niet gekend</span></p>
 <p><span class="roodnonrespons">&#x2022 non-respons</span></p>
                                       </div>
@@ -354,8 +353,7 @@ render() {
                                       <span slot="title">Aantal processen-verbaal ruimtelijke ordening</span>
                                       <span slot="subtitle">Per 1000 inwoners</span>
                                       <div slot="content">
-                                      <iframe title="pv" aria-label="Map" id="datawrapper-chart-hnEKG" src=https://datawrapper.dwcdn.net/hnEKG/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
+                                      <iframe title="pv" aria-label="Map" id="datawrapper-chart-hnEKG" src="https://datawrapper.dwcdn.net/hnEKG/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
 <p><img src="assets/legends/legendcontrolespvro.png" width=200/></p> 
 <p><span class="grijsnietgekend">&#x2022 niet gekend</span></p>
                                       <p><span class="roodnonrespons">&#x2022 non-respons</span></p>
@@ -383,7 +381,7 @@ render() {
                                       <span slot="title">Aantal verslagen van vastelling milieu</span>
                                       <span slot="subtitle">Per 1000 inwoners</span>
                                       <div slot="content">
-                                      <iframe title="Verslagen van vastelling" aria-label="Map" id="datawrapper-chart-SAC6L" src=https://datawrapper.dwcdn.net/SAC6L/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+                                      <iframe title="Verslagen van vastelling" aria-label="Map" id="datawrapper-chart-SAC6L" src="https://datawrapper.dwcdn.net/SAC6L/5/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="263"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
                                       </script>
                                       
                                       <p><img src="assets/legends/legendverslagmil.png" width=200/></p> 
@@ -400,7 +398,7 @@ render() {
                                       <span slot="title">Verslagen van vastelling ruimtelijke ordening</span>
                                       <span slot="subtitle">Per 1000 inwoners</span>
                                       <div slot="content">
-                                      <iframe title="verslagen van vaststelling" aria-label="Map" id="datawrapper-chart-47tM2" src=https://datawrapper.dwcdn.net/47tM2/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+                                      <iframe title="verslagen van vaststelling" aria-label="Map" id="datawrapper-chart-47tM2" src="https://datawrapper.dwcdn.net/47tM2/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
 </script>
 
 <p><img src="assets/legends/legendverslagro.png" width=200/></p> 
@@ -428,8 +426,8 @@ render() {
                                       <span slot="title">Aantal stakingsbevelen ruimtelijke ordening</span>
                                       <span slot="subtitle">Per 1000 inwoners</span>
                                       <div slot="content">
-                                      <iframe title="stakingsbevel" aria-label="Map" id="datawrapper-chart-8mUxd" src=https://datawrapper.dwcdn.net/8mUxd/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
+                                      <iframe title="stakingsbevel" aria-label="Map" id="datawrapper-chart-8mUxd" src="https://datawrapper.dwcdn.net/8mUxd/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+                                      </script>
 <p><img src="assets/legends/legendstakingsbevelro.png" width=200/></p> 
 <p><span class="grijsnietgekend">&#x2022 niet gekend</span></p>
                                       <p><span class="roodnonrespons">&#x2022 non-respons</span></p>
@@ -457,8 +455,8 @@ render() {
                                       <span slot="title">Aantal bestuurlijke maatregelen milieu</span>
                                       <span slot="subtitle">Per 1000 inwoners</span>
                                       <div slot="content">
-                                      <iframe title="bestuurlijke maatregel" aria-label="Map" id="datawrapper-chart-yNv5H" src=https://datawrapper.dwcdn.net/yNv5H/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
+                                      <iframe title="bestuurlijke maatregel" aria-label="Map" id="datawrapper-chart-yNv5H" src="https://datawrapper.dwcdn.net/yNv5H/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="263"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+                                      </script>
 <p><img src="assets/legends/legendbestuurlijkemaatregelmil.png" width=200/></p> 
 <p><span class="grijsnietgekend">&#x2022 niet gekend</span></p>
 <p><span class="roodnonrespons">&#x2022 non-respons</span></p>
@@ -473,8 +471,8 @@ render() {
                                       <span slot="title">Aantal bestuurlijke maatregelen ruimtelijke ordening</span>
                                       <span slot="subtitle">Per 1000 inwoners</span>
                                       <div slot="content">
-                                      <iframe title="bestuurlijke maatregel" aria-label="Map" id="datawrapper-chart-EelUS" src=https://datawrapper.dwcdn.net/EelUS/1/ scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
+                                      <iframe title="bestuurlijke maatregel" aria-label="Map" id="datawrapper-chart-EelUS" src="https://datawrapper.dwcdn.net/EelUS/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="264"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+                                      </script>
 <p><img src="assets/legends/legendbestuurlijkemaatregelro.png" width=200/></p> 
 <p><span class="grijsnietgekend">&#x2022 niet gekend</span></p>
                                       <p><span class="roodnonrespons">&#x2022 non-respons</span></p>
@@ -514,8 +512,8 @@ render() {
                                   <ul>
                                       <li is="vl-side-navigation-item">
                                           <div>
-                                              <a href="#content-1-1" data-vl-parent="content-1">Toezichthouders / Verbalisanten - Stendenbouwkundige inspecteurs</a>
-                                          </div>
+                                              <a href="#content-1-1" data-vl-parent="content-1">Toezichthouders / Verbalisanten - Stedenbouwkundige inspecteurs</a>
+                                          </div>a
                                       </li>
                                       <li is="vl-side-navigation-item">
                                           <div>
