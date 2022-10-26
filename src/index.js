@@ -49,7 +49,6 @@ import "uig-webcomponents/lib/components/document"
 import "uig-webcomponents/lib/components/accessibility"
 import "uig-webcomponents/lib/components/tooltip"
 import "uig-webcomponents/lib/components/tooltip/styles.css"
-import "uig-webcomponents/lib/components/http-error-message"
 //Imports API calls
 import * as stardust from '@nebula.js/stardust'
 import barChart from '@nebula.js/sn-bar-chart';
@@ -59,38 +58,59 @@ import table from '@nebula.js/sn-table';
 import pivotTable from '@nebula.js/sn-pivot-table';
 import snPieChart from "@nebula.js/sn-pie-chart"
 
+
+
+// when cliclk hamburger menu
+/*
+document.querySelector('.navbar-toggler').onclick = function() {
+  // if menu is opening, close menu
+  if(document.getElementById('navbar').classList.contains('show')) {
+      document.querySelector('#navbar').classList.remove('show');
+  } else {
+    document.querySelector('#navbar').classList.add('show');
+  }
+}
+*/
+
 //Routes
 const routes = [
   {
-    path: "/",
+    path: "/public/",
     component: "start-view",
     action: async () => {
       await import("./views/start");
     },
   },
   {
-    path: "/home",
+    path: "/public/home",
     component: "home-view",
     action: async () => {
       await import("./views/home");
     },
   },
   {
-    path: "/gewestelijk",
+    path: "/public/gewestelijk",
     component: "gewestelijk-view",
     action: async () => {
       await import("./views/gewestelijk");
     },
   },
   {
-    path: "/provinciaal",
+    path: "/public/provinciaal",
     component: "provinciaal-view",
     action: async () => {
       await import("./views/provinciaal");
     },
   },
   {
-    path: "/gewestelijkAnalyse",
+    path: "/map",
+    component: "map-view",
+    action: async () => {
+      await import("./views/map");
+    },
+  },
+  {
+    path: "/public/gewestelijkAnalyse",
     component: "GewestelijkAnalyse-view",
     action: async () => {
       await import("./views/gewestelijkAnalyse");
@@ -99,7 +119,7 @@ const routes = [
     },
   },
   {
-    path: "/gemeenten",
+    path: "/public/gemeenten",
     component: "gemeenten-view",
     action: async () => {
       await import("./views/gemeenten");
@@ -127,7 +147,7 @@ const routes = [
     },
   },
   {
-    path: "/provinciaalAnalyse",
+    path: "/public/provinciaalAnalyse",
     component: "provinciaalAnalyse-view",
     action: async () => {
       await import("./views/provinciaalAnalyse");
@@ -135,14 +155,14 @@ const routes = [
     },
   },
   {
-    path:"/gemeentenAnalyse",
+    path:"/public/gemeentenAnalyse",
     component: "gemeentenAnalyse-view",
     action: async() => {
       await import ("./views/gemeentenAnalyse");
     }
   },
   {
-    path:"/gemeentenDashboard",
+    path:"/public/gemeentenDashboard",
     component: "gemeentenDashboard-view",
     action: async() => {
       await import ("./views/gemeentenDashboard");
@@ -150,7 +170,7 @@ const routes = [
     }
   },
   {
-    path:"/hogeraadAnalyse",
+    path:"/public/hogeraadAnalyse",
     component: "hogeraadAnalyse-view",
     action: async() => {
       await import ("./views/hogeraadAnalyse");
@@ -158,7 +178,7 @@ const routes = [
     }
   },
   {
-    path:"/strafrechtelijk",
+    path:"/public/strafrechtelijk",
     component: "strafrechtelijkAnalyse-view",
     action: async() => {
       await import ("./views/strafrechtelijk")
@@ -166,14 +186,14 @@ const routes = [
     }
   },
   {
-    path:"/hogeraad",
+    path:"/public/hogeraad",
     component: "hogeraad-view",
     action: async() => {
       await import ("./views/hogeraad");
     }
   },
   {
-    path:"/strafrechtelijkAnalyse",
+    path:"/public/strafrechtelijkAnalyse",
     component: "strafrechtelijkanalyseanalyse-view",
     action: async() => {
       await import ("./views/strafrechtelijkAnalyse");
@@ -181,23 +201,19 @@ const routes = [
     }
   },
   {
-    path:"/gemeentenDashboardro",
+    path:"/public/gemeentenDashboardro",
     component: "gemeentendashboardro-view",
     action: async() => {
       await import ("./views/gemeentenDashboardro");
       gemeentendashboardro();
   }
-},
-{
-  path:'(.*)',
-  component: "error404-view",
-  action: async() => {
-    await import ("./views/error404");
-}
 }
 ];
 export const router = new Router(document.getElementById("app"));
 router.setRoutes(routes);
+
+
+/* Enigma Config met Nebula Stardust*/
 /* Enigma Config met Nebula Stardust*/
 const config = {
   url: "https://omgevingsloketrapport.omgeving.vlaanderen.be",
@@ -226,6 +242,7 @@ const types = [
     load: () => Promise.resolve(snPieChart),
   }
 ];
+
 //Rendering Gewestelijk
 async function gewestelijkanalyserendering() {
   const classExists = document.getElementsByClassName(
@@ -704,7 +721,7 @@ async function hogeraadanalyserendering() {
       element: document.querySelector('.HRCBindendeadviesTabel'),
       id: "BuWTbhf",
     });
-    nebbieNoselectionHRC.render({ 
+    nebbie.render({ 
       element: document.querySelector('.HRCBindendeadviesChart'),
       id: "vNpDF",
     });
