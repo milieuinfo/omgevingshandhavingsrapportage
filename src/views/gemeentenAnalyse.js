@@ -513,7 +513,7 @@ render() {
                                       <li is="vl-side-navigation-item">
                                           <div>
                                               <a href="#content-1-1" data-vl-parent="content-1">Toezichthouders / Verbalisanten - Stedenbouwkundige inspecteurs</a>
-                                          </div>a
+                                          </div>
                                       </li>
                                       <li is="vl-side-navigation-item">
                                           <div>
