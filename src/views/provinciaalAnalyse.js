@@ -396,7 +396,7 @@ export class ProvinciaalAnalyseView extends LitElement {
                           </vl-alert>
                           <vl-alert data-vl-type="info"
                           data-vl-title="Download de data">
-                          <p><a href="https://drive.google.com/drive/folders/1WTo0_wMdlJxqIuW4lSV8-fK8DuHRI3_w?usp=sharing" target="_blank">Klik hier om de download te starten</a></p>
+                          <p><a href="https://omgeving.vlaanderen.be/sites/default/files/2022-11/drive-download-20221117T123910Z-001.zip" download>Klik hier om de download te starten</a></p>
                         </vl-alert>
                       </section>
                   </div>
