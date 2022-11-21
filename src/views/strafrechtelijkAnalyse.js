@@ -41,7 +41,7 @@ export class StrafrechtelijkAnalyseAnalyseView extends LitElement {
               Hieronder kan een bestand worden gedownload met duiding bij de statistische bijdrage van het Openbaar Ministerie:
               <span slot="type">URL</span>
               <p>
-              <span slot="title"><a href="https://drive.google.com/drive/folders/1WTo0_wMdlJxqIuW4lSV8-fK8DuHRI3_w?usp=sharing" target="_blank">Duiding bij de statistische bijdrage</a></span></p>
+              <span slot="title"><a href="https://omgeving.vlaanderen.be/sites/default/files/2022-11/drive-download-20221117T123910Z-001.zip" download>Duiding bij de statistische bijdrage</a></span></p>
             </vl-infoblock>
             <hr>
             <div is="vl-grid" class="data-top-bot">
@@ -55,7 +55,7 @@ export class StrafrechtelijkAnalyseAnalyseView extends LitElement {
             <vl-typography>
             <p><span class="ondertitel">Selecteer een thema voor gedetailleerdere informatie</span></p></vl-typography>
             <div class="DrillBar chart"></div>
-            </div>
+            
 
             <div class="Tabelseponering chartTabel"></div>
             </div>
