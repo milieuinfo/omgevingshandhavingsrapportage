@@ -13,7 +13,7 @@ export class Start extends LitElement {
     <div is="vl-layout" class="vl-layout">
         <div is="vl-grid" data-vl-align-center>
             <h3 is="vl-h3" data-vl-align-center>
-                Omgevingshandhavingsuitvoering in 2021 in een notendop
+                Omgevingshandhavingsuitvoering in 2022 in een notendop
             </h3></div>
             <div is="vl-grid"data-vl-align-center>
             <div vl-column data-vl-align-space-between>
