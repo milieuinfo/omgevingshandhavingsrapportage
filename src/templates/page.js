@@ -39,18 +39,18 @@ body {
 <img is="vl-image" slot="image" sizes="100vw"
 src="assets/images/header.jpg"/>
     <a slot="context-link" href="/public/">Omgevingshandhavingsrapportage</a>
-    <a slot="title-link">Cijfers van 2021</a>
+    <a slot="title-link">Cijfers van 2022</a>
   </vl-content-header>
   <nav class="navbarcustomList">
   <ul class="vl-layout">
-  <li class="navbarcustom"><a href="/public/">Start</a></li>
-  <li class="navbarcustom"><a href="/public/home">Inleiding</a></li>
-  <li class="navbarcustom"><a href="/public/gewestelijk">Gewest</a></li>
+  <li class="navbarcustom"><a href="/">Start</a></li>
+  <li class="navbarcustom"><a href="/home">Inleiding</a></li>
+  <li class="navbarcustom"><a href="/gewestelijk">Gewest</a></li>
 
-  <li class="navbarcustom"><a href="/public/provinciaal">Provincies</a></li>
-  <li class="navbarcustom"><a href="/public/gemeenten">Gemeenten</a></li>
-  <li class="navbarcustom"><a href="/public/hogeraad">Hoge raad voor de handhavingsuitvoering</a></li>
-  <li class="navbarcustom"><a href="/public/strafrechtelijk">Strafrechtelijk en bestuurlijk vervolgtraject</a></li>
+  <li class="navbarcustom"><a href="/provinciaal">Provincies</a></li>
+  <li class="navbarcustom"><a href="/gemeenten">Gemeenten</a></li>
+  <li class="navbarcustom"><a href="/hogeraad">Hoge raad voor de handhavingsuitvoering</a></li>
+  <li class="navbarcustom"><a href="/strafrechtelijk">Strafrechtelijk en bestuurlijk vervolgtraject</a></li>
 </ul></nav>
 <section is="vl-region">
 <div is="vl-layout">

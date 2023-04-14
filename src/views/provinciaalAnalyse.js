@@ -23,7 +23,7 @@ export class ProvinciaalAnalyseView extends LitElement {
                               Deze pagina toont een overzichtelijk beeld van de handhavingsactiviteiten van de provinciale handhavingsactoren.
                               De grafieken zijn interactief en de cijfers zullen wijzigen naargelang de gekozen filtering. 
                               De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk hieronder.
-                              
+                              Als de gegevens niet gekend zijn, verschijnt - of wordt aangegeven dat de data niet beschikbaar zijn.
                           </p>
                           <br>
                          
@@ -69,41 +69,16 @@ export class ProvinciaalAnalyseView extends LitElement {
                               </div>
                           </div>
                           <div is="vl-grid">
-                              <div is="vl-column" data-vl-size=8>
-                                  <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Bestuurlijke maatregelen</span>
-                                      <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-risicoanalyse.png">
-                                          <div class="BESTM object"></div>
-                                          <div is="vl-grid">
-                                          <div is="vl-column" data-vl-size=6>
-                                          <vl-info-tile data-vl-auto-open=true>
-                                          <span slot="title">Met dwangsom</span>
-                                          <div slot="content">
-                                              <div class="PROV-KPI-GOV-met-dwangsom object"></div>
-                                          </div>
-                                      </vl-info-tile></div>
-                                      <div is="vl-column" data-vl-size=6>
-                                      <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Zonder dwangsom</span>
-                                      <div slot="content">
-                                          
-                                          <div class="PROV-KPI-GOV-zonder-dwangsom object"></div>
-                                      </div>
-                                  </vl-info-tile></div>
-                                      </div></div>
-                                  
-                                  </vl-info-tile>
-                                
-                              </div>
-                              <div is="vl-column" data-vl-size=4>
-                              <vl-info-tile data-vl-auto-open=true>
-                                  <span slot="title">Veiligheidsmaatregelen</span>
-                                  <div slot="content">
-                                      <img class="icon" src="assets/icons/PNG-opgepast.png">
-                                      <div class="PROV-KPI-GOV-veiligsheidsmaatregel object"></div>
-                                  </div>
-                              </vl-info-tile>
+                              <div is="vl-column" data-vl-size=12>
+                              <vl-alert
+                              ?data-vl-closable="true"
+                              data-vl-icon="warning"
+                              data-vl-title="Geen bestuurlijke maatregelen"
+                              data-vl-size="small"
+                              data-vl-type="info"
+                            >
+                              <p>Voor het analysejaar 2022 werden er geen bestuurlijke maatregelen noch veiligheidsmaatregelen gerapporteerd.</p>
+                            </vl-alert>
                           </div>
                           </div>
                       </section>
@@ -322,42 +297,37 @@ export class ProvinciaalAnalyseView extends LitElement {
 
                           <div is="vl-grid">
                           <div is="vl-column" data-vl-size=12>
-                              <vl-info-tile data-vl-auto-open=true>
-                                  <span slot="title">Bestuurlijke maatregelen</span>
-                                  <div slot="content">
-                                      <img class="icon" src="assets/icons/PNG-risicoanalyse.png">
-                                      <div class="PROV-KPI-BestuurlijkmaatregelInstrumentarium object"></div>
-                                      <div is="vl-grid">
-                                      <div is="vl-column" data-vl-size=6>
-                                      <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Met dwangsom</span>
-                                      <div slot="content">
-                                          <div class="PROV-KPI-BestuurlijkmaatregelInstrumentariummetdwangsom object"></div>
-                                      </div>
-                                  </vl-info-tile></div>
-                                  <div is="vl-column" data-vl-size=6>
-                                  <vl-info-tile data-vl-auto-open=true>
-                                  <span slot="title">Zonder dwangsom</span>
-                                  <div slot="content">
-                                      
-                                      <div class="PROV-KPI-BestuurlijkmaatregelInstrumentariumzonderdwangsom object"></div>
-                                  </div>
-                              </vl-info-tile></div>
-                                  </div></div>
-                              
-                              </vl-info-tile>
+                          <div is="vl-grid">
+                          <div is="vl-column" data-vl-size=12>
+                          <vl-alert
+                          ?data-vl-closable="true"
+                          data-vl-icon="warning"
+                          data-vl-title="Geen bestuurlijke maatregelen"
+                          data-vl-size="small"
+                          data-vl-type="info"
+                        >
+                          <p>Voor het analysejaar 2022 werden er geen bestuurlijke maatregelen gerapporteerd.</p>
+                        </vl-alert>
+                      </div>
+                      </div>
                             
                           </div>
                           </div>
                           <div is="vl-grid">
                               <div is="vl-column" data-vl-size=12 class="data-top-bot">
-                                  <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Veiligheidsmaatregel</span>
-                                      <div slot="content">
-                                          <img class="icon" src="assets/icons/PNG-opgepast.png">
-                                          <div class="Veiligheidsmaatregel object"></div>
-                                      </div>
-                                  </vl-info-tile>
+                              <div is="vl-grid">
+                              <div is="vl-column" data-vl-size=12>
+                              <vl-alert
+                              ?data-vl-closable="true"
+                              data-vl-icon="warning"
+                              data-vl-title="Geen veiligheidsmaatregelen"
+                              data-vl-size="small"
+                              data-vl-type="info"
+                            >
+                              <p>Voor het analysejaar 2022 werden er geen veiligheidsmaatregelen gerapporteerd.</p>
+                            </vl-alert>
+                          </div>
+                          </div>
                               </div>
                               </div>                             
                               </section>
@@ -365,19 +335,49 @@ export class ProvinciaalAnalyseView extends LitElement {
 
                               <section id="content-1-7" is="vl-region">
                           <div is="vl-grid">
-                              <div is="vl-column" data-vl-size=12 class="data-top-bot">
-                                  <vl-infoblock data-vl-title="Opmerking handhavingsactor" data-vl-icon="business-graph-bar">
+                              <div is="vl-column" data-vl-size=12>
+                                  <vl-infoblock data-vl-title="Opmerking handhavingsactoren" data-vl-icon="business-graph-bar">
                                   </vl-infoblock>
                               </div>
-                          </div>
-                          <div is="vl-grid">
                           <div is="vl-column" data-vl-size=12 class="data-top-bot">
-                              <vl-info-tile data-vl-auto-open=true>
-                                  <span slot="title">Opmerking handhavingsactor</span>
-                                  <div slot="content">
-                                  <div class="PROV-Opmerking chartTabelsm"></div>
-                                  </div>
-                              </vl-info-tile>
+                          <vl-accordion
+                          data-vl-toggle-text="Provincie Antwerpen"
+                          data-vl-open-toggle-text="Provincie Antwerpen"
+                          data-vl-close-toggle-text="Sluit de opmerking"
+                        >
+                        
+                          <my-element4></my-element4>
+                         
+                        </vl-accordion>
+                        <vl-accordion
+                        data-vl-toggle-text="Provincie Limburg"
+                        data-vl-open-toggle-text="Provincie Limburg"
+                        data-vl-close-toggle-text="Sluit de opmerking"
+                      >
+                      <my-element5></my-element5>
+                      </vl-accordion>
+                      <vl-accordion
+                      data-vl-toggle-text="Provincie Oost-Vlaanderen"
+                      data-vl-open-toggle-text="Provincie Oost-Vlaanderen"
+                      data-vl-close-toggle-text="Provincie Oost-Vlaanderen"
+                    >
+                    <my-element6></my-element6>
+                    </vl-accordion>
+                    <vl-accordion
+                    data-vl-toggle-text="Provincie Vlaams-Brabant"
+                    data-vl-open-toggle-text="Provincie Vlaams-Brabant"
+                    data-vl-close-toggle-text="Provincie Vlaams-Brabant"
+                  >
+                  <my-element7></my-element7>
+                  
+                  </vl-accordion>
+                  <vl-accordion
+                    data-vl-toggle-text="Provincie West-Vlaanderen"
+                    data-vl-open-toggle-text="Provincie West-Vlaanderen"
+                    data-vl-close-toggle-text="Provincie West-Vlaanderen"
+                  >
+                  <my-element8></my-element8>
+                  </vl-accordion>
                           </div>
                           </div>
                           </section>
@@ -394,9 +394,24 @@ export class ProvinciaalAnalyseView extends LitElement {
                                   vervolgtraject</a>
                           </p>
                           </vl-alert>
-                          <vl-alert data-vl-type="info"
+                          <vl-alert
                           data-vl-title="Download de data">
-                          <p><a href="https://omgeving.vlaanderen.be/sites/default/files/2022-11/drive-download-20221117T123910Z-001.zip" download>Klik hier om de download te starten</a></p>
+                          <vl-typography>
+                          <ul>
+                          <li>
+                            Data van 2022
+                            <ul>
+                            <li><a href="https://omgeving.vlaanderen.be/sites/default/files/2023-04/Data%20Omgevingshandhavingsrapportage%202022.zip" download>Klik hier om de data te downloaden</a> </li>
+                            </ul>
+                          </li>
+                          <li>
+                            Data van 2021
+                            <ul>
+                            <li><a href="https://omgeving.vlaanderen.be/sites/default/files/2022-11/drive-download-20221117T123910Z-001.zip"  download>Klik hier om de data te downloaden</a> </li>
+                            </ul>
+                          </li>
+                        </ul>
+                        <ul>
                         </vl-alert>
                       </section>
                   </div>
@@ -446,7 +461,7 @@ export class ProvinciaalAnalyseView extends LitElement {
                                       </li>
                                       <li is="vl-side-navigation-item">
                                           <div>
-                                              <a href="#content-1-7" data-vl-parent="content-1">Opmerking handhavingsactor</a>
+                                              <a href="#content-1-7" data-vl-parent="content-1">Opmerking handhavingsactoren</a>
                                           </div>
                                       </li>
                                   </ul>

@@ -4,8 +4,6 @@ import "uig-webcomponents/lib/components/doormat/styles.css";
 import { analysis } from "../templates/analysis";
 import { embed, useEffect } from "@nebula.js/stardust";
 import { render } from 'lit';
-
-
 export class GewestelijkAnalyseView extends LitElement {
   render() {
     return analysis({
@@ -30,7 +28,7 @@ export class GewestelijkAnalyseView extends LitElement {
                               De grafieken zijn interactief en de cijfers zullen wijzigen naargelang de gekozen filtering.
                               De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk
                               hieronder.
-                            
+                              Als de gegevens niet gekend zijn, verschijnt - of wordt aangegeven dat de data niet beschikbaar zijn.
                           </p>
                       </section>
   
@@ -100,7 +98,7 @@ export class GewestelijkAnalyseView extends LitElement {
                                       <span slot="title">Classificatie VTE
                                       </span>
                                       <div slot="content">
-                                          <div class="MIL-Barchart-VTE chart"></div>
+                                          <div class="MIL-Barchart-VTE chartGewest chart"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -408,7 +406,6 @@ export class GewestelijkAnalyseView extends LitElement {
                                               </span>
                                           </span>
                                           <div slot="content">
-  
                                               <div class="RO-Barchart-VTE chart"></div>
                                           </div>
                                       </vl-info-tile>
@@ -716,9 +713,24 @@ export class GewestelijkAnalyseView extends LitElement {
                                     </p>
                                 </vl-alert>
                                 <vl-alert
-                                data-vl-title="Download de data">
-                                <p><a href="https://omgeving.vlaanderen.be/sites/default/files/2022-11/drive-download-20221117T123910Z-001.zip" download>Klik hier om de data te downloaden</a></p>
-                              </vl-alert>
+                          data-vl-title="Download de data">
+                          <vl-typography>
+                          <ul>
+                          <li>
+                            Data van 2022
+                            <ul>
+                            <li><a href="https://omgeving.vlaanderen.be/sites/default/files/2023-04/Data%20Omgevingshandhavingsrapportage%202022.zip" download>Klik hier om de data te downloaden</a> </li>
+                            </ul>
+                          </li>
+                          <li>
+                            Data van 2021
+                            <ul>
+                            <li><a href="https://omgeving.vlaanderen.be/sites/default/files/2022-11/drive-download-20221117T123910Z-001.zip" download>Klik hier om de data te downloaden</a> </li>
+                            </ul>
+                          </li>
+                        </ul>
+                        <ul>
+                        </vl-alert>
                             </section>
                   </div>
               </div>

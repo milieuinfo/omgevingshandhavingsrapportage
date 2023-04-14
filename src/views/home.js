@@ -5,8 +5,6 @@ import { page } from "../templates/page";
 import { embed } from '@nebula.js/stardust';
 export class Home extends LitElement {
   render() {
-    /*
-     */
     return page({
       children: html`
       <section is="vl-region">
@@ -58,8 +56,36 @@ export class Home extends LitElement {
                               </p>
                                 <br/>
                               <p is="vl-text">
-                              De jaarlijkse invoer van de cijfers wordt verwacht in de periode april-juni. De gepresenteerde data hebben dan betrekking op het voorgaande kalenderjaar en op de handhavingsactiviteiten tussen 1 januari en 31 december. 
-                              De data aangaande 2021 vormen een nulmeting. Door de komende jaren dezelfde data te verzamelen, zal het mogelijk worden om evoluties in de tijd te tonen.                              
+                                De jaarlijkse invoer van de cijfers wordt verwacht in de periode april-juni. De gepresenteerde data hebben betrekking op het voorgaande kalenderjaar (handhavingsactiviteiten uitgevoerd tussen 1 januari en 31 december)                           
+                              </p>
+
+                              <p is="vl-text">
+                               De verzamelde gegevens van eerdere kalenderjaren kunnen hieronder worden gedownload.                          
+                              </p>
+                              <div is="vl-grid" class="data-top-bot">
+                              <div is="vl-column" data-vl-size=8>
+                          <vl-alert
+                          data-vl-title="Download de data">
+                          <vl-typography>
+                          <ul>
+                          <li>
+                            Data van 2022
+                            <ul>
+                            <li><a href="https://omgeving.vlaanderen.be/sites/default/files/2023-04/Data%20Omgevingshandhavingsrapportage%202022.zip" download>Klik hier om de data te downloaden</a> </li>
+                            </ul>
+                          </li>
+                          <li>
+                            Data van 2021
+                            <ul>
+                            <li><a href="https://omgeving.vlaanderen.be/sites/default/files/2022-11/drive-download-20221117T123910Z-001.zip" download>Klik hier om de data te downloaden</a> </li>
+                            </ul>
+                          </li>
+                        </ul>
+                        </vl-alert>
+                            </div>
+                            </div>
+                              <p is="vl-text">
+                                Doordat de komende jaren dezelfde uniforme data zal worden verzameld, wordt het mogelijk om een meerjarenrapportering te ontwikkelen en evoluties in de tijd voor te leggen.                    
                               </p>
                       </section>
                   </div>
@@ -89,16 +115,12 @@ export class Home extends LitElement {
               </div>
           </div>
       </div>
-  </section>
-    `
-    ,
+  </section>`,
       title: "Omgevingshandhavingsrapportage 2021",
     });
   }
-
   createRenderRoot() {
     return this;
   }
 }
-
 customElements.define("home-view", Home);

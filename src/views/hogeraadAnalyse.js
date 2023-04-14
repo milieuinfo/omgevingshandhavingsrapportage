@@ -24,7 +24,7 @@ export class HogeraadAnalyseView extends LitElement {
                       <section id="content-1" is="vl-region">
                           <h2 is="vl-h2">Een wegwijzer doorheen de cijfers en grafieken</h2>
                           <p>
-                              Deze pagina toont een overzichtelijk beeld van de activiteiten van de Hoge Raad voor 
+                              Deze pagina toont een beeld van de activiteiten van de Hoge Raad voor 
                               de Handhavingsuitvoering in het voorafgaande jaar.
                           </p>
                       </section>
@@ -35,7 +35,9 @@ export class HogeraadAnalyseView extends LitElement {
                                   <h2 slot="title">Instroom</h2>
   
                               </vl-infoblock>
-                              <div class="HRCInstroom chartTabel"></div>
+                              <div is="vl-column" data-vl-size=12>
+                              <my-element></my-element>
+                          </div>
                           </div>
                       </section>
   
@@ -46,16 +48,19 @@ export class HogeraadAnalyseView extends LitElement {
                               <vl-infoblock data-vl-icon="business-graph-bar">
                                   <h2 slot="title">Behandeling - bindende adviezen</h2>
                               </vl-infoblock>
-                              <div class="HRCBindendeadviesChart chart"></div>
+                              <div class="HRCBindendeadviesChart chartbig"></div>
                           </div>
                       </section>
+
   
                       <section id="content-1-4" is="vl-region">
                           <div is="vl-grid">
                               <vl-infoblock data-vl-icon="business-graph-bar">
                                   <h2 slot="title">Adviezen</h2>
                               </vl-infoblock>
-                              <div class="HRCAdviezen chartTabelsm"></div>
+                              <div is="vl-column" data-vl-size=12>
+                              <my-element2></my-element2>
+                              </div>
                           </div>
                       </section>
   
@@ -64,7 +69,9 @@ export class HogeraadAnalyseView extends LitElement {
                               <vl-infoblock data-vl-icon="business-graph-bar">
                                   <h2 slot="title">Bemiddelingsopdrachten</h2>
                               </vl-infoblock>
-                              <div class="HRCBemiddeling chartTabelsm"></div>
+                              <div is="vl-column" data-vl-size=12>
+                              <my-element3></my-element3>
+                              </div>
                           </div>
                       </section>
   
@@ -85,7 +92,22 @@ export class HogeraadAnalyseView extends LitElement {
                           </vl-alert>
                           <vl-alert
                           data-vl-title="Download de data">
-                          <p><a href="https://omgeving.vlaanderen.be/sites/default/files/2022-11/drive-download-20221117T123910Z-001.zip" download>Klik hier om de data te downloaden</a></p>
+                          <vl-typography>
+                          <ul>
+                          <li>
+                            Data van 2022
+                            <ul>
+                            <li><a href="https://omgeving.vlaanderen.be/sites/default/files/2023-04/Data%20Omgevingshandhavingsrapportage%202022.zip" download>Klik hier om de data te downloaden</a> </li>
+                            </ul>
+                          </li>
+                          <li>
+                            Data van 2021
+                            <ul>
+                            <li><a href="https://omgeving.vlaanderen.be/sites/default/files/2022-11/drive-download-20221117T123910Z-001.zip" download>Klik hier om de data te downloaden</a> </li>
+                            </ul>
+                          </li>
+                        </ul>
+                        <ul>
                         </vl-alert>
                       </section>
                   </div>

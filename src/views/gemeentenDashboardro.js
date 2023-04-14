@@ -86,7 +86,7 @@ render() {
                 </div>
                 </div>
                 <div is="vl-grid" data-vl-v-stretch>
-                <div is="vl-column" data-vl-size=4 class="data-top-bot">
+                <div is="vl-column" data-vl-size=3 class="data-top-bot">
                 <vl-info-tile data-vl-auto-open=true>
                     <span slot="title">Gemeente<br/><span class="hidden">.<br/>.</span></span>
                     <div slot="content">
@@ -94,7 +94,7 @@ render() {
                     </div>
                 </vl-info-tile>
             </div>
-            <div is="vl-column" data-vl-size=4 class="data-top-bot">
+            <div is="vl-column" data-vl-size=3 class="data-top-bot">
             <vl-info-tile data-vl-auto-open=true>
                 <span slot="title">Intergemeentelijk<br/> samenwerkings-<br/>verband</span>
                 <div slot="content">
@@ -102,7 +102,7 @@ render() {
                 </div>
             </vl-info-tile>
         </div>
-        <div is="vl-column" data-vl-size=4 class="data-top-bot">
+        <div is="vl-column" data-vl-size=3 class="data-top-bot">
             <vl-info-tile data-vl-auto-open=true>
                 <span slot="title">Lokale politie<br/><span class="hidden">.<br/>.</span></span>
                 <div slot="content">
@@ -110,6 +110,14 @@ render() {
                 </div>
             </vl-info-tile>
         </div>
+        <div is="vl-column" data-vl-size=3 class="data-top-bot">
+                  <vl-info-tile data-vl-auto-open=true>
+                      <span slot="title">Andere gemeente<br/><span class="hidden">.<br/>.</span></span>
+                      <div slot="content">
+                          <div class="Gem-ORG-Mil-And object"></div>
+                      </div>
+                  </vl-info-tile>
+              </div>
             </div>
             <div is="vl-grid">
             <div is="vl-column" data-vl-size = "12">
@@ -119,7 +127,7 @@ render() {
             </div>
             </div>
             <div is="vl-grid" data-vl-v-stretch>
-            <div is="vl-column" data-vl-size=4 class="data-top-bot">
+            <div is="vl-column" data-vl-size=3 class="data-top-bot">
             <vl-info-tile data-vl-auto-open=true>
                 <span slot="title">Gemeente<span class="hidden"><br/>.<br/>.</span></span>
                 <div slot="content">
@@ -127,7 +135,7 @@ render() {
                 </div>
             </vl-info-tile>
         </div>
-        <div is="vl-column" data-vl-size=4 class="data-top-bot">
+        <div is="vl-column" data-vl-size=3 class="data-top-bot">
         <vl-info-tile data-vl-auto-open=true>
             <span slot="title">Intergemeentelijk samenwerkings-<br/>verband</span>
             <div slot="content">
@@ -135,7 +143,7 @@ render() {
             </div>
         </vl-info-tile>
     </div>
-    <div is="vl-column" data-vl-size=4 class="data-top-bot">
+    <div is="vl-column" data-vl-size=3 class="data-top-bot">
         <vl-info-tile data-vl-auto-open=true>
             <span slot="title">Lokale politie<br/><span class="hidden">.<br/>.</span></span>
             <div slot="content">
@@ -143,6 +151,14 @@ render() {
             </div>
         </vl-info-tile>
     </div>
+    <div is="vl-column" data-vl-size=3 class="data-top-bot">
+                  <vl-info-tile data-vl-auto-open=true>
+                      <span slot="title">Andere gemeente<br/><span class="hidden">.<br/>.</span></span>
+                      <div slot="content">
+                          <div class="Gem-ORG-RO-And object"></div>
+                      </div>
+                  </vl-info-tile>
+              </div>
         </div>
                 </section>
 
@@ -705,9 +721,24 @@ render() {
                               </p>
                           </vl-alert>
                           <vl-alert
-                                data-vl-title="Download de data">
-                                <p><a href="https://omgeving.vlaanderen.be/sites/default/files/2022-11/drive-download-20221117T123910Z-001.zip" download>Klik hier om de data te downloaden</a></p>
-                              </vl-alert>
+                          data-vl-title="Download de data">
+                          <vl-typography>
+                          <ul>
+                          <li>
+                            Data van 2022
+                            <ul>
+                            <li><a href="https://omgeving.vlaanderen.be/sites/default/files/2023-04/Data%20Omgevingshandhavingsrapportage%202022.zip" download>Klik hier om de data te downloaden</a> </li>
+                            </ul>
+                          </li>
+                          <li>
+                            Data van 2021
+                            <ul>
+                            <li><a href="https://omgeving.vlaanderen.be/sites/default/files/2022-11/drive-download-20221117T123910Z-001.zip" download>Klik hier om de data te downloaden</a> </li>
+                            </ul>
+                          </li>
+                        </ul>
+                        <ul>
+                        </vl-alert>
                       </section>
                   </div>
               </div>

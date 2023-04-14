@@ -17,7 +17,7 @@ export class HogeRaadView extends LitElement {
                       <section id="content-1" is="vl-region">
                           <h3 is="vl-h3">Hoge raad voor de Handhavingsuitvoering</h2>
                               <p>
-                                  Deze pagina toont een overzichtelijk beeld van de activiteiten van de Hoge Raad voor de
+                                  Deze pagina toont een beeld van de activiteiten van de Hoge Raad voor de
                                   Handhavingsuitvoering in het voorafgaande jaar.
                               </p>
                               <br>

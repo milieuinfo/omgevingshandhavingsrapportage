@@ -18,8 +18,21 @@ body {
   width:500px;
 }
 
+.chartGewest {
+  width:100% !important;
+  height: 350px !important;
+}
+
 .bg {
   background-color: azure;
+}
+
+
+
+
+.chartbig {
+  width:100% !important;
+  height: 550px !important;
 }
 
 .object {
@@ -27,6 +40,9 @@ body {
   width:100% !important;
 }
 
+#colorgreen {
+  color:#c71e1d !important;
+}
 .objectinstrumentarium {
   height: 75px;
   width:100% !important;

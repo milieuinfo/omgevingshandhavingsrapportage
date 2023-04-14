@@ -26,7 +26,7 @@ export class Gemeenten extends LitElement {
                                   van een
                                   aanzienlijk risico voor mens of milieu. De lokale toezichthouders oefenen daarnaast het toezicht uit
                                   op de
-                                  toepassing van specifieke milieuvoorschriften. De lokale verbalisanten, de agenten en de officieren
+                                  toepassing van specifieke milieuvoorschriften. De lokale verbalisanten, de agenten en de officieren\
                                   van
                                   gerechtelijke politie en de stedenbouwkundige inspecteurs/burgemeesters handhaven de regelgeving van
                                   de
@@ -38,9 +38,11 @@ export class Gemeenten extends LitElement {
                                   uitvoering
                                   van hun handhavingsactiviteiten in het voorgaand jaar.
                               </p>
+                              <p>
+                              </p>
                               <div is="vl-grid">
                                   <div is="vl-column">
-                                      <div style="max-width: 400px" id="content-2" class="data-top-bot">
+                                      <div id="content-2" class="data-top-bot">
                                           <a is="vl-doormat" href="/public/gemeentenDashboard">
                                               <h2 is="vl-doormat-title">Analyseer de cijfers voor milieu</h2>
                                               <div is="vl-doormat-text">
@@ -48,9 +50,9 @@ export class Gemeenten extends LitElement {
                                               </div>
                                           </a>
                                       </div>
-                                  </div>
+                                    </div>
                                   <div is="vl-column">
-                                      <div style="max-width: 400px" id="content-2" class="data-top-bot">
+                                      <div  id="content-2" class="data-top-bot">
                                           <a is="vl-doormat" href="/public/gemeentenDashboardro">
                                               <h2 is="vl-doormat-title">Analyseer de cijfers voor ruimtelijke ordening</h2>
                                               <div is="vl-doormat-text">
@@ -59,8 +61,7 @@ export class Gemeenten extends LitElement {
                                           </a>
                                       </div>
                                   </div>
-                              </div>
-                              <div is="vl-grid">
+                                  
                                   <div is="vl-column">
                                       <div style="max-width: 400px" id="content-2" class="data-top-bot">
                                           <a is="vl-doormat" href="/public/gemeentenAnalyse">

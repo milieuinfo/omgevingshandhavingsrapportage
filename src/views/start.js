@@ -15,6 +15,11 @@ export class Start extends LitElement {
             <h3 is="vl-h3" data-vl-align-center>
                 Omgevingshandhavingsuitvoering in 2022 in een notendop
             </h3></div>
+            
+            <div is="vl-grid" data-vl-align-center>
+            <h5 is="vl-h5" data-vl-align-center>
+                Kies hieronder een weergave van de infographic
+            </h5></div>
             <div is="vl-grid"data-vl-align-center>
             <div vl-column data-vl-align-space-between>
                 <button is="vl-button" @click="${this._milieu}">
@@ -26,8 +31,8 @@ export class Start extends LitElement {
             </div>
             
             <div is="vl-grid" class="data-top-bot" data-vl-align-center>
-            <div style="max-width: 800px">
-                <img is="vl-image" sizes="100vw" id="pic" src="assets/images/infomil.png" alt="Infographic" />
+            <div style="max-width: 1000px max-height:850px">
+                <img is="vl-image" sizes="250vw" id="pic" src="assets/images/rsz_infographic_milieu.png" alt="Infographic" />
             </div></div>
 </section>
 
@@ -73,7 +78,7 @@ export class Start extends LitElement {
                 data-vl-items-extra-small-size=4 data-vl-items-extra-small-max-size=4>
                 <vl-description-data-item data-vl-label="Uitgever" data-vl-value="Departement Omgeving">
                 </vl-description-data-item>
-                <vl-description-data-item data-vl-label="Publicatiedatum" data-vl-value="Oktober 2022">
+                <vl-description-data-item data-vl-label="Publicatiedatum" data-vl-value="April 2023">
                 </vl-description-data-item>
                 <vl-description-data-item data-vl-label="Publicatietype" data-vl-value="Webapplicatie">
                 </vl-description-data-item>
@@ -90,16 +95,16 @@ export class Start extends LitElement {
   
 
   _milieu(e) {
-    var img1 = "assets/images/infomil.png"
-    var img2 = "assets/images/inforo.png"
+    var img1 = "assets/images/rsz_infographic_milieu.png"
+    var img2 = "assets/images/rsz_infographic_ro.png"
     var page = document.getElementById("pic");
   if(page.src = img2) {
     page.src= img1
   }
   }
   _ro(e) {
-    var img1 = "assets/images/infomil.png"
-    var img2 = "assets/images/inforo.png"
+    var img1 = "assets/images/rsz_infographic_milieu.png"
+    var img2 = "assets/images/rsz_infographic_ro.png"
     var page = document.getElementById("pic");
   
   if(page.src = img1) {

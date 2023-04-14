@@ -27,10 +27,10 @@ export class StrafrechtelijkAnalyseAnalyseView extends LitElement {
               <section id="content-1" is="vl-region">
                 <h2 is="vl-h2">Een wegwijzer doorheen de cijfers en grafieken</h2>
                 <p>
-                    Deze pagina toont een overzichtelijk beeld van he strafrechtelijke en bestuurlijke vervolgtraject van de instrumenten
+                    Deze pagina toont een beeld van het strafrechtelijke en bestuurlijke vervolgtraject van de instrumenten
                     proces-verbaal en verslag van vaststelling. De grafieken zijn interactief en de cijfers zullen wijzigen naargelang de gekozen filtering.
                     De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk.
-                    
+                    Als de gegevens niet gekend zijn, verschijnt - of wordt aangegeven dat de data niet beschikbaar zijn.
                 </p>
               </section>
               <section id="content-1-1" is="vl-region">
@@ -41,36 +41,49 @@ export class StrafrechtelijkAnalyseAnalyseView extends LitElement {
               Hieronder kan een bestand worden gedownload met duiding bij de statistische bijdrage van het Openbaar Ministerie:
               <span slot="type">URL</span>
               <p>
-              <span slot="title"><a href="https://omgeving.vlaanderen.be/sites/default/files/2022-11/drive-download-20221117T123910Z-001.zip" download>Duiding bij de statistische bijdrage</a></span></p>
+              <span slot="title"><a href="https://drive.google.com/drive/folders/1WTo0_wMdlJxqIuW4lSV8-fK8DuHRI3_w?usp=sharing" target="_blank">Duiding bij de statistische bijdrage</a></span></p>
             </vl-infoblock>
             <hr>
             <div is="vl-grid" class="data-top-bot">
-            <h5 is="vl-h5">
-            Instroom - herkomst</h5>
-            <div class="Tabel1 chart"></div></div>
+            <h5 is="vl-h5">Instroom - herkomst</h5>
+
+            <div is="vl-column" data-vl-size=12>
+            <my-instroom id="selectiebalk"></my-instroom></div>
+            
+            </div>
             <div class="toolbar"></div>
             <div is="vl-grid">
             <h5 is="vl-h5">Instroom - thematisch</h5></div>
+            <p><span class="ondertitel">Selecteer een thema voor gedetailleerdere informatie</span></p>
             <div is="vl-grid">
-            <vl-typography>
-            <p><span class="ondertitel">Selecteer een thema voor gedetailleerdere informatie</span></p></vl-typography>
-            <div class="DrillBar chart"></div>
-            
-
-            <div class="Tabelseponering chartTabel"></div>
+            <div is="vl-column" data-vl-size=12>
+            <div class="Instroomthema chart"></div>
             </div>
+
             <div is="vl-grid" class="data-top-bot">
             <h5 is="vl-h5">
             Vooruitgangsstaat
-            </h5>
-            <div class="Tabelvooruitgangstaat chartTabel"></div>
-            </div>
-
+          </h5>
+         <my-vooruit></my-vooruit>
+            </div></div>
             <div is="vl-grid" class="data-top-bot">
+            <div is="vl-column" data-vl-size=12>
             <vl-typography>
-            <h5>Motieven tot seponering </h5>
-            <p><span class="ondertitel">Selecteer een thema voor gedetailleerdere informatie</span></p></vl-typography>
-         
+            <h5>Afhandeling zonder strafvervolging om opportuniteitsredenen</h5></vl-typography>
+            </div></div>
+            <div is="vl-grid">
+            <div is="vl-column" data-vl-size=12>
+            <my-instroomafhandeling></my-instroomafhandeling>
+            </div></div>
+            <div is="vl-grid" class="data-top-bot">
+            <div is="vl-column" data-vl-size=12>
+            <vl-typography>
+            <h5>Afhandeling zonder strafvervolging om technische redenen</h5></vl-typography>
+            </div></div>
+            <div is="vl-grid">
+            <div is="vl-column" data-vl-size=12>
+            <my-instroomtechnischereden></my-instroomtechnischereden>
+            </div></div>
               </section>
               <section id="content-1-2" is="vl-region">
               <hr>
@@ -84,24 +97,49 @@ export class StrafrechtelijkAnalyseAnalyseView extends LitElement {
             </vl-infoblock>
             <hr>
             </vl-infoblock>
-            <div is="vl-grid">
-            <h5
-            is="vl-h5">Instroom</h5>
-            <div class="GewestBB chart"></div>
+            <div is="vl-grid" class="data-top-bot">
+            <div is="vl-column" data-vl-size=12>
+            
+            <my-gewestabel></my-gewestabel>
+          
+            </div></div>
+
+            <div is="vl-grid" class="data-top-bot">
+              <div is="vl-column" data-vl-size=12>
+                <my-gewestabeltwo></my-gewestabeltwo>
+
+              </div></div>
+
+              <div is="vl-grid" class="data-top-bot">
+              <div is="vl-column" data-vl-size=12>
+              <vl-typography>
+              <h5>Milieu</h5>
+              <p>Klik op een staafbalk voor een verdere opsplitsing.</p>
+              </vl-typography>
+              <div is="vl-column" data-vl-push = 8>
+              <a is="vl-link-button" href="#selectiebalk">Terug naar selectiebalk</a>
+              </div></div></div>
+
+              
+
+              <div is="vl-grid" class="data-top-bot">
+                <div is="vl-column" data-vl-size=12>
+                
+                  <div class="GewestBB1 chart"></div>
+                </div>
+              </div>
+
+              <div is="vl-grid" class="data-top-bot">
+              <div is="vl-column" data-vl-size=12>
+              <vl-typography>
+              <h5>Ruimtelijke ordening</h5></vl-typography>
+              </div></div>
+              <div is="vl-grid" class="data-top-bot">
+              <div is="vl-column" data-vl-size=12>
+              
+                <div class="GewestBB2 chart"></div>
+              </div>
             </div>
-            <h5
-            is="vl-h5">Behandeling</h5>
-            <div is="vl-grid">
-            <div class="GewestBH chartTabelsm"></div></div>
-            <div is="vl-grid">
-            <vl-typography>
-            <h5 is="vl-h5">Behandeling - thematisch</h5>
-            <h6>Milieu</h6></vl-typography>
-            <div class="milieubehandelingthem chartTabel"></div></div>
-            <div is="vl-grid">
-            <vl-typography>
-            <h6>Ruimtelijke ordening</h6></vl-typography>
-            <div class="RObehandelingthem chartTabelsm"></div></div>
               </section>
               <section id="content-1-3" is="vl-region">
               <hr>
@@ -114,15 +152,17 @@ export class StrafrechtelijkAnalyseAnalyseView extends LitElement {
             </vl-document>
             </vl-infoblock>
             <hr>
-            <div is="vl-grid">
-            <h5
-            is="vl-h5">Instroom</h5>
-            <div class="HHCTabel1 object"></div></div>
-            <div is="vl-grid">
-            <h5
-            is="vl-h5">Behandeling</h5>
-            <div class="HHCTabel2 chartTabelmd"></div></div>
-              </section>
+            <div is="vl-grid" class="data-top-bot">
+            <div is="vl-column" data-vl-size="12">
+            <my-hhc></my-hhc>
+            </div>
+            </div>
+            <div is="vl-grid" class="data-top-bot">
+            <div is="vl-column" data-vl-size="12">
+            <my-hhcbehandeling></my-hhcbehandeling>
+            </div>
+            </div>
+            </section>
               <section is="vl-region" id="content-4">
               <h3 is="vl-h3">Bekijk cijfers voor andere thema's</h3>
               <vl-alert data-vl-title="Cijfers andere handhavingsactoren"
@@ -134,11 +174,25 @@ export class StrafrechtelijkAnalyseAnalyseView extends LitElement {
                       <a is="vl-link-button" href="/public/hogeraad">Hoge raad</a>
                   </p>
               </vl-alert>
-              <vl-alert             
-              data-vl-title="Download de data"
-              data-vl-type="info">
-              <p><a href="https://omgeving.vlaanderen.be/sites/default/files/2022-11/drive-download-20221117T123910Z-001.zip" download>Klik hier om de data te downloaden</a></p>
-            </vl-alert>
+              <vl-alert
+                          data-vl-title="Download de data">
+                          <vl-typography>
+                          <ul>
+                          <li>
+                            Data van 2022
+                            <ul>
+                            <li><a href="https://omgeving.vlaanderen.be/sites/default/files/2023-04/Data%20Omgevingshandhavingsrapportage%202022.zip" download>Klik hier om de data te downloaden</a> </li>
+                            </ul>
+                          </li>
+                          <li>
+                            Data van 2021
+                            <ul>
+                            <li><a href="https://omgeving.vlaanderen.be/sites/default/files/2022-11/drive-download-20221117T123910Z-001.zip" download>Klik hier om de data te downloaden</a> </li>
+                            </ul>
+                          </li>
+                        </ul>
+                        <ul>
+                        </vl-alert>
           </section>
             </div>
           </div>
