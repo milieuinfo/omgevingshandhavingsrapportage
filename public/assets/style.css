@@ -142,6 +142,20 @@ body {
   transform-origin: center;
 }
 
+.infogewest {
+  transition: transform .5s;
+}
+
+.widthmodal {
+
+  width: 100% !important;
+}
+
+.infogewest:hover{
+  transform: scale(1.3);
+
+}
+
 div.qvobject,
 div.qvplaceholder {
   padding: 0px 10px 10px 10px;

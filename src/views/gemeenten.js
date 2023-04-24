@@ -26,7 +26,7 @@ export class Gemeenten extends LitElement {
                                   van een
                                   aanzienlijk risico voor mens of milieu. De lokale toezichthouders oefenen daarnaast het toezicht uit
                                   op de
-                                  toepassing van specifieke milieuvoorschriften. De lokale verbalisanten, de agenten en de officieren\
+                                  toepassing van specifieke milieuvoorschriften. De lokale verbalisanten, de agenten en de officieren
                                   van
                                   gerechtelijke politie en de stedenbouwkundige inspecteurs/burgemeesters handhaven de regelgeving van
                                   de

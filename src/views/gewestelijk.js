@@ -123,32 +123,49 @@ export class Gewestelijk extends LitElement {
                     <vl-typography>
 
                         <h4 is="vl-h4">Geconsolideerd  beeld</h4>
+                        <vl-alert
+                        data-vl-title="Download het geconsolideerd beeld in de orginele resolutie"
+                        data-vl-size="small"
+                        data-vl-icon="info-circle"
+                        data-vl-type="info">
+                        <p>Onderstaande afbeeldingen kunnen worden opgeslagen voor een betere weergave</p>
+                        <p><b>Rechterklik op de afbeelding en kies voor afbeelding opslaan als</b></p>
+                      </vl-alert>
                         <hr>
                     </vl-typography>
+                    </div>
+                    </div>
+                    <div is="vl-grid">
+                    <div is="vl-column" data-vl-size=12>
+                    <vl-typography>
+
+                        <h4 is="vl-h4">Milieuhandhaving</h4>
+                        
+                    </vl-typography>
 
                     </div>
                     </div>
+                    <div is="vl-grid">
+                    <div style="max-width: 1400px">
+    <img
+      is="vl-image"
+      sizes="100vw"
+      src="assets/images/infographic_milieu_gewestelijk_def.png"
+      alt="Geconsolideerd beeld milieuhandhaving"/>
+  </div></div>
 
-                    <div is="vl-grid" class="data-top-bot">
-                    <vl-typography>
+  <div is="vl-grid">
+  <div is="vl-column" data-vl-size=12>
+  <vl-typography><h4 is="vl-h4">Ruimtelijke ordening</h4></vl-typography>
+  </div>
+  </div>
 
-                        <h5 is="vl-h5">Milieuhandhaving</h5>
-                    </vl-typography>
-            <div style="max-width: 800px max-height:1000px">
-                <img is="vl-image" sizes="100vw" src="assets/images/rsz_infographic_milieu_gewestelijk_def.png" alt="Infographic" />
-            </div></div>
-
-            <div is="vl-grid" class="data-top-bot">
-                    <vl-typography>
-
-                        <h5 is="vl-h5">Ruimtelijke ordening</h5>
-                    </vl-typography>
-            <div style="max-width: 800px max-height:1000px">
-                <img is="vl-image" sizes="100vw" src="assets/images/infographic_ro_gewestelijk_def.png" alt="Infographic" />
-            </div></div>
+  <div is="vl-grid">
+  <div style="max-width: 1400px">
+<img is="vl-image" sizes="100vw" src="assets/images/infographic_ro_gewestelijk_def.png" alt="Geconsolideerd beeld ruimtelijke ordening"/>
+</div>
+</div>
                     </section>
-
-
                 </div>
             </div>
             <div is="vl-column" data-vl-size="4" data-vl-medium-size="4" data-vl-small-size="4"
