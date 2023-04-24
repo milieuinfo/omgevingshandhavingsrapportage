@@ -298,7 +298,7 @@ render() {
                                       <span slot="title">Aantal toezichthouders</span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-natuurlijke persoon.png">
-                                          <div  class="GEM-Toezicthouders object"></div>
+                                          <div class="GEM-Toezicthouders object toezicht"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -307,7 +307,7 @@ render() {
                                       <span slot="title">Totaal VTE</span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-trainer_B.png">
-                                          <div class="GEM-TotaalVTE object"></div>
+                                          <div class="GEM-TotaalVTE object toezicht"></div>
                                       </div>
                                   </vl-info-tile>
                               </div>
@@ -358,7 +358,7 @@ render() {
                                       </span>
                                       <div slot="content">
                                           <img class="icon" src="assets/icons/PNG-Meld_verdachte_handelingen.png">
-                                          <div class="GEM-klachten object"></div>
+                                          <div class="GEM-klachten object toezicht"></div>
                                       </div>
                                   </vl-info-tile>
                                   <vl-info-tile data-vl-auto-open=true>

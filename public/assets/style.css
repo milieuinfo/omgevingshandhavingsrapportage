@@ -168,6 +168,9 @@ div.qvobject100 {
   height: 100px;
 }
 
+.toezicht .sn-kpi-value{
+  color:#a5c409 !important;
+}
 div.qvobject200 {
   padding: 0px 10px 10px 10px;
   height: 200px;

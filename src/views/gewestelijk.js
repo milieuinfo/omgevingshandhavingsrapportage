@@ -150,7 +150,7 @@ export class Gewestelijk extends LitElement {
     <img
       is="vl-image"
       sizes="100vw"
-      src="assets/images/infographic_milieu_gewestelijk_def.png"
+      src="assets/images/infographic_milieu_gewestelijk_v2.png"
       alt="Geconsolideerd beeld milieuhandhaving"/>
   </div></div>
 
