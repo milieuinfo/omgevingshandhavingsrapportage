@@ -70,9 +70,9 @@ export const FUNCTIE = {
   field: "[Functie TOBE Code]",
   nrOfValues: 1000,
 };
-// dimensions
+// dimensions ohr
 export const JAAR_BEVRAGING = {
-  name: "Bevraging Jaartal",
+  name: "Jaartal",
   fieldQualifier: "qText",
   field: "[Bevraging Jaartal]",
   nrOfValues: 1000,
@@ -91,8 +91,16 @@ export const TEGEL = {
 };
 
 export const INSTANTIE = {
-  name: "Instantie",
+  name: "Actor",
   fieldQualifier: "qText",
   field: "[Instantie]",
   nrOfValues: 1000,
 };
+
+export const MR = {
+  name: "Beleidsdomein",
+  fieldQualifier: "qText",
+  field: "[MR]",
+  nrOfValues: 1000,
+};
+

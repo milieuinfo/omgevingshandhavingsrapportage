@@ -14,7 +14,7 @@ import {DEFAULT, REFRESH_MEASURE} from "../config/qlik_resources.js";
 import viz_personeel from "../config/personeel.json" assert {type: "json"};
 import filtersPersoneel from "../config/personeel-filters.js";
 import {Qlik} from "../qlik/qlik.js";
-
+import {exportCSVFile, exportExcelFile} from "../common/export.js";
 
 class OhrPersoneel extends LitElement {
   static get properties() {
@@ -58,7 +58,7 @@ class OhrPersoneel extends LitElement {
   }
 
   async __bindFilters() {
-    await bindVlSelect({
+     await bindVlSelect({
       component: queryById(this)("view-selector"),
       choices: Object.keys(viz_personeel).map((v) => {
         return {label: viz_personeel[v].label, value: v};
@@ -109,32 +109,11 @@ class OhrPersoneel extends LitElement {
     }];
   }
 
-  __renderDownloadButton() {
-    return html`
-      <div is="vl-action-group" style="float:right;margin-top: 3rem">
-        <select id="format-select" is="vl-select"
-                style="margin-right: 1.4rem">
-          <option value="xlsx">Excel</option>
-          <option value="csv">CSV</option>
-        </select>
-        <button is="vl-button"
-                @click="${(e) => performWithLoader(e.target,
-                    this.export.bind(this))}">
-                      <span is="vl-icon" data-vl-icon="file-download"
-                            data-vl-before></span>
-          Download
-        </button>
-      </div>`;
-  }
-
   __renderIdleTime() {
     return html`
-    <vl-alert
-    data-vl-icon="warning"
-    data-vl-title="Connectie met de visualisaties afgesloten."
-    data-vl-type="error">
-  <p>Uw connectie is afgesloten door inactiviteit op de pagina. Vernieuw de pagina om een nieuwe connectie te maken. </p>
-  <button onClick="window.location.reload();" slot="actions" is="vl-button" >Vernieuw de pagina</button>
+    <vl-alert data-vl-icon="warning" data-vl-title="Connectie met de visualisaties afgesloten." data-vl-type="error">
+    <p>Uw connectie is afgesloten door inactiviteit op de pagina. Vernieuw de pagina om een nieuwe connectie te maken.</p>
+      <button onClick="window.location.reload();" slot="actions" is="vl-button" >Vernieuw de pagina</button>
     </vl-alert>`;
   }
 
@@ -168,8 +147,27 @@ class OhrPersoneel extends LitElement {
           Het monitoren van deze gegevens is cruciaal voor ons: het stelt ons in staat om onze personeelsbezetting optimaal te beheren, mogelijke tekortkomingen te identificeren en <br/> proactieve maatregelen te nemen om ervoor te zorgen dat we altijd over het juiste aantal gekwalificeerde toezichthouders beschikken om onze milieuhandhavingsopdracht effectief uit te voeren.
         </p>
       </vl-typography>
-     
       `;
+  }
+  __renderViewSelector() {
+    return html`
+      <h6 is="vl-h6" data-vl-no-space-bottom>
+        Kies hier de gewenste dimensie, en de grafieken geven de
+        overeenkomstige waarden weer
+      </h6>
+      <form is="vl-form">
+        <select
+            is="vl-select"
+            id="view-selector"
+            data-vl-select
+            data-vl-select-search-no-result-limit
+            @change="${this.__changeView}"
+        ></select>
+      </form>
+      `;
+  }
+  async __changeView(e) {
+    this.selectedView = e.detail.value;
   }
 
   __renderDashboard() {
@@ -183,18 +181,6 @@ class OhrPersoneel extends LitElement {
           .filters="${filtersPersoneel}"
           .connection="${this.connection}">
       </qlik-dashboard>
-
-      <section is="vl-region">
-      <div is="vl-grid">
-        <div is="vl-column" data-vl-size="12">
-        <vl-alert
-        data-vl-size="small"
-        data-vl-icon="info-circle"
-        data-vl-title="Info bij visualisatie"
-        data-vl-type="info"
-      >
-        <p>Toevoegen of niet?</p>
-      </vl-alert></section>
     `;
   }
 

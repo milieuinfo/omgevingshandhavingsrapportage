@@ -2,13 +2,14 @@ import {
     JAAR_BEVRAGING,
     INGEVULD_VLAG,
     TEGEL,
-    INSTANTIE
+    INSTANTIE,
+    MR
   } from "./qlik_resources.js";
   
   const filtersPersoneel = [
     {
-      name: "Bevraging Jaartal",
-      id: "Bevraging Jaartal",
+      name: "Jaartal",
+      id: "Jaartal",
       filter: JAAR_BEVRAGING,
     },
     {
@@ -22,10 +23,21 @@ import {
       filter: TEGEL,
     },
     {
-      name: "Instantie",
-      id: "Instantie",
+      name: "Actor",
+      id: "Actor",
       filter: INSTANTIE,
+    },
+    {
+      name: "Actor",
+      id: "Actor",
+      filter: INSTANTIE,
+    },
+    {
+      name: "Beleidsdomein",
+      id: "Beleidsdomein",
+      filter: MR,
     }
+
   ]
   
   export {filtersPersoneel as default};

@@ -18,7 +18,7 @@ class OlrView404 extends LitElement {
       <vl-functional-header
           data-vl-back="Terug"
           data-vl-back-link="/"
-          data-vl-title="Monitoring omgevingsvergunningen"
+          data-vl-title="Omgevingshandhavingsrapportage"
           data-vl-sub-title="Pagina niet gevonden"
           data-vl-link="/">
       </vl-functional-header>

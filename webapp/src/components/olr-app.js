@@ -8,11 +8,15 @@ import "@domg-wc/sections"
 import "./olr-start.js";
 import "./dashboards/olr-windturbine.js";
 import "./dashboards/ohr-personeel.js";
+import "./viewpages/ohr-inleiding.js";
 import "./dashboards/olr-iframe.js";
 import "./olr-cookie.js";
 import "./olr-accessibility.js";
 import "./olr-privacy.js";
 import "./olr-view404.js";
+import "./viewpages/ohr-gewest.js";
+import "./viewpages/ohr-a-gewest.js";
+import "./viewpages/ohr-download.js";
 import {getHeaderFooterId} from "./config/header.js";
 
 class OlrApp extends LitElement {
@@ -61,6 +65,10 @@ class OlrApp extends LitElement {
         { path: "/cookieverklaring", component: "olr-cookie" },
         { path: "/toegankelijkheid", component: "olr-accessibility" },
         { path: "/privacy", component: "olr-privacy" },
+        { path: "/inleiding", component: "ohr-inleiding" },
+        { path: "/gewest", component: "ohr-gewest" },
+        { path: "/a_gewest", component: "ohr-agewest" },
+        { path: "/download", component: "ohr-download" },
         { path: "(.*)", component: "olr-view404" },
     ]);
     Router.go(window.location.pathname)

@@ -24,7 +24,7 @@
               },
               {
                 "type": "label",
-                "label": "Verbalisanten RO",
+                "label": "Verbalisanten VTE",
                 "align-label": "center",
                 "id": "d1528e9a-def2-4e55-bcd6-0e54bc86f465"
               },
@@ -137,4 +137,4 @@
           ]
       ]
     }
-  }
+}
