@@ -38,8 +38,5 @@
   ],
   "publishConfig": {
     "registry": "https://repo.omgeving.vlaanderen.be/artifactory/api/npm/local-npm/"
-  },
-  "engines": {
-    "node": "0.8.x"
   }
 }
