@@ -30,7 +30,7 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --progress",
-    "release": "npm install && npm run build && npm version $npm_package_config_version && git push && npm publish"
+    "release": "npm install && npm run build && npm version $release_version && git push && npm publish"
   },
   "files": [
     "src",
@@ -39,7 +39,7 @@
   "publishConfig": {
     "registry": "https://repo.omgeving.vlaanderen.be/artifactory/api/npm/local-npm/"
   },
-  "engines": {
-    "node": "0.8.x"
+  "volta": {
+    "node": "18.18.2"
   }
 }
