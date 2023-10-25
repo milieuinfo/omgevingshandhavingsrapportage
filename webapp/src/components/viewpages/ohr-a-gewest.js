@@ -19,8 +19,7 @@ class OhrAGewest extends LitElement {
 
   static get properties() {
     return {
-      connected: {type: Boolean},
-      title: {type: String}
+      connected: {type: Boolean}
     }
   }
 
@@ -38,8 +37,6 @@ class OhrAGewest extends LitElement {
 
     this.stardust = await STARDUST(this.connection.app);
     this.connected = true;
-    this.title='TEST';
-    setTimeout(() => this.title = "ietsanders", 1000);
 
     super.connectedCallback();
   }
@@ -113,26 +110,24 @@ class OhrAGewest extends LitElement {
         <h2 is="vl-h2">Cijfers milieuhandhaving</h2>
         <div is="vl-grid">
           <div is="vl-column" data-vl-size="12" class="data-top-bot">
-            <vl-infoblock data-vl-title="${this.title}"
+            <vl-infoblock data-vl-title="Gewestelijke toezichthouders en VTE"
                           data-vl-icon="business-graph-bar">
-              <div is="vl-grid">
-                <div is="vl-column" data-vl-size="6" class="data-top-bot">
-                  <vl-info-tile data-vl-auto-open="true">
-                    <span slot="title">Aantal toezichthouders</span>
-                    <div slot="content">
-                      <img class="icon"
-                           src="assets/icons/PNG-natuurlijke persoon.png"/>
-                      <qlik-visual id="vFyjB"
-                                   type="kpi"
-                                   height="50px"
-                                   .stardust="${this.stardust}"
-                                   @visual-changed="${this.__visualChanged}"></qlik-visual>
-                    </div>
-                  </vl-info-tile>
-                </div>
-              </div>
             </vl-infoblock>
           </div>
+            <div is="vl-column" data-vl-size="6" class="data-top-bot">
+              <vl-info-tile data-vl-auto-open="true">
+                <span slot="title">Aantal toezichthouders</span>
+                <div slot="content">
+                  <img class="icon"
+                       src="assets/icons/PNG-natuurlijke persoon.png"/>
+                  <qlik-visual id="vFyjB"
+                               type="kpi"
+                               height="50px"
+                               .stardust="${this.stardust}"
+                               @visual-changed="${this.__visualChanged}"></qlik-visual>
+                </div>
+              </vl-info-tile>
+            </div>
           <div is="vl-column" data-vl-size=6 class="data-top-bot">
             <vl-info-tile data-vl-auto-open=true>
               <span slot="title">Totaal VTE</span>
