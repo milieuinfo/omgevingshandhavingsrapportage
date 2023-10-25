@@ -2,22 +2,22 @@
   "name": "omgevingshandhavingsrapportage",
   "version": "0.0.43",
   "dependencies": {
-    "@govflanders/vl-ui-icon": "^3.12.24",
-    "@nebula.js/sn-bar-chart": "^1.34.2",
-    "@nebula.js/sn-kpi": "^0.13.4",
-    "@nebula.js/sn-pie-chart": "^1.26.2",
-    "@nebula.js/sn-pivot-table": "^2.3.0",
-    "@nebula.js/sn-table": "^2.7.0",
-    "@nebula.js/stardust": "^4.6.0",
-    "@vaadin/router": "^1.7.4",
-    "bootstrap": "^5.1.3",
-    "bootstrap-icons": "^1.8.3",
-    "enigma.js": "^2.12.0",
-    "react-bootstrap": "^2.4.0",
+    "@govflanders/vl-ui-icon": "3.12.24",
+    "@nebula.js/sn-bar-chart": "1.20.2",
+    "@nebula.js/sn-kpi": "0.9.0",
+    "@nebula.js/sn-pie-chart": "1.19.1",
+    "@nebula.js/sn-pivot-table": "1.0.1",
+    "@nebula.js/sn-table": "1.13.0",
+    "@nebula.js/stardust": "2.10.0",
+    "@vaadin/router": "1.7.4",
+    "bootstrap": "5.1.3",
+    "bootstrap-icons": "1.8.3",
+    "enigma.js": "2.9.0",
+    "react-bootstrap": "2.4.0",
     "uig-webcomponents": "2.3.1",
     "webcomponenten-vl-ui-bom": "4.1.0",
-    "ws": "^8.6.0",
-    "react": "^18.2.0"
+    "ws": "8.6.0",
+    "react": "18.2.0"
   },
   "devDependencies": {
     "css-loader": "^6.5.0",
@@ -38,5 +38,8 @@
   ],
   "publishConfig": {
     "registry": "https://repo.omgeving.vlaanderen.be/artifactory/api/npm/local-npm/"
+  },
+  "engines": {
+    "node": "0.8.x"
   }
 }
