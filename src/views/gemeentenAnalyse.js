@@ -36,9 +36,7 @@ render() {
                               <br/>
                               
                               <p>
-                              De responsgraad voor deze bevraging (of bepaalde vragen in de bevraging) bedraagt geen 100%.
-                              Dit maakt dat bepaalde gemeenten als waarde "niet gekend" of "non-repons" tonen.
-                              Deze worden in een grijs kleur aangetoond op de kaarten.
+                              De responsgraad voor deze bevraging (of bepaalde vragen in de bevraging) bedraagt geen 100%. Dit maakt dat bepaalde gemeenten als waarde "niet gekend" tonen. Onder "niet gekend" wordt verstaan dat het antwoord niet gekend is of de gemeente de bevraging niet heeft ingevuld. Deze worden in een grijs kleur aangetoond op de kaarten.
                               
                               
                               </p>
