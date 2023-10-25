@@ -28,6 +28,7 @@
     "webpack-dev-server": "^4.4.0"
   },
   "scripts": {
+    "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --progress",
     "release": "npm install && npm run build && npm version $npm_package_config_version && git push && npm publish"
   },
