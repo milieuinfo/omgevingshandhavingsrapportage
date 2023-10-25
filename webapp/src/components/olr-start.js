@@ -1,15 +1,19 @@
 import {define, html, LitElement, renderStack} from "./common/commons.js";
-import {Router} from "@vaadin/router";
-import {START_URL} from "./config/iframes.js";
+import {vlElementsStyle} from "@domg-wc/elements";
+
+import "@domg-wc/components/content-header";
+import "@domg-wc/components/alert";
 
 class OlrStart extends LitElement {
 
-  constructor() {
-    super();
+  static get styles(){
+    return [
+        vlElementsStyle
+    ]
   }
 
-  createRenderRoot() {
-    return this;
+  constructor() {
+    super();
   }
 
   render() {

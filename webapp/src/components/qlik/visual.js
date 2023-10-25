@@ -1,6 +1,14 @@
-import {define, html, LitElement, queryById} from "../common/commons.js";
+import {css, define, html, LitElement, queryById} from "../common/commons.js";
+import {vlElementsStyle} from "@domg-wc/elements";
+import {unsafeCSS} from "lit";
 
 class QlikVisual extends LitElement {
+
+  static get styles() {
+    // truken van de foor om styling van sn-kpi goed te krijgen
+    let elements = Array.from(document.getElementsByTagName('style')).filter(e => e.innerText.includes(".sn-kpi"));
+    return [vlElementsStyle, ...elements.map(e => css`${unsafeCSS(e.innerText)}`)]
+  }
 
   static get properties() {
     return {
@@ -10,10 +18,6 @@ class QlikVisual extends LitElement {
       properties: {type: Object},
       stardust: {type: Object}
     }
-  }
-
-  createRenderRoot() {
-    return this;
   }
 
   constructor() {

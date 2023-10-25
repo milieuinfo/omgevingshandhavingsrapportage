@@ -24,9 +24,7 @@ class OlrApp extends LitElement {
   constructor() {
     super();
   }
-  createRenderRoot() {
-    return this;
-  }
+
   render() {
     return html`
       <vl-template>

@@ -3,7 +3,7 @@ import {define, html, LitElement, renderStack} from "../common/commons.js";
 import "../qlik/dashboard.js";
 import viz_dashboard from "../config/<dashboard>.json" assert {type: "json"};
 import filters from "../config/<dashboard>-filters.js";
-import {Qlik} from "../qlik/qlik.js";
+import {Qlik} from "@domg/qlik-lib";
 
 class OlrQlikDashboard extends LitElement {
 

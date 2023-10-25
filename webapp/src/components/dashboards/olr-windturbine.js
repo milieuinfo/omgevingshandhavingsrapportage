@@ -13,8 +13,7 @@ import "../qlik/dashboard.js";
 import {DEFAULT, REFRESH_MEASURE} from "../config/qlik_resources.js";
 import viz_windturbine from "../config/windturbine.json" assert {type: "json"};
 import filters_windturbine from "../config/windturbine-filters.js";
-import {exportCSVFile, exportExcelFile} from "../common/export.js";
-import {Qlik} from "../qlik/qlik.js";
+import {Qlik, exportCSVFile, exportExcelFile} from "@domg/qlik-lib";
 
 class OlrWindturbine extends LitElement {
   static get properties() {

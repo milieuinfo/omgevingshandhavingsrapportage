@@ -43,11 +43,10 @@ export default {
     }),
     nodeResolve(),
     commonjs({
-      include: [`${node}/@nebula.js/**`, `${node}/enigma.js/**`,
-        `${node}/lodash*/**`,]
+      include: [`${node}/lodash*/**`,]
     }),
     json({
-      include: [`${node}/enigma.js/schemas/12.170.2.json`, 'src/components/config/*.json']
-    })
+      include: ['src/components/**']
+    }),
   ]
 };

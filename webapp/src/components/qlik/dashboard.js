@@ -9,11 +9,18 @@ import {
   queryBySelectorAll,
   renderStack
 } from "../common/commons.js";
-import {STARDUST} from "./nebula.js";
+import {STARDUST} from "@domg/qlik-lib";
 
 import "./visual.js";
+import {vlElementsStyle} from "@domg-wc/elements";
 
 class QlikDashboard extends LitElement {
+
+  static get styles() {
+    return [
+        vlElementsStyle
+    ]
+  }
 
   static get properties() {
     return {
@@ -25,10 +32,6 @@ class QlikDashboard extends LitElement {
       connection: {type: Object},
       selected: {type: Object}
     }
-  }
-
-  createRenderRoot() {
-    return this;
   }
 
   async connectedCallback() {
@@ -284,6 +287,7 @@ class QlikDashboard extends LitElement {
         c.classList.add(`olr-select-${state}`);
       });
     })
+    this.filtersLoading = false;
   }
 
   async __changeFilter(e) {
