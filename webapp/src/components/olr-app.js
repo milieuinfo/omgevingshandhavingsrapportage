@@ -6,11 +6,12 @@ import "@domg-wc/elements"
 import "@domg-wc/sections"
 
 import "./olr-start.js";
-import "./dashboards/olr-windturbine.js";
 import "./dashboards/ohr-personeel.js";
 import "./viewpages/ohr-inleiding.js";
-import "./dashboards/olr-iframe.js";
 import "./olr-cookie.js";
+import "./dashboards/ohr-klachten.js";
+import "./dashboards/ohr-controles.js";
+import "./dashboards/ohr-instrumentarium.js";
 import "./olr-accessibility.js";
 import "./olr-privacy.js";
 import "./olr-view404.js";
@@ -55,15 +56,12 @@ class OlrApp extends LitElement {
     const router = new Router(this._outlet);
     router.setRoutes([
         { path: "/", component: "olr-start" },
-        { path: "/projecten", component: "olr-iframe" },
-        { path: "/aanvragen", component: "olr-iframe" },
-        { path: "/meldingen", component: "olr-iframe" },
-        { path: "/beroepen", component: "olr-iframe" },
-        { path: "/doorlooptijden", component: "olr-iframe" },
-        { path: "/windturbine", component: "olr-windturbine" },
         { path: "/personeel", component: "ohr-personeel" },
+        { path: "/klachten", component: "ohr-klachten" },
+        { path: "/controles", component: "ohr-controles" },
         { path: "/cookieverklaring", component: "olr-cookie" },
         { path: "/toegankelijkheid", component: "olr-accessibility" },
+        { path: "/instrumentarium", component: "ohr-instrumentarium" },
         { path: "/privacy", component: "olr-privacy" },
         { path: "/inleiding", component: "ohr-inleiding" },
         { path: "/gewest", component: "ohr-gewest" },

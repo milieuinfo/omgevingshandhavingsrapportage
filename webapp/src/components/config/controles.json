@@ -1,0 +1,36 @@
+{
+    "gewest": {
+      "order": 1,
+      "label": "Gewest",
+      "visualisations": [
+        [
+            {
+                "type": "label",
+                "label": "chart1",
+                "align-label": "center",
+                "id": "PmwAbPB"
+              },
+              {
+                "type": "label",
+                "label": "chart2",
+                "align-label": "center",
+                "id": "PmwAbPB"
+              }
+        ],
+        [
+            {
+                "type": "visual",
+                "id": "PmwAbPB",
+                "height": "350px",
+                "visual_type": "kpi"
+              },
+              {
+                "type": "visual",
+                "id": "PmwAbPB",
+                "height": "350px",
+                "visual_type": "kpi"
+              }
+        ]
+      ]
+    }
+}

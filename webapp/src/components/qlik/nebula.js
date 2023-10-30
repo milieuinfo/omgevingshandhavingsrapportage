@@ -8,10 +8,8 @@ import pivotTable from '@nebula.js/sn-pivot-table';
 import snPieChart from "@nebula.js/sn-pie-chart";
 import lineChart from "@nebula.js/sn-line-chart";
 import sankeyChart from "@nebula.js/sn-sankey-chart";
+import mekkoChart from "@nebula.js/sn-mekko-chart";
 import {theme} from '../common/theme.js';
-
-// const barChart = barchart();
-
 const types = [
   {
     name: "barchart",
@@ -45,7 +43,12 @@ const types = [
   {
     name: "sankeychart",
     load: () => Promise.resolve(sankeyChart),
+  },
+  {
+    name: "mekkochart",
+    load: () => Promise.resolve(mekkoChart),
   }
+
 ];
 
 export function STARDUST(app) {

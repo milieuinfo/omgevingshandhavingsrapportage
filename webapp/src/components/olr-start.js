@@ -1,6 +1,5 @@
 import {define, html, LitElement, renderStack} from "./common/commons.js";
 import {Router} from "@vaadin/router";
-import {START_URL} from "./config/iframes.js";
 
 class OlrStart extends LitElement {
 
@@ -119,7 +118,7 @@ class OlrStart extends LitElement {
           size: 6,
           template: html`
             <div>
-            <a is="vl-doormat" href="/gewest">
+            <a is="vl-doormat" href="/">
               <h2 is="vl-doormat-title">Gewest</h2>
               <div is="vl-doormat-text">
               De cijfers geven een totaalbeeld van de handhavingsactiviteiten van de gewestelijke handhavingsactoren
@@ -133,7 +132,7 @@ class OlrStart extends LitElement {
           size: 6,
           template: html`
             <div>
-            <a is="vl-doormat" href="/provincie">
+            <a is="vl-doormat" href="/">
               <h2 is="vl-doormat-title">Provincies</h2>
               <div is="vl-doormat-text">
               De cijfers geven een totaalbeeld van de handhavingsactiviteiten van de provincies samen in het voorgaande jaar. 
@@ -146,7 +145,7 @@ class OlrStart extends LitElement {
           size: 6,
           template: html`
             <div>
-            <a is="vl-doormat" href="/gemeente">
+            <a is="vl-doormat" href="/">
               <h2 is="vl-doormat-title">Gemeenten</h2>
               <div is="vl-doormat-text">
               In deze analyse worden de handhavingsactiviteiten van de lokale handhavingsactoren weergegeven.
@@ -158,7 +157,7 @@ class OlrStart extends LitElement {
           size: 6,
           template: html`
             <div>
-            <a is="vl-doormat" href="/hogeraad">
+            <a is="vl-doormat" href="/">
               <h2 is="vl-doormat-title">Hoge Raad</h2>
               <div is="vl-doormat-text">
               Bekijk de cijfers van de Hoge Raad voor de Handhavingsuitvoering
@@ -170,7 +169,7 @@ class OlrStart extends LitElement {
           size: 6,
           template: html`
             <div>
-            <a is="vl-doormat" href="/strafrechtelijk">
+            <a is="vl-doormat" href="/">
               <h2 is="vl-doormat-title">Strafrechtelijke en bestuurlijke vervolgtraject</h2>
               <div is="vl-doormat-text">
               Bekijk de cijfers inzake het strafrechtelijke en bestuurlijke vervolgtraject.
@@ -211,7 +210,7 @@ class OlrStart extends LitElement {
           size: 6,
           template: html`
             <div>
-            <a is="vl-doormat" href="/windturbine">
+            <a is="vl-doormat" href="/klachten">
               <h2 is="vl-doormat-title">Klachten</h2>
               <div is="vl-doormat-text"> 
               Een voorstelling van de klachten die werden ontvangen bij de verschillende omgevingshandhavingsactoren op gewestelijk, provinciaal en gemeentelijk niveau.
@@ -223,7 +222,7 @@ class OlrStart extends LitElement {
           size: 6,
           template: html`
             <div>
-            <a is="vl-doormat" href="/aanvragen">
+            <a is="vl-doormat" href="/controles">
               <h2 is="vl-doormat-title">Controles</h2>
               <div is="vl-doormat-text"> 
               Deze pagina toont een beeld van de controles die uitgevoerd worden door de verschillende omgevingshandhavingsactoren op gewestelijk, provinciaal en gemeentelijk niveau.
@@ -235,7 +234,7 @@ class OlrStart extends LitElement {
           size: 6,
           template: html`
             <div>
-            <a is="vl-doormat" href="/doorlooptijden">
+            <a is="vl-doormat" href="/instrumentarium">
               <h2 is="vl-doormat-title">Instrumentarium</h2>
               <div is="vl-doormat-text">
               Een weergave van het instrumentarium dat ingezet wordt door de verschillende omgevingshandhavingsactoren op gewestelijk, provinciaal en gemeentelijk niveau.
@@ -247,7 +246,7 @@ class OlrStart extends LitElement {
           size: 6,
           template: html`
             <div>
-            <a is="vl-doormat" href="/beroepen">
+            <a is="vl-doormat" href="/">
               <h2 is="vl-doormat-title">Hoge raad voor de handhavingsuitvoering</h2>
               <div is="vl-doormat-text">
               Een voorstelling van het beeld van de activiteiten van de Hoge Raad voor de Handhavingsuitvoering doorheen de jaren.
@@ -259,7 +258,7 @@ class OlrStart extends LitElement {
           size: 6,
           template: html`
             <div ">
-            <a is="vl-doormat" href="/beroepen">
+            <a is="vl-doormat" href="/">
               <h2 is="vl-doormat-title">Strafrechtelijke en bestuurlijke vervolgtraject</h2>
               <div is="vl-doormat-text">
               Deze pagina toont de evolutie van het strafrechtelijke en bestuurlijke vervolgtraject inzake de omgevingshandhaving.
