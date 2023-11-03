@@ -1,0 +1,40 @@
+[
+  [
+    {
+      "title": "Aantal toezichthouders",
+      "icon": "assets/icons/PNG-natuurlijke persoon.png",
+      "align": "left",
+      "id": "vFyjB",
+      "type": "kpi",
+      "height": "50px",
+      "visuals": [
+        [
+          {
+            "title": "Aantal toezichthouders",
+            "icon": "assets/icons/PNG-natuurlijke persoon.png",
+            "align": "center",
+            "id": "vFyjB",
+            "type": "kpi",
+            "height": "50px"
+          },
+          {
+            "title": "Totaal VTE",
+            "icon": "assets/icons/PNG-trainer_B.png",
+            "align": "center",
+            "id": "GcHdjK",
+            "type": "kpi",
+            "height": "50px"
+          }
+        ]
+      ]
+    },
+    {
+      "title": "Totaal VTE",
+      "icon": "assets/icons/PNG-trainer_B.png",
+      "align": "center",
+      "id": "GcHdjK",
+      "type": "kpi",
+      "height": "50px"
+    }
+  ]
+]

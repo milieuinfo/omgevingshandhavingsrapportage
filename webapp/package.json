@@ -22,10 +22,10 @@
   "author": "fnour",
   "license": "ISC",
   "dependencies": {
-    "@domg-wc/common-utilities": "^1.20.0-develop-infoblock.1",
-    "@domg-wc/components": "^1.20.0-develop-infoblock.1",
-    "@domg-wc/elements": "^1.20.0-develop-infoblock.1",
-    "@domg-wc/sections": "^1.20.0-develop-infoblock.1",
+    "@domg-wc/common-utilities": "^1.20.0-develop-infoblock.2",
+    "@domg-wc/components": "^1.20.0-develop-infoblock.2",
+    "@domg-wc/elements": "^1.20.0-develop-infoblock.2",
+    "@domg-wc/sections": "^1.20.0-develop-infoblock.2",
     "@domg/qlik-lib": "1.0.5",
     "@vaadin/router": "1.7.5",
     "lit": "3.0.0"

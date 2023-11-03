@@ -15,6 +15,7 @@ class QlikVisual extends LitElement {
       type: {type: String},
       id: {type: String},
       height: {type: String},
+      additionalStyle: {type: String},
       properties: {type: Object},
       stardust: {type: Object}
     }
@@ -23,6 +24,7 @@ class QlikVisual extends LitElement {
   constructor() {
     super();
     this.properties = {};
+    this.additionalStyle = '';
   }
 
   async updated(changedProperties) {
@@ -50,8 +52,9 @@ class QlikVisual extends LitElement {
   }
 
   render() {
+    let style = css`${unsafeCSS(`${this.additionalStyle};height: ${this.height};`)}`;
     return html`
-      <div id="visual-${this.id}" style="height: ${this.height}; position: absolute; width:100%; bottom:0"></div>
+      <div id="visual-${this.id}" style="${style}"></div>
     `;
   }
 

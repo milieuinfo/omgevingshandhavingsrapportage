@@ -248,7 +248,8 @@ class QlikDashboard extends LitElement {
                        height="${v.height}"
                        .stardust="${this.stardust}"
                        .properties="${v.properties}"
-                       @visual-changed="${this.__visualChanged}"></qlik-visual>
+                       @visual-changed="${this.__visualChanged}"
+                       additionalStyle="position: absolute; width:100%; bottom:0"></qlik-visual>
         </div>
     `;
   }

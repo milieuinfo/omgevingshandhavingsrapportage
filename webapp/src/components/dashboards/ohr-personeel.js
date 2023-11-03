@@ -40,7 +40,10 @@ class OhrPersoneel extends LitElement {
 
   __renderIntroduction() {
     if (!this.initialized) {
-      return html``;
+      return html`
+        <vl-loader
+            data-vl-text="Pagina is aan het laden"
+        ></vl-loader>`;
     }
     return html`
       <vl-typography slot="introduction">
