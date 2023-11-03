@@ -215,7 +215,7 @@ class OlrStart extends LitElement {
           size: 6,
           template: html`
             <div>
-            <a is="vl-doormat" href="/windturbine">
+            <a is="vl-doormat" href="/klachten">
               <h2 is="vl-doormat-title">Klachten</h2>
               <div is="vl-doormat-text"> 
               Een voorstelling van de klachten die werden ontvangen bij de verschillende omgevingshandhavingsactoren op gewestelijk, provinciaal en gemeentelijk niveau.
@@ -227,7 +227,7 @@ class OlrStart extends LitElement {
           size: 6,
           template: html`
             <div>
-            <a is="vl-doormat" href="/aanvragen">
+            <a is="vl-doormat" href="/controles">
               <h2 is="vl-doormat-title">Controles</h2>
               <div is="vl-doormat-text"> 
               Deze pagina toont een beeld van de controles die uitgevoerd worden door de verschillende omgevingshandhavingsactoren op gewestelijk, provinciaal en gemeentelijk niveau.
@@ -239,7 +239,7 @@ class OlrStart extends LitElement {
           size: 6,
           template: html`
             <div>
-            <a is="vl-doormat" href="/doorlooptijden">
+            <a is="vl-doormat" href="/instrementarium">
               <h2 is="vl-doormat-title">Instrumentarium</h2>
               <div is="vl-doormat-text">
               Een weergave van het instrumentarium dat ingezet wordt door de verschillende omgevingshandhavingsactoren op gewestelijk, provinciaal en gemeentelijk niveau.
