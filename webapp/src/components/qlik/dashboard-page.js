@@ -9,7 +9,7 @@ import {
   renderStack
 } from "../common/commons.js";
 
-import "./dashboard.js";
+import "../qlik/dashboard.js";
 import {DEFAULT, REFRESH_MEASURE} from "../config/qlik_resources.js";
 import {Qlik, exportExcelFile, exportCSVFile} from "@domg/qlik-lib";
 
@@ -62,19 +62,22 @@ class DashboardPage extends LitElement {
     this.refresh = (await this.connection.getCubeValues(
         'refresh'))[0]["Refresh rate"];
     this.initialized = true;
-    this.dispatchEvent(new CustomEvent('initialized'));
+    this.dispatchEvent(new CustomEvent("initialized"))
     super.connectedCallback();
   }
 
   async __bindFilters() {
-    await bindVlSelect({
-      component: queryById(this)("view-selector"),
-      choices: Object.keys(this.views).map((v) => {
-        return {label: this.views[v].label, value: v};
-      }),
-      selectedChoices: [this.selectedView],
-      sortFilter: comparingWithFunction((x) => x.order)
-    })
+    let component = queryById(this)("view-selector");
+    if (component) {
+      await bindVlSelect({
+        component: component,
+        choices: Object.keys(this.views).map((v) => {
+          return {label: this.views[v].label, value: v};
+        }),
+        selectedChoices: [this.selectedView],
+        sortFilter: comparingWithFunction((x) => x.order)
+      })
+    }
   }
 
   async updated(_changedProperties) {
@@ -119,9 +122,6 @@ class DashboardPage extends LitElement {
   }
 
   __renderDownloadButton() {
-    if (!this.exportId) {
-      return html``;
-    }
     return html`
       <div is="vl-action-group" style="float:right;margin-top: 3rem">
         <select id="format-select" is="vl-select"
@@ -160,6 +160,9 @@ class DashboardPage extends LitElement {
   }
 
   __renderViewSelector() {
+    if (Array.isArray(this.views)) {
+      return html``;
+    }
     return html`
       <h6 is="vl-h6" data-vl-no-space-bottom>
         Kies hier de gewenste dimensie, en de grafieken geven de
@@ -196,6 +199,15 @@ class DashboardPage extends LitElement {
   __renderDashboard() {
     if (this.closed) {
       return this.__renderIdleTime();
+    }
+    if (Array.isArray(this.views)) {
+      return html`
+      <qlik-dashboard
+          id="${this.id}"
+          .visuals="${this.views}"
+          .filters="${this.filters}"
+          .connection="${this.connection}">
+      </qlik-dashboard>`;
     }
     return html`
       <qlik-dashboard

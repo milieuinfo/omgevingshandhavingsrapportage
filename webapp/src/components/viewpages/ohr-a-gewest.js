@@ -107,51 +107,51 @@ class OhrAGewest extends LitElement {
 
   __renderPage() {
     return html`
-        <h2 is="vl-h2">Cijfers milieuhandhaving</h2>
-        <div is="vl-grid">
-          <div is="vl-column" data-vl-size="12" class="data-top-bot">
-            <vl-infoblock data-vl-title="Gewestelijke toezichthouders en VTE"
-                          data-vl-icon="business-graph-bar">
-            </vl-infoblock>
-          </div>
-            <div is="vl-column" data-vl-size="6" class="data-top-bot">
-              <vl-info-tile data-vl-auto-open="true">
-                <span slot="title">Aantal toezichthouders</span>
-                <div slot="content">
-                  <img class="icon"
-                       src="assets/icons/PNG-natuurlijke persoon.png"/>
-                  <qlik-visual id="vFyjB"
-                               type="kpi"
-                               height="50px"
-                               .stardust="${this.stardust}"
-                               @visual-changed="${this.__visualChanged}"></qlik-visual>
-                </div>
-              </vl-info-tile>
-            </div>
-          <div is="vl-column" data-vl-size=6 class="data-top-bot">
-            <vl-info-tile data-vl-auto-open=true>
-              <span slot="title">Totaal VTE</span>
-              <div slot="content">
-                <img class="icon" src="assets/icons/PNG-trainer_B.png">
-                <qlik-visual id="GcHdjK"
-                             type="kpi"
-                             height="50px"
-                             .stardust="${this.stardust}"
-                             @visual-changed="${this.__visualChanged}"></qlik-visual>
+      <h2 is="vl-h2">Cijfers milieuhandhaving</h2>
+      <div is="vl-grid">
+        <div is="vl-column" data-vl-size="12">
+          <vl-infoblock data-vl-title="Gewestelijke toezichthouders en VTE"
+                        data-vl-icon="business-graph-bar">
+            <div is="vl-grid" data-vl-is-stacked>
+              <div is="vl-column" data-vl-size="6">
+                <vl-info-tile data-vl-auto-open="true">
+                  <span slot="title">Aantal toezichthouders</span>
+                  <div slot="content">
+                    <img class="icon"
+                         src="assets/icons/PNG-natuurlijke persoon.png"/>
+                    <qlik-visual id="vFyjB"
+                                 type="kpi"
+                                 height="50px"
+                                 .stardust="${this.stardust}"
+                                 @visual-changed="${this.__visualChanged}"></qlik-visual>
+                  </div>
+                </vl-info-tile>
               </div>
-            </vl-info-tile>
-          </div>
-        </div>
-        <div is="vl-grid">
-          <div is="vl-column" data-vl-size=12>
-            <vl-info-tile data-vl-auto-open=true>
+              <div is="vl-column" data-vl-size="6">
+                <vl-info-tile data-vl-auto-open="true">
+                  <span slot="title">Totaal VTE</span>
+                  <div slot="content">
+                    <img class="icon" src="assets/icons/PNG-trainer_B.png">
+                    <qlik-visual id="GcHdjK"
+                                 type="kpi"
+                                 height="50px"
+                                 .stardust="${this.stardust}"
+                                 @visual-changed="${this.__visualChanged}"></qlik-visual>
+                  </div>
+                </vl-info-tile>
+              </div>
+              <div is="vl-column" data-vl-size="12">
+                <vl-info-tile data-vl-auto-open="true">
                                     <span slot="title">Classificatie VTE
                                     </span>
-              <div slot="content">
+                  <div slot="content">
+                  </div>
+                </vl-info-tile>
               </div>
-            </vl-info-tile>
-          </div>
-        </div>`;
+            </div>
+          </vl-infoblock>
+        </div>
+      </div>`;
   }
 }
 

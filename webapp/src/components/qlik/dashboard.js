@@ -54,6 +54,7 @@ class QlikDashboard extends LitElement {
       // do nothing
     }
     this.initialized = true;
+    this.search();
   }
 
   updated(_changedProperties) {
@@ -233,24 +234,23 @@ class QlikDashboard extends LitElement {
       })
   }
 
+
   __renderVisual(v) {
-    if (v.type === 'label') {
-      return html`
+    return html`
         <label
             is="vl-form-message"
             for="visual-${v.id}"
             class="visual-label-100-${v["align-label"]}"
-        >${v.label}</label>`;
-    }
-    if (v.type === 'visual') {
-      return html`
+        >${v.label}</label>
+        <div style="min-height: ${v.height}">
           <qlik-visual id="${v.id}" 
                        type="${v.visual_type}"
                        height="${v.height}"
                        .stardust="${this.stardust}"
                        .properties="${v.properties}"
-                       @visual-changed="${this.__visualChanged}"></qlik-visual>`;
-    }
+                       @visual-changed="${this.__visualChanged}"></qlik-visual>
+        </div>
+    `;
   }
 
   async __bindFilters() {
@@ -287,7 +287,6 @@ class QlikDashboard extends LitElement {
         c.classList.add(`olr-select-${state}`);
       });
     })
-    this.filtersLoading = false;
   }
 
   async __changeFilter(e) {

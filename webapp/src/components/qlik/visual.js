@@ -51,7 +51,7 @@ class QlikVisual extends LitElement {
 
   render() {
     return html`
-      <div id="visual-${this.id}" style="height: ${this.height}"></div>
+      <div id="visual-${this.id}" style="height: ${this.height}; position: absolute; width:100%; bottom:0"></div>
     `;
   }
 

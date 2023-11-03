@@ -1,5 +1,5 @@
 import commonjs from "@rollup/plugin-commonjs";
-import {fromRollup, rollupAdapter} from '@web/dev-server-rollup';
+import {rollupAdapter} from '@web/dev-server-rollup';
 import replace from "@rollup/plugin-replace";
 import json from "@rollup/plugin-json";
 
@@ -17,16 +17,16 @@ export default {
   rootDir: '.',
   open: true,
   plugins: [
-    fromRollup(replace)({
+    rollupAdapter(replace({
       preventAssignment: true,
       'process.env.NODE_ENV': JSON.stringify('development')
-    }),
-    fromRollup(commonjs)({
+    })),
+    rollupAdapter(commonjs({
       include: [`${node}/lodash*/**`,],
       requireReturnsDefault: true
-    }),
+    })),
     rollupAdapter(json({
       include: ['src/components/**']
-    })),
+    }))
   ]
 };
