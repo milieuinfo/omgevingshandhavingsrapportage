@@ -338,7 +338,7 @@ export class GewestelijkAnalyseView extends LitElement {
                                   </vl-infoblock>
                               </div>
                           </div>
-  
+                      </section>
                           <section  is="vl-region">
                               <div is="vl-grid" id="content-3">
                                   <h2 is="vl-h2">Cijfers handhaving ruimtelijke ordening</h2>
