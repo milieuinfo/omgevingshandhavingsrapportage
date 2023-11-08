@@ -18,7 +18,7 @@ class QlikDashboard extends LitElement {
 
   static get styles() {
     return [
-        vlElementsStyle
+      vlElementsStyle
     ]
   }
 
@@ -30,7 +30,7 @@ class QlikDashboard extends LitElement {
       visuals: {type: Array},
       filters: {type: Array},
       connection: {type: Object},
-      selected: {type: Object}
+      selected: {type: Object},
     }
   }
 
@@ -49,7 +49,8 @@ class QlikDashboard extends LitElement {
 
   async firstUpdated(_changedProperties) {
     try {
-      await Promise.all(this.filters.map(f => this.connection.addFilters(f.filter)));
+      await Promise.all(
+          this.filters.map(f => this.connection.addFilters(f.filter)));
     } catch (e) {
       // do nothing
     }
@@ -58,7 +59,7 @@ class QlikDashboard extends LitElement {
   }
 
   updated(_changedProperties) {
-    if (this.initialized) {
+    if (this.initialized && this.filters) {
       this.__bindFilters();
     }
   }
@@ -110,37 +111,40 @@ class QlikDashboard extends LitElement {
         `))}
       </style>
       ${renderStack(
-          {
-            size: 2,
-            template: this.__renderFilters(),
-          },
-          {
-            size: 10,
-            template: this.__renderVisualisations(),
-          }
+          this.__renderFilters(), this.__renderVisualisations()
       )}
     `;
   }
 
   __renderFilters() {
-    return html`
-      <div is="vl-search-filter">
-        <form is="vl-form">
-          <section>
-            <h2>Filters</h2>
-            ${renderStack(
-                ...this.__renderPills(),
-                ...this.filters.map((f) => {
-                  return {
-                    size: 12,
-                    id: f.id,
-                    template: this.__renderFilter(f),
-                  };
-                }))}
-          </section>
-        </form>
-      </div>
-    `
+    if (!this.hasFilters()) {
+      return {};
+    }
+    return {
+      size: 2,
+      template: html`
+        <div is="vl-search-filter">
+          <form is="vl-form">
+            <section>
+              <h2>Filters</h2>
+              ${renderStack(
+                  ...this.__renderPills(),
+                  ...this.filters.map((f) => {
+                    return {
+                      size: 12,
+                      id: f.id,
+                      template: this.__renderFilter(f),
+                    };
+                  }))}
+            </section>
+          </form>
+        </div>
+      `
+    };
+  }
+
+  hasFilters() {
+    return this.filters && this.filters.length !== 0;
   }
 
   __renderPills() {
@@ -212,52 +216,55 @@ class QlikDashboard extends LitElement {
   }
 
   __renderVisualisations() {
-    return renderStack(...this.visuals.flatMap(
-        visualRow => this.__renderVisualRow(visualRow)));
+    return {
+      size: this.hasFilters() ? 10 : 12,
+      template: renderStack(...this.visuals.flatMap(
+          visualRow => this.__renderVisualRow(visualRow)))
+    }
   }
 
   __renderVisualRow(visualRow) {
-      return visualRow.map(v => {
-        if (!Array.isArray(v)) {
-          return {
-            size: v.colSize || 1,
-            maxSize: visualRow.length,
-            template: this.__renderVisual(v)
-          }
-        } else {
-          return {
-            size: 1,
-            maxSize: visualRow.length,
-            template: renderStack(...this.__renderVisualRow(v))
-          }
+    return visualRow.map(v => {
+      if (!Array.isArray(v)) {
+        return {
+          size: v.colSize || 1,
+          maxSize: visualRow.length,
+          template: this.__renderVisual(v)
         }
-      })
+      } else {
+        return {
+          size: 1,
+          maxSize: visualRow.length,
+          template: renderStack(...this.__renderVisualRow(v))
+        }
+      }
+    })
   }
-
 
   __renderVisual(v) {
     return html`
-        <label
-            is="vl-form-message"
-            for="visual-${v.id}"
-            class="visual-label-100-${v["align-label"]}"
-        >${v.label}</label>
-        <div style="min-height: ${v.height}">
-          <qlik-visual id="${v.id}" 
-                       type="${v.visual_type}"
-                       height="${v.height}"
-                       .stardust="${this.stardust}"
-                       .properties="${v.properties}"
-                       @visual-changed="${this.__visualChanged}"
-                       additionalStyle="position: absolute; width:100%; bottom:0"></qlik-visual>
-        </div>
+      <label
+          is="vl-form-message"
+          for="visual-${v.id}"
+          class="visual-label-100-${v["align-label"]}"
+      >${v.label}</label>
+      <div style="min-height: ${v.height}">
+        <qlik-visual id="${v.id}"
+                     type="${v.visual_type}"
+                     height="${v.height}"
+                     .stardust="${this.stardust}"
+                     .properties="${v.properties}"
+                     @visual-changed="${this.__visualChanged}"
+                     additionalStyle="position: absolute; width:95%; bottom:0"></qlik-visual>
+      </div>
     `;
   }
 
   async __bindFilters() {
     let filterVs = (await Promise.all(
         this.filters.map(async (f) => {
-              let filterValues = await this.connection.getFilterValues(f.name, true);
+              let filterValues = await this.connection.getFilterValues(f.name,
+                  true);
               bindVlSelect({
                 component: queryById(this)(f.id),
                 choices: filterValues.map((f) => {
@@ -314,7 +321,8 @@ class QlikDashboard extends LitElement {
       func: (async () => {
         const selections = await this.connection.app.mSelectionsAll();
         this.selected = selections.qSelections.map(qs => {
-          let filter = this.filters.find(f => this.__fieldValue(f) === qs.qField);
+          let filter = this.filters.find(
+              f => this.__fieldValue(f) === qs.qField);
           if (filter) {
             let newValues = [...queryById(this)(filter.id).values,
               ...qs.qSelectedFieldSelectionInfo.map(sel => sel.qName)];

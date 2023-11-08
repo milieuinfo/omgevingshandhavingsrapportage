@@ -24,18 +24,16 @@ class OhrPersoneel extends LitElement {
           data-vl-sub-title="Meerjarenrapportage personeel"
           data-vl-link="/personeel">
       </vl-functional-header>
-      <div style="margin: 0px 25px">
         <dashboard-page
             title="Personeel"
             url="omgevingsloketrapport.omgeving.vlaanderen.be"
             appId="6960c6d8-493a-4489-a428-367b779be6f9"
             .views="${viz_personeel}"
-            .filters="${filtersPersoneel}"
             @initialized="${() => this.initialized = true}"
         >
           ${this.__renderIntroduction()}
         </dashboard-page>
-      </div></section>`;
+      </section>`;
   }
 
   __renderIntroduction() {

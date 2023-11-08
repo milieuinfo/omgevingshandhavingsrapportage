@@ -36,5 +36,14 @@
       "type": "kpi",
       "height": "50px"
     }
-  ]
+  ],
+  [
+  {
+    "title": "Totaal VTE",
+    "icon": "assets/icons/PNG-trainer_B.png",
+    "align": "center",
+    "id": "GcHdjK",
+    "type": "kpi",
+    "height": "50px"
+  }]
 ]

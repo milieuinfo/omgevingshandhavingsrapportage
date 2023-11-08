@@ -239,7 +239,7 @@ class OlrStart extends LitElement {
           size: 6,
           template: html`
             <div>
-            <a is="vl-doormat" href="/instrementarium">
+            <a is="vl-doormat" href="/instrumentarium">
               <h2 is="vl-doormat-title">Instrumentarium</h2>
               <div is="vl-doormat-text">
               Een weergave van het instrumentarium dat ingezet wordt door de verschillende omgevingshandhavingsactoren op gewestelijk, provinciaal en gemeentelijk niveau.

@@ -1,36 +1,36 @@
 {
-    "gewest": {
-      "order": 1,
-      "label": "Gewest",
-      "visualisations": [
-        [
-            {
-                "type": "label",
-                "label": "",
-                "align-label": "center",
-                "id": "SemjPnJ"
-              },
-              {
-                "type": "label",
-                "label": "chart2",
-                "align-label": "center",
-                "id": "MjxWYP"
-              }
-        ],
-        [
-            {
-                "type": "visual",
-                "id": "SemjPnJ",
-                "height": "350px",
-                "visual_type": "barchart"
-              },
-              {
-                "type": "visual",
-                "id": "MjxWYP",
-                "height": "350px",
-                "visual_type": "mekkochart"
-              }
-        ]
+  "gewest": {
+    "order": 1,
+    "label": "Gewest",
+    "visualisations": [
+      [
+        {
+          "type": "label",
+          "label": "",
+          "align-label": "center",
+          "id": "SemjPnJ"
+        },
+        {
+          "type": "label",
+          "label": "chart2",
+          "align-label": "center",
+          "id": "MjxWYP"
+        }
+      ],
+      [
+        {
+          "type": "visual",
+          "id": "SemjPnJ",
+          "height": "350px",
+          "visual_type": "barchart"
+        },
+        {
+          "type": "visual",
+          "id": "MjxWYP",
+          "height": "350px",
+          "visual_type": "mekkochart"
+        }
       ]
-    }
+    ]
+  }
 }

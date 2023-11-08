@@ -39,6 +39,19 @@ class OhrAGewest extends LitElement {
 
     this.connected = true;
 
+    this.tiles = [
+      {
+        title: "Gewestelijke toezichthouders en VTE",
+        vis: viz_gewest,
+        intro: "Sjakamak"
+      },
+      {
+        title: "Klachten",
+        vis: viz_gewest,
+        intro: "Sjakamak2"
+      }
+    ]
+
     super.connectedCallback();
   }
 
@@ -59,53 +72,6 @@ class OhrAGewest extends LitElement {
       </section>`;
   }
 
-  // __renderPageInfo() {
-  //   if (!this.connected) {
-  //     return {};
-  //   }
-  //   const elementsIdPairsGewest = [
-  //     {element: document.querySelector('.MIL-KPI-Toezichthouder'), id: "vFyjB"},
-  //     {element: document.querySelector('.MIL-KPI-VTE'), id: "GcHdjK"}
-  //
-  //   ];
-  //   elementsIdPairsGewest.forEach(async (item) => {
-  //     const model = await this.connection.app.getObject(item.id);
-  //     const modelLayout = await model.getLayout();
-  //     const data = [];
-  //     const columns = modelLayout.qHyperCube.qSize.qcx;
-  //     const totalheight = modelLayout.qHyperCube.qSize.qcy;
-  //     const pageheight = 5;
-  //     const numberOfPages = 3;
-  //     for (let i = 0; i < numberOfPages; i++) {
-  //       const page = {
-  //         qTop: pageheight * i,
-  //         qLeft: 0,
-  //         qWidth: columns,
-  //         qHeight: pageheight,
-  //       };
-  //       const row = await model.getHyperCubeData("/qHyperCubeDef", [page]);
-  //       data.push(...row[0].qMatrix);
-  //       console.log(data);
-  //     }
-  //   });
-  //
-  //   this.initialized = true;
-  //   let pageInfo = []
-  //   if (!this.initialized) {
-  //     pageInfo = [{
-  //       size: 12, template: html`
-  //         <vl-loader
-  //             data-vl-text="Pagina is aan het laden"
-  //         ></vl-loader>`,
-  //     }];
-  //   } else {
-  //     pageInfo = [{
-  //       size: 12, template: this.__renderPage(),
-  //     }];
-  //   }
-  //   return [...pageInfo];
-  // }
-
   __renderPage() {
     if (!this.connected) {
       return html`
@@ -117,12 +83,14 @@ class OhrAGewest extends LitElement {
       <h2 is="vl-h2">Cijfers milieuhandhaving</h2>
       <div is="vl-grid">
         <div is="vl-column" data-vl-size="12">
-          <qlik-infoblock title="Gewestelijke toezichthouders en VTE" 
-                          icon="business-graph-bar" 
-                          .visuals="${viz_gewest}" 
-                          .connection="${this.connection}">
-            <span>Slot</span>
-          </qlik-infoblock>
+          ${this.tiles.map(tile => html`
+            <qlik-infoblock title="${tile.title}"
+                            icon="business-graph-bar"
+                            .visuals="${tile.vis}"
+                            .connection="${this.connection}">
+              <span>${tile.intro}</span>
+            </qlik-infoblock>
+          `)}
         </div>
       </div>`;
   }

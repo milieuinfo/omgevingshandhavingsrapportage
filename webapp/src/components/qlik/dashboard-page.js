@@ -11,7 +11,7 @@ import {
 
 import "../qlik/dashboard.js";
 import {DEFAULT, REFRESH_MEASURE} from "../config/qlik_resources.js";
-import {Qlik, exportExcelFile, exportCSVFile} from "@domg/qlik-lib";
+import {exportCSVFile, exportExcelFile, Qlik} from "@domg/qlik-lib";
 
 import "@domg-wc/components/loader";
 import "@domg-wc/components/annotation";
@@ -36,7 +36,7 @@ class DashboardPage extends LitElement {
       views: {type: Object},
       selectedView: {type: String},
       closed: {type: Boolean},
-      filters: {type: Array},
+      filters: {type: Array}
     }
   }
 
@@ -45,7 +45,6 @@ class DashboardPage extends LitElement {
     this.connected = false;
     this.initialized = false;
     this.closed = false;
-    this.selectedView = "project";
   }
 
   async connectedCallback() {
@@ -66,7 +65,7 @@ class DashboardPage extends LitElement {
     super.connectedCallback();
   }
 
-  async __bindFilters() {
+  async __bindViews() {
     let component = queryById(this)("view-selector");
     if (component) {
       await bindVlSelect({
@@ -81,14 +80,17 @@ class DashboardPage extends LitElement {
   }
 
   async updated(_changedProperties) {
-    if (this.initialized) {
-      this.__bindFilters();
+    if (this.initialized && this.views) {
+      this.__bindViews();
     }
   }
 
   render() {
+    if (!this.selectedView && this.views) {
+      this.selectedView = Object.keys(this.views)[0];
+    }
     return html`
-      <div style="margin: 0px 25px">
+      <div style="margin: 0px 50px">
         ${renderStack(...this.__renderPageInfo())}
       </div>
     `;
@@ -104,39 +106,38 @@ class DashboardPage extends LitElement {
           ></vl-loader>`,
       }];
     }
-    return [{
-      size: 9, template: this.__renderTitle(),
-    },
-      {
-        size: 3, template: this.__renderDownloadButton(),
-      },
-      {
-        size: 12, template: this.__renderIntroduction(),
-      },
-      {
-        size: 12, template: this.__renderViewSelector(),
-      }, {
-        size: 12, template: this.__renderDashboard(),
-      }];
+    return [
+      this.__renderTitle(),
+      this.__renderDownloadButton(),
+      this.__renderIntroduction(),
+      this.__renderViewSelector(),
+      this.__renderDashboard(),
+    ];
 
   }
 
   __renderDownloadButton() {
-    return html`
-      <div is="vl-action-group" style="float:right;margin-top: 3rem">
-        <select id="format-select" is="vl-select"
-                style="margin-right: 1.4rem">
-          <option value="xlsx">Excel</option>
-          <option value="csv">CSV</option>
-        </select>
-        <button is="vl-button"
-                @click="${(e) => performWithLoader(e.target,
-                    this.export.bind(this))}">
+    if (!this.exportId) {
+      return {};
+    }
+    return {
+      size: 3,
+      template: html`
+        <div is="vl-action-group" style="float:right;margin-top: 3rem">
+          <select id="format-select" is="vl-select"
+                  style="margin-right: 1.4rem">
+            <option value="xlsx">Excel</option>
+            <option value="csv">CSV</option>
+          </select>
+          <button is="vl-button"
+                  @click="${(e) => performWithLoader(e.target,
+                      this.export.bind(this))}">
                         <span is="vl-icon" data-vl-icon="file-download"
                               data-vl-before></span>
-          Download
-        </button>
-      </div>`;
+            Download
+          </button>
+        </div>`
+    };
   }
 
   __renderIdleTime() {
@@ -154,77 +155,99 @@ class DashboardPage extends LitElement {
   }
 
   __renderIntroduction() {
-    return html`
-      <slot name="introduction"></slot>
-    `;
+    return {
+      size: 12,
+      template: html`
+        <slot name="introduction"></slot>
+      `
+    };
   }
 
   __renderViewSelector() {
-    if (Array.isArray(this.views)) {
-      return html``;
+    let template = html``;
+    if (!Array.isArray(this.views)) {
+      template = html`
+        <h6 is="vl-h6" data-vl-no-space-bottom>
+          Kies hier de gewenste dimensie, en de grafieken geven de
+          overeenkomstige waarden weer
+        </h6>
+        <form is="vl-form">
+          <select
+              is="vl-select"
+              id="view-selector"
+              data-vl-select
+              data-vl-select-search-no-result-limit
+              @change="${this.__changeView}"
+          ></select>
+        </form>
+      `;
     }
-    return html`
-      <h6 is="vl-h6" data-vl-no-space-bottom>
-        Kies hier de gewenste dimensie, en de grafieken geven de
-        overeenkomstige waarden weer
-      </h6>
-      <form is="vl-form">
-        <select
-            is="vl-select"
-            id="view-selector"
-            data-vl-select
-            data-vl-select-search-no-result-limit
-            @change="${this.__changeView}"
-        ></select>
-      </form>
-    `;
+
+    return {
+      size: 12, template: template
+    }
   }
 
   __renderTitle() {
-    return html`
-      <h1 is="vl-h1" data-vl-no-space-bottom style="padding-top: 3rem">
-        ${this.title}</h1>
-      <p is="vl-icon-wrapper">
-        <vl-annotation>
-          <span>Laatste wijziging:</span>
-        </vl-annotation>
-        <span is="vl-icon" data-vl-icon="calendar" data-vl-before data-vl-after
-              data-vl-light></span>
-        <vl-annotation>
-          <span>${this.refresh}</span>
-        </vl-annotation>
-      </p>`;
+    return {
+      size: this.exportId ? 9 : 12,
+      template: html`
+        <h1 is="vl-h1" data-vl-no-space-bottom style="padding-top: 3rem">
+          ${this.title}</h1>
+        <p is="vl-icon-wrapper">
+          <vl-annotation>
+            <span>Laatste wijziging:</span>
+          </vl-annotation>
+          <span is="vl-icon" data-vl-icon="calendar" data-vl-before
+                data-vl-after
+                data-vl-light></span>
+          <vl-annotation>
+            <span>${this.refresh}</span>
+          </vl-annotation>
+        </p>`
+    };
   }
 
   __renderDashboard() {
     if (this.closed) {
-      return this.__renderIdleTime();
+      return {
+        size: 12,
+        template: this.__renderIdleTime()
+      };
     }
     if (Array.isArray(this.views)) {
-      return html`
-      <qlik-dashboard
-          id="${this.id}"
-          .visuals="${this.views}"
-          .filters="${this.filters}"
-          .connection="${this.connection}">
-      </qlik-dashboard>`;
+      return {
+        size: 12,
+        template: html`
+          <qlik-dashboard
+              id="${this.id}"
+              .visuals="${this.views}"
+              .filters="${this.filters}"
+              .connection="${this.connection}">
+          </qlik-dashboard>`
+      };
     }
-    return html`
-      <qlik-dashboard
-          id="${this.id}"
-          .visuals="${this.views[this.selectedView].visualisations}"
-          .filters="${this.filters}"
-          .connection="${this.connection}">
-      </qlik-dashboard>`;
+    return {
+      size: 12,
+      template: html`
+        <qlik-dashboard
+            id="${this.id}"
+            .visuals="${this.views[this.selectedView].visualisations}"
+            .filters="${this.filters}"
+            .connection="${this.connection}">
+        </qlik-dashboard>`
+    };
   }
 
   async export() {
     if (queryById(this)("format-select").value === "csv") {
       await exportCSVFile(
-          this.exportId, this.title.toLowerCase().replaceAll(" ", "_"), this.connection);
+          this.exportId, this.title.toLowerCase().replaceAll(" ", "_"),
+          this.connection);
     } else {
       await exportExcelFile(
-          this.exportId, this.title.toLowerCase().replaceAll(" ", "_"), this.connection);
+          this.exportId, this.title.toLowerCase().replaceAll(" ", "_"),
+          this.connection);
     }
   }
 
