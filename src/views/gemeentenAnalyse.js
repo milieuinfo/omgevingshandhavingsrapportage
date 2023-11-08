@@ -42,6 +42,29 @@ render() {
                               </p>
                           
                       </section>
+
+                      <section id="content-1-0" is="vl-region">
+                      <div is="vl-grid">
+                          <div is="vl-column data-vl-size=12 class=" data-top-bot">
+                              <vl-infoblock data-vl-title="Responsgraad - 2022"
+                                  data-vl-icon="business-graph-bar">
+                              </vl-infoblock>
+                          </div>
+                      </div>
+
+                      <div is="vl-grid">
+                          <div is="vl-column" data-vl-size=10>
+                              <vl-info-tile data-vl-auto-open=true>
+                                  <span slot="title">Responsgraad 2022</span>
+                                  <div slot="content">
+                                  <iframe title="Gemeentelijke respons 2022" aria-label="Map" id="datawrapper-chart-fD4WP" src="https://datawrapper.dwcdn.net/fD4WP/5/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="360" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+                                  
+                                  </div>
+                              </vl-info-tile>
+                          </div>
+                      </div>
+                  </section>
   
                       <section id="content-1-1" is="vl-region">
   
@@ -480,84 +503,7 @@ render() {
   
                       </section>
 
-                      <section id="content-1-11" is="vl-region">
-  
-                      <div is="vl-grid">
-                          <div is="vl-column data-vl-size=12 class=" data-top-bot">
-                              <vl-infoblock data-vl-title="Veiligheidsmaatregelen - 2022" data-vl-icon="business-graph-bar">
-                              </vl-infoblock>
-                          </div>
-                      </div>
-                      <div is="vl-grid" class="data-top-bot">
-                          <div is="vl-column" data-vl-size=10>
-                              <vl-info-tile data-vl-auto-open=true>
-                                  <span slot="title">Aantal veiligheidsmaatregelen milieu - 2022</span>
-                             
-                                  <div slot="content">
-                                  <iframe title="Veiligheidsmaatregel milieu 2022
-                                  " aria-label="Map" id="datawrapper-chart-Yzr5c" src="https://datawrapper.dwcdn.net/Yzr5c/6/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="392" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-                                  </script>
-<p><span class="grijsnietgekend">&#x2022 niet gekend</span></p>
-                               
-                                  </div>
-                              </vl-info-tile>
-                          </div>
-                      </div>
-
-
-                  </section>
-
-                  <section id="content-1-12" is="vl-region">
-  
-                  <div is="vl-grid">
-                      <div is="vl-column data-vl-size=12 class=" data-top-bot">
-                          <vl-infoblock data-vl-title="Afgesloten minnelijke schikking - 2022" data-vl-icon="business-graph-bar">
-                          </vl-infoblock>
-                      </div>
-                  </div>
-                  <div is="vl-grid" class="data-top-bot">
-                      <div is="vl-column" data-vl-size=10>
-                          <vl-info-tile data-vl-auto-open=true>
-                              <span slot="title">Aantal afgesloten minnelijke schikking ruimtelijke ordening - 2022</span>
-                         
-                              <div slot="content">
-                              <iframe title="Afgesloten minnelijke schikking - RO - 2022" aria-label="Map" id="datawrapper-chart-b2Xk4" src="https://datawrapper.dwcdn.net/b2Xk4/6/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="320" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-</script>
-<p><span class="grijsnietgekend">&#x2022 niet gekend</span></p>
-                           
-                              </div>
-                          </vl-info-tile>
-                      </div>
-                  </div>
-
-
-              </section>
-
-              <section id="content-1-13" is="vl-region">
-  
-              <div is="vl-grid">
-                  <div is="vl-column data-vl-size=12 class=" data-top-bot">
-                      <vl-infoblock data-vl-title="Herstelvorderingen - 2022" data-vl-icon="business-graph-bar">
-                      </vl-infoblock>
-                  </div>
-              </div>
-              <div is="vl-grid" class="data-top-bot">
-                  <div is="vl-column" data-vl-size=10>
-                      <vl-info-tile data-vl-auto-open=true>
-                          <span slot="title">Aantal herstelvorderingen ruimtelijke ordening - 2022</span>
-                     
-                          <div slot="content">
-                          <iframe title="herstelvorderingen ingeleid" aria-label="Map" id="datawrapper-chart-UZsuq" src="https://datawrapper.dwcdn.net/UZsuq/7/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="392" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-                          </script>
-<p><span class="grijsnietgekend">&#x2022 niet gekend</span></p>
-                       
-                          </div>
-                      </vl-info-tile>
-                  </div>
-              </div>
-
-
-          </section>
+                
                       <section is="vl-region" id="content-4">
                           <h3 is="vl-h3">Bekijk cijfers voor andere thema's</h3>
                           <vl-alert data-vl-title="Bekijk de cijfers van andere thema's"
@@ -585,6 +531,11 @@ render() {
                                       <i class="vl-vi vl-vi-arrow-right-fat"></i>
                                   </a>
                                   <ul>
+                                  <li is="vl-side-navigation-item">
+                                          <div>
+                                              <a href="#content-1-0" data-vl-parent="content-1">Responsgraad</a>
+                                          </div>
+                                      </li>
                                       <li is="vl-side-navigation-item">
                                           <div>
                                               <a href="#content-1-1" data-vl-parent="content-1">Toezichthouders / Verbalisanten - Stedenbouwkundige inspecteurs</a>
@@ -638,26 +589,9 @@ render() {
                               </li>
                               <li is="vl-side-navigation-item">
                                   <div>
-                                      <a href="#content-1-10" data-vl-parent="content-1">Bestuurlijke maatregelen</a>
+                                      <a href="#content-1-11" data-vl-parent="content-1">Bestuurlijke maatregelen</a>
                                   </div>
                               </li>
-                              <li is="vl-side-navigation-item">
-                              <div>
-                                  <a href="#content-1-11" data-vl-parent="content-1">Veiligheidheidsmaatregelen</a>
-                              </div>
-                          </li>
-     
-                      <li is="vl-side-navigation-item">
-                      <div>
-                          <a href="#content-1-12" data-vl-parent="content-1">Afgesloten minnelijke schikking</a>
-                      </div>
-                  </li>
-                  <li is="vl-side-navigation-item">
-                  <div>
-                      <a href="#content-1-13" data-vl-parent="content-1">Herstelvorderingen</a>
-                  </div>
-              </li>
-  
                                   </ul>
                               </li>
                               <li is="vl-side-navigation-item" data-vl-parent="content-4">
