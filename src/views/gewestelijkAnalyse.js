@@ -365,7 +365,7 @@ export class GewestelijkAnalyseView extends LitElement {
                                   </div>
                                   <div is="vl-column" data-vl-size=7>
                                   <vl-info-tile data-vl-auto-open=true>
-                                      <span slot="title">Verbalisanten/stedenbouwkundige inspecteurs<span
+                                      <span slot="title">Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur<span
                                               slot="subtitle">
                                           </span></span>
                                       <div slot="content">
@@ -379,7 +379,7 @@ export class GewestelijkAnalyseView extends LitElement {
                               <div is="vl-grid">
                               <div is="vl-column" data-vl-size=12>
                               <vl-info-tile data-vl-auto-open=true>
-                                  <span slot="title">Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur<span slot="subtitle">
+                                  <span slot="title">Stedenbouwkundige inspecteurs<span slot="subtitle">
                                       </span></span>
                                   <div slot="content">
                                       <img class="icon" src="assets/icons/PNG-natuurlijke persoon.png">
