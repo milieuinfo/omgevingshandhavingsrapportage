@@ -19,6 +19,38 @@ class OhrGewest extends LitElement {
 
   render() {
     return html`
+    <vl-content-header>
+    <img is="vl-image"
+         slot="image"
+         src="/images/header.jpg"
+         alt="Hoofding afbeelding website"/>
+    <a slot="context-link" href="/">Omgevingshandhavingsrapportage</a>
+    <a slot="title-link" href="/">Handhaving</a>
+  </vl-content-header>
+  <section is="vl-region">
+    <div is="vl-layout">
+          ${renderStack(
+            {
+              size: 8,
+              template: html`<h1 is="vl-h1" data-vl-no-space-bottom>
+                Gewestelijke handhavingsactoren
+              </h1>`,
+            },
+              {
+                size: 8,
+                template: this.__renderTable(),
+              },
+              {
+                size: 4,
+                template: this.__renderSideNavigation(),
+              }
+          )}
+          </div>
+          </section>`;
+  }
+/*
+  render() {
+    return html`
       <vl-content-header>
         <img is="vl-image"
              slot="image"
@@ -44,26 +76,15 @@ class OhrGewest extends LitElement {
         </div>
       </section>`;
   }
-
-  __renderPage() {
+*/
+  __renderTable() {
     return html`
-      <div style="max-width: 500px">
-        <a is="vl-doormat" href="/a_gewest">
-          <h2 is="vl-doormat-title">Analyseer de cijfers</h2>
-          <div is="vl-doormat-text">
-            De cijfers geven een totaalbeeld van de handhavingsactiviteiten van
-            de gewestelijke handhavingsactoren
-            samen in het voorgaande jaar. Bij selectie van een actor, wordt in
-            de individuele handhavingsfiche van deze gewestelijke
-            handhavingsactor gerapporteerd over de uitvoering van de
-            handhavingsactiviteiten in het voorgaande jaar.
-          </div>
-        </a>
-      </div>
       <div is="vl-grid">
-        <h4 is="vl-h4">Overzichtstabel gewestelijke handhavingsactoren</h4>
         <vl-typography>
           <table>
+          <caption>
+          Overzichtstabel gewestelijke handhavingsactoren
+    </caption>
             <thead>
               <tr>
                 <th>Handhavingsactor</th>
@@ -163,66 +184,26 @@ class OhrGewest extends LitElement {
             </tbody>
           </table>
         </vl-typography>
-      </div>
+      </div>`;
+  }
 
-      <div is="vl-grid">
-        <div is="vl-column" data-vl-size=12>
-          <vl-typography>
-
-            <h4 is="vl-h4">Geconsolideerd beeld</h4>
-            <vl-alert
-                data-vl-title="Download het geconsolideerd beeld in de orginele resolutie"
-                data-vl-size="small"
-                data-vl-icon="info-circle"
-                data-vl-type="info">
-              <p>Onderstaande afbeeldingen kunnen worden opgeslagen voor een
-                betere weergave</p>
-              <p><b>Rechterklik op de afbeelding en kies voor afbeelding opslaan
-                als</b></p>
-            </vl-alert>
-            <hr>
-          </vl-typography>
-        </div>
-      </div>
-      <div is="vl-grid">
-        <div is="vl-column" data-vl-size=12>
-          <vl-typography>
-
-            <h4 is="vl-h4">Milieuhandhaving</h4>
-
-          </vl-typography>
-
-        </div>
-      </div>
-      <div is="vl-grid">
-        <div style="max-width: 1400px">
-          <img
-              is="vl-image"
-              sizes="100vw"
-              src="assets/images/infographic_milieu_gewestelijk_v2.png"
-              alt="Geconsolideerd beeld milieuhandhaving"/>
-        </div>
-      </div>
-
-      <div is="vl-grid">
-        <div is="vl-column" data-vl-size=12>
-          <vl-typography><h4 is="vl-h4">Ruimtelijke ordening</h4>
-          </vl-typography>
-        </div>
-      </div>
-
-      <div is="vl-grid">
-        <div style="max-width: 1400px">
-          <img is="vl-image" sizes="100vw"
-               src="assets/images/infographic_ro_gewestelijk_def.png"
-               alt="Geconsolideerd beeld ruimtelijke ordening"/>
-        </div>
-      </div>
-      </section>
-      </div>
-      </div>
-      </div>
-      </section>`;
+  __renderSideNavigation() {
+    return html`    
+      <h5 is="vl-h5" data-vl-alt>Interresante links</h5>
+      <ul is="vl-link-list">
+      <li is="vl-link-list-item">
+      <a is="vl-link"
+         href="/a_gewest">
+        Analyseer de cijfers
+      </a>
+    </li>
+        <li is="vl-link-list-item">
+          <a is="vl-link"
+             href="/">
+            Terug naar beginpagina
+          </a>
+        </li>
+      </ul>`;
   }
 }
 

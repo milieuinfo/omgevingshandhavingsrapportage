@@ -1,5 +1,6 @@
 import {
-  ACTOR
+  ACTOR,
+  PROVINCIE
   } from "./qlik_resources.js";
   
   const filters = [
@@ -7,6 +8,11 @@ import {
       name: "Gewestelijke Actor",
       id: "Gewestelijke Actor",
       filter: ACTOR
+    },
+    {
+      name: "Provincie",
+      id: "PROVINCIE",
+      filter: PROVINCIE
     }
   ]
   

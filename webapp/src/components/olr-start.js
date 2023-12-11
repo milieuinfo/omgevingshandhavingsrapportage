@@ -21,7 +21,7 @@ class OlrStart extends LitElement {
       <vl-content-header>
         <img is="vl-image"
             slot="image"
-            src="/images/header.jpg"
+            src="images/header.jpg"
             alt="Hoofding afbeelding website"/>
         <a slot="context-link" href="/">Omgevingshandhavingsrapportage</a>
         <a slot="title-link" href="/">Handhaving</a>
@@ -119,7 +119,7 @@ class OlrStart extends LitElement {
         size: 6,
         template: html`
           <div>
-          <a is="vl-doormat" href="/gemeenten-op-kaart">
+          <a is="vl-doormat" href="/">
             <h2 is="vl-doormat-title">Gemeenten</h2>
             <div is="vl-doormat-text">
             De cijfers geven een totaalbeeld van de handhavingsactiviteiten van de gemeenten samen in het voorgaande jaar.

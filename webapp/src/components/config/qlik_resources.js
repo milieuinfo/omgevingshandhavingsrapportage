@@ -14,3 +14,11 @@ export const ACTOR = {
   expression: "Gewestelijke Actor",
 };
 
+export const PROVINCIE = {
+  name: "PROVINCIE",
+  fieldQualifier: "qText",
+  expression: "Provincie",
+};
+
+
+
