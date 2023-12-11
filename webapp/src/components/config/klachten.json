@@ -1,7 +1,122 @@
 {
-  "gewest": {
+  "Gewest": {
     "order": 1,
     "label": "Gewest",
+    "visualisations": [
+      [
+        {
+          "type": "visual",
+          "id": "PPmJbjE",
+          "height": "75px",
+          "visual_type": "kpi"
+        },
+        {
+          "type": "visual",
+          "id": "vfZLnJ",
+          "height": "75px",
+          "visual_type": "kpi"
+        },
+        {
+          "type": "visual",
+          "id": "Xbcy",
+          "height": "75px",
+          "visual_type": "kpi"
+        },
+        {
+          "type": "visual",
+          "id": "pNqQA",
+          "height": "75px",
+          "visual_type": "kpi"
+        }
+      ],
+      [
+        {
+          "type": "visual",
+          "id": "RyYCSLz",
+          "height": "300px",
+          "visual_type": "barchart"
+        },
+        {
+          "type": "visual",
+          "id": "kHnMqb",
+          "height": "300px",
+          "visual_type": "barchart"
+        }
+      ],
+      [
+        {
+          "type": "visual",
+          "id": "SxjuQwJ",
+          "height": "300px",
+          "visual_type": "linechart"
+        },
+        {
+          "type": "visual",
+          "id": "jUNJVv",
+          "height": "300px",
+          "visual_type": "linechart"
+        }
+      ]
+    ]
+  },
+  "Provincie": {
+    "order": 2,
+    "label": "Provincie",
+    "visualisations": [
+      
+      [
+        {
+          "type": "visual",
+          "id": "d42d5f67-74cf-4117-88e9-52a88f65c8cd",
+          "height": "75px",
+          "visual_type": "kpi"
+        },
+        {
+          "type": "visual",
+          "id": "ea67661e-9802-4e06-a4dd-6b01fdad975d",
+          "height": "75px",
+          "visual_type": "kpi"
+        },
+        {
+          "type": "visual",
+          "id": "6938d4e1-3eaa-4b48-a411-e4a86febef7d",
+          "height": "75px",
+          "visual_type": "kpi"
+        }
+      ],
+      [
+        {
+          "type": "visual",
+          "id": "077a07cd-3729-4e7e-96ab-8af40077e722",
+          "height": "350px",
+          "visual_type": "barchart"
+        },
+        {
+          "type": "visual",
+          "id": "3d11c4e1-2657-4b33-b742-94cb6e091897",
+          "height": "350px",
+          "visual_type": "barchart"
+        }
+      ],
+      [
+        {
+          "type": "visual",
+          "id": "92929f39-e87a-41f0-9035-af69f5c621e6",
+          "height": "350px",
+          "visual_type": "barchart"
+        },
+        {
+          "type": "visual",
+          "id": "63a59d72-1c21-4221-a212-81359bcf18ed",
+          "height": "350px",
+          "visual_type": "barchart"
+        }
+      ]
+    ]
+  },
+  "Gemeenten": {
+    "order": 3,
+    "label": "Gemeenten",
     "visualisations": [
       [
         {

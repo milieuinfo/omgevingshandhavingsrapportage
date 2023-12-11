@@ -90,7 +90,7 @@ class DashboardPage extends LitElement {
       this.selectedView = Object.keys(this.views)[0];
     }
     return html`
-      <div style="margin: 0px 50px">
+      <div style="margin: 0px 10px">
         ${renderStack(...this.__renderPageInfo())}
       </div>
     `;
@@ -162,7 +162,6 @@ class DashboardPage extends LitElement {
       `
     };
   }
-
   __renderViewSelector() {
     let template = html``;
     if (!Array.isArray(this.views)) {
@@ -184,7 +183,7 @@ class DashboardPage extends LitElement {
     }
 
     return {
-      size: 12, template: template
+      size: 6, template: template
     }
   }
 

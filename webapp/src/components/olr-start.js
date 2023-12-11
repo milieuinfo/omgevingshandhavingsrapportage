@@ -45,11 +45,19 @@ class OlrStart extends LitElement {
               },
               {
                 size: 12,
+                template: this.__renderRespons(),
+              },
+              {
+                size: 12,
                 template: this.__renderJaarRapportage(),
               },
               {
                 size: 12,
                 template: this.__renderMeerJarenRapportage(),
+              },
+              {
+                size:12,
+                template: this.__renderKaartSectie(),
               },
               {
                 size: 12,
@@ -77,6 +85,101 @@ class OlrStart extends LitElement {
       geactualiseerd. <br/> Het Departement Omgeving maakt zo verder werk van een
       digitale en datagedreven overheid.</p>
     </vl-alert>`;
+  }
+
+  __renderKaartSectie() {
+    return renderStack(
+      {
+        size: 12,
+        template: html`
+          <h3 is="vl-h3" data-vl-alt>Op kaart</h3>`
+      },
+      {
+        size: 12,
+        template: html`
+          <p>
+          Hieronder wordt per actor de data weergegeven die betrekking heeft op het voorgaande kalenderjaar (handhavingsactiviteiten uitgevoerd tussen 1 januari en 31 december)
+          De data wordt gevisualiseerd op kaarten met informatie over de evolutie van de cijfer.
+          </p>
+        `
+      },
+      {
+        size: 6,
+        template: html`
+          <div>
+          <a is="vl-doormat" href="/">
+            <h2 is="vl-doormat-title">Provincies</h2>
+            <div is="vl-doormat-text">
+            De cijfers geven een totaalbeeld van de handhavingsactiviteiten van de provincies samen in het voorgaande jaar. 
+            </div>
+          </a>
+          </div>`,
+      },
+      {
+        size: 6,
+        template: html`
+          <div>
+          <a is="vl-doormat" href="/gemeenten-op-kaart">
+            <h2 is="vl-doormat-title">Gemeenten</h2>
+            <div is="vl-doormat-text">
+            De cijfers geven een totaalbeeld van de handhavingsactiviteiten van de gemeenten samen in het voorgaande jaar.
+            </div>
+          </a>
+          </div>`,
+      },
+  )
+  }
+
+  __renderRespons() {
+    return html`${renderStack(
+        {
+          size: 12,
+          template: html`
+            <h3 is="vl-h3" data-vl-alt>Cijfers in een oogopslag</h3>`
+        },
+        {
+          size:3,
+          template: html`
+          <div is="vl-infotext" data-cy="infotext">
+            <div>
+              <div data-vl-value="">95%</div>
+              <div data-vl-text="">Responsgraad huidig jaar</div>
+            </div>
+          </div>`
+        },
+        {
+          size:3,
+          template: html`
+          <div is="vl-infotext" data-cy="infotext">
+            <div>
+              <div data-vl-value="">80%</div>
+              <div data-vl-text="">Responsgraad startjaar</div>
+            </div>
+          </div>`
+        },
+        {
+          size:3,
+          template: html`
+          <div is="vl-infotext" data-cy="infotext">
+            <div>
+              <div data-vl-value="">+15%</div>
+              <div data-vl-text="">Evolutie startjaar</div>
+            </div>
+          </div>`
+        },
+        {
+          size:3,
+          template: html`
+          <div is="vl-infotext" data-cy="infotext">
+            <div>
+              <div data-vl-value="">300</div>
+              <div data-vl-text="">Actieve gemeenten</div>
+            </div>
+          </div>`
+        },
+
+    )
+    }`
   }
 
   __renderSideNavigation() {
@@ -239,7 +342,7 @@ class OlrStart extends LitElement {
           size: 6,
           template: html`
             <div>
-            <a is="vl-doormat" href="/instrumentarium">
+            <a is="vl-doormat" href="/instrementarium">
               <h2 is="vl-doormat-title">Instrumentarium</h2>
               <div is="vl-doormat-text">
               Een weergave van het instrumentarium dat ingezet wordt door de verschillende omgevingshandhavingsactoren op gewestelijk, provinciaal en gemeentelijk niveau.

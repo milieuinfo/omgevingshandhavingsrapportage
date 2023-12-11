@@ -8,8 +8,7 @@ export class Toegankelijkheid extends LitElement {
           title: "Toegankelijkheid",
         }); 
       }
-  
-
+      
   createRenderRoot() {
     return this;
   }

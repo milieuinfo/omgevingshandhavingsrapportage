@@ -1,7 +1,14 @@
 import {
-} from "./qlik_resources.js";
+    ACTOR
+    } from "./qlik_resources.js";
+    
+    const filters = [
+      {
+        name: "Actor",
+        id: "Actor",
+        filter: ACTOR
+      }
+    ]
 
-const filters = [
-]
-
-export {filters as default};
+  
+    export {filters as default};

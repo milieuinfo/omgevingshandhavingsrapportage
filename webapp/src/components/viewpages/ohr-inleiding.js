@@ -1,16 +1,26 @@
 import {define, html, LitElement, renderStack} from "../common/commons.js";
 import {Router} from "@vaadin/router";
+import {vlElementsStyle} from "@domg-wc/elements";
 
 class OhrInleiding extends LitElement {
+
+
+  static get styles(){
+    return [
+        vlElementsStyle
+    ]
+  }
 
 //constructor
 constructor() {
     super();
   }
 
+  /*
   createRenderRoot() {
     return this;
   }
+  */
   render() {
     return html`
       <vl-content-header>
@@ -26,13 +36,11 @@ constructor() {
           ${renderStack(
               {
                 size: 8,
-                template: html`<h1 is="vl-h1"  data-vl-no-space-bottom>
-                Dataverzameling en data-interpretatie
-                </h1>`,
+                template: this.__renderIntroduction(),
               },
               {
-                size: 8,
-                template: this.__renderIntroduction(),
+                size: 4,
+                template: this.__renderSideNavigation(),
               }
           )}
         </div>
@@ -41,7 +49,7 @@ constructor() {
 
   __renderIntroduction() {
     return html`
-      <div>
+        <h1 is="vl-h1">Dataverzameling en data-interpretatie</h1>
         <p>
         Het decreet van 5 april 1995 houdende algemene bepalingen inzake milieubeleid (DABM) bepaalt in artikel 16.2.3 dat gegevens over de omgevingshandhavingsuitvoering jaarlijks online worden gepubliceerd.
         Deze data bevatten een input- en outputweergave (handhavingsfiche) van de handhavingsactiviteiten in het kader van het DABM en de Vlaamse Codex Ruimtelijke Ordening (VCRO) van de handhavingsactoren in het Vlaamse gewest in het afgelopen jaar en hebben betrekking op de personele middelen die worden ingezet voor de handhavingsuitvoering en de inzet van de instrumenten die de handhavers ter beschikking hebben (controles, processen-verbaal, aanmaningen, …).Daarnaast worden ook data ter beschikking gesteld over de sanctionering, o.a. afkomstig van de parketten bij de rechtbanken van eerste aanleg en de gewestelijke beboetingsentiteit die instaat voor de bestuurlijke beboeting. Dit geeft een beeld over het verdere traject van de instrumenten proces-verbaal en verslag van vaststelling.
@@ -49,8 +57,7 @@ constructor() {
         De data gepresenteerd in deze omgevingshandhavingsrapportage zijn de gegevens zoals ze worden aangeleverd door de handhavingsactoren zelf op basis van hun eigen monitoring.
         De handhavingsactoren worden gevraagd “niet gekend” in te geven indien de gevraagde data niet beschikbaar zijn. Indien de gevraagde gegevens niet worden ingevuld, wordt automatisch “niet gekend” ingevuld. Indien de handhavingsactor niet ingaat op de bevraging, wordt deze actor als een non-respons weergegeven.
         Deze bevraging levert geen 100% responsgraad op, hetgeen implicaties heeft op de interpreteerbaarheid van de cijfergegevens. Wanneer totalen worden getoond, betreft dit steeds enkel de gerapporteerde en gekende aantallen. Bij analyses van de data dient rekening te worden gehouden met deze beperking.
-        </p>
-      </div>`;
+        </p>`;
   }
 
   __renderSideNavigation() {

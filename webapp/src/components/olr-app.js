@@ -18,6 +18,7 @@ import "./olr-view404.js";
 import "./viewpages/ohr-gewest.js";
 import "./viewpages/ohr-a-gewest.js";
 import "./viewpages/ohr-download.js";
+import "./viewpages/gemeenten-op-kaart.js";
 import {getHeaderFooterId} from "./config/header.js";
 
 class OlrApp extends LitElement {
@@ -65,6 +66,7 @@ class OlrApp extends LitElement {
         { path: "/gewest", component: "ohr-gewest" },
         { path: "/a_gewest", component: "ohr-agewest" },
         { path: "/download", component: "ohr-download" },
+        { path: "/gemeenten-op-kaart", component: "ohr-Opkaart" },
         { path: "(.*)", component: "olr-view404" },
     ]);
     Router.go(window.location.pathname)

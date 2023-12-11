@@ -5,28 +5,8 @@
     "visualisations": [
       [
         {
-          "type": "label",
-          "label": "chart1",
-          "align-label": "center",
-          "id": "PmwAbPB"
-        },
-        {
-          "type": "label",
-          "label": "chart2",
-          "align-label": "center",
-          "id": "PmwAbPB"
-        }
-      ],
-      [
-        {
           "type": "visual",
-          "id": "PmwAbPB",
-          "height": "350px",
-          "visual_type": "kpi"
-        },
-        {
-          "type": "visual",
-          "id": "PmwAbPB",
+          "id": "fYuwtB",
           "height": "350px",
           "visual_type": "kpi"
         }

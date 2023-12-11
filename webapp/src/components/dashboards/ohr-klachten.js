@@ -5,7 +5,7 @@ import {
 } from "../common/commons.js";
 
 import "../qlik/dashboard-page.js";
-import viz_klachten from "../config/klachten.json" assert {type: "json"};
+import charts from "../config/klachten.json" assert {type: "json"};
 import filters from "../config/klachten-filters.js";
 
 import "@domg-wc/components/functional-header";
@@ -25,22 +25,24 @@ class OhrKlachten extends LitElement {
       <vl-functional-header
           data-vl-back="Terug"
           data-vl-back-link="/"
-          data-vl-title="Omgevingshandhavingsrapportage"
-          data-vl-sub-title="Meerjarenrapportage personeel"
+          data-vl-title="Thema - Klachten"
+          data-vl-sub-title="Omgevingshandhavingsrapportage"
           data-vl-link="/klachten">
       </vl-functional-header>
-      <div style="margin: 0px 25px">
+
+      <div style="margin: 0px 0px">
         <dashboard-page
             title="Klachten"
             url="omgevingsloketrapport.omgeving.vlaanderen.be"
-            appId="a1cf8b4f-ac0b-4fa9-a0b2-7dabbe0960d2"
-            .views="${viz_klachten}"
+            appId="e994d176-7ee5-49af-b193-d79672df9d04"
+            .views="${charts}"
             .filters="${filters}"
             @initialized="${() => this.initialized = true}">
           ${this.__renderIntroduction()}
         </dashboard-page>
       </div></section>`;
   }
+
 
   __renderIntroduction() {
     if (!this.initialized) {
@@ -52,10 +54,9 @@ class OhrKlachten extends LitElement {
     return html`
       <vl-typography slot="introduction">
         <p>
-          Aanvullen
+        Een voorstelling van de klachten die werden ontvangen bij de verschillende omgevingshandhavingsactoren op gewestelijk, provinciaal en gemeentelijk niveau.
         </p>
-      </vl-typography>
-    `;
+      </vl-typography>`;
   }
 }
 

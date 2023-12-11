@@ -8,4 +8,9 @@ export const REFRESH_MEASURE = {
   fieldQualifier: "qText",
   expression: "Date(ReloadTime(),'DD/MM/YYYY')",
 };
+export const ACTOR = {
+  name: "Gewestelijke Actor",
+  fieldQualifier: "qText",
+  expression: "Gewestelijke Actor",
+};
 
