@@ -43,7 +43,7 @@ class OhrAGewest extends LitElement {
       {
         title: "Gewestelijke toezichthouders en VTE",
         vis: viz_gewest,
-        intro: "Sjakamak"
+        intro: ""
       },
       {
         title: "Klachten",

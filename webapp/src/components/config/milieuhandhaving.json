@@ -3,7 +3,7 @@
     {
       "title": "Aantal toezichthouders",
       "icon": "assets/icons/PNG-natuurlijke persoon.png",
-      "align": "left",
+      "align": "center",
       "id": "vFyjB",
       "type": "kpi",
       "height": "50px",

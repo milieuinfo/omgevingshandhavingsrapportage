@@ -1,14 +1,62 @@
 {
-  "gewest": {
+  "Gewest": {
     "order": 1,
-    "label": "Gewest",
+    "label": "Aantal klachten per actor",
     "visualisations": [
       [
         {
           "type": "visual",
-          "id": "fYuwtB",
+          "id": "RyYCSLz",
+          "height": "450px",
+          "visual_type": "barchart"
+        }
+      ]
+    ]
+  },
+  "Provincie": {
+    "order": 2,
+    "label": "Chart 2",
+    "visualisations": [
+      [
+        {
+          "type": "visual",
+          "id": "jUNJVv",
+          "height": "450",
+          "visual_type": "linechart"
+        }
+      ]
+    ]
+  },
+  "Gemeenten": {
+    "order": 3,
+    "label": "Gemeenten",
+    "visualisations": [
+      [
+        {
+          "type": "label",
+          "label": "",
+          "align-label": "center",
+          "id": "SemjPnJ"
+        },
+        {
+          "type": "label",
+          "label": "chart2",
+          "align-label": "center",
+          "id": "MjxWYP"
+        }
+      ],
+      [
+        {
+          "type": "visual",
+          "id": "SemjPnJ",
           "height": "350px",
-          "visual_type": "kpi"
+          "visual_type": "barchart"
+        },
+        {
+          "type": "visual",
+          "id": "MjxWYP",
+          "height": "350px",
+          "visual_type": "mekkochart"
         }
       ]
     ]
