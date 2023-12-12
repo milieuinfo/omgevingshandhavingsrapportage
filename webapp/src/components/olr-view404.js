@@ -1,6 +1,14 @@
 import {define, html, LitElement} from './common/commons';
-
+import {vlElementsStyle} from "@domg-wc/elements";
 class OlrView404 extends LitElement {
+
+
+  static get styles(){
+    return [
+        vlElementsStyle
+    ]
+  }
+
   constructor() {
     super();
   }
@@ -32,7 +40,6 @@ class OlrView404 extends LitElement {
 
   _render404Message() {
     return html`
-      <section is="vl-region">
         <vl-http-error-message
           data-vl-title="Pagina niet gevonden"
           data-vl-image="https://cdn.milieuinfo.be/http-error-message-assets/LATEST/img/page-not-found.svg"
@@ -46,7 +53,6 @@ class OlrView404 extends LitElement {
             <a is="vl-link-button" href="/">Ga naar startpagina</a>
           </div>
         </vl-http-error-message>
-      </section>
     `;
   }
 }

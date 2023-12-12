@@ -163,7 +163,7 @@ class OlrStart extends LitElement {
           <div is="vl-infotext" data-cy="infotext">
             <div>
               <div data-vl-value="">+15%</div>
-              <div data-vl-text="">Evolutie startjaar</div>
+              <div data-vl-text="">Evolutie tov startjaar</div>
             </div>
           </div>`
         },
