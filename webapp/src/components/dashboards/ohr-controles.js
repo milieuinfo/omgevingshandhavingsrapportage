@@ -25,14 +25,14 @@ class OhrControles extends LitElement {
       <vl-functional-header
           data-vl-back="Terug"
           data-vl-back-link="/"
-          data-vl-title="Thema - Klachten"
+          data-vl-title="Thema - Controles"
           data-vl-sub-title="Omgevingshandhavingsrapportage"
           data-vl-link="/klachten">
       </vl-functional-header>
 
       <div style="margin: 0px 0px">
         <dashboard-page
-            title="Klachten"
+            title="Controles"
             url="omgevingsloketrapport.omgeving.vlaanderen.be"
             appId="e994d176-7ee5-49af-b193-d79672df9d04"
             .views="${charts}"

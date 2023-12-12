@@ -1,6 +1,6 @@
 import { LitElement, html } from "lit-element";
-import "uig-webcomponents/lib/legacy/tabs";
-import { page } from "../templates/page";
+import "../uig-webcomponents/lib/legacy/tabs";
+import { page } from "../../templates/page";
 
 export class Provinciaal extends LitElement {
   render() {

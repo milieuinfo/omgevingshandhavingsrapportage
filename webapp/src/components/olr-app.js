@@ -16,8 +16,16 @@ import "./olr-accessibility.js";
 import "./olr-privacy.js";
 import "./olr-view404.js";
 import "./viewpages/ohr-gewest.js";
+import "./viewpages/ohr-provinciaalanalyse.js";
+import "./viewpages/ohr-gemeenten-analyse.js";
+import "./viewpages/ohr-hoge-raad-analyse.js";
+import "./viewpages/ohr-gemeenten.js";
+import "./viewpages/ohr-hoge-raad.js";
+import "./viewpages/ohr-provincie.js";
 import "./viewpages/ohr-a-gewest.js";
 import "./viewpages/ohr-download.js";
+import "./viewpages/ohr-strafrechtelijk-analyse.js";
+import "./viewpages/ohr-strafrechtelijk.js";
 import "./viewpages/gemeenten-op-kaart.js";
 import {getHeaderFooterId} from "./config/header.js";
 
@@ -66,6 +74,14 @@ class OlrApp extends LitElement {
         { path: "/gewest", component: "ohr-gewest" },
         { path: "/a_gewest", component: "ohr-agewest" },
         { path: "/download", component: "ohr-download" },
+        { path: "/provincie_jaar_analyse", component: "ohr-provincieanalyse"},
+        { path: "/provincie", component: "ohr-provincie" },
+        { path: "/hoge-raad", component: "ohr-hogeraad"},
+        { path: "/hoge-raad-analyse", component: "ohr-hogeraadanalyse"},
+        { path: "/strafrechtelijk", component: "ohr-strafrechtelijk"},
+        { path: "/strafrechtelijk-analyse", component: "ohr-strafrechtelijkanalyse"},
+        { path: "/gemeenten-analyse", component: "ohr-gemeentenanalyse"},
+        { path: "/gemeenten", component: "ohr-gemeenten" },
         { path: "/gemeenten-op-kaart", component: "ohr-Opkaart" },
         { path: "(.*)", component: "olr-view404" },
     ]);

@@ -253,7 +253,7 @@ class OlrStart extends LitElement {
           size: 6,
           template: html`
             <div>
-            <a is="vl-doormat" href="/gemeente">
+            <a is="vl-doormat" href="/gemeenten">
               <h2 is="vl-doormat-title">Gemeenten</h2>
               <div is="vl-doormat-text">
               In deze analyse worden de handhavingsactiviteiten van de lokale handhavingsactoren weergegeven.
@@ -265,7 +265,7 @@ class OlrStart extends LitElement {
           size: 6,
           template: html`
             <div>
-            <a is="vl-doormat" href="/hogeraad">
+            <a is="vl-doormat" href="/hoge-raad">
               <h2 is="vl-doormat-title">Hoge Raad</h2>
               <div is="vl-doormat-text">
               Bekijk de cijfers van de Hoge Raad voor de Handhavingsuitvoering
