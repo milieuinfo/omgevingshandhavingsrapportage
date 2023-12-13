@@ -1,7 +1,7 @@
 version: "2"
 services:
   release:
-    image: ${DOCKER_REGISTRY}milieuinfo/ubuntu-node:14
+    image: ${DOCKER_REGISTRY}milieuinfo/volta:1.1.1.2
     environment:
       - http_proxy=${http_proxy}
       - https_proxy=${https_proxy}
@@ -16,9 +16,9 @@ services:
     command: "npm run release --omgevingshandhavingsrapportage:version=${release_version}"
     extra_hosts:
       - "repository.milieuinfo.be:${REPOSITORY_FIXED_IP}"
-    working_dir: /data
+    working_dir: /data/webapp
     volumes:
       - ${HOME:-.}/.npmrc:/root/.npmrc:ro
       - ${HOME:-.}/.gitconfig:/root/.gitconfig:ro
       - ${HOME:-.}/.git-credentials:/root/.git-credentials:ro
-      - ../webapp:/data
+      - ..:/data
