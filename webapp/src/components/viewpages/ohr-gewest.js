@@ -43,6 +43,10 @@ class OhrGewest extends LitElement {
               {
                 size: 4,
                 template: this.__renderSideNavigation(),
+              },
+              {
+                size:8,
+                template: this.__renderDoorMat(),
               }
           )}
           </div>
@@ -185,6 +189,22 @@ class OhrGewest extends LitElement {
           </table>
         </vl-typography>
       </div>`;
+  }
+
+  __renderDoorMat() {
+    return html`
+      <div is="vl-grid">
+          <div is="vl-column">
+              <div style="max-width: 600px">
+                  <a is="vl-doormat" href="/gemeenten-analyse">
+                      <h2 is="vl-doormat-title">Analyseer de cijfers</h2>
+                      <div is="vl-doormat-text">
+                        De cijfers geven een totaalbeeld van de handhavingsactiviteiten van de provincies samen in het voorgaande jaar. Bij selectie van een provincie, wordt in de individuele handhavingsfiche van deze provincie gerapporteerd over de uitvoering van de handhavingsactiviteiten in het voorgaande jaar.
+                      </div>
+                  </a>
+              </div>
+          </div>
+      </div>`
   }
 
   __renderSideNavigation() {

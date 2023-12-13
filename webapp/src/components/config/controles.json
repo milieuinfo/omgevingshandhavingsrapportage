@@ -15,14 +15,14 @@
   },
   "Provincie": {
     "order": 2,
-    "label": "Chart 2",
+    "label": "Aantal klachten per bevragingsjaartal",
     "visualisations": [
       [
         {
           "type": "visual",
-          "id": "jUNJVv",
-          "height": "450",
-          "visual_type": "linechart"
+          "id": "kHnMqb",
+          "height": "450px",
+          "visual_type": "barchart"
         }
       ]
     ]
