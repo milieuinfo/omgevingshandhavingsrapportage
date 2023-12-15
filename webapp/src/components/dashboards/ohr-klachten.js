@@ -1,8 +1,4 @@
-import {
-  define,
-  html,
-  LitElement,
-} from "../common/commons.js";
+import {define, html, LitElement,} from "../common/commons.js";
 
 import "../qlik/dashboard-page.js";
 import charts from "../config/klachten.json" assert {type: "json"};
@@ -11,8 +7,13 @@ import filters from "../config/klachten-filters.js";
 import "@domg-wc/components/functional-header";
 import "@domg-wc/components/typography";
 import "@domg-wc/components/loader";
+import {vlElementsStyle} from "@domg-wc/elements";
 
 class OhrKlachten extends LitElement {
+
+  static get styles() {
+    return [...vlElementsStyle];
+  }
 
   static get properties() {
     return {
@@ -43,7 +44,6 @@ class OhrKlachten extends LitElement {
       </div></section>`;
   }
 
-
   __renderIntroduction() {
     if (!this.initialized) {
       return html`
@@ -54,7 +54,9 @@ class OhrKlachten extends LitElement {
     return html`
       <vl-typography slot="introduction">
         <p>
-        Een voorstelling van de klachten die werden ontvangen bij de verschillende omgevingshandhavingsactoren op gewestelijk, provinciaal en gemeentelijk niveau.
+          Een voorstelling van de klachten die werden ontvangen bij de
+          verschillende omgevingshandhavingsactoren op gewestelijk, provinciaal
+          en gemeentelijk niveau.
         </p>
       </vl-typography>`;
   }

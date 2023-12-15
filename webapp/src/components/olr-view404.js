@@ -1,11 +1,15 @@
 import {define, html, LitElement} from './common/commons';
 import {vlElementsStyle} from "@domg-wc/elements";
+import "@domg-wc/elements/grid";
+import "@domg-wc/elements/button";
+import "@domg-wc/components/functional-header";
+import "@domg-wc/components/http-error-message";
 class OlrView404 extends LitElement {
 
 
   static get styles(){
     return [
-        vlElementsStyle
+        ...vlElementsStyle
     ]
   }
 
@@ -15,10 +19,6 @@ class OlrView404 extends LitElement {
 
   connectedCallback() {
     super.connectedCallback();
-  }
-
-  createRenderRoot() {
-    return this;
   }
 
   render() {

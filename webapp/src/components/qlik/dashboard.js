@@ -12,13 +12,19 @@ import {
 import {STARDUST} from "@domg/qlik-lib";
 
 import "./visual.js";
+import "@domg-wc/elements/form";
+import "@domg-wc/elements/multiselect";
+import "@domg-wc/elements/search-filter";
+import "@domg-wc/elements/grid";
+import "@domg-wc/components/pill";
+import "@domg-wc/components/loader";
 import {vlElementsStyle} from "@domg-wc/elements";
 
 class QlikDashboard extends LitElement {
 
   static get styles() {
     return [
-      vlElementsStyle
+      ...vlElementsStyle
     ]
   }
 

@@ -13,7 +13,7 @@ const copyTargets = [
 ];
 
 const copyFlattenTargets = [
-  {src: `${node}/@domg-wc/elements/src/lib/*.css`, dest: `${output}/style`},
+  {src: `${node}/@domg-wc/elements/**/*.css`, dest: `${output}/style`},
 ]
 
 export default {

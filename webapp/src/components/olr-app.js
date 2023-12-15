@@ -1,5 +1,5 @@
-import { Router } from "@vaadin/router";
-import { define, queryById, html, LitElement } from "./common/commons.js";
+import {Router} from "@vaadin/router";
+import {define, html, LitElement, queryById} from "./common/commons.js";
 
 import "@domg-wc/components"
 import "@domg-wc/elements"
@@ -62,30 +62,34 @@ class OlrApp extends LitElement {
     this._outlet = queryById(this)("outlet");
     const router = new Router(this._outlet);
     router.setRoutes([
-        { path: "/", component: "olr-start" },
-        { path: "/personeel", component: "ohr-personeel" },
-        { path: "/klachten", component: "ohr-klachten" },
-        { path: "/controles", component: "ohr-controles" },
-        { path: "/cookieverklaring", component: "olr-cookie" },
-        { path: "/toegankelijkheid", component: "olr-accessibility" },
-        { path: "/instrumentarium", component: "ohr-instrumentarium" },
-        { path: "/privacy", component: "olr-privacy" },
-        { path: "/inleiding", component: "ohr-inleiding" },
-        { path: "/gewest", component: "ohr-gewest" },
-        { path: "/a_gewest", component: "ohr-agewest" },
-        { path: "/download", component: "ohr-download" },
-        { path: "/provincie_jaar_analyse", component: "ohr-provincieanalyse"},
-        { path: "/provincie", component: "ohr-provincie" },
-        { path: "/hoge-raad", component: "ohr-hogeraad"},
-        { path: "/hoge-raad-analyse", component: "ohr-hogeraadanalyse"},
-        { path: "/strafrechtelijk", component: "ohr-strafrechtelijk"},
-        { path: "/strafrechtelijk-analyse", component: "ohr-strafrechtelijkanalyse"},
-        { path: "/gemeenten-analyse", component: "ohr-gemeentenanalyse"},
-        { path: "/gemeenten", component: "ohr-gemeenten" },
-        { path: "/gemeenten-op-kaart", component: "ohr-Opkaart" },
-        { path: "(.*)", component: "olr-view404" },
+      {path: "/", component: "olr-start"},
+      {path: "/personeel", component: "ohr-personeel"},
+      {path: "/klachten", component: "ohr-klachten"},
+      {path: "/controles", component: "ohr-controles"},
+      {path: "/cookieverklaring", component: "olr-cookie"},
+      {path: "/toegankelijkheid", component: "olr-accessibility"},
+      {path: "/instrumentarium", component: "ohr-instrumentarium"},
+      {path: "/privacy", component: "olr-privacy"},
+      {path: "/inleiding", component: "ohr-inleiding"},
+      {path: "/gewest", component: "ohr-gewest"},
+      {path: "/a_gewest", component: "ohr-agewest"},
+      {path: "/download", component: "ohr-download"},
+      {path: "/provincie_jaar_analyse", component: "ohr-provincieanalyse"},
+      {path: "/provincie", component: "ohr-provincie"},
+      {path: "/hoge-raad", component: "ohr-hogeraad"},
+      {path: "/hoge-raad-analyse", component: "ohr-hogeraadanalyse"},
+      {path: "/strafrechtelijk", component: "ohr-strafrechtelijk"},
+      {
+        path: "/strafrechtelijk-analyse",
+        component: "ohr-strafrechtelijkanalyse"
+      },
+      {path: "/gemeenten-analyse", component: "ohr-gemeentenanalyse"},
+      {path: "/gemeenten", component: "ohr-gemeenten"},
+      {path: "/gemeenten-op-kaart", component: "ohr-Opkaart"},
+      {path: "(.*)", component: "olr-view404"},
     ]);
     Router.go(window.location.pathname)
   }
 }
+
 define("olr-app", OlrApp, {});

@@ -1,21 +1,22 @@
 import "../qlik/visual";
 import "../qlik/infoblock";
 
-import {define, html, LitElement, renderStack} from "../common/commons.js";
-import {Qlik, STARDUST} from "@domg/qlik-lib";
+import {define, html, LitElement} from "../common/commons.js";
+import {Qlik} from "@domg/qlik-lib";
 import {vlElementsStyle} from "@domg-wc/elements";
 import viz_gewest from "../config/milieuhandhaving.json" assert {type: "json"};
 
+import "@domg-wc/elements/image";
+import "@domg-wc/elements/grid";
+import "@domg-wc/elements/title";
 import "@domg-wc/components/content-header";
 import "@domg-wc/components/loader";
-import "@domg-wc/components/infoblock";
-import "@domg-wc/components/info-tile";
 
 class OhrProvincieAnalyse extends LitElement {
 
   static get styles() {
     return [
-      vlElementsStyle
+      ...vlElementsStyle
     ]
   }
 

@@ -1,15 +1,20 @@
 import {define, html, LitElement, renderStack} from "../common/commons.js";
 import {vlElementsStyle} from "@domg-wc/elements";
 
+import "@domg-wc/elements/image";
+import "@domg-wc/elements/grid";
+import "@domg-wc/elements/title";
+import "@domg-wc/elements/text";
+import "@domg-wc/elements/doormat";
+import "@domg-wc/elements/link";
+import "@domg-wc/elements/link-list";
 import "@domg-wc/components/content-header";
-import "@domg-wc/components/typography";
-import "@domg-wc/components/alert";
 
 class OhrProvincie extends LitElement {
 
   static get styles() {
     return [
-      vlElementsStyle
+      ...vlElementsStyle
     ]
   }
 
@@ -50,30 +55,41 @@ class OhrProvincie extends LitElement {
   }
   __renderTable() {
     return html`
-        <p is="vl-text">
-        De provincies hebben handhavingsbevoegdheden ten aanzien van de milieuregelgeving. De
-        provinciegouverneur of zijn plaatsvervanger is in bepaalde gevallen bevoegd voor het
-        opleggen van bestuurlijke maatregelen en kan veiligheidsmaatregelen nemen in geval van
-        een aanzienlijk risico voor mens of milieu. De provinciale toezichthouders oefenen
-        daarnaast het toezicht uit op de toepassing van specifieke milieuvoorschriften.
-        In de individuele handhavingsfiches wordt per provincie gerapporteerd over de uitvoering
+      <p is="vl-text">
+        De provincies hebben handhavingsbevoegdheden ten aanzien van de
+        milieuregelgeving. De
+        provinciegouverneur of zijn plaatsvervanger is in bepaalde gevallen
+        bevoegd voor het
+        opleggen van bestuurlijke maatregelen en kan veiligheidsmaatregelen
+        nemen in geval van
+        een aanzienlijk risico voor mens of milieu. De provinciale
+        toezichthouders oefenen
+        daarnaast het toezicht uit op de toepassing van specifieke
+        milieuvoorschriften.
+        In de individuele handhavingsfiches wordt per provincie gerapporteerd
+        over de uitvoering
         van hun handhavingsactiviteiten in het voorgaand jaar.
-        </p>
-                    
-                    <section id="content-1-2" is="vl-region">
-                        <div is="vl-grid">
-                            <div is="vl-column">
-                                <div style="max-width: 600px">
-                                    <a is="vl-doormat" href="/provincie_jaar_analyse">
-                                        <h2 is="vl-doormat-title">Analyseer de cijfers</h2>
-                                        <div is="vl-doormat-text">
-                                          De cijfers geven een totaalbeeld van de handhavingsactiviteiten van de provincies samen in het voorgaande jaar. Bij selectie van een provincie, wordt in de individuele handhavingsfiche van deze provincie gerapporteerd over de uitvoering van de handhavingsactiviteiten in het voorgaande jaar.
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </section>`;
+      </p>
+
+      <section id="content-1-2" is="vl-region">
+        <div is="vl-grid">
+          <div is="vl-column">
+            <div style="max-width: 600px">
+              <a is="vl-doormat" href="/provincie_jaar_analyse">
+                <h2 is="vl-doormat-title">Analyseer de cijfers</h2>
+                <div is="vl-doormat-text">
+                  De cijfers geven een totaalbeeld van de
+                  handhavingsactiviteiten van de provincies samen in het
+                  voorgaande jaar. Bij selectie van een provincie, wordt in de
+                  individuele handhavingsfiche van deze provincie gerapporteerd
+                  over de uitvoering van de handhavingsactiviteiten in het
+                  voorgaande jaar.
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>`;
   }
 
   __renderSideNavigation() {

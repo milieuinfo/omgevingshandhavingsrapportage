@@ -13,8 +13,15 @@ import "../qlik/dashboard.js";
 import {DEFAULT, REFRESH_MEASURE} from "../config/qlik_resources.js";
 import {exportCSVFile, exportExcelFile, Qlik} from "@domg/qlik-lib";
 
+import "@domg-wc/elements/action-group";
+import "@domg-wc/elements/button";
+import "@domg-wc/elements/select";
+import "@domg-wc/elements/title";
+import "@domg-wc/elements/form";
+import "@domg-wc/elements/icon";
 import "@domg-wc/components/loader";
 import "@domg-wc/components/annotation";
+import "@domg-wc/components/alert";
 import {vlElementsStyle} from "@domg-wc/elements";
 
 class DashboardPage extends LitElement {
@@ -259,9 +266,4 @@ class DashboardPage extends LitElement {
   }
 }
 
-Promise
-.all([window.customElements.whenDefined("vl-multiselect"),
-  window.customElements.whenDefined("vl-select")])
-.then(() => {
-  define('dashboard-page', DashboardPage);
-});
+define('dashboard-page', DashboardPage);

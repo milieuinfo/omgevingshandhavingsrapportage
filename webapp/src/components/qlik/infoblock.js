@@ -1,7 +1,8 @@
 import {html, LitElement, define, renderStack, css} from "../common/commons.js";
 import {STARDUST} from "@domg/qlik-lib";
 
-import "@domg-wc/components/infoblock"
+import "@domg-wc/components/infoblock";
+import "@domg-wc/components/info-tile";
 import {vlElementsStyle} from "@domg-wc/elements";
 
 class QlikInfoBlock extends LitElement {
@@ -9,7 +10,7 @@ class QlikInfoBlock extends LitElement {
 
   static get styles() {
     return [
-        vlElementsStyle
+        ...vlElementsStyle
     ]
   }
 

@@ -11,8 +11,13 @@ import filters from "../config/controles-filters.js";
 import "@domg-wc/components/functional-header";
 import "@domg-wc/components/typography";
 import "@domg-wc/components/loader";
+import {vlElementsStyle} from "@domg-wc/elements";
 
 class OhrControles extends LitElement {
+
+  static get styles() {
+    return [...vlElementsStyle];
+  }
 
   static get properties() {
     return {
@@ -27,7 +32,7 @@ class OhrControles extends LitElement {
           data-vl-back-link="/"
           data-vl-title="Thema - Controles"
           data-vl-sub-title="Omgevingshandhavingsrapportage"
-          data-vl-link="/klachten">
+          data-vl-link="/controles">
       </vl-functional-header>
 
       <div style="margin: 0px 0px">

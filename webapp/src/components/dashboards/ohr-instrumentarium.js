@@ -4,7 +4,16 @@ import "../qlik/dashboard.js";
 import viz_klachten from "../config/klachten.json" assert {type: "json"};
 import filters from "../config/klachten-filters.js";
 
+import "@domg-wc/components/functional-header";
+import "@domg-wc/components/typography";
+import "@domg-wc/components/loader";
+import {vlElementsStyle} from "@domg-wc/elements";
+
 class OhrInstrumentarium extends LitElement {
+
+  static get styles() {
+    return [...vlElementsStyle];
+  }
 
   static get properties() {
     return {

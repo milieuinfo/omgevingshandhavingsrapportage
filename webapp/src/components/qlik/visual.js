@@ -6,8 +6,10 @@ class QlikVisual extends LitElement {
 
   static get styles() {
     // truken van de foor om styling van sn-kpi goed te krijgen
-    let elements = Array.from(document.getElementsByTagName('style')).filter(e => e.innerText.includes(".sn-kpi"));
-    return [vlElementsStyle, ...elements.map(e => css`${unsafeCSS(e.innerText)}`)]
+    let elements = Array.from(document.getElementsByTagName('style')).filter(
+        e => e.innerText.includes(".sn-kpi"));
+    return [...vlElementsStyle,
+      ...elements.map(e => css`${unsafeCSS(e.innerText)}`)]
   }
 
   static get properties() {
@@ -52,7 +54,8 @@ class QlikVisual extends LitElement {
   }
 
   render() {
-    let style = css`${unsafeCSS(`${this.additionalStyle};height: ${this.height};`)}`;
+    let style = css`${unsafeCSS(
+        `${this.additionalStyle};height: ${this.height};`)}`;
     return html`
       <div id="visual-${this.id}" style="${style}"></div>
     `;

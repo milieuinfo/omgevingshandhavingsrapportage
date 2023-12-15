@@ -2,12 +2,17 @@ import {define, html, LitElement} from "../common/commons.js";
 
 import "../qlik/dashboard-page.js";
 import viz_personeel from "../config/personeel.json" assert {type: "json"};
-import filtersPersoneel from "../config/personeel-filters.js";
 
-import "@domg-wc/components/typography"
-import "@domg-wc/components/functional-header"
+import "@domg-wc/components/functional-header";
+import "@domg-wc/components/typography";
+import "@domg-wc/components/loader";
+import {vlElementsStyle} from "@domg-wc/elements";
 
 class OhrPersoneel extends LitElement {
+
+  static get styles() {
+    return [...vlElementsStyle];
+  }
 
   static get properties() {
     return {
@@ -24,15 +29,15 @@ class OhrPersoneel extends LitElement {
           data-vl-sub-title="Meerjarenrapportage personeel"
           data-vl-link="/personeel">
       </vl-functional-header>
-        <dashboard-page
-            title="Personeel"
-            url="omgevingsloketrapport.omgeving.vlaanderen.be"
-            appId="6960c6d8-493a-4489-a428-367b779be6f9"
-            .views="${viz_personeel}"
-            @initialized="${() => this.initialized = true}"
-        >
-          ${this.__renderIntroduction()}
-        </dashboard-page>
+      <dashboard-page
+          title="Personeel"
+          url="omgevingsloketrapport.omgeving.vlaanderen.be"
+          appId="6960c6d8-493a-4489-a428-367b779be6f9"
+          .views="${viz_personeel}"
+          @initialized="${() => this.initialized = true}"
+      >
+        ${this.__renderIntroduction()}
+      </dashboard-page>
       </section>`;
   }
 

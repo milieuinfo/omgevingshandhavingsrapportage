@@ -1,15 +1,20 @@
 import {define, html, LitElement, renderStack} from "../common/commons.js";
 import {vlElementsStyle} from "@domg-wc/elements";
 
+import "@domg-wc/elements/image";
+import "@domg-wc/elements/grid";
+import "@domg-wc/elements/title";
+import "@domg-wc/elements/doormat";
+import "@domg-wc/elements/link";
+import "@domg-wc/elements/link-list";
 import "@domg-wc/components/content-header";
 import "@domg-wc/components/typography";
-import "@domg-wc/components/alert";
 
 class OhrGewest extends LitElement {
 
   static get styles() {
     return [
-      vlElementsStyle
+      ...vlElementsStyle
     ]
   }
 
@@ -17,42 +22,6 @@ class OhrGewest extends LitElement {
     super();
   }
 
-  render() {
-    return html`
-    <vl-content-header>
-    <img is="vl-image"
-         slot="image"
-         src="/images/header.jpg"
-         alt="Hoofding afbeelding website"/>
-    <a slot="context-link" href="/">Omgevingshandhavingsrapportage</a>
-    <a slot="title-link" href="/">Handhaving</a>
-  </vl-content-header>
-  <section is="vl-region">
-    <div is="vl-layout">
-          ${renderStack(
-            {
-              size: 8,
-              template: html`<h1 is="vl-h1" data-vl-no-space-bottom>
-                Gewestelijke handhavingsactoren
-              </h1>`,
-            },
-              {
-                size: 8,
-                template: this.__renderTable(),
-              },
-              {
-                size: 4,
-                template: this.__renderSideNavigation(),
-              },
-              {
-                size:8,
-                template: this.__renderDoorMat(),
-              }
-          )}
-          </div>
-          </section>`;
-  }
-/*
   render() {
     return html`
       <vl-content-header>
@@ -74,13 +43,21 @@ class OhrGewest extends LitElement {
               },
               {
                 size: 8,
-                template: this.__renderPage(),
+                template: this.__renderTable(),
               },
+              {
+                size: 4,
+                template: this.__renderSideNavigation(),
+              },
+              {
+                size: 8,
+                template: this.__renderDoorMat(),
+              }
           )}
         </div>
       </section>`;
   }
-*/
+
   __renderTable() {
     return html`
       <div is="vl-grid">

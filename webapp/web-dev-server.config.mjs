@@ -14,7 +14,7 @@ export default {
   hostname: 'localhost',
   nodeResolve: true,
   appIndex: 'index.html',
-  rootDir: '.',
+  rootDir: 'build/release',
   open: true,
   plugins: [
     rollupAdapter(replace({

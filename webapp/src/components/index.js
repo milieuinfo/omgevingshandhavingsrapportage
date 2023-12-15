@@ -1,5 +1,5 @@
-import { Router } from "@vaadin/router"
-import {LitElement, html} from 'lit';
+import {Router} from "@vaadin/router"
+import {html, LitElement} from 'lit';
 import "uig-webcomponents/lib/components/body"
 import "uig-webcomponents/lib/components/header"
 import "uig-webcomponents/lib/components/footer"
@@ -39,7 +39,6 @@ import connect from '../connect';
 import snKpi from "@nebula.js/sn-kpi"
 import table from '@nebula.js/sn-table';
 import snPieChart from "@nebula.js/sn-pie-chart"
-
 
 //Routes
 const routes = [
@@ -84,7 +83,7 @@ const routes = [
     action: async () => {
       await import("../views/gewestelijkAnalyse");
       gewestelijkanalyserendering();
-      
+
     },
   },
   {
@@ -124,64 +123,62 @@ const routes = [
     },
   },
   {
-    path:"/public/gemeentenAnalyse",
+    path: "/public/gemeentenAnalyse",
     component: "gemeentenAnalyse-view",
-    action: async() => {
+    action: async () => {
       await import ("../views/gemeentenAnalyse");
     }
   },
   {
-    path:"/public/gemeentenDashboard",
+    path: "/public/gemeentenDashboard",
     component: "gemeentenDashboard-view",
-    action: async() => {
+    action: async () => {
       await import ("../views/gemeentenDashboard");
       gemeentendashboard();
     }
   },
   {
-    path:"/public/hogeraadAnalyse",
+    path: "/public/hogeraadAnalyse",
     component: "hogeraadAnalyse-view",
-    action: async() => {
+    action: async () => {
       await import ("../views/hogeraadAnalyse");
       hogeraadanalyserendering();
     }
   },
   {
-    path:"/public/strafrechtelijk",
+    path: "/public/strafrechtelijk",
     component: "strafrechtelijkAnalyse-view",
-    action: async() => {
+    action: async () => {
       await import ("../views/strafrechtelijk")
-    
+
     }
   },
   {
-    path:"/public/hogeraad",
+    path: "/public/hogeraad",
     component: "hogeraad-view",
-    action: async() => {
+    action: async () => {
       await import ("../views/hogeraad");
     }
   },
   {
-    path:"/public/strafrechtelijkAnalyse",
+    path: "/public/strafrechtelijkAnalyse",
     component: "strafrechtelijkanalyseanalyse-view",
-    action: async() => {
+    action: async () => {
       await import ("../views/strafrechtelijkAnalyse");
       strafrechtelijkanalyserendering();
     }
   },
   {
-    path:"/public/gemeentenDashboardro",
+    path: "/public/gemeentenDashboardro",
     component: "gemeentendashboardro-view",
-    action: async() => {
+    action: async () => {
       await import ("../views/gemeentenDashboardro");
       gemeentendashboardro();
+    }
   }
-}
 ];
 export const router = new Router(document.getElementById("app"));
 router.setRoutes(routes);
-
-
 
 const config_Gemeenten_MIL = {
   url: "https://omgevingsloketrapport.omgeving.vlaanderen.be",
@@ -227,15 +224,16 @@ const types = [
     load: () => Promise.resolve(snPieChart),
   }
 ];
+
 async function gewestelijkanalyserendering() {
 
-const classExists = document.getElementsByClassName(
-    'chartGewest'
-).length > 0;
-let app;
-app = await connect(config_Gewest);
+  const classExists = document.getElementsByClassName(
+      'chartGewest'
+  ).length > 0;
+  let app;
+  app = await connect(config_Gewest);
 
-const nebbie = stardust.embed(app, {
+  const nebbie = stardust.embed(app, {
     types,
     context: {
       language: 'nl-NL',
@@ -247,126 +245,207 @@ const nebbie = stardust.embed(app, {
     context: {
       language: 'nl-NL',
       theme: 'light',
-      constraints: { select: true },
+      constraints: {select: true},
     },
   });
-  if(!classExists) {
+  if (!classExists) {
     //Get toolbar of application and define it as a class of toolbar => To be used in HTML page
-    (await nebbie.selections().then((s) => s.mount(document.querySelector('.toolbar')))); 
-       /* Get fieldvalues of the field Naam Handhavingsinstantie in Qlik model and mount it in placeholder listbox*/
- const fieldNameProvincie = 'Naam Handhavinginstantie'; // Should refer to a field in your app
- (await nebbie.field(fieldNameProvincie))
- .mount(document.querySelector('.listbox'),{search:false,title:"Gewestelijke handhavingsactoren",checkboxes:false});
+    (await nebbie.selections().then(
+        (s) => s.mount(document.querySelector('.toolbar'))));
+    /* Get fieldvalues of the field Naam Handhavingsinstantie in Qlik model and mount it in placeholder listbox*/
+    const fieldNameProvincie = 'Naam Handhavinginstantie'; // Should refer to a field in your app
+    (await nebbie.field(fieldNameProvincie))
+    .mount(document.querySelector('.listbox'), {
+      search: false,
+      title: "Gewestelijke handhavingsactoren",
+      checkboxes: false
+    });
     const elementsIdPairsGewest = [
-      { element: document.querySelector('.MIL-KPI-Toezichthouder'), id: "vFyjB" },
-      { element: document.querySelector('.MIL-KPI-VTE'), id: "GcHdjK" },
-      { element: document.querySelector('.MIL-Barchart-VTE'), id: "SFdpsd" },
-      { element: document.querySelector('.MIL-KPI-Klachten'), id: "nVQPBm" },
-      { element: document.querySelector('.MIL-Barchart-Klachten'), id: "RJzG" },
-      { element: document.querySelector('.MIL-KPI-Controles'), id: "yDCurj" },
-      { element: document.querySelector('.MIL-Barchart-Controles'), id: "mGbGjm" },
-      { element: document.querySelector('.MIL-KPI-Aanvankelijke-Controles'), id: "WPwAxT" },
-      { element: document.querySelector('.MIL-KPI-Overtredingsgraad'), id: "qJBnrn" },
-      { element: document.querySelector('.MIL-bar-Aanvankelijke-Controles'), id: "DEUkp" },
-      { element: document.querySelector('.MIL-KPI-Raadgeving'), id: "mPjrm" },
-      { element: document.querySelector('.MIL-KPI-Aanmaning'), id: "UYNdmn" },
-      { element: document.querySelector('.MIL-KPI-Verslag-van-vastelling'), id: "XejJS" },
-      { element: document.querySelector('.MIL-KPI-Proces-verbaal'), id: "BJRcRZ" },
-      { element: document.querySelector('.MIL-KPI-Bestuurlijk-maatregel'), id: "ffVSmTa" },
-      { element: document.querySelector('.MIL-KPI-Bestuurlijk-maatregel-met-dwangsom'), id: "jHmKf" },
-      { element: document.querySelector('.MIL-KPI-Bestuurlijk-maatregel-zonder-dwangsom'), id: "gcnM" },
-      { element: document.querySelector('.MIL-KPI-Veiligheidsmaatregel'), id: "rVWpfY" },
-      { element: document.querySelector('.opmerking-mil-hha'), id: "frEb" },
+      {element: document.querySelector('.MIL-KPI-Toezichthouder'), id: "vFyjB"},
+      {element: document.querySelector('.MIL-KPI-VTE'), id: "GcHdjK"},
+      {element: document.querySelector('.MIL-Barchart-VTE'), id: "SFdpsd"},
+      {element: document.querySelector('.MIL-KPI-Klachten'), id: "nVQPBm"},
+      {element: document.querySelector('.MIL-Barchart-Klachten'), id: "RJzG"},
+      {element: document.querySelector('.MIL-KPI-Controles'), id: "yDCurj"},
+      {
+        element: document.querySelector('.MIL-Barchart-Controles'),
+        id: "mGbGjm"
+      },
+      {
+        element: document.querySelector('.MIL-KPI-Aanvankelijke-Controles'),
+        id: "WPwAxT"
+      },
+      {
+        element: document.querySelector('.MIL-KPI-Overtredingsgraad'),
+        id: "qJBnrn"
+      },
+      {
+        element: document.querySelector('.MIL-bar-Aanvankelijke-Controles'),
+        id: "DEUkp"
+      },
+      {element: document.querySelector('.MIL-KPI-Raadgeving'), id: "mPjrm"},
+      {element: document.querySelector('.MIL-KPI-Aanmaning'), id: "UYNdmn"},
+      {
+        element: document.querySelector('.MIL-KPI-Verslag-van-vastelling'),
+        id: "XejJS"
+      },
+      {
+        element: document.querySelector('.MIL-KPI-Proces-verbaal'),
+        id: "BJRcRZ"
+      },
+      {
+        element: document.querySelector('.MIL-KPI-Bestuurlijk-maatregel'),
+        id: "ffVSmTa"
+      },
+      {
+        element: document.querySelector(
+            '.MIL-KPI-Bestuurlijk-maatregel-met-dwangsom'), id: "jHmKf"
+      },
+      {
+        element: document.querySelector(
+            '.MIL-KPI-Bestuurlijk-maatregel-zonder-dwangsom'), id: "gcnM"
+      },
+      {
+        element: document.querySelector('.MIL-KPI-Veiligheidsmaatregel'),
+        id: "rVWpfY"
+      },
+      {element: document.querySelector('.opmerking-mil-hha'), id: "frEb"},
       //Ruimtelijke ordening...
-      { element: document.querySelector('.RO-KPI-Stedenbouwkundige'), id: "TuPxJr" },
-      { element: document.querySelector('.RO-KPI-Gecombi'), id: "JzVmCqa" },
-      { element: document.querySelector('.RO-KPI-Verbalitisanten'), id: "vxRNaj" },
-      { element: document.querySelector('.RO-KPI-VTE'), id: "UtRdr" },
-      { element: document.querySelector('.RO-Barchart-VTE'), id: "pMzmCG" },
-      { element: document.querySelector('.RO-KPI-Klachten'), id: "qvzGGX" },
-      { element: document.querySelector('.RO-KPI-Controles'), id: "pAngTD" },
-      { element: document.querySelector('.RO-Barchart-Controles'), id: "NqAcF" },
-      { element: document.querySelector('.RO-KPI-Aanvankelijke-Controles'), id: "sPrA" },
-      { element: document.querySelector('.RO-KPI-Overtredingsgraad'), id: "GZmeTr" },
-      { element: document.querySelector('.RO-KPI-Raadgeving'), id: "ezmbfUG" },
-      { element: document.querySelector('.RO-KPI-Aanmaning'), id: "ELb" },
-      { element: document.querySelector('.RO-KPI-Verslag-van-vastelling'), id: "BJUMTa" },
-      { element: document.querySelector('.RO-KPI-Proces-verbaal'), id: "VcYTSCv" },
-      { element: document.querySelector('.RO-KPI-Beveltotstaking'), id: "TBDgV" },
-      { element: document.querySelector('.opmerking-ro-hha'), id: "hPpmmx" },
-      { element: document.querySelector('.RO-KPI-Bestuurlijk-maatregel'), id: "RttJdgK" },
-      { element: document.querySelector('.RO-KPI-Bestuurlijk-maatregel-met-dwangsom'), id: "QJcnXPM" },
-      { element: document.querySelector('.RO-KPI-Bestuurlijk-maatregel-zonder-dwangsom'), id: "jzsrBD" },
-      { element: document.querySelector('.RO-KPI-minnelijk'), id: "dNxJzdj" },
-      { element: document.querySelector('.RO-KPI-openbaarmin'), id: "wRzVAX" },
-      { element: document.querySelector('.RO-KPI-burgerlijkrechter'), id: "ccVXRjV" },
-      { element: document.querySelector('.RO-KPI-gerechtambt'), id: "yDSVgJ" }
+      {
+        element: document.querySelector('.RO-KPI-Stedenbouwkundige'),
+        id: "TuPxJr"
+      },
+      {element: document.querySelector('.RO-KPI-Gecombi'), id: "JzVmCqa"},
+      {
+        element: document.querySelector('.RO-KPI-Verbalitisanten'),
+        id: "vxRNaj"
+      },
+      {element: document.querySelector('.RO-KPI-VTE'), id: "UtRdr"},
+      {element: document.querySelector('.RO-Barchart-VTE'), id: "pMzmCG"},
+      {element: document.querySelector('.RO-KPI-Klachten'), id: "qvzGGX"},
+      {element: document.querySelector('.RO-KPI-Controles'), id: "pAngTD"},
+      {element: document.querySelector('.RO-Barchart-Controles'), id: "NqAcF"},
+      {
+        element: document.querySelector('.RO-KPI-Aanvankelijke-Controles'),
+        id: "sPrA"
+      },
+      {
+        element: document.querySelector('.RO-KPI-Overtredingsgraad'),
+        id: "GZmeTr"
+      },
+      {element: document.querySelector('.RO-KPI-Raadgeving'), id: "ezmbfUG"},
+      {element: document.querySelector('.RO-KPI-Aanmaning'), id: "ELb"},
+      {
+        element: document.querySelector('.RO-KPI-Verslag-van-vastelling'),
+        id: "BJUMTa"
+      },
+      {
+        element: document.querySelector('.RO-KPI-Proces-verbaal'),
+        id: "VcYTSCv"
+      },
+      {element: document.querySelector('.RO-KPI-Beveltotstaking'), id: "TBDgV"},
+      {element: document.querySelector('.opmerking-ro-hha'), id: "hPpmmx"},
+      {
+        element: document.querySelector('.RO-KPI-Bestuurlijk-maatregel'),
+        id: "RttJdgK"
+      },
+      {
+        element: document.querySelector(
+            '.RO-KPI-Bestuurlijk-maatregel-met-dwangsom'), id: "QJcnXPM"
+      },
+      {
+        element: document.querySelector(
+            '.RO-KPI-Bestuurlijk-maatregel-zonder-dwangsom'), id: "jzsrBD"
+      },
+      {element: document.querySelector('.RO-KPI-minnelijk'), id: "dNxJzdj"},
+      {element: document.querySelector('.RO-KPI-openbaarmin'), id: "wRzVAX"},
+      {
+        element: document.querySelector('.RO-KPI-burgerlijkrechter'),
+        id: "ccVXRjV"
+      },
+      {element: document.querySelector('.RO-KPI-gerechtambt'), id: "yDSVgJ"}
     ];
-        elementsIdPairsGewest.forEach(({ element, id }) => {
-        nebbieNodebbie.render({ element, id });
+    elementsIdPairsGewest.forEach(({element, id}) => {
+      nebbieNodebbie.render({element, id});
     });
   }
 }
+
 //Rendering Provinciaalanalyse
 async function provinciaalanalyserendering() {
   const classExists = document.getElementsByClassName(
-    'chart'
-   ).length > 0;
+      'chart'
+  ).length > 0;
 
-   let app;
-   app = await connect(config_Provinciaal);
- const nebbie = stardust.embed(app, {
-     types,
-     context: {
-       language: 'nl-NL',
-     },
-   });
+  let app;
+  app = await connect(config_Provinciaal);
+  const nebbie = stardust.embed(app, {
+    types,
+    context: {
+      language: 'nl-NL',
+    },
+  });
 
-   const nebbieNoselectionProv = stardust.embed(app, {
+  const nebbieNoselectionProv = stardust.embed(app, {
     types,
     //themes,
     context: {
       language: 'nl-NL',
-      constraints: { select: true },
+      constraints: {select: true},
     },
   });
- 
-  if(!classExists) {
-  //Get toolbar of application and define it as a class of toolbar => To be used in HTML page
-  (await nebbie.selections().then((s) => s.mount(document.querySelector('.toolbar')))); 
-  
-     /* Get fieldvalues of the field Naam Handhavingsinstantie in Qlik model and mount it in placeholder listbox*/
- const fieldNameProvincie = '[Provincie]'; // Should refer to a field in your app
- (await nebbie.field(fieldNameProvincie))
- .mount(document.querySelector('.listboxProv'),{search:false,title:"Provinciale handhavingsactoren",checkboxes:false});
+
+  if (!classExists) {
+    //Get toolbar of application and define it as a class of toolbar => To be used in HTML page
+    (await nebbie.selections().then(
+        (s) => s.mount(document.querySelector('.toolbar'))));
+
+    /* Get fieldvalues of the field Naam Handhavingsinstantie in Qlik model and mount it in placeholder listbox*/
+    const fieldNameProvincie = '[Provincie]'; // Should refer to a field in your app
+    (await nebbie.field(fieldNameProvincie))
+    .mount(document.querySelector('.listboxProv'), {
+      search: false,
+      title: "Provinciale handhavingsactoren",
+      checkboxes: false
+    });
 
     const elementsIdPairsProvincie = [
-  { element: document.querySelector('.VTEHandhaving'), id: "JjxWn" },
-  { element: document.querySelector('.ToezichthoudersProv'), id: "ueUrPBa" },
-  { element: document.querySelector('.TotaalVTEChart'), id: "nPpHZ" },
-  { element: document.querySelector('.KlachtenChart'), id: "FGDamh" },
-  { element: document.querySelector('.Klachten'), id: "mKLrs" },
-  { element: document.querySelector('.Aanvankelijkecontrolesmetovertreding'), id: "FwZahE" },
-  { element: document.querySelector('.ControlesChart'), id: "eypP" },
-  { element: document.querySelector('.Controles'), id: "JQLw" },
-  { element: document.querySelector('.PROV-KPI-Overtredingsgraad'), id: "AJvfRDY" },
-  { element: document.querySelector('.PROV-BAR-Controles'), id: "wCxFj" },
-  { element: document.querySelector('.Raadgeving'), id: "QCdRxrv" },
-  { element: document.querySelector('.Aanmaning'), id: "fEjbnM" },
-  { element: document.querySelector('.Procesverbaal'), id: "xUjZP" },
-  { element: document.querySelector('.PROV-KPI-verslagvanvastelling'), id: "pYjrVP" }
-];
-    elementsIdPairsProvincie.forEach(({ element, id }) => {
-    nebbieNoselectionProv.render({ element, id });
-});
+      {element: document.querySelector('.VTEHandhaving'), id: "JjxWn"},
+      {element: document.querySelector('.ToezichthoudersProv'), id: "ueUrPBa"},
+      {element: document.querySelector('.TotaalVTEChart'), id: "nPpHZ"},
+      {element: document.querySelector('.KlachtenChart'), id: "FGDamh"},
+      {element: document.querySelector('.Klachten'), id: "mKLrs"},
+      {
+        element: document.querySelector(
+            '.Aanvankelijkecontrolesmetovertreding'),
+        id: "FwZahE"
+      },
+      {element: document.querySelector('.ControlesChart'), id: "eypP"},
+      {element: document.querySelector('.Controles'), id: "JQLw"},
+      {
+        element: document.querySelector('.PROV-KPI-Overtredingsgraad'),
+        id: "AJvfRDY"
+      },
+      {element: document.querySelector('.PROV-BAR-Controles'), id: "wCxFj"},
+      {element: document.querySelector('.Raadgeving'), id: "QCdRxrv"},
+      {element: document.querySelector('.Aanmaning'), id: "fEjbnM"},
+      {element: document.querySelector('.Procesverbaal'), id: "xUjZP"},
+      {
+        element: document.querySelector('.PROV-KPI-verslagvanvastelling'),
+        id: "pYjrVP"
+      }
+    ];
+    elementsIdPairsProvincie.forEach(({element, id}) => {
+      nebbieNoselectionProv.render({element, id});
+    });
 
-    const model4 = await app.getObject("emJyma"); 
+    const model4 = await app.getObject("emJyma");
     const modelLayout4 = await model4.getLayout();
     const data4 = [];
     const columns4 = modelLayout4.qHyperCube.qSize.qcx;
     const totalheight4 = modelLayout4.qHyperCube.qSize.qcy;
     const pageheight4 = 5;
-    const numberOfPages4 = 3; 
+    const numberOfPages4 = 3;
     for (let i = 0; i < numberOfPages4; i++) {
       const page4 = {
         qTop: pageheight4 * i,
@@ -377,232 +456,259 @@ async function provinciaalanalyserendering() {
       const row4 = await model4.getHyperCubeData("/qHyperCubeDef", [page4]);
       data4.push(...row4[0].qMatrix);
     }
-    
+
     class MyElement4 extends LitElement {
       render() {
-        return html`<vl-typography>
-      <table>
-      <caption>
-       Opmerking voor cijfers van 2022
-      </caption>
-      <thead>
-        <tr>
-          <th>Provincie</th>
-          <th>Opmerking</th>
-        </tr>
-      </thead>
-      <tbody>
-      <tr>
-     <td>${data4[0][0].qText}</td>
-     <td>${data4[0][1].qText}</td>
-     </tr>
-      </tbody>
-    </table>
-  </vl-typography>`;
+        return html`
+          <vl-typography>
+            <table>
+              <caption>
+                Opmerking voor cijfers van 2022
+              </caption>
+              <thead>
+                <tr>
+                  <th>Provincie</th>
+                  <th>Opmerking</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>${data4[0][0].qText}</td>
+                  <td>${data4[0][1].qText}</td>
+                </tr>
+              </tbody>
+            </table>
+          </vl-typography>`;
       }
     }
+
     customElements.define('my-element4', MyElement4);
 
     class MyElement5 extends LitElement {
       render() {
-        return html`<vl-typography>
-      <table>
-      <caption>
-       Opmerking voor cijfers van 2022
-      </caption>
-      <thead>
-        <tr>
-          <th>Provincie</th>
-          <th>Opmerking</th>
-        </tr>
-      </thead>
-      <tbody>
-      <tr>
-     <td>${data4[1][0].qText}</td>
-     <td>${data4[1][1].qText}</td>
-     </tr>
-      </tbody>
-    </table>
-  </vl-typography>`;
+        return html`
+          <vl-typography>
+            <table>
+              <caption>
+                Opmerking voor cijfers van 2022
+              </caption>
+              <thead>
+                <tr>
+                  <th>Provincie</th>
+                  <th>Opmerking</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>${data4[1][0].qText}</td>
+                  <td>${data4[1][1].qText}</td>
+                </tr>
+              </tbody>
+            </table>
+          </vl-typography>`;
       }
     }
+
     customElements.define('my-element5', MyElement5);
+
     class MyElement6 extends LitElement {
       render() {
-        return html`<vl-typography>
-      <table>
-      <caption>
-       Opmerking voor cijfers van 2022
-      </caption>
-      <thead>
-        <tr>
-          <th>Provincie</th>
-          <th>Opmerking</th>
-        </tr>
-      </thead>
-      <tbody>
-      <tr>
-     <td>${data4[2][0].qText}</td>
-     <td>${data4[2][1].qText}</td>
-     </tr>
-      </tbody>
-    </table>
-  </vl-typography>`;
+        return html`
+          <vl-typography>
+            <table>
+              <caption>
+                Opmerking voor cijfers van 2022
+              </caption>
+              <thead>
+                <tr>
+                  <th>Provincie</th>
+                  <th>Opmerking</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>${data4[2][0].qText}</td>
+                  <td>${data4[2][1].qText}</td>
+                </tr>
+              </tbody>
+            </table>
+          </vl-typography>`;
       }
     }
+
     customElements.define('my-element6', MyElement6);
+
     class MyElement7 extends LitElement {
       render() {
-        return html`<vl-typography>
-      <table>
-      <caption>
-       Opmerking voor cijfers van 2022
-      </caption>
-      <thead>
-        <tr>
-          <th>Provincie</th>
-          <th>Opmerking</th>
-        </tr>
-      </thead>
-      <tbody>
-      <tr>
-     <td>${data4[3][0].qText}</td>
-     <td>${data4[3][1].qText}</td>
-     </tr>
-      </tbody>
-    </table>
-  </vl-typography>`;
+        return html`
+          <vl-typography>
+            <table>
+              <caption>
+                Opmerking voor cijfers van 2022
+              </caption>
+              <thead>
+                <tr>
+                  <th>Provincie</th>
+                  <th>Opmerking</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>${data4[3][0].qText}</td>
+                  <td>${data4[3][1].qText}</td>
+                </tr>
+              </tbody>
+            </table>
+          </vl-typography>`;
       }
     }
+
     customElements.define('my-element7', MyElement7);
+
     class MyElement8 extends LitElement {
       render() {
-        return html`<vl-typography>
-      <table>
-      <caption>
-       Opmerking voor cijfers van 2022
-      </caption>
-      <thead>
-        <tr>
-          <th>Provincie</th>
-          <th>Opmerking</th>
-        </tr>
-      </thead>
-      <tbody>
-      <tr>
-     <td>${data4[4][0].qText}</td>
-     <td>${data4[4][1].qText}</td>
-     </tr>
-      </tbody>
-    </table>
-  </vl-typography>`;
+        return html`
+          <vl-typography>
+            <table>
+              <caption>
+                Opmerking voor cijfers van 2022
+              </caption>
+              <thead>
+                <tr>
+                  <th>Provincie</th>
+                  <th>Opmerking</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>${data4[4][0].qText}</td>
+                  <td>${data4[4][1].qText}</td>
+                </tr>
+              </tbody>
+            </table>
+          </vl-typography>`;
       }
     }
+
     customElements.define('my-element8', MyElement8);
   }
 }
+
 //Rendering hoge raad
 async function hogeraadanalyserendering() {
   const classExistsHR = document.getElementsByClassName(
-    'chart').length > 0;
-   let app;
-   app = await connect(config_HogeRaadAnalyse);
- const nebbie = stardust.embed(app, {
-     types,
-     //themes,
-     context: {
-       language: 'nl-NL',
-       theme: 'light',
-     },
-   });
-   const nebbieNoselectionHRC = stardust.embed(app, {
+      'chart').length > 0;
+  let app;
+  app = await connect(config_HogeRaadAnalyse);
+  const nebbie = stardust.embed(app, {
     types,
     //themes,
     context: {
       language: 'nl-NL',
       theme: 'light',
-      constraints: { select: true },
+    },
+  });
+  const nebbieNoselectionHRC = stardust.embed(app, {
+    types,
+    //themes,
+    context: {
+      language: 'nl-NL',
+      theme: 'light',
+      constraints: {select: true},
     },
   });
 
-  if(!classExistsHR) {
+  if (!classExistsHR) {
     //Get toolbar of application and define it as a class of toolbar => To be used in HTML page
-  (await nebbie.selections().then((s) => s.mount(document.querySelector('.toolbar'))));
-    
-  const model = await app.getObject("aZbJPN"); 
-  const modelLayout = await model.getLayout();
-  const data = [];
-  const columns = modelLayout.qHyperCube.qSize.qcx;
-  const totalheight = modelLayout.qHyperCube.qSize.qcy;
-  const pageheight = 5;
-  const numberOfPages = 3; 
-  for (let i = 0; i < numberOfPages; i++) {
-    const page = {
-      qTop: pageheight * i,
-      qLeft: 0,
-      qWidth: columns,
-      qHeight: pageheight,
-    };
-    const row = await model.getHyperCubeData("/qHyperCubeDef", [page]);
-    data.push(...row[0].qMatrix);
-  }
-  class MyElement extends LitElement {  
-      render() {
-        return html`<vl-typography>
-      <table>
-      <caption>
-        Instroom - 2022
-      </caption>
-      <thead>
-        <tr>
-          <th>Instroom</th>
-          <th>Aanvragen voor advies inzake herstelvorderingen</th>
-          <th>Verzoeken tot heroverweging van een negatief advies inzake herstelvorderingen</th>
-          <th>Aanvragen voor advies inzake opeenvolgende herstelvorderingen</th>
-          <th>Aanvragen voor advies inzake een ambtshalve uitvoering van een door de rechter bevolen herstelmaatregel</th>
-          <th>Aanvragen voor advies inzake betekeningen van vonissen of arresten waarin de rechter het bestuur heeft gematchtigd om ambtshalve in de uitvoering ervan te voorzien</th>
-        </tr>
-      </thead>
-      <tbody>
-      <tr>
-     <td>${data[0][0].qText}</td>
-     <td>${data[0][1].qText}</td>
-     <td>${data[0][2].qText}</td>
-     <td>${data[0][3].qText}</td>
-     <td>${data[0][4].qText}</td>
-     <td>${data[0][5].qText}</td>
-     </tr>
-     <tr>
-     <td>${data[1][0].qText}</td>
-     <td>${data[1][1].qText}</td>
-     <td>${data[1][2].qText}</td>
-     <td>${data[1][3].qText}</td>
-     <td>${data[1][4].qText}</td>
-     <td>${data[1][5].qText}</td>
-     </tr>
+    (await nebbie.selections().then(
+        (s) => s.mount(document.querySelector('.toolbar'))));
 
-     <tr>
-     <td>${data[2][0].qText}</td>
-     <td>${data[2][1].qText}</td>
-     <td>${data[2][2].qText}</td>
-     <td>${data[2][3].qText}</td>
-     <td>${data[2][4].qText}</td>
-     <td>${data[2][5].qText}</td>
-     </tr>
-      </tbody>
-    </table>
-  </vl-typography>`;
+    const model = await app.getObject("aZbJPN");
+    const modelLayout = await model.getLayout();
+    const data = [];
+    const columns = modelLayout.qHyperCube.qSize.qcx;
+    const totalheight = modelLayout.qHyperCube.qSize.qcy;
+    const pageheight = 5;
+    const numberOfPages = 3;
+    for (let i = 0; i < numberOfPages; i++) {
+      const page = {
+        qTop: pageheight * i,
+        qLeft: 0,
+        qWidth: columns,
+        qHeight: pageheight,
+      };
+      const row = await model.getHyperCubeData("/qHyperCubeDef", [page]);
+      data.push(...row[0].qMatrix);
+    }
+
+    class MyElement extends LitElement {
+      render() {
+        return html`
+          <vl-typography>
+            <table>
+              <caption>
+                Instroom - 2022
+              </caption>
+              <thead>
+                <tr>
+                  <th>Instroom</th>
+                  <th>Aanvragen voor advies inzake herstelvorderingen</th>
+                  <th>Verzoeken tot heroverweging van een negatief advies inzake
+                    herstelvorderingen
+                  </th>
+                  <th>Aanvragen voor advies inzake opeenvolgende
+                    herstelvorderingen
+                  </th>
+                  <th>Aanvragen voor advies inzake een ambtshalve uitvoering van
+                    een door de rechter bevolen herstelmaatregel
+                  </th>
+                  <th>Aanvragen voor advies inzake betekeningen van vonissen of
+                    arresten waarin de rechter het bestuur heeft gematchtigd om
+                    ambtshalve in de uitvoering ervan te voorzien
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>${data[0][0].qText}</td>
+                  <td>${data[0][1].qText}</td>
+                  <td>${data[0][2].qText}</td>
+                  <td>${data[0][3].qText}</td>
+                  <td>${data[0][4].qText}</td>
+                  <td>${data[0][5].qText}</td>
+                </tr>
+                <tr>
+                  <td>${data[1][0].qText}</td>
+                  <td>${data[1][1].qText}</td>
+                  <td>${data[1][2].qText}</td>
+                  <td>${data[1][3].qText}</td>
+                  <td>${data[1][4].qText}</td>
+                  <td>${data[1][5].qText}</td>
+                </tr>
+
+                <tr>
+                  <td>${data[2][0].qText}</td>
+                  <td>${data[2][1].qText}</td>
+                  <td>${data[2][2].qText}</td>
+                  <td>${data[2][3].qText}</td>
+                  <td>${data[2][4].qText}</td>
+                  <td>${data[2][5].qText}</td>
+                </tr>
+              </tbody>
+            </table>
+          </vl-typography>`;
       }
     }
+
     customElements.define('my-element', MyElement);
 
-    const model2 = await app.getObject("CdDcLcY"); 
+    const model2 = await app.getObject("CdDcLcY");
     const modelLayout2 = await model2.getLayout();
     const data2 = [];
     const columns2 = modelLayout2.qHyperCube.qSize.qcx;
     const totalheight2 = modelLayout2.qHyperCube.qSize.qcy;
     const pageheight2 = 5;
-    const numberOfPages2 = 3; 
+    const numberOfPages2 = 3;
     for (let i = 0; i < numberOfPages2; i++) {
       const page2 = {
         qTop: pageheight2 * i,
@@ -616,43 +722,52 @@ async function hogeraadanalyserendering() {
 
     class MyElement2 extends LitElement {
       render() {
-        return html`<vl-typography>
-      <table>
-      <caption>
-        Adviezen - 2022
-      </caption>
-      <thead>
-        <tr>
-          <th></th>
-          <th>Adviezen over het gemotiveerd verzoek om tijdelijk of definitief af te zien van verdere inning van een opeisbaar geworden dwangomschuld</th>
-          <th>Adviezen over de herstelmaatregelen in het kader van een beroep ingesteld door de vermoedelijke overtreder tegen de beslissing tot toepassing van bestuursdwang of tot het opleggen van een last onder dwangsom</th>
-        </tr>
-      </thead>
-      <tbody>
-      <tr>
-     <td>${data2[0][0].qText}</td>
-     <td>${data2[0][1].qText}</td>
-     <td>${data2[0][2].qText}</td>
-     </tr>
-     <tr>
-     <td>${data2[1][0].qText}</td>
-     <td>${data2[1][1].qText}</td>
-     <td>${data2[1][2].qText}</td>
-     </tr>
-      </tbody>
-    </table>
-  </vl-typography>`;
+        return html`
+          <vl-typography>
+            <table>
+              <caption>
+                Adviezen - 2022
+              </caption>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Adviezen over het gemotiveerd verzoek om tijdelijk of
+                    definitief af te zien van verdere inning van een opeisbaar
+                    geworden dwangomschuld
+                  </th>
+                  <th>Adviezen over de herstelmaatregelen in het kader van een
+                    beroep ingesteld door de vermoedelijke overtreder tegen de
+                    beslissing tot toepassing van bestuursdwang of tot het
+                    opleggen van een last onder dwangsom
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>${data2[0][0].qText}</td>
+                  <td>${data2[0][1].qText}</td>
+                  <td>${data2[0][2].qText}</td>
+                </tr>
+                <tr>
+                  <td>${data2[1][0].qText}</td>
+                  <td>${data2[1][1].qText}</td>
+                  <td>${data2[1][2].qText}</td>
+                </tr>
+              </tbody>
+            </table>
+          </vl-typography>`;
       }
     }
+
     customElements.define('my-element2', MyElement2);
 
-    const model3 = await app.getObject("fLJsje"); 
+    const model3 = await app.getObject("fLJsje");
     const modelLayout3 = await model3.getLayout();
     const data3 = [];
     const columns3 = modelLayout3.qHyperCube.qSize.qcx;
     const totalheight3 = modelLayout3.qHyperCube.qSize.qcy;
     const pageheight3 = 5;
-    const numberOfPages3 = 3; 
+    const numberOfPages3 = 3;
     for (let i = 0; i < numberOfPages3; i++) {
       const page3 = {
         qTop: pageheight3 * i,
@@ -663,251 +778,267 @@ async function hogeraadanalyserendering() {
       const row3 = await model3.getHyperCubeData("/qHyperCubeDef", [page3]);
       data3.push(...row3[0].qMatrix);
     }
+
     class MyElement3 extends LitElement {
       render() {
-        return html`<vl-typography>
-      <table>
-      <caption>
-        Bemiddelingsopdrachten - 2022
-      </caption>
-      <thead>
-        <tr>
-          <th>Bemiddelingsopdracht</th>
-          <th>Aantal bemiddelingsopdrachten op verzoek van een vermoedelijke overtreder of de rechtbank</th>
-        </tr>
-      </thead>
-      <tbody>
-      <tr>
-     <td>${data3[0][0].qText}</td>
-     <td>${data3[0][1].qText}</td>
-     </tr>
-     <tr>
-     <td>${data3[1][0].qText}</td>
-     <td>${data3[1][1].qText}</td>
-     </tr>
-     <tr>
-     <td>${data3[2][0].qText}</td>
-     <td>${data3[2][1].qText}</td>
-     </tr>
-     <tr>
-     <td>${data3[3][0].qText}</td>
-     <td>${data3[3][1].qText}</td>
-     </tr>
-      </tbody>
-    </table>
-  </vl-typography>`;
+        return html`
+          <vl-typography>
+            <table>
+              <caption>
+                Bemiddelingsopdrachten - 2022
+              </caption>
+              <thead>
+                <tr>
+                  <th>Bemiddelingsopdracht</th>
+                  <th>Aantal bemiddelingsopdrachten op verzoek van een
+                    vermoedelijke overtreder of de rechtbank
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>${data3[0][0].qText}</td>
+                  <td>${data3[0][1].qText}</td>
+                </tr>
+                <tr>
+                  <td>${data3[1][0].qText}</td>
+                  <td>${data3[1][1].qText}</td>
+                </tr>
+                <tr>
+                  <td>${data3[2][0].qText}</td>
+                  <td>${data3[2][1].qText}</td>
+                </tr>
+                <tr>
+                  <td>${data3[3][0].qText}</td>
+                  <td>${data3[3][1].qText}</td>
+                </tr>
+              </tbody>
+            </table>
+          </vl-typography>`;
       }
     }
+
     customElements.define('my-element3', MyElement3);
 
-    nebbie.render({ 
+    nebbie.render({
       element: document.querySelector('.HRCBindendeadviesChart'),
       id: "mhc",
     });
 
+  }
 }
-}
+
 //Rendering strafrechtelijk
 async function strafrechtelijkanalyserendering() {
   const classExistsInit = document.getElementsByClassName('chart').length > 0;
-   let app;
-   app = await connect(config_Strafrechtelijk);
- const nebbie = stardust.embed(app, {
-     types,
-     //themes,
-     context: {
-       language: 'nl-NL',
-       theme: 'light',
-     },
-   });
-   const nebbieNoselection = stardust.embed(app, {
+  let app;
+  app = await connect(config_Strafrechtelijk);
+  const nebbie = stardust.embed(app, {
     types,
     //themes,
     context: {
       language: 'nl-NL',
       theme: 'light',
-      constraints: { select: true },
     },
   });
-  if(!classExistsInit) {
+  const nebbieNoselection = stardust.embed(app, {
+    types,
+    //themes,
+    context: {
+      language: 'nl-NL',
+      theme: 'light',
+      constraints: {select: true},
+    },
+  });
+  if (!classExistsInit) {
     //Get toolbar of application and define it as a class of toolbar => To be used in HTML page
-  (await nebbie.selections().then((s) => s.mount(document.querySelector('.toolbar'))));
+    (await nebbie.selections().then(
+        (s) => s.mount(document.querySelector('.toolbar'))));
 
-  const elementsIdPairsProvincie = [
-    { element: document.querySelector('.Instroomthema'), id: "zErj" },
-    { element: document.querySelector('.GewestBB1'), id: "pCPBM"},
-  ];
-      elementsIdPairsProvincie.forEach(({ element, id }) => {
-      nebbie.render({ element, id });
-  });
+    const elementsIdPairsProvincie = [
+      {element: document.querySelector('.Instroomthema'), id: "zErj"},
+      {element: document.querySelector('.GewestBB1'), id: "pCPBM"},
+    ];
+    elementsIdPairsProvincie.forEach(({element, id}) => {
+      nebbie.render({element, id});
+    });
 
-  nebbieNoselection.render({
-    element:document.querySelector('.GewestBB2'),
-    id: 'FtGJPts'
-  });
-  const modelInstroom = await app.getObject("BWsEsqr"); 
-  const modelLayoutInstroom = await modelInstroom.getLayout();
-  const dataInstroom = [];
-  const columnsInstroom = modelLayoutInstroom.qHyperCube.qSize.qcx;
-  const totalheight = modelLayoutInstroom.qHyperCube.qSize.qcy;
-  const pageheightInstroom = 5;
-  const numberOfPages_Instroom = 3; 
-  for (let i = 0; i < numberOfPages_Instroom; i++) {
-    const pageInstroom = {
-      qTop: pageheightInstroom * i,
-      qLeft: 0,
-      qWidth: columnsInstroom,
-      qHeight: pageheightInstroom,
-    };
-    const rowInstroom = await modelInstroom.getHyperCubeData("/qHyperCubeDef", [pageInstroom]);
-    dataInstroom.push(...rowInstroom[0].qMatrix);
-  }
-  const modelInstroomThema = await app.getObject("YJwDMRv"); 
-  const modelLayoutInstroomThema = await modelInstroomThema.getLayout();
-  const dataInstroomThema = [];
-  const columnsInstroomThema = modelLayoutInstroomThema.qHyperCube.qSize.qcx;
-  const totalheightThema = modelLayoutInstroomThema.qHyperCube.qSize.qcy;
-  const pageheightInstroomThema = 5;
-  const numberOfPages_InstroomThema = 3; 
-  for (let i = 0; i < numberOfPages_InstroomThema; i++) {
-    const pageInstroomThema = {
-      qTop: pageheightInstroomThema * i,
-      qLeft: 0,
-      qWidth: columnsInstroomThema,
-      qHeight: pageheightInstroomThema,
-    };
-    const rowInstroomThema = await modelInstroomThema.getHyperCubeData("/qHyperCubeDef", [pageInstroomThema]);
-    dataInstroomThema.push(...rowInstroomThema[0].qMatrix);
-  }
-  const modelInstroomHHC = await app.getObject("tfxt"); 
-  const modelLayoutInstroomHHC = await modelInstroomHHC.getLayout();
-  const dataInstroomHHC = [];
-  const columnsInstroomHHC = modelLayoutInstroomHHC.qHyperCube.qSize.qcx;
-  const totalheightHHC = modelLayoutInstroomHHC.qHyperCube.qSize.qcy;
-  const pageheightInstroomHHC = 5;
-  const numberOfPages_InstroomHHC = 3; 
-  for (let i = 0; i < numberOfPages_InstroomHHC; i++) {
-    const pageInstroomHHC = {
-      qTop: pageheightInstroomHHC * i,
-      qLeft: 0,
-      qWidth: columnsInstroomHHC,
-      qHeight: pageheightInstroomHHC,
-    };
-    const rowInstroomHHC = await modelInstroomHHC.getHyperCubeData("/qHyperCubeDef", [pageInstroomHHC]);
-    dataInstroomHHC.push(...rowInstroomHHC[0].qMatrix);
-  }
-  const modelInstroomHHCBehandeling = await app.getObject("zBgdaes"); 
-  const modelLayoutInstroomBehandeling = await modelInstroomHHCBehandeling.getLayout();
-  const dataInstroomBehandeling = [];
-  const columnsInstroomBehandeling = modelLayoutInstroomBehandeling.qHyperCube.qSize.qcx;
-  const totalheightBehandeling = modelLayoutInstroomBehandeling.qHyperCube.qSize.qcy;
-  const pageheightInstroomBehandeling = 5;
-  const numberOfPages_InstroomBehandeling = 3; 
-  for (let i = 0; i < numberOfPages_InstroomBehandeling; i++) {
-    const pageInstroomBehandeling = {
-      qTop: pageheightInstroomBehandeling * i,
-      qLeft: 0,
-      qWidth: columnsInstroomBehandeling,
-      qHeight: pageheightInstroomBehandeling,
-    };
-    const rowInstroomBehandeling = await modelInstroomHHCBehandeling.getHyperCubeData("/qHyperCubeDef", [pageInstroomBehandeling]);
-    dataInstroomBehandeling.push(...rowInstroomBehandeling[0].qMatrix);
-  }
-  const modelInstroomVooruit = await app.getObject("gKSTkk"); 
-  const modelLayoutInstroomVooruit = await modelInstroomVooruit.getLayout();
-  const dataInstroomVooruit = [];
-  const columnsInstroomVooruit = modelLayoutInstroomVooruit.qHyperCube.qSize.qcx;
-  const totalheightVooruit = modelLayoutInstroomVooruit.qHyperCube.qSize.qcy;
-  const pageheightInstroomVooruit = 5;
-  const numberOfPages_InstroomVooruit = 3; 
-  for (let i = 0; i < numberOfPages_InstroomVooruit; i++) {
-    const pageInstroomVooruit = {
-      qTop: pageheightInstroomVooruit * i,
-      qLeft: 0,
-      qWidth: columnsInstroomVooruit,
-      qHeight: pageheightInstroomVooruit,
-    };
-    const rowInstroomVooruit = await modelInstroomVooruit.getHyperCubeData("/qHyperCubeDef", [pageInstroomVooruit]);
-    dataInstroomVooruit.push(...rowInstroomVooruit[0].qMatrix);
-  }
-  const modelAfhandelingOpport = await app.getObject("qyCtSu"); 
-  const modelLayoutAfhandelingOpport  = await modelAfhandelingOpport.getLayout();
-  const dataAfhandelingOpport  = [];
-  const columnsAfhandelingOpport  = modelLayoutAfhandelingOpport.qHyperCube.qSize.qcx;
-  const totalheightAfhandeling = modelLayoutAfhandelingOpport.qHyperCube.qSize.qcy;
-  const pageheightAfhandeling = 5;
-  const numberOfPages_Afhandeling = 3; 
-  for (let i = 0; i < numberOfPages_Afhandeling; i++) {
-    const pageAfhandeling = {
-      qTop: pageheightAfhandeling * i,
-      qLeft: 0,
-      qWidth: columnsAfhandelingOpport,
-      qHeight: pageheightAfhandeling,
-    };
-    const rowAfhandeling = await modelAfhandelingOpport.getHyperCubeData("/qHyperCubeDef", [pageAfhandeling]);
-    dataAfhandelingOpport.push(...rowAfhandeling[0].qMatrix);
-  }
-  const modelAfhandelingOpport2 = await app.getObject("uWVR"); 
-  const modelLayoutAfhandelingOpport2  = await modelAfhandelingOpport2.getLayout();
-  const dataAfhandelingOpport2  = [];
-  const columnsAfhandelingOpport2  = modelLayoutAfhandelingOpport2.qHyperCube.qSize.qcx;
-  const totalheightAfhandeling2 = modelLayoutAfhandelingOpport2.qHyperCube.qSize.qcy;
-  const pageheightAfhandeling2 = 5;
-  const numberOfPages_Afhandeling2 = 3; 
-  for (let i = 0; i < numberOfPages_Afhandeling2; i++) {
-    const pageAfhandeling2 = {
-      qTop: pageheightAfhandeling2 * i,
-      qLeft: 0,
-      qWidth: columnsAfhandelingOpport2,
-      qHeight: pageheightAfhandeling2,
-    };
-    const rowAfhandeling2 = await modelAfhandelingOpport2.getHyperCubeData("/qHyperCubeDef", [pageAfhandeling2]);
-    dataAfhandelingOpport2.push(...rowAfhandeling2[0].qMatrix);
-  }
+    nebbieNoselection.render({
+      element: document.querySelector('.GewestBB2'),
+      id: 'FtGJPts'
+    });
+    const modelInstroom = await app.getObject("BWsEsqr");
+    const modelLayoutInstroom = await modelInstroom.getLayout();
+    const dataInstroom = [];
+    const columnsInstroom = modelLayoutInstroom.qHyperCube.qSize.qcx;
+    const totalheight = modelLayoutInstroom.qHyperCube.qSize.qcy;
+    const pageheightInstroom = 5;
+    const numberOfPages_Instroom = 3;
+    for (let i = 0; i < numberOfPages_Instroom; i++) {
+      const pageInstroom = {
+        qTop: pageheightInstroom * i,
+        qLeft: 0,
+        qWidth: columnsInstroom,
+        qHeight: pageheightInstroom,
+      };
+      const rowInstroom = await modelInstroom.getHyperCubeData("/qHyperCubeDef",
+          [pageInstroom]);
+      dataInstroom.push(...rowInstroom[0].qMatrix);
+    }
+    const modelInstroomThema = await app.getObject("YJwDMRv");
+    const modelLayoutInstroomThema = await modelInstroomThema.getLayout();
+    const dataInstroomThema = [];
+    const columnsInstroomThema = modelLayoutInstroomThema.qHyperCube.qSize.qcx;
+    const totalheightThema = modelLayoutInstroomThema.qHyperCube.qSize.qcy;
+    const pageheightInstroomThema = 5;
+    const numberOfPages_InstroomThema = 3;
+    for (let i = 0; i < numberOfPages_InstroomThema; i++) {
+      const pageInstroomThema = {
+        qTop: pageheightInstroomThema * i,
+        qLeft: 0,
+        qWidth: columnsInstroomThema,
+        qHeight: pageheightInstroomThema,
+      };
+      const rowInstroomThema = await modelInstroomThema.getHyperCubeData(
+          "/qHyperCubeDef", [pageInstroomThema]);
+      dataInstroomThema.push(...rowInstroomThema[0].qMatrix);
+    }
+    const modelInstroomHHC = await app.getObject("tfxt");
+    const modelLayoutInstroomHHC = await modelInstroomHHC.getLayout();
+    const dataInstroomHHC = [];
+    const columnsInstroomHHC = modelLayoutInstroomHHC.qHyperCube.qSize.qcx;
+    const totalheightHHC = modelLayoutInstroomHHC.qHyperCube.qSize.qcy;
+    const pageheightInstroomHHC = 5;
+    const numberOfPages_InstroomHHC = 3;
+    for (let i = 0; i < numberOfPages_InstroomHHC; i++) {
+      const pageInstroomHHC = {
+        qTop: pageheightInstroomHHC * i,
+        qLeft: 0,
+        qWidth: columnsInstroomHHC,
+        qHeight: pageheightInstroomHHC,
+      };
+      const rowInstroomHHC = await modelInstroomHHC.getHyperCubeData(
+          "/qHyperCubeDef", [pageInstroomHHC]);
+      dataInstroomHHC.push(...rowInstroomHHC[0].qMatrix);
+    }
+    const modelInstroomHHCBehandeling = await app.getObject("zBgdaes");
+    const modelLayoutInstroomBehandeling = await modelInstroomHHCBehandeling.getLayout();
+    const dataInstroomBehandeling = [];
+    const columnsInstroomBehandeling = modelLayoutInstroomBehandeling.qHyperCube.qSize.qcx;
+    const totalheightBehandeling = modelLayoutInstroomBehandeling.qHyperCube.qSize.qcy;
+    const pageheightInstroomBehandeling = 5;
+    const numberOfPages_InstroomBehandeling = 3;
+    for (let i = 0; i < numberOfPages_InstroomBehandeling; i++) {
+      const pageInstroomBehandeling = {
+        qTop: pageheightInstroomBehandeling * i,
+        qLeft: 0,
+        qWidth: columnsInstroomBehandeling,
+        qHeight: pageheightInstroomBehandeling,
+      };
+      const rowInstroomBehandeling = await modelInstroomHHCBehandeling.getHyperCubeData(
+          "/qHyperCubeDef", [pageInstroomBehandeling]);
+      dataInstroomBehandeling.push(...rowInstroomBehandeling[0].qMatrix);
+    }
+    const modelInstroomVooruit = await app.getObject("gKSTkk");
+    const modelLayoutInstroomVooruit = await modelInstroomVooruit.getLayout();
+    const dataInstroomVooruit = [];
+    const columnsInstroomVooruit = modelLayoutInstroomVooruit.qHyperCube.qSize.qcx;
+    const totalheightVooruit = modelLayoutInstroomVooruit.qHyperCube.qSize.qcy;
+    const pageheightInstroomVooruit = 5;
+    const numberOfPages_InstroomVooruit = 3;
+    for (let i = 0; i < numberOfPages_InstroomVooruit; i++) {
+      const pageInstroomVooruit = {
+        qTop: pageheightInstroomVooruit * i,
+        qLeft: 0,
+        qWidth: columnsInstroomVooruit,
+        qHeight: pageheightInstroomVooruit,
+      };
+      const rowInstroomVooruit = await modelInstroomVooruit.getHyperCubeData(
+          "/qHyperCubeDef", [pageInstroomVooruit]);
+      dataInstroomVooruit.push(...rowInstroomVooruit[0].qMatrix);
+    }
+    const modelAfhandelingOpport = await app.getObject("qyCtSu");
+    const modelLayoutAfhandelingOpport = await modelAfhandelingOpport.getLayout();
+    const dataAfhandelingOpport = [];
+    const columnsAfhandelingOpport = modelLayoutAfhandelingOpport.qHyperCube.qSize.qcx;
+    const totalheightAfhandeling = modelLayoutAfhandelingOpport.qHyperCube.qSize.qcy;
+    const pageheightAfhandeling = 5;
+    const numberOfPages_Afhandeling = 3;
+    for (let i = 0; i < numberOfPages_Afhandeling; i++) {
+      const pageAfhandeling = {
+        qTop: pageheightAfhandeling * i,
+        qLeft: 0,
+        qWidth: columnsAfhandelingOpport,
+        qHeight: pageheightAfhandeling,
+      };
+      const rowAfhandeling = await modelAfhandelingOpport.getHyperCubeData(
+          "/qHyperCubeDef", [pageAfhandeling]);
+      dataAfhandelingOpport.push(...rowAfhandeling[0].qMatrix);
+    }
+    const modelAfhandelingOpport2 = await app.getObject("uWVR");
+    const modelLayoutAfhandelingOpport2 = await modelAfhandelingOpport2.getLayout();
+    const dataAfhandelingOpport2 = [];
+    const columnsAfhandelingOpport2 = modelLayoutAfhandelingOpport2.qHyperCube.qSize.qcx;
+    const totalheightAfhandeling2 = modelLayoutAfhandelingOpport2.qHyperCube.qSize.qcy;
+    const pageheightAfhandeling2 = 5;
+    const numberOfPages_Afhandeling2 = 3;
+    for (let i = 0; i < numberOfPages_Afhandeling2; i++) {
+      const pageAfhandeling2 = {
+        qTop: pageheightAfhandeling2 * i,
+        qLeft: 0,
+        qWidth: columnsAfhandelingOpport2,
+        qHeight: pageheightAfhandeling2,
+      };
+      const rowAfhandeling2 = await modelAfhandelingOpport2.getHyperCubeData(
+          "/qHyperCubeDef", [pageAfhandeling2]);
+      dataAfhandelingOpport2.push(...rowAfhandeling2[0].qMatrix);
+    }
 
-  //Gewestelijke beboetingsentiteiten
-  const modelGewestTabel1= await app.getObject("NqbwMC"); 
-  const modelLayoutGewestTabel1  = await modelGewestTabel1.getLayout();
-  const dataAGewestTabel1  = [];
-  const columnsGewestTabel1 = modelLayoutGewestTabel1.qHyperCube.qSize.qcx;
-  const totalheightGewestTabel1 = modelLayoutGewestTabel1.qHyperCube.qSize.qcy;
-  const pageheightGewestTabel1 = 5;
-  const numberOfPages_GewestTabel1 = 3; 
-  for (let i = 0; i < numberOfPages_GewestTabel1; i++) {
-    const pageGewestTabel1 = {
-      qTop: pageheightGewestTabel1 * i,
-      qLeft: 0,
-      qWidth: columnsGewestTabel1,
-      qHeight: pageheightGewestTabel1,
-    };
-    const rowGewstTabel1 = await modelGewestTabel1.getHyperCubeData("/qHyperCubeDef", [pageGewestTabel1 ]);
-    dataAGewestTabel1.push(...rowGewstTabel1[0].qMatrix);
-  }
+    //Gewestelijke beboetingsentiteiten
+    const modelGewestTabel1 = await app.getObject("NqbwMC");
+    const modelLayoutGewestTabel1 = await modelGewestTabel1.getLayout();
+    const dataAGewestTabel1 = [];
+    const columnsGewestTabel1 = modelLayoutGewestTabel1.qHyperCube.qSize.qcx;
+    const totalheightGewestTabel1 = modelLayoutGewestTabel1.qHyperCube.qSize.qcy;
+    const pageheightGewestTabel1 = 5;
+    const numberOfPages_GewestTabel1 = 3;
+    for (let i = 0; i < numberOfPages_GewestTabel1; i++) {
+      const pageGewestTabel1 = {
+        qTop: pageheightGewestTabel1 * i,
+        qLeft: 0,
+        qWidth: columnsGewestTabel1,
+        qHeight: pageheightGewestTabel1,
+      };
+      const rowGewstTabel1 = await modelGewestTabel1.getHyperCubeData(
+          "/qHyperCubeDef", [pageGewestTabel1]);
+      dataAGewestTabel1.push(...rowGewstTabel1[0].qMatrix);
+    }
 
-  const modelGewestBehandeling = await app.getObject("EEGHSs");
-  const modelLayoutGewestBehandeling = await modelGewestBehandeling.getLayout();
-  const dataGewestBehandeling = [];
+    const modelGewestBehandeling = await app.getObject("EEGHSs");
+    const modelLayoutGewestBehandeling = await modelGewestBehandeling.getLayout();
+    const dataGewestBehandeling = [];
 
-  const columnsGewestBehandeling = modelLayoutGewestBehandeling.qHyperCube.qSize.qcx;
-  const totalheightGewestBehandeling = modelLayoutGewestBehandeling.qHyperCube.qSize.qcy;
+    const columnsGewestBehandeling = modelLayoutGewestBehandeling.qHyperCube.qSize.qcx;
+    const totalheightGewestBehandeling = modelLayoutGewestBehandeling.qHyperCube.qSize.qcy;
 
-  const pageheightGewestBehandeling = 5;
-  const numberOfPages_GewestBehandeling = 3;
+    const pageheightGewestBehandeling = 5;
+    const numberOfPages_GewestBehandeling = 3;
 
-  for (let i = 0; i < numberOfPages_GewestBehandeling; i++) {
-    const pageGewestBehandeling = {
-      qTop: pageheightGewestBehandeling * i,
-      qLeft: 0,
-      qWidth: columnsGewestBehandeling,
-      qHeight: pageheightGewestBehandeling,
-    };
-    const rowGewestBehandeling = await modelGewestBehandeling.getHyperCubeData("/qHyperCubeDef", [pageGewestBehandeling]);
-    dataGewestBehandeling.push(...rowGewestBehandeling[0].qMatrix);
-  }
+    for (let i = 0; i < numberOfPages_GewestBehandeling; i++) {
+      const pageGewestBehandeling = {
+        qTop: pageheightGewestBehandeling * i,
+        qLeft: 0,
+        qWidth: columnsGewestBehandeling,
+        qHeight: pageheightGewestBehandeling,
+      };
+      const rowGewestBehandeling = await modelGewestBehandeling.getHyperCubeData(
+          "/qHyperCubeDef", [pageGewestBehandeling]);
+      dataGewestBehandeling.push(...rowGewestBehandeling[0].qMatrix);
+    }
 
-class InstroomAfhandeling extends LitElement {  
-    render() {
-      return html`<vl-typography>
+    class InstroomAfhandeling extends LitElement {
+      render() {
+        return html`<vl-typography>
     <table>
     <caption>
     Afhandeling zonder strafvervolging om opportuniteitsredenen - 2022
@@ -1053,13 +1184,13 @@ class InstroomAfhandeling extends LitElement {
     </tbody>
   </table>
 </vl-typography>`;
+      }
+
     }
 
-  }
-
-class Instroomtechnisch extends LitElement {  
-    render() {
-      return html`<vl-typography>
+    class Instroomtechnisch extends LitElement {
+      render() {
+        return html`<vl-typography>
     <table>
     <caption>
     Afhandeling zonder strafvervolging om technische redenen - 2022
@@ -1151,10 +1282,10 @@ class Instroomtechnisch extends LitElement {
     </tbody>
   </table>
 </vl-typography>`;
+      }
     }
-  }
 
-class Instroom extends LitElement {  
+    class Instroom extends LitElement {
       render() {
         return html`<vl-typography>
       <table>
@@ -1199,9 +1330,10 @@ class Instroom extends LitElement {
   </vl-typography>`;
       }
     }
-  class Hhc extends LitElement {  
+
+    class Hhc extends LitElement {
       render() {
-        return html `<vl-typography>
+        return html`<vl-typography>
       <table>
       <caption>
         Instroom - HHC - 2022
@@ -1227,9 +1359,9 @@ class Instroom extends LitElement {
       }
     }
 
-class Hhcbehandeling extends LitElement {  
-  render() {
-    return html `<vl-typography>
+    class Hhcbehandeling extends LitElement {
+      render() {
+        return html`<vl-typography>
       <table>
       <caption>
         Behandeling - HHC - 2022
@@ -1291,9 +1423,9 @@ class Hhcbehandeling extends LitElement {
       }
     }
 
-class Vooruit extends LitElement {  
+    class Vooruit extends LitElement {
       render() {
-        return html `<vl-typography>
+        return html`<vl-typography>
       <table>
       <caption>
         Vooruitgangsstaat - 2022
@@ -1407,9 +1539,9 @@ class Vooruit extends LitElement {
       }
     }
 
-class GewestTabelone extends LitElement {  
+    class GewestTabelone extends LitElement {
       render() {
-        return html `<vl-typography>
+        return html`<vl-typography>
       <table>
       <caption>
         Instroom - 2022
@@ -1459,9 +1591,9 @@ class GewestTabelone extends LitElement {
       }
     }
 
-class Gewesttabeltwo extends LitElement {
+    class Gewesttabeltwo extends LitElement {
       render() {
-        return html `<vl-typography>
+        return html`<vl-typography>
       <table>
       <caption>
         Behandeling - 2022
@@ -1510,20 +1642,20 @@ class Gewesttabeltwo extends LitElement {
   </vl-typography>`;
       }
     }
-    
 
 //Defining custom html tags
-customElements.define('my-instroom', Instroom);
-customElements.define('my-hhc', Hhc);
-customElements.define('my-hhcbehandeling', Hhcbehandeling);
-customElements.define('my-vooruit', Vooruit);
-customElements.define('my-instroomafhandeling', InstroomAfhandeling);
-customElements.define('my-instroomtechnischereden', Instroomtechnisch);
-customElements.define('my-gewestabel', GewestTabelone);
-customElements.define('my-gewestabeltwo', Gewesttabeltwo);
-   
+    customElements.define('my-instroom', Instroom);
+    customElements.define('my-hhc', Hhc);
+    customElements.define('my-hhcbehandeling', Hhcbehandeling);
+    customElements.define('my-vooruit', Vooruit);
+    customElements.define('my-instroomafhandeling', InstroomAfhandeling);
+    customElements.define('my-instroomtechnischereden', Instroomtechnisch);
+    customElements.define('my-gewestabel', GewestTabelone);
+    customElements.define('my-gewestabeltwo', Gewesttabeltwo);
+
   }
 }
+
 //Rendering Gemeenten Milieu
 async function gemeentendashboard() {
   const classExistsInit = document.getElementsByClassName('gemmil').length > 0;
@@ -1531,453 +1663,500 @@ async function gemeentendashboard() {
   app = await connect(config_Gemeenten_MIL);
   /*Set theme to charts*/
   const nebbie = stardust.embed(app, {
-     types,
-     //themes,
-     context: {
-      theme:'light',
-       language: 'nl-NL',
-     },
-   });
+    types,
+    //themes,
+    context: {
+      theme: 'light',
+      language: 'nl-NL',
+    },
+  });
   const nebbieNoselectionGem = stardust.embed(app, {
     types,
     //themes,
     context: {
-      theme:'light',
+      theme: 'light',
       language: 'nl-NL',
-      constraints: { select: true },
+      constraints: {select: true},
     },
   });
-  if(!classExistsInit) {
-  (nebbie.selections().then((s) => s.mount(document.querySelector('.toolbar'))));
-  const fieldNameGem = 'Gemeente'; 
-  (await nebbie.field(fieldNameGem)).mount(document.querySelector('.listboxGEM'),{search:true,title:"Gemeente",checkboxes:false});
-  const elementsIdPairs = [
-    //Milieu 28 objecten
-    { element: document.querySelector('.GEM-Toezicthouders'), id: "JYqyZke" },
-    { element: document.querySelector('.GEM-Bar-GAS'), id: "JPXeWk" },
-    { element: document.querySelector('.GEM-KPI-Klasse1'), id: "nawRLV" },
-    { element: document.querySelector('.GEM-KPI-Klasse2'), id: "BSvPAHp" },
-    { element: document.querySelector('.GEM-Hinderlijk'), id: "BSvPAHp"},
-    { element: document.querySelector('.GEM-KPI-Klasse3'), id: "ujXmqs" },
-    { element: document.querySelector('.GEM-Klachten-pie'), id: "jQdLF" },
-    { element: document.querySelector('.GEM-Controles-pie'), id: "dgDmVP" },
-    { element: document.querySelector('.GEM-AAControles-pie'), id: "FKJAgf"},
-    { element: document.querySelector('.GEM-TotaalVTE'), id: "YHmmQ"},
-    { element: document.querySelector('.GEM-klachten'), id: "mJRrPSJ" },
-    { element: document.querySelector('.GEM-controles'), id: "pdWFpj" },
-    { element: document.querySelector('.GEM-AAControles'), id: "mSpEef" },
-    { element: document.querySelector('.GEM-PieToezicthouders'), id: "aAgZgm" },
-    { element: document.querySelector('.GEM-VTEBar'), id: "TFVgMD" },
-    { element: document.querySelector('.GEM-KlachtenBar'), id: "brZcTK" },
-    { element: document.querySelector('.GEM-ControlesBar'), id: "BMRSrq" },
-    { element: document.querySelector('.GEM-AAControlesBar'), id: "WhgamS" },
-    { element: document.querySelector('.GEM-RaadgevingGEM'), id: "EqXUZq" },
-    { element: document.querySelector('.GEM-RaadgevingIGS'), id: "AgXjnnC" },
-    { element: document.querySelector('.GEM-RaadgevingLP'), id: "AcQWjU" },
-    { element: document.querySelector('.GEM-AanmaningGEM'), id: "QxmppR" },
-    { element: document.querySelector('.GEM-AanmaningIGS'), id: "UxkmGT" },
-    { element: document.querySelector('.GEM-AanmaningLP'), id: "mtVpjT" },
-    { element: document.querySelector('.GEM-pvGEM'), id: "MQxJKJ" },
-    { element: document.querySelector('.GEM-pvIGS'), id: "HYQSX" },
-    { element: document.querySelector('.GEM-pvLP'), id: "pdXc" },
-    { element: document.querySelector('.GEM-bestuurlijkmaatregelGEM'), id: "ywktLz" },
-    { element: document.querySelector('.GEM-bestuurlijkmaatregelIGS'), id: "QpqBt" },
-    { element: document.querySelector('.GEM-bestuurlijkmaatregelLP'), id:"PeVCcVw"},
-    { element: document.querySelector('.GEM-bestuurlijkmaatregelzonderGEM'), id: "ptTCeM"},
-    { element: document.querySelector('.GEM-bestuurlijkmaatregelzonderIGS'), id: "jebuf" },
-    { element: document.querySelector('.GEM-bestuurlijkmaatregelzonderLP'), id: "eVSmDJy" },
-    { element: document.querySelector('.GEM-bestuurlijkmaatregelmetGEM'), id:"pBwU"},
-    { element: document.querySelector('.GEM-bestuurlijkmaatregelmetIGS'), id: "BxmSrM" },
-    { element: document.querySelector('.GEM-bestuurlijkmaatregelmetLP'), id: "VFjDssL" },
-    { element: document.querySelector('.GEM-veiligheidsGEM'), id: "hSjPNuJ" },
-    { element: document.querySelector('.GEM-veiligheidsIGS'), id: "pswvgAp"},
-    { element: document.querySelector('.GEM-veiligheidsLP'), id: "aNCJtYU"},
-    { element: document.querySelector('.GEM-burgbestm'), id: "Jpmwen"},
-    { element: document.querySelector('.GEM-burgbestzonder'), id: "PQJZuSS"},
-    { element: document.querySelector('.GEM-burgbestmet'), id: "emApAF"},
-    { element: document.querySelector('.GEM-burgveilig'), id: "QJFCBz"},
-    { element: document.querySelector('.GEM-verslagvastellingGEM'), id: "YBbmqpJ"},
-    { element: document.querySelector('.GEM-verslagvastellingIGS'), id: "ackyug"},
-    { element: document.querySelector('.GEM-verslagvastellingLP'), id: "QrkRHsD"},
-    { element: document.querySelector('.Gem-veiligheidsmaatregel-igs'), id: "bTCRdV"},
-    { element: document.querySelector('.Gem-overtredingsgraad-edit'), id: "zRspBS"},
-    { element: document.querySelector('.Gem-opmerking-gem'), id: "jFgHzvw"},
-    { element: document.querySelector('.Gem-opmerking-lp'), id: "aDveZHw"},
-    { element: document.querySelector('.Gem-opmerking-igs'), id: "ejpsmmn"},
-    
-    { element: document.querySelector('.Gem-pie-raadgeving'), id: "PXYJP"},
-    { element: document.querySelector('.Gem-pie-aanmaning'), id: "vmckAq"},
-    { element: document.querySelector('.Gem-pie-verslag'), id: "RhGcVr"},
-    { element: document.querySelector('.Gem-pie-pv'), id: "MzdR"},
-    { element: document.querySelector('.Gem-pie-bestmaatregel'), id: "WdpDMs"},
-    { element: document.querySelector('.Gem-pie-veiligheids'), id: "ZEQGgeD"},
-    { element: document.querySelector('.Gem-ORG-NaamGEM'), id: "xDATvX"},
-    { element: document.querySelector('.Gem-ORG-GEM'), id: "kwsakS"},
-    { element: document.querySelector('.Gem-ORG-IGS'), id: "BDukJu"},
-    { element: document.querySelector('.Gem-ORG-LP'), id: "vNPApmL"},
-    { element: document.querySelector('.Gem-ORG-INW'), id: "JPBBzB"},
-    { element: document.querySelector('.GemORGlokaal'), id: "pueLkze"},
-    { element: document.querySelector('.Gem-ORG-RO-IGS'), id: "YCjBKha"},
-    { element: document.querySelector('.Gem-ORG-RO-LP'), id: "JjxFhy"},
-    { element: document.querySelector('.Gem-ORG-RO-And'), id: "hdhKmJb"},
-    { element: document.querySelector('.Gem-ORG-Mil-And'), id: "mBPb"},
-  ];
-    elementsIdPairs.forEach(({ element, id }) => {
-      nebbieNoselectionGem.render({ element, id });
-  });
+  if (!classExistsInit) {
+    (nebbie.selections().then(
+        (s) => s.mount(document.querySelector('.toolbar'))));
+    const fieldNameGem = 'Gemeente';
+    (await nebbie.field(fieldNameGem)).mount(
+        document.querySelector('.listboxGEM'),
+        {search: true, title: "Gemeente", checkboxes: false});
+    const elementsIdPairs = [
+      //Milieu 28 objecten
+      {element: document.querySelector('.GEM-Toezicthouders'), id: "JYqyZke"},
+      {element: document.querySelector('.GEM-Bar-GAS'), id: "JPXeWk"},
+      {element: document.querySelector('.GEM-KPI-Klasse1'), id: "nawRLV"},
+      {element: document.querySelector('.GEM-KPI-Klasse2'), id: "BSvPAHp"},
+      {element: document.querySelector('.GEM-Hinderlijk'), id: "BSvPAHp"},
+      {element: document.querySelector('.GEM-KPI-Klasse3'), id: "ujXmqs"},
+      {element: document.querySelector('.GEM-Klachten-pie'), id: "jQdLF"},
+      {element: document.querySelector('.GEM-Controles-pie'), id: "dgDmVP"},
+      {element: document.querySelector('.GEM-AAControles-pie'), id: "FKJAgf"},
+      {element: document.querySelector('.GEM-TotaalVTE'), id: "YHmmQ"},
+      {element: document.querySelector('.GEM-klachten'), id: "mJRrPSJ"},
+      {element: document.querySelector('.GEM-controles'), id: "pdWFpj"},
+      {element: document.querySelector('.GEM-AAControles'), id: "mSpEef"},
+      {element: document.querySelector('.GEM-PieToezicthouders'), id: "aAgZgm"},
+      {element: document.querySelector('.GEM-VTEBar'), id: "TFVgMD"},
+      {element: document.querySelector('.GEM-KlachtenBar'), id: "brZcTK"},
+      {element: document.querySelector('.GEM-ControlesBar'), id: "BMRSrq"},
+      {element: document.querySelector('.GEM-AAControlesBar'), id: "WhgamS"},
+      {element: document.querySelector('.GEM-RaadgevingGEM'), id: "EqXUZq"},
+      {element: document.querySelector('.GEM-RaadgevingIGS'), id: "AgXjnnC"},
+      {element: document.querySelector('.GEM-RaadgevingLP'), id: "AcQWjU"},
+      {element: document.querySelector('.GEM-AanmaningGEM'), id: "QxmppR"},
+      {element: document.querySelector('.GEM-AanmaningIGS'), id: "UxkmGT"},
+      {element: document.querySelector('.GEM-AanmaningLP'), id: "mtVpjT"},
+      {element: document.querySelector('.GEM-pvGEM'), id: "MQxJKJ"},
+      {element: document.querySelector('.GEM-pvIGS'), id: "HYQSX"},
+      {element: document.querySelector('.GEM-pvLP'), id: "pdXc"},
+      {
+        element: document.querySelector('.GEM-bestuurlijkmaatregelGEM'),
+        id: "ywktLz"
+      },
+      {
+        element: document.querySelector('.GEM-bestuurlijkmaatregelIGS'),
+        id: "QpqBt"
+      },
+      {
+        element: document.querySelector('.GEM-bestuurlijkmaatregelLP'),
+        id: "PeVCcVw"
+      },
+      {
+        element: document.querySelector('.GEM-bestuurlijkmaatregelzonderGEM'),
+        id: "ptTCeM"
+      },
+      {
+        element: document.querySelector('.GEM-bestuurlijkmaatregelzonderIGS'),
+        id: "jebuf"
+      },
+      {
+        element: document.querySelector('.GEM-bestuurlijkmaatregelzonderLP'),
+        id: "eVSmDJy"
+      },
+      {
+        element: document.querySelector('.GEM-bestuurlijkmaatregelmetGEM'),
+        id: "pBwU"
+      },
+      {
+        element: document.querySelector('.GEM-bestuurlijkmaatregelmetIGS'),
+        id: "BxmSrM"
+      },
+      {
+        element: document.querySelector('.GEM-bestuurlijkmaatregelmetLP'),
+        id: "VFjDssL"
+      },
+      {element: document.querySelector('.GEM-veiligheidsGEM'), id: "hSjPNuJ"},
+      {element: document.querySelector('.GEM-veiligheidsIGS'), id: "pswvgAp"},
+      {element: document.querySelector('.GEM-veiligheidsLP'), id: "aNCJtYU"},
+      {element: document.querySelector('.GEM-burgbestm'), id: "Jpmwen"},
+      {element: document.querySelector('.GEM-burgbestzonder'), id: "PQJZuSS"},
+      {element: document.querySelector('.GEM-burgbestmet'), id: "emApAF"},
+      {element: document.querySelector('.GEM-burgveilig'), id: "QJFCBz"},
+      {
+        element: document.querySelector('.GEM-verslagvastellingGEM'),
+        id: "YBbmqpJ"
+      },
+      {
+        element: document.querySelector('.GEM-verslagvastellingIGS'),
+        id: "ackyug"
+      },
+      {
+        element: document.querySelector('.GEM-verslagvastellingLP'),
+        id: "QrkRHsD"
+      },
+      {
+        element: document.querySelector('.Gem-veiligheidsmaatregel-igs'),
+        id: "bTCRdV"
+      },
+      {
+        element: document.querySelector('.Gem-overtredingsgraad-edit'),
+        id: "zRspBS"
+      },
+      {element: document.querySelector('.Gem-opmerking-gem'), id: "jFgHzvw"},
+      {element: document.querySelector('.Gem-opmerking-lp'), id: "aDveZHw"},
+      {element: document.querySelector('.Gem-opmerking-igs'), id: "ejpsmmn"},
+
+      {element: document.querySelector('.Gem-pie-raadgeving'), id: "PXYJP"},
+      {element: document.querySelector('.Gem-pie-aanmaning'), id: "vmckAq"},
+      {element: document.querySelector('.Gem-pie-verslag'), id: "RhGcVr"},
+      {element: document.querySelector('.Gem-pie-pv'), id: "MzdR"},
+      {element: document.querySelector('.Gem-pie-bestmaatregel'), id: "WdpDMs"},
+      {element: document.querySelector('.Gem-pie-veiligheids'), id: "ZEQGgeD"},
+      {element: document.querySelector('.Gem-ORG-NaamGEM'), id: "xDATvX"},
+      {element: document.querySelector('.Gem-ORG-GEM'), id: "kwsakS"},
+      {element: document.querySelector('.Gem-ORG-IGS'), id: "BDukJu"},
+      {element: document.querySelector('.Gem-ORG-LP'), id: "vNPApmL"},
+      {element: document.querySelector('.Gem-ORG-INW'), id: "JPBBzB"},
+      {element: document.querySelector('.GemORGlokaal'), id: "pueLkze"},
+      {element: document.querySelector('.Gem-ORG-RO-IGS'), id: "YCjBKha"},
+      {element: document.querySelector('.Gem-ORG-RO-LP'), id: "JjxFhy"},
+      {element: document.querySelector('.Gem-ORG-RO-And'), id: "hdhKmJb"},
+      {element: document.querySelector('.Gem-ORG-Mil-And'), id: "mBPb"},
+    ];
+    elementsIdPairs.forEach(({element, id}) => {
+      nebbieNoselectionGem.render({element, id});
+    });
+  }
 }
-}
+
 //Rendering Gemeenten RO
 async function gemeentendashboardro() {
-  
-  const classExistsInit = document.getElementsByClassName(
-    'gemro'
-   ).length > 0;
-   let app;
-   app = await connect(config_Gemeenten_MIL);
-   
-   /*Set theme to charts*/
- const nebbie = stardust.embed(app, {
-     types,
-     //themes,
-     context: {
-       language: 'nl-NL',
-       theme: 'light',
-     },
-   });
 
-   const nebbieNoselectionGem = stardust.embed(app, {
+  const classExistsInit = document.getElementsByClassName(
+      'gemro'
+  ).length > 0;
+  let app;
+  app = await connect(config_Gemeenten_MIL);
+
+  /*Set theme to charts*/
+  const nebbie = stardust.embed(app, {
     types,
     //themes,
     context: {
       language: 'nl-NL',
       theme: 'light',
-      constraints: { select: true },
     },
   });
-   
-  if(!classExistsInit) {
-  //Get toolbar of application and define it as a class of toolbar => To be used in HTML page
-  (nebbie.selections().then((s) => s.mount(document.querySelector('.toolbar'))));
-  /* Get fieldvalues of the field Naam Gemeente in Qlik model and mount it in placeholder listbox*/
- const fieldNameProvincie = 'Gemeente'; // Should refer to a field in your app
- (await nebbie.field(fieldNameProvincie))
- .mount(document.querySelector('.listboxGEM'),{search:true,title:"Gemeente",checkboxes:false});
- 
 
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.GEM-Vebalitisanten'),
-  id: "VmPkER",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.GEM-stedenbouwkundige'),
-  id: "cKYxLcB",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.GEM-stedenbouwkundigeinspec'),
-  id: "mXXuFgn",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.GEM-totaalvtero'),
-  id: "Svt",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.GEM-BARKlachten'),
-  id: "EJUvZWY",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.GEM-BARControles'),
-  id: "MXVjp",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.GEM-BARAAControles'),
-  id: "fSgdsk",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.GEM-charttotaalvtero'),
-  id: "sjckS",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-klachten'),
-  id: "GBZEvm",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-controles'),
-  id: "pYcZZVf",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-AAcontroles'),
-  id: "sPvuYp",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-barcontroles'),
-  id: "myXZwVj",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-overtredingsgraad'),
-  id: "VRpG",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-inst-raadgeving'),
-  id: "TxMejt",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-inst-aanmaning'),
-  id: "RJszj",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-inst-verslagvaststelling'),
-  id: "mSkpJ",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.GEM-PIE-Verbalitisanten'),
-  id: "YKcxBs",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.GEM-PIE-StedenBK'),
-  id: "MazX",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.GEM-PIE-StedenBKVerb'),
-  id: "JpbAjkH",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-inst-pv'),
-  id: "PUkJxcn",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-inst-vvt'),
-  id: "mSkpJ",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-inst-beveltotstaking'),
-  id: "jcqGSD",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-inst-afgeslotenminschik'),
-  id: "jFqSu",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-inst-ambtshalve'),
-  id: "JYeCdB",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-inst-raadgeving-igs'),
-  id: "LuMZJT",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-inst-aanmaning-igs'),
-  id: "FJCSAND",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-inst-verslagvanvastelling-igs'),
-  id: "EGYPF",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-inst-PV-igs'),
-  id: "JzzZjnC",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-inst-beveltotstaking-igs'),
-  id: "LajcS",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-inst-afgeslotenminnelijke-igs'),
-  id: "npvDrPz",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-inst-herstelvorderingOM-igs'),
-  id: "KPukVKS",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-inst-herstelvorderingBR-igs'),
-  id: "WPZdtc",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-inst-ambsthalvei-igs'),
-  id: "WyVumvu",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-inst-raadgeving-lp'),
-  id: "KHUnM",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-inst-verslagvastelling-lp'),
-  id: "TWJjJ",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-inst-pv-lp'),
-  id: "rJjf",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-inst-beveltotstaking-lp'),
-  id: "UpBZR",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-inst-ingeleidOM'),
-  id: "EuufvjC",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-inst-ingeleidBR'),
-  id: "bHHWpyh",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-inst-bestmaatregel'),
-  id: "EfxBZV",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-inst-bestmaatregel-zdwsm'),
-  id: "hpuvuu",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-inst-bestmaatregel-mdwsom'),
-  id: "epPFzCU",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-inst-bestmaatregel-igs-mdwsom'),
-  id: "JJUvm",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-inst-bestmaatregel-igs'),
-  id: "qDrufGR",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-inst-bestmaatregel-igs-zdwsom'),
-  id: "FWbjZh",
-});
+  const nebbieNoselectionGem = stardust.embed(app, {
+    types,
+    //themes,
+    context: {
+      language: 'nl-NL',
+      theme: 'light',
+      constraints: {select: true},
+    },
+  });
+
+  if (!classExistsInit) {
+    //Get toolbar of application and define it as a class of toolbar => To be used in HTML page
+    (nebbie.selections().then(
+        (s) => s.mount(document.querySelector('.toolbar'))));
+    /* Get fieldvalues of the field Naam Gemeente in Qlik model and mount it in placeholder listbox*/
+    const fieldNameProvincie = 'Gemeente'; // Should refer to a field in your app
+    (await nebbie.field(fieldNameProvincie))
+    .mount(document.querySelector('.listboxGEM'),
+        {search: true, title: "Gemeente", checkboxes: false});
+
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.GEM-Vebalitisanten'),
+      id: "VmPkER",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.GEM-stedenbouwkundige'),
+      id: "cKYxLcB",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.GEM-stedenbouwkundigeinspec'),
+      id: "mXXuFgn",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.GEM-totaalvtero'),
+      id: "Svt",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.GEM-BARKlachten'),
+      id: "EJUvZWY",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.GEM-BARControles'),
+      id: "MXVjp",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.GEM-BARAAControles'),
+      id: "fSgdsk",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.GEM-charttotaalvtero'),
+      id: "sjckS",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-klachten'),
+      id: "GBZEvm",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-controles'),
+      id: "pYcZZVf",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-AAcontroles'),
+      id: "sPvuYp",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-barcontroles'),
+      id: "myXZwVj",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-overtredingsgraad'),
+      id: "VRpG",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-inst-raadgeving'),
+      id: "TxMejt",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-inst-aanmaning'),
+      id: "RJszj",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-inst-verslagvaststelling'),
+      id: "mSkpJ",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.GEM-PIE-Verbalitisanten'),
+      id: "YKcxBs",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.GEM-PIE-StedenBK'),
+      id: "MazX",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.GEM-PIE-StedenBKVerb'),
+      id: "JpbAjkH",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-inst-pv'),
+      id: "PUkJxcn",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-inst-vvt'),
+      id: "mSkpJ",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-inst-beveltotstaking'),
+      id: "jcqGSD",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-inst-afgeslotenminschik'),
+      id: "jFqSu",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-inst-ambtshalve'),
+      id: "JYeCdB",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-inst-raadgeving-igs'),
+      id: "LuMZJT",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-inst-aanmaning-igs'),
+      id: "FJCSAND",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-inst-verslagvanvastelling-igs'),
+      id: "EGYPF",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-inst-PV-igs'),
+      id: "JzzZjnC",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-inst-beveltotstaking-igs'),
+      id: "LajcS",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-inst-afgeslotenminnelijke-igs'),
+      id: "npvDrPz",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-inst-herstelvorderingOM-igs'),
+      id: "KPukVKS",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-inst-herstelvorderingBR-igs'),
+      id: "WPZdtc",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-inst-ambsthalvei-igs'),
+      id: "WyVumvu",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-inst-raadgeving-lp'),
+      id: "KHUnM",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-inst-verslagvastelling-lp'),
+      id: "TWJjJ",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-inst-pv-lp'),
+      id: "rJjf",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-inst-beveltotstaking-lp'),
+      id: "UpBZR",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-inst-ingeleidOM'),
+      id: "EuufvjC",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-inst-ingeleidBR'),
+      id: "bHHWpyh",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-inst-bestmaatregel'),
+      id: "EfxBZV",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-inst-bestmaatregel-zdwsm'),
+      id: "hpuvuu",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-inst-bestmaatregel-mdwsom'),
+      id: "epPFzCU",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-inst-bestmaatregel-igs-mdwsom'),
+      id: "JJUvm",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-inst-bestmaatregel-igs'),
+      id: "qDrufGR",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-inst-bestmaatregel-igs-zdwsom'),
+      id: "FWbjZh",
+    });
 //instrumentarium
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-onder-raadgeven'),
-  id: "QzxjPDU",
-});
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-onder-raadgeven'),
+      id: "QzxjPDU",
+    });
 //instrumentarium
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-onder-aanmaning'),
-  id: "tVGPVR",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-onder-verslag'),
-  id: "Ezpxd",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-onder-PV'),
-  id: "nqCu",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-onder-staking'),
-  id: "jNfvTcr",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-onder-afgeslotenmin'),
-  id: "yjgjcbE",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-onder-ingeleid'),
-  id: "JBjGHpP",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-onder-burgelijkrechter'),
-  id: "YVSnmb",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-onder-ambachts'),
-  id: "pdky",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-kpi-ambachts'),
-  id: "dtRYDjk",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-opmerking-gem'),
-  id: "NpUPqP",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-opmerking-igs'),
-  id: "CkEstYn",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-opmerking-lp'),
-  id: "QgDgFz",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-bestm-kpi'),
-  id: "EfxBZV",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-bestm-kpi-zwd'),
-  id: "hpuvuu",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-bestm-kpi-mdw'),
-  id: "epPFzCU",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ro-bestm-onder'),
-  id: "JPARv",
-});
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-onder-aanmaning'),
+      id: "tVGPVR",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-onder-verslag'),
+      id: "Ezpxd",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-onder-PV'),
+      id: "nqCu",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-onder-staking'),
+      id: "jNfvTcr",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-onder-afgeslotenmin'),
+      id: "yjgjcbE",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-onder-ingeleid'),
+      id: "JBjGHpP",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-onder-burgelijkrechter'),
+      id: "YVSnmb",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-onder-ambachts'),
+      id: "pdky",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-kpi-ambachts'),
+      id: "dtRYDjk",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-opmerking-gem'),
+      id: "NpUPqP",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-opmerking-igs'),
+      id: "CkEstYn",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-opmerking-lp'),
+      id: "QgDgFz",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-bestm-kpi'),
+      id: "EfxBZV",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-bestm-kpi-zwd'),
+      id: "hpuvuu",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-bestm-kpi-mdw'),
+      id: "epPFzCU",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ro-bestm-onder'),
+      id: "JPARv",
+    });
 //Naam gemeente
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ORG-NaamGEM'),
-  id: "xDATvX",
-});
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ORG-NaamGEM'),
+      id: "xDATvX",
+    });
 
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ORG-GEM'),
-  id: "kwsakS",
-});
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ORG-GEM'),
+      id: "kwsakS",
+    });
 
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ORG-IGS'),
-  id: "BDukJu",
-});
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ORG-IGS'),
+      id: "BDukJu",
+    });
 
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ORG-LP'),
-  id: "vNPApmL",
-});
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ORG-LP'),
+      id: "vNPApmL",
+    });
 
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ORG-INW'),
-  id: "JPBBzB",
-});
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ORG-INW'),
+      id: "JPBBzB",
+    });
 
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.GemORGlokaal'),
-  id: "pueLkze",
-});
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.GemORGlokaal'),
+      id: "pueLkze",
+    });
 
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ORG-RO-IGS'),
-  id: "YCjBKha",
-});
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ORG-RO-IGS'),
+      id: "YCjBKha",
+    });
 
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ORG-RO-LP'),
-  id: "JjxFhy",
-});
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ORG-RO-LP'),
+      id: "JjxFhy",
+    });
 
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-Onderverdeling-klachten'),
-  id: "BQBs",
-});
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-Onderverdeling-klachten'),
+      id: "BQBs",
+    });
 
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-Onderverdeling-controles'),
-  id: "nhEJPj",
-});
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-Onderverdeling-aacontroles'),
-  id: "HknzBB",
-});
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-Onderverdeling-controles'),
+      id: "nhEJPj",
+    });
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-Onderverdeling-aacontroles'),
+      id: "HknzBB",
+    });
 
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ORG-RO-And'),
-  id: "hdhKmJb",
-});
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ORG-RO-And'),
+      id: "hdhKmJb",
+    });
 
-nebbieNoselectionGem.render({ 
-  element: document.querySelector('.Gem-ORG-Mil-And'),
-  id: "mBPb",
-});
+    nebbieNoselectionGem.render({
+      element: document.querySelector('.Gem-ORG-Mil-And'),
+      id: "mBPb",
+    });
   }
 }

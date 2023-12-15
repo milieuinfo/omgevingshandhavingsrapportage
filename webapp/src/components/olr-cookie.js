@@ -1,4 +1,4 @@
-import {LitElement, define, html} from "./common/commons.js";
+import {define, html, LitElement} from "./common/commons.js";
 
 class OlrCookie extends LitElement {
 

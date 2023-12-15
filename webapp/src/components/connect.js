@@ -1,7 +1,7 @@
 import enigma from "enigma.js";
 import schema from "enigma.js/schemas/12.170.2.json";
 
-async function getQCSHeaders({ webIntegrationId, url }) {
+async function getQCSHeaders({webIntegrationId, url}) {
   const response = await fetch(`${url}`, {
     // credentials: "include",
   });
@@ -19,25 +19,25 @@ async function getQCSHeaders({ webIntegrationId, url }) {
   };
 }
 
-async function getEnigmaApp({ host, appId, headers }) {
+async function getEnigmaApp({host, appId, headers}) {
   const params = Object.keys(headers)
-    .map((key) => `${key}=${headers[key]}`)
-    .join("&");
+  .map((key) => `${key}=${headers[key]}`)
+  .join("&");
 
   const enigmaGlobal = await enigma
-    .create({
-      schema,
-      url: `wss://${host}/app/${appId}?${params}`,
-    })
-    .open();
+  .create({
+    schema,
+    url: `wss://${host}/app/${appId}?${params}`,
+  })
+  .open();
 
   return enigmaGlobal.openDoc(appId);
 }
 
-async function connect({ url, appId }) {
+async function connect({url, appId}) {
   const host = url.replace(/^https?:\/\//, "").replace(/\/?/, "");
-  const headers = await getQCSHeaders({ url /*, webIntegrationId*/ });
-  return getEnigmaApp({ host, headers, appId });
+  const headers = await getQCSHeaders({url /*, webIntegrationId*/});
+  return getEnigmaApp({host, headers, appId});
 }
 
 export default connect;
