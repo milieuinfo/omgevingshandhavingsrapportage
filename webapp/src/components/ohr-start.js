@@ -1,4 +1,4 @@
-import {define, html, LitElement, renderStack} from "./common/commons.js";
+import {html, LitElement, renderStack} from "./common/commons.js";
 import {vlElementsStyle} from "@domg-wc/elements";
 
 import "@domg-wc/elements/grid";
@@ -13,7 +13,7 @@ import "@domg-wc/elements/image";
 import "@domg-wc/components/content-header";
 import "@domg-wc/components/alert";
 
-class OlrStart extends LitElement {
+class OhrStart extends LitElement {
 
   static get styles() {
     return [
@@ -138,7 +138,7 @@ class OlrStart extends LitElement {
           size: 6,
           template: html`
             <div>
-              <a is="vl-doormat" href="/">
+              <a is="vl-doormat" href="/gemeenten-op-kaart">
                 <h2 is="vl-doormat-title">Gemeenten</h2>
                 <div is="vl-doormat-text">
                   De cijfers geven een totaalbeeld van de
@@ -458,4 +458,4 @@ class OlrStart extends LitElement {
   }
 }
 
-define("olr-start", OlrStart);
+customElements.define("ohr-start", OhrStart);

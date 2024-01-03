@@ -1,4 +1,4 @@
-import {define, html, LitElement, renderStack} from "../common/commons.js";
+import {html, LitElement, renderStack} from "../common/commons.js";
 import {vlElementsStyle} from "@domg-wc/elements";
 
 import "@domg-wc/elements/grid";
@@ -88,4 +88,4 @@ class OhrDownload extends LitElement {
   }
 }
 
-define("ohr-download", OhrDownload);
+customElements.define("ohr-download", OhrDownload);

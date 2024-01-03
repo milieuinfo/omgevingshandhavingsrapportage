@@ -1,8 +1,8 @@
 import {repeat} from 'lit/directives/repeat.js';
 import {html, LitElement, css} from 'lit';
-import {define, awaitScript} from "@domg-wc/common-utilities";
+import {awaitScript} from "@domg-wc/common-utilities";
 
-export {define, awaitScript, html, LitElement, css};
+export {awaitScript, html, LitElement, css};
 
 export const queryById = (component) => (id) => {
   return queryBySelector(component)(`[id="${id}"]`);

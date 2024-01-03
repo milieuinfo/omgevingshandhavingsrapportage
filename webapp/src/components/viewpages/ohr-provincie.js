@@ -1,4 +1,4 @@
-import {define, html, LitElement, renderStack} from "../common/commons.js";
+import {html, LitElement, renderStack} from "../common/commons.js";
 import {vlElementsStyle} from "@domg-wc/elements";
 
 import "@domg-wc/elements/image";
@@ -112,4 +112,4 @@ class OhrProvincie extends LitElement {
   }
 }
 
-define("ohr-provincie", OhrProvincie);
+customElements.define("ohr-provincie", OhrProvincie);

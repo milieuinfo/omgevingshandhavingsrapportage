@@ -1,4 +1,4 @@
-import {define, html, LitElement, renderStack} from "../common/commons.js";
+import {html, LitElement, renderStack} from "../common/commons.js";
 import {vlElementsStyle} from "@domg-wc/elements";
 
 import "@domg-wc/elements/image";
@@ -204,4 +204,4 @@ class OhrGewest extends LitElement {
   }
 }
 
-define("ohr-gewest", OhrGewest);
+customElements.define("ohr-gewest", OhrGewest);

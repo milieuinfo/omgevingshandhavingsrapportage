@@ -1,7 +1,4 @@
-import "../qlik/visual";
-import "../qlik/infoblock";
-
-import {define, html, LitElement} from "../common/commons.js";
+import {html, LitElement} from "../common/commons.js";
 import {Qlik} from "@domg/qlik-lib";
 import {vlElementsStyle} from "@domg-wc/elements";
 import viz_gewest from "../config/milieuhandhaving.json" assert {type: "json"};
@@ -11,6 +8,7 @@ import "@domg-wc/elements/grid";
 import "@domg-wc/elements/title";
 import "@domg-wc/components/content-header";
 import "@domg-wc/components/loader";
+import "@domg-wc/qlik/infoblock";
 
 class OhrAGewest extends LitElement {
 
@@ -85,16 +83,16 @@ class OhrAGewest extends LitElement {
       <div is="vl-grid">
         <div is="vl-column" data-vl-size="12">
           ${this.tiles.map(tile => html`
-            <qlik-infoblock title="${tile.title}"
+            <vl-qlik-infoblock title="${tile.title}"
                             icon="business-graph-bar"
                             .visuals="${tile.vis}"
                             .connection="${this.connection}">
               <span>${tile.intro}</span>
-            </qlik-infoblock>
+            </vl-qlik-infoblock>
           `)}
         </div>
       </div>`;
   }
 }
 
-define("ohr-agewest", OhrAGewest);
+customElements.define("ohr-agewest", OhrAGewest);

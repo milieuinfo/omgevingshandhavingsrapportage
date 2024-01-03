@@ -1,14 +1,12 @@
 import {
   bindVlSelect,
   comparingWithFunction,
-  define,
   html,
   LitElement,
   queryById,
   renderStack
 } from "../common/commons.js";
 
-import "../qlik/dashboard.js";
 import {DEFAULT, REFRESH_MEASURE} from "../config/qlik_resources.js";
 import viz_klachten from "../config/klachten.json" assert {type: "json"};
 import filters from "../config/klachten-filters.js";
@@ -26,6 +24,7 @@ import "@domg-wc/components/loader";
 import "@domg-wc/components/alert";
 import "@domg-wc/components/annotation";
 import "@domg-wc/components/typography";
+import "@domg-wc/qlik/dashboard";
 
 class OhrControlesold extends LitElement {
 
@@ -191,12 +190,12 @@ class OhrControlesold extends LitElement {
       return this.__renderIdleTime();
     }
     return html`
-      <qlik-dashboard
+      <vl-qlik-dashboard
           id="personeel-dashboard"
           .visuals="${viz_klachten[this.selectedView].visualisations}"
           .filters="${filters}"
           .connection="${this.connection}">
-      </qlik-dashboard>
+      </vl-qlik-dashboard>
     `;
   }
 
@@ -206,9 +205,9 @@ class OhrControlesold extends LitElement {
 }
 
 Promise
-.all([window.customElements.whenDefined("vl-multiselect"),
-  window.customElements.whenDefined("vl-select")])
+.all([customElements.whenDefined("vl-multiselect"),
+  customElements.whenDefined("vl-select")])
 .then(() => {
-  define("ohr-controlesold", OhrControlesold);
+  customElements.define("ohr-controlesold", OhrControlesold);
 });
     

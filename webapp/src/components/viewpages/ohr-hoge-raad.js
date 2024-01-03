@@ -1,4 +1,4 @@
-import {define, html, LitElement, renderStack} from "../common/commons.js";
+import {html, LitElement, renderStack} from "../common/commons.js";
 import {vlElementsStyle} from "@domg-wc/elements";
 
 import "@domg-wc/elements/image";
@@ -107,4 +107,4 @@ class OhrHogeRaad extends LitElement {
   }
 }
 
-define("ohr-hogeraad", OhrHogeRaad);
+customElements.define("ohr-hogeraad", OhrHogeRaad);

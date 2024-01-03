@@ -1,20 +1,20 @@
 import {Router} from "@vaadin/router";
-import {define, html, LitElement, queryById} from "./common/commons.js";
+import {html, LitElement, queryById} from "./common/commons.js";
 
-import "@domg-wc/components"
-import "@domg-wc/elements"
-import "@domg-wc/sections"
+import "@domg-wc/sections/header";
+import "@domg-wc/sections/footer";
+import "@domg-wc/components/template"
 
-import "./olr-start.js";
+import "./ohr-start.js";
 import "./dashboards/ohr-personeel.js";
 import "./viewpages/ohr-inleiding.js";
-import "./olr-cookie.js";
+import "./ohr-cookie.js";
 import "./dashboards/ohr-klachten.js";
 import "./dashboards/ohr-controles.js";
 import "./dashboards/ohr-instrumentarium.js";
-import "./olr-accessibility.js";
-import "./olr-privacy.js";
-import "./olr-view404.js";
+import "./ohr-accessibility.js";
+import "./ohr-privacy.js";
+import "./ohr-view404.js";
 import "./viewpages/ohr-gewest.js";
 import "./viewpages/ohr-provinciaalanalyse.js";
 import "./viewpages/ohr-gemeenten-analyse.js";
@@ -29,7 +29,7 @@ import "./viewpages/ohr-strafrechtelijk.js";
 import "./viewpages/gemeenten-op-kaart.js";
 import {getHeaderFooterId} from "./config/header.js";
 
-class OlrApp extends LitElement {
+class OhrApp extends LitElement {
 
   constructor() {
     super();
@@ -62,14 +62,15 @@ class OlrApp extends LitElement {
     this._outlet = queryById(this)("outlet");
     const router = new Router(this._outlet);
     router.setRoutes([
-      {path: "/", component: "olr-start"},
+      {path: "/", component: "ohr-start"},
+      {path: "/cookieverklaring", component: "ohr-cookie"},
+      {path: "/toegankelijkheid", component: "ohr-accessibility"},
+
       {path: "/personeel", component: "ohr-personeel"},
       {path: "/klachten", component: "ohr-klachten"},
       {path: "/controles", component: "ohr-controles"},
-      {path: "/cookieverklaring", component: "olr-cookie"},
-      {path: "/toegankelijkheid", component: "olr-accessibility"},
       {path: "/instrumentarium", component: "ohr-instrumentarium"},
-      {path: "/privacy", component: "olr-privacy"},
+      {path: "/privacy", component: "ohr-privacy"},
       {path: "/inleiding", component: "ohr-inleiding"},
       {path: "/gewest", component: "ohr-gewest"},
       {path: "/a_gewest", component: "ohr-agewest"},
@@ -85,11 +86,11 @@ class OlrApp extends LitElement {
       },
       {path: "/gemeenten-analyse", component: "ohr-gemeentenanalyse"},
       {path: "/gemeenten", component: "ohr-gemeenten"},
-      {path: "/gemeenten-op-kaart", component: "ohr-Opkaart"},
-      {path: "(.*)", component: "olr-view404"},
+      {path: "/gemeenten-op-kaart", component: "ohr-opkaart"},
+      {path: "(.*)", component: "ohr-view404"},
     ]);
     Router.go(window.location.pathname)
   }
 }
 
-define("olr-app", OlrApp, {});
+customElements.define("ohr-app", OhrApp, {});

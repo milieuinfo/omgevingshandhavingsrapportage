@@ -1,4 +1,4 @@
-import {define, html, LitElement, renderStack} from "../common/commons.js";
+import {html, LitElement, renderStack} from "../common/commons.js";
 import {vlElementsStyle} from "@domg-wc/elements";
 
 import "@domg-wc/elements/image";
@@ -377,4 +377,4 @@ class OhrStrafrechtelijk extends LitElement {
   }
 }
 
-define("ohr-strafrechtelijk", OhrStrafrechtelijk);
+customElements.define("ohr-strafrechtelijk", OhrStrafrechtelijk);

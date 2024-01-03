@@ -1,10 +1,10 @@
-import {define, html, LitElement} from './common/commons';
+import {html, LitElement} from './common/commons';
 import {vlElementsStyle} from "@domg-wc/elements";
 import "@domg-wc/elements/grid";
 import "@domg-wc/elements/button";
 import "@domg-wc/components/functional-header";
 import "@domg-wc/components/http-error-message";
-class OlrView404 extends LitElement {
+class OhrView404 extends LitElement {
 
 
   static get styles(){
@@ -57,4 +57,4 @@ class OlrView404 extends LitElement {
   }
 }
 
-define('olr-view404', OlrView404);
+customElements.define('ohr-view404', OhrView404);
