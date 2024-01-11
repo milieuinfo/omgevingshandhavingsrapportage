@@ -1,7 +1,8 @@
 [
   {
     "label": "One",
-    "value": "/iframe-src-one"
+    "value": "/iframe-src-one",
+    "selected": true
   },
   {
     "label": "Two",

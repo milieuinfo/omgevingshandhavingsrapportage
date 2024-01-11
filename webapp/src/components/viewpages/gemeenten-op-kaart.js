@@ -25,6 +25,11 @@ class OhrOpkaart extends LitElement {
     return [...vlElementsStyle];
   }
 
+  constructor() {
+    super();
+    this.selectedChoiceUrl = options.find(o => o.selected)
+  }
+
   firstUpdated(_changedProperties) {
     super.firstUpdated(_changedProperties);
     bindVlSelect({
