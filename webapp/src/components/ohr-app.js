@@ -34,7 +34,6 @@ class OhrApp extends LitElement {
   constructor() {
     super();
   }
-
   render() {
     return html`
       <vl-template>
@@ -65,32 +64,28 @@ class OhrApp extends LitElement {
       {path: "/", component: "ohr-start"},
       {path: "/cookieverklaring", component: "ohr-cookie"},
       {path: "/toegankelijkheid", component: "ohr-accessibility"},
-
       {path: "/personeel", component: "ohr-personeel"},
       {path: "/klachten", component: "ohr-klachten"},
       {path: "/controles", component: "ohr-controles"},
       {path: "/instrumentarium", component: "ohr-instrumentarium"},
       {path: "/privacy", component: "ohr-privacy"},
-      {path: "/inleiding", component: "ohr-inleiding"},
+      {path: "/dataverzameling-en-data-interpretatie", component: "ohr-inleiding"},
       {path: "/gewest", component: "ohr-gewest"},
       {path: "/a_gewest", component: "ohr-agewest"},
-      {path: "/download", component: "ohr-download"},
-      {path: "/provincie_jaar_analyse", component: "ohr-provincieanalyse"},
+      {path: "/download-cijfers-en-meer", component: "ohr-download"},
       {path: "/provincie", component: "ohr-provincie"},
       {path: "/hoge-raad", component: "ohr-hogeraad"},
       {path: "/hoge-raad-analyse", component: "ohr-hogeraadanalyse"},
       {path: "/strafrechtelijk", component: "ohr-strafrechtelijk"},
-      {
-        path: "/strafrechtelijk-analyse",
-        component: "ohr-strafrechtelijkanalyse"
-      },
+      {path: "/strafrechtelijk-analyse",component: "ohr-strafrechtelijkanalyse"},
       {path: "/gemeenten-analyse", component: "ohr-gemeentenanalyse"},
       {path: "/gemeenten", component: "ohr-gemeenten"},
       {path: "/gemeenten-op-kaart", component: "ohr-opkaart"},
+      {path: "/provincie-op-kaart", component: "ohr-opkaartprovincies"},
+      {path: "/provincie-jaar-analyse", component: "ohr-provincieanalyse"},
       {path: "(.*)", component: "ohr-view404"},
     ]);
     Router.go(window.location.pathname)
   }
 }
-
 customElements.define("ohr-app", OhrApp, {});
