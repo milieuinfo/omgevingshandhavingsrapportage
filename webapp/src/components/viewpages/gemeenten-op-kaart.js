@@ -17,7 +17,8 @@ class OhrOpkaart extends LitElement {
 
   static get properties() {
     return {
-      selectedChoiceUrl: {type: String}
+      selectedChoiceUrl: {type: String},
+      initialized: {type: Boolean}
     }
   }
 
@@ -27,7 +28,7 @@ class OhrOpkaart extends LitElement {
 
   constructor() {
     super();
-    this.selectedChoiceUrl = options.find(o => o.selected)
+    this.selectedChoiceUrl = options.find(o => o.selected);
   }
 
   firstUpdated(_changedProperties) {
@@ -45,8 +46,67 @@ class OhrOpkaart extends LitElement {
     `;
   }
 
+  __renderEverVizKaart() {
+    return html`<iframe src="${this.selectedChoiceUrl}" width="100%" height="350px"></iframe>`;
+  }
+
+  __renderIntroductionOfMaps() {
+    return html`
+    <h2 is="vl-h2">Hoe interpreteer ik de kaarten?</h2>
+    <p>
+      De kaarten worden onderverdeeld in twee categorieën:</p>
+    <vl-typography>
+
+      <li>Milieu: groene kaarten</li>
+      <li>Ruimtelijke ordening: oranje kaarten</li>
+
+    </vl-typography>
+    <br/>
+    <p>De kleurgradaties wijzen op de aantalllen in de gemeenten
+      per 1.000 inwoners. </p>
+    <br/>
+
+    <p>
+      De responsgraad voor deze bevraging (of bepaalde vragen in
+      de bevraging) bedraagt geen 100%.
+      Dit maakt dat bepaalde gemeenten als waarde "niet gekend"
+      of "non-repons" tonen.
+      Deze worden in een grijs kleur aangetoond op de kaarten.
+
+
+    </p>`
+  }
+
   __changeView(event) {
     this.selectedChoiceUrl = event.target.value;
+  }
+
+  __renderSideNavigation() {
+    return html`
+    <h5 is="vl-h5" data-vl-alt>Interessante links</h5>
+    <ul is="vl-link-list">
+      <li is="vl-link-list-item">
+        <a is="vl-link"
+           href="#">
+          Jaarrapportage gemeenten
+        </a>
+      </li>
+      <li is="vl-link-list-item">
+        <a is="vl-link" href="#">MeerJarenrapportage </a>
+      </li>   
+      <li is="vl-link-list-item">
+        <a is="vl-link"
+           href="/download-cijfers-en-meer">
+          Downloads
+        </a>
+      </li>
+      <li is="vl-link-list-item">
+        <a target="_new_blank" is="vl-link"
+           href=https://indicatoren.omgeving.vlaanderen.be/>
+          Indicatoren website<span is="vl-icon" data-vl-before="" data-vl-link="" data-vl-icon="external"></span>
+        </a>
+      </li>
+    </ul>`;
   }
 
   render() {
@@ -60,14 +120,23 @@ class OhrOpkaart extends LitElement {
       </vl-functional-header>
       <section is="vl-region">
         <div is="vl-layout">
-          ${renderStack({
-                size: 12,
+          ${renderStack(
+            {
+              size: 8,
+              template: this.__renderIntroductionOfMaps(),
+            },
+            {
+              size: 4,
+              template: this.__renderSideNavigation(),
+            },
+            {
+                size: 8,
                 template: this.__renderViewSelector(),
-              },
-              {
-                size: 12,
-                template: html`<iframe src="${this.selectedChoiceUrl}" width="100%" height="500px"></iframe>`,
-              })}
+            },
+            {
+                size: 8,
+                template: this.__renderEverVizKaart()
+            })}
         </div>
       </section>`;
   }

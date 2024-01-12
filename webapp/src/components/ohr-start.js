@@ -206,7 +206,7 @@ and performing other setup tasks.
         size: 12,
         template: html`
         <vl-typography data-cy="typography">
-          <p><b>De cijfers zijn bepaald met de bevraging van 2023</b></p>
+          <p><i>De bovenstaande cijfers zijn bepaald met de bevraging van 2023</i></p>
         </vl-typography>`
       }
   )

@@ -27,6 +27,8 @@ import "./viewpages/ohr-download.js";
 import "./viewpages/ohr-strafrechtelijk-analyse.js";
 import "./viewpages/ohr-strafrechtelijk.js";
 import "./viewpages/gemeenten-op-kaart.js";
+import "./viewpages/ohr-provincie-op-kaart.js";
+
 import {getHeaderFooterId} from "./config/header.js";
 
 class OhrApp extends LitElement {

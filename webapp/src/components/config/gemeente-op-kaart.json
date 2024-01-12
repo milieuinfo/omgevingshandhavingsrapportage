@@ -1,11 +1,43 @@
 [
   {
-    "label": "One",
+    "label": "Responsgraad",
     "value": "/iframe-src-one",
     "selected": true
   },
   {
-    "label": "Two",
+    "label": "Milieu: Toezichthouders",
+    "value": "/iframe-src-two"
+  },
+  {
+    "label": "Milieu: VTE",
+    "value": "/iframe-src-two"
+  },
+  {
+    "label": "Milieu: Klachten",
+    "value": "/iframe-src-two"
+  },
+  {
+    "label": "Milieu: Controles",
+    "value": "/iframe-src-two"
+  },
+  {
+    "label": "Milieu: Aanvankelijke controles met schending",
+    "value": "/iframe-src-two"
+  },
+  {
+    "label": "Milieu: Raadgeving",
+    "value": "/iframe-src-two"
+  },
+  {
+    "label": "Milieu: Aanmaningen",
+    "value": "/iframe-src-two"
+  },
+  {
+    "label": "Milieu: Verslagen van vaststelling",
+    "value": "/iframe-src-two"
+  },
+  {
+    "label": "Milieu: Bestuurlijke maatregelen",
     "value": "/iframe-src-two"
   }
 ]
