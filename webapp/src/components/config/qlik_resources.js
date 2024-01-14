@@ -1,10 +1,3 @@
-export const ACTOR = {
-  name: "Gewestelijke Actor",
-  fieldQualifier: "qText",
-  field: "[Gewestelijke Actor]",
-  nrOfValues: 1000
-};
-
 export const PROVINCIE = {
   name: "PROVINCIE",
   fieldQualifier: "qText",
@@ -12,5 +5,31 @@ export const PROVINCIE = {
   nrOfValues: 1000
 };
 
+export const JAAR = {
+  name: "Jaartal",
+  fieldQualifier: "qText",
+  field: "[Bevragingsjaartal]",
+  nrOfValues: 1000
+};
+
+export const ACTOR = {
+  name: "Actor",
+  fieldQualifier: "qText",
+  field: "[Actor]",
+  nrOfValues: 1000
+};
+
+export const BELEID = {
+  name: "Beleidsdomein",
+  fieldQualifier: "qText",
+  field: "[Beleidsdomein]",
+  nrOfValues: 1000
+};
+export const KLACHTTYPE = {
+  name: "Klachttype",
+  fieldQualifier: "qText",
+  field: "[Klachttype]",
+  nrOfValues: 1000
+};
 
 

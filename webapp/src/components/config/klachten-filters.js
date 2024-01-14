@@ -1,18 +1,30 @@
 import {
+  JAAR,
   ACTOR,
-  PROVINCIE
+  BELEID,
+  KLACHTTYPE
   } from "./qlik_resources.js";
   
   const filters = [
     {
-      name: "Gewestelijke Actor",
-      id: "Gewestelijke Actor",
+      name: "Actor",
+      id: "Actor",
       filter: ACTOR
     },
     {
-      name: "Provincie",
-      id: "PROVINCIE",
-      filter: PROVINCIE
+      name: "Jaartal",
+      id: "Jaartal",
+      filter: JAAR
+    },
+    {
+      name: "Beleidsdomein",
+      id: "Beleidsdomein",
+      filter: BELEID
+    },
+    {
+      name: "Klachttype",
+      id: "Klachttype",
+      filter: KLACHTTYPE
     }
   ]
   

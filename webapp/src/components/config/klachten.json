@@ -6,56 +6,60 @@
       [
         {
           "type": "visual",
-          "id": "PPmJbjE",
+          "id": "fmPJY",
           "height": "75px",
-          "visual_type": "kpi"
+          "visual_type": "kpi",
+          "label": "Milieuklachten",
+          "align-label": "left"
         },
         {
           "type": "visual",
-          "id": "vfZLnJ",
+          "id": "pjtH",
           "height": "75px",
-          "visual_type": "kpi"
+          "visual_type": "kpi",
+          "label": "Ruimtelijke klachten klachten",
+          "align-label": "left"
         },
         {
           "type": "visual",
-          "id": "Xbcy",
+          "id": "sgmUKd",
           "height": "75px",
-          "visual_type": "kpi"
+          "visual_type": "kpi",
+          "label": "Procentueel verschil",
+          "align-label": "left"
         },
         {
           "type": "visual",
-          "id": "pNqQA",
+          "id": "SKTvE",
           "height": "75px",
-          "visual_type": "kpi"
+          "visual_type": "kpi",
+          "label": "Responsgraad",
+          "align-label": "left"
         }
       ],
       [
         {
           "type": "visual",
-          "id": "RyYCSLz",
+          "id": "RwjRjD",
           "height": "300px",
-          "visual_type": "barchart"
+          "visual_type": "linechart",
+          "label": "Evolutie klachten per beleidsdomein"
         },
         {
           "type": "visual",
-          "id": "kHnMqb",
+          "id": "ZfFutF",
           "height": "300px",
-          "visual_type": "barchart"
-        }
-      ],
-      [
-        {
-          "type": "visual",
-          "id": "SxjuQwJ",
-          "height": "300px",
-          "visual_type": "linechart"
+          "visual_type": "barchart",
+          "label": "Aantal klachten per actor"
         },
         {
           "type": "visual",
-          "id": "jUNJVv",
+          "id": "jjPKm",
           "height": "300px",
-          "visual_type": "linechart"
+          "visual_type": "barchart",
+          "label": "Aantal klachten per klachttype"
         }
+        
       ]
     ]
   },

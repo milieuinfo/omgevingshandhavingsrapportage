@@ -8,6 +8,7 @@ import "@domg-wc/components/typography";
 import "@domg-wc/components/loader";
 import "@domg-wc/qlik/dashboard-page";
 import {vlElementsStyle} from "@domg-wc/elements";
+import "@domg-wc/components/alert";
 
 class OhrKlachten extends LitElement {
 
@@ -26,7 +27,7 @@ class OhrKlachten extends LitElement {
       <vl-functional-header
           data-vl-back="Terug"
           data-vl-back-link="/"
-          data-vl-title="Thema - Klachten"
+          data-vl-title="Analyseer de cijfers - Klachten"
           data-vl-sub-title="Omgevingshandhavingsrapportage"
           data-vl-link="/klachten">
       </vl-functional-header>
@@ -34,7 +35,7 @@ class OhrKlachten extends LitElement {
         <vl-qlik-dashboard-page
             title="Klachten"
             url="omgevingsloketrapport.omgeving.vlaanderen.be"
-            app-id="e994d176-7ee5-49af-b193-d79672df9d04"
+            app-id="488784e3-1d65-4427-85e9-0b720dafb800"
             .views="${charts}"
             .filters="${filters}"
             @initialized="${() => this.initialized = true}">
@@ -52,11 +53,11 @@ class OhrKlachten extends LitElement {
     }
     return html`
       <vl-typography slot="introduction">
-        <p>
-          Een voorstelling van de klachten die werden ontvangen bij de
-          verschillende omgevingshandhavingsactoren op gewestelijk, provinciaal
-          en gemeentelijk niveau.
-        </p>
+      <vl-alert data-cy="alert">
+    <span
+        >De cijfers van dit dashboard zijn verzameld vanaf 2021.</span
+    >
+</vl-alert>
       </vl-typography>`;
   }
 }
