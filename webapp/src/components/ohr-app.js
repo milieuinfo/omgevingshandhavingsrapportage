@@ -73,7 +73,7 @@ class OhrApp extends LitElement {
       {path: "/privacy", component: "ohr-privacy"},
       {path: "/dataverzameling-en-data-interpretatie", component: "ohr-inleiding"},
       {path: "/gewest", component: "ohr-gewest"},
-      {path: "/a_gewest", component: "ohr-agewest"},
+      {path: "/gewest-analyse", component: "ohr-agewest"},
       {path: "/download-cijfers-en-meer", component: "ohr-download"},
       {path: "/provincie", component: "ohr-provincie"},
       {path: "/hoge-raad", component: "ohr-hogeraad"},
@@ -84,7 +84,7 @@ class OhrApp extends LitElement {
       {path: "/gemeenten", component: "ohr-gemeenten"},
       {path: "/gemeenten-op-kaart", component: "ohr-opkaart"},
       {path: "/provincie-op-kaart", component: "ohr-opkaartprovincies"},
-      {path: "/provincie-jaar-analyse", component: "ohr-provincieanalyse"},
+      {path: "/provincie-analyse", component: "ohr-provincieanalyse"},
       {path: "(.*)", component: "ohr-view404"},
     ]);
     Router.go(window.location.pathname)

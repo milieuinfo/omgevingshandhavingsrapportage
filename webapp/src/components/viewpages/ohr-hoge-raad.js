@@ -24,14 +24,13 @@ class OhrHogeRaad extends LitElement {
 
   render() {
     return html`
-      <vl-content-header>
-        <img is="vl-image"
-             slot="image"
-             src="/images/header.jpg"
-             alt="Hoofding afbeelding website"/>
-        <a slot="context-link" href="/">Omgevingshandhavingsrapportage</a>
-        <a slot="title-link" href="/">Handhaving</a>
-      </vl-content-header>
+    <vl-functional-header
+    data-vl-back="Terug"
+    data-vl-back-link="/"
+    data-vl-title="Hoge Raad"
+    data-vl-sub-title="Omgevingshandhavingsrapportage"
+    data-vl-link="/hoge-raad">
+</vl-functional-header>
       <section is="vl-region">
         <div is="vl-layout">
           ${renderStack(
@@ -71,39 +70,12 @@ class OhrHogeRaad extends LitElement {
              target="_blank"
              data-vl-block=true>Hoge raad voor de Handhavingsuitvoering</a></p>
       </div>
-      <br>
-
-      <div is="vl-grid">
-        <div is="vl-column">
-          <div style="max-width: 400px" id="content-2" class="data-top-bot">
-            <a is="vl-doormat" href="/hoge-raad-analyse">
-              <h2 is="vl-doormat-title">Analyseer de cijfers</h2>
-              <div is="vl-doormat-text">
-                Bekijk de cijfers van de Hoge Raad voor de Handhavingsuitvoering
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>`;
+      <br>`;
   }
 
   __renderSideNavigation() {
     return html`    
-      <h5 is="vl-h5" data-vl-alt>Interresante links</h5>
-      <ul is="vl-link-list">
-      <li is="vl-link-list-item">
-      <a is="vl-link"
-         href="/hoge-raad-analayse">
-        Analyseer de cijfers
-      </a>
-    </li>
-        <li is="vl-link-list-item">
-          <a is="vl-link"
-             href="/">
-            Terug naar beginpagina
-          </a>
-        </li>
-      </ul>`;
+    <a is="vl-link-button" href="/hoge-raad-analyse">Bekijk de cijfers voor dit thema</a>`;
   }
 }
 
