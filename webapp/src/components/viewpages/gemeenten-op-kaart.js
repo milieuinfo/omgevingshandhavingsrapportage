@@ -17,8 +17,8 @@ class OhrOpkaart extends LitElement {
 
   static get properties() {
     return {
-      selectedChoiceUrl: {type: String},
-      initialized: {type: Boolean}
+      selectedChoiceLabel: {type: String},
+      selectedChoiceUrl: {type: String}
     }
   }
 
@@ -28,7 +28,8 @@ class OhrOpkaart extends LitElement {
 
   constructor() {
     super();
-    this.selectedChoiceUrl = options.find(o => o.selected);
+    this.selectedChoiceUrl = options.find(o => o.selected).value;
+    this.selectedChoiceLabel = options.find((o) => o.selected).label;
   }
 
   firstUpdated(_changedProperties) {
@@ -41,13 +42,16 @@ class OhrOpkaart extends LitElement {
 
   __renderViewSelector() {
     return html`
+    <p>Kies hieronder een handhavingsthema:</p>
       <select id="viewselector" is="vl-select" data-vl-select @change="${this.__changeView}">
       </select>
     `;
   }
 
   __renderEverVizKaart() {
-    return html`<iframe src="${this.selectedChoiceUrl}" width="100%" height="350px"></iframe>`;
+    return html`
+    <h3 is="vl-h3" data-alt>Geselecteerde kaart: ${this.selectedChoiceLabel}</h2>
+    <iframe class="everviz-iframe" src="${this.selectedChoiceUrl}" width="800px" height="450px"></iframe>`;
   }
 
   __renderIntroductionOfMaps() {
@@ -78,7 +82,12 @@ class OhrOpkaart extends LitElement {
   }
 
   __changeView(event) {
-    this.selectedChoiceUrl = event.target.value;
+    const selectedOption = options.find((o) => o.value === event.target.value);
+    if (selectedOption) {
+      this.selectedChoiceUrl = selectedOption.value;
+      this.selectedChoiceLabel = selectedOption.label;
+    }
+    
   }
 
   __renderSideNavigation() {
@@ -114,8 +123,8 @@ class OhrOpkaart extends LitElement {
       <vl-functional-header
           data-vl-back="Terug"
           data-vl-back-link="/"
-          data-vl-title="Omgevingshandhavingsrapportage"
-          data-vl-sub-title="Gemeenten op kaart"
+          data-vl-title="Gemeenten op kaart"
+          data-vl-sub-title="Omgevingshandhavingsrapportage"
           data-vl-link="/gemeenten-op-kaart">
       </vl-functional-header>
       <section is="vl-region">
@@ -134,7 +143,7 @@ class OhrOpkaart extends LitElement {
                 template: this.__renderViewSelector(),
             },
             {
-                size: 8,
+                size: 12,
                 template: this.__renderEverVizKaart()
             })}
         </div>

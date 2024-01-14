@@ -1,19 +1,15 @@
 [
     {
       "label": "Klachten",
-      "value": "https://app.everviz.com/embed/O9UcLBpn5/?v=11",
-      "selected":"true"
+      "value": "https://app.everviz.com/embed/Nyy-mwA5f/?v=8"
     },
     {
       "label": "Controles",
-      "value": "https://app.everviz.com/embed/Nyy-mwA5f/?v=8"
+      "value": "https://datawrapper.dwcdn.net/RYnSc/1/",
+      "selected":true
     },
     {
       "label": "Toezichthouders",
-      "value": "https://app.everviz.com/embed/Nyy-mwA5f/?v=8"
-    },
-    {
-      "label": "VTE milieuhandhaving",
-      "value": "https://app.everviz.com/embed/Nyy-mwA5f/?v=8"
+      "value": "https://datawrapper.dwcdn.net/7ynxe/1/"
     }
   ]

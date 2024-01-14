@@ -1,43 +1,19 @@
 [
   {
     "label": "Responsgraad",
-    "value": "/iframe-src-one",
+    "value": "https://app.everviz.com/embed/I583LIUYa/?v=2",
     "selected": true
   },
   {
-    "label": "Milieu: Toezichthouders",
-    "value": "/iframe-src-two"
+    "label": "Milieu - Aanmaningen",
+    "value": "https://datawrapper.dwcdn.net/edCAt/2/"
   },
   {
-    "label": "Milieu: VTE",
-    "value": "/iframe-src-two"
+    "label": "Milieu - Toezichthouders",
+    "value": "https://datawrapper.dwcdn.net/kee7l/3/"
   },
   {
-    "label": "Milieu: Klachten",
-    "value": "/iframe-src-two"
-  },
-  {
-    "label": "Milieu: Controles",
-    "value": "/iframe-src-two"
-  },
-  {
-    "label": "Milieu: Aanvankelijke controles met schending",
-    "value": "/iframe-src-two"
-  },
-  {
-    "label": "Milieu: Raadgeving",
-    "value": "/iframe-src-two"
-  },
-  {
-    "label": "Milieu: Aanmaningen",
-    "value": "/iframe-src-two"
-  },
-  {
-    "label": "Milieu: Verslagen van vaststelling",
-    "value": "/iframe-src-two"
-  },
-  {
-    "label": "Milieu: Bestuurlijke maatregelen",
-    "value": "/iframe-src-two"
+    "label": "Milieu - PV",
+    "value": "https://datawrapper.dwcdn.net/ap4yA/3/"
   }
 ]

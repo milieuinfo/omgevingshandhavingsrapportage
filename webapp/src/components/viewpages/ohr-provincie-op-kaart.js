@@ -17,17 +17,19 @@ import {
   
     static get properties() {
       return {
+        selectedChoiceLabel: {type: String},
         selectedChoiceUrl: {type: String}
       }
     }
   
-    constructor() {
-        super();
-        this.selectedChoiceUrl = options.find(o => o.selected)
-      }
-    
     static get styles() {
       return [...vlElementsStyle];
+    }
+  
+    constructor() {
+      super();
+      this.selectedChoiceUrl = options.find(o => o.selected).value;
+      this.selectedChoiceLabel = options.find((o) => o.selected).label;
     }
   
     firstUpdated(_changedProperties) {
@@ -35,55 +37,115 @@ import {
       bindVlSelect({
         component: queryById(this)("viewselector"),
         choices: options
-        
       })
     }
   
     __renderViewSelector() {
       return html`
-      <h1>Selecteer een thema voor de weergave's van de kaart.
+      <p>Kies hieronder een handhavingsthema:</p>
         <select id="viewselector" is="vl-select" data-vl-select @change="${this.__changeView}">
         </select>
       `;
     }
   
-    __renderHoofdingTekst() {
+    __renderEverVizKaart() {
+      return html`
+      <h3 is="vl-h3" data-alt>Geselecteerde kaart: ${this.selectedChoiceLabel}</h2>
+      <iframe class="everviz-iframe" src="${this.selectedChoiceUrl}" width="800px" height="450px"></iframe>`;
+    }
   
-      return html`        
-       <h3 is="vl-h3">Ruimtelijke inzichten van provincies: Verken diverse handhavingsthema's</h3>
-       <p is="vl-text">Kies een optie uit de lijst hieronder om gedetailleerde kaartvisualisaties te verkrijgen en versterk uw begrip van verschillende handhavingsaspecten.</p>   
-          `;
+    __renderIntroductionOfMaps() {
+      return html`
+      <h2 is="vl-h2">Hoe interpreteer ik de kaarten?</h2>
+      <p>
+        De kaarten worden onderverdeeld in twee categorieën:</p>
+      <vl-typography>
   
+        <li>Milieu: groene kaarten</li>
+        <li>Ruimtelijke ordening: oranje kaarten</li>
+  
+      </vl-typography>
+      <br/>
+      <p>De kleurgradaties wijzen op de aantalllen in de gemeenten
+        per 1.000 inwoners. </p>
+      <br/>
+  
+      <p>
+        De responsgraad voor deze bevraging (of bepaalde vragen in
+        de bevraging) bedraagt geen 100%.
+        Dit maakt dat bepaalde gemeenten als waarde "niet gekend"
+        of "non-repons" tonen.
+        Deze worden in een grijs kleur aangetoond op de kaarten.
+  
+  
+      </p>`
     }
   
     __changeView(event) {
-      this.selectedChoiceUrl = event.target.value;
+      const selectedOption = options.find((o) => o.value === event.target.value);
+      if (selectedOption) {
+        this.selectedChoiceUrl = selectedOption.value;
+        this.selectedChoiceLabel = selectedOption.label;
+      }
+      
+    }
+  
+    __renderSideNavigation() {
+      return html`
+      <h5 is="vl-h5" data-vl-alt>Interessante links</h5>
+      <ul is="vl-link-list">
+        <li is="vl-link-list-item">
+          <a is="vl-link"
+             href="#">
+            Jaarrapportage gemeenten
+          </a>
+        </li>
+        <li is="vl-link-list-item">
+          <a is="vl-link" href="#">MeerJarenrapportage </a>
+        </li>   
+        <li is="vl-link-list-item">
+          <a is="vl-link"
+             href="/download-cijfers-en-meer">
+            Downloads
+          </a>
+        </li>
+        <li is="vl-link-list-item">
+          <a target="_new_blank" is="vl-link"
+             href=https://indicatoren.omgeving.vlaanderen.be/>
+            Indicatoren website<span is="vl-icon" data-vl-before="" data-vl-link="" data-vl-icon="external"></span>
+          </a>
+        </li>
+      </ul>`;
     }
   
     render() {
       return html`
-      <vl-functional-header
-      data-vl-back="Terug"
-      data-vl-back-link="/"
-      data-vl-title="Geografische informatie van provincies"
-      data-vl-sub-title="Omgevingshandhavingsrapportage"
-      data-vl-link="/provincies-op-kaart">
-  </vl-functional-header>
+        <vl-functional-header
+            data-vl-back="Terug"
+            data-vl-back-link="/"
+            data-vl-title="Provincies op kaart"
+            data-vl-sub-title="Omgevingshandhavingsrapportage"
+            data-vl-link="/provincies-op-kaart">
+        </vl-functional-header>
         <section is="vl-region">
           <div is="vl-layout">
             ${renderStack(
               {
-                size:12,
-                template: this.__renderHoofdingTekst(),
+                size: 8,
+                template: this.__renderIntroductionOfMaps(),
+              },
+              {
+                size: 4,
+                template: this.__renderSideNavigation(),
+              },
+              {
+                  size: 8,
+                  template: this.__renderViewSelector(),
               },
               {
                   size: 12,
-                  template: this.__renderViewSelector(),
-                },
-                {
-                  size: 12,
-                  template: html`<iframe src="${this.selectedChoiceUrl}" width="100%" height="500px"></iframe>`,
-                })}
+                  template: this.__renderEverVizKaart()
+              })}
           </div>
         </section>`;
     }
