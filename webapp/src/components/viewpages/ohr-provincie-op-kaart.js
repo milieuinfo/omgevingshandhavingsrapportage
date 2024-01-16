@@ -97,11 +97,11 @@ import {
         <li is="vl-link-list-item">
           <a is="vl-link"
              href="#">
-            Jaarrapportage gemeenten
+             Laatst bekende cijfers per actor
           </a>
         </li>
         <li is="vl-link-list-item">
-          <a is="vl-link" href="#">MeerJarenrapportage </a>
+          <a is="vl-link" href="#">Analyseer de cijfers</a>
         </li>   
         <li is="vl-link-list-item">
           <a is="vl-link"
