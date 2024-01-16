@@ -53,11 +53,21 @@ class OhrKlachten extends LitElement {
     }
     return html`
       <vl-typography slot="introduction">
-      <vl-alert data-cy="alert">
-    <span
-        >De cijfers van dit dashboard zijn verzameld vanaf 2021.</span
-    >
-</vl-alert>
+      <p>
+
+      De omgevingsinspectie wordt uitgevoerd op verschillende beleidsniveaus uitgevoerd, namelijk door gewestelijke, provinciale en gemeentelijke handhavingsactoren.
+
+Deze pagina geeft via een interactieve tool de ontvangen klachten weer die over de jaren heen ingezet worden door de handhavingsactoren voor de omgevingshandhaving in Vlaanderen. De cijfers zullen wijzigen naargelang de gekozen filtering.
+
+Het standaard beeld geeft de totale cijfers van 2021 tot en met het voorgaande jaar weer voor de omgevingsinspectie in heel Vlaanderen. 
+
+Via de filters kan u kiezen om de cijfers van één jaar,  één beleidsniveau of één actor weer te geven.
+De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk hieronder. Wanneer de gegevens niet gekend zijn, verschijnt “-“ of wordt aangegeven dat de data niet beschikbaar zijn.
+
+
+
+
+      </p>
       </vl-typography>`;
   }
 }

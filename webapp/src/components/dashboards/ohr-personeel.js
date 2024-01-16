@@ -25,8 +25,8 @@ class OhrPersoneel extends LitElement {
       <vl-functional-header
           data-vl-back="Terug"
           data-vl-back-link="/"
-          data-vl-title="Omgevingshandhavingsrapportage"
-          data-vl-sub-title="Meerjarenrapportage personeel"
+          data-vl-title="Analyseer de cijfers - personeel"
+          data-vl-sub-title="Omgevingshandhavingsrapportage"
           data-vl-link="/personeel">
       </vl-functional-header>
       <div style="margin: 3rem 0px">
@@ -52,30 +52,16 @@ class OhrPersoneel extends LitElement {
     }
     return html`
       <vl-typography slot="introduction">
-        <p>
-          Ons dashboard geeft helder en gedetailleerd beeld van de
-          personeelsstructuur binnen onze organisatie, met een bijzondere focus
-          op onze toezichthouders.</br>
-          Toezichthouders spelen een cruciale rol in de milieuhandhaving en het
-          is daarom essentieel om de evolutie van deze functies nauwkeurig te
-          monitoren.
-        </p>
-        <p>
-          Dankzij dit dashboard kunt u de verdeling van voltijdsequivalenten
-          (VTE) binnen onze organisatie volgen, van het totale aaantal
-          werknemers tot het specifieke aantal VTE's toegewezen aan toezichtende
-          rollen.<br/>
-          Het biedt ook inzicht in de ontwikkeling van deze cijfers over de
-          jaren, wat ons helpt om trends in personeelsbezetting en -groei te
-          identificeren.
-        </p>
-        <p>
-          Het monitoren van deze gegevens is cruciaal voor ons: het stelt ons in
-          staat om onze personeelsbezetting optimaal te beheren, mogelijke
-          tekortkomingen te identificeren en <br/> proactieve maatregelen te
-          nemen om ervoor te zorgen dat we altijd over het juiste aantal
-          gekwalificeerde toezichthouders beschikken om onze
-          milieuhandhavingsopdracht effectief uit te voeren.
+        <p is="vl-text">
+        De omgevingsinspectie wordt uitgevoerd op verschillende beleidsniveaus uitgevoerd, namelijk door gewestelijke, provinciale en gemeentelijke handhavingsactoren.
+
+        Deze pagina geeft via een interactieve tool de personele middelen weer die over de jaren heen ingezet worden door de handhavingsactoren voor de omgevingshandhaving in Vlaanderen. De cijfers zullen wijzigen naargelang de gekozen filtering.
+        
+        Het standaard beeld geeft de cijfers van het voorgaande jaar weer voor de omgevingsinspectie in heel Vlaanderen. 
+        
+        Via de filters kan u kiezen om de cijfers van andere jaren te bekijken. Daarnaast kan u via de filters verder inzoemen op de cijfers van één beleidsniveau of één actor.
+        De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk hieronder. Wanneer de gegevens niet gekend zijn, verschijnt “-“ of wordt aangegeven dat de data niet beschikbaar zijn.
+        
         </p>
       </vl-typography>
     `;
