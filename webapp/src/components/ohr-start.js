@@ -68,11 +68,11 @@ and performing other setup tasks.
               },
               {
                 size: 12,
-                template: this.__renderMeerJarenRapportage(),
+                template: this.__renderOpKaart(),
               },
               {
                 size: 12,
-                template: this.__renderOpKaart(),
+                template: this.__renderMeerJarenRapportage(),
               },
               {
                 size: 12,
@@ -140,7 +140,7 @@ and performing other setup tasks.
       {
         size: 12,
         template: html`
-          <h3 is="vl-h3" data-vl-alt>Laatste bevraging in een oogopslag</h3>`
+          <h3 is="vl-h3" data-vl-alt>Cijfers van het voorgaande jaar in een oogopslag</h3>`
       },
       {
         size: 2,
@@ -201,13 +201,6 @@ and performing other setup tasks.
               <div data-vl-text="">Aandeel aanvankelijke controles met schending</div>
             </div>
           </div>`
-      },
-      {
-        size: 12,
-        template: html`
-        <vl-typography data-cy="typography">
-          <p><b>De bovenstaande cijfers zijn bepaald met de bevraging van 2023</b></p>
-        </vl-typography>`
       }
   )
   }`
@@ -218,7 +211,7 @@ __renderJaarRapportage() {
       {
         size: 12,
         template: html`
-          <h3 is="vl-h3" data-vl-alt>Bekijk de laatst bekende cijfers per actor</h3>`
+          <h3 is="vl-h3" data-vl-alt>Bekijk de cijfers van het voorgaande jaar per actor</h3>`
       },
       {
         size: 12,
@@ -416,7 +409,7 @@ __renderMeerJarenRapportage() {
       {
         size: 12,
         template: html`
-          <h3 is="vl-h3" data-vl-alt>Op kaart</h3>`
+          <h3 is="vl-h3" data-vl-alt>Bekijk de cijfers van het voorgaande jaar op kaart</h3>`
       },
       {
         size: 12,
@@ -437,9 +430,7 @@ __renderMeerJarenRapportage() {
             <a is="vl-doormat" href="/provincie-op-kaart">
               <h2 is="vl-doormat-title">Provincies</h2>
               <div is="vl-doormat-text">
-                De cijfers geven een totaalbeeld van de
-                handhavingsactiviteiten van de provincies samen in het
-                voorgaande jaar.
+               Een cartografische weergave van de cijfers van de provincies in het voorgaande jaar.
               </div>
             </a>
           </div>`
@@ -451,9 +442,7 @@ __renderMeerJarenRapportage() {
             <a is="vl-doormat" href="/gemeenten-op-kaart">
               <h2 is="vl-doormat-title">Gemeenten</h2>
               <div is="vl-doormat-text">
-                De cijfers geven een totaalbeeld van de
-                handhavingsactiviteiten van de gemeenten samen in het
-                voorgaande jaar.
+               Een cartografische weergave van de cijfers van de gemeenten in het voorgaande jaar.
               </div>
             </a>
           </div>`,
