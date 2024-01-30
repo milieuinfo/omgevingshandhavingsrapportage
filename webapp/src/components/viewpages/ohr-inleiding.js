@@ -35,11 +35,44 @@ class OhrInleiding extends LitElement {
               {
                 size: 8,
                 template: this.__renderIntroduction(),
+              },
+              {
+                size: 4,
+                template: this.__renderSideNavigation(),
               }
           )}
         </div>
       </section>`;
   }
+
+  __renderSideNavigation() {
+    return html`
+    <h5 is="vl-h5" data-vl-alt>Interessante links</h5>
+    <ul is="vl-link-list">
+      <li is="vl-link-list-item">
+        <a is="vl-link"
+           href="#">
+           Laatst bekende cijfers per actor
+        </a>
+      </li>
+      <li is="vl-link-list-item">
+        <a is="vl-link" href="#">Analyseer de cijfers</a>
+      </li>   
+      <li is="vl-link-list-item">
+        <a is="vl-link"
+           href="/download-cijfers-en-meer">
+          Downloads
+        </a>
+      </li>
+      <li is="vl-link-list-item">
+        <a target="_new_blank" is="vl-link"
+           href=https://indicatoren.omgeving.vlaanderen.be/>
+          Indicatoren website<span is="vl-icon" data-vl-before="" data-vl-link="" data-vl-icon="external"></span>
+        </a>
+      </li>
+    </ul>`;
+  }
+
 
   __renderIntroduction() {
     return html`

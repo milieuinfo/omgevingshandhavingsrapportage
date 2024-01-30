@@ -1,6 +1,7 @@
 import {html, LitElement} from "../common/commons.js";
 
 import viz_personeel from "../config/personeel.json" assert {type: "json"};
+import filters from "../config/personeel-filters.js";
 
 import "@domg-wc/components/functional-header";
 import "@domg-wc/components/typography";
@@ -33,8 +34,9 @@ class OhrPersoneel extends LitElement {
         <vl-qlik-dashboard-page
             title="Personeel"
             url="omgevingsloketrapport.omgeving.vlaanderen.be"
-            app-id="6960c6d8-493a-4489-a428-367b779be6f9"
+            app-id="fb547101-5462-497e-bc76-09725dd596c8"
             .views="${viz_personeel}"
+            .filters = "${filters}"
             @initialized="${() => this.initialized = true}"
         >
           ${this.__renderIntroduction()}

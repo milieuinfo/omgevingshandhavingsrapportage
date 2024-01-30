@@ -42,7 +42,8 @@ import {
   
     __renderViewSelector() {
       return html`
-      <p>Kies hieronder een handhavingsthema:</p>
+      <vl-typography><b>
+    Kies hieronder uw keuze omtrent een handhavingsthema:</b></vl-typography>
         <select id="viewselector" is="vl-select" data-vl-select @change="${this.__changeView}">
         </select>
       `;

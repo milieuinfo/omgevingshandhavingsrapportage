@@ -1,88 +1,55 @@
-[
-  [
-    {
-      "type": "visual",
-      "id": "21471402-19a4-41e7-a482-058893d7edeb",
-      "height": "50px",
-      "visual_type": "kpi",
-      "label": "Toezichthouders",
-      "align-label": "center"
-    },
-    {
-      "type": "visual",
-      "id": "1d62760d-a734-46f2-bf1a-1eaea9ea8d1b",
-      "height": "50px",
-      "visual_type": "kpi",
-      "label": "Totaal VTE",
-      "align-label": "center"
-    },
-    {
-      "type": "visual",
-      "id": "5b67c400-e8c2-4067-929b-55ebd14eaa7f",
-      "height": "50px",
-      "visual_type": "kpi",
-      "label": "VTE toezichthouders",
-      "align-label": "center"
-    },
-    {
-      "type": "visual",
-      "id": "d1528e9a-def2-4e55-bcd6-0e54bc86f465",
-      "height": "50px",
-      "visual_type": "kpi",
-      "label": "Verbalisanten VTE",
-      "align-label": "center"
-    },
-    {
-      "type": "visual",
-      "id": "292eec1c-ff9d-4556-acfb-fb4a51a93482",
-      "height": "50px",
-      "visual_type": "kpi",
-      "label": "Verbalisanten",
-      "align-label": "center"
-    },
-    {
-      "type": "visual",
-      "id": "26bfb360-6e21-43de-b30a-7834455040f0",
-      "height": "50px",
-      "visual_type": "kpi",
-      "label": "Stedenbouwkundige inspecteurs",
-      "align-label": "center"
-    }
-  ],
-  [
-    {
-      "type": "visual",
-      "id": "BPKjE",
-      "height": "250px",
-      "visual_type": "barchart",
-      "label": "Verdeling per instantie",
-      "align-label": "left"
-    },
-    {
-      "type": "visual",
-      "id": "jSsqhne",
-      "height": "250px",
-      "visual_type": "barchart",
-      "label": "Totaal VTE per instantie",
-      "align-label": "left"
-    }
-  ],
-  [
-    {
-      "type": "visual",
-      "id": "wUPMJ",
-      "height": "350px",
-      "visual_type": "barchart",
-      "label": "Evolutie toezichthouders en verbalisanten",
-      "align-label": "left"
-    },
-    {
-      "type": "visual",
-      "id": "CkPKgM",
-      "height": "350px",
-      "visual_type": "barchart",
-      "label": "Totaal VTE per bevragingsjaartal",
-      "align-label": "left"
-    }
-  ]
-]
+{
+  "Overzicht personeel per beleidsdomein": {
+    "order": 1,
+    "label": "Overzicht personeel per beleidsdomein",
+    "visualisations": [
+      [
+        {
+          "type": "visual",
+          "id": "JQaDmL",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Aantal toezichthouders per beleidsdomein"
+        },
+        {
+          "type": "visual",
+          "id": "VUkmv",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Aantal verbalisanten per beleidsdomein"
+        }
+      ],
+      [
+        {
+          "type": "visual",
+          "id": "bpbxqU",
+          "height": "300px",
+          "visual_type": "linechart",
+          "label": "Trend toezichthouders per bevragingsjaartal "
+        },
+        {
+          "type": "visual",
+          "id": "PLrTsc",
+          "height": "300px",
+          "visual_type": "linechart",
+          "label": "Trend verbalisanten per bevragingsjaartal"
+        }
+      ]
+    ]
+  },
+  "Trend VTE": {
+    "order": 2,
+    "label": "Trend VTE",
+    "visualisations": [
+      [
+        {
+          "type": "visual",
+          "id": "MjDZJQx",
+          "height": "450px",
+          "visual_type": "linechart",
+          "label": "Evolutie VTE per bevragingsjaartal"
+        }
+      ]
+    ]
+  }
+}

@@ -64,15 +64,15 @@ and performing other setup tasks.
               },
               {
                 size: 12,
+                template: this.__renderMeerJarenRapportage(),
+              },
+              {
+                size: 12,
                 template: this.__renderJaarRapportage(),
               },
               {
                 size: 12,
                 template: this.__renderOpKaart(),
-              },
-              {
-                size: 12,
-                template: this.__renderMeerJarenRapportage(),
               },
               {
                 size: 12,

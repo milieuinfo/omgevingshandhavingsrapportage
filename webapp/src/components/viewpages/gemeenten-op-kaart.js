@@ -42,7 +42,8 @@ class OhrOpkaart extends LitElement {
 
   __renderViewSelector() {
     return html`
-    <p>Kies hieronder een handhavingsthema:</p>
+    <vl-typography><b>
+    Kies hieronder uw keuze omtrent een handhavingsthema:</b></vl-typography>
       <select id="viewselector" is="vl-select" data-vl-select @change="${this.__changeView}">
       </select>
     `;
@@ -50,7 +51,8 @@ class OhrOpkaart extends LitElement {
 
   __renderEverVizKaart() {
     return html`
-    <h3 is="vl-h3" data-alt>Geselecteerde kaart: ${this.selectedChoiceLabel}</h2>
+    <!--
+    <h3 is="vl-h3" data-alt>Geselecteerde kaart: ${this.selectedChoiceLabel}</h2>-->
     <iframe class="everviz-iframe" src="${this.selectedChoiceUrl}" width="800px" height="450px"></iframe>`;
   }
 
@@ -62,7 +64,7 @@ class OhrOpkaart extends LitElement {
     <vl-typography>
 
       <li>Milieu: groene kaarten</li>
-      <li>Ruimtelijke ordening: oranje kaarten</li>
+      <li>Ruimtelijke ordening: blauwe kaarten</li>
 
     </vl-typography>
     <br/>

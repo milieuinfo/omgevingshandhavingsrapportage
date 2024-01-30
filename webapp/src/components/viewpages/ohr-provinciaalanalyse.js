@@ -9,7 +9,7 @@ import "@domg-wc/elements/title";
 import "@domg-wc/components/content-header";
 import "@domg-wc/components/loader";
 import "@domg-wc/qlik/infoblock";
-import {ACTOR, PROVINCIE} from "../config/qlik_resources.js";
+import {PROVVRAGEN, PROVINCIE} from "../config/qlik_resources.js";
 
 class OhrProvincieAnalyse extends LitElement {
 
@@ -53,6 +53,7 @@ class OhrProvincieAnalyse extends LitElement {
   async firstUpdated(_changedProperties) {
     super.firstUpdated(_changedProperties);
     await this.connection.addFilters(PROVINCIE);
+    await this.connection.addFilters(PROVVRAGEN); // Add the second filter
 
     const filterValues = await this.connection.getFilterValues(PROVINCIE.name);
 
@@ -65,7 +66,21 @@ class OhrProvincieAnalyse extends LitElement {
           disabled: filterValue.state === 'excluded',
         };
       }),
-    })
+    });
+
+    // Assuming the second filter also needs to populate a select element
+    const secondFilterValues = await this.connection.getFilterValues(PROVVRAGEN.name);
+
+    bindVlSelect({
+      component: queryById(this)("second-filter-select"),
+      choices: secondFilterValues.map((filterValue) => {
+        return {
+          label: filterValue.label,
+          value: filterValue.label,
+          disabled: filterValue.state === 'excluded',
+        };
+      }),
+    });
   }
 
   render() {
@@ -97,6 +112,7 @@ class OhrProvincieAnalyse extends LitElement {
       <div is="vl-grid">
         <div is="vl-column" data-vl-size="12">
           <select is="vl-select" data-vl-select id="provincie-select" @change="${this.__changeFilter}" data-vl-select-deletable></select>
+          <select is="vl-select" data-vl-select id="second-filter-select" @change="${this.__changeSecondFilter}" data-vl-select-deletable></select> <!-- Add the second filter select element -->
         </div>
         <div is="vl-column" data-vl-size="12">
           ${this.tiles.map(tile => html`
@@ -117,6 +133,15 @@ class OhrProvincieAnalyse extends LitElement {
       await this.connection.selectFilters(PROVINCIE.name, [element.value]);
     } else {
       await this.connection.clearFilter(PROVINCIE.name);
+    }
+  }
+
+  async __changeSecondFilter(e) {
+    const element = queryById(this)(e.target.id);
+    if (element.value) {
+      await this.connection.selectFilters(PROVVRAGEN.name, [element.value]);
+    } else {
+      await this.connection.clearFilter(PROVVRAGEN.name);
     }
   }
 }

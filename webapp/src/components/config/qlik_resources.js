@@ -1,5 +1,5 @@
 export const PROVINCIE = {
-  name: "PROVINCIE",
+  name: "Provincie",
   fieldQualifier: "qText",
   field: "[Provincie]",
   nrOfValues: 1000
@@ -32,4 +32,38 @@ export const KLACHTTYPE = {
   nrOfValues: 1000
 };
 
+export const NIVEAU = {
+  name: "Beleidsniveau",
+  fieldQualifier: "qText",
+  field: "[Niveau]",
+  nrOfValues: 3
+};
+
+export const GEWESTELIJKEACTOR = {
+  name: "Gewestelijke actor",
+  fieldQualifier: "qText",
+  field: "[Gewestelijke actor]",
+  nrOfValues: 100,
+};
+
+export const GEMEENTE = {
+  name:"Gemeente",
+  fieldQualifier: "qText",
+  field: "[Gemeente]",
+  nrOfValues: 400,
+};
+
+export const STATUS = {
+  name: "Status",
+  fieldQualifier: "qText",
+  field: "[Status]",
+  nrOfValues: 3,
+}
+
+export const PROVVRAGEN = {
+  name:"Provvragen",
+  fieldQualifier: "qText",
+  field: "[Provvragen]",
+  nrOfValues: 400,
+}
 
