@@ -30,19 +30,19 @@ class OhrPersoneel extends LitElement {
           data-vl-sub-title="Omgevingshandhavingsrapportage"
           data-vl-link="/personeel">
       </vl-functional-header>
-      <div style="margin: 3rem 0px">
+      <div style="margin: 1rem 3px">
         <vl-qlik-dashboard-page
             title="Personeel"
             url="omgevingsloketrapport.omgeving.vlaanderen.be"
             app-id="fb547101-5462-497e-bc76-09725dd596c8"
             .views="${viz_personeel}"
             .filters = "${filters}"
-            @initialized="${() => this.initialized = true}"
-        >
+            @initialized="${() => this.initialized = true}">
           ${this.__renderIntroduction()}
         </vl-qlik-dashboard-page>
       </div>
-      </section>`;
+      </section>
+      `;
   }
 
   __renderIntroduction() {
@@ -55,16 +55,16 @@ class OhrPersoneel extends LitElement {
     return html`
       <vl-typography slot="introduction">
         <p is="vl-text">
-        De omgevingsinspectie wordt uitgevoerd op verschillende beleidsniveaus uitgevoerd, namelijk door gewestelijke, provinciale en gemeentelijke handhavingsactoren.
-
-        Deze pagina geeft via een interactieve tool de personele middelen weer die over de jaren heen ingezet worden door de handhavingsactoren voor de omgevingshandhaving in Vlaanderen. De cijfers zullen wijzigen naargelang de gekozen filtering.
-        
-        Het standaard beeld geeft de cijfers van het voorgaande jaar weer voor de omgevingsinspectie in heel Vlaanderen. 
-        
-        Via de filters kan u kiezen om de cijfers van andere jaren te bekijken. Daarnaast kan u via de filters verder inzoemen op de cijfers van één beleidsniveau of één actor.
-        De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk hieronder. Wanneer de gegevens niet gekend zijn, verschijnt “-“ of wordt aangegeven dat de data niet beschikbaar zijn.
-        
-        </p>
+        De omgevingsinspectie wordt uitgevoerd op verschillende beleidsniveaus uitgevoerd, namelijk door gewestelijke, provinciale en gemeentelijke handhavingsactoren.<br>
+        Deze pagina geeft via een interactieve tool de personele middelen weer die over de jaren heen ingezet worden door de handhavingsactoren voor de omgevingshandhaving in Vlaanderen. 
+        <br>De cijfers zullen wijzigen naargelang de gekozen filtering.<br></p>
+        <vl-info-tile data-vl-toggleable>
+          <span slot="title">Informatie over de gebruik van de dashboard</span>
+          <div slot="content">Het standaard beeld geeft de cijfers van het voorgaande jaar weer voor de omgevingsinspectie in heel Vlaanderen. <br>
+          Via de filters kan u kiezen om de cijfers van andere jaren te bekijken. Daarnaast kan u via de filters verder inzoemen op de cijfers van één beleidsniveau of één actor.<br>
+          De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk hieronder. <br>
+          Wanneer de gegevens niet gekend zijn, verschijnt “-“ of wordt aangegeven dat de data niet beschikbaar zijn.</div>
+        </vl-info-tile>
       </vl-typography>
     `;
   }
