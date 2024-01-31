@@ -1,53 +1,59 @@
 {
-  "Overzicht personeel per beleidsdomein": {
+  "Personeel omtrent milieu": {
     "order": 1,
-    "label": "Overzicht personeel per beleidsdomein",
+    "label": "Personeel omtrent milieu",
     "visualisations": [
       [
         {
           "type": "visual",
-          "id": "JQaDmL",
+          "id": "jLSHLQ",
           "height": "300px",
           "visual_type": "barchart",
-          "label": "Aantal toezichthouders per beleidsdomein"
+          "label": "Trend aantal toezichthouders"
         },
         {
           "type": "visual",
-          "id": "VUkmv",
+          "id": "gPg",
           "height": "300px",
           "visual_type": "barchart",
-          "label": "Aantal verbalisanten per beleidsdomein"
+          "label": "Trend aantal toezichthouders per beleidsdomein"
         },
         {
           "type": "visual",
-          "id": "bpbxqU",
+          "id": "jWcwSj",
           "height": "300px",
-          "visual_type": "linechart",
-          "label": "Trend toezichthouders per bevragingsjaartal "
+          "visual_type": "barchart",
+          "label": "Relatief verschil aantal toezichthouders t.o.v. 2021"
         }
-        
       ],
       [
         {
           "type": "visual",
-          "id": "bpbxqU",
+          "id": "PvYLuEa",
           "height": "300px",
           "visual_type": "linechart",
-          "label": "Trend toezichthouders per bevragingsjaartal "
+          "label": "Trend VTE per bevragingsjaartal"
         },
         {
           "type": "visual",
-          "id": "PLrTsc",
+          "id": "EKLkm",
           "height": "300px",
-          "visual_type": "linechart",
-          "label": "Trend verbalisanten per bevragingsjaartal"
+          "visual_type": "piechart",
+          "label": "Aandeel VTE toezichthouders per beleidsdomein"
+        },
+        {
+          "type": "visual",
+          "id": "EKLkm",
+          "height": "300px",
+          "visual_type": "piechart",
+          "label": "Aandeel VTE admin/juridisch per beleidsdomein"
         }
       ]
     ]
   },
-  "Trend VTE": {
+  "Personeel omtrent ruimtelijke ordening": {
     "order": 2,
-    "label": "Trend VTE",
+    "label": "Personeel omtrent ruimtelijke ordening",
     "visualisations": [
       [
         {

@@ -33,6 +33,7 @@ class OhrPersoneel extends LitElement {
       <div style="margin: 1rem 3px">
         <vl-qlik-dashboard-page
             title="Personeel"
+            export-id="JgmbA"
             url="omgevingsloketrapport.omgeving.vlaanderen.be"
             app-id="fb547101-5462-497e-bc76-09725dd596c8"
             .views="${viz_personeel}"

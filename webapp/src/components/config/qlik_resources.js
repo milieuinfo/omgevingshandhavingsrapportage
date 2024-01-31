@@ -35,7 +35,7 @@ export const KLACHTTYPE = {
 export const NIVEAU = {
   name: "Beleidsniveau",
   fieldQualifier: "qText",
-  field: "[Niveau]",
+  field: "[Beleidsniveau]",
   nrOfValues: 3
 };
 
