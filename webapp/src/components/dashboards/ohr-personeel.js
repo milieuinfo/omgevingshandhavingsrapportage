@@ -56,11 +56,11 @@ class OhrPersoneel extends LitElement {
     return html`
       <vl-typography slot="introduction">
         <p is="vl-text">
-        De omgevingsinspectie wordt uitgevoerd op verschillende beleidsniveaus uitgevoerd, namelijk door gewestelijke, provinciale en gemeentelijke handhavingsactoren.<br>
+        De omgevingsinspectie wordt op verschillende beleidsniveaus uitgevoerd, namelijk door gewestelijke, provinciale en gemeentelijke handhavingsactoren.<br>
         Deze pagina geeft via een interactieve tool de personele middelen weer die over de jaren heen ingezet worden door de handhavingsactoren voor de omgevingshandhaving in Vlaanderen. 
         <br>De cijfers zullen wijzigen naargelang de gekozen filtering.<br></p>
         <vl-info-tile data-vl-toggleable>
-          <span slot="title">Informatie over de gebruik van de dashboard</span>
+          <span slot="title">Informatie over het gebruik van het dashboard</span>
           <div slot="content">Het standaard beeld geeft de cijfers van het voorgaande jaar weer voor de omgevingsinspectie in heel Vlaanderen. <br>
           Via de filters kan u kiezen om de cijfers van andere jaren te bekijken. Daarnaast kan u via de filters verder inzoemen op de cijfers van één beleidsniveau of één actor.<br>
           De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk hieronder. <br>
