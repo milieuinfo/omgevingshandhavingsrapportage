@@ -1,5 +1,5 @@
 {
-  "Personeel omtrent milieu": {
+  "Personeel met betrekking tot milieu": {
     "order": 1,
     "label": "Personeel omtrent milieu",
     "visualisations": [
@@ -51,7 +51,7 @@
       ]
     ]
   },
-  "Personeel omtrent ruimtelijke ordening": {
+  "Personeel met betrekking tot ruimtelijke ordening": {
     "order": 2,
     "label": "Personeel omtrent ruimtelijke ordening",
     "visualisations": [
