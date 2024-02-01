@@ -11,5 +11,4 @@ export class Error404 extends LitElement {
     });
   }
 }
-
 customElements.define("error404-view", Error404);

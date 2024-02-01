@@ -9,5 +9,4 @@ class OhrCookie extends LitElement {
     `;
   }
 }
-
 customElements.define('ohr-cookie', OhrCookie);

@@ -8,7 +8,5 @@ export class Cookieverklaring extends LitElement {
       title: "Cookieverklaring",
     });
   }
-
 }
-
 customElements.define("cookieverklaring-view", Cookieverklaring);
