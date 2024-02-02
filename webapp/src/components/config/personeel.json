@@ -4,6 +4,17 @@
     "label": "Personeel omtrent milieu",
     "visualisations": [
       [
+
+        {
+          "type": "visual",
+          "id": "2587e73b-ddd1-4f7c-a7da-ece59663c241",
+          "height": "75px",
+          "visual_type": "kpi",
+          "label": "Milieuklachten",
+          "align-label": "center"
+        }
+      ],
+      [
         {
           "type": "visual",
           "id": "jLSHLQ",
