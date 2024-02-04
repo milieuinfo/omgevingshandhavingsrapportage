@@ -67,12 +67,60 @@
     "label": "Personeel omtrent ruimtelijke ordening",
     "visualisations": [
       [
+
         {
           "type": "visual",
-          "id": "MjDZJQx",
-          "height": "450px",
+          "id": "2587e73b-ddd1-4f7c-a7da-ece59663c241",
+          "height": "75px",
+          "visual_type": "kpi",
+          "label": "Ruimtelijke ordening",
+          "align-label": "center"
+        }
+      ],
+      [
+        {
+          "type": "visual",
+          "id": "jLSHLQ",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Trend aantal toezichthouders"
+        },
+        {
+          "type": "visual",
+          "id": "gPg",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Trend aantal toezichthouders per beleidsdomein"
+        },
+        {
+          "type": "visual",
+          "id": "jWcwSj",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Relatief verschil aantal toezichthouders 2023 t.o.v. 2021"
+        }
+      ],
+      [
+        {
+          "type": "visual",
+          "id": "PvYLuEa",
+          "height": "300px",
           "visual_type": "linechart",
-          "label": "Evolutie VTE per bevragingsjaartal"
+          "label": "Trend VTE per bevragingsjaartal"
+        },
+        {
+          "type": "visual",
+          "id": "EKLkm",
+          "height": "300px",
+          "visual_type": "piechart",
+          "label": "Aandeel VTE toezichthouders per beleidsdomein"
+        },
+        {
+          "type": "visual",
+          "id": "EKLkm",
+          "height": "300px",
+          "visual_type": "piechart",
+          "label": "Aandeel VTE admin/juridisch per beleidsdomein"
         }
       ]
     ]

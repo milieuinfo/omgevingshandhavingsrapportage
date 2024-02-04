@@ -1,7 +1,7 @@
 {
-  "Gewest": {
+  "Controles met betrekking tot milieu": {
     "order": 1,
-    "label": "Aantal klachten per actor",
+    "label": "Controles met betrekking tot milieu",
     "visualisations": [
       [
         {
@@ -13,9 +13,9 @@
       ]
     ]
   },
-  "Provincie": {
+  "Controles met betrekking tot ruimtelijke ordening": {
     "order": 2,
-    "label": "Aantal klachten per bevragingsjaartal",
+    "label": "Controles met betrekking tot ruimtelijke ordening",
     "visualisations": [
       [
         {
@@ -23,40 +23,6 @@
           "id": "kHnMqb",
           "height": "450px",
           "visual_type": "barchart"
-        }
-      ]
-    ]
-  },
-  "Gemeenten": {
-    "order": 3,
-    "label": "Gemeenten",
-    "visualisations": [
-      [
-        {
-          "type": "label",
-          "label": "",
-          "align-label": "center",
-          "id": "SemjPnJ"
-        },
-        {
-          "type": "label",
-          "label": "chart2",
-          "align-label": "center",
-          "id": "MjxWYP"
-        }
-      ],
-      [
-        {
-          "type": "visual",
-          "id": "SemjPnJ",
-          "height": "350px",
-          "visual_type": "barchart"
-        },
-        {
-          "type": "visual",
-          "id": "MjxWYP",
-          "height": "350px",
-          "visual_type": "mekkochart"
         }
       ]
     ]

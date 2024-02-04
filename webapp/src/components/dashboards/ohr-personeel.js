@@ -26,7 +26,7 @@ class OhrPersoneel extends LitElement {
       <vl-functional-header
           data-vl-back="Terug"
           data-vl-back-link="/"
-          data-vl-title="Analyseer de cijfers - personeel"
+          data-vl-title="Analyseer de cijfers | Personeel"
           data-vl-sub-title="Omgevingshandhavingsrapportage"
           data-vl-link="/personeel">
       </vl-functional-header>

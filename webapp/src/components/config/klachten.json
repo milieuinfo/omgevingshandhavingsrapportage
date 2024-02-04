@@ -1,7 +1,7 @@
 {
-  "Gewest": {
+  "Klachten met betrekking tot milieu": {
     "order": 1,
-    "label": "Gewest",
+    "label": "Klachten met betrekking tot milieu",
     "visualisations": [
       [
         {
@@ -63,48 +63,67 @@
       ]
     ]
   },
-  "Aantal klachten per klachttype": {
+  "Klachten met betrekking tot ruimtelijke ordening": {
     "order": 2,
-    "label": "Evolutie klachten per beleidsdomein",
+    "label": "Klachten met betrekking tot ruimtelijke ordening",
     "visualisations": [
+      [
+        {
+          "type": "visual",
+          "id": "fmPJY",
+          "height": "75px",
+          "visual_type": "kpi",
+          "label": "Milieuklachten",
+          "align-label": "left"
+        },
+        {
+          "type": "visual",
+          "id": "pjtH",
+          "height": "75px",
+          "visual_type": "kpi",
+          "label": "Ruimtelijke klachten klachten",
+          "align-label": "left"
+        },
+        {
+          "type": "visual",
+          "id": "sgmUKd",
+          "height": "75px",
+          "visual_type": "kpi",
+          "label": "Procentueel verschil t.o.v. 2021",
+          "align-label": "left"
+        },
+        {
+          "type": "visual",
+          "id": "SKTvE",
+          "height": "75px",
+          "visual_type": "kpi",
+          "label": "Responsgraad",
+          "align-label": "left"
+        }
+      ],
       [
         {
           "type": "visual",
           "id": "RwjRjD",
-          "height": "450px",
+          "height": "300px",
           "visual_type": "linechart",
           "label": "Evolutie klachten per beleidsdomein"
-        }
-      ]
-    ]
-  },
-  "Provincie": {
-    "order": 3,
-    "label": "Aantal klachten per klachttype",
-    "visualisations": [
-      [
-        {
-          "type": "visual",
-          "id": "jjPKm",
-          "height": "450px",
-          "visual_type": "barchart",
-          "label": "Aantal klachten per klachttype"
-        }
-      ]
-    ]
-  },
-  "Gemeenten": {
-    "order": 4,
-    "label": "Aantal klachten per actor",
-    "visualisations": [
-      [
+        },
         {
           "type": "visual",
           "id": "ZfFutF",
-          "height": "450px",
+          "height": "300px",
           "visual_type": "barchart",
           "label": "Aantal klachten per actor"
+        },
+        {
+          "type": "visual",
+          "id": "jjPKm",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Aantal klachten per klachttype"
         }
+        
       ]
     ]
   }
