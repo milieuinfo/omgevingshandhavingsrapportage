@@ -56,14 +56,13 @@ class OhrStrafrechtelijkAnalyse extends LitElement {
 
   render() {
     return html`
-      <vl-content-header>
-        <img is="vl-image"
-             slot="image"
-             src="/images/header.jpg"
-             alt="Hoofding afbeelding website"/>
-        <a slot="context-link" href="/">Omgevingshandhavingsrapportage</a>
-        <a slot="title-link" href="/">Handhaving</a>
-      </vl-content-header>
+    <vl-functional-header
+    data-vl-back="Terug"
+    data-vl-back-link="/"
+    data-vl-title="Strafrechtelijk en bestuurlijk vervoltraject"
+    data-vl-sub-title="Omgevingshandhavingsrapportage"
+    data-vl-link="/">
+    </vl-functional-header>
       <section is="vl-region">
         <div is="vl-layout">
           ${this.__renderPage()}
