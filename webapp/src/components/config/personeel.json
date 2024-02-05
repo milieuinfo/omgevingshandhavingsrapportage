@@ -7,11 +7,30 @@
 
         {
           "type": "visual",
-          "id": "2587e73b-ddd1-4f7c-a7da-ece59663c241",
+          "id": "NpYABx",
           "height": "75px",
           "visual_type": "kpi",
-          "label": "Milieuklachten",
-          "align-label": "center"
+          "label": "Toezichthouders",
+          "align-label": "center",
+          "align-visual": "center" 
+        },
+        {
+          "type": "visual",
+          "id": "Qmj",
+          "height": "75px",
+          "visual_type": "kpi",
+          "label": "Totaal VTE",
+          "align-label": "center",
+          "align-visual": "center" 
+        },
+        {
+          "type": "visual",
+          "id": "vQrfPjR",
+          "height": "75px",
+          "visual_type": "kpi",
+          "label": "VTE Toezichthouders ",
+          "align-label": "center",
+          "align-visual": "center" 
         }
       ],
       [
@@ -70,54 +89,73 @@
 
         {
           "type": "visual",
-          "id": "2587e73b-ddd1-4f7c-a7da-ece59663c241",
+          "id": "grFE",
           "height": "75px",
           "visual_type": "kpi",
-          "label": "Ruimtelijke ordening",
-          "align-label": "center"
+          "label": "Verbalisanten (gemiddeld per bevraginsjaartal)",
+          "align-label": "center",
+          "align-visual": "center" 
+        },
+        {
+          "type": "visual",
+          "id": "czsBHC",
+          "height": "75px",
+          "visual_type": "kpi",
+          "label": "VTE Verbalisanten",
+          "align-label": "center",
+          "align-visual": "center" 
+        },
+        {
+          "type": "visual",
+          "id": "sasPKL",
+          "height": "75px",
+          "visual_type": "kpi",
+          "label": "VTE verbalisanten/stedenbouwkundige inspecteurs",
+          "align-label": "center",
+          "align-visual": "center" 
         }
       ],
       [
         {
           "type": "visual",
-          "id": "jLSHLQ",
+          "id": "MEaraS",
           "height": "300px",
           "visual_type": "barchart",
-          "label": "Trend aantal toezichthouders"
+          "label": "Trend aantal verbalisanten"
         },
         {
           "type": "visual",
-          "id": "gPg",
+          "id": "QcYhHV",
           "height": "300px",
           "visual_type": "barchart",
-          "label": "Trend aantal toezichthouders per beleidsdomein"
+          "label": "Trend verbalisanten per beleidsdomein"
         },
         {
           "type": "visual",
-          "id": "jWcwSj",
+          "id": "XWVmLkt",
           "height": "300px",
           "visual_type": "barchart",
-          "label": "Relatief verschil aantal toezichthouders 2023 t.o.v. 2021"
+          "label": "Relatief verschil aantal verbalisanten 2023 t.o.v. 2021"
         }
       ],
       [
         {
           "type": "visual",
-          "id": "PvYLuEa",
+          "id": "YKqQfD",
           "height": "300px",
           "visual_type": "linechart",
           "label": "Trend VTE per bevragingsjaartal"
         },
         {
           "type": "visual",
-          "id": "EKLkm",
+          "id": "RkaVW",
           "height": "300px",
           "visual_type": "piechart",
-          "label": "Aandeel VTE toezichthouders per beleidsdomein"
+          "label": "Aandeel VTE verbalisanten per beleidsdomein"
         },
         {
           "type": "visual",
-          "id": "EKLkm",
+          "id": "MGauwT",
           "height": "300px",
           "visual_type": "piechart",
           "label": "Aandeel VTE admin/juridisch per beleidsdomein"
