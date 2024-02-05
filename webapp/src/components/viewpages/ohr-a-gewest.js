@@ -45,7 +45,7 @@ class OhrAGewest extends LitElement {
     return html`
     <vl-functional-header
     data-vl-back="Terug"
-    data-vl-back-link="/"
+    data-vl-back-link="/gewest"
     data-vl-title="Gewestelijke handhavingsactoren"
     data-vl-sub-title="Omgevingshandhavingsrapportage"
     data-vl-link="/">
