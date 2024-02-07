@@ -2,6 +2,7 @@ import {html, LitElement} from "../common/commons.js";
 import {Qlik} from "@domg/qlik-lib";
 import {vlElementsStyle} from "@domg-wc/elements";
 import viz_gewest from "../config/milieuhandhaving.json" assert {type: "json"};
+import jsonData from "../data-jaar/gewest.json" assert {type: "json"};
 import { VlCascaderComponent } from '@domg-wc/components';
 
 import "@domg-wc/elements/image";
@@ -10,6 +11,7 @@ import "@domg-wc/elements/title";
 import "@domg-wc/components/content-header";
 import "@domg-wc/components/loader";
 import "@domg-wc/qlik/infoblock";
+import "@domg-wc/components/accordion-list";
 
 class OhrAGewest extends LitElement {
 
@@ -107,382 +109,59 @@ class OhrAGewest extends LitElement {
             data-vl-text="Pagina is aan het laden"
         ></vl-loader>`;
     }
-    const jsonData = {
-      gewestelijkeToezichthouders: {
-          Toezichthouders: 91,
-          VTE: 2.1,
-          "VTE Toezichthouders": {
-              value: 2,
-              relative: "95%"
-          },
-          "VTE Administratieve en juridische administratie": {
-              value: 0.1,
-              relative: "5%"
-          }
-      },
-      klachten: {
-          "Aantal klachten": 1340,
-          "Afval": 
-            {
-              value: 311,
-              relative: "95%"
-            },
-          "Andere": {
-              value: 6,
-              relative: "95%"
-          },
-          "Bodem": {
-              value: 4.1,
-              relative: "5%"
-          },
-          "Geluid": {
-            value: 4.1,
-            relative: "5%"
-          },
-          "Lucht": {
-          value: 4.1,
-          relative: "5%"
-          },
-         "Mest": {
-        value: 4.1,
-        relative: "5%"
-        },
-        "Milieubeheer": {
-        value: 4.1,
-        relative: "5%"
-      },
-      "Vergunning": {
-        value: 4.1,
-        relative: "5%"
-      },
-      "Water": {
-        value: 4.1,
-        relative: "5%"
-      },
-      }
-  };
 
     return html`
     <vl-typography>
-    <h2>Kies hier een gewestelijke actor</h2></vl-typography>
+    <h2 >Kies hier een gewestelijke actor</h2></vl-typography>
 
     <vl-cascader>
     <vl-cascader-item label="Agentschap Martieme Dienstverlening en Kust">
         <vl-cascader-item label="Milieu">
-            <vl-cascader-item label="Gewestelijke toezichthouders en VTE">
-              <vl-cascader-item label="Cijfers Gewestelijke toezichthouders en VTE van 2023" template-type="provincie">
-                  <vl-info-tile slot="content">
-                      <div slot="content">
-                      ${this.renderDataSection("Gewestelijke toezichthouders", jsonData.gewestelijkeToezichthouders)}
-                  <br>
-                      </div>
-                  </vl-info-tile>
-                </vl-cascader-item>
-                </vl-cascader-item>
-                <vl-cascader-item label="Klachten">
-                <vl-cascader-item label="Cijfers klachten van 2023" template-type="provincie">
-                    <vl-info-tile slot="content">
-                        <div slot="content">
-                        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.klachten)}
-                        </div>
-                    </vl-info-tile>
-                  </vl-cascader-item>
-                  </vl-cascader-item>
-
-                  <vl-cascader-item label="Controles">
-                  <vl-cascader-item label="Cijfers klachten van 2023" template-type="provincie">
-                      <vl-info-tile data-vl-toggleable="" slot="content">
-                          <span slot="title">Meer Info</span>
-                          <span slot="subtitle">Provincie Beschrijving</span>
-                          <div slot="content">
-                          <tbody>
-                          <tr>
-                              <td data-title="Toezichthouders">Toezichthouders</td>
-                              <td data-title="Totaal VTE">91</td>
-                          </tr>
-                          <tr>
-                              <td data-title="Toezichthouders">VTE</td>
-                              <td data-title="Totaal VTE">2,1</td>
-                          </tr>
-                          <tr>
-                          <td data-title="VTEToezicht">VTE toezichthouders </td>
-                          <td data-title="Totaal VTE">2 (relatief 95%)</td>
-                      </tr>
-                      <tr>
-                          <td data-title="VTEToezicht">VTE administratieve en juridische toezichthouders</td>
-                          <td data-title="Totaal VTE">0,1 (relatief 5%)</td>
-                      </tr>
-                      </tbody>
-                          </div>
-                      </vl-info-tile>
-                    </vl-cascader-item>
-                    </vl-cascader-item>
-
-                    <vl-cascader-item label="Aanvankelijke controles met schending">
-                    <vl-cascader-item label="Cijfers klachten van 2023" template-type="provincie">
-                        <vl-info-tile data-vl-toggleable="" slot="content">
-                            <span slot="title">Meer Info</span>
-                            <span slot="subtitle">Provincie Beschrijving</span>
-                            <div slot="content">
-                            <tbody>
-                            <tr>
-                                <td data-title="Toezichthouders">Toezichthouders</td>
-                                <td data-title="Totaal VTE">91</td>
-                            </tr>
-                            <tr>
-                                <td data-title="Toezichthouders">VTE</td>
-                                <td data-title="Totaal VTE">2,1</td>
-                            </tr>
-                            <tr>
-                            <td data-title="VTEToezicht">VTE toezichthouders </td>
-                            <td data-title="Totaal VTE">2 (relatief 95%)</td>
-                        </tr>
-                        <tr>
-                            <td data-title="VTEToezicht">VTE administratieve en juridische toezichthouders</td>
-                            <td data-title="Totaal VTE">0,1 (relatief 5%)</td>
-                        </tr>
-                        </tbody>
-                            </div>
-                        </vl-info-tile>
-                      </vl-cascader-item>
-                      </vl-cascader-item>
-
-                      <vl-cascader-item label="Aanvankelijke controles met schending">
-                      <vl-cascader-item label="Cijfers klachten van 2023" template-type="provincie">
-                          <vl-info-tile data-vl-toggleable="" slot="content">
-                              <span slot="title">Meer Info</span>
-                              <span slot="subtitle">Provincie Beschrijving</span>
-                              <div slot="content">
-                              <tbody>
-                          <tr>
-                              <td data-title="Toezichthouders">Toezichthouders</td>
-                              <td data-title="Totaal VTE">91</td>
-                          </tr>
-                          <tr>
-                              <td data-title="Toezichthouders">VTE</td>
-                              <td data-title="Totaal VTE">2,1</td>
-                          </tr>
-                          <tr>
-                          <td data-title="VTEToezicht">VTE toezichthouders </td>
-                          <td data-title="Totaal VTE">2 (relatief 95%)</td>
-                      </tr>
-                      <tr>
-                          <td data-title="VTEToezicht">VTE administratieve en juridische toezichthouders</td>
-                          <td data-title="Totaal VTE">0,1 (relatief 5%)</td>
-                      </tr>
-                      </tbody>
-                              </div>
-                          </vl-info-tile>
-                        </vl-cascader-item>
-                        </vl-cascader-item>
-
-                        <vl-cascader-item label="Instrumentarium">
-                        <vl-cascader-item label="Cijfers klachten van 2023" template-type="provincie">
-                            <vl-info-tile data-vl-toggleable="" slot="content">
-                                <span slot="title">Meer Info</span>
-                                <span slot="subtitle">Provincie Beschrijving</span>
-                                <div slot="content">
-                                <tbody>
-                                <tr>
-                                    <td data-title="Toezichthouders">Toezichthouders</td>
-                                    <td data-title="Totaal VTE">91</td>
-                                </tr>
-                                <tr>
-                                    <td data-title="Toezichthouders">VTE</td>
-                                    <td data-title="Totaal VTE">2,1</td>
-                                </tr>
-                                <tr>
-                                <td data-title="VTEToezicht">VTE toezichthouders </td>
-                                <td data-title="Totaal VTE">2 (relatief 95%)</td>
-                            </tr>
-                            <tr>
-                                <td data-title="VTEToezicht">VTE administratieve en juridische toezichthouders</td>
-                                <td data-title="Totaal VTE">0,1 (relatief 5%)</td>
-                            </tr>
-                            </tbody>
-                                </div>
-                            </vl-info-tile>
-                          </vl-cascader-item>
-                          </vl-cascader-item>
+    <vl-accordion-list slot="content">
+        <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
+        ${this.renderDataSection("Gewestelijke toezichthouders", jsonData.gewestelijkeToezichthouders)}</vl-accordion>
+        <vl-accordion data-vl-toggle-text="Klachten">
+        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.klachten)}
+        </vl-accordion>
+        <vl-accordion data-vl-toggle-text="Controles">
+        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.klachten)}
+        </vl-accordion>
+        <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
+        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.klachten)}
+        </vl-accordion>
+        <vl-accordion data-vl-toggle-text="Instrumentarium">
+        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.klachten)}
+        </vl-accordion>
+    </vl-accordion-list>
                 </vl-cascader-item>
             <vl-cascader-item label="Ruimtelijke ordening">
-            <vl-cascader-item label="Verbalisanten en stedenbouwkundige inspecteurs en VTE">
-              <vl-cascader-item label="Cijfers klachten van 2023" template-type="provincie">
-                  <vl-info-tile data-vl-toggleable="" slot="content">
-                      <span slot="title">Meer Info</span>
-                      <span slot="subtitle">Provincie Beschrijving</span>
-                      <div slot="content">
-                      <tbody>
-                      <tr>
-                          <td data-title="Toezichthouders">Toezichthouders</td>
-                          <td data-title="Totaal VTE">91</td>
-                      </tr>
-                      <tr>
-                          <td data-title="Toezichthouders">VTE</td>
-                          <td data-title="Totaal VTE">2,1</td>
-                      </tr>
-                      <tr>
-                      <td data-title="VTEToezicht">VTE toezichthouders </td>
-                      <td data-title="Totaal VTE">2 (relatief 95%)</td>
-                  </tr>
-                  <tr>
-                      <td data-title="VTEToezicht">VTE administratieve en juridische toezichthouders</td>
-                      <td data-title="Totaal VTE">0,1 (relatief 5%)</td>
-                  </tr>
-                  </tbody>
-                      </div>
-                  </vl-info-tile>
-                </vl-cascader-item>
-                </vl-cascader-item>
-
-                <vl-cascader-item label="Klachten">
-              <vl-cascader-item label="Cijfers klachten van 2023" template-type="provincie">
-                  <vl-info-tile data-vl-toggleable="" slot="content">
-                      <span slot="title">Meer Info</span>
-                      <span slot="subtitle">Provincie Beschrijving</span>
-                      <div slot="content">
-                      <tbody>
-                      <tr>
-                          <td data-title="Toezichthouders">Toezichthouders</td>
-                          <td data-title="Totaal VTE">91</td>
-                      </tr>
-                      <tr>
-                          <td data-title="Toezichthouders">VTE</td>
-                          <td data-title="Totaal VTE">2,1</td>
-                      </tr>
-                      <tr>
-                      <td data-title="VTEToezicht">VTE toezichthouders </td>
-                      <td data-title="Totaal VTE">2 (relatief 95%)</td>
-                  </tr>
-                  <tr>
-                      <td data-title="VTEToezicht">VTE administratieve en juridische toezichthouders</td>
-                      <td data-title="Totaal VTE">0,1 (relatief 5%)</td>
-                  </tr>
-                  </tbody>
-                      </div>
-                  </vl-info-tile>
-                </vl-cascader-item>
-                </vl-cascader-item>
-
-                <vl-cascader-item label="Controles">
-              <vl-cascader-item label="Cijfers klachten van 2023" template-type="provincie">
-                  <vl-info-tile data-vl-toggleable="" slot="content">
-                      <span slot="title">Meer Info</span>
-                      <span slot="subtitle">Provincie Beschrijving</span>
-                      <div slot="content">
-                      <tbody>
-                      <tr>
-                          <td data-title="Toezichthouders">Toezichthouders</td>
-                          <td data-title="Totaal VTE">91</td>
-                      </tr>
-                      <tr>
-                          <td data-title="Toezichthouders">VTE</td>
-                          <td data-title="Totaal VTE">2,1</td>
-                      </tr>
-                      <tr>
-                      <td data-title="VTEToezicht">VTE toezichthouders </td>
-                      <td data-title="Totaal VTE">2 (relatief 95%)</td>
-                  </tr>
-                  <tr>
-                      <td data-title="VTEToezicht">VTE administratieve en juridische toezichthouders</td>
-                      <td data-title="Totaal VTE">0,1 (relatief 5%)</td>
-                  </tr>
-                  </tbody>
-                      </div>
-                  </vl-info-tile>
-                </vl-cascader-item>
-                </vl-cascader-item>
-
-                <vl-cascader-item label="Aantal aanvankelijke controles met schending">
-              <vl-cascader-item label="Cijfers klachten van 2023" template-type="provincie">
-                  <vl-info-tile data-vl-toggleable="" slot="content">
-                      <span slot="title">Meer Info</span>
-                      <span slot="subtitle">Provincie Beschrijving</span>
-                      <div slot="content">
-                      <tbody>
-                      <tr>
-                          <td data-title="Toezichthouders">Toezichthouders</td>
-                          <td data-title="Totaal VTE">91</td>
-                      </tr>
-                      <tr>
-                          <td data-title="Toezichthouders">VTE</td>
-                          <td data-title="Totaal VTE">2,1</td>
-                      </tr>
-                      <tr>
-                      <td data-title="VTEToezicht">VTE toezichthouders </td>
-                      <td data-title="Totaal VTE">2 (relatief 95%)</td>
-                  </tr>
-                  <tr>
-                      <td data-title="VTEToezicht">VTE administratieve en juridische toezichthouders</td>
-                      <td data-title="Totaal VTE">0,1 (relatief 5%)</td>
-                  </tr>
-                  </tbody>
-                      </div>
-                  </vl-info-tile>
-                </vl-cascader-item>
-                </vl-cascader-item>
-
-                <vl-cascader-item label="Instrumentarium">
-                <vl-cascader-item label="Cijfers klachten van 2023" template-type="provincie">
-                    <vl-info-tile data-vl-toggleable="" slot="content">
-                        <span slot="title">Meer Info</span>
-                        <span slot="subtitle">Provincie Beschrijving</span>
-                        <div slot="content">
-                        <tbody>
-                        <tr>
-                            <td data-title="Toezichthouders">Toezichthouders</td>
-                            <td data-title="Totaal VTE">91</td>
-                        </tr>
-                        <tr>
-                            <td data-title="Toezichthouders">VTE</td>
-                            <td data-title="Totaal VTE">2,1</td>
-                        </tr>
-                        <tr>
-                        <td data-title="VTEToezicht">VTE toezichthouders </td>
-                        <td data-title="Totaal VTE">2 (relatief 95%)</td>
-                    </tr>
-                    <tr>
-                        <td data-title="VTEToezicht">VTE administratieve en juridische toezichthouders</td>
-                        <td data-title="Totaal VTE">0,1 (relatief 5%)</td>
-                    </tr>
-                    </tbody>
-                        </div>
-                    </vl-info-tile>
-                  </vl-cascader-item>
-                  </vl-cascader-item>
-            
-            
+            <vl-accordion-list slot="content">
+        <vl-accordion data-vl-toggle-text="Verbalisanten en stedenbouwkundige inspecteurs en VTE"> 
+        ${this.renderDataSection("Verbalisanten en stedenbouwkundige inspecteurs en VTE", jsonData.gewestelijkeToezichthouders)}</vl-accordion>
+        <vl-accordion data-vl-toggle-text="Klachten">
+        ${this.renderDataSection("Klachten", jsonData.klachten)}
+        </vl-accordion>
+        <vl-accordion data-vl-toggle-text="Controles">
+        ${this.renderDataSection("Controles", jsonData.klachten)}
+        </vl-accordion>
+        <vl-accordion data-vl-toggle-text="Aantal aanvankelijke controles met schending">
+        ${this.renderDataSection("Aantal aanvankelijke controles met schending", jsonData.klachten)}
+        </vl-accordion>
+        <vl-accordion data-vl-toggle-text="Instrumentarium">
+        ${this.renderDataSection("Instrumentarium", jsonData.klachten)}
+        </vl-accordion>
+    </vl-accordion-list>
             </vl-cascader-item>
       </vl-cascader-item>
       <vl-cascader-item label="Agentschap Natuur en Bos">
       <vl-cascader-item label="Milieu">
           <vl-cascader-item label="Klachten">
-            <vl-cascader-item label="Cijfers klachten van 2023" template-type="provincie">
-                <vl-info-tile data-vl-toggleable="" slot="content">
-                    <span slot="title">Meer Info</span>
-                    <span slot="subtitle">Provincie Beschrijving</span>
-                    <div slot="content">
-                    <tbody>
-                    <tr>
-                        <td data-title="Toezichthouders">Toezichthouders</td>
-                        <td data-title="Totaal VTE">91</td>
-                    </tr>
-                    <tr>
-                        <td data-title="Toezichthouders">VTE</td>
-                        <td data-title="Totaal VTE">2,1</td>
-                    </tr>
-                    <tr>
-                    <td data-title="VTEToezicht">VTE toezichthouders </td>
-                    <td data-title="Totaal VTE">2 (relatief 95%)</td>
-                </tr>
-                <tr>
-                    <td data-title="VTEToezicht">VTE administratieve en juridische toezichthouders</td>
-                    <td data-title="Totaal VTE">0,1 (relatief 5%)</td>
-                </tr>
-                </tbody>
-                    </div>
-                </vl-info-tile>
-              </vl-cascader-item>
+          <vl-accordion-list>
+          <vl-accordion data-vl-toggle-text="Accordion 1"> Inhoud accordion 1</vl-accordion>
+          <vl-accordion data-vl-toggle-text="Accordion 2"> Inhoud accordion 2</vl-accordion>
+          <vl-accordion data-vl-toggle-text="Accordion 3"> Inhoud accordion 3</vl-accordion>
+      </vl-accordion-list>
+      
               </vl-cascader-item>
               </vl-cascader-item>
           <vl-cascader-item label="Ruimtelijke ordening"></vl-cascader-item>
