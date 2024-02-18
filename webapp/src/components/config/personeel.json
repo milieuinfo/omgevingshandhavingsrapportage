@@ -4,36 +4,6 @@
     "label": "Personeel omtrent milieu",
     "visualisations": [
       [
-
-        {
-          "type": "visual",
-          "id": "NpYABx",
-          "height": "75px",
-          "visual_type": "kpi",
-          "label": "Toezichthouders",
-          "align-label": "center",
-          "align-visual": "center" 
-        },
-        {
-          "type": "visual",
-          "id": "Qmj",
-          "height": "75px",
-          "visual_type": "kpi",
-          "label": "Totaal VTE",
-          "align-label": "center",
-          "align-visual": "center" 
-        },
-        {
-          "type": "visual",
-          "id": "vQrfPjR",
-          "height": "75px",
-          "visual_type": "kpi",
-          "label": "VTE Toezichthouders ",
-          "align-label": "center",
-          "align-visual": "center" 
-        }
-      ],
-      [
         {
           "type": "visual",
           "id": "jLSHLQ",
@@ -85,35 +55,6 @@
     "order": 2,
     "label": "Personeel omtrent ruimtelijke ordening",
     "visualisations": [
-      [
-
-        {
-          "type": "visual",
-          "id": "grFE",
-          "height": "75px",
-          "visual_type": "kpi",
-          "label": "Verbalisanten (gemiddeld per bevraginsjaartal)",
-          "align-visual": "center" 
-        },
-        {
-          "type": "visual",
-          "id": "czsBHC",
-          "height": "75px",
-          "visual_type": "kpi",
-          "label": "VTE Verbalisanten",
-          "align-label": "center",
-          "align-visual": "center" 
-        },
-        {
-          "type": "visual",
-          "id": "sasPKL",
-          "height": "75px",
-          "visual_type": "kpi",
-          "label": "VTE verbalisanten/stedenbouwkundige inspecteurs",
-          "align-label": "center",
-          "align-visual": "center" 
-        }
-      ],
       [
         {
           "type": "visual",
