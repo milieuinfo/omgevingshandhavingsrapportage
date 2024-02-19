@@ -1,28 +1,124 @@
 {
   "Controles met betrekking tot milieu": {
     "order": 1,
-    "label": "Controles met betrekking tot milieu",
+    "label": "Controles omtrent milieu",
     "visualisations": [
       [
         {
           "type": "visual",
-          "id": "RyYCSLz",
-          "height": "450px",
-          "visual_type": "barchart"
+          "id": "KEhEHv",
+          "height": "55px",
+          "visual_type": "kpi",
+          "label": "Totaal aantal milieucontroles",
+          "align-label": "center",
+          "align-visual": "center"
+        },
+        {
+          "type": "visual",
+          "id": "BsKZvhx",
+          "height": "55px",
+          "visual_type": "kpi",
+          "label": "Totaal aantal milieucontroles",
+          "align-label": "center",
+          "align-visual": "center"
+        }
+      ],
+      [
+        {
+          "type": "visual",
+          "id": "HznGQH",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Aantal milieucontroles per beleidsdomein"
+        },
+        {
+          "type": "visual",
+          "id": "eLZAsX",
+          "height": "300px",
+          "visual_type": "linechart",
+          "label": "Trend aantal milieucontroles"
+        },
+        {
+          "type": "visual",
+          "id": "pUYDCJ",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Stijging of daling 2021 t.o.v. 2022"
+        }
+      ],
+      [
+        {
+          "type": "visual",
+          "id": "RSPTbJJ",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Aanvankelijke controles"
+        },
+        {
+          "type": "visual",
+          "id": "fyfefJ",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Navolgende controles"
+        },
+        {
+          "type": "visual",
+          "id": "FByJm",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Aanvankelijke controles"
         }
       ]
     ]
   },
   "Controles met betrekking tot ruimtelijke ordening": {
     "order": 2,
-    "label": "Controles met betrekking tot ruimtelijke ordening",
+    "label": "Controles omtrent ruimtelijke ordening",
     "visualisations": [
       [
         {
           "type": "visual",
-          "id": "kHnMqb",
-          "height": "450px",
-          "visual_type": "barchart"
+          "id": "MEaraS",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Trend aantal verbalisanten"
+        },
+        {
+          "type": "visual",
+          "id": "QcYhHV",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Trend verbalisanten per beleidsdomein"
+        },
+        {
+          "type": "visual",
+          "id": "XWVmLkt",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Relatief verschil aantal verbalisanten 2023 t.o.v. 2021"
+        }
+      ],
+      [
+        {
+          "type": "visual",
+          "id": "YKqQfD",
+          "height": "300px",
+          "visual_type": "linechart",
+          "label": "Trend VTE per bevragingsjaartal"
+        },
+        {
+          "type": "visual",
+          "id": "RkaVW",
+          "height": "300px",
+          "visual_type": "piechart",
+          "label": "Aandeel VTE verbalisanten per beleidsdomein"
+        },
+        {
+          "type": "visual",
+          "id": "MGauwT",
+          "height": "300px",
+          "visual_type": "piechart",
+          "label": "Aandeel VTE admin/juridisch per beleidsdomein"
         }
       ]
     ]

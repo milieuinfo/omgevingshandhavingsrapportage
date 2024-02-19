@@ -1,0 +1,55 @@
+{
+    "Antwerpen": {
+        "ProvincieGouverneur": {
+            "Toezichthouders": "91",
+            "VTE": "2.1",
+            "VTE Toezichthouders": {
+                "value": "2",
+                "relative": "95%"
+            },
+            "VTE Administratieve en juridische administratie": {
+                "value": "0.1",
+                "relative": "5%"
+            }
+        },
+        "ToezichthoudersVTE": {
+            "Aantal Toezichthouders": "1340",
+            "Totaal VTE": {
+                "value": "311",
+                "relative": "95%"
+            },
+            "Andere": {
+                "value": "6",
+                "relative": "95%"
+            },
+            "Bodem": {
+                "value": "4.1",
+                "relative": "5%"
+            },
+            "Geluid": {
+                "value": "4.1",
+                "relative": "5%"
+            },
+            "Lucht": {
+                "value": "4.1",
+                "relative": "5%"
+            },
+            "Mest": {
+                "value": "4.1",
+                "relative": "5%"
+            },
+            "Milieubeheer": {
+                "value": "4.1",
+                "relative": "5%"
+            },
+            "Vergunning": {
+                "value": "4.1",
+                "relative": "5%"
+            },
+            "Water": {
+                "value": "4.1",
+                "relative": "5%"
+            }
+        }
+    }
+}

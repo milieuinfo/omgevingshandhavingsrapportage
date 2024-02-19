@@ -46,6 +46,13 @@ export const GEWESTELIJKEACTOR = {
   nrOfValues: 100,
 };
 
+export const GEWEST = {
+  name: "Gewestelijke actor",
+  fieldQualifier: "qText",
+  field: "[Gewest]",
+  nrOfValues: 100,
+};
+
 export const GEMEENTE = {
   name:"Gemeente",
   fieldQualifier: "qText",

@@ -36,7 +36,7 @@ class OhrControles extends LitElement {
             title="Controles"
             export-id="JgmbA"
             url="omgevingsloketrapport.omgeving.vlaanderen.be"
-            app-id="e994d176-7ee5-49af-b193-d79672df9d04"
+            app-id="584abff2-1a47-4bbd-941b-02651263355e"
             .views="${charts}"
             .filters="${filters}"
             @initialized="${() => this.initialized = true}">
@@ -55,21 +55,15 @@ class OhrControles extends LitElement {
     return html`
     <vl-typography slot="introduction">
     <p>
-    De omgevingsinspectie wordt uitgevoerd op verschillende beleidsniveaus uitgevoerd, namelijk door gewestelijke, provinciale en gemeentelijke handhavingsactoren.</p> 
+    De omgevingsinspectie wordt uitgevoerd op verschillende beleidsniveaus uitgevoerd, namelijk door gewestelijke, provinciale en gemeentelijke handhavingsactoren.
 
-    Deze pagina geeft via een interactieve tool de ontvangen klachten weer die over de jaren heen ingezet worden door de handhavingsactoren voor de omgevingshandhaving in Vlaanderen. <br>
-    De cijfers zullen wijzigen naargelang de gekozen filtering.</p>
+Deze pagina geeft via een interactieve tool de uitgevoerde controles weer die over de jaren heen ingezet worden door de handhavingsactoren voor de omgevingshandhaving in Vlaanderen. De cijfers zullen wijzigen naargelang de gekozen filtering.
 
-    <p><a href="/download-cijfers-en-meer">Download hier alle cijfers</a></p>
-      <vl-info-tile data-vl-toggleable>
-        <span slot="title">Informatie over het gebruik van het dashboard</span>
-        <div slot="content">Het standaard beeld geeft de totale cijfers van 2021 tot en met het voorgaande jaar weer voor de omgevingsinspectie in heel Vlaanderen. <br>
-        Via de filters kan u kiezen om de cijfers van één jaar,  één beleidsniveau of één actor weer te geven.
-        De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk hieronder. Wanneer de gegevens niet gekend zijn, verschijnt “-“ of wordt aangegeven dat de data niet beschikbaar zijn.<br>
-        De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk hieronder. <br>
-        Wanneer de gegevens niet gekend zijn, verschijnt “-“ of wordt aangegeven dat de data niet beschikbaar zijn.</div>
-      </vl-info-tile>
-    </vl-typography>
+Het standaard beeld geeft de totale cijfers van 2021 tot en met het voorgaande jaar weer voor de omgevingsinspectie in heel Vlaanderen. 
+
+Via de filters kan u kiezen om de cijfers van één jaar,  één beleidsniveau of één actor weer te geven.
+De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk hieronder. Wanneer de gegevens niet gekend zijn, verschijnt “-“ of wordt aangegeven dat de data niet beschikbaar zijn.
+
     </p>
     </vl-typography>`;
   }

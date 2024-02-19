@@ -17,6 +17,15 @@
           "height": "300px",
           "visual_type": "barchart",
           "label": "Trend aantal toezichthouders per beleidsdomein"
+        }
+      ],
+      [
+        {
+          "type": "visual",
+          "id": "gPg",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Trend aantal toezichthouders per beleidsdomein"
         },
         {
           "type": "visual",

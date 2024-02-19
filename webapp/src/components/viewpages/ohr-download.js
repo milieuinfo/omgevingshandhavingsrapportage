@@ -77,13 +77,13 @@ class OhrDownload extends LitElement {
     return html`
       <h1 is="vl-h1">Download cijfers en meer</h1>
       <vl-accordion data-vl-icon="file-download"
-          
+      data-vl-default-open
           data-vl-toggle-text="Data van de rapportage">
         <p><a href="#">Download de data van 2021</a></p>
         <p><a href="#">Download de data van 2022</a></p>
         <p><a href="#">Download de data van 2023</a></p>
       </vl-accordion>
-      <vl-accordion data-vl-icon="file-image"
+      <vl-accordion data-vl-icon="file-image" data-vl-default-open
           data-vl-toggle-text="Downloadbare afbeeldingen van geconsolideerd beeld"
           data-vl-toggle-text="Geconsolideerd beeld">
         <p><a href="#">Download de weergave van 2021</a></p>
