@@ -18,7 +18,17 @@
           "id": "BsKZvhx",
           "height": "55px",
           "visual_type": "kpi",
-          "label": "Totaal aantal milieucontroles",
+          "label": "Totaal aanvankelijke controles",
+          "align-label": "center",
+          "align-visual": "center"
+        },
+
+        {
+          "type": "visual",
+          "id": "BsKZvhx",
+          "height": "55px",
+          "visual_type": "kpi",
+          "label": "Totaal navolgende controles",
           "align-label": "center",
           "align-visual": "center"
         }
@@ -36,37 +46,40 @@
           "id": "eLZAsX",
           "height": "300px",
           "visual_type": "linechart",
-          "label": "Trend aantal milieucontroles"
-        },
-        {
-          "type": "visual",
-          "id": "pUYDCJ",
-          "height": "300px",
-          "visual_type": "barchart",
-          "label": "Stijging of daling 2021 t.o.v. 2022"
+          "label": "Evolutie aantal milieucontroles"
         }
       ],
       [
         {
           "type": "visual",
+          "id": "pUYDCJ",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Stijging of daling totaal aantal milieucontroles 2021 t.o.v. 2022"
+        },
+        {
+          "type": "visual",
           "id": "RSPTbJJ",
           "height": "300px",
           "visual_type": "barchart",
-          "label": "Aanvankelijke controles"
-        },
+          "label": "Aanvankelijke controles met schending"
+        }
+      ],
+      [
+        
         {
           "type": "visual",
           "id": "fyfefJ",
           "height": "300px",
           "visual_type": "barchart",
-          "label": "Navolgende controles"
+          "label": "Evolutie proactief vs reactieve controles"
         },
         {
           "type": "visual",
           "id": "FByJm",
           "height": "300px",
           "visual_type": "barchart",
-          "label": "Aanvankelijke controles"
+          "label": "Aantal controles per categorie"
         }
       ]
     ]
