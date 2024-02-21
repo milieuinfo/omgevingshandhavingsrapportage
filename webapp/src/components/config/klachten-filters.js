@@ -1,15 +1,16 @@
 import {
-  JAAR,
-  ACTOR,
   BELEID,
-  KLACHTTYPE
+  JAAR,
+  PROVINCIE,
+  GEWEST,
+  GEMEENTE
   } from "./qlik_resources.js";
   
   const filters = [
     {
-      name: "Actor",
-      id: "Actor",
-      filter: ACTOR
+      name: "Beleidsdomein",
+      id: "Beleidsdomein",
+      filter: BELEID
     },
     {
       name: "Jaartal",
@@ -17,14 +18,19 @@ import {
       filter: JAAR
     },
     {
-      name: "Beleidsdomein",
-      id: "Beleidsdomein",
-      filter: BELEID
+      name: "Gewest",
+      id: "Gewest",
+      filter: GEWEST
     },
     {
-      name: "Klachttype",
-      id: "Klachttype",
-      filter: KLACHTTYPE
+      name: "Provincie",
+      id: "Provincie",
+      filter: PROVINCIE
+    },
+    {
+      name: "Gemeente",
+      id: "Gemeente",
+      filter: GEMEENTE
     }
   ]
   

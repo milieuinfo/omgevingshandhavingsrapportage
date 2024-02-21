@@ -167,8 +167,8 @@ and performing other setup tasks.
         template: html`
           <div is="vl-infotext" data-cy="infotext">
             <div>
-              <div data-vl-value="">25341</div>
-              <div data-vl-text="">VTE</div>
+              <div data-vl-value="">27,6</div>
+              <div data-vl-text="">Gemiddelde VTE</div>
             </div>
           </div>`
       },

@@ -79,8 +79,8 @@ class OhrDownload extends LitElement {
       <vl-accordion data-vl-icon="file-download"
       data-vl-default-open
           data-vl-toggle-text="Data van de rapportage">
-        <p><a href="#">Download de data van 2021</a></p>
-        <p><a href="#">Download de data van 2022</a></p>
+        <p><a href="https://omgeving.vlaanderen.be/sites/default/files/2022-11/drive-download-20221117T123910Z-001.zip" download">Download de data van 2021</a></p>
+        <p><a href="https://omgeving.vlaanderen.be/sites/default/files/2023-04/Data%20Omgevingshandhavingsrapportage%202022.zip" download">Download de data van 2022</a></p>
         <p><a href="#">Download de data van 2023</a></p>
       </vl-accordion>
       <vl-accordion data-vl-icon="file-image" data-vl-default-open

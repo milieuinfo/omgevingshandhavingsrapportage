@@ -1,130 +1,62 @@
-{
-  "Klachten met betrekking tot milieu": {
-    "order": 1,
-    "label": "Klachten met betrekking tot milieu",
-    "visualisations": [
+[
       [
         {
           "type": "visual",
-          "id": "fmPJY",
+          "id": "QVSenCF",
+          "height": "75px",
+          "visual_type": "kpi",
+          "label": "Totaal aantal klachten",
+          "align-label": "center",
+          "align-visual": "center"
+        },
+        {
+          "type": "visual",
+          "id": "qXyzy",
           "height": "75px",
           "visual_type": "kpi",
           "label": "Milieuklachten",
-          "align-label": "left"
+          "align-label": "center",
+          "align-visual": "center"
         },
         {
           "type": "visual",
-          "id": "pjtH",
+          "id": "SKfGnd",
           "height": "75px",
           "visual_type": "kpi",
-          "label": "Ruimtelijke klachten klachten",
-          "align-label": "left"
-        },
-        {
-          "type": "visual",
-          "id": "sgmUKd",
-          "height": "75px",
-          "visual_type": "kpi",
-          "label": "Procentueel verschil t.o.v. 2021",
-          "align-label": "left"
-        },
-        {
-          "type": "visual",
-          "id": "SKTvE",
-          "height": "75px",
-          "visual_type": "kpi",
-          "label": "Responsgraad",
-          "align-label": "left"
+          "label": "Ruimtelijke ordening klachten",
+          "align-label": "center",
+          "align-visual": "center"
         }
       ],
       [
         {
           "type": "visual",
-          "id": "RwjRjD",
+          "id": "yCMeVL",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Aantal klachten per beleidsdomein"
+        },
+        {
+          "type": "visual",
+          "id": "wMEbPQ",
           "height": "300px",
           "visual_type": "linechart",
-          "label": "Evolutie klachten per beleidsdomein"
-        },
-        {
-          "type": "visual",
-          "id": "ZfFutF",
-          "height": "300px",
-          "visual_type": "barchart",
-          "label": "Aantal klachten per actor"
-        },
-        {
-          "type": "visual",
-          "id": "jjPKm",
-          "height": "300px",
-          "visual_type": "barchart",
-          "label": "Aantal klachten per klachttype"
-        }
-        
-      ]
-    ]
-  },
-  "Klachten met betrekking tot ruimtelijke ordening": {
-    "order": 2,
-    "label": "Klachten met betrekking tot ruimtelijke ordening",
-    "visualisations": [
-      [
-        {
-          "type": "visual",
-          "id": "fmPJY",
-          "height": "75px",
-          "visual_type": "kpi",
-          "label": "Milieuklachten",
-          "align-label": "left"
-        },
-        {
-          "type": "visual",
-          "id": "pjtH",
-          "height": "75px",
-          "visual_type": "kpi",
-          "label": "Ruimtelijke klachten klachten",
-          "align-label": "left"
-        },
-        {
-          "type": "visual",
-          "id": "sgmUKd",
-          "height": "75px",
-          "visual_type": "kpi",
-          "label": "Procentueel verschil t.o.v. 2021",
-          "align-label": "left"
-        },
-        {
-          "type": "visual",
-          "id": "SKTvE",
-          "height": "75px",
-          "visual_type": "kpi",
-          "label": "Responsgraad",
-          "align-label": "left"
+          "label": "Evolutie klachten per type"
         }
       ],
       [
         {
           "type": "visual",
-          "id": "RwjRjD",
+          "id": "JAhvwK",
           "height": "300px",
-          "visual_type": "linechart",
-          "label": "Evolutie klachten per beleidsdomein"
+          "visual_type": "barchart",
+          "label": "Evolutie klachten per subcategorie"
         },
         {
           "type": "visual",
-          "id": "ZfFutF",
+          "id": "gxnRTE",
           "height": "300px",
           "visual_type": "barchart",
-          "label": "Aantal klachten per actor"
-        },
-        {
-          "type": "visual",
-          "id": "jjPKm",
-          "height": "300px",
-          "visual_type": "barchart",
-          "label": "Aantal klachten per klachttype"
+          "label": "Absolute verschil aantal klachten 2023 t.o.v. 2021"
         }
-        
-      ]
-    ]
-  }
-}
+      ]]
