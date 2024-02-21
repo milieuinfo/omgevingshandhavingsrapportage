@@ -1,54 +1,1877 @@
 {
-    "gewestelijkeToezichthouders": {
-        "Toezichthouders": "91",
-        "VTE": "2.1",
+  "Milieu":{
+    "AMDK": {
+      "gewestelijkeToezichthouders": {
+        "Toezichthouders": "87",
+        "VTE": "2.3",
         "VTE Toezichthouders": {
-            "value": "2",
-            "relative": "95%"
+          "value": "3",
+          "relative": "90%"
         },
         "VTE Administratieve en juridische administratie": {
-            "value": "0.1",
-            "relative": "5%"
+          "value": "0.2",
+          "relative": "10%"
         }
-    },
-    "klachten": {
-        "Aantal klachten": "1340",
-        "Afval": 
-          {
-            "value": "311",
-            "relative": "95%"
-          },
+      },
+      "klachten": {
+        "Aantal klachten": "1450",
+        "Afval": {
+          "value": "305",
+          "relative": "90%"
+        },
         "Andere": {
-            "value": "6",
-            "relative": "95%"
+          "value": "8",
+          "relative": "90%"
         },
         "Bodem": {
-            "value": "4.1",
-            "relative": "5%"
+          "value": "4.8",
+          "relative": "10%"
         },
         "Geluid": {
-          "value": "4.1",
-          "relative": "5%"
+          "value": "4.2",
+          "relative": "10%"
         },
         "Lucht": {
-        "value": "4.1",
-        "relative": "5%"
+          "value": "4.0",
+          "relative": "10%"
         },
-       "Mest": {
-      "value": "4.1",
-      "relative": "5%"
+        "Mest": {
+          "value": "4.3",
+          "relative": "10%"
+        },
+        "Milieubeheer": {
+          "value": "4.5",
+          "relative": "10%"
+        },
+        "Vergunning": {
+          "value": "4.1",
+          "relative": "10%"
+        },
+        "Water": {
+          "value": "4.4",
+          "relative": "10%"
+        }
+      },
+      "controles": {
+        "Aantal controles": "1320",
+        "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": {
+          "value": "32",
+          "relative": "23%"
+        },
+        "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": {
+          "value": "35",
+          "relative": "23%"
+        },
+        "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": {
+          "value": "33",
+          "relative": "23%"
+        },
+        "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": {
+          "value": "30",
+          "relative": "23%"
+        },
+        "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": {
+          "value": "32",
+          "relative": "23%"
+        }
+      },
+      "Aanvankelijkecontrolesmetschending": {
+        "Aanvankelijke controles met schending": "1360",
+        "overtredingsgraad": "42%",
+        "Vergunning": {
+          "value": "32",
+          "relative": "30%"
+        },
+        "Milieubeheer": {
+          "value": "29",
+          "relative": "30%"
+        },
+        "Afval": {
+          "value": "30",
+          "relative": "30%"
+        },
+        "Water": {
+          "value": "31",
+          "relative": "30%"
+        },
+        "Andere": {
+          "value": "28",
+          "relative": "30%"
+        },
+        "Mest": {
+          "value": "32",
+          "relative": "30%"
+        },
+        "Lucht": {
+          "value": "28",
+          "relative": "30%"
+        },
+        "Bodem": {
+          "value": "30",
+          "relative": "30%"
+        },
+        "Geluid": {
+          "value": "31",
+          "relative": "30%"
+        }
+      },
+      "Instrumentarium": {
+        "Raadgeving": "420",
+        "Aanmaning": "320",
+        "verslagvanvaststelling": "880",
+        "Proces-verbaal": "110",
+        "bestuurlijkemaatregel": {
+          "Metdwangsom": {
+            "value": "36",
+            "relative": "100"
+          },
+          "zonderdwangsom": {
+            "value": "33",
+            "relative": "100"
+          }
+        },
+        "Veiligsheidsmaatregel": "220"
+      }
+    },
+    "ANB": {
+      "gewestelijkeToezichthouders": {
+        "Toezichthouders": "87",
+        "VTE": "2.3",
+        "VTE Toezichthouders": {
+          "value": "3",
+          "relative": "90%"
+        },
+        "VTE Administratieve en juridische administratie": {
+          "value": "0.2",
+          "relative": "10%"
+        }
+      },
+      "klachten": {
+        "Aantal klachten": "1450",
+        "Afval": {
+          "value": "305",
+          "relative": "90%"
+        },
+        "Andere": {
+          "value": "8",
+          "relative": "90%"
+        },
+        "Bodem": {
+          "value": "4.8",
+          "relative": "10%"
+        },
+        "Geluid": {
+          "value": "4.2",
+          "relative": "10%"
+        },
+        "Lucht": {
+          "value": "4.0",
+          "relative": "10%"
+        },
+        "Mest": {
+          "value": "4.3",
+          "relative": "10%"
+        },
+        "Milieubeheer": {
+          "value": "4.5",
+          "relative": "10%"
+        },
+        "Vergunning": {
+          "value": "4.1",
+          "relative": "10%"
+        },
+        "Water": {
+          "value": "4.4",
+          "relative": "10%"
+        }
+      },
+      "controles": {
+        "Aantal controles": "1320",
+        "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": {
+          "value": "32",
+          "relative": "23%"
+        },
+        "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": {
+          "value": "35",
+          "relative": "23%"
+        },
+        "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": {
+          "value": "33",
+          "relative": "23%"
+        },
+        "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": {
+          "value": "30",
+          "relative": "23%"
+        },
+        "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": {
+          "value": "32",
+          "relative": "23%"
+        }
+      },
+      "Aanvankelijke controles met schending": {
+        "Aanvankelijke controles met schending": "1360",
+        "overtredingsgraad": "42%",
+        "Vergunning": {
+          "value": "32",
+          "relative": "30%"
+        },
+        "Milieubeheer": {
+          "value": "29",
+          "relative": "30%"
+        },
+        "Afval": {
+          "value": "30",
+          "relative": "30%"
+        },
+        "Water": {
+          "value": "31",
+          "relative": "30%"
+        },
+        "Andere": {
+          "value": "28",
+          "relative": "30%"
+        },
+        "Mest": {
+          "value": "32",
+          "relative": "30%"
+        },
+        "Lucht": {
+          "value": "28",
+          "relative": "30%"
+        },
+        "Bodem": {
+          "value": "30",
+          "relative": "30%"
+        },
+        "Geluid": {
+          "value": "31",
+          "relative": "30%"
+        }
+      },
+      "Instrumentarium": {
+        "Raadgeving": "420",
+        "Aanmaning": "320",
+        "verslagvanvaststelling": "880",
+        "Proces-verbaal": "110",
+        "bestuurlijkemaatregel": {
+          "Metdwangsom": {
+            "value": "36",
+            "relative": "100"
+          },
+          "zonderdwangsom": {
+            "value": "33",
+            "relative": "100"
+          }
+        },
+        "Veiligsheidsmaatregel": "220"
+      }
+    },
+    "AWV": {
+      "gewestelijkeToezichthouders": {
+        "Toezichthouders": "43",
+        "VTE": "9.7",
+        "VTE Toezichthouders": {
+          "value": "73",
+          "relative": "61%"
+        },
+        "VTE Administratieve en juridische administratie": {
+          "value": "8.6",
+          "relative": "39%"
+        }
+      },
+      "klachten": {
+        "Aantal klachten": "2935",
+        "Afval": {
+          "value": "875",
+          "relative": "27%"
+        },
+        "Andere": {
+          "value": "542",
+          "relative": "89%"
+        },
+        "Bodem": {
+          "value": "79.4",
+          "relative": "15%"
+        },
+        "Geluid": {
+          "value": "63.8",
+          "relative": "77%"
+        },
+        "Lucht": {
+          "value": "30.5",
+          "relative": "44%"
+        },
+        "Mest": {
+          "value": "3.9",
+          "relative": "18%"
+        },
+        "Milieubeheer": {
+          "value": "7.2",
+          "relative": "33%"
+        },
+        "Vergunning": {
+          "value": "51.7",
+          "relative": "55%"
+        },
+        "Water": {
+          "value": "91.2",
+          "relative": "93%"
+        }
+      },
+      "controles": {
+        "Aantal controles": "1973",
+        "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": {
+          "value": "983",
+          "relative": "42%"
+        },
+        "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": {
+          "value": "421",
+          "relative": "3%"
+        },
+        "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": {
+          "value": "83",
+          "relative": "84%"
+        },
+        "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": {
+          "value": "740",
+          "relative": "97%"
+        },
+        "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": {
+          "value": "23",
+          "relative": "62%"
+        }
+      },
+      "Aanvankelijkecontrolesmetschending": {
+        "Aanvankelijke controles met schending": "2167",
+        "overtredingsgraad": "15%",
+        "Vergunning": {
+          "value": "929",
+          "relative": "39%"
+        },
+        "Milieubeheer": {
+          "value": "104",
+          "relative": "98%"
+        },
+        "Afval": {
+          "value": "526",
+          "relative": "82%"
+        },
+        "Water": {
+          "value": "23.1",
+          "relative": "22%"
+        },
+        "Andere": {
+          "value": "44.3",
+          "relative": "99%"
+        },
+        "Mest": {
+          "value": "17.8",
+          "relative": "60%"
+        },
+        "Lucht": {
+          "value": "68.6",
+          "relative": "5%"
+        },
+        "Bodem": {
+          "value": "88",
+          "relative": "78%"
+        },
+        "Geluid": {
+          "value": "34.2",
+          "relative": "13%"
+        }
+      },
+      "Instrumentarium": {
+        "Raadgeving": "840",
+        "Aanmaning": "523",
+        "verslagvanvaststelling": "991",
+        "Proces-verbaal": "502",
+        "bestuurlijkemaatregel": {
+          "Metdwangsom": {
+            "value": "600",
+            "relative": "39%"
+          },
+          "zonderdwangsom": {
+            "value": "800",
+            "relative": "68%"
+          }
+        },
+        "Veiligsheidsmaatregel": "120"
+      }
+    },
+    "DVW": {
+    "gewestelijkeToezichthouders": {
+      "Toezichthouders": "87",
+      "VTE": "2.3",
+      "VTE Toezichthouders": {
+        "value": "3",
+        "relative": "90%"
+      },
+      "VTE Administratieve en juridische administratie": {
+        "value": "0.2",
+        "relative": "10%"
+      }
+    },
+    "klachten": {
+      "Aantal klachten": "1450",
+      "Afval": {
+        "value": "305",
+        "relative": "90%"
+      },
+      "Andere": {
+        "value": "8",
+        "relative": "90%"
+      },
+      "Bodem": {
+        "value": "4.8",
+        "relative": "10%"
+      },
+      "Geluid": {
+        "value": "4.2",
+        "relative": "10%"
+      },
+      "Lucht": {
+        "value": "4.0",
+        "relative": "10%"
+      },
+      "Mest": {
+        "value": "4.3",
+        "relative": "10%"
       },
       "Milieubeheer": {
-      "value": "4.1",
-      "relative": "5%"
+        "value": "4.5",
+        "relative": "10%"
+      },
+      "Vergunning": {
+        "value": "4.1",
+        "relative": "10%"
+      },
+      "Water": {
+        "value": "4.4",
+        "relative": "10%"
+      }
     },
-    "Vergunning": {
-      "value": "4.1",
-      "relative": "5%"
+    "controles": {
+      "Aantal controles": "1320",
+      "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": {
+        "value": "32",
+        "relative": "23%"
+      },
+      "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": {
+        "value": "35",
+        "relative": "23%"
+      },
+      "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": {
+        "value": "33",
+        "relative": "23%"
+      },
+      "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": {
+        "value": "30",
+        "relative": "23%"
+      },
+      "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": {
+        "value": "32",
+        "relative": "23%"
+      }
     },
-    "Water": {
-      "value": "4.1",
-      "relative": "5%"
+    "Aanvankelijkecontrolesmetschending": {
+      "Aanvankelijke controles met schending": "1360",
+      "overtredingsgraad": "42%",
+      "Vergunning": {
+        "value": "32",
+        "relative": "30%"
+      },
+      "Milieubeheer": {
+        "value": "29",
+        "relative": "30%"
+      },
+      "Afval": {
+        "value": "30",
+        "relative": "30%"
+      },
+      "Water": {
+        "value": "31",
+        "relative": "30%"
+      },
+      "Andere": {
+        "value": "28",
+        "relative": "30%"
+      },
+      "Mest": {
+        "value": "32",
+        "relative": "30%"
+      },
+      "Lucht": {
+        "value": "28",
+        "relative": "30%"
+      },
+      "Bodem": {
+        "value": "30",
+        "relative": "30%"
+      },
+      "Geluid": {
+        "value": "31",
+        "relative": "30%"
+      }
+    },
+    "Instrumentarium": {
+      "Raadgeving": "420",
+      "Aanmaning": "320",
+      "verslagvanvaststelling": "880",
+      "Proces-verbaal": "110",
+      "bestuurlijkemaatregel": {
+        "Metdwangsom": {
+          "value": "36",
+          "relative": "100"
+        },
+        "zonderdwangsom": {
+          "value": "33",
+          "relative": "100"
+        }
+      },
+      "Veiligsheidsmaatregel": "220"
     }
-    }
-}
+  },
+  "DOMGHH":{
+            "gewestelijkeToezichthouders": {
+              "Toezichthouders": "87",
+              "VTE": "2.3",
+              "VTE Toezichthouders": {
+                "value": "3",
+                "relative": "90%"
+              },
+              "VTE Administratieve en juridische administratie": {
+                "value": "0.2",
+                "relative": "10%"
+              }
+            },
+            "klachten": {
+              "Aantal klachten": "1450",
+              "Afval": {
+                "value": "305",
+                "relative": "90%"
+              },
+              "Andere": {
+                "value": "8",
+                "relative": "90%"
+              },
+              "Bodem": {
+                "value": "4.8",
+                "relative": "10%"
+              },
+              "Geluid": {
+                "value": "4.2",
+                "relative": "10%"
+              },
+              "Lucht": {
+                "value": "4.0",
+                "relative": "10%"
+              },
+              "Mest": {
+                "value": "4.3",
+                "relative": "10%"
+              },
+              "Milieubeheer": {
+                "value": "4.5",
+                "relative": "10%"
+              },
+              "Vergunning": {
+                "value": "4.1",
+                "relative": "10%"
+              },
+              "Water": {
+                "value": "4.4",
+                "relative": "10%"
+              }
+            },
+            "controles": {
+              "Aantal controles": "1320",
+              "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": {
+                "value": "32",
+                "relative": "23%"
+              },
+              "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": {
+                "value": "35",
+                "relative": "23%"
+              },
+              "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": {
+                "value": "33",
+                "relative": "23%"
+              },
+              "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": {
+                "value": "30",
+                "relative": "23%"
+              },
+              "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": {
+                "value": "32",
+                "relative": "23%"
+              }
+            },
+            "Aanvankelijkecontrolesmetschending": {
+              "Aanvankelijke controles met schending": "1360",
+              "overtredingsgraad": "42%",
+              "Vergunning": {
+                "value": "32",
+                "relative": "30%"
+              },
+              "Milieubeheer": {
+                "value": "29",
+                "relative": "30%"
+              },
+              "Afval": {
+                "value": "30",
+                "relative": "30%"
+              },
+              "Water": {
+                "value": "31",
+                "relative": "30%"
+              },
+              "Andere": {
+                "value": "28",
+                "relative": "30%"
+              },
+              "Mest": {
+                "value": "32",
+                "relative": "30%"
+              },
+              "Lucht": {
+                "value": "28",
+                "relative": "30%"
+              },
+              "Bodem": {
+                "value": "30",
+                "relative": "30%"
+              },
+              "Geluid": {
+                "value": "31",
+                "relative": "30%"
+              }
+            },
+            "Instrumentarium": {
+              "Raadgeving": "420",
+              "Aanmaning": "320",
+              "verslagvanvaststelling": "880",
+              "Proces-verbaal": "110",
+              "bestuurlijkemaatregel": {
+                "Metdwangsom": {
+                  "value": "36",
+                  "relative": "100"
+                },
+                "zonderdwangsom": {
+                  "value": "33",
+                  "relative": "100"
+                }
+              },
+              "Veiligsheidsmaatregel": "220"
+            }
+          },
+          "DMOW":{
+            "gewestelijkeToezichthouders": {
+              "Toezichthouders": "87",
+              "VTE": "2.3",
+              "VTE Toezichthouders": {
+                "value": "3",
+                "relative": "90%"
+              },
+              "VTE Administratieve en juridische administratie": {
+                "value": "0.2",
+                "relative": "10%"
+              }
+            },
+            "klachten": {
+              "Aantal klachten": "1450",
+              "Afval": {
+                "value": "305",
+                "relative": "90%"
+              },
+              "Andere": {
+                "value": "8",
+                "relative": "90%"
+              },
+              "Bodem": {
+                "value": "4.8",
+                "relative": "10%"
+              },
+              "Geluid": {
+                "value": "4.2",
+                "relative": "10%"
+              },
+              "Lucht": {
+                "value": "4.0",
+                "relative": "10%"
+              },
+              "Mest": {
+                "value": "4.3",
+                "relative": "10%"
+              },
+              "Milieubeheer": {
+                "value": "4.5",
+                "relative": "10%"
+              },
+              "Vergunning": {
+                "value": "4.1",
+                "relative": "10%"
+              },
+              "Water": {
+                "value": "4.4",
+                "relative": "10%"
+              }
+            },
+            "controles": {
+              "Aantal controles": "1320",
+              "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": {
+                "value": "32",
+                "relative": "23%"
+              },
+              "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": {
+                "value": "35",
+                "relative": "23%"
+              },
+              "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": {
+                "value": "33",
+                "relative": "23%"
+              },
+              "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": {
+                "value": "30",
+                "relative": "23%"
+              },
+              "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": {
+                "value": "32",
+                "relative": "23%"
+              }
+            },
+            "Aanvankelijkecontrolesmetschending": {
+              "Aanvankelijke controles met schending": "1360",
+              "overtredingsgraad": "42%",
+              "Vergunning": {
+                "value": "32",
+                "relative": "30%"
+              },
+              "Milieubeheer": {
+                "value": "29",
+                "relative": "30%"
+              },
+              "Afval": {
+                "value": "30",
+                "relative": "30%"
+              },
+              "Water": {
+                "value": "31",
+                "relative": "30%"
+              },
+              "Andere": {
+                "value": "28",
+                "relative": "30%"
+              },
+              "Mest": {
+                "value": "32",
+                "relative": "30%"
+              },
+              "Lucht": {
+                "value": "28",
+                "relative": "30%"
+              },
+              "Bodem": {
+                "value": "30",
+                "relative": "30%"
+              },
+              "Geluid": {
+                "value": "31",
+                "relative": "30%"
+              }
+            },
+            "Instrumentarium": {
+              "Raadgeving": "420",
+              "Aanmaning": "320",
+              "verslagvanvaststelling": "880",
+              "Proces-verbaal": "110",
+              "bestuurlijkemaatregel": {
+                "Metdwangsom": {
+                  "value": "36",
+                  "relative": "100"
+                },
+                "zonderdwangsom": {
+                  "value": "33",
+                  "relative": "100"
+                }
+              },
+              "Veiligsheidsmaatregel": "220"
+            }
+          },
+            "DOMGGOP":{
+              "gewestelijkeToezichthouders": {
+                "Toezichthouders": "87",
+                "VTE": "2.3",
+                "VTE Toezichthouders": {
+                  "value": "3",
+                  "relative": "90%"
+                },
+                "VTE Administratieve en juridische administratie": {
+                  "value": "0.2",
+                  "relative": "10%"
+                }
+              },
+              "klachten": {
+                "Aantal klachten": "1450",
+                "Afval": {
+                  "value": "305",
+                  "relative": "90%"
+                },
+                "Andere": {
+                  "value": "8",
+                  "relative": "90%"
+                },
+                "Bodem": {
+                  "value": "4.8",
+                  "relative": "10%"
+                },
+                "Geluid": {
+                  "value": "4.2",
+                  "relative": "10%"
+                },
+                "Lucht": {
+                  "value": "4.0",
+                  "relative": "10%"
+                },
+                "Mest": {
+                  "value": "4.3",
+                  "relative": "10%"
+                },
+                "Milieubeheer": {
+                  "value": "4.5",
+                  "relative": "10%"
+                },
+                "Vergunning": {
+                  "value": "4.1",
+                  "relative": "10%"
+                },
+                "Water": {
+                  "value": "4.4",
+                  "relative": "10%"
+                }
+              },
+              "controles": {
+                "Aantal controles": "1320",
+                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": {
+                  "value": "32",
+                  "relative": "23%"
+                },
+                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": {
+                  "value": "35",
+                  "relative": "23%"
+                },
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": {
+                  "value": "33",
+                  "relative": "23%"
+                },
+                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": {
+                  "value": "30",
+                  "relative": "23%"
+                },
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": {
+                  "value": "32",
+                  "relative": "23%"
+                }
+              },
+              "Aanvankelijkecontrolesmetschending": {
+                "Aanvankelijke controles met schending": "1360",
+                "overtredingsgraad": "42%",
+                "Vergunning": {
+                  "value": "32",
+                  "relative": "30%"
+                },
+                "Milieubeheer": {
+                  "value": "29",
+                  "relative": "30%"
+                },
+                "Afval": {
+                  "value": "30",
+                  "relative": "30%"
+                },
+                "Water": {
+                  "value": "31",
+                  "relative": "30%"
+                },
+                "Andere": {
+                  "value": "28",
+                  "relative": "30%"
+                },
+                "Mest": {
+                  "value": "32",
+                  "relative": "30%"
+                },
+                "Lucht": {
+                  "value": "28",
+                  "relative": "30%"
+                },
+                "Bodem": {
+                  "value": "30",
+                  "relative": "30%"
+                },
+                "Geluid": {
+                  "value": "31",
+                  "relative": "30%"
+                }
+              },
+              "Instrumentarium": {
+                "Raadgeving": "420",
+                "Aanmaning": "320",
+                "verslagvanvaststelling": "880",
+                "Proces-verbaal": "110",
+                "bestuurlijkemaatregel": {
+                  "Metdwangsom": {
+                    "value": "36",
+                    "relative": "100"
+                  },
+                  "zonderdwangsom": {
+                    "value": "33",
+                    "relative": "100"
+                  }
+                },
+                "Veiligsheidsmaatregel": "220"
+              }},
+              "DOMGVPO":{
+                "gewestelijkeToezichthouders": {
+                  "Toezichthouders": "87",
+                  "VTE": "2.3",
+                  "VTE Toezichthouders": {
+                    "value": "3",
+                    "relative": "90%"
+                  },
+                  "VTE Administratieve en juridische administratie": {
+                    "value": "0.2",
+                    "relative": "10%"
+                  }
+                },
+                "klachten": {
+                  "Aantal klachten": "1450",
+                  "Afval": {
+                    "value": "305",
+                    "relative": "90%"
+                  },
+                  "Andere": {
+                    "value": "8",
+                    "relative": "90%"
+                  },
+                  "Bodem": {
+                    "value": "4.8",
+                    "relative": "10%"
+                  },
+                  "Geluid": {
+                    "value": "4.2",
+                    "relative": "10%"
+                  },
+                  "Lucht": {
+                    "value": "4.0",
+                    "relative": "10%"
+                  },
+                  "Mest": {
+                    "value": "4.3",
+                    "relative": "10%"
+                  },
+                  "Milieubeheer": {
+                    "value": "4.5",
+                    "relative": "10%"
+                  },
+                  "Vergunning": {
+                    "value": "4.1",
+                    "relative": "10%"
+                  },
+                  "Water": {
+                    "value": "4.4",
+                    "relative": "10%"
+                  }
+                },
+                "controles": {
+                  "Aantal controles": "1320",
+                  "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": {
+                    "value": "32",
+                    "relative": "23%"
+                  },
+                  "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": {
+                    "value": "35",
+                    "relative": "23%"
+                  },
+                  "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": {
+                    "value": "33",
+                    "relative": "23%"
+                  },
+                  "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": {
+                    "value": "30",
+                    "relative": "23%"
+                  },
+                  "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": {
+                    "value": "32",
+                    "relative": "23%"
+                  }
+                },
+                "Aanvankelijkecontrolesmetschending": {
+                  "Aanvankelijke controles met schending": "1360",
+                  "overtredingsgraad": "42%",
+                  "Vergunning": {
+                    "value": "32",
+                    "relative": "30%"
+                  },
+                  "Milieubeheer": {
+                    "value": "29",
+                    "relative": "30%"
+                  },
+                  "Afval": {
+                    "value": "30",
+                    "relative": "30%"
+                  },
+                  "Water": {
+                    "value": "31",
+                    "relative": "30%"
+                  },
+                  "Andere": {
+                    "value": "28",
+                    "relative": "30%"
+                  },
+                  "Mest": {
+                    "value": "32",
+                    "relative": "30%"
+                  },
+                  "Lucht": {
+                    "value": "28",
+                    "relative": "30%"
+                  },
+                  "Bodem": {
+                    "value": "30",
+                    "relative": "30%"
+                  },
+                  "Geluid": {
+                    "value": "31",
+                    "relative": "30%"
+                  }
+                },
+                "Instrumentarium": {
+                  "Raadgeving": "420",
+                  "Aanmaning": "320",
+                  "verslagvanvaststelling": "880",
+                  "Proces-verbaal": "110",
+                  "bestuurlijkemaatregel": {
+                    "Metdwangsom": {
+                      "value": "36",
+                      "relative": "100"
+                    },
+                    "zonderdwangsom": {
+                      "value": "33",
+                      "relative": "100"
+                    }
+                  },
+                  "Veiligsheidsmaatregel": "220"
+                }},
+              "OVAM":{
+                "gewestelijkeToezichthouders": {
+                  "Toezichthouders": "87",
+                  "VTE": "2.3",
+                  "VTE Toezichthouders": {
+                    "value": "3",
+                    "relative": "90%"
+                  },
+                  "VTE Administratieve en juridische administratie": {
+                    "value": "0.2",
+                    "relative": "10%"
+                  }
+                },
+                "klachten": {
+                  "Aantal klachten": "1450",
+                  "Afval": {
+                    "value": "305",
+                    "relative": "90%"
+                  },
+                  "Andere": {
+                    "value": "8",
+                    "relative": "90%"
+                  },
+                  "Bodem": {
+                    "value": "4.8",
+                    "relative": "10%"
+                  },
+                  "Geluid": {
+                    "value": "4.2",
+                    "relative": "10%"
+                  },
+                  "Lucht": {
+                    "value": "4.0",
+                    "relative": "10%"
+                  },
+                  "Mest": {
+                    "value": "4.3",
+                    "relative": "10%"
+                  },
+                  "Milieubeheer": {
+                    "value": "4.5",
+                    "relative": "10%"
+                  },
+                  "Vergunning": {
+                    "value": "4.1",
+                    "relative": "10%"
+                  },
+                  "Water": {
+                    "value": "4.4",
+                    "relative": "10%"
+                  }
+                },
+                "controles": {
+                  "Aantal controles": "1320",
+                  "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": {
+                    "value": "32",
+                    "relative": "23%"
+                  },
+                  "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": {
+                    "value": "35",
+                    "relative": "23%"
+                  },
+                  "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": {
+                    "value": "33",
+                    "relative": "23%"
+                  },
+                  "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": {
+                    "value": "30",
+                    "relative": "23%"
+                  },
+                  "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": {
+                    "value": "32",
+                    "relative": "23%"
+                  }
+                },
+                "Aanvankelijkecontrolesmetschending": {
+                  "Aanvankelijke controles met schending": "1360",
+                  "overtredingsgraad": "42%",
+                  "Vergunning": {
+                    "value": "32",
+                    "relative": "30%"
+                  },
+                  "Milieubeheer": {
+                    "value": "29",
+                    "relative": "30%"
+                  },
+                  "Afval": {
+                    "value": "30",
+                    "relative": "30%"
+                  },
+                  "Water": {
+                    "value": "31",
+                    "relative": "30%"
+                  },
+                  "Andere": {
+                    "value": "28",
+                    "relative": "30%"
+                  },
+                  "Mest": {
+                    "value": "32",
+                    "relative": "30%"
+                  },
+                  "Lucht": {
+                    "value": "28",
+                    "relative": "30%"
+                  },
+                  "Bodem": {
+                    "value": "30",
+                    "relative": "30%"
+                  },
+                  "Geluid": {
+                    "value": "31",
+                    "relative": "30%"
+                  }
+                },
+                "Instrumentarium": {
+                  "Raadgeving": "420",
+                  "Aanmaning": "320",
+                  "verslagvanvaststelling": "880",
+                  "Proces-verbaal": "110",
+                  "bestuurlijkemaatregel": {
+                    "Metdwangsom": {
+                      "value": "36",
+                      "relative": "100"
+                    },
+                    "zonderdwangsom": {
+                      "value": "33",
+                      "relative": "100"
+                    }
+                  },
+                  "Veiligsheidsmaatregel": "220"
+                }},
+                "ZORG":{
+                  "gewestelijkeToezichthouders": {
+                    "Toezichthouders": "87",
+                    "VTE": "2.3",
+                    "VTE Toezichthouders": {
+                      "value": "3",
+                      "relative": "90%"
+                    },
+                    "VTE Administratieve en juridische administratie": {
+                      "value": "0.2",
+                      "relative": "10%"
+                    }
+                  },
+                  "klachten": {
+                    "Aantal klachten": "1450",
+                    "Afval": {
+                      "value": "305",
+                      "relative": "90%"
+                    },
+                    "Andere": {
+                      "value": "8",
+                      "relative": "90%"
+                    },
+                    "Bodem": {
+                      "value": "4.8",
+                      "relative": "10%"
+                    },
+                    "Geluid": {
+                      "value": "4.2",
+                      "relative": "10%"
+                    },
+                    "Lucht": {
+                      "value": "4.0",
+                      "relative": "10%"
+                    },
+                    "Mest": {
+                      "value": "4.3",
+                      "relative": "10%"
+                    },
+                    "Milieubeheer": {
+                      "value": "4.5",
+                      "relative": "10%"
+                    },
+                    "Vergunning": {
+                      "value": "4.1",
+                      "relative": "10%"
+                    },
+                    "Water": {
+                      "value": "4.4",
+                      "relative": "10%"
+                    }
+                  },
+                  "controles": {
+                    "Aantal controles": "1320",
+                    "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": {
+                      "value": "32",
+                      "relative": "23%"
+                    },
+                    "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": {
+                      "value": "35",
+                      "relative": "23%"
+                    },
+                    "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": {
+                      "value": "33",
+                      "relative": "23%"
+                    },
+                    "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": {
+                      "value": "30",
+                      "relative": "23%"
+                    },
+                    "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": {
+                      "value": "32",
+                      "relative": "23%"
+                    }
+                  },
+                  "Aanvankelijkecontrolesmetschending": {
+                    "Aanvankelijke controles met schending": "1360",
+                    "overtredingsgraad": "42%",
+                    "Vergunning": {
+                      "value": "32",
+                      "relative": "30%"
+                    },
+                    "Milieubeheer": {
+                      "value": "29",
+                      "relative": "30%"
+                    },
+                    "Afval": {
+                      "value": "30",
+                      "relative": "30%"
+                    },
+                    "Water": {
+                      "value": "31",
+                      "relative": "30%"
+                    },
+                    "Andere": {
+                      "value": "28",
+                      "relative": "30%"
+                    },
+                    "Mest": {
+                      "value": "32",
+                      "relative": "30%"
+                    },
+                    "Lucht": {
+                      "value": "28",
+                      "relative": "30%"
+                    },
+                    "Bodem": {
+                      "value": "30",
+                      "relative": "30%"
+                    },
+                    "Geluid": {
+                      "value": "31",
+                      "relative": "30%"
+                    }
+                  },
+                  "Instrumentarium": {
+                    "Raadgeving": "420",
+                    "Aanmaning": "320",
+                    "verslagvanvaststelling": "880",
+                    "Proces-verbaal": "110",
+                    "bestuurlijkemaatregel": {
+                      "Metdwangsom": {
+                        "value": "36",
+                        "relative": "100"
+                      },
+                      "zonderdwangsom": {
+                        "value": "33",
+                        "relative": "100"
+                      }
+                    },
+                    "Veiligsheidsmaatregel": "220"
+                  }},
+                  "VEKA":{
+                    "gewestelijkeToezichthouders": {
+                      "Toezichthouders": "87",
+                      "VTE": "2.3",
+                      "VTE Toezichthouders": {
+                        "value": "3",
+                        "relative": "90%"
+                      },
+                      "VTE Administratieve en juridische administratie": {
+                        "value": "0.2",
+                        "relative": "10%"
+                      }
+                    },
+                    "klachten": {
+                      "Aantal klachten": "1450",
+                      "Afval": {
+                        "value": "305",
+                        "relative": "90%"
+                      },
+                      "Andere": {
+                        "value": "8",
+                        "relative": "90%"
+                      },
+                      "Bodem": {
+                        "value": "4.8",
+                        "relative": "10%"
+                      },
+                      "Geluid": {
+                        "value": "4.2",
+                        "relative": "10%"
+                      },
+                      "Lucht": {
+                        "value": "4.0",
+                        "relative": "10%"
+                      },
+                      "Mest": {
+                        "value": "4.3",
+                        "relative": "10%"
+                      },
+                      "Milieubeheer": {
+                        "value": "4.5",
+                        "relative": "10%"
+                      },
+                      "Vergunning": {
+                        "value": "4.1",
+                        "relative": "10%"
+                      },
+                      "Water": {
+                        "value": "4.4",
+                        "relative": "10%"
+                      }
+                    },
+                    "controles": {
+                      "Aantal controles": "1320",
+                      "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": {
+                        "value": "32",
+                        "relative": "23%"
+                      },
+                      "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": {
+                        "value": "35",
+                        "relative": "23%"
+                      },
+                      "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": {
+                        "value": "33",
+                        "relative": "23%"
+                      },
+                      "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": {
+                        "value": "30",
+                        "relative": "23%"
+                      },
+                      "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": {
+                        "value": "32",
+                        "relative": "23%"
+                      }
+                    },
+                    "Aanvankelijkecontrolesmetschending": {
+                      "Aanvankelijke controles met schending": "1360",
+                      "overtredingsgraad": "42%",
+                      "Vergunning": {
+                        "value": "32",
+                        "relative": "30%"
+                      },
+                      "Milieubeheer": {
+                        "value": "29",
+                        "relative": "30%"
+                      },
+                      "Afval": {
+                        "value": "30",
+                        "relative": "30%"
+                      },
+                      "Water": {
+                        "value": "31",
+                        "relative": "30%"
+                      },
+                      "Andere": {
+                        "value": "28",
+                        "relative": "30%"
+                      },
+                      "Mest": {
+                        "value": "32",
+                        "relative": "30%"
+                      },
+                      "Lucht": {
+                        "value": "28",
+                        "relative": "30%"
+                      },
+                      "Bodem": {
+                        "value": "30",
+                        "relative": "30%"
+                      },
+                      "Geluid": {
+                        "value": "31",
+                        "relative": "30%"
+                      }
+                    },
+                    "Instrumentarium": {
+                      "Raadgeving": "420",
+                      "Aanmaning": "320",
+                      "verslagvanvaststelling": "880",
+                      "Proces-verbaal": "110",
+                      "bestuurlijkemaatregel": {
+                        "Metdwangsom": {
+                          "value": "36",
+                          "relative": "100"
+                        },
+                        "zonderdwangsom": {
+                          "value": "33",
+                          "relative": "100"
+                        }
+                      },
+                      "Veiligsheidsmaatregel": "220"
+                    }},
+                  "VLM":{
+                    "gewestelijkeToezichthouders": {
+                      "Toezichthouders": "87",
+                      "VTE": "2.3",
+                      "VTE Toezichthouders": {
+                        "value": "3",
+                        "relative": "90%"
+                      },
+                      "VTE Administratieve en juridische administratie": {
+                        "value": "0.2",
+                        "relative": "10%"
+                      }
+                    },
+                    "klachten": {
+                      "Aantal klachten": "1450",
+                      "Afval": {
+                        "value": "305",
+                        "relative": "90%"
+                      },
+                      "Andere": {
+                        "value": "8",
+                        "relative": "90%"
+                      },
+                      "Bodem": {
+                        "value": "4.8",
+                        "relative": "10%"
+                      },
+                      "Geluid": {
+                        "value": "4.2",
+                        "relative": "10%"
+                      },
+                      "Lucht": {
+                        "value": "4.0",
+                        "relative": "10%"
+                      },
+                      "Mest": {
+                        "value": "4.3",
+                        "relative": "10%"
+                      },
+                      "Milieubeheer": {
+                        "value": "4.5",
+                        "relative": "10%"
+                      },
+                      "Vergunning": {
+                        "value": "4.1",
+                        "relative": "10%"
+                      },
+                      "Water": {
+                        "value": "4.4",
+                        "relative": "10%"
+                      }
+                    },
+                    "controles": {
+                      "Aantal controles": "1320",
+                      "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": {
+                        "value": "32",
+                        "relative": "23%"
+                      },
+                      "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": {
+                        "value": "35",
+                        "relative": "23%"
+                      },
+                      "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": {
+                        "value": "33",
+                        "relative": "23%"
+                      },
+                      "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": {
+                        "value": "30",
+                        "relative": "23%"
+                      },
+                      "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": {
+                        "value": "32",
+                        "relative": "23%"
+                      }
+                    },
+                    "Aanvankelijkecontrolesmetschending": {
+                      "Aanvankelijke controles met schending": "1360",
+                      "overtredingsgraad": "42%",
+                      "Vergunning": {
+                        "value": "32",
+                        "relative": "30%"
+                      },
+                      "Milieubeheer": {
+                        "value": "29",
+                        "relative": "30%"
+                      },
+                      "Afval": {
+                        "value": "30",
+                        "relative": "30%"
+                      },
+                      "Water": {
+                        "value": "31",
+                        "relative": "30%"
+                      },
+                      "Andere": {
+                        "value": "28",
+                        "relative": "30%"
+                      },
+                      "Mest": {
+                        "value": "32",
+                        "relative": "30%"
+                      },
+                      "Lucht": {
+                        "value": "28",
+                        "relative": "30%"
+                      },
+                      "Bodem": {
+                        "value": "30",
+                        "relative": "30%"
+                      },
+                      "Geluid": {
+                        "value": "31",
+                        "relative": "30%"
+                      }
+                    },
+                    "Instrumentarium": {
+                      "Raadgeving": "420",
+                      "Aanmaning": "320",
+                      "verslagvanvaststelling": "880",
+                      "Proces-verbaal": "110",
+                      "bestuurlijkemaatregel": {
+                        "Metdwangsom": {
+                          "value": "36",
+                          "relative": "100"
+                        },
+                        "zonderdwangsom": {
+                          "value": "33",
+                          "relative": "100"
+                        }
+                      },
+                      "Veiligsheidsmaatregel": "220"
+                    }},
+                    "Wooninspectie":{
+                      "gewestelijkeToezichthouders": {
+                        "Toezichthouders": "87",
+                        "VTE": "2.3",
+                        "VTE Toezichthouders": {
+                          "value": "3",
+                          "relative": "90%"
+                        },
+                        "VTE Administratieve en juridische administratie": {
+                          "value": "0.2",
+                          "relative": "10%"
+                        }
+                      },
+                      "klachten": {
+                        "Aantal klachten": "1450",
+                        "Afval": {
+                          "value": "305",
+                          "relative": "90%"
+                        },
+                        "Andere": {
+                          "value": "8",
+                          "relative": "90%"
+                        },
+                        "Bodem": {
+                          "value": "4.8",
+                          "relative": "10%"
+                        },
+                        "Geluid": {
+                          "value": "4.2",
+                          "relative": "10%"
+                        },
+                        "Lucht": {
+                          "value": "4.0",
+                          "relative": "10%"
+                        },
+                        "Mest": {
+                          "value": "4.3",
+                          "relative": "10%"
+                        },
+                        "Milieubeheer": {
+                          "value": "4.5",
+                          "relative": "10%"
+                        },
+                        "Vergunning": {
+                          "value": "4.1",
+                          "relative": "10%"
+                        },
+                        "Water": {
+                          "value": "4.4",
+                          "relative": "10%"
+                        }
+                      },
+                      "controles": {
+                        "Aantal controles": "1320",
+                        "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": {
+                          "value": "32",
+                          "relative": "23%"
+                        },
+                        "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": {
+                          "value": "35",
+                          "relative": "23%"
+                        },
+                        "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": {
+                          "value": "33",
+                          "relative": "23%"
+                        },
+                        "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": {
+                          "value": "30",
+                          "relative": "23%"
+                        },
+                        "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": {
+                          "value": "32",
+                          "relative": "23%"
+                        }
+                      },
+                      "Aanvankelijkecontrolesmetschending": {
+                        "Aanvankelijke controles met schending": "1360",
+                        "overtredingsgraad": "42%",
+                        "Vergunning": {
+                          "value": "32",
+                          "relative": "30%"
+                        },
+                        "Milieubeheer": {
+                          "value": "29",
+                          "relative": "30%"
+                        },
+                        "Afval": {
+                          "value": "30",
+                          "relative": "30%"
+                        },
+                        "Water": {
+                          "value": "31",
+                          "relative": "30%"
+                        },
+                        "Andere": {
+                          "value": "28",
+                          "relative": "30%"
+                        },
+                        "Mest": {
+                          "value": "32",
+                          "relative": "30%"
+                        },
+                        "Lucht": {
+                          "value": "28",
+                          "relative": "30%"
+                        },
+                        "Bodem": {
+                          "value": "30",
+                          "relative": "30%"
+                        },
+                        "Geluid": {
+                          "value": "31",
+                          "relative": "30%"
+                        }
+                      },
+                      "Instrumentarium": {
+                        "Raadgeving": "420",
+                        "Aanmaning": "320",
+                        "verslagvanvaststelling": "880",
+                        "Proces-verbaal": "110",
+                        "bestuurlijkemaatregel": {
+                          "Metdwangsom": {
+                            "value": "36",
+                            "relative": "100"
+                          },
+                          "zonderdwangsom": {
+                            "value": "33",
+                            "relative": "100"
+                          }
+                        },
+                        "Veiligsheidsmaatregel": "220"
+                      }
+                    },
+                    "VMM":{
+                      "gewestelijkeToezichthouders": {
+                        "Toezichthouders": "87",
+                        "VTE": "2.3",
+                        "VTE Toezichthouders": {
+                          "value": "3",
+                          "relative": "90%"
+                        },
+                        "VTE Administratieve en juridische administratie": {
+                          "value": "0.2",
+                          "relative": "10%"
+                        }
+                      },
+                      "klachten": {
+                        "Aantal klachten": "1450",
+                        "Afval": {
+                          "value": "305",
+                          "relative": "90%"
+                        },
+                        "Andere": {
+                          "value": "8",
+                          "relative": "90%"
+                        },
+                        "Bodem": {
+                          "value": "4.8",
+                          "relative": "10%"
+                        },
+                        "Geluid": {
+                          "value": "4.2",
+                          "relative": "10%"
+                        },
+                        "Lucht": {
+                          "value": "4.0",
+                          "relative": "10%"
+                        },
+                        "Mest": {
+                          "value": "4.3",
+                          "relative": "10%"
+                        },
+                        "Milieubeheer": {
+                          "value": "4.5",
+                          "relative": "10%"
+                        },
+                        "Vergunning": {
+                          "value": "4.1",
+                          "relative": "10%"
+                        },
+                        "Water": {
+                          "value": "4.4",
+                          "relative": "10%"
+                        }
+                      },
+                      "controles": {
+                        "Aantal controles": "1320",
+                        "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": {
+                          "value": "32",
+                          "relative": "23%"
+                        },
+                        "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": {
+                          "value": "35",
+                          "relative": "23%"
+                        },
+                        "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": {
+                          "value": "33",
+                          "relative": "23%"
+                        },
+                        "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": {
+                          "value": "30",
+                          "relative": "23%"
+                        },
+                        "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": {
+                          "value": "32",
+                          "relative": "23%"
+                        }
+                      },
+                      "Aanvankelijkecontrolesmetschending": {
+                        "Aanvankelijke controles met schending": "1360",
+                        "overtredingsgraad": "42%",
+                        "Vergunning": {
+                          "value": "32",
+                          "relative": "30%"
+                        },
+                        "Milieubeheer": {
+                          "value": "29",
+                          "relative": "30%"
+                        },
+                        "Afval": {
+                          "value": "30",
+                          "relative": "30%"
+                        },
+                        "Water": {
+                          "value": "31",
+                          "relative": "30%"
+                        },
+                        "Andere": {
+                          "value": "28",
+                          "relative": "30%"
+                        },
+                        "Mest": {
+                          "value": "32",
+                          "relative": "30%"
+                        },
+                        "Lucht": {
+                          "value": "28",
+                          "relative": "30%"
+                        },
+                        "Bodem": {
+                          "value": "30",
+                          "relative": "30%"
+                        },
+                        "Geluid": {
+                          "value": "31",
+                          "relative": "30%"
+                        }
+                      },
+                      "Instrumentarium": {
+                        "Raadgeving": "420",
+                        "Aanmaning": "320",
+                        "verslagvanvaststelling": "880",
+                        "Proces-verbaal": "110",
+                        "bestuurlijkemaatregel": {
+                          "Metdwangsom": {
+                            "value": "36",
+                            "relative": "100"
+                          },
+                          "zonderdwangsom": {
+                            "value": "33",
+                            "relative": "100"
+                          }
+                        },
+                        "Veiligsheidsmaatregel": "220"
+                      }
+                    }
+                  }
+                    ,
+                    "RO": {}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

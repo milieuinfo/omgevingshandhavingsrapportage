@@ -1,27 +1,26 @@
 import {
-  NIVEAU,
-  GEWESTELIJKEACTOR,
+  BELEID,
+  JAAR,
   PROVINCIE,
-  GEMEENTE,
-  STATUS,
-  JAAR
+  GEWEST,
+  GEMEENTE
   } from "./qlik_resources.js";
   
     const filtersPersoneel = [
+      {
+        name: "Beleidsdomein",
+        id: "Beleidsdomein",
+        filter: BELEID
+      },
       {
         name: "Jaartal",
         id: "Jaartal",
         filter: JAAR
       },
       {
-        name: "Beleidsdomein",
-        id: "Beleidsdomein",
-        filter: NIVEAU
-      },
-      {
-        name: "Gewestelijke actor",
-        id: "Gewestelijke actor",
-        filter: GEWESTELIJKEACTOR
+        name: "Gewest",
+        id: "Gewest",
+        filter: GEWEST
       },
       {
         name: "Provincie",
@@ -32,12 +31,7 @@ import {
         name: "Gemeente",
         id: "Gemeente",
         filter: GEMEENTE
-      },
-      {
-        name: "Status",
-        id: "Status",
-        filter: STATUS
-      },
+      }
     ]
     
     export {filtersPersoneel as default};

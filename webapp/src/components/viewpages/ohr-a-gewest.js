@@ -54,7 +54,17 @@ class OhrAGewest extends LitElement {
     </vl-functional-header>
       <section is="vl-region">
         <div is="vl-layout">
-          ${this.__renderPage()}
+        <vl-typography>
+        <h2>Raadpleeg laatst bekende cijfers van 2023</h2></vl-typography>
+        <p is="vl-icon-wrapper"><span is="vl-icon" data-vl-icon="calendar"></span><vl-annotation> Laatste wijziging aan de data: 21/02/2024</vl-annotation></p><br>
+
+    <p is="vl-introduction" data-cy="introduction">
+    Onderstaande weergave geeft een beeld van de bevraging over de cijfers van 2023. Navigeer doorheen de weergave om gericht en efficiënt data te raadplegen.
+    </p><br/>
+    
+<div>
+
+          ${this.__renderPage()}</div>
         </div>
       </section>`;
   }
@@ -74,14 +84,14 @@ class OhrAGewest extends LitElement {
                                         return html`
                                             <tr>
                                                 <td data-title="${key}">${key}</td>
-                                                <td data-title="Totaal VTE">${value.value} (relatief ${value.relative})</td>
+                                                <td data-title="${value.value}">${value.value}(relatief ${value.relative})</td>
                                             </tr>
                                         `;
                                     } else {
                                         return html`
                                             <tr>
                                                 <td data-title="${key}">${key}</td>
-                                                <td data-title="Totaal VTE">${value}</td>
+                                                <td data-title="${value.value}">${value}</td>
                                             </tr>
                                         `;
                                     }
@@ -89,16 +99,6 @@ class OhrAGewest extends LitElement {
                             </tbody>
                         </table>
                         <br>
-                        <vl-alert
-    data-cy="alert"
-    data-vl-naked=""
-    data-vl-icon="info"
-    data-vl-title="Opgelet!"
-    data-vl-type="info"
-    data-vl-message="Bovenstaande cijfers gaan over het laatste bevragingsjaar: 2023"
->
-</vl-alert>
-                        <p><a href="#">Download de cijfers voor ${label} van alle actoren over de jaren heen</a></p>
     `;
 }
 
@@ -111,474 +111,524 @@ class OhrAGewest extends LitElement {
     }
 
     return html`
-    <vl-typography>
-    <h2 >Kies hier een gewestelijke actor</h2></vl-typography>
-
-    <vl-cascader>
+   <vl-cascader>
     <vl-cascader-item label="Agentschap Martieme Dienstverlening en Kust">
         <vl-cascader-item label="Milieu">
     <vl-accordion-list slot="content">
         <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
-        ${this.renderDataSection("Gewestelijke toezichthouders", jsonData.gewestelijkeToezichthouders)}</vl-accordion>
+        ${this.renderDataSection("Gewestelijke toezichthouders", jsonData.Milieu.AMDK.gewestelijkeToezichthouders)}
+        </vl-accordion>
         <vl-accordion data-vl-toggle-text="Klachten">
-        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.klachten)}
+        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.klachten)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Controles">
-        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.klachten)}
+        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.controles)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.klachten)}
+        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.Aanvankelijkecontrolesmetschending)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Instrumentarium">
-        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.klachten)}
+        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.Instrumentarium)}
+        </vl-accordion>
+    </vl-accordion-list>
+                </vl-cascader-item>
+            <vl-cascader-item label="Ruimtelijke ordening">
+            <p slot="content">
+            <vl-alert
+            data-cy="alert"
+            data-vl-naked=""
+            data-vl-icon="warning"
+            data-vl-title="Geen bevoegheid"
+            data-vl-type="warning"
+            data-vl-message="Agentschap Maritieme Dienstverlening en Kust heeft geen bevoegheid voor ruimtelijke ordening."
+        >
+        </vl-alert>
+    </p>
+            </vl-cascader-item>
+      </vl-cascader-item>
+
+
+      <vl-cascader-item label="Agentschap voor Natuur en Bos">
+        <vl-cascader-item label="Milieu">
+    <vl-accordion-list slot="content">
+        <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
+        ${this.renderDataSection("Gewestelijke toezichthouders", jsonData.Milieu.ANB.gewestelijkeToezichthouders)}
+        </vl-accordion>
+        <vl-accordion data-vl-toggle-text="Klachten">
+        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.ANB.klachten)}
+        </vl-accordion>
+        <vl-accordion data-vl-toggle-text="Controles">
+        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.ANB.controles)}
+        </vl-accordion>
+        <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
+        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.Aanvankelijkecontrolesmetschending)}
+        </vl-accordion>
+        <vl-accordion data-vl-toggle-text="Instrumentarium">
+        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.ANB.Instrumentarium)}
         </vl-accordion>
     </vl-accordion-list>
                 </vl-cascader-item>
             <vl-cascader-item label="Ruimtelijke ordening">
             <vl-accordion-list slot="content">
         <vl-accordion data-vl-toggle-text="Verbalisanten en stedenbouwkundige inspecteurs en VTE"> 
-        ${this.renderDataSection("Verbalisanten en stedenbouwkundige inspecteurs en VTE", jsonData.gewestelijkeToezichthouders)}</vl-accordion>
+        ${this.renderDataSection("Verbalisanten en stedenbouwkundige inspecteurs en VTE", jsonData.Milieu.ANB.gewestelijkeToezichthouders)}</vl-accordion>
         <vl-accordion data-vl-toggle-text="Klachten">
-        ${this.renderDataSection("Klachten", jsonData.klachten)}
+        ${this.renderDataSection("Klachten", jsonData.Milieu.ANB.klachten)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Controles">
-        ${this.renderDataSection("Controles", jsonData.klachten)}
+        ${this.renderDataSection("Controles", jsonData.Milieu.ANB.klachten)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Aantal aanvankelijke controles met schending">
-        ${this.renderDataSection("Aantal aanvankelijke controles met schending", jsonData.klachten)}
+        ${this.renderDataSection("Aantal aanvankelijke controles met schending", jsonData.Milieu.ANB.klachten)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Instrumentarium">
-        ${this.renderDataSection("Instrumentarium", jsonData.klachten)}
+        ${this.renderDataSection("Instrumentarium", jsonData.Milieu.ANB.klachten)}
         </vl-accordion>
     </vl-accordion-list>
             </vl-cascader-item>
       </vl-cascader-item>
-      <vl-cascader-item label="Agentschap Natuur en Bos">
+
+      <vl-cascader-item label="Agentschap Wegen en Verkeer">
+        <vl-cascader-item label="Milieu">
+    <vl-accordion-list slot="content">
+        <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
+        ${this.renderDataSection("Gewestelijke toezichthouders", jsonData.Milieu.AWV.gewestelijkeToezichthouders)}
+        </vl-accordion>
+        <vl-accordion data-vl-toggle-text="Klachten">
+        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AWV.klachten)}
+        </vl-accordion>
+        <vl-accordion data-vl-toggle-text="Controles">
+        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AWV.controles)}
+        </vl-accordion>
+        <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
+        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AWV.Aanvankelijkecontrolesmetschending)}
+        </vl-accordion>
+        <vl-accordion data-vl-toggle-text="Instrumentarium">
+        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AWV.Instrumentarium)}
+        </vl-accordion>
+    </vl-accordion-list>
+                </vl-cascader-item>
+            <vl-cascader-item label="Ruimtelijke ordening">
+            <p slot="content">
+            <vl-alert
+            data-cy="alert"
+            data-vl-naked=""
+            data-vl-icon="warning"
+            data-vl-title="Geen bevoegheid"
+            data-vl-type="warning"
+            data-vl-message="Agentschap Wegen en Verkeer heeft geen bevoegheid voor ruimtelijke ordening."
+        >
+        </vl-alert>
+    </p>
+            </vl-cascader-item>
+      </vl-cascader-item>
+
+      <vl-cascader-item label="De Vlaamse Waterweg">
       <vl-cascader-item label="Milieu">
-          <vl-cascader-item label="Klachten">
-          <vl-accordion-list>
-          <vl-accordion data-vl-toggle-text="Accordion 1"> Inhoud accordion 1</vl-accordion>
-          <vl-accordion data-vl-toggle-text="Accordion 2"> Inhoud accordion 2</vl-accordion>
-          <vl-accordion data-vl-toggle-text="Accordion 3"> Inhoud accordion 3</vl-accordion>
-      </vl-accordion-list>
-      
+  <vl-accordion-list slot="content">
+      <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
+      ${this.renderDataSection("Gewestelijke toezichthouders", jsonData.Milieu.DVW.gewestelijkeToezichthouders)}
+      </vl-accordion>
+      <vl-accordion data-vl-toggle-text="Klachten">
+      ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DVW.klachten)}
+      </vl-accordion>
+      <vl-accordion data-vl-toggle-text="Controles">
+      ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DVW.controles)}
+      </vl-accordion>
+      <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
+      ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DVW.Aanvankelijkecontrolesmetschending)}
+      </vl-accordion>
+      <vl-accordion data-vl-toggle-text="Instrumentarium">
+      ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DVW.Instrumentarium)}
+      </vl-accordion>
+  </vl-accordion-list>
               </vl-cascader-item>
-              </vl-cascader-item>
-          <vl-cascader-item label="Ruimtelijke ordening"></vl-cascader-item>
+          <vl-cascader-item label="Ruimtelijke ordening">
+          <p slot="content">
+          <vl-alert
+          data-cy="alert"
+          data-vl-naked=""
+          data-vl-icon="warning"
+          data-vl-title="Geen bevoegheid"
+          data-vl-type="warning"
+          data-vl-message="De Vlaamse Waterweg heeft geen bevoegheid voor ruimtelijke ordening."
+      >
+      </vl-alert>
+  </p>
+          </vl-cascader-item>
     </vl-cascader-item>
-    <vl-cascader-item label="Agentschap Wegen en Verkeer">
-    <vl-cascader-item label="Milieu">
-        <vl-cascader-item label="Klachten">
-          <vl-cascader-item label="Cijfers klachten van 2023" template-type="provincie">
-              <vl-info-tile data-vl-toggleable="" slot="content">
-                  <span slot="title">Meer Info</span>
-                  <span slot="subtitle">Provincie Beschrijving</span>
-                  <div slot="content">
-                  <tbody>
-                          <tr>
-                              <td data-title="Toezichthouders">Toezichthouders</td>
-                              <td data-title="Totaal VTE">91</td>
-                          </tr>
-                          <tr>
-                              <td data-title="Toezichthouders">VTE</td>
-                              <td data-title="Totaal VTE">2,1</td>
-                          </tr>
-                          <tr>
-                          <td data-title="VTEToezicht">VTE toezichthouders </td>
-                          <td data-title="Totaal VTE">2 (relatief 95%)</td>
-                      </tr>
-                      <tr>
-                          <td data-title="VTEToezicht">VTE administratieve en juridische toezichthouders</td>
-                          <td data-title="Totaal VTE">0,1 (relatief 5%)</td>
-                      </tr>
-                      </tbody>
-                  </div>
-              </vl-info-tile>
-            </vl-cascader-item>
-            </vl-cascader-item>
-            </vl-cascader-item>
-        <vl-cascader-item label="Ruimtelijke ordening"></vl-cascader-item>
-  </vl-cascader-item>
-  <vl-cascader-item label="De Vlaamse Waterweg">
-    <vl-cascader-item label="Milieu">
-        <vl-cascader-item label="Klachten">
-          <vl-cascader-item label="Cijfers klachten van 2023" template-type="provincie">
-              <vl-info-tile data-vl-toggleable="" slot="content">
-                  <span slot="title">Meer Info</span>
-                  <span slot="subtitle">Provincie Beschrijving</span>
-                  <div slot="content">
-                  <tbody>
-                  <tr>
-                      <td data-title="Toezichthouders">Toezichthouders</td>
-                      <td data-title="Totaal VTE">91</td>
-                  </tr>
-                  <tr>
-                      <td data-title="Toezichthouders">VTE</td>
-                      <td data-title="Totaal VTE">2,1</td>
-                  </tr>
-                  <tr>
-                  <td data-title="VTEToezicht">VTE toezichthouders </td>
-                  <td data-title="Totaal VTE">2 (relatief 95%)</td>
-              </tr>
-              <tr>
-                  <td data-title="VTEToezicht">VTE administratieve en juridische toezichthouders</td>
-                  <td data-title="Totaal VTE">0,1 (relatief 5%)</td>
-              </tr>
-              </tbody>
-                  </div>
-              </vl-info-tile>
-            </vl-cascader-item>
-            </vl-cascader-item>
-            </vl-cascader-item>
-        <vl-cascader-item label="Ruimtelijke ordening"></vl-cascader-item>
-  </vl-cascader-item>
+
+
+
   <vl-cascader-item label="Departement Mobiliteit en Openbare Werken">
-  <vl-cascader-item label="Milieu">
-      <vl-cascader-item label="Klachten">
-        <vl-cascader-item label="Cijfers klachten van 2023" template-type="provincie">
-            <vl-info-tile data-vl-toggleable="" slot="content">
-                <span slot="title">Meer Info</span>
-                <span slot="subtitle">Provincie Beschrijving</span>
-                <div slot="content">
-                <tbody>
-                <tr>
-                    <td data-title="Toezichthouders">Toezichthouders</td>
-                    <td data-title="Totaal VTE">91</td>
-                </tr>
-                <tr>
-                    <td data-title="Toezichthouders">VTE</td>
-                    <td data-title="Totaal VTE">2,1</td>
-                </tr>
-                <tr>
-                <td data-title="VTEToezicht">VTE toezichthouders </td>
-                <td data-title="Totaal VTE">2 (relatief 95%)</td>
-            </tr>
-            <tr>
-                <td data-title="VTEToezicht">VTE administratieve en juridische toezichthouders</td>
-                <td data-title="Totaal VTE">0,1 (relatief 5%)</td>
-            </tr>
-            </tbody>
-                </div>
-            </vl-info-tile>
-          </vl-cascader-item>
-          </vl-cascader-item>
-          </vl-cascader-item>
-      <vl-cascader-item label="Ruimtelijke ordening"></vl-cascader-item>
-</vl-cascader-item>
-<vl-cascader-item label="Departement Omgeving - afdeling Handhaving">
-  <vl-cascader-item label="Milieu">
-      <vl-cascader-item label="Klachten">
-        <vl-cascader-item label="Cijfers klachten van 2023" template-type="provincie">
-            <vl-info-tile data-vl-toggleable="" slot="content">
-                <span slot="title">Meer Info</span>
-                <span slot="subtitle">Provincie Beschrijving</span>
-                <div slot="content">
-                <tbody>
-                <tr>
-                    <td data-title="Toezichthouders">Toezichthouders</td>
-                    <td data-title="Totaal VTE">91</td>
-                </tr>
-                <tr>
-                    <td data-title="Toezichthouders">VTE</td>
-                    <td data-title="Totaal VTE">2,1</td>
-                </tr>
-                <tr>
-                <td data-title="VTEToezicht">VTE toezichthouders </td>
-                <td data-title="Totaal VTE">2 (relatief 95%)</td>
-            </tr>
-            <tr>
-                <td data-title="VTEToezicht">VTE administratieve en juridische toezichthouders</td>
-                <td data-title="Totaal VTE">0,1 (relatief 5%)</td>
-            </tr>
-            </tbody>
-                </div>
-            </vl-info-tile>
-          </vl-cascader-item>
-          </vl-cascader-item>
-          </vl-cascader-item>
-      <vl-cascader-item label="Ruimtelijke ordening"></vl-cascader-item>
-</vl-cascader-item>
-<vl-cascader-item label="Departement Omgeving - afdeling GOP">
-  <vl-cascader-item label="Milieu">
-      <vl-cascader-item label="Klachten">
-        <vl-cascader-item label="Cijfers klachten van 2023" template-type="provincie">
-            <vl-info-tile data-vl-toggleable="" slot="content">
-                <span slot="title">Meer Info</span>
-                <span slot="subtitle">Provincie Beschrijving</span>
-                <div slot="content">
-                <tbody>
-                <tr>
-                    <td data-title="Toezichthouders">Toezichthouders</td>
-                    <td data-title="Totaal VTE">91</td>
-                </tr>
-                <tr>
-                    <td data-title="Toezichthouders">VTE</td>
-                    <td data-title="Totaal VTE">2,1</td>
-                </tr>
-                <tr>
-                <td data-title="VTEToezicht">VTE toezichthouders </td>
-                <td data-title="Totaal VTE">2 (relatief 95%)</td>
-            </tr>
-            <tr>
-                <td data-title="VTEToezicht">VTE administratieve en juridische toezichthouders</td>
-                <td data-title="Totaal VTE">0,1 (relatief 5%)</td>
-            </tr>
-            </tbody>
-                </div>
-            </vl-info-tile>
-          </vl-cascader-item>
-          </vl-cascader-item>
-          </vl-cascader-item>
-      <vl-cascader-item label="Ruimtelijke ordening"></vl-cascader-item>
-</vl-cascader-item>
-<vl-cascader-item label="Departement Omgeving - afdeling VPO">
-  <vl-cascader-item label="Milieu">
-      <vl-cascader-item label="Klachten">
-        <vl-cascader-item label="Cijfers klachten van 2023" template-type="provincie">
-            <vl-info-tile data-vl-toggleable="" slot="content">
-                <span slot="title">Meer Info</span>
-                <span slot="subtitle">Provincie Beschrijving</span>
-                <div slot="content">
-                <tbody>
-                <tr>
-                    <td data-title="Toezichthouders">Toezichthouders</td>
-                    <td data-title="Totaal VTE">91</td>
-                </tr>
-                <tr>
-                    <td data-title="Toezichthouders">VTE</td>
-                    <td data-title="Totaal VTE">2,1</td>
-                </tr>
-                <tr>
-                <td data-title="VTEToezicht">VTE toezichthouders </td>
-                <td data-title="Totaal VTE">2 (relatief 95%)</td>
-            </tr>
-            <tr>
-                <td data-title="VTEToezicht">VTE administratieve en juridische toezichthouders</td>
-                <td data-title="Totaal VTE">0,1 (relatief 5%)</td>
-            </tr>
-            </tbody>
-                </div>
-            </vl-info-tile>
-          </vl-cascader-item>
-          </vl-cascader-item>
-          </vl-cascader-item>
-      <vl-cascader-item label="Ruimtelijke ordening"></vl-cascader-item>
-</vl-cascader-item>
-<vl-cascader-item label="Openbare Vlaamse Afvalstoffenmaatschappij">
-  <vl-cascader-item label="Milieu">
-      <vl-cascader-item label="Klachten">
-        <vl-cascader-item label="Cijfers klachten van 2023" template-type="provincie">
-            <vl-info-tile data-vl-toggleable="" slot="content">
-                <span slot="title">Meer Info</span>
-                <span slot="subtitle">Provincie Beschrijving</span>
-                <div slot="content">
-                <tbody>
-                          <tr>
-                              <td data-title="Toezichthouders">Toezichthouders</td>
-                              <td data-title="Totaal VTE">91</td>
-                          </tr>
-                          <tr>
-                              <td data-title="Toezichthouders">VTE</td>
-                              <td data-title="Totaal VTE">2,1</td>
-                          </tr>
-                          <tr>
-                          <td data-title="VTEToezicht">VTE toezichthouders </td>
-                          <td data-title="Totaal VTE">2 (relatief 95%)</td>
-                      </tr>
-                      <tr>
-                          <td data-title="VTEToezicht">VTE administratieve en juridische toezichthouders</td>
-                          <td data-title="Totaal VTE">0,1 (relatief 5%)</td>
-                      </tr>
-                      </tbody>
-                </div>
-            </vl-info-tile>
-          </vl-cascader-item>
-          </vl-cascader-item>
-          </vl-cascader-item>
-      <vl-cascader-item label="Ruimtelijke ordening"></vl-cascader-item>
-</vl-cascader-item>
-<vl-cascader-item label="Vlaams Agenschap Zorg en Gezondheid">
-  <vl-cascader-item label="Milieu">
-      <vl-cascader-item label="Klachten">
-        <vl-cascader-item label="Cijfers klachten van 2023" template-type="provincie">
-            <vl-info-tile data-vl-toggleable="" slot="content">
-                <span slot="title">Meer Info</span>
-                <span slot="subtitle">Provincie Beschrijving</span>
-                <div slot="content">
-                <tbody>
-                <tr>
-                    <td data-title="Toezichthouders">Toezichthouders</td>
-                    <td data-title="Totaal VTE">91</td>
-                </tr>
-                <tr>
-                    <td data-title="Toezichthouders">VTE</td>
-                    <td data-title="Totaal VTE">2,1</td>
-                </tr>
-                <tr>
-                <td data-title="VTEToezicht">VTE toezichthouders </td>
-                <td data-title="Totaal VTE">2 (relatief 95%)</td>
-            </tr>
-            <tr>
-                <td data-title="VTEToezicht">VTE administratieve en juridische toezichthouders</td>
-                <td data-title="Totaal VTE">0,1 (relatief 5%)</td>
-            </tr>
-            </tbody>
-                </div>
-            </vl-info-tile>
-          </vl-cascader-item>
-          </vl-cascader-item>
-          </vl-cascader-item>
-      <vl-cascader-item label="Ruimtelijke ordening"></vl-cascader-item>
-</vl-cascader-item>
-<vl-cascader-item label="Vlaamse energie -en Klimaat Agentschap">
-  <vl-cascader-item label="Milieu">
-      <vl-cascader-item label="Klachten">
-        <vl-cascader-item label="Cijfers klachten van 2023" template-type="provincie">
-            <vl-info-tile data-vl-toggleable="" slot="content">
-                <span slot="title">Meer Info</span>
-                <span slot="subtitle">Provincie Beschrijving</span>
-                <div slot="content">
-                <tbody>
-                <tr>
-                    <td data-title="Toezichthouders">Toezichthouders</td>
-                    <td data-title="Totaal VTE">91</td>
-                </tr>
-                <tr>
-                    <td data-title="Toezichthouders">VTE</td>
-                    <td data-title="Totaal VTE">2,1</td>
-                </tr>
-                <tr>
-                <td data-title="VTEToezicht">VTE toezichthouders </td>
-                <td data-title="Totaal VTE">2 (relatief 95%)</td>
-            </tr>
-            <tr>
-                <td data-title="VTEToezicht">VTE administratieve en juridische toezichthouders</td>
-                <td data-title="Totaal VTE">0,1 (relatief 5%)</td>
-            </tr>
-            </tbody>
-                </div>
-            </vl-info-tile>
-          </vl-cascader-item>
-          </vl-cascader-item>
-          </vl-cascader-item>
-      <vl-cascader-item label="Ruimtelijke ordening"></vl-cascader-item>
-</vl-cascader-item>
-<vl-cascader-item label="Vlaamse Landmaatschapij">
-  <vl-cascader-item label="Milieu">
-      <vl-cascader-item label="Klachten">
-        <vl-cascader-item label="Cijfers klachten van 2023" template-type="provincie">
-            <vl-info-tile data-vl-toggleable="" slot="content">
-                <span slot="title">Meer Info</span>
-                <span slot="subtitle">Provincie Beschrijving</span>
-                <div slot="content">
-                <tbody>
-                <tr>
-                    <td data-title="Toezichthouders">Toezichthouders</td>
-                    <td data-title="Totaal VTE">91</td>
-                </tr>
-                <tr>
-                    <td data-title="Toezichthouders">VTE</td>
-                    <td data-title="Totaal VTE">2,1</td>
-                </tr>
-                <tr>
-                <td data-title="VTEToezicht">VTE toezichthouders </td>
-                <td data-title="Totaal VTE">2 (relatief 95%)</td>
-            </tr>
-            <tr>
-                <td data-title="VTEToezicht">VTE administratieve en juridische toezichthouders</td>
-                <td data-title="Totaal VTE">0,1 (relatief 5%)</td>
-            </tr>
-            </tbody>
-                </div>
-            </vl-info-tile>
-          </vl-cascader-item>
-          </vl-cascader-item>
-          </vl-cascader-item>
-      <vl-cascader-item label="Ruimtelijke ordening"></vl-cascader-item>
-</vl-cascader-item>
-<vl-cascader-item label="Vlaamse Milieumaatschappij">
-  <vl-cascader-item label="Milieu">
-      <vl-cascader-item label="Klachten">
-        <vl-cascader-item label="Cijfers klachten van 2023" template-type="provincie">
-            <vl-info-tile data-vl-toggleable="" slot="content">
-                <span slot="title">Meer Info</span>
-                <span slot="subtitle">Provincie Beschrijving</span>
-                <div slot="content">
-                <tbody>
-                <tr>
-                    <td data-title="Toezichthouders">Toezichthouders</td>
-                    <td data-title="Totaal VTE">91</td>
-                </tr>
-                <tr>
-                    <td data-title="Toezichthouders">VTE</td>
-                    <td data-title="Totaal VTE">2,1</td>
-                </tr>
-                <tr>
-                <td data-title="VTEToezicht">VTE toezichthouders </td>
-                <td data-title="Totaal VTE">2 (relatief 95%)</td>
-            </tr>
-            <tr>
-                <td data-title="VTEToezicht">VTE administratieve en juridische toezichthouders</td>
-                <td data-title="Totaal VTE">0,1 (relatief 5%)</td>
-            </tr>
-            </tbody>
-                </div>
-            </vl-info-tile>
+        <vl-cascader-item label="Milieu">
+    <vl-accordion-list slot="content">
+        <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
+        ${this.renderDataSection("Gewestelijke toezichthouders", jsonData.Milieu.DMOW.gewestelijkeToezichthouders)}
+        </vl-accordion>
+        <vl-accordion data-vl-toggle-text="Klachten">
+        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DMOW.klachten)}
+        </vl-accordion>
+        <vl-accordion data-vl-toggle-text="Controles">
+        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DMOW.controles)}
+        </vl-accordion>
+        <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
+        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DMOW.Aanvankelijkecontrolesmetschending)}
+        </vl-accordion>
+        <vl-accordion data-vl-toggle-text="Instrumentarium">
+        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DMOW.Instrumentarium)}
+        </vl-accordion>
+    </vl-accordion-list>
+                </vl-cascader-item>
+            <vl-cascader-item label="Ruimtelijke ordening">
+            <p slot="content">
+            <vl-alert
+            data-cy="alert"
+            data-vl-naked=""
+            data-vl-icon="warning"
+            data-vl-title="Geen bevoegheid"
+            data-vl-type="warning"
+            data-vl-message="Departement Mobiliteit en Openbare Werken heeft geen bevoegheid voor ruimtelijke ordening."
+        >
+        </vl-alert>
+    </p>
+            </vl-cascader-item>
+      </vl-cascader-item>
+
+
+      
+      <vl-cascader-item label="Departement Omgeving - Afdeling Handhavings - Omgevingsinspectie">
+      <vl-cascader-item label="Milieu">
+  <vl-accordion-list slot="content">
+      <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
+      ${this.renderDataSection("Gewestelijke toezichthouders", jsonData.Milieu.DOMGHH.gewestelijkeToezichthouders)}
+      </vl-accordion>
+      <vl-accordion data-vl-toggle-text="Klachten">
+      ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DOMGHH.klachten)}
+      </vl-accordion>
+      <vl-accordion data-vl-toggle-text="Controles">
+      ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DOMGHH.controles)}
+      </vl-accordion>
+      <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
+      ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DOMGHH.Aanvankelijkecontrolesmetschending)}
+      </vl-accordion>
+      <vl-accordion data-vl-toggle-text="Instrumentarium">
+      ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DOMGHH.Instrumentarium)}
+      </vl-accordion>
+  </vl-accordion-list>
+              </vl-cascader-item>
+          <vl-cascader-item label="Ruimtelijke ordening">
+          <vl-accordion-list slot="content">
+      <vl-accordion data-vl-toggle-text="Verbalisanten en stedenbouwkundige inspecteurs en VTE"> 
+      ${this.renderDataSection("Verbalisanten en stedenbouwkundige inspecteurs en VTE", jsonData.Milieu.DOMGHH.gewestelijkeToezichthouders)}</vl-accordion>
+      <vl-accordion data-vl-toggle-text="Klachten">
+      ${this.renderDataSection("Klachten", jsonData.Milieu.DOMGHH.klachten)}
+      </vl-accordion>
+      <vl-accordion data-vl-toggle-text="Controles">
+      ${this.renderDataSection("Controles", jsonData.Milieu.DOMGHH.klachten)}
+      </vl-accordion>
+      <vl-accordion data-vl-toggle-text="Aantal aanvankelijke controles met schending">
+      ${this.renderDataSection("Aantal aanvankelijke controles met schending", jsonData.Milieu.DOMGHH.klachten)}
+      </vl-accordion>
+      <vl-accordion data-vl-toggle-text="Instrumentarium">
+      ${this.renderDataSection("Instrumentarium", jsonData.Milieu.DOMGHH.klachten)}
+      </vl-accordion>
+  </vl-accordion-list>
           </vl-cascader-item>
     </vl-cascader-item>
+
+    
+<vl-cascader-item label="Departement Omgeving - Afdeling VPO">
+<vl-cascader-item label="Milieu">
+<vl-accordion-list slot="content">
+<vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
+${this.renderDataSection("Gewestelijke toezichthouders", jsonData.Milieu.DOMGVPO.gewestelijkeToezichthouders)}
+</vl-accordion>
+<vl-accordion data-vl-toggle-text="Klachten">
+${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DOMGVPO.klachten)}
+</vl-accordion>
+<vl-accordion data-vl-toggle-text="Controles">
+${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DOMGVPO.controles)}
+</vl-accordion>
+<vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
+${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DOMGVPO.Aanvankelijkecontrolesmetschending)}
+</vl-accordion>
+<vl-accordion data-vl-toggle-text="Instrumentarium">
+${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DOMGVPO.Instrumentarium)}
+</vl-accordion>
+</vl-accordion-list>
+        </vl-cascader-item>
+    <vl-cascader-item label="Ruimtelijke ordening">
+    <p slot="content">
+    <vl-alert
+    data-cy="alert"
+    data-vl-naked=""
+    data-vl-icon="info"
+    data-vl-title="Geen bevoegdheid"
+    data-vl-type="info"
+    data-vl-message="Departement Omgeving - Afdeling VPO heeft geen bevoegheid voor ruimtelijke ordening."
+>
+</vl-alert>
+</p>
     </vl-cascader-item>
-    <vl-cascader-item label="Ruimtelijke ordening"></vl-cascader-item>
 </vl-cascader-item>
-<vl-cascader-item label="Vlaamse Wooninspectie">
+
+
+
+
+<vl-cascader-item label="Departement Omgeving - Afdeling GOP">
+        <vl-cascader-item label="Milieu">
+    <vl-accordion-list slot="content">
+        <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
+        ${this.renderDataSection("Gewestelijke toezichthouders", jsonData.Milieu.DOMGGOP.gewestelijkeToezichthouders)}
+        </vl-accordion>
+        <vl-accordion data-vl-toggle-text="Klachten">
+        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DOMGGOP.klachten)}
+        </vl-accordion>
+        <vl-accordion data-vl-toggle-text="Controles">
+        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DOMGGOP.controles)}
+        </vl-accordion>
+        <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
+        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DOMGGOP.Aanvankelijkecontrolesmetschending)}
+        </vl-accordion>
+        <vl-accordion data-vl-toggle-text="Instrumentarium">
+        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DOMGGOP.Instrumentarium)}
+        </vl-accordion>
+    </vl-accordion-list>
+                </vl-cascader-item>
+            <vl-cascader-item label="Ruimtelijke ordening">
+            <p slot="content">
+            <vl-alert
+            data-cy="alert"
+            data-vl-naked=""
+            data-vl-icon="info"
+            data-vl-title="Geen bevoegdheid"
+            data-vl-type="info"
+            data-vl-message="Departement Omgeving - Afdeling GOP heeft geen bevoegheid voor ruimtelijke ordening."
+        >
+        </vl-alert>
+        </p>
+            </vl-cascader-item>
+      </vl-cascader-item>
+      
+
+      
+      <vl-cascader-item label="Openbare Vlaamse Afvalmaatschappij">
+      <vl-cascader-item label="Milieu">
+  <vl-accordion-list slot="content">
+      <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
+      ${this.renderDataSection("Gewestelijke toezichthouders", jsonData.Milieu.OVAM.gewestelijkeToezichthouders)}
+      </vl-accordion>
+      <vl-accordion data-vl-toggle-text="Klachten">
+      ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.OVAM.klachten)}
+      </vl-accordion>
+      <vl-accordion data-vl-toggle-text="Controles">
+      ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.OVAM.controles)}
+      </vl-accordion>
+      <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
+      ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.OVAM.Aanvankelijkecontrolesmetschending)}
+      </vl-accordion>
+      <vl-accordion data-vl-toggle-text="Instrumentarium">
+      ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.OVAM.Instrumentarium)}
+      </vl-accordion>
+  </vl-accordion-list>
+              </vl-cascader-item>
+          <vl-cascader-item label="Ruimtelijke ordening">
+          <p slot="content">
+          <vl-alert
+          data-cy="alert"
+          data-vl-naked=""
+          data-vl-icon="info"
+          data-vl-title="Geen bevoegdheid"
+          data-vl-type="info"
+          data-vl-message="Openbare Vlaamse Afvalmaatschappij heeft geen bevoegheid voor ruimtelijke ordening."
+      >
+      </vl-alert>
+      </p>
+          </vl-cascader-item>
+    </vl-cascader-item>
+
+    
+    <vl-cascader-item label="Vlaams Agenschap Zorg en Gezondheid">
+    <vl-cascader-item label="Milieu">
+<vl-accordion-list slot="content">
+    <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
+    ${this.renderDataSection("Gewestelijke toezichthouders", jsonData.Milieu.ZORG.gewestelijkeToezichthouders)}
+    </vl-accordion>
+    <vl-accordion data-vl-toggle-text="Klachten">
+    ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.ZORG.klachten)}
+    </vl-accordion>
+    <vl-accordion data-vl-toggle-text="Controles">
+    ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.ZORG.controles)}
+    </vl-accordion>
+    <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
+    ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.ZORG.Aanvankelijkecontrolesmetschending)}
+    </vl-accordion>
+    <vl-accordion data-vl-toggle-text="Instrumentarium">
+    ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.ZORG.Instrumentarium)}
+    </vl-accordion>
+</vl-accordion-list>
+            </vl-cascader-item>
+        <vl-cascader-item label="Ruimtelijke ordening">
+        <p slot="content">
+          <vl-alert
+          data-cy="alert"
+          data-vl-naked=""
+          data-vl-icon="info"
+          data-vl-title="Geen bevoegdheid"
+          data-vl-type="info"
+          data-vl-message="Vlaams Agenschap Zorg en Gezondheid heeft geen bevoegheid voor ruimtelijke ordening."
+      >
+      </vl-alert>
+      </p>
+        </vl-cascader-item>
+  </vl-cascader-item>
+
+  <vl-cascader-item label="Vlaamse Energie- en Klimaatmaatschappij">
   <vl-cascader-item label="Milieu">
-      <vl-cascader-item label="Klachten">
-        <vl-cascader-item label="Cijfers klachten van 2023" template-type="provincie">
-            <vl-info-tile data-vl-toggleable="" slot="content">
-                <span slot="title">Meer Info</span>
-                <span slot="subtitle">Provincie Beschrijving</span>
-                <div slot="content">
-                <tbody>
-                <tr>
-                    <td data-title="Toezichthouders">Toezichthouders</td>
-                    <td data-title="Totaal VTE">91</td>
-                </tr>
-                <tr>
-                    <td data-title="Toezichthouders">VTE</td>
-                    <td data-title="Totaal VTE">2,1</td>
-                </tr>
-                <tr>
-                <td data-title="VTEToezicht">VTE toezichthouders </td>
-                <td data-title="Totaal VTE">2 (relatief 95%)</td>
-            </tr>
-            <tr>
-                <td data-title="VTEToezicht">VTE administratieve en juridische toezichthouders</td>
-                <td data-title="Totaal VTE">0,1 (relatief 5%)</td>
-            </tr>
-            </tbody>
-                </div>
-            </vl-info-tile>
+<vl-accordion-list slot="content">
+  <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
+  ${this.renderDataSection("Gewestelijke toezichthouders", jsonData.Milieu.VEKA.gewestelijkeToezichthouders)}
+  </vl-accordion>
+  <vl-accordion data-vl-toggle-text="Klachten">
+  ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.VEKA.klachten)}
+  </vl-accordion>
+  <vl-accordion data-vl-toggle-text="Controles">
+  ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.VEKA.controles)}
+  </vl-accordion>
+  <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
+  ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.VEKA.Aanvankelijkecontrolesmetschending)}
+  </vl-accordion>
+  <vl-accordion data-vl-toggle-text="Instrumentarium">
+  ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.VEKA.Instrumentarium)}
+  </vl-accordion>
+</vl-accordion-list>
           </vl-cascader-item>
+      <vl-cascader-item label="Ruimtelijke ordening">
+      <p slot="content">
+      <vl-alert
+      data-cy="alert"
+      data-vl-naked=""
+      data-vl-icon="info"
+      data-vl-title="Geen bevoegdheid"
+      data-vl-type="info"
+      data-vl-message="Vlaams Energie- en Klimaatagentschap heeft geen bevoegdheid voor ruimtelijke ordening."
+  >
+  </vl-alert>
+  </p>
+      </vl-cascader-item>
+</vl-cascader-item>
+
+
+<vl-cascader-item label="Vlaamse Landmaatschappij">
+      <vl-cascader-item label="Milieu">
+  <vl-accordion-list slot="content">
+      <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
+      ${this.renderDataSection("Gewestelijke toezichthouders", jsonData.Milieu.VLM.gewestelijkeToezichthouders)}
+      </vl-accordion>
+      <vl-accordion data-vl-toggle-text="Klachten">
+      ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.VLM.klachten)}
+      </vl-accordion>
+      <vl-accordion data-vl-toggle-text="Controles">
+      ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.VLM.controles)}
+      </vl-accordion>
+      <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
+      ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.VLM.Aanvankelijkecontrolesmetschending)}
+      </vl-accordion>
+      <vl-accordion data-vl-toggle-text="Instrumentarium">
+      ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.VLM.Instrumentarium)}
+      </vl-accordion>
+  </vl-accordion-list>
+              </vl-cascader-item>
+          <vl-cascader-item label="Ruimtelijke ordening">
+          <p slot="content">
+          <vl-alert
+          data-cy="alert"
+          data-vl-naked=""
+          data-vl-icon="info"
+          data-vl-title="Geen bevoegdheid"
+          data-vl-type="info"
+          data-vl-message="Vlaamse Landmaatschappij heeft geen bevoegdheid voor ruimtelijke ordening."
+      >
+      </vl-alert>
+      </p>
           </vl-cascader-item>
+    </vl-cascader-item>
+
+
+    <vl-cascader-item label="Openbare Vlaamse Milieumaatschappij">
+    <vl-cascader-item label="Milieu">
+<vl-accordion-list slot="content">
+    <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
+    ${this.renderDataSection("Gewestelijke toezichthouders", jsonData.Milieu.VMM.gewestelijkeToezichthouders)}
+    </vl-accordion>
+    <vl-accordion data-vl-toggle-text="Klachten">
+    ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.VMM.klachten)}
+    </vl-accordion>
+    <vl-accordion data-vl-toggle-text="Controles">
+    ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.VMM.controles)}
+    </vl-accordion>
+    <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
+    ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.VMM.Aanvankelijkecontrolesmetschending)}
+    </vl-accordion>
+    <vl-accordion data-vl-toggle-text="Instrumentarium">
+    ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.VMM.Instrumentarium)}
+    </vl-accordion>
+</vl-accordion-list>
+            </vl-cascader-item>
+        <vl-cascader-item label="Ruimtelijke ordening">
+        <vl-accordion-list slot="content">
+        <p slot="content">
+        <vl-alert
+        data-cy="alert"
+        data-vl-naked=""
+        data-vl-icon="info"
+        data-vl-title="Geen bevoegdheid"
+        data-vl-type="info"
+        data-vl-message="Openbare Vlaamse Milieumaatschappij heeft geen bevoegdheid voor ruimtelijke ordening."
+    >
+    </vl-alert>
+    </p>
+        </vl-cascader-item>
+  </vl-cascader-item>
+
+
+  <vl-cascader-item label="Vlaamse Wooninspectie">
+  <vl-cascader-item label="Milieu">
+  <p slot="content">
+  <vl-alert
+  data-cy="alert"
+  data-vl-naked=""
+  data-vl-icon="info"
+  data-vl-title="Geen bevoegdheid"
+  data-vl-type="info"
+  data-vl-message="Vlaamse Wooninspectie heeft geen bevoegdheid voor ruimtelijke ordening."
+>
+</vl-alert>
+</p>
           </vl-cascader-item>
-      <vl-cascader-item label="Ruimtelijke ordening"></vl-cascader-item>
+      <vl-cascader-item label="Ruimtelijke ordening">
+      <vl-accordion-list slot="content">
+  <vl-accordion data-vl-toggle-text="Verbalisanten en stedenbouwkundige inspecteurs en VTE"> 
+  ${this.renderDataSection("Verbalisanten en stedenbouwkundige inspecteurs en VTE", jsonData.Milieu.Wooninspectie.gewestelijkeToezichthouders)}</vl-accordion>
+  <vl-accordion data-vl-toggle-text="Klachten">
+  ${this.renderDataSection("Klachten", jsonData.Milieu.Wooninspectie.klachten)}
+  </vl-accordion>
+  <vl-accordion data-vl-toggle-text="Controles">
+  ${this.renderDataSection("Controles", jsonData.Milieu.Wooninspectie.klachten)}
+  </vl-accordion>
+  <vl-accordion data-vl-toggle-text="Aantal aanvankelijke controles met schending">
+  ${this.renderDataSection("Aantal aanvankelijke controles met schending", jsonData.Milieu.Wooninspectie.klachten)}
+  </vl-accordion>
+  <vl-accordion data-vl-toggle-text="Instrumentarium">
+  ${this.renderDataSection("Instrumentarium", jsonData.Milieu.Wooninspectie.klachten)}
+  </vl-accordion>
+</vl-accordion-list>
+      </vl-cascader-item>
 </vl-cascader-item>
 </vl-cascader>
-
-
 `;
-/*
-      <div is="vl-grid">
-        <div is="vl-column" data-vl-size="12">
-          ${this.tiles.map(tile => html`
-            <vl-qlik-infoblock title="${tile.title}"
-                            icon="business-graph-bar"
-                            .visuals="${tile.vis}"
-                            .connection="${this.connection}">
-              <span>${tile.intro}</span>
-            </vl-qlik-infoblock>
-          `)}
-        </div>
-      </div>`; */
+
   }
 }
 
