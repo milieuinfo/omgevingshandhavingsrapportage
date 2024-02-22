@@ -10,6 +10,7 @@ services:
       - HTTPS_PROXY=${https_proxy}
       - NO_PROXY=${no_proxy}
       - GIT_REPO=${git_repo}
+      - NODE_OPTIONS=--max-old-space-size=8000
       - SKIP_WCT_SAUCE_POSTINSTALL_DOWNLOAD=1
       - artifactory_user=${artifactory_user}
       - artifactory_password=${artifactory_password}
