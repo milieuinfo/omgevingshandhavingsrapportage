@@ -56,21 +56,21 @@
           "id": "MEaraS",
           "height": "300px",
           "visual_type": "barchart",
-          "label": "Trend aantal verbalisanten"
+          "label": "Evolutie aantal handhavers ruimtelijke ordening"
         },
         {
           "type": "visual",
           "id": "QcYhHV",
           "height": "300px",
           "visual_type": "barchart",
-          "label": "Trend verbalisanten per beleidsdomein"
+          "label": "Evolutie aantal handhavers ruimtelijke ordening per beleidsniveau"
         },
         {
           "type": "visual",
           "id": "XWVmLkt",
           "height": "300px",
           "visual_type": "barchart",
-          "label": "Relatief verschil aantal verbalisanten 2023 t.o.v. 2021"
+          "label": "Relatief verschil aantal handhavers ruimtelijke ordening 2023 t.o.v. 2021"
         }
       ],
       [
@@ -79,14 +79,14 @@
           "id": "YKqQfD",
           "height": "300px",
           "visual_type": "linechart",
-          "label": "Trend VTE per bevragingsjaartal"
+          "label": "Evolutie VTE per bevragingsjaartal"
         },
         {
           "type": "visual",
           "id": "RkaVW",
           "height": "300px",
           "visual_type": "piechart",
-          "label": "Aandeel VTE verbalisanten per beleidsdomein"
+          "label": "Aandeel VTE handhavers ruimtelijke ordening per beleidsniveau"
         },
         {
           "type": "visual",
