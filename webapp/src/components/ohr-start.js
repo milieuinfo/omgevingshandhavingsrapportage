@@ -87,12 +87,12 @@ and performing other setup tasks.
     return html`
       <div>
         <p is="vl-introduction">
-          Op deze interactieve website worden de cijfergegevens over de
-          omgevingshandhavingsuitvoering gepubliceerd.
-          Deze data bevatten een input- en outputweergave van de
-          handhavingsactiviteiten in het kader van het DABM en de Vlaamse Codex
-          Ruimtelijke Ordening (VCRO) van de handhavingsactoren in het Vlaamse
-          gewest.
+Het decreet van 5 april 1995 houdende algemene bepalingen inzake milieubeleid (DABM) bepaalt in artikel 16.2.3 dat gegevens over de omgevingshandhavingsuitvoering jaarlijks online worden gepubliceerd.
+Jaarlijks worden de handhavingsactoren in het Vlaamse Gewest op uniforme en gestandaardiseerde wijze bevraagd aangaande hun handhavingsactiviteiten.<br/>
+
+De data gepresenteerd in deze omgevingshandhavingsrapportage zijn de gegevens zoals ze worden aangeleverd door de handhavingsactoren zelf op basis van hun eigen monitoring.
+Deze bevraging levert geen 100% responsgraad op, hetgeen implicaties heeft op de interpreteerbaarheid van de cijfergegevens. 
+Wanneer totalen worden getoond, betreft dit steeds enkel de gerapporteerde en gekende aantallen. Bij analyses van de data dient rekening te worden gehouden met deze beperking.
         </p>
       </div>
       <br/>
