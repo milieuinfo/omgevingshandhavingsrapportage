@@ -64,7 +64,7 @@ class OhrOpkaart extends LitElement {
     <vl-typography>
 
       <li>Milieu: groene kaarten</li>
-      <li>Ruimtelijke ordening: blauwe kaarten</li>
+      <li>Ruimtelijke ordening: oranje kaarten</li>
 
     </vl-typography>
     <br/>
