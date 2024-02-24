@@ -18,7 +18,7 @@
           "id": "BsKZvhx",
           "height": "55px",
           "visual_type": "kpi",
-          "label": "Totaal aanvankelijke controles",
+          "label": "Totaal aanvankelijke milieucontroles",
           "align-label": "center",
           "align-visual": "center"
         },
@@ -28,7 +28,7 @@
           "id": "BsKZvhx",
           "height": "55px",
           "visual_type": "kpi",
-          "label": "Totaal navolgende controles",
+          "label": "Totaal navolgende milieucontroles",
           "align-label": "center",
           "align-visual": "center"
         }
@@ -39,7 +39,7 @@
           "id": "HznGQH",
           "height": "300px",
           "visual_type": "barchart",
-          "label": "Aantal milieucontroles per beleidsdomein"
+          "label": "Aantal milieucontroles per beleidsniveau"
         },
         {
           "type": "visual",
