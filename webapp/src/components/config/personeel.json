@@ -9,14 +9,14 @@
           "id": "jLSHLQ",
           "height": "300px",
           "visual_type": "barchart",
-          "label": "Trend aantal toezichthouders"
+          "label": "Evolutie aantal toezichthouders"
         },
         {
           "type": "visual",
-          "id": "gPg",
+          "id": "PvYLuEa",
           "height": "300px",
-          "visual_type": "barchart",
-          "label": "Trend aantal toezichthouders per beleidsdomein"
+          "visual_type": "linechart",
+          "label": "Evolutie VTE per bevragingsjaartal"
         }
       ],
       [
@@ -25,37 +25,23 @@
           "id": "gPg",
           "height": "300px",
           "visual_type": "barchart",
-          "label": "Trend aantal toezichthouders per beleidsdomein"
+          "label": "Evolutie aantal toezichthouders per beleidsdomein"
         },
+        {
+          "type": "visual",
+          "id": "EKLkm",
+          "height": "300px",
+          "visual_type": "piechart",
+          "label": "Aandeel VTE toezichthouders per beleidsniveau"
+        }
+      ],
+      [
         {
           "type": "visual",
           "id": "jWcwSj",
           "height": "300px",
           "visual_type": "barchart",
           "label": "Relatief verschil aantal toezichthouders 2023 t.o.v. 2021"
-        }
-      ],
-      [
-        {
-          "type": "visual",
-          "id": "PvYLuEa",
-          "height": "300px",
-          "visual_type": "linechart",
-          "label": "Trend VTE per bevragingsjaartal"
-        },
-        {
-          "type": "visual",
-          "id": "EKLkm",
-          "height": "300px",
-          "visual_type": "piechart",
-          "label": "Aandeel VTE toezichthouders per beleidsdomein"
-        },
-        {
-          "type": "visual",
-          "id": "EKLkm",
-          "height": "300px",
-          "visual_type": "piechart",
-          "label": "Aandeel VTE admin/juridisch per beleidsdomein"
         }
       ]
     ]

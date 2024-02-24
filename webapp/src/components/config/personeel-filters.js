@@ -2,14 +2,14 @@ import {
   BELEID,
   JAAR,
   PROVINCIE,
-  GEWEST,
+  GEWESTELIJKEACTOR,
   GEMEENTE
   } from "./qlik_resources.js";
   
     const filtersPersoneel = [
       {
-        name: "Beleidsdomein",
-        id: "Beleidsdomein",
+        name: "Beleidsniveau",
+        id: "Beleidsniveau",
         filter: BELEID
       },
       {
@@ -20,7 +20,7 @@ import {
       {
         name: "Gewest",
         id: "Gewest",
-        filter: GEWEST
+        filter: GEWESTELIJKEACTOR
       },
       {
         name: "Provincie",
