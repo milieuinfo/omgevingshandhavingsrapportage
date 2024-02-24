@@ -14,7 +14,7 @@
           "id": "qXyzy",
           "height": "75px",
           "visual_type": "kpi",
-          "label": "Milieuklachten",
+          "label": "Totaal aantal milieuklachten",
           "align-label": "center",
           "align-visual": "center"
         },
@@ -23,7 +23,7 @@
           "id": "SKfGnd",
           "height": "75px",
           "visual_type": "kpi",
-          "label": "Ruimtelijke ordening klachten",
+          "label": "Totaal aantal ruimtelijke ordening klachten",
           "align-label": "center",
           "align-visual": "center"
         }
@@ -34,7 +34,7 @@
           "id": "yCMeVL",
           "height": "300px",
           "visual_type": "barchart",
-          "label": "Aantal klachten per beleidsdomein"
+          "label": "Aantal klachten per beleidsniveau"
         },
         {
           "type": "visual",
@@ -47,16 +47,17 @@
       [
         {
           "type": "visual",
-          "id": "JAhvwK",
-          "height": "300px",
-          "visual_type": "barchart",
-          "label": "Evolutie klachten per subcategorie"
-        },
-        {
-          "type": "visual",
           "id": "gxnRTE",
           "height": "300px",
           "visual_type": "barchart",
           "label": "Absolute verschil aantal klachten 2023 t.o.v. 2021"
+        },
+        {
+          "type": "visual",
+          "id": "JAhvwK",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Evolutie klachten per thema milieu"
         }
+        
       ]]

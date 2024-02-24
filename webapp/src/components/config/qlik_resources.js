@@ -20,7 +20,7 @@ export const ACTOR = {
 };
 
 export const BELEID = {
-  name: "Beleidsdomein",
+  name: "Beleidsniveau",
   fieldQualifier: "qText",
   field: "[Beleidsdomein]",
   nrOfValues: 1000

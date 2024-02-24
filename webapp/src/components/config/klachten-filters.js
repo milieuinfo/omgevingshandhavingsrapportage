@@ -8,8 +8,8 @@ import {
   
   const filters = [
     {
-      name: "Beleidsdomein",
-      id: "Beleidsdomein",
+      name: "Beleidsniveau",
+      id: "Beleidsniveau",
       filter: BELEID
     },
     {
