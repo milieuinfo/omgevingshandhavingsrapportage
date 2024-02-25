@@ -93,7 +93,7 @@ class OhrGemeente extends LitElement {
 
   __renderSideNavigation() {
     return html`
-    <a is="vl-link-button" href="/gemeenten-analyse">Bekijk de cijfers voor dit thema</a>`;
+    <a is="vl-link-button" href="/gemeenten">Bekijk de cijfers voor dit thema</a>`;
   }
 }
 

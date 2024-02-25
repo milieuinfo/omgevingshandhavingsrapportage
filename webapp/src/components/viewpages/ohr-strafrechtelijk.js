@@ -343,7 +343,7 @@ class OhrStrafrechtelijk extends LitElement {
 
   __renderSideNavigation() {
     return html`
-    <a is="vl-link-button" href="/strafrechtelijk-analyse">Bekijk de cijfers voor dit thema</a>`;
+    <a is="vl-link-button" href="/strafrechtelijk">Bekijk de cijfers voor dit thema</a>`;
   }
 }
 

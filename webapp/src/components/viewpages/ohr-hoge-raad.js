@@ -75,7 +75,7 @@ class OhrHogeRaad extends LitElement {
 
   __renderSideNavigation() {
     return html`    
-    <a is="vl-link-button" href="/hoge-raad-analyse">Bekijk de cijfers voor dit thema</a>`;
+    <a is="vl-link-button" href="/hoge-raad">Bekijk de cijfers voor dit thema</a>`;
   }
 }
 
