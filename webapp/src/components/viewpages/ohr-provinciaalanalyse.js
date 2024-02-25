@@ -33,10 +33,10 @@ class OhrProvincieAnalyse extends LitElement {
     return html`
     <vl-functional-header
     data-vl-back="Terug"
-    data-vl-back-link="/provincie-analyse"
+    data-vl-back-link="/"
     data-vl-title="Provinciale handhavingsactoren"
     data-vl-sub-title="Omgevingshandhavingsrapportage"
-    data-vl-link="/">
+    data-vl-link="/provincie-analyse">
     </vl-functional-header>
       <section is="vl-region">
         <div is="vl-layout">
