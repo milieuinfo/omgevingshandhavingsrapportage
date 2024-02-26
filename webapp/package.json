@@ -1,6 +1,6 @@
 {
   "name": "omgevingshandhavingsrapportage",
-  "version": "0.0.55",
+  "version": "0.0.57",
   "description": "",
   "main": "index.js",
   "type": "module",
@@ -23,12 +23,12 @@
   "author": "fnour",
   "license": "ISC",
   "dependencies": {
-    "@domg-wc/common-utilities": "1.26.0",
-    "@domg-wc/components": "1.26.0",
-    "@domg-wc/elements": "1.26.0",
-    "@domg-wc/qlik": "1.26.0",
-    "@domg-wc/sections": "1.26.0",
-    "@domg/qlik-lib": "1.0.14",
+    "@domg-wc/common-utilities": "1.27.0",
+    "@domg-wc/components": "1.27.0",
+    "@domg-wc/elements": "1.27.0",
+    "@domg-wc/qlik": "1.27.0",
+    "@domg-wc/sections": "1.27.0",
+    "@domg/qlik-lib": "1.0.15",
     "@vaadin/router": "1.7.5",
     "lit": "3.1.2"
   },
