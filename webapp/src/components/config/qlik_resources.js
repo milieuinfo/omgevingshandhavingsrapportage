@@ -40,7 +40,7 @@ export const NIVEAU = {
 };
 
 export const GEWESTELIJKEACTOR = {
-  name: "Gewestelijke actor",
+  name: "Gewest",
   fieldQualifier: "qText",
   field: "[Gewestelijke actor]",
   nrOfValues: 100,

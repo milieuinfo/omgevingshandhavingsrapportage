@@ -1,5 +1,5 @@
 import {
-  BELEID,
+  NIVEAU,
   JAAR,
   PROVINCIE,
   GEWESTELIJKEACTOR,
@@ -10,7 +10,7 @@ import {
       {
         name: "Beleidsniveau",
         id: "Beleidsniveau",
-        filter: BELEID
+        filter: NIVEAU
       },
       {
         name: "Jaartal",
