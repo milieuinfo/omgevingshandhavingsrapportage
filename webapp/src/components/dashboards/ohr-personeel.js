@@ -61,13 +61,13 @@ class OhrPersoneel extends LitElement {
         <br>De cijfers zullen wijzigen naargelang de gekozen filtering.<br></p>
         <p><a href="/download-cijfers-en-meer">Download hier alle cijfers</a></p>
         <vl-info-tile data-vl-toggleable>
-          <span slot="title">Informatie over het gebruik van het dashboard</span>
-          <div slot="content">Het standaard beeld geeft de totale cijfers van 2021 tot en met het voorgaande jaar weer voor de omgevingsinspectie in heel Vlaanderen. <br>
-          Via de filters kan u kiezen om de cijfers van één jaar,  één beleidsniveau of één actor weer te geven.
-          De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk hieronder. Wanneer de gegevens niet gekend zijn, verschijnt “-“ of wordt aangegeven dat de data niet beschikbaar zijn.<br>
-          De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk hieronder. <br>
-          Wanneer de gegevens niet gekend zijn, verschijnt “-“ of wordt aangegeven dat de data niet beschikbaar zijn.</div>
-        </vl-info-tile>
+        <span slot="title">Informatie over het gebruik van het dashboard</span>
+        <div slot="content">Het standaard beeld geeft de totale cijfers van 2021 tot en met het voorgaande jaar weer voor de omgevingsinspectie in heel Vlaanderen. <br>
+        Via de filters kan u kiezen om de cijfers van één jaar,  één beleidsniveau of één actor weer te geven.
+        De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk hieronder. Wanneer de gegevens niet gekend zijn, verschijnt “-“ of wordt aangegeven dat de data niet beschikbaar zijn.<br>
+        De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk hieronder. <br>
+        Wanneer de gegevens niet gekend zijn, verschijnt “-“ of wordt aangegeven dat de data niet beschikbaar zijn.</div>
+      </vl-info-tile>
       </vl-typography>
     `;
   }

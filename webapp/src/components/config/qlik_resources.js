@@ -47,7 +47,7 @@ export const GEWESTELIJKEACTOR = {
 };
 
 export const GEWEST = {
-  name: "Gewestelijke actor",
+  name: "Gewest",
   fieldQualifier: "qText",
   field: "[Gewest]",
   nrOfValues: 100,

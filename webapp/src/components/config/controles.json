@@ -83,57 +83,5 @@
         }
       ]
     ]
-  },
-  "Controles met betrekking tot ruimtelijke ordening": {
-    "order": 2,
-    "label": "Controles omtrent ruimtelijke ordening",
-    "visualisations": [
-      [
-        {
-          "type": "visual",
-          "id": "MEaraS",
-          "height": "300px",
-          "visual_type": "barchart",
-          "label": "Trend aantal verbalisanten"
-        },
-        {
-          "type": "visual",
-          "id": "QcYhHV",
-          "height": "300px",
-          "visual_type": "barchart",
-          "label": "Trend verbalisanten per beleidsdomein"
-        },
-        {
-          "type": "visual",
-          "id": "XWVmLkt",
-          "height": "300px",
-          "visual_type": "barchart",
-          "label": "Relatief verschil aantal verbalisanten 2023 t.o.v. 2021"
-        }
-      ],
-      [
-        {
-          "type": "visual",
-          "id": "YKqQfD",
-          "height": "300px",
-          "visual_type": "linechart",
-          "label": "Trend VTE per bevragingsjaartal"
-        },
-        {
-          "type": "visual",
-          "id": "RkaVW",
-          "height": "300px",
-          "visual_type": "piechart",
-          "label": "Aandeel VTE verbalisanten per beleidsdomein"
-        },
-        {
-          "type": "visual",
-          "id": "MGauwT",
-          "height": "300px",
-          "visual_type": "piechart",
-          "label": "Aandeel VTE admin/juridisch per beleidsdomein"
-        }
-      ]
-    ]
   }
 }

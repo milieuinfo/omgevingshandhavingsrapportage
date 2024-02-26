@@ -87,13 +87,6 @@
           "height": "300px",
           "visual_type": "piechart",
           "label": "Aandeel VTE handhavers ruimtelijke ordening per beleidsniveau"
-        },
-        {
-          "type": "visual",
-          "id": "MGauwT",
-          "height": "300px",
-          "visual_type": "piechart",
-          "label": "Aandeel VTE admin/juridisch per beleidsdomein"
         }
       ]
     ]
