@@ -86,9 +86,10 @@ class OhrDownload extends LitElement {
       <vl-accordion data-vl-icon="file-image" data-vl-default-open
           data-vl-toggle-text="Downloadbare afbeeldingen van geconsolideerd beeld"
           data-vl-toggle-text="Geconsolideerd beeld">
-        <p><a href="#">Download de weergave van 2021</a></p>
-        <p><a href="#">Download de weergave van 2022</a></p>
-        <p><a href="#">Download de weergave van 2023</a></p>
+        <p><a href="datafiles/gew MI.xlsx" download>Download de weergave van 2021</a></p>
+        <p><a href="datafiles/gewest.json" download>Download de weergave van 2022</a></p>
+        <p><a href="datafiles/responsgraad data.csv" download>Download de weergave van 2023</a></p>
+        <p><a href="datafiles/responsgraaddata.zip" download>Download de weergave van 2024</a></p>
       </vl-accordion>`;
   }
 }

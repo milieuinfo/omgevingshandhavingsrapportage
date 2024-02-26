@@ -377,7 +377,7 @@ __renderMeerJarenRapportage() {
         size: 6,
         template: html`
           <div>
-            <a is="vl-doormat" href="/beroepen">
+            <a is="vl-doormat" href="">
               <h2 is="vl-doormat-title">Hoge raad voor de
                 handhavingsuitvoering</h2>
               <div is="vl-doormat-text">
@@ -391,7 +391,7 @@ __renderMeerJarenRapportage() {
         size: 6,
         template: html`
           <div ">
-          <a is="vl-doormat" href="/beroepen">
+          <a is="vl-doormat" href="">
             <h2 is="vl-doormat-title">Strafrechtelijke en bestuurlijke
               vervolgtraject</h2>
             <div is="vl-doormat-text">
