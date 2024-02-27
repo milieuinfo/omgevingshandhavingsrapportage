@@ -132,6 +132,9 @@ class OhrAGewest extends LitElement {
         <vl-accordion data-vl-toggle-text="Instrumentarium">
         ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.Instrumentarium)}
         </vl-accordion>
+        <vl-accordion data-vl-toggle-text="Opmerkingen">
+        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.Opmerkingen)}
+        </vl-accordion>
     </vl-accordion-list>
                 </vl-cascader-item>
             <vl-cascader-item label="Ruimtelijke ordening">

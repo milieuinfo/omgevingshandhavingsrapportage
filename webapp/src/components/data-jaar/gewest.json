@@ -131,7 +131,9 @@
           }
         },
         "Veiligsheidsmaatregel": "220"
-      }
+      },
+      "Opmerkingen":
+      "Contrary to popular belief, Lorem Ipsum is not simply random text"
     },
     "ANB": {
       "gewestelijkeToezichthouders": {
