@@ -73,10 +73,11 @@ class OhrProvincie extends LitElement {
 
   __renderSideNavigation() {
     return html`
+    <a is="vl-link-button" href="/provincie-analyse">Bekijk de cijfers voor dit thema</a><br><br>
     <h5 is="vl-h5" data-vl-alt>Interessante links</h5>
     <ul is="vl-link-list">
     <li is="vl-link-list-item">
-    <a is="vl-link-button" href="/provincie-analyse">Bekijk de cijfers voor dit thema</a>
+   
       </li>
       <li is="vl-link-list-item">
       <a is="vl-link" href="/provincie-op-kaart">Kaartweergave rapportage provincie</a>

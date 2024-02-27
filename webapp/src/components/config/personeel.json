@@ -25,7 +25,7 @@
           "id": "gPg",
           "height": "300px",
           "visual_type": "barchart",
-          "label": "Evolutie aantal toezichthouders per beleidsdomein"
+          "label": "Evolutie aantal toezichthouders per beleidsniveau"
         },
         {
           "type": "visual",

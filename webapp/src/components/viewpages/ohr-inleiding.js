@@ -51,12 +51,12 @@ class OhrInleiding extends LitElement {
     <ul is="vl-link-list">
       <li is="vl-link-list-item">
         <a is="vl-link"
-           href="#">
+           href="/">
            Laatst bekende cijfers per actor
         </a>
       </li>
       <li is="vl-link-list-item">
-        <a is="vl-link" href="#">Analyseer de cijfers</a>
+        <a is="vl-link" href="/">Analyseer de cijfers</a>
       </li>   
       <li is="vl-link-list-item">
         <a is="vl-link"

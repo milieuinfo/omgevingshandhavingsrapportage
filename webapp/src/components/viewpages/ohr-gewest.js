@@ -67,15 +67,16 @@ class OhrGewest extends LitElement {
   }
 
   __renderSideNavigation() {
-    return html`  
+    return html` 
+    <a is="vl-link-button" href="/gewest-analyse">Bekijk de cijfers voor dit thema</a><br><br>
     <h5 is="vl-h5" data-vl-alt>Interessante links</h5>
     <ul is="vl-link-list">
     <li is="vl-link-list-item">
-    <a is="vl-link-button" href="/gewest-analyse">Bekijk de cijfers voor dit thema</a>
+   
       </li>
       <li is="vl-link-list-item">
         <a is="vl-link" href="/">Meerjarenrapportage</a>
-      </li>   
+      </li> 
       <li is="vl-link-list-item">
         <a is="vl-link" href="/download-cijfers-en-meer">Download de cijfers</a>
       </li> 
