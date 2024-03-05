@@ -1,6 +1,6 @@
 import {html, LitElement} from "../common/commons.js";
 import {vlElementsStyle} from "@domg-wc/elements";
-import jsonData from "../data-jaar/gewest.json" assert {type: "json"};
+import jsonData from "../data-jaar/provincie.json" assert {type: "json"};
 
 import "@domg-wc/elements/image";
 import "@domg-wc/elements/grid";
@@ -55,13 +55,13 @@ class OhrProvincieAnalyse extends LitElement {
       </section>`;
   }
 
-  renderDataSection(label, data) {
+  renderDataSection(data) {
     return html`
                         <table is="vl-data-table">
                             <thead>
                                 <tr>
-                                    <th>Instrument</th>
-                                    <th>Waarde</th>
+                                    <th>Onderwerp</th>
+                                    <th>Aantal</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -70,7 +70,7 @@ class OhrProvincieAnalyse extends LitElement {
                                         return html`
                                             <tr>
                                                 <td data-title="${key}">${key}</td>
-                                                <td data-title="${value.value}">${value.value}(relatief ${value.relative})</td>
+                                                <td data-title="${value.value}">${value.value} ( tijdig uitgevoerd: ${value.extra} )</td>
                                             </tr>
                                         `;
                                     } else {
@@ -87,7 +87,6 @@ class OhrProvincieAnalyse extends LitElement {
                         <br>
     `;
 }
-
   __renderPage() {
     return html`
    <vl-cascader>
@@ -95,22 +94,25 @@ class OhrProvincieAnalyse extends LitElement {
         <vl-cascader-item label="Milieu">
     <vl-accordion-list slot="content">
         <vl-accordion data-vl-toggle-text="Provinciegouverneur"> 
-        ${this.renderDataSection("Gewestelijke toezichthouders", jsonData.Milieu.AMDK.gewestelijkeToezichthouders)}
+        <p>Geen opgelegde bestuurlijke maatregelen of veiligsheidsmaatregelen voor provinciegouverneur.</p>
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Provinciale toezichthouders en VTE">
-        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.klachten)}
+        ${this.renderDataSection(jsonData.Antwerpen.Personeel)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Klachten">
-        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.controles)}
+        <p>Aantal milieuklachten zijn niet gekend voor provincie Antwerpen.</p>
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Controles">
-        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.Aanvankelijkecontrolesmetschending)}
+        ${this.renderDataSection(jsonData.Antwerpen.Controles)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.Instrumentarium)}
+        ${this.renderDataSection(jsonData.Antwerpen.Aanvankelijkecontrolesmetschending)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Instrumentarium">
-        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.Instrumentarium)}
+        ${this.renderDataSection(jsonData.Antwerpen.Instrumentarium)}
+        </vl-accordion>
+        <vl-accordion data-vl-toggle-text="Opmerking">
+        <p>Geen opmerkingen.</p>
         </vl-accordion>
     </vl-accordion-list>
                 </vl-cascader-item>
@@ -134,22 +136,25 @@ class OhrProvincieAnalyse extends LitElement {
         <vl-cascader-item label="Milieu">
     <vl-accordion-list slot="content">
     <vl-accordion data-vl-toggle-text="Provinciegouverneur"> 
-    ${this.renderDataSection("Gewestelijke toezichthouders", jsonData.Milieu.AMDK.gewestelijkeToezichthouders)}
+        <p>Geen opgelegde bestuurlijke maatregelen of veiligsheidsmaatregelen voor provinciegouverneur.</p>
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Provinciale toezichthouders en VTE">
-    ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.klachten)}
+    ${this.renderDataSection(jsonData.Limburg.Personeel)}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Klachten">
-    ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.controles)}
+    ${this.renderDataSection(jsonData.Limburg.Klachten)}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Controles">
-    ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.Aanvankelijkecontrolesmetschending)}
+    ${this.renderDataSection(jsonData.Limburg.Controles)}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-    ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.Instrumentarium)}
+    ${this.renderDataSection(jsonData.Limburg.Aanvankelijkecontrolesmetschending)}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Instrumentarium">
-    ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.Instrumentarium)}
+    ${this.renderDataSection(jsonData.Limburg.Instrumentarium)}
+    </vl-accordion>
+    <vl-accordion data-vl-toggle-text="Opmerking">
+        <p>Geen opmerkingen.</p>
     </vl-accordion>
     </vl-accordion-list>
                 </vl-cascader-item>
@@ -172,22 +177,25 @@ class OhrProvincieAnalyse extends LitElement {
         <vl-cascader-item label="Milieu">
     <vl-accordion-list slot="content">
     <vl-accordion data-vl-toggle-text="Provinciegouverneur"> 
-    ${this.renderDataSection("Gewestelijke toezichthouders", jsonData.Milieu.AMDK.gewestelijkeToezichthouders)}
+    <p>Geen opgelegde bestuurlijke maatregelen of veiligsheidsmaatregelen voor provinciegouverneur.</p>
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Provinciale toezichthouders en VTE">
-    ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.klachten)}
+    ${this.renderDataSection(jsonData.OostVlaanderen.Personeel)}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Klachten">
-    ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.controles)}
+    ${this.renderDataSection(jsonData.OostVlaanderen.Klachten)}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Controles">
-    ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.Aanvankelijkecontrolesmetschending)}
+    ${this.renderDataSection(jsonData.OostVlaanderen.Controles)}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-    ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.Instrumentarium)}
+    ${this.renderDataSection(jsonData.OostVlaanderen.Aanvankelijkecontrolesmetschending)}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Instrumentarium">
-    ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.Instrumentarium)}
+    ${this.renderDataSection(jsonData.OostVlaanderen.Instrumentarium)}
+    </vl-accordion>
+    <vl-accordion data-vl-toggle-text="Opmerking">
+        <p>Geen opmerkingen.</p>
     </vl-accordion>
     </vl-accordion-list>
                 </vl-cascader-item>
@@ -210,23 +218,26 @@ class OhrProvincieAnalyse extends LitElement {
       <vl-cascader-item label="Milieu">
   <vl-accordion-list slot="content">
   <vl-accordion data-vl-toggle-text="Provinciegouverneur"> 
-  ${this.renderDataSection("Gewestelijke toezichthouders", jsonData.Milieu.AMDK.gewestelijkeToezichthouders)}
+  <p>Geen opgelegde bestuurlijke maatregelen of veiligsheidsmaatregelen voor provinciegouverneur.</p>
   </vl-accordion>
   <vl-accordion data-vl-toggle-text="Provinciale toezichthouders en VTE">
-  ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.klachten)}
+  ${this.renderDataSection(jsonData.WestVlaanderen.Personeel)}
   </vl-accordion>
   <vl-accordion data-vl-toggle-text="Klachten">
-  ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.controles)}
+  ${this.renderDataSection(jsonData.WestVlaanderen.Klachten)}
   </vl-accordion>
   <vl-accordion data-vl-toggle-text="Controles">
-  ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.Aanvankelijkecontrolesmetschending)}
+  ${this.renderDataSection(jsonData.WestVlaanderen.Controles)}
   </vl-accordion>
   <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-  ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.Instrumentarium)}
+  ${this.renderDataSection(jsonData.WestVlaanderen.Aanvankelijkecontrolesmetschending)}
   </vl-accordion>
   <vl-accordion data-vl-toggle-text="Instrumentarium">
-  ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.Instrumentarium)}
+  ${this.renderDataSection(jsonData.WestVlaanderen.Instrumentarium)}
   </vl-accordion>
+  <vl-accordion data-vl-toggle-text="Opmerking">
+  <p>Geen opmerkingen.</p>
+</vl-accordion>
   </vl-accordion-list>
               </vl-cascader-item>
           <vl-cascader-item label="Ruimtelijke ordening">
@@ -250,23 +261,26 @@ class OhrProvincieAnalyse extends LitElement {
         <vl-cascader-item label="Milieu">
     <vl-accordion-list slot="content">
     <vl-accordion data-vl-toggle-text="Provinciegouverneur"> 
-    ${this.renderDataSection("Gewestelijke toezichthouders", jsonData.Milieu.AMDK.gewestelijkeToezichthouders)}
+    <p>Geen opgelegde bestuurlijke maatregelen of veiligsheidsmaatregelen voor provinciegouverneur.</p>
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Provinciale toezichthouders en VTE">
-    ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.klachten)}
+    ${this.renderDataSection(jsonData.VlaamsBrabant.Personeel)}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Klachten">
-    ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.controles)}
+    ${this.renderDataSection(jsonData.VlaamsBrabant.Klachten)}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Controles">
-    ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.Aanvankelijkecontrolesmetschending)}
+    ${this.renderDataSection(jsonData.VlaamsBrabant.Controles)}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-    ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.Instrumentarium)}
+    ${this.renderDataSection(jsonData.VlaamsBrabant.Aanvankelijkecontrolesmetschending)}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Instrumentarium">
-    ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.Instrumentarium)}
+    ${this.renderDataSection(jsonData.VlaamsBrabant.Instrumentarium)}
     </vl-accordion>
+    <vl-accordion data-vl-toggle-text="Opmerking">
+  <p>Geen opmerkingen.</p>
+</vl-accordion>
     </vl-accordion-list>
                 </vl-cascader-item>
             <vl-cascader-item label="Ruimtelijke ordening">
