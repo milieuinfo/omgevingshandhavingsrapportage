@@ -2,7 +2,7 @@ import {
   NIVEAU,
   JAAR,
   PROVINCIE,
-  GEWESTELIJKEACTOR,
+  GEWEST,
   GEMEENTE
   } from "./qlik_resources.js";
   
@@ -18,9 +18,9 @@ import {
         filter: JAAR
       },
       {
-        name: "Gewest",
+        name: "Gewestelijke actor",
         id: "Gewest",
-        filter: GEWESTELIJKEACTOR
+        filter: GEWEST
       },
       {
         name: "Provincie",

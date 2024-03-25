@@ -64,13 +64,6 @@
           "height": "300px",
           "visual_type": "barchart",
           "label": "Evolutie aantal handhavers ruimtelijke ordening per beleidsniveau"
-        },
-        {
-          "type": "visual",
-          "id": "XWVmLkt",
-          "height": "300px",
-          "visual_type": "barchart",
-          "label": "Relatief verschil aantal handhavers ruimtelijke ordening 2023 t.o.v. 2021"
         }
       ],
       [
@@ -87,6 +80,15 @@
           "height": "300px",
           "visual_type": "piechart",
           "label": "Aandeel VTE handhavers ruimtelijke ordening per beleidsniveau"
+        }
+      ],
+      [
+        {
+          "type": "visual",
+          "id": "XWVmLkt",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Relatief verschil aantal handhavers ruimtelijke ordening 2023 t.o.v. 2021"
         }
       ]
     ]

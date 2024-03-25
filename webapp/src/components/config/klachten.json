@@ -23,7 +23,7 @@
           "id": "SKfGnd",
           "height": "75px",
           "visual_type": "kpi",
-          "label": "Totaal aantal ruimtelijke ordening klachten",
+          "label": "Totaal aantal klachten ruimtelijke ordening",
           "align-label": "center",
           "align-visual": "center"
         }

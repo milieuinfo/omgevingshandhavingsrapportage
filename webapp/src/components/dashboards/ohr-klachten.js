@@ -36,7 +36,7 @@ class OhrKlachten extends LitElement {
             title="Klachten"
             export-id="gxnRTE"
             url="omgevingsloketrapport.omgeving.vlaanderen.be"
-            app-id="fbcfee40-b225-4b8d-a26c-de118747a4c0"
+            app-id="bfc74772-e65e-43ae-9528-4a0f4e75c497"
             .views="${charts}"
             .filters="${filters}"
             @initialized="${() => this.initialized = true}">

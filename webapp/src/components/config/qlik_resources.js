@@ -1,37 +1,30 @@
 export const PROVINCIE = {
-  name: "Provincie",
+  name: "Provinciale actor",
   fieldQualifier: "qText",
   field: "[Provincie]",
-  nrOfValues: 1000
+  nrOfValues: 5
 };
 
 export const JAAR = {
   name: "Jaartal",
   fieldQualifier: "qText",
   field: "[Bevragingsjaartal]",
-  nrOfValues: 1000
+  nrOfValues: 20
 };
 
 export const ACTOR = {
   name: "Actor",
   fieldQualifier: "qText",
   field: "[Actor]",
-  nrOfValues: 1000
+  nrOfValues: 500
 };
 
 export const BELEID = {
   name: "Beleidsniveau",
   fieldQualifier: "qText",
-  field: "[Beleidsdomein]",
-  nrOfValues: 1000
+  field: "[Beleidsniveau]",
+  nrOfValues: 3
 };
-export const KLACHTTYPE = {
-  name: "Klachttype",
-  fieldQualifier: "qText",
-  field: "[Klachttype]",
-  nrOfValues: 1000
-};
-
 export const NIVEAU = {
   name: "Beleidsniveau",
   fieldQualifier: "qText",
@@ -43,21 +36,21 @@ export const GEWESTELIJKEACTOR = {
   name: "Gewest",
   fieldQualifier: "qText",
   field: "[Gewestelijke actor]",
-  nrOfValues: 100,
+  nrOfValues: 20,
 };
 
 export const GEWEST = {
-  name: "Gewest",
+  name: "Gewestelijke actor",
   fieldQualifier: "qText",
   field: "[Gewest]",
-  nrOfValues: 100,
+  nrOfValues: 20,
 };
 
 export const GEMEENTE = {
-  name:"Gemeente",
+  name:"Gemeentelijke actor",
   fieldQualifier: "qText",
   field: "[Gemeente]",
-  nrOfValues: 400,
+  nrOfValues: 350,
 };
 
 export const STATUS = {

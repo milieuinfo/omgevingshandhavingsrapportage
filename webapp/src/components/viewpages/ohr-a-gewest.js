@@ -1,9 +1,6 @@
-import {html, LitElement} from "../common/commons.js";
-import {Qlik} from "@domg/qlik-lib";
-import {vlElementsStyle} from "@domg-wc/elements";
-import viz_gewest from "../config/milieuhandhaving.json" assert {type: "json"};
-import jsonData from "../data-jaar/gewest.json" assert {type: "json"};
-import { VlCascaderComponent } from '@domg-wc/components';
+import { html, LitElement } from "../common/commons.js";
+import { vlElementsStyle } from "@domg-wc/elements";
+import jsonData from "../data-jaar/gewest.json" assert { type: "json" };
 
 import "@domg-wc/elements/image";
 import "@domg-wc/elements/grid";
@@ -14,126 +11,118 @@ import "@domg-wc/qlik/infoblock";
 import "@domg-wc/components/accordion-list";
 import "@domg-wc/components/next/cascader";
 import "@domg-wc/elements/data-table";
+import "@domg-wc/components/spotlight";
 
 class OhrAGewest extends LitElement {
-
   static get styles() {
-    return [
-      ...vlElementsStyle
-    ]
-  }
-
-  static get properties() {
-    return {
-      connected: {type: Boolean}
-    }
+    return [...vlElementsStyle];
   }
 
   constructor() {
     super();
-    this.initialized = false;
-    this.connected = false;
-  }
-
-  async connectedCallback() {
-    this.connection = new Qlik("omgevingsloketrapport.omgeving.vlaanderen.be",
-        "9b0d0715-eee5-41b0-bd90-addafee7e99e");
-    await this.connection.init();
-    this.connection.app.on('closed', () => this.closed = true);
-
-    this.connected = true;
-    super.connectedCallback();
   }
 
   render() {
-    return html`
+    return html` 
     <vl-functional-header
-    data-vl-back="Terug"
-    data-vl-back-link="/gewest"
-    data-vl-title="Gewestelijke handhavingsactoren"
-    data-vl-sub-title="Omgevingshandhavingsrapportage"
-    data-vl-link="/">
-    </vl-functional-header>
+        data-vl-back="Terug"
+        data-vl-back-link="/gewest"
+        data-vl-title="Gewestelijke handhavingsactoren"
+        data-vl-sub-title="Omgevingshandhavingsrapportage"
+        data-vl-link="/">
+      </vl-functional-header>
       <section is="vl-region">
         <div is="vl-layout">
-        <vl-typography>
-        <h2>Raadpleeg laatst bekende cijfers van 2023</h2></vl-typography>
-        <p is="vl-icon-wrapper"><span is="vl-icon" data-vl-icon="calendar"></span><vl-annotation> Laatste wijziging aan de data: 21/02/2024</vl-annotation></p><br>
+          <vl-typography>
+            <h2>Raadpleeg laatst bekende cijfers van 2023</h2></vl-typography>
+          <p is="vl-icon-wrapper">
+            <span is="vl-icon" data-vl-icon="calendar"></span><vl-annotation>
+              Laatste wijziging aan de data: 21/02/2024</vl-annotation>
+          </p>
+          <br/>
 
-    <p is="vl-introduction" data-cy="introduction">
-    Onderstaande weergave geeft een beeld van de bevraging over de cijfers van 2023. Navigeer doorheen de weergave om gericht en efficiënt data te raadplegen.
-    </p><br/>
-    
-<div>
+          <p is="vl-introduction" data-cy="introduction">
+            Onderstaande weergave geeft een beeld van de bevraging over de
+            cijfers van 2023. Navigeer doorheen de weergave om gericht en
+            efficiënt data te raadplegen.
+          </p>
+          <br/>
 
-          ${this.__renderPage()}</div>
+          <div>${this.__renderPage()}</div>
         </div>
       </section>`;
   }
 
-  renderDataSection(label, data) {
+  renderDataSection(data) {
     return html`
-                        <table is="vl-data-table">
-                            <thead>
-                                <tr>
-                                    <th>Instrument</th>
-                                    <th>Waarde</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                ${Object.entries(data).map(([key, value]) => {
-                                    if (typeof value === 'object') {
-                                        return html`
-                                            <tr>
-                                                <td data-title="${key}">${key}</td>
-                                                <td data-title="${value.value}">${value.value}(relatief ${value.relative})</td>
-                                            </tr>
-                                        `;
-                                    } else {
-                                        return html`
-                                            <tr>
-                                                <td data-title="${key}">${key}</td>
-                                                <td data-title="${value.value}">${value}</td>
-                                            </tr>
-                                        `;
-                                    }
-                                })}
-                            </tbody>
-                        </table>
-                        <br>
+      <table is="vl-data-table">
+        <thead>
+          <tr>
+            <th>Onderwerp</th>
+            <th>Aantal</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${Object.entries(data).map(([key, value]) => {
+            if (typeof value === "object") {
+              return html`
+                <tr>
+                  <td data-title="${key}">${key}</td>
+                  <td data-title="${value.value}">
+                    ${value.value}(relatief ${value.relative})
+                  </td>
+                </tr>
+              `;
+            } else {
+              return html`
+                <tr>
+                  <td data-title="${key}">${key}</td>
+                  <td data-title="${value.value}">${value}</td>
+                </tr>
+              `;
+            }
+          })}
+        </tbody>
+      </table>
+      <br />
     `;
-}
+  }
 
   __renderPage() {
-    if (!this.connected) {
-      return html`
-        <vl-loader
-            data-vl-text="Pagina is aan het laden"
-        ></vl-loader>`;
-    }
-
     return html`
    <vl-cascader>
-    <vl-cascader-item label="Agentschap Martieme Dienstverlening en Kust">
+    <vl-cascader-item label="Agentschap Maritieme Dienstverlening en Kust">
         <vl-cascader-item label="Milieu">
     <vl-accordion-list slot="content">
         <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
-        ${this.renderDataSection("Gewestelijke toezichthouders", jsonData.Milieu.AMDK.gewestelijkeToezichthouders)}
+        ${this.renderDataSection(
+          jsonData.Milieu.AMDK.gewestelijkeToezichthouders
+        )}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Klachten">
-        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.klachten)}
+        ${this.renderDataSection(
+          jsonData.Milieu.AMDK.klachten
+        )}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Controles">
-        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.controles)}
+        ${this.renderDataSection(
+          jsonData.Milieu.AMDK.controles
+        )}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.Aanvankelijkecontrolesmetschending)}
+        ${this.renderDataSection(
+          jsonData.Milieu.AMDK.Aanvankelijkecontrolesmetschending
+        )}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Instrumentarium">
-        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.Instrumentarium)}
+        ${this.renderDataSection(
+          jsonData.Milieu.AMDK.Instrumentarium
+        )}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Opmerkingen">
-        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.Opmerkingen)}
+        ${this.renderDataSection(
+          jsonData.Milieu.AMDK.Opmerkingen
+        )}
         </vl-accordion>
     </vl-accordion-list>
                 </vl-cascader-item>
@@ -157,37 +146,53 @@ class OhrAGewest extends LitElement {
         <vl-cascader-item label="Milieu">
     <vl-accordion-list slot="content">
         <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
-        ${this.renderDataSection("Gewestelijke toezichthouders", jsonData.Milieu.ANB.gewestelijkeToezichthouders)}
+        ${this.renderDataSection(
+          jsonData.Milieu.ANB.gewestelijkeToezichthouders
+        )}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Klachten">
-        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.ANB.klachten)}
+        ${this.renderDataSection(
+          jsonData.Milieu.ANB.klachten
+        )}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Controles">
-        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.ANB.controles)}
+        ${this.renderDataSection(
+          jsonData.Milieu.ANB.controles
+        )}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AMDK.Aanvankelijkecontrolesmetschending)}
+        ${this.renderDataSection(
+          jsonData.Milieu.AMDK.Aanvankelijkecontrolesmetschending
+        )}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Instrumentarium">
-        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.ANB.Instrumentarium)}
+        ${this.renderDataSection(
+          jsonData.Milieu.ANB.Instrumentarium
+        )}
         </vl-accordion>
     </vl-accordion-list>
                 </vl-cascader-item>
             <vl-cascader-item label="Ruimtelijke ordening">
             <vl-accordion-list slot="content">
         <vl-accordion data-vl-toggle-text="Verbalisanten en stedenbouwkundige inspecteurs en VTE"> 
-        ${this.renderDataSection("Verbalisanten en stedenbouwkundige inspecteurs en VTE", jsonData.Milieu.ANB.gewestelijkeToezichthouders)}</vl-accordion>
+        ${this.renderDataSection(
+          jsonData.Milieu.ANB.gewestelijkeToezichthouders
+        )}</vl-accordion>
         <vl-accordion data-vl-toggle-text="Klachten">
-        ${this.renderDataSection("Klachten", jsonData.Milieu.ANB.klachten)}
+        ${this.renderDataSection(jsonData.Milieu.ANB.klachten)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Controles">
-        ${this.renderDataSection("Controles", jsonData.Milieu.ANB.klachten)}
+        ${this.renderDataSection(jsonData.Milieu.ANB.klachten)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Aantal aanvankelijke controles met schending">
-        ${this.renderDataSection("Aantal aanvankelijke controles met schending", jsonData.Milieu.ANB.klachten)}
+        ${this.renderDataSection(
+          jsonData.Milieu.ANB.klachten
+        )}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Instrumentarium">
-        ${this.renderDataSection("Instrumentarium", jsonData.Milieu.ANB.klachten)}
+        ${this.renderDataSection(
+          jsonData.Milieu.ANB.klachten
+        )}
         </vl-accordion>
     </vl-accordion-list>
             </vl-cascader-item>
@@ -197,19 +202,29 @@ class OhrAGewest extends LitElement {
         <vl-cascader-item label="Milieu">
     <vl-accordion-list slot="content">
         <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
-        ${this.renderDataSection("Gewestelijke toezichthouders", jsonData.Milieu.AWV.gewestelijkeToezichthouders)}
+        ${this.renderDataSection(
+          jsonData.Milieu.AWV.gewestelijkeToezichthouders
+        )}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Klachten">
-        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AWV.klachten)}
+        ${this.renderDataSection(
+          jsonData.Milieu.AWV.klachten
+        )}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Controles">
-        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AWV.controles)}
+        ${this.renderDataSection(
+          jsonData.Milieu.AWV.controles
+        )}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AWV.Aanvankelijkecontrolesmetschending)}
+        ${this.renderDataSection(
+          jsonData.Milieu.AWV.Aanvankelijkecontrolesmetschending
+        )}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Instrumentarium">
-        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.AWV.Instrumentarium)}
+        ${this.renderDataSection(
+          jsonData.Milieu.AWV.Instrumentarium
+        )}
         </vl-accordion>
     </vl-accordion-list>
                 </vl-cascader-item>
@@ -232,19 +247,29 @@ class OhrAGewest extends LitElement {
       <vl-cascader-item label="Milieu">
   <vl-accordion-list slot="content">
       <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
-      ${this.renderDataSection("Gewestelijke toezichthouders", jsonData.Milieu.DVW.gewestelijkeToezichthouders)}
+      ${this.renderDataSection(
+        jsonData.Milieu.DVW.gewestelijkeToezichthouders
+      )}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Klachten">
-      ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DVW.klachten)}
+      ${this.renderDataSection(
+        jsonData.Milieu.DVW.klachten
+      )}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Controles">
-      ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DVW.controles)}
+      ${this.renderDataSection(
+        jsonData.Milieu.DVW.controles
+      )}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-      ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DVW.Aanvankelijkecontrolesmetschending)}
+      ${this.renderDataSection(
+        jsonData.Milieu.DVW.Aanvankelijkecontrolesmetschending
+      )}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Instrumentarium">
-      ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DVW.Instrumentarium)}
+      ${this.renderDataSection(
+        jsonData.Milieu.DVW.Instrumentarium
+      )}
       </vl-accordion>
   </vl-accordion-list>
               </vl-cascader-item>
@@ -256,32 +281,39 @@ class OhrAGewest extends LitElement {
           data-vl-icon="warning"
           data-vl-title="Geen bevoegheid"
           data-vl-type="warning"
-          data-vl-message="De Vlaamse Waterweg heeft geen bevoegheid voor ruimtelijke ordening."
-      >
+          data-vl-message="De Vlaamse Waterweg heeft geen bevoegheid voor ruimtelijke ordening.">
       </vl-alert>
   </p>
           </vl-cascader-item>
     </vl-cascader-item>
 
-
-
   <vl-cascader-item label="Departement Mobiliteit en Openbare Werken">
         <vl-cascader-item label="Milieu">
     <vl-accordion-list slot="content">
         <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
-        ${this.renderDataSection("Gewestelijke toezichthouders", jsonData.Milieu.DMOW.gewestelijkeToezichthouders)}
+        ${this.renderDataSection(
+          jsonData.Milieu.DMOW.gewestelijkeToezichthouders
+        )}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Klachten">
-        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DMOW.klachten)}
+        ${this.renderDataSection(
+          jsonData.Milieu.DMOW.klachten
+        )}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Controles">
-        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DMOW.controles)}
+        ${this.renderDataSection(
+          jsonData.Milieu.DMOW.controles
+        )}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DMOW.Aanvankelijkecontrolesmetschending)}
+        ${this.renderDataSection(
+          jsonData.Milieu.DMOW.Aanvankelijkecontrolesmetschending
+        )}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Instrumentarium">
-        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DMOW.Instrumentarium)}
+        ${this.renderDataSection(
+          jsonData.Milieu.DMOW.Instrumentarium
+        )}
         </vl-accordion>
     </vl-accordion-list>
                 </vl-cascader-item>
@@ -293,8 +325,7 @@ class OhrAGewest extends LitElement {
             data-vl-icon="warning"
             data-vl-title="Geen bevoegheid"
             data-vl-type="warning"
-            data-vl-message="Departement Mobiliteit en Openbare Werken heeft geen bevoegheid voor ruimtelijke ordening."
-        >
+            data-vl-message="Departement Mobiliteit en Openbare Werken heeft geen bevoegheid voor ruimtelijke ordening.">
         </vl-alert>
     </p>
             </vl-cascader-item>
@@ -306,37 +337,53 @@ class OhrAGewest extends LitElement {
       <vl-cascader-item label="Milieu">
   <vl-accordion-list slot="content">
       <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
-      ${this.renderDataSection("Gewestelijke toezichthouders", jsonData.Milieu.DOMGHH.gewestelijkeToezichthouders)}
+      ${this.renderDataSection(
+        jsonData.Milieu.DOMGHH.gewestelijkeToezichthouders
+      )}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Klachten">
-      ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DOMGHH.klachten)}
+      ${this.renderDataSection(
+        jsonData.Milieu.DOMGHH.klachten
+      )}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Controles">
-      ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DOMGHH.controles)}
+      ${this.renderDataSection(
+        jsonData.Milieu.DOMGHH.controles
+      )}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-      ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DOMGHH.Aanvankelijkecontrolesmetschending)}
+      ${this.renderDataSection(
+        jsonData.Milieu.DOMGHH.Aanvankelijkecontrolesmetschending
+      )}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Instrumentarium">
-      ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DOMGHH.Instrumentarium)}
+      ${this.renderDataSection(
+        jsonData.Milieu.DOMGHH.Instrumentarium
+      )}
       </vl-accordion>
   </vl-accordion-list>
               </vl-cascader-item>
           <vl-cascader-item label="Ruimtelijke ordening">
           <vl-accordion-list slot="content">
       <vl-accordion data-vl-toggle-text="Verbalisanten en stedenbouwkundige inspecteurs en VTE"> 
-      ${this.renderDataSection("Verbalisanten en stedenbouwkundige inspecteurs en VTE", jsonData.Milieu.DOMGHH.gewestelijkeToezichthouders)}</vl-accordion>
+      ${this.renderDataSection(
+        jsonData.Milieu.DOMGHH.gewestelijkeToezichthouders
+      )}</vl-accordion>
       <vl-accordion data-vl-toggle-text="Klachten">
-      ${this.renderDataSection("Klachten", jsonData.Milieu.DOMGHH.klachten)}
+      ${this.renderDataSection(jsonData.Milieu.DOMGHH.klachten)}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Controles">
-      ${this.renderDataSection("Controles", jsonData.Milieu.DOMGHH.klachten)}
+      ${this.renderDataSection(jsonData.Milieu.DOMGHH.klachten)}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Aantal aanvankelijke controles met schending">
-      ${this.renderDataSection("Aantal aanvankelijke controles met schending", jsonData.Milieu.DOMGHH.klachten)}
+      ${this.renderDataSection(
+        jsonData.Milieu.DOMGHH.klachten
+      )}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Instrumentarium">
-      ${this.renderDataSection("Instrumentarium", jsonData.Milieu.DOMGHH.klachten)}
+      ${this.renderDataSection(
+        jsonData.Milieu.DOMGHH.klachten
+      )}
       </vl-accordion>
   </vl-accordion-list>
           </vl-cascader-item>
@@ -347,19 +394,29 @@ class OhrAGewest extends LitElement {
 <vl-cascader-item label="Milieu">
 <vl-accordion-list slot="content">
 <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
-${this.renderDataSection("Gewestelijke toezichthouders", jsonData.Milieu.DOMGVPO.gewestelijkeToezichthouders)}
+${this.renderDataSection(
+  jsonData.Milieu.DOMGVPO.gewestelijkeToezichthouders
+)}
 </vl-accordion>
 <vl-accordion data-vl-toggle-text="Klachten">
-${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DOMGVPO.klachten)}
+${this.renderDataSection(
+  jsonData.Milieu.DOMGVPO.klachten
+)}
 </vl-accordion>
 <vl-accordion data-vl-toggle-text="Controles">
-${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DOMGVPO.controles)}
+${this.renderDataSection(
+  jsonData.Milieu.DOMGVPO.controles
+)}
 </vl-accordion>
 <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DOMGVPO.Aanvankelijkecontrolesmetschending)}
+${this.renderDataSection(
+  jsonData.Milieu.DOMGVPO.Aanvankelijkecontrolesmetschending
+)}
 </vl-accordion>
 <vl-accordion data-vl-toggle-text="Instrumentarium">
-${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DOMGVPO.Instrumentarium)}
+${this.renderDataSection(
+  jsonData.Milieu.DOMGVPO.Instrumentarium
+)}
 </vl-accordion>
 </vl-accordion-list>
         </vl-cascader-item>
@@ -385,19 +442,29 @@ ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DOMGVPO.In
         <vl-cascader-item label="Milieu">
     <vl-accordion-list slot="content">
         <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
-        ${this.renderDataSection("Gewestelijke toezichthouders", jsonData.Milieu.DOMGGOP.gewestelijkeToezichthouders)}
+        ${this.renderDataSection(
+          jsonData.Milieu.DOMGGOP.gewestelijkeToezichthouders
+        )}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Klachten">
-        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DOMGGOP.klachten)}
+        ${this.renderDataSection(
+          jsonData.Milieu.DOMGGOP.klachten
+        )}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Controles">
-        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DOMGGOP.controles)}
+        ${this.renderDataSection(
+          jsonData.Milieu.DOMGGOP.controles
+        )}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DOMGGOP.Aanvankelijkecontrolesmetschending)}
+        ${this.renderDataSection(
+          jsonData.Milieu.DOMGGOP.Aanvankelijkecontrolesmetschending
+        )}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Instrumentarium">
-        ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DOMGGOP.Instrumentarium)}
+        ${this.renderDataSection(
+          jsonData.Milieu.DOMGGOP.Instrumentarium
+        )}
         </vl-accordion>
     </vl-accordion-list>
                 </vl-cascader-item>
@@ -422,19 +489,29 @@ ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DOMGVPO.In
       <vl-cascader-item label="Milieu">
   <vl-accordion-list slot="content">
       <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
-      ${this.renderDataSection("Gewestelijke toezichthouders", jsonData.Milieu.OVAM.gewestelijkeToezichthouders)}
+      ${this.renderDataSection(
+        jsonData.Milieu.OVAM.gewestelijkeToezichthouders
+      )}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Klachten">
-      ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.OVAM.klachten)}
+      ${this.renderDataSection(
+        jsonData.Milieu.OVAM.klachten
+      )}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Controles">
-      ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.OVAM.controles)}
+      ${this.renderDataSection(
+        jsonData.Milieu.OVAM.controles
+      )}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-      ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.OVAM.Aanvankelijkecontrolesmetschending)}
+      ${this.renderDataSection(
+        jsonData.Milieu.OVAM.Aanvankelijkecontrolesmetschending
+      )}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Instrumentarium">
-      ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.OVAM.Instrumentarium)}
+      ${this.renderDataSection(
+        jsonData.Milieu.OVAM.Instrumentarium
+      )}
       </vl-accordion>
   </vl-accordion-list>
               </vl-cascader-item>
@@ -458,19 +535,29 @@ ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DOMGVPO.In
     <vl-cascader-item label="Milieu">
 <vl-accordion-list slot="content">
     <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
-    ${this.renderDataSection("Gewestelijke toezichthouders", jsonData.Milieu.ZORG.gewestelijkeToezichthouders)}
+    ${this.renderDataSection(
+      jsonData.Milieu.ZORG.gewestelijkeToezichthouders
+    )}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Klachten">
-    ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.ZORG.klachten)}
+    ${this.renderDataSection(
+      jsonData.Milieu.ZORG.klachten
+    )}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Controles">
-    ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.ZORG.controles)}
+    ${this.renderDataSection(
+      jsonData.Milieu.ZORG.controles
+    )}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-    ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.ZORG.Aanvankelijkecontrolesmetschending)}
+    ${this.renderDataSection(
+      jsonData.Milieu.ZORG.Aanvankelijkecontrolesmetschending
+    )}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Instrumentarium">
-    ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.ZORG.Instrumentarium)}
+    ${this.renderDataSection(
+      jsonData.Milieu.ZORG.Instrumentarium
+    )}
     </vl-accordion>
 </vl-accordion-list>
             </vl-cascader-item>
@@ -493,19 +580,29 @@ ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DOMGVPO.In
   <vl-cascader-item label="Milieu">
 <vl-accordion-list slot="content">
   <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
-  ${this.renderDataSection("Gewestelijke toezichthouders", jsonData.Milieu.VEKA.gewestelijkeToezichthouders)}
+  ${this.renderDataSection(
+    jsonData.Milieu.VEKA.gewestelijkeToezichthouders
+  )}
   </vl-accordion>
   <vl-accordion data-vl-toggle-text="Klachten">
-  ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.VEKA.klachten)}
+  ${this.renderDataSection(
+    jsonData.Milieu.VEKA.klachten
+  )}
   </vl-accordion>
   <vl-accordion data-vl-toggle-text="Controles">
-  ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.VEKA.controles)}
+  ${this.renderDataSection(
+    jsonData.Milieu.VEKA.controles
+  )}
   </vl-accordion>
   <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-  ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.VEKA.Aanvankelijkecontrolesmetschending)}
+  ${this.renderDataSection(
+    jsonData.Milieu.VEKA.Aanvankelijkecontrolesmetschending
+  )}
   </vl-accordion>
   <vl-accordion data-vl-toggle-text="Instrumentarium">
-  ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.VEKA.Instrumentarium)}
+  ${this.renderDataSection(
+    jsonData.Milieu.VEKA.Instrumentarium
+  )}
   </vl-accordion>
 </vl-accordion-list>
           </vl-cascader-item>
@@ -529,19 +626,29 @@ ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DOMGVPO.In
       <vl-cascader-item label="Milieu">
   <vl-accordion-list slot="content">
       <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
-      ${this.renderDataSection("Gewestelijke toezichthouders", jsonData.Milieu.VLM.gewestelijkeToezichthouders)}
+      ${this.renderDataSection(
+        jsonData.Milieu.VLM.gewestelijkeToezichthouders
+      )}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Klachten">
-      ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.VLM.klachten)}
+      ${this.renderDataSection(
+        jsonData.Milieu.VLM.klachten
+      )}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Controles">
-      ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.VLM.controles)}
+      ${this.renderDataSection(
+        jsonData.Milieu.VLM.controles
+      )}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-      ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.VLM.Aanvankelijkecontrolesmetschending)}
+      ${this.renderDataSection(
+        jsonData.Milieu.VLM.Aanvankelijkecontrolesmetschending
+      )}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Instrumentarium">
-      ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.VLM.Instrumentarium)}
+      ${this.renderDataSection(
+        jsonData.Milieu.VLM.Instrumentarium
+      )}
       </vl-accordion>
   </vl-accordion-list>
               </vl-cascader-item>
@@ -565,19 +672,29 @@ ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DOMGVPO.In
     <vl-cascader-item label="Milieu">
 <vl-accordion-list slot="content">
     <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
-    ${this.renderDataSection("Gewestelijke toezichthouders", jsonData.Milieu.VMM.gewestelijkeToezichthouders)}
+    ${this.renderDataSection(
+      jsonData.Milieu.VMM.gewestelijkeToezichthouders
+    )}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Klachten">
-    ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.VMM.klachten)}
+    ${this.renderDataSection(
+      jsonData.Milieu.VMM.klachten
+    )}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Controles">
-    ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.VMM.controles)}
+    ${this.renderDataSection(
+      jsonData.Milieu.VMM.controles
+    )}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-    ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.VMM.Aanvankelijkecontrolesmetschending)}
+    ${this.renderDataSection(
+      jsonData.Milieu.VMM.Aanvankelijkecontrolesmetschending
+    )}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Instrumentarium">
-    ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.VMM.Instrumentarium)}
+    ${this.renderDataSection(
+      jsonData.Milieu.VMM.Instrumentarium
+    )}
     </vl-accordion>
 </vl-accordion-list>
             </vl-cascader-item>
@@ -615,25 +732,30 @@ ${this.renderDataSection("Cijfers klachten van 2023", jsonData.Milieu.DOMGVPO.In
       <vl-cascader-item label="Ruimtelijke ordening">
       <vl-accordion-list slot="content">
   <vl-accordion data-vl-toggle-text="Verbalisanten en stedenbouwkundige inspecteurs en VTE"> 
-  ${this.renderDataSection("Verbalisanten en stedenbouwkundige inspecteurs en VTE", jsonData.Milieu.Wooninspectie.gewestelijkeToezichthouders)}</vl-accordion>
+  ${this.renderDataSection(
+    jsonData.Milieu.Wooninspectie.gewestelijkeToezichthouders
+  )}</vl-accordion>
   <vl-accordion data-vl-toggle-text="Klachten">
-  ${this.renderDataSection("Klachten", jsonData.Milieu.Wooninspectie.klachten)}
+  ${this.renderDataSection( jsonData.Milieu.Wooninspectie.klachten)}
   </vl-accordion>
   <vl-accordion data-vl-toggle-text="Controles">
-  ${this.renderDataSection("Controles", jsonData.Milieu.Wooninspectie.klachten)}
+  ${this.renderDataSection(jsonData.Milieu.Wooninspectie.klachten)}
   </vl-accordion>
   <vl-accordion data-vl-toggle-text="Aantal aanvankelijke controles met schending">
-  ${this.renderDataSection("Aantal aanvankelijke controles met schending", jsonData.Milieu.Wooninspectie.klachten)}
+  ${this.renderDataSection(
+    jsonData.Milieu.Wooninspectie.klachten
+  )}
   </vl-accordion>
   <vl-accordion data-vl-toggle-text="Instrumentarium">
-  ${this.renderDataSection("Instrumentarium", jsonData.Milieu.Wooninspectie.klachten)}
+  ${this.renderDataSection(
+    jsonData.Milieu.Wooninspectie.klachten
+  )}
   </vl-accordion>
 </vl-accordion-list>
       </vl-cascader-item>
 </vl-cascader-item>
 </vl-cascader>
 `;
-
   }
 }
 
