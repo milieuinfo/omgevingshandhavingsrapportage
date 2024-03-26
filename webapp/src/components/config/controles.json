@@ -1,7 +1,7 @@
 {
   "Controles met betrekking tot milieu": {
     "order": 1,
-    "label": "Controles omtrent milieu",
+    "label": "Milieu: Dashboard",
     "visualisations": [
       [
         {
@@ -86,7 +86,7 @@
   },
   "Controles met betrekking tot ruimtelijke ordening": {
     "order": 2,
-    "label": "Controles omtrent ruimtelijke ordening",
+    "label": "Ruimtelijke ordening: Dashboard",
     "visualisations": [
       [
         {
@@ -169,5 +169,56 @@
         }
       ]
     ]
+  },
+  "Ruimtelijke ordening: Proactieve en reactieve controles": {
+    "order": 3,
+    "label": "Ruimtelijke ordening: Proactieve en reactieve controles",
+    "visualisations": [
+      [
+      {
+        "type": "visual",
+        "id": "QcxsBZ",
+        "height": "55px",
+        "visual_type": "kpi",
+        "label": "Totaal aantal stedenbouwkundige controles",
+        "align-label": "center",
+        "align-visual": "center"
+      },
+      {
+        "type": "visual",
+        "id": "bSUxjz",
+        "height": "55px",
+        "visual_type": "kpi",
+        "label": "Totaal aanvankelijke controles",
+        "align-label": "center",
+        "align-visual": "center"
+      },
+      {
+        "type": "visual",
+        "id": "ggzjP",
+        "height": "55px",
+        "visual_type": "kpi",
+        "label": "Totaal navolgende controles",
+        "align-label": "center",
+        "align-visual": "center"
+      }
+    ],
+    [
+      {
+        "type": "visual",
+        "id": "jea",
+        "height": "400px",
+        "visual_type": "linechart",
+        "label": "Proactieve controles per actor en beleidsniveau"
+      },
+      {
+        "type": "visual",
+        "id": "cmXPHga",
+        "height": "400px",
+        "visual_type": "piechart",
+        "label": "Reactieve controles per actor en beleidsniveau"
+      }
+    ]
+  ]
   }
 }

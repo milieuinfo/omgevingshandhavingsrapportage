@@ -60,19 +60,19 @@
         },
         {
           "type": "visual",
-          "id": "QcYhHV",
+          "id": "YKqQfD",
           "height": "300px",
-          "visual_type": "barchart",
-          "label": "Evolutie aantal handhavers ruimtelijke ordening per beleidsniveau"
+          "visual_type": "linechart",
+          "label": "Evolutie VTE per bevragingsjaartal"
         }
       ],
       [
         {
           "type": "visual",
-          "id": "YKqQfD",
+          "id": "QcYhHV",
           "height": "300px",
-          "visual_type": "linechart",
-          "label": "Evolutie VTE per bevragingsjaartal"
+          "visual_type": "barchart",
+          "label": "Evolutie aantal handhavers ruimtelijke ordening per beleidsniveau"
         },
         {
           "type": "visual",
