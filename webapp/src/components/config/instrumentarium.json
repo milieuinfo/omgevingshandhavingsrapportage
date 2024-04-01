@@ -1,0 +1,235 @@
+{
+  "Milieu": {
+    "order": 1,
+    "label": "Milieu",
+    "visualisations": [
+      [
+        {
+          "type": "visual",
+          "id": "WbMQyaJ",
+          "height": "55px",
+          "visual_type": "kpi",
+          "label": "Totaal aantal raadgevingen",
+          "align-label": "center",
+          "align-visual": "center"
+        },
+        {
+          "type": "visual",
+          "id": "NmhGmXD",
+          "height": "55px",
+          "visual_type": "kpi",
+          "label": "Totaal aantal aanmaningen",
+          "align-label": "center",
+          "align-visual": "center"
+        },
+
+        {
+          "type": "visual",
+          "id": "hjVgys",
+          "height": "55px",
+          "visual_type": "kpi",
+          "label": "Totaal aantal proces-verbalen",
+          "align-label": "center",
+          "align-visual": "center"
+        },
+        {
+          "type": "visual",
+          "id": "KQPjSb",
+          "height": "55px",
+          "visual_type": "kpi",
+          "label": "Totaal aantal verslagen van vaststelling",
+          "align-label": "center",
+          "align-visual": "center"
+        },
+        {
+          "type": "visual",
+          "id": "dgNuKf",
+          "height": "55px",
+          "visual_type": "kpi",
+          "label": "Totaal aantal bestuurlijke maatregelen",
+          "align-label": "center",
+          "align-visual": "center"
+        },
+        {
+          "type": "visual",
+          "id": "azPSVT",
+          "height": "55px",
+          "visual_type": "kpi",
+          "label": "Totaal aantal veiligsheidsmaatregelen",
+          "align-label": "center",
+          "align-visual": "center"
+        }
+      ],
+      [
+        {
+          "type": "visual",
+          "id": "UqUhSvX",
+          "height": "300px",
+          "visual_type": "linechart",
+          "label": "Evolutie uitgevoerde instrumenten per bevragingsjaartal en beleidsniveau"
+        },
+        {
+          "type": "visual",
+          "id": "jfMZn",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Uitgevoerde instrumenten per bevraginsjaartal"
+        }
+      ],
+      [
+        
+        {
+          "type": "visual",
+          "id": "mnNYJg",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Absolute verschil tussen 2023 tov 2021"
+        },
+        {
+          "type": "visual",
+          "id": "MTtweGq",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Verhouding zachte instrumenten tov repressieve instrumenten"
+        }
+      ]
+    ]
+  },
+  "Ruimtelijke ordening": {
+    "order": 2,
+    "label": "Ruimtelijke ordening",
+    "visualisations": [
+      [
+        {
+          "type": "visual",
+          "id": "QcxsBZ",
+          "height": "55px",
+          "visual_type": "kpi",
+          "label": "Totaal aantal stedenbouwkundige controles",
+          "align-label": "center",
+          "align-visual": "center"
+        },
+        {
+          "type": "visual",
+          "id": "bSUxjz",
+          "height": "55px",
+          "visual_type": "kpi",
+          "label": "Totaal aanvankelijke controles",
+          "align-label": "center",
+          "align-visual": "center"
+        },
+
+        {
+          "type": "visual",
+          "id": "ggzjP",
+          "height": "55px",
+          "visual_type": "kpi",
+          "label": "Totaal navolgende controles",
+          "align-label": "center",
+          "align-visual": "center"
+        }
+      ],
+      [
+        {
+          "type": "visual",
+          "id": "stTYks",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Aantal stedenbouwkundige controles per beleidsniveau"
+        },
+        {
+          "type": "visual",
+          "id": "hsfXY",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Evolutie stedenbouwkundige controles per beleidsniveau"
+        }
+      ],
+      [
+        {
+          "type": "visual",
+          "id": "rZmqc",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Stijging of daling totaal aantal stedenbouwkundige controles 2021 t.o.v. 2023"
+        }
+      ],
+      [
+          {
+            "type": "visual",
+            "id": "yMzvwNK",
+            "height": "300px",
+            "visual_type": "linechart",
+            "label": "Evolutie proactief vs reactieve stedenbouwkundige controles"
+          }
+      ],
+      [
+        {
+          "type": "visual",
+          "id": "jea",
+          "height": "400px",
+          "visual_type": "linechart",
+          "label": "Proactieve controles per actor en beleidsniveau"
+        },
+        {
+          "type": "visual",
+          "id": "cmXPHga",
+          "height": "400px",
+          "visual_type": "piechart",
+          "label": "Reactieve controles per actor en beleidsniveau"
+        }
+      ]
+    ]
+  },
+  "Ruimtelijke ordening: Proactieve en reactieve controles": {
+    "order": 3,
+    "label": "Ruimtelijke ordening: Proactieve en reactieve controles",
+    "visualisations": [
+      [
+      {
+        "type": "visual",
+        "id": "QcxsBZ",
+        "height": "55px",
+        "visual_type": "kpi",
+        "label": "Totaal aantal stedenbouwkundige controles",
+        "align-label": "center",
+        "align-visual": "center"
+      },
+      {
+        "type": "visual",
+        "id": "bSUxjz",
+        "height": "55px",
+        "visual_type": "kpi",
+        "label": "Totaal aanvankelijke controles",
+        "align-label": "center",
+        "align-visual": "center"
+      },
+      {
+        "type": "visual",
+        "id": "ggzjP",
+        "height": "55px",
+        "visual_type": "kpi",
+        "label": "Totaal navolgende controles",
+        "align-label": "center",
+        "align-visual": "center"
+      }
+    ],
+    [
+      {
+        "type": "visual",
+        "id": "jea",
+        "height": "400px",
+        "visual_type": "linechart",
+        "label": "Proactieve controles per actor en beleidsniveau"
+      },
+      {
+        "type": "visual",
+        "id": "cmXPHga",
+        "height": "400px",
+        "visual_type": "piechart",
+        "label": "Reactieve controles per actor en beleidsniveau"
+      }
+    ]
+  ]
+  }
+}

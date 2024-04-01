@@ -64,6 +64,10 @@ and performing other setup tasks.
               },
               {
                 size: 12,
+                template: this.__renderStaticNumbersKPI2(),
+              },
+              {
+                size: 12,
                 template: this.__renderMeerJarenRapportage(),
               },
               {
@@ -74,6 +78,7 @@ and performing other setup tasks.
                 size: 12,
                 template: this.__renderOpKaart(),
               },
+              
               {
                 size: 12,
                 template: this.__renderMeerInfo(),
@@ -205,6 +210,58 @@ Wanneer totalen worden getoond, betreft dit steeds enkel de gerapporteerde en ge
   )
   }`
 }
+
+__renderStaticNumbersKPI2() {
+  return html`${renderStack(
+    {
+      size: 4,
+      template: html`
+      <vl-spotlight
+      data-vl-img-src="images/consolm.jpg"
+      data-vl-img-alt="spotlight image">
+      <span slot="title"> Geconsolideerd beeld milieu </span>
+      <span slot="subtitle">Op basis van de cijfers van 2023</span>
+      <span slot="text">
+          De bovenstaande infographic geeft een overzicht van de verschillende instrumenten binnen het milieubeleid voor de gewesten.<br>
+          <p><a href="images/infographic_milieu_gewestelijk_def.png" download>Download bovenstaande infographic</a></p>
+      </span>
+    </vl-spotlight>
+      `
+    },
+    {
+      size: 4,
+      template: html`
+      <vl-spotlight
+      data-vl-img-src="images/consolm.jpg"
+      data-vl-img-alt="spotlight image">
+      <span slot="title"> Geconsolideerd beeld ruimtelijke ordening </span>
+      <span slot="subtitle">Op basis van de cijfers van 2023</span>
+      <span slot="text">
+          De bovenstaande infographic geeft een overzicht van de verschillende instrumenten binnen het milieubeleid voor de gewesten.<br>
+          <p><a href="images/infographic_milieu_gewestelijk_def.png" download>Download bovenstaande infographic</a></p>
+      </span>
+    </vl-spotlight>
+      `
+    },
+    {
+      size: 4,
+      template: html`
+      <vl-spotlight
+      data-vl-img-src="images/consolm.jpg"
+      data-vl-img-alt="spotlight image">
+      <span slot="title">Download de cijfers</span>
+      <span slot="subtitle">Op basis van de cijfers van 2023</span>
+      <span slot="text">
+          De bovenstaande infographic geeft een overzicht van de verschillende instrumenten binnen het milieubeleid voor de gewesten.<br>
+          <p><a href="images/infographic_milieu_gewestelijk_def.png" download>Download bovenstaande infographic</a></p>
+      </span>
+    </vl-spotlight>
+      `
+    }
+)
+}`
+}
+
 
 __renderJaarRapportage() {
   return renderStack(
@@ -363,7 +420,7 @@ __renderMeerJarenRapportage() {
         size: 6,
         template: html`
           <div>
-            <a is="vl-doormat" href="/instrementarium">
+            <a is="vl-doormat" href="/instrumentarium">
               <h2 is="vl-doormat-title">Instrumentarium</h2>
               <div is="vl-doormat-text">
                 Een weergave van het instrumentarium dat ingezet wordt door de

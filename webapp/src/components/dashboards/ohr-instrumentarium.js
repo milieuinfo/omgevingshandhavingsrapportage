@@ -1,7 +1,7 @@
 import {html, LitElement} from "../common/commons.js";
 
-import viz_klachten from "../config/klachten.json" assert {type: "json"};
-import filters from "../config/klachten-filters.js";
+import viz from "../config/instrumentarium.json" assert {type: "json"};
+import filters from "../config/instrumentarium-filters.js";
 
 import "@domg-wc/components/functional-header";
 import "@domg-wc/components/typography";
@@ -34,9 +34,9 @@ class OhrInstrumentarium extends LitElement {
         <vl-qlik-dashboard-page
             title="Instrumentarium"
             url="omgevingsloketrapport.omgeving.vlaanderen.be"
-            app-id="cb35931b-212b-4003-bf44-484e23fcc6e7"
-            selected-view="gewest"
-            .views="${viz_klachten}"
+            app-id="4e2b7e4c-70df-4e58-a44d-234e18cb0739"
+            selected-view="Milieu"
+            .views="${viz}"
             .filters="${filters}"
             @initialized="${() => this.initialized = true}">
           ${this.__renderIntroduction()}

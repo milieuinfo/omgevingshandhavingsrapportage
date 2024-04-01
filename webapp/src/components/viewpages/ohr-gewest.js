@@ -124,7 +124,6 @@ class OhrGewest extends LitElement {
     </span>
 </vl-spotlight>
     `
-    
   }
 
   __renderTable() {
