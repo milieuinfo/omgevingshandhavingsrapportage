@@ -12,6 +12,7 @@ import "./ohr-cookie.js";
 import "./dashboards/ohr-klachten.js";
 import "./dashboards/ohr-controles.js";
 import "./dashboards/ohr-instrumentarium.js";
+import "./dashboards/ohr-hogeraad.js";
 import "./ohr-accessibility.js";
 import "./ohr-privacy.js";
 import "./ohr-view404.js";
@@ -78,6 +79,7 @@ class OhrApp extends LitElement {
       {path: "/provincie", component: "ohr-provincie"},
       {path: "/hoge-raad", component: "ohr-hogeraad"},
       {path: "/hoge-raad-analyse", component: "ohr-hogeraadanalyse"},
+      {path: "/hogeraad", component: "ohr-hogeraaddashboard"},
       {path: "/strafrechtelijk", component: "ohr-strafrechtelijk"},
       {path: "/strafrechtelijk-analyse",component: "ohr-strafrechtelijkanalyse"},
       {path: "/gemeenten-analyse", component: "ohr-gemeentenanalyse"},

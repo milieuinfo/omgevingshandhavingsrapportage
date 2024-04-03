@@ -1,0 +1,61 @@
+{
+    "Instroom": {
+      "order": 1,
+      "label": "Instroom",
+      "visualisations": [
+        [
+        {
+          "type": "visual",
+          "id": "JwDubYJ",
+          "height": "400px",
+          "visual_type": "barchart",
+          "label": "Totaal aantal voor instroom"
+        }
+      ]
+    ]
+    },
+    "Behandeling - bindende adviezen": {
+      "order": 2,
+      "label": "Behandeling - bindende adviezen",
+      "visualisations": [
+        [
+        {
+          "type": "visual",
+          "id": "HZdrm",
+          "height": "400px",
+          "visual_type": "barchart",
+          "label": "Totaal aantal behandeling - bindende adviezen"
+        }
+    ]
+      ]
+    },
+    "Adviezen": {
+      "order": 3,
+      "label": "Adviezen",
+      "visualisations": [
+        [
+        {
+          "type": "visual",
+          "id": "fsJRSj",
+          "height": "400px",
+          "visual_type": "barchart",
+          "label": "Totaal aantal adviezen"
+        }
+      ]]
+    },
+    "Bemiddelingsopdrachten": {
+      "order": 4,
+      "label": "Bemiddelingsopdrachten",
+      "visualisations": [
+        [
+        {
+          "type": "visual",
+          "id": "HNPUSU",
+          "height": "400px",
+          "visual_type": "barchart",
+          "label": "Totaal aantal bemiddelingsopdrachten"
+        }
+      ]]
+    }
+  }
+  

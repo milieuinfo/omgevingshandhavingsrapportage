@@ -1,19 +1,91 @@
 [
   {
-    "label": "Responsgraad",
-    "value": "https://app.everviz.com/embed/I583LIUYa/?v=2",
+    "label": "Algemeen - Responsgraad",
+    "value": "https://app.everviz.com/embed/XiBKnfQyp/?v=4",
     "selected": true
   },
   {
-    "label": "Milieu - Aanmaningen",
-    "value": "https://datawrapper.dwcdn.net/edCAt/2/"
-  },
-  {
     "label": "Milieu - Toezichthouders",
-    "value": "https://datawrapper.dwcdn.net/kee7l/3/"
+    "value": "https://app.everviz.com/embed/GwPGDsJF9/?v=27"
   },
   {
-    "label": "Milieu - PV",
-    "value": "https://datawrapper.dwcdn.net/ap4yA/3/"
-  }
+    "label": "Milieu - VTE",
+    "value": "https://app.everviz.com/embed/zkYG55Amo/?v=7"
+  },
+  {
+    "label": "Milieu - Klachten",
+    "value": "https://app.everviz.com/embed/hFkL03HkH/?v=5"
+  },
+  {
+    "label": "Milieu - Controles",
+    "value": "https://app.everviz.com/embed/9ZhphKCZd/?v=4"
+  },
+  {
+    "label": "Milieu - Aanvankelijke controles met schending",
+    "value": "https://app.everviz.com/embed/vDHbW-3Jm/?v=3"
+  },
+  {
+    "label": "Milieu - Raadgevingen",
+    "value": "https://app.everviz.com/embed/0r_LNgWEO/?v=3"
+  },
+  {
+    "label": "Milieu - Aanmaningen",
+    "value": "https://app.everviz.com/embed/lFqhwxM_N/?v=4"
+  },
+  {
+    "label": "Milieu - Proces-verbaal",
+    "value": "https://app.everviz.com/embed/qDxiZm0xn/?v=4"
+  },
+  {
+    "label": "Milieu - Verslag van vaststelling",
+    "value": "https://app.everviz.com/embed/xWRoM3Y4a/?v=3"
+  },
+  {
+    "label": "Milieu - Bestuurlijke maatregelen",
+    "value": "https://app.everviz.com/embed/zxvaMFBDC/?v=4"
+  },
+  {
+    "label": "Ruimtelijke ordening - Verbalisanten/stedenbouwkundig inspecteurs",
+    "value": "https://app.everviz.com/embed/Wy8yIQVfM/?v=6"
+  },
+  {
+    "label": "Ruimtelijke ordening - VTE",
+    "value": "https://app.everviz.com/embed/gCDmO1tM3/?v=5"
+  },
+  {
+    "label": "Ruimtelijke ordening - Klachten",
+    "value": "https://app.everviz.com/embed/l4MzRQiSw/?v=5"
+  },
+  {
+    "label": "Ruimtelijke ordening - Controles",
+    "value": "https://app.everviz.com/embed/EDgZp16Mb/?v=3"
+  },
+  {
+    "label": "Ruimtelijke ordening - Aanvankelijke controles met schending",
+    "value": "https://app.everviz.com/embed/RdKVqksI5/?v=3"
+  },
+  {
+    "label": "Ruimtelijke ordening - Raadgevingen",
+    "value": "https://app.everviz.com/embed/bCKT9fVBW/?v=3"
+  },
+  {
+    "label": "Ruimtelijke ordening - Aanmaningen",
+    "value": "https://app.everviz.com/embed/devzg_Lgl/?v=3"
+  },
+  {
+    "label": "Ruimtelijke ordening - Proces-verbaal",
+    "value": "https://app.everviz.com/embed/RqnOW7VmQ/?v=3"
+  },
+  {
+    "label": "Ruimtelijke ordening - Verslag van vaststelling",
+    "value": "https://app.everviz.com/embed/uMIp9ZNAO/?v=3"
+  },
+  {
+    "label": "Ruimtelijke ordening - Stakingsbevelen",
+    "value": "https://app.everviz.com/embed/Mk4X4K2kM/?v=3"
+  },
+  {
+    "label": "Ruimtelijke ordening - Bestuurlijke maatregel",
+    "value": "https://app.everviz.com/embed/ecOmbSXoJ/?v=3"
+  }  
 ]

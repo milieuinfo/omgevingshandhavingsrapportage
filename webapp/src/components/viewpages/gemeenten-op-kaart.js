@@ -43,7 +43,7 @@ class OhrOpkaart extends LitElement {
   __renderViewSelector() {
     return html`
     <vl-typography><b>
-    Kies hieronder uw keuze omtrent een handhavingsthema:</b></vl-typography>
+    Kies hieronder een handhavingsthema voor een kaartweergave:</b></vl-typography>
       <select id="viewselector" is="vl-select" data-vl-select @change="${this.__changeView}">
       </select>
     `;
@@ -53,7 +53,7 @@ class OhrOpkaart extends LitElement {
     return html`
     <!--
     <h3 is="vl-h3" data-alt>Geselecteerde kaart: ${this.selectedChoiceLabel}</h2>-->
-    <iframe class="everviz-iframe" src="${this.selectedChoiceUrl}" width="800px" height="450px"></iframe>`;
+    <iframe class="everviz-iframe" src="${this.selectedChoiceUrl}" width="100%" height="450px"></iframe>`;
   }
 
   __renderIntroductionOfMaps() {
@@ -68,7 +68,7 @@ class OhrOpkaart extends LitElement {
 
     </vl-typography>
     <br/>
-    <p>De kleurgradaties wijzen op de aantalllen in de gemeenten
+    <p>De kleurgradaties wijzen op de aantallen in de gemeenten
       per 1.000 inwoners. </p>
     <br/>
 
@@ -139,13 +139,14 @@ class OhrOpkaart extends LitElement {
               template: this.__renderSideNavigation(),
             },
             {
-                size: 8,
+                size: 12,
                 template: this.__renderViewSelector(),
             },
             {
                 size: 12,
                 template: this.__renderEverVizKaart()
-            })}
+            }
+            )}
         </div>
       </section>`;
   }

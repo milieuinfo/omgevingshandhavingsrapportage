@@ -232,15 +232,16 @@ __renderStaticNumbersKPI2() {
       size: 4,
       template: html`
       <vl-spotlight
-      data-vl-img-src="images/consolm.jpg"
+      data-vl-img-src="images/infographic_ro_gewestelijk_def.png"
       data-vl-img-alt="spotlight image">
       <span slot="title"> Geconsolideerd beeld ruimtelijke ordening </span>
       <span slot="subtitle">Op basis van de cijfers van 2023</span>
       <span slot="text">
-          De bovenstaande infographic geeft een overzicht van de verschillende instrumenten binnen het milieubeleid voor de gewesten.<br>
-          <p><a href="images/infographic_milieu_gewestelijk_def.png" download>Download bovenstaande infographic</a></p>
+      De bovenstaande infographic geeft een overzicht van de verschillende instrumenten binnen het ruimtelijke ordening beleid voor de gewesten.<br>
+      <p><a href="images/infographic_ro_gewestelijk_def.png" download>Download bovenstaande infographic</a></p>
       </span>
-    </vl-spotlight>
+  </vl-spotlight>
+      
       `
     },
     {
@@ -434,7 +435,7 @@ __renderMeerJarenRapportage() {
         size: 6,
         template: html`
           <div>
-            <a is="vl-doormat" href="">
+            <a is="vl-doormat" href="/hogeraad">
               <h2 is="vl-doormat-title">Hoge raad voor de
                 handhavingsuitvoering</h2>
               <div is="vl-doormat-text">
