@@ -67,3 +67,11 @@ export const PROVVRAGEN = {
   nrOfValues: 400,
 }
 
+export const INSTROOM = {
+
+  name: "Instroom",
+  fieldQualifier: "qText",
+  field: "[Instroom]",
+  nrOfValues: 10,
+}
+

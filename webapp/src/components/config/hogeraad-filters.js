@@ -1,5 +1,6 @@
 import {
-    JAAR
+    JAAR,
+    INSTROOM
     } from "./qlik_resources.js";
     
     const filters = [
@@ -7,7 +8,12 @@ import {
         name: "Jaartal",
         id: "Jaartal",
         filter: JAAR
-      }
+      },
+        {
+          name: "Instroom",
+          id: "Instroom",
+          filter: INSTROOM
+        }
     ]
 
   

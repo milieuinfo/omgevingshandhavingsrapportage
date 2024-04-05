@@ -54,11 +54,11 @@ class OhrGewest extends LitElement {
               },
               {
                 size:4,
-                template: this.__renderConsolidatedBeeld()
+                template: this.__renderConsolidatedBeeld(),
               },
               {
                 size:4,
-                template: this.__renderConsolidatedBeeldro()
+                template: this.__renderConsolidatedBeeldro(),
               }
               
           )}

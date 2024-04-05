@@ -62,10 +62,7 @@ and performing other setup tasks.
                 size: 12,
                 template: this.__renderStaticNumbersKPI(),
               },
-              {
-                size: 12,
-                template: this.__renderStaticNumbersKPI2(),
-              },
+              
               {
                 size: 12,
                 template: this.__renderMeerJarenRapportage(),

@@ -9,6 +9,7 @@ import {
 import "@domg-wc/elements/select";
 import "@domg-wc/components/functional-header";
 import "@domg-wc/qlik/infoblock";
+import "@domg-wc/components/accordion";
 import {vlElementsStyle} from "@domg-wc/elements";
 
 import options from "../config/gemeente-op-kaart.json" assert {type: "json"};
@@ -58,6 +59,8 @@ class OhrOpkaart extends LitElement {
 
   __renderIntroductionOfMaps() {
     return html`
+
+    <vl-accordion data-vl-toggle-text="Hoe interpreteer ik de kaarten?">
     <h2 is="vl-h2">Hoe interpreteer ik de kaarten?</h2>
     <p>
       De kaarten worden onderverdeeld in twee categorieën:</p>
@@ -78,7 +81,8 @@ class OhrOpkaart extends LitElement {
       Dit maakt dat bepaalde gemeenten als waarde "niet gekend"
       of "non-repons" tonen.
       Deze worden in een grijs kleur aangetoond op de kaarten.
-    </p>`
+    </p>
+</vl-accordion>`
   }
 
   __changeView(event) {
@@ -135,16 +139,17 @@ class OhrOpkaart extends LitElement {
               template: this.__renderIntroductionOfMaps(),
             },
             {
-              size: 4,
-              template: this.__renderSideNavigation(),
-            },
-            {
                 size: 12,
                 template: this.__renderViewSelector(),
             },
             {
                 size: 12,
                 template: this.__renderEverVizKaart()
+            },
+            
+            {
+              size: 4,
+              template: this.__renderSideNavigation(),
             }
             )}
         </div>
