@@ -1,6 +1,6 @@
 import { html, LitElement } from "../common/commons.js";
 import { vlElementsStyle } from "@domg-wc/elements";
-import jsonData from "../data-jaar/gewest.json" assert { type: "json" };
+import jsonData from "../datafiles/gewest.json" assert { type: "json" };
 
 import "@domg-wc/elements/image";
 import "@domg-wc/elements/grid";
@@ -69,7 +69,7 @@ class OhrAGewest extends LitElement {
                 <tr>
                   <td data-title="${key}">${key}</td>
                   <td data-title="${value.value}">
-                    ${value.value}(relatief ${value.relative})
+                    ${value.value}
                   </td>
                 </tr>
               `;
@@ -120,9 +120,10 @@ class OhrAGewest extends LitElement {
         )}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Opmerkingen">
-        ${this.renderDataSection(
-          jsonData.Milieu.AMDK.Opmerkingen
-        )}
+        <tr>
+        <td data-title="Opmerking">Opmerking</td>
+        <td data-title="Contrary to popular belief, Lorem Ipsum is not simply random text">Contrary to popular belief, Lorem Ipsum is not simply random text</td>
+      </tr>
         </vl-accordion>
     </vl-accordion-list>
                 </vl-cascader-item>
@@ -333,7 +334,7 @@ class OhrAGewest extends LitElement {
 
 
       
-      <vl-cascader-item label="Departement Omgeving - Afdeling Handhavings - Omgevingsinspectie">
+      <vl-cascader-item label="Departement Omgeving - Afdeling Handhaving">
       <vl-cascader-item label="Milieu">
   <vl-accordion-list slot="content">
       <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 

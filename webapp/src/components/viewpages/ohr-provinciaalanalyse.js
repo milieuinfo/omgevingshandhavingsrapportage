@@ -1,6 +1,6 @@
 import {html, LitElement} from "../common/commons.js";
 import {vlElementsStyle} from "@domg-wc/elements";
-import jsonData from "../data-jaar/provincie.json" assert {type: "json"};
+import jsonData from "../datafiles/provincie.json" assert {type: "json"};
 
 import "@domg-wc/elements/image";
 import "@domg-wc/elements/grid";

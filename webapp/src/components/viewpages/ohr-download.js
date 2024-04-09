@@ -75,14 +75,13 @@ class OhrDownload extends LitElement {
   }
   __renderLinkList() {
     return html`
-      <h1 is="vl-h1">Download cijfers en meer</h1>
-      <h3 is="vl-h3">Data van de rapportage</h2>
+      <h3 is="vl-h3">Data van de rapportage</h3>
         <p><a href="https://omgeving.vlaanderen.be/sites/default/files/2022-11/drive-download-20221117T123910Z-001.zip" download">Download de data van 2021</a></p>
         <p><a href="https://omgeving.vlaanderen.be/sites/default/files/2023-04/Data%20Omgevingshandhavingsrapportage%202022.zip" download">Download de data van 2022</a></p>
         <p><a href="#">Download de data van 2023</a></p>
         <br>
      
-      <h3 is="vl-h3">Downloadbare afbeeldingen van geconsolideerd beeld</h2>
+      <h3 is="vl-h3">Downloadbare afbeeldingen van geconsolideerd beeld</h3>
         <p><a href="datafiles/gew MI.xlsx" download>Download de weergave van 2021</a></p>
         <p><a href="datafiles/gewest.json" download>Download de weergave van 2022</a></p>
         <p><a href="datafiles/responsgraad data.csv" download>Download de weergave van 2023</a></p>

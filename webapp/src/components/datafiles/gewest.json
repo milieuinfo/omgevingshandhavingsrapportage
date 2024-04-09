@@ -2,117 +2,92 @@
   "Milieu":{
     "AMDK": {
       "gewestelijkeToezichthouders": {
-        "Toezichthouders": "87",
-        "VTE": "2.3",
+        "Toezichthouders": "niet gekend",
+        "VTE": "niet gekend",
         "VTE Toezichthouders": {
-          "value": "3",
-          "relative": "90%"
+          "value": "niet gekend"
         },
         "VTE Administratieve en juridische administratie": {
-          "value": "0.2",
-          "relative": "10%"
+          "value": "niet gekend"
         }
       },
       "klachten": {
-        "Aantal klachten": "1450",
+        "Aantal klachten": "-",
         "Afval": {
-          "value": "305",
-          "relative": "90%"
+          "value": "-"
         },
         "Andere": {
-          "value": "8",
-          "relative": "90%"
+          "value": "-"
         },
         "Bodem": {
-          "value": "4.8",
-          "relative": "10%"
+          "value": "-"
         },
         "Geluid": {
-          "value": "4.2",
-          "relative": "10%"
+          "value": "-"
         },
         "Lucht": {
-          "value": "4.0",
-          "relative": "10%"
+          "value": "-"
         },
         "Mest": {
-          "value": "4.3",
-          "relative": "10%"
+          "value": "-"
         },
         "Milieubeheer": {
-          "value": "4.5",
-          "relative": "10%"
+          "value": "-"
         },
         "Vergunning": {
-          "value": "4.1",
-          "relative": "10%"
+          "value": "-"
         },
         "Water": {
-          "value": "4.4",
-          "relative": "10%"
+          "value": "-"
         }
       },
       "controles": {
-        "Aantal controles": "1320",
+        "Aantal controles": "-",
         "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": {
-          "value": "32",
-          "relative": "23%"
+          "value": "-"
         },
         "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": {
-          "value": "35",
-          "relative": "23%"
+          "value": "-"
         },
         "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": {
-          "value": "33",
-          "relative": "23%"
+          "value": "-"
         },
         "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": {
-          "value": "30",
-          "relative": "23%"
+          "value": "-"
         },
         "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": {
-          "value": "32",
-          "relative": "23%"
+          "value": "-"
         }
       },
       "Aanvankelijkecontrolesmetschending": {
-        "Aanvankelijke controles met schending": "1360",
-        "overtredingsgraad": "42%",
+        "Aanvankelijke controles met schending": "-",
+        "overtredingsgraad": "-",
         "Vergunning": {
-          "value": "32",
-          "relative": "30%"
+          "value": "-"
         },
         "Milieubeheer": {
-          "value": "29",
-          "relative": "30%"
+          "value": "-"
         },
         "Afval": {
-          "value": "30",
-          "relative": "30%"
+          "value": "-"
         },
         "Water": {
-          "value": "31",
-          "relative": "30%"
+          "value": "-"
         },
         "Andere": {
-          "value": "28",
-          "relative": "30%"
+          "value": "-"
         },
         "Mest": {
-          "value": "32",
-          "relative": "30%"
+          "value": "-"
         },
         "Lucht": {
-          "value": "28",
-          "relative": "30%"
+          "value": "-"
         },
         "Bodem": {
-          "value": "30",
-          "relative": "30%"
+          "value": "-"
         },
         "Geluid": {
-          "value": "31",
-          "relative": "30%"
+          "value": "-"
         }
       },
       "Instrumentarium": {
@@ -131,9 +106,7 @@
           }
         },
         "Veiligsheidsmaatregel": "220"
-      },
-      "Opmerkingen":
-      "Contrary to popular belief, Lorem Ipsum is not simply random text"
+      }
     },
     "ANB": {
       "gewestelijkeToezichthouders": {

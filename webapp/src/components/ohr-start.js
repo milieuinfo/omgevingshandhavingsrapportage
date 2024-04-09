@@ -62,6 +62,10 @@ and performing other setup tasks.
                 size: 12,
                 template: this.__renderStaticNumbersKPI(),
               },
+              {
+                size:12,
+                template: this.__renderStaticNumbersKPI2(),
+              },
               
               {
                 size: 12,
@@ -138,6 +142,8 @@ Wanneer totalen worden getoond, betreft dit steeds enkel de gerapporteerde en ge
   }
 
   __renderStaticNumbersKPI() {
+
+    const jaar = 2021;
     return html`${renderStack(
       {
         size: 12,
@@ -149,8 +155,8 @@ Wanneer totalen worden getoond, betreft dit steeds enkel de gerapporteerde en ge
         template: html`
           <div is="vl-infotext" data-cy="infotext">
             <div>
-              <div data-vl-value="">95%</div>
-              <div data-vl-text="">Reponsgraad huidig jaar</div>
+              <div data-vl-value="">98%</div>
+              <div data-vl-text="">Reponsgraad</div>
             </div>
           </div>`
       },
@@ -159,7 +165,7 @@ Wanneer totalen worden getoond, betreft dit steeds enkel de gerapporteerde en ge
         template: html`
           <div is="vl-infotext" data-cy="infotext">
             <div>
-              <div data-vl-value="">+15%</div>
+              <div data-vl-value="">+7%</div>
               <div data-vl-text="">Evolutie responsgraad</div>
             </div>
           </div>`
@@ -169,8 +175,8 @@ Wanneer totalen worden getoond, betreft dit steeds enkel de gerapporteerde en ge
         template: html`
           <div is="vl-infotext" data-cy="infotext">
             <div>
-              <div data-vl-value="">27,6</div>
-              <div data-vl-text="">Gemiddelde VTE</div>
+              <div data-vl-value="">2,32</div>
+              <div data-vl-text="">Totaal VTE</div>
             </div>
           </div>`
       },
@@ -179,7 +185,7 @@ Wanneer totalen worden getoond, betreft dit steeds enkel de gerapporteerde en ge
         template: html`
           <div is="vl-infotext" data-cy="infotext">
             <div>
-              <div data-vl-value="">26904</div>
+              <div data-vl-value="">35689</div>
               <div data-vl-text="">Aantal klachten</div>
             </div>
           </div>`
@@ -189,8 +195,8 @@ Wanneer totalen worden getoond, betreft dit steeds enkel de gerapporteerde en ge
         template: html`
           <div is="vl-infotext" data-cy="infotext">
             <div>
-              <div data-vl-value="">30000</div>
-              <div data-vl-text="">Aantal aanvankelijke controles</div>
+              <div data-vl-value="">146511</div>
+              <div data-vl-text="">Aantal controles</div>
             </div>
           </div>`
       },
@@ -199,8 +205,8 @@ Wanneer totalen worden getoond, betreft dit steeds enkel de gerapporteerde en ge
         template: html`
           <div is="vl-infotext" data-cy="infotext">
             <div>
-              <div data-vl-value="">17%</div>
-              <div data-vl-text="">Aandeel aanvankelijke controles met schending</div>
+              <div data-vl-value="">4978</div>
+              <div data-vl-text="">Aantal PV's</div>
             </div>
           </div>`
       }
@@ -211,12 +217,12 @@ Wanneer totalen worden getoond, betreft dit steeds enkel de gerapporteerde en ge
 __renderStaticNumbersKPI2() {
   return html`${renderStack(
     {
-      size: 4,
+      size: 6,
       template: html`
       <vl-spotlight
       data-vl-img-src="images/consolm.jpg"
       data-vl-img-alt="spotlight image">
-      <span slot="title"> Geconsolideerd beeld milieu </span>
+      <span slot="title">Geconsolideerd beeld milieu </span>
       <span slot="subtitle">Op basis van de cijfers van 2023</span>
       <span slot="text">
           De bovenstaande infographic geeft een overzicht van de verschillende instrumenten binnen het milieubeleid voor de gewesten.<br>
@@ -226,7 +232,7 @@ __renderStaticNumbersKPI2() {
       `
     },
     {
-      size: 4,
+      size: 6,
       template: html`
       <vl-spotlight
       data-vl-img-src="images/infographic_ro_gewestelijk_def.png"
@@ -239,21 +245,6 @@ __renderStaticNumbersKPI2() {
       </span>
   </vl-spotlight>
       
-      `
-    },
-    {
-      size: 4,
-      template: html`
-      <vl-spotlight
-      data-vl-img-src="images/consolm.jpg"
-      data-vl-img-alt="spotlight image">
-      <span slot="title">Download de cijfers</span>
-      <span slot="subtitle">Op basis van de cijfers van 2023</span>
-      <span slot="text">
-          De bovenstaande infographic geeft een overzicht van de verschillende instrumenten binnen het milieubeleid voor de gewesten.<br>
-          <p><a href="images/infographic_milieu_gewestelijk_def.png" download>Download bovenstaande infographic</a></p>
-      </span>
-    </vl-spotlight>
       `
     }
 )
@@ -447,10 +438,23 @@ __renderMeerJarenRapportage() {
         template: html`
           <div ">
           <a is="vl-doormat" href="">
-            <h2 is="vl-doormat-title">Strafrechtelijke en bestuurlijke
+            <h2 is="vl-doormat-title">Strafrechtelijke
               vervolgtraject</h2>
             <div is="vl-doormat-text">
-              Deze pagina toont de evolutie van het strafrechtelijke en
+              Deze pagina toont de evolutie van het strafrechtelijke vervolgtraject inzake de omgevingshandhaving.
+            </div>
+          </a>
+          </div>`,
+      },
+      {
+        size: 6,
+        template: html`
+          <div ">
+          <a is="vl-doormat" href="">
+            <h2 is="vl-doormat-title">Bestuurlijke
+              vervolgtraject</h2>
+            <div is="vl-doormat-text">
+              Deze pagina toont de evolutie van het
               bestuurlijke vervolgtraject inzake de omgevingshandhaving.
             </div>
           </a>

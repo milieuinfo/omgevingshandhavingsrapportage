@@ -76,7 +76,8 @@ class OhrInleiding extends LitElement {
 
   __renderIntroduction() {
     return html`
-      <h1 is="vl-h1">Dataverzameling en data-interpretatie</h1>
+    <vl-typography>
+      <h1>Dataverzameling en data-interpretatie</h1>
       <p>
         Het decreet van 5 april 1995 houdende algemene bepalingen inzake
         milieubeleid (DABM) bepaalt in artikel 16.2.3 dat gegevens over de
@@ -111,7 +112,7 @@ class OhrInleiding extends LitElement {
         worden getoond, betreft dit steeds enkel de gerapporteerde en gekende
         aantallen. Bij analyses van de data dient rekening te worden gehouden
         met deze beperking.
-      </p>`;
+      </p></vl-typography>`;
   }
 }
 
