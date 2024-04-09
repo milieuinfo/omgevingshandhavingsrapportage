@@ -59,30 +59,23 @@ class OhrOpkaart extends LitElement {
 
   __renderIntroductionOfMaps() {
     return html`
-
-    <vl-accordion data-vl-toggle-text="Hoe interpreteer ik de kaarten?">
     <h2 is="vl-h2">Hoe interpreteer ik de kaarten?</h2>
     <p>
-      De kaarten worden onderverdeeld in twee categorieën:</p>
-    <vl-typography>
-
-      <li>Milieu: groene kaarten</li>
-      <li>Ruimtelijke ordening: oranje kaarten</li>
-
-    </vl-typography>
-    <br/>
-    <p>De kleurgradaties wijzen op de aantallen in de gemeenten
-      per 1.000 inwoners. </p>
-    <br/>
-
-    <p>
-      De responsgraad voor deze bevraging (of bepaalde vragen in
-      de bevraging) bedraagt geen 100%.
-      Dit maakt dat bepaalde gemeenten als waarde "niet gekend"
-      of "non-repons" tonen.
-      Deze worden in een grijs kleur aangetoond op de kaarten.
+      De kaarten worden onderverdeeld in twee categorieën:
     </p>
-</vl-accordion>`
+      <vl-typography>
+        <li>Milieu: groene kaarten</li>
+        <li>Ruimtelijke ordening: oranje kaarten</li>
+        <br>
+        <p>De kleurgradaties wijzen op de aantallen in de gemeenten per 1.000 inwoners.</p>
+      </vl-typography>`
+  }
+
+  __renderBackgroundInformation() {
+    return html`
+          <vl-typography data-cy="typography">
+          <p><em>De responsgraad voor deze bevraging (of bepaalde vragen in de bevraging) bedraagt geen 100%. <br/>Dit maakt dat bepaalde gemeenten als waarde "niet gekend" of "non-repons" tonen.</em></p>
+          </vl-typography>`
   }
 
   __changeView(event) {
@@ -139,6 +132,10 @@ class OhrOpkaart extends LitElement {
               template: this.__renderIntroductionOfMaps(),
             },
             {
+              size: 4,
+              template: this.__renderSideNavigation(),
+            },
+            {
                 size: 12,
                 template: this.__renderViewSelector(),
             },
@@ -146,10 +143,9 @@ class OhrOpkaart extends LitElement {
                 size: 12,
                 template: this.__renderEverVizKaart()
             },
-            
             {
-              size: 4,
-              template: this.__renderSideNavigation(),
+              size:8,
+              template: this.__renderBackgroundInformation()
             }
             )}
         </div>
