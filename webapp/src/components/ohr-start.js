@@ -63,10 +63,9 @@ and performing other setup tasks.
                 template: this.__renderStaticNumbersKPI(),
               },
               {
-                size:12,
+                size:8,
                 template: this.__renderStaticNumbersKPI2(),
               },
-              
               {
                 size: 12,
                 template: this.__renderMeerJarenRapportage(),
@@ -79,7 +78,6 @@ and performing other setup tasks.
                 size: 12,
                 template: this.__renderOpKaart(),
               },
-              
               {
                 size: 12,
                 template: this.__renderMeerInfo(),

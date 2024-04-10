@@ -61,7 +61,7 @@
       },
       "Aanvankelijkecontrolesmetschending": {
         "Aanvankelijke controles met schending": "-",
-        "overtredingsgraad": "-",
+        "Overtredingsgraad": "-",
         "Vergunning": {
           "value": "-"
         },
@@ -110,54 +110,22 @@
     },
     "ANB": {
       "gewestelijkeToezichthouders": {
-        "Toezichthouders": "87",
-        "VTE": "2.3",
+        "Toezichthouders": "132",
+        "VTE": "43,03",
         "VTE Toezichthouders": {
-          "value": "3",
-          "relative": "90%"
+          "value": "42,98"
         },
         "VTE Administratieve en juridische administratie": {
-          "value": "0.2",
-          "relative": "10%"
+          "value": "0.05"
         }
       },
       "klachten": {
-        "Aantal klachten": "1450",
+        "Aantal klachten": "1896",
         "Afval": {
-          "value": "305",
-          "relative": "90%"
-        },
-        "Andere": {
-          "value": "8",
-          "relative": "90%"
-        },
-        "Bodem": {
-          "value": "4.8",
-          "relative": "10%"
-        },
-        "Geluid": {
-          "value": "4.2",
-          "relative": "10%"
-        },
-        "Lucht": {
-          "value": "4.0",
-          "relative": "10%"
-        },
-        "Mest": {
-          "value": "4.3",
-          "relative": "10%"
-        },
-        "Milieubeheer": {
-          "value": "4.5",
-          "relative": "10%"
+          "value": "10"
         },
         "Vergunning": {
-          "value": "4.1",
-          "relative": "10%"
-        },
-        "Water": {
-          "value": "4.4",
-          "relative": "10%"
+          "value": "1886"
         }
       },
       "controles": {

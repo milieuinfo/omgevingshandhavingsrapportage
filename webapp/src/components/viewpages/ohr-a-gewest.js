@@ -119,11 +119,11 @@ class OhrAGewest extends LitElement {
           jsonData.Milieu.AMDK.Instrumentarium
         )}
         </vl-accordion>
+
         <vl-accordion data-vl-toggle-text="Opmerkingen">
-        <tr>
-        <td data-title="Opmerking">Opmerking</td>
-        <td data-title="Contrary to popular belief, Lorem Ipsum is not simply random text">Contrary to popular belief, Lorem Ipsum is not simply random text</td>
-      </tr>
+          <vl-typography>
+            <p>Geen opmerkingen.</p>
+          </vl-typography>
         </vl-accordion>
     </vl-accordion-list>
                 </vl-cascader-item>
@@ -135,8 +135,7 @@ class OhrAGewest extends LitElement {
             data-vl-icon="warning"
             data-vl-title="Geen bevoegheid"
             data-vl-type="warning"
-            data-vl-message="Agentschap Maritieme Dienstverlening en Kust heeft geen bevoegheid voor ruimtelijke ordening."
-        >
+            data-vl-message="Agentschap Maritieme Dienstverlening en Kust heeft geen bevoegheid voor ruimtelijke ordening.">
         </vl-alert>
     </p>
             </vl-cascader-item>
@@ -317,7 +316,7 @@ class OhrAGewest extends LitElement {
         )}
         </vl-accordion>
     </vl-accordion-list>
-                </vl-cascader-item>
+    </vl-cascader-item>
             <vl-cascader-item label="Ruimtelijke ordening">
             <p slot="content">
             <vl-alert

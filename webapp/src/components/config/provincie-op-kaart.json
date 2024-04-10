@@ -1,11 +1,16 @@
 [
     {
-      "label": "Controles",
-      "value": "https://datawrapper.dwcdn.net/RYnSc/1/",
+      "label": "Milieu: VTE",
+      "value": "https://app.everviz.com/embed/XoLKJmfoP/?v=3",
       "selected":true
     },
     {
-      "label": "Toezichthouders",
-      "value": "https://datawrapper.dwcdn.net/7ynxe/1/"
+      "label": "Milieu: Controles",
+      "value": "https://app.everviz.com/embed/yWVDasIGM/?v=3"
+    },
+    {
+      "label": "Milieu: Klachten",
+      "value": "https://app.everviz.com/embed/WjzugHVVW/?v=3"
     }
+
   ]
