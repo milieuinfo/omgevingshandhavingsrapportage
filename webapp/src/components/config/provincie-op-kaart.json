@@ -1,16 +1,43 @@
 [
     {
-      "label": "Milieu: VTE",
-      "value": "https://app.everviz.com/embed/XoLKJmfoP/?v=3",
+      "label": "Milieu: Toezichthouders",
+      "value": "https://app.everviz.com/embed/GWzzB3yK5/?v=4",
       "selected":true
+    },
+    {
+      "label": "Milieu: VTE",
+      "value": "https://app.everviz.com/embed/XoLKJmfoP/?v=3"
+    },
+    {
+      "label": "Milieu: Klachten",
+      "value": "https://app.everviz.com/embed/WjzugHVVW/?v=3"
     },
     {
       "label": "Milieu: Controles",
       "value": "https://app.everviz.com/embed/yWVDasIGM/?v=3"
     },
     {
-      "label": "Milieu: Klachten",
-      "value": "https://app.everviz.com/embed/WjzugHVVW/?v=3"
+      "label": "Milieu: Aanvankelijke controles met schending",
+      "value": "https://app.everviz.com/embed/X8IpAZxAI/?v=5"
+    },
+    {
+      "label": "Milieu: Raadgevingen",
+      "value": "https://app.everviz.com/embed/YbVxA9H_R/?v=3"
+    },
+    {
+      "label": "Milieu: Aanmaning",
+      "value": "https://app.everviz.com/embed/DTFcDJ1RT/?v=3"
+    },
+    {
+      "label": "Milieu: Proces-verbaal",
+      "value": "https://app.everviz.com/embed/iT4aPTsx7/?v=3"
+    },
+    {
+      "label": "Milieu: Verslag van vaststelling",
+      "value": "https://app.everviz.com/embed/2MPRA5dla/?v=3"
+    },
+    {
+      "label": "Milieu Bestuurlijke maatregelen",
+      "value": "https://app.everviz.com/embed/oJzQ_w-vS/?v=3"
     }
-
   ]

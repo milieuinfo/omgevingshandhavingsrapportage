@@ -51,35 +51,26 @@ import {
   
     __renderEverVizKaart() {
       return html`
-      <h3 is="vl-h3" data-alt>Geselecteerde kaart: ${this.selectedChoiceLabel}</h2>
-      <iframe class="everviz-iframe" src="${this.selectedChoiceUrl}" width="800px" height="450px"></iframe>`;
+      <iframe class="everviz-iframe" src="${this.selectedChoiceUrl}" width="100%" height="450px"></iframe>`;
+    }
+
+    __renderBackgroundInformation() {
+      return html`
+            <vl-typography data-cy="typography">
+            <p><em>De responsgraad voor deze bevraging (of bepaalde vragen in de bevraging) bedraagt geen 100%. <br/>Dit maakt dat bepaalde gemeenten als waarde "niet gekend" of "non-repons" tonen.</em></p>
+            </vl-typography>`
     }
   
     __renderIntroductionOfMaps() {
       return html`
       <h2 is="vl-h2">Hoe interpreteer ik de kaarten?</h2>
       <p>
-        De kaarten worden onderverdeeld in twee categorieën:</p>
+        Provinciale handhavingsactoren hebben enkele een bevoegheid voor milieuhandhaving.</p>
       <vl-typography>
-  
-        <li>Milieu: groene kaarten</li>
-        <li>Ruimtelijke ordening: oranje kaarten</li>
-  
       </vl-typography>
       <br/>
       <p>De kleurgradaties wijzen op de aantalllen in de gemeenten
-        per 1.000 inwoners. </p>
-      <br/>
-  
-      <p>
-        De responsgraad voor deze bevraging (of bepaalde vragen in
-        de bevraging) bedraagt geen 100%.
-        Dit maakt dat bepaalde gemeenten als waarde "niet gekend"
-        of "non-repons" tonen.
-        Deze worden in een grijs kleur aangetoond op de kaarten.
-  
-  
-      </p>`
+        per 1.000 inwoners. </p>`
     }
   
     __changeView(event) {
@@ -140,12 +131,16 @@ import {
                 template: this.__renderSideNavigation(),
               },
               {
-                  size: 8,
+                  size: 12,
                   template: this.__renderViewSelector(),
               },
               {
                   size: 12,
                   template: this.__renderEverVizKaart()
+              },
+              {
+                size:12,
+                template: this.__renderBackgroundInformation()
               })}
           </div>
         </section>`;
