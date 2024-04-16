@@ -1,0 +1,1544 @@
+{
+    "Milieu": {
+        "AMDK": {
+            "gewestelijkeToezichthouders": {
+                "Toezichthouders": 0,
+                "VTE Toezichthouders": 0,
+                "VTE administratieve en juridische ondersteuning": 0 },
+            "Klachten": {
+                "Milieuklachten milieu": 0,
+                "Afval": 0,
+                "Andere": 0,
+                "Bodem": 0,
+                "Geluid": 0,
+                "Lucht": 0,
+                "Mest": 0,
+                "Milieubeheer": 0,
+                "Vergunningen": 0,
+                "Water": 0,
+                "PFAS": 0,
+                "Stikstof": 0
+            },
+            "Controles": {
+                "Milieucontroles": 0,
+                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
+            },
+            "Aanvankelijkecontrolesmetschending": {
+                "Totaal aanvankelijk": 0,
+                "PFAS": 0,
+                "Stikstof": 0,
+                "Milieubeheer": 0,
+                "Lucht": 0,
+                "Water": 0,
+                "Bodem": 0,
+                "Geluid": 0,
+                "Vergunningen": 0,
+                "Mest": 0,
+                "Afval": 0,
+                "Andere": 0
+            },
+            "Instrument": {
+                "Aantal raadgevingen milieu": "niet gekend",
+                "Aantal raadgevingen ruimtelijke ordening": "niet gekend",
+                "Aanmaning milieu": "niet gekend",
+                "Aanmaning": "niet gekend",
+                "Procesverbaal milieu": "niet gekend",
+                "Procesverbaal ro": "niet gekend",
+                "Verslag van vaststelling": "niet gekend",
+                "Verslag van vaststelling1": "niet gekend",
+                "Bevel tot staking": "niet gekend",
+                "Bestuurlijke maatregel milieu": "niet gekend",
+                "Bestuurlijke maatregel RO": "niet gekend"
+            },
+            "Thema": {
+                "PFAS": "Geen opmerking",
+                "Stikstof": "Geen opmerking"
+            },
+            "Opmerking": {
+                "Opmerking": "Geen opmerking."
+            }
+        },
+        "ANB": {
+            "gewestelijkeToezichthouders": {
+                "Toezichthouders": 132,
+                "VTE Toezichthouders": "42,98",
+                "VTE administratieve en juridische ondersteuning": "0,05"
+            },
+            "Klachten": {
+                "Milieuklachten milieu": 1896,
+                "PFAS": 0,
+                "Stikstof": 0,
+                "Afval": 10,
+                "Andere": 2,
+                "Bodem": 0,
+                "Geluid": 0,
+                "Lucht": 0,
+                "Mest": 0,
+                "Milieubeheer": 1886,
+                "Vergunningen": 0,
+                "Water": 0
+            },
+            "Controles": {
+                "Milieucontroles": 5764,
+                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": "niet gekend",
+                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 1896,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": "niet gekend",
+                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 3868,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": "niet gekend"
+
+            },
+            "Aanvankelijkecontrolesmetschending": {
+                "Totaal aanvankelijk": 1920,
+                "PFAS": 0,
+                "Stikstof": 0,
+                "Milieubeheer": 1894,
+                "Lucht": 0,
+                "Water": 0,
+                "Bodem": 0,
+                "Geluid": 0,
+                "Vergunningen": 0,
+                "Mest": 0,
+                "Afval": 26,
+                "Andere": 0
+            },
+            "Instrument": {
+                "Aantal raadgevingen": 35,
+                "Aantal aanmaningen": 1013,
+                "Aantal verslagen van vaststelling": 464,
+                "Aantal proces verbalen": 443,
+                "Bestuurlijke maatregelen zonder dwangsom": 443,
+                "Bestuurlijke maatregelen met dwangsom": 98,
+                "Veiligheidsmaatregel": 1
+            },
+            "Thema": {
+                "PFAS": "Geen opmerking",
+                "Stikstof": "Geen opmerking"
+            },
+            "Opmerking": {
+                "Opmerking1": "Klachten: hieronder verstaan wij meldingen die een klacht zijn.",
+                "Opmerking2": "Aantal navolgende controles voor verdere opvolging van deze milieuhandhavingscontroles op eigen initiatief?: wordt niet bijgehouden",
+                "Opmerking3": "wordt bij NI onder ontbossing genomen De personeelsbeschikbaarheid wordt gedefinieerd als de verhouding van het aantal dagen dat een personeelslid in een bepaalde periode geacht wordt om te werken, op basis van diens arbeidsregime, inclusief feestdagen, ten opzichte van het aantal dagen dat een voltijds personeelslid in diezelfde periode dient te werken.",
+                "Opmerking4":"Om de totale personeelsbeschikbaarheid te berekenen wordt voor alle personeelsleden het totaal aantal te werken dagen, volgens een voltijds arbeidsregime, in een periode bepaald en vervolgens de onbeschikbaarheden afgetrokken."
+                
+            }
+        },
+        "AWV": {
+            "gewestelijkeToezichthouders": {
+                "Toezichthouders": 13,
+                "VTE Toezichthouders": 2.5,
+                "VTE administratieve en juridische ondersteuning": 0.5
+            },
+            "Klachten": {
+                "Milieuklachten milieu": 18,
+                "PFAS": 0,
+                "Stikstof": 0,
+                "Afval": 18,
+                "Andere": 0,
+                "Bodem": 0,
+                "Geluid": 0,
+                "Lucht": 0,
+                "Mest": 0,
+                "Milieubeheer": 0,
+                "Vergunningen": 0,
+                "Water": 0
+            },
+            "Controles": {
+                "Milieucontroles": 66,
+                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 18,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 6,
+                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 40,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 2
+            },
+            "Aanvankelijkecontrolesmetschending": {
+                "Totaal aanvankelijk": 74,
+                "PFAS": 0,
+                "Stikstof": 0,
+                "Milieubeheer": 0,
+                "Lucht": 0,
+                "Water": 0,
+                "Bodem": 0,
+                "Geluid": 0,
+                "Vergunningen": 0,
+                "Mest": 0,
+                "Afval": 74,
+                "Andere": 0
+            },
+            "Instrument": {
+                "Aantal raadgevingen milieu": 0,
+                "Aantal raadgevingen ruimtelijke ordening": "niet gekend",
+                "Aanmaning milieu": 0,
+                "Aanmaning": "niet gekend",
+                "Procesverbaal milieu": 70,
+                "Procesverbaal ro": "niet gekend",
+                "Verslag van vaststelling": 0,
+                "Verslag van vaststelling1": "niet gekend",
+                "Bevel tot staking": "niet gekend",
+                "Bestuurlijke maatregl milieu": 0,
+                "Bestuurlijke maatregel RO": "niet gekend"
+            },
+            "Thema": {
+                "PFAS": "Geen opmerking",
+                "Stikstof": "Geen opmerking"
+            },
+            "Opmerking": {
+                "Opmerking": "Geen opmerking."
+            }
+        },
+        "VW": {
+            "gewestelijkeToezichthouders": {
+                "Toezichthouders": 91,
+                "VTE Toezichthouders": 2,
+                "VTE administratieve en juridische ondersteuning": 0.1
+            },
+            "Klachten": {
+                "Milieuklachten milieu": 0,
+                "PFAS": 0,
+                "Stikstof": 0,
+                "Afval": 0,
+                "Andere": 0,
+                "Bodem": 0,
+                "Geluid": 0,
+                "Lucht": 0,
+                "Mest": 0,
+                "Milieubeheer": 0,
+                "Vergunningen": 0,
+                "Water": 0
+            },
+            "Controles": {
+                "Milieucontroles": 365,
+                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 365,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
+            },
+            "Aanvankelijkecontrolesmetschending": {
+                "Totaal aanvankelijk": 30,
+                "PFAS": 0,
+                "Stikstof": 0,
+                "Milieubeheer": 0,
+                "Lucht": 0,
+                "Water": 6,
+                "Bodem": 0,
+                "Geluid": 0,
+                "Vergunningen": 0,
+                "Mest": 0,
+                "Afval": 24,
+                "Andere": 0
+            },
+            "Instrument": {
+                "Aantal raadgevingen milieu": 0,
+                "Aantal raadgevingen ruimtelijke ordening": "niet gekend",
+                "Aanmaning milieu": 1,
+                "Aanmaning": "niet gekend",
+                "Procesverbaal milieu": 3,
+                "Procesverbaal ro": "niet gekend",
+                "Verslag van vaststelling": 0,
+                "Verslag van vaststelling1": "niet gekend",
+                "Bevel tot staking": "niet gekend",
+                "Bestuurlijke maatregl milieu": 0,
+                "Bestuurlijke maatregel RO": "niet gekend"
+            },
+            "Thema": {
+                "PFAS": "Geen opmerking",
+                "Stikstof": "Geen opmerking"
+            },
+            "Opmerking": {
+                "Opmerking": "Geen opmerking."
+            }
+        },
+        "dMOW": {
+            "gewestelijkeToezichthouders": {
+                "Toezichthouders": 0,
+                "VTE Toezichthouders": 0,
+                "VTE administratieve en juridische ondersteuning": 0
+            },
+            "Klachten": {
+                "Milieuklachten milieu": 0,
+                "PFAS": 0,
+                "Stikstof": 0,
+                "Afval": 0,
+                "Andere": 0,
+                "Bodem": 0,
+                "Geluid": 0,
+                "Lucht": 0,
+                "Mest": 0,
+                "Milieubeheer": 0,
+                "Vergunningen": 0,
+                "Water": 0
+            },
+            "Controles": {
+                "Milieucontroles": 0,
+                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
+            },
+            "Aanvankelijkecontrolesmetschending": {
+                "Totaal aanvankelijk": 0,
+                "PFAS": 0,
+                "Stikstof": 0,
+                "Milieubeheer": 0,
+                "Lucht": 0,
+                "Water": 0,
+                "Bodem": 0,
+                "Geluid": 0,
+                "Vergunningen": 0,
+                "Mest": 0,
+                "Afval": 0,
+                "Andere": 0
+            },
+            "Instrument": {
+                "Aantal raadgevingen milieu": "niet gekend",
+                "Aantal raadgevingen ruimtelijke ordening": "niet gekend",
+                "Aanmaning milieu": "niet gekend",
+                "Aanmaning": "niet gekend",
+                "Procesverbaal milieu": "niet gekend",
+                "Procesverbaal ro": "niet gekend",
+                "Verslag van vaststelling": "niet gekend",
+                "Verslag van vaststelling1": "niet gekend",
+                "Bevel tot staking": "niet gekend",
+                "Bestuurlijke maatregl milieu": "niet gekend",
+                "Bestuurlijke maatregel RO": "niet gekend"
+            },
+            "Thema": {
+                "PFAS": "Geen opmerking",
+                "Stikstof": "Geen opmerking"
+            },
+            "Opmerking": {
+                "Opmerking": "Geen opmerking."
+            }
+        },
+        "dOMGGOP": {
+            "gewestelijkeToezichthouders": {
+                "Toezichthouders": 7,
+                "VTE Toezichthouders": 0.3,
+                "VTE administratieve en juridische ondersteuning": 0
+            },
+            "Klachten": {
+                "Milieuklachten milieu": 13,
+                "PFAS": 0,
+                "Stikstof": 0,
+                "Afval": 0,
+                "Andere": 13,
+                "Bodem": 0,
+                "Geluid": 0,
+                "Lucht": 0,
+                "Mest": 0,
+                "Milieubeheer": 0,
+                "Vergunningen": 0,
+                "Water": 0
+            },
+            "Controles": {
+                "Milieucontroles": 182,
+                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 8,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 176,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
+            },
+            "Aanvankelijkecontrolesmetschending": {
+                "Totaal aanvankelijk": 58,
+                "PFAS": 0,
+                "Stikstof": 0,
+                "Milieubeheer": 0,
+                "Lucht": 0,
+                "Water": 0,
+                "Bodem": 0,
+                "Geluid": 0,
+                "Vergunningen": 3,
+                "Mest": 0,
+                "Afval": 0,
+                "Andere": 55
+            },
+            "Instrument": {
+                "Aantal raadgevingen milieu": 2,
+                "Aantal raadgevingen ruimtelijke ordening": "niet gekend",
+                "Aanmaning milieu": 12,
+                "Aanmaning": "niet gekend",
+                "Procesverbaal milieu": 2,
+                "Procesverbaal ro": "niet gekend",
+                "Verslag van vaststelling": 0,
+                "Verslag van vaststelling1": "niet gekend",
+                "Bevel tot staking": "niet gekend",
+                "Bestuurlijke maatregl milieu": 0,
+                "Bestuurlijke maatregel RO": "niet gekend"
+            },
+            "Thema": {
+                "PFAS": "Geen opmerking",
+                "Stikstof": "Geen opmerking"
+            },
+            "Opmerking": {
+                "Opmerking": "Geen opmerking."
+            }
+        },
+        "dOMGHH": {
+            "gewestelijkeToezichthouders": {
+                "Toezichthouders": 97,
+                "VTE Toezichthouders": 84.55,
+                "VTE administratieve en juridische ondersteuning": 17.8
+            },
+            "Klachten": {
+                "Milieuklachten milieu": 4652,
+                "PFAS": 0,
+                "Stikstof": 0,
+                "Afval": 90,
+                "Andere": 2778,
+                "Bodem": 45,
+                "Geluid": 967,
+                "Lucht": 114,
+                "Mest": 24,
+                "Milieubeheer": 0,
+                "Vergunningen": 420,
+                "Water": 176
+            },
+            "Controles": {
+                "Milieucontroles": 10606,
+                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 2140,
+                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 636,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 988,
+                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 4119,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 4835
+            },
+            "Aanvankelijkecontrolesmetschending": {
+                "Totaal aanvankelijk": 0,
+                "PFAS": 0,
+                "Stikstof": 0,
+                "Milieubeheer": 0,
+                "Lucht": 680,
+                "Water": 1850,
+                "Bodem": 269,
+                "Geluid": 336,
+                "Vergunningen": 2832,
+                "Mest": 187,
+                "Afval": 1226,
+                "Andere": 1354
+            },
+            "Instrument": {
+                "Aantal raadgevingen milieu": 126,
+                "Aantal raadgevingen ruimtelijke ordening": 4,
+                "Aanmaning milieu": 1575,
+                "Aanmaning": 304,
+                "Procesverbaal milieu": 869,
+                "Procesverbaal ro": 121,
+                "Verslag van vaststelling": 4,
+                "Verslag van vaststelling1": 30,
+                "Bevel tot staking": 12,
+                "Bestuurlijke maatregl milieu": 42,
+                "Bestuurlijke maatregel RO": 42
+            },
+            "Thema": {
+                "PFAS": "Geen opmerking",
+                "Stikstof": "Geen opmerking"
+            },
+            "Opmerking": {
+                "Opmerking": "Geen opmerking."
+            }
+        },
+        "DOMGVPO": {
+            "gewestelijkeToezichthouders": {
+                "Toezichthouders": 7,
+                "VTE Toezichthouders": 0.2,
+                "VTE administratieve en juridische ondersteuning": 0
+            },
+            "Klachten": {
+                "Milieuklachten milieu": 0,
+                "PFAS": 0,
+                "Stikstof": 0,
+                "Afval": 0,
+                "Andere": 0,
+                "Bodem": 0,
+                "Geluid": 0,
+                "Lucht": 0,
+                "Mest": 0,
+                "Milieubeheer": 0,
+                "Vergunningen": 0,
+                "Water": 0
+            },
+            "Controles": {
+                "Milieucontroles": 75,
+                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 75,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
+            },
+            "Aanvankelijkecontrolesmetschending": {
+                "Totaal aanvankelijk": 4,
+                "PFAS": 0,
+                "Stikstof": 0,
+                "Milieubeheer": 0,
+                "Lucht": 0,
+                "Water": 0,
+                "Bodem": 0,
+                "Geluid": 0,
+                "Vergunningen": 0,
+                "Mest": 0,
+                "Afval": 0,
+                "Andere": 4
+            },
+            "Instrument": {
+                "Aantal raadgevingen milieu": 4,
+                "Aantal raadgevingen ruimtelijke ordening": "niet gekend",
+                "Aanmaning milieu": 0,
+                "Aanmaning": "niet gekend",
+                "Procesverbaal milieu": 0,
+                "Procesverbaal ro": "niet gekend",
+                "Verslag van vaststelling": 0,
+                "Verslag van vaststelling1": "niet gekend",
+                "Bevel tot staking": "niet gekend",
+                "Bestuurlijke maatregl milieu": 0,
+                "Bestuurlijke maatregel RO": "niet gekend"
+            },
+            "Thema": {
+                "PFAS": "Geen opmerking",
+                "Stikstof": "Geen opmerking"
+            },
+            "Opmerking": {
+                "Opmerking": "Geen opmerking."
+            }
+        },
+        "DZORG": {
+            "gewestelijkeToezichthouders": {
+                "Toezichthouders": 12,
+                "VTE Toezichthouders": 0.125,
+                "VTE administratieve en juridische ondersteuning": 0.104
+            },
+            "Klachten": {
+                "Milieuklachten milieu": 0,
+                "PFAS": 0,
+                "Stikstof": 0,
+                "Afval": 0,
+                "Andere": 29,
+                "Bodem": 0,
+                "Geluid": 0,
+                "Lucht": 0,
+                "Mest": 0,
+                "Milieubeheer": 0,
+                "Vergunningen": 0,
+                "Water": 0
+            },
+            "Controles": {
+                "Milieucontroles": 60,
+                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 7,
+                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 29,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
+            },
+            "Aanvankelijkecontrolesmetschending": {
+                "Totaal aanvankelijk": 0,
+                "PFAS": 0,
+                "Stikstof": 0,
+                "Milieubeheer": 0,
+                "Lucht": 0,
+                "Water": 0,
+                "Bodem": 0,
+                "Geluid": 0,
+                "Vergunningen": 0,
+                "Mest": 0,
+                "Afval": 0,
+                "Andere": 0
+            },
+            "Instrument": {
+                "Aantal raadgevingen milieu": 75,
+                "Aantal raadgevingen ruimtelijke ordening": "niet gekend",
+                "Aanmaning milieu": 0,
+                "Aanmaning": "niet gekend",
+                "Procesverbaal milieu": 0,
+                "Procesverbaal ro": "niet gekend",
+                "Verslag van vaststelling": 0,
+                "Verslag van vaststelling1": "niet gekend",
+                "Bevel tot staking": "niet gekend",
+                "Bestuurlijke maatregl milieu": 0,
+                "Bestuurlijke maatregel RO": "niet gekend"
+            },
+            "Thema": {
+                "PFAS": "Geen opmerking",
+                "Stikstof": "Geen opmerking"
+            },
+            "Opmerking": {
+                "Opmerking": "Geen opmerking."
+            }
+        },
+        "OVAM": {
+            "gewestelijkeToezichthouders": {
+                "Toezichthouders": 19,
+                "VTE Toezichthouders": 7.5,
+                "VTE administratieve en juridische ondersteuning": 1.2
+            },
+            "Klachten": {
+                "Milieuklachten milieu": 247,
+                "PFAS": 0,
+                "Stikstof": 0,
+                "Afval": 0,
+                "Andere": 0,
+                "Bodem": 0,
+                "Geluid": 0,
+                "Lucht": 0,
+                "Mest": 0,
+                "Milieubeheer": 0,
+                "Vergunningen": 0,
+                "Water": 0
+            },
+            "Controles": {
+                "Milieucontroles": 791,
+                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 67,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 716,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
+            },
+            "Aanvankelijkecontrolesmetschending": {
+                "Totaal aanvankelijk": 466,
+                "PFAS": 0,
+                "Stikstof": 0,
+                "Milieubeheer": 0,
+                "Lucht": 0,
+                "Water": 0,
+                "Bodem": 416,
+                "Geluid": 0,
+                "Vergunningen": 0,
+                "Mest": 0,
+                "Afval": 50,
+                "Andere": 0
+            },
+            "Instrument": {
+                "Aantal raadgevingen milieu": 17,
+                "Aantal raadgevingen ruimtelijke ordening": "niet gekend",
+                "Aanmaning milieu": 32,
+                "Aanmaning": "niet gekend",
+                "Procesverbaal milieu": 13,
+                "Procesverbaal ro": "niet gekend",
+                "Verslag van vaststelling": 3,
+                "Verslag van vaststelling1": "niet gekend",
+                "Bevel tot staking": "niet gekend",
+                "Bestuurlijke maatregl milieu": 2,
+                "Bestuurlijke maatregel RO": "niet gekend"
+            },
+            "Thema": {
+                "PFAS": "Geen opmerking",
+                "Stikstof": "Geen opmerking"
+            },
+            "Opmerking": {
+                "Opmerking": "Geen opmerking."
+            }
+        },
+        "VEKA": {
+            "gewestelijkeToezichthouders": {
+                "Toezichthouders": 0,
+                "VTE Toezichthouders": 0,
+                "VTE administratieve en juridische ondersteuning": 0
+            },
+            "Klachten": {
+                "Milieuklachten milieu": 0,
+                "Afval": 0,
+                "Andere": 0,
+                "Bodem": 0,
+                "Geluid": 0,
+                "Lucht": 0,
+                "Mest": 0,
+                "Milieubeheer": 0,
+                "Vergunningen": 0,
+                "Water": 0,
+                "PFAS": 0,
+                "Stikstof":0
+            },
+            "Controles": {
+                "Milieucontroles": 0,
+                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
+            },
+            "Aanvankelijkecontrolesmetschending": {
+                "Totaal aanvankelijk": 0,
+                "PFAS": 0,
+                "Stikstof": 0,
+                "Milieubeheer": 0,
+                "Lucht": 0,
+                "Water": 0,
+                "Bodem": 0,
+                "Geluid": 0,
+                "Vergunningen": 0,
+                "Mest": 0,
+                "Afval": 0,
+                "Andere": 0
+            },
+            "Instrument": {
+                "Aantal raadgevingen milieu": "niet gekend",
+                "Aantal raadgevingen ruimtelijke ordening": "niet gekend",
+                "Aanmaning milieu": "niet gekend",
+                "Aanmaning": "niet gekend",
+                "Procesverbaal milieu": "niet gekend",
+                "Procesverbaal ro": "niet gekend",
+                "Verslag van vaststelling": "niet gekend",
+                "Verslag van vaststelling1": "niet gekend",
+                "Bevel tot staking": "niet gekend",
+                "Bestuurlijke maatregl milieu": "niet gekend",
+                "Bestuurlijke maatregel RO": "niet gekend"
+            },
+            "Thema": {
+                "PFAS": "Geen opmerking",
+                "Stikstof": "Geen opmerking"
+            },
+            "Opmerking": {
+                "Opmerking": "Geen opmerking."
+            }
+        },
+        "VLM": {
+            "gewestelijkeToezichthouders": {
+                "Toezichthouders": 36,
+                "VTE Toezichthouders": 33.6,
+                "VTE administratieve en juridische ondersteuning": 0.1
+            },
+            "Klachten": {
+                "Milieuklachten milieu": 169,
+                "PFAS": 0,
+                "Stikstof": 0,
+                "Afval": 0,
+                "Andere": 0,
+                "Bodem": 0,
+                "Geluid": 0,
+                "Lucht": 0,
+                "Mest": 168,
+                "Milieubeheer": 0,
+                "Vergunningen": 0,
+                "Water": 1,
+                "Milieucontroles": 6179
+            },
+            "Controles": {
+                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 23,
+                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 169,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 22,
+                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 5859,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 115
+            },
+            "Aanvankelijkecontrolesmetschending": {
+                "Totaal aanvankelijk": 674,
+                "PFAS": 0,
+                "Stikstof": 0,
+                "Milieubeheer": 0,
+                "Lucht": 16,
+                "Water": 34,
+                "Bodem": 0,
+                "Geluid": 0,
+                "Vergunningen": 0,
+                "Mest": 610,
+                "Afval": 0,
+                "Andere": 14
+            },
+            "Instrument": {
+                "Aantal raadgevingen milieu": 4,
+                "Aantal raadgevingen ruimtelijke ordening": "niet gekend",
+                "Aanmaning milieu": 210,
+                "Aanmaning": "niet gekend",
+                "Procesverbaal milieu": 361,
+                "Procesverbaal ro": "niet gekend",
+                "Verslag van vaststelling": 3,
+                "Verslag van vaststelling1": "niet gekend",
+                "Bevel tot staking": "niet gekend",
+                "Bestuurlijke maatregl milieu": 4,
+                "Bestuurlijke maatregel RO": "niet gekend"
+            },
+            "Thema": {
+                "PFAS": "Geen opmerking",
+                "Stikstof": "Geen opmerking"
+            },
+            "Opmerking": {
+                "Opmerking": "Geen opmerking."
+            }
+        },
+        "VMM": {
+            "Gewest": "Vlaamse Milieumaatschappij",
+            "gewestelijkeToezichthouders": {
+                "Toezichthouders": 46,
+                "VTE Toezichthouders": 3,
+                "VTE administratieve en juridische ondersteuning": 0.1
+            },
+            "Klachten": {
+                "Milieuklachten milieu": 0,
+                "PFAS": 0,
+                "Stikstof": 0,
+                "Afval": 0,
+                "Andere": 0,
+                "Bodem": 0,
+                "Geluid": 0,
+                "Lucht": 0,
+                "Mest": 0,
+                "Milieubeheer": 0,
+                "Vergunningen": 0,
+                "Water": 0,
+                "Milieucontroles": 0
+            },
+            "Controles": {
+                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
+            },
+            "Aanvankelijkecontrolesmetschending": {
+                "Totaal aanvankelijk": 94,
+                "PFAS": 0,
+                "Stikstof": 0,
+                "Milieubeheer": 94,
+                "Lucht": 0,
+                "Water": 94,
+                "Bodem": 0,
+                "Geluid": 0,
+                "Vergunningen": 33,
+                "Mest": 2,
+                "Afval": 41,
+                "Andere": 36
+            },
+            "Instrument": {
+                "Aantal raadgevingen milieu": 10,
+                "Aantal raadgevingen ruimtelijke ordening": "niet gekend",
+                "Aanmaning milieu": 73,
+                "Aanmaning": "niet gekend",
+                "Procesverbaal milieu": 19,
+                "Procesverbaal ro": "niet gekend",
+                "Verslag van vaststelling": "niet gekend",
+                "Verslag van vaststelling1": "niet gekend",
+                "Bevel tot staking": "niet gekend",
+                "Bestuurlijke maatregl milieu": 13,
+                "Bestuurlijke maatregel RO": "niet gekend"
+            },
+            "Thema": {
+                "PFAS": "Geen opmerking",
+                "Stikstof": "Geen opmerking"
+            },
+            "Opmerking": {
+                "Opmerking": "Geen opmerking."
+            }
+        },
+        "VWI": {
+            "Gewest": "Vlaamse Wooninspectie",
+            "gewestelijkeToezichthouders": {
+                "Toezichthouders": 0,
+                "VTE Toezichthouders": 0,
+                "VTE administratieve en juridische ondersteuning": 0
+            },
+            "Klachten": {
+                "Milieuklachten milieu": 0,
+                "PFAS": 0,
+                "Stikstof": 0,
+                "Afval": 0,
+                "Andere": 0,
+                "Bodem": 0,
+                "Geluid": 0,
+                "Lucht": 0,
+                "Mest": 0,
+                "Milieubeheer": 0,
+                "Vergunningen": 0,
+                "Water": 0
+            },
+            "Controles": {
+                "Milieucontroles": 0,
+                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
+            },
+            "Aanvankelijkecontrolesmetschending": {
+                "Totaal aanvankelijk": 0,
+                "PFAS": 0,
+                "Stikstof": 0,
+                "Milieubeheer": 0,
+                "Lucht": 0,
+                "Water": 0,
+                "Bodem": 0,
+                "Geluid": 0,
+                "Vergunningen": 0,
+                "Mest": 0,
+                "Afval": 0,
+                "Andere": 0
+            },
+            "Instrument": {
+                "Aantal raadgevingen milieu": "niet gekend",
+                "Aantal raadgevingen ruimtelijke ordening": 0,
+                "Aanmaning milieu": "niet gekend",
+                "Aanmaning": 0,
+                "Procesverbaal milieu": "niet gekend",
+                "Procesverbaal ro": 0,
+                "Verslag van vaststelling": "niet gekend",
+                "Verslag van vaststelling1": 0,
+                "Bevel tot staking": 0,
+                "Bestuurlijke maatregl milieu": "niet gekend",
+                "Bestuurlijke maatregel RO": "niet gekend"
+            },
+            "Thema": {
+                "PFAS": "Geen opmerking",
+                "Stikstof": "Geen opmerking"
+            },
+            "Opmerking": {
+                "Opmerking": "Geen opmerking."
+            }
+        }
+    },
+    "RO" : {
+        "AMDK": {
+            "PersoneelRO": {
+                "Verbalisanten": 0,
+                "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
+                "Stedenbouwkundige inspecteurs": 0,
+                "VTE": 0
+            },
+            "Klachten": {
+                "Milieuklachten ruimtelijke ordening": 0,
+                "Verharding": 0,
+                "Ontbossing": 0
+            },
+            "Controles": {
+                "Milieucontroles": 0,
+                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
+            },
+            "Aanvankelijkecontrolesmetschending": {
+                "Totaal aanvankelijk": 0,
+                "Overtredingsgraad": 0,
+                "Verharding": 0,
+                "Ontbossing": 0
+            },
+            "Instrument": {
+                "Aantal raadgevingen": "niet gekend",
+                "Aanmaning": "niet gekend",
+                "Verslagen van vaststelling": "niet gekend",
+                "Procesverbaal": "niet gekend",
+                "Bevel tot staking": "niet gekend",
+                "Bestuurlijke maatregel": "niet gekend",
+                "Afgesloten minnelijke schikking": 0,
+                "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
+                "Herstel gevorderd bij burgelijke rechter": 0,
+                "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
+            },
+            "Thema": {
+                "Verharding": "Geen opmerking",
+                "Ontbossing": "Geen opmerking"
+            },
+            "Opmerking": {
+                "Opmerking": "Geen opmerking."
+            }
+        },
+        "ANB": {
+            "PersoneelRO": {
+                "Verbalisanten": 0,
+                "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
+                "Stedenbouwkundige inspecteurs": 0,
+                "VTE": 0
+            },
+            "Klachten": {
+                "Milieuklachten ruimtelijke ordening": 0,
+                "Verharding": 0,
+                "Ontbossing": 0
+            },
+            "Controles": {
+                "Milieucontroles": 0,
+                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
+            },
+            "Aanvankelijkecontrolesmetschending": {
+                "Totaal aanvankelijk": 0,
+                "Overtredingsgraad": 0,
+                "Verharding": 0,
+                "Ontbossing": 0
+            },
+            "Instrument": {
+                "Aantal raadgevingen": "niet gekend",
+                "Aanmaning": "niet gekend",
+                "Verslagen van vaststelling": "niet gekend",
+                "Procesverbaal": "niet gekend",
+                "Bevel tot staking": "niet gekend",
+                "Bestuurlijke maatregel": "niet gekend",
+                "Afgesloten minnelijke schikking": 0,
+                "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
+                "Herstel gevorderd bij burgelijke rechter": 0,
+                "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
+            },
+            "Thema": {
+                "Verharding": "Geen opmerking",
+                "Ontbossing": "Geen opmerking"
+            },
+            "Opmerking": {
+                "Opmerking": "Geen opmerking."
+            }
+        },
+        "AWV": {
+            "PersoneelRO": {
+                "Verbalisanten": 0,
+                "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
+                "Stedenbouwkundige inspecteurs": 0,
+                "VTE": 0
+            },
+            "Klachten": {
+                "Milieuklachten ruimtelijke ordening": 0,
+                "Verharding": 0,
+                "Ontbossing": 0
+            },
+            "Controles": {
+                "Milieucontroles": 0,
+                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
+            },
+            "Aanvankelijkecontrolesmetschending": {
+                "Totaal aanvankelijk": 0,
+                "Overtredingsgraad": 0,
+                "Verharding": 0,
+                "Ontbossing": 0
+            },
+            "Instrument": {
+                "Aantal raadgevingen": "niet gekend",
+                "Aanmaning": "niet gekend",
+                "Verslagen van vaststelling": "niet gekend",
+                "Procesverbaal": "niet gekend",
+                "Bevel tot staking": "niet gekend",
+                "Bestuurlijke maatregel": "niet gekend",
+                "Afgesloten minnelijke schikking": 0,
+                "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
+                "Herstel gevorderd bij burgelijke rechter": 0,
+                "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
+            },
+            "Thema": {
+                "Verharding": "Geen opmerking",
+                "Ontbossing": "Geen opmerking"
+            },
+            "Opmerking": {
+                "Opmerking": "Geen opmerking."
+            }
+        },
+        "VW": {
+            "Gewest": "De Vlaamse Waterweg",
+            "PersoneelRO": {
+                "Verbalisanten": 0,
+                "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
+                "Stedenbouwkundige inspecteurs": 0,
+                "VTE": 0
+            },
+            "Klachten": {
+                "Milieuklachten ruimtelijke ordening": 0,
+                "Verharding": 0,
+                "Ontbossing": 0
+            },
+            "Controles": {
+                "Milieucontroles": 0,
+                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
+            },
+            "Aanvankelijkecontrolesmetschending": {
+                "Totaal aanvankelijk": 0,
+                "Overtredingsgraad": 0,
+                "Verharding": 0,
+                "Ontbossing": 0
+            },
+            "Instrument": {
+                "Aantal raadgevingen": "niet gekend",
+                "Aanmaning": "niet gekend",
+                "Verslagen van vaststelling": "niet gekend",
+                "Procesverbaal": "niet gekend",
+                "Bevel tot staking": "niet gekend",
+                "Bestuurlijke maatregel": "niet gekend",
+                "Afgesloten minnelijke schikking": 0,
+                "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
+                "Herstel gevorderd bij burgelijke rechter": 0,
+                "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
+            },
+            "Thema": {
+                "Verharding": "Geen opmerking",
+                "Ontbossing": "Geen opmerking"
+            },
+            "Opmerking": {
+                "Opmerking": "Geen opmerking."
+            }
+        },
+        "dMOW": {
+            "PersoneelRO": {
+                "Verbalisanten": 0,
+                "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
+                "Stedenbouwkundige inspecteurs": 0,
+                "VTE": 0
+            },
+            "Klachten": {
+                "Milieuklachten ruimtelijke ordening": 0,
+                "Verharding": 0,
+                "Ontbossing": 0
+            },
+            "Controles": {
+                "Milieucontroles": 0,
+                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
+            },
+            "Aanvankelijkecontrolesmetschending": {
+                "Totaal aanvankelijk": 0,
+                "Overtredingsgraad": 0,
+                "Verharding": 0,
+                "Ontbossing": 0
+            },
+            "Instrument": {
+                "Aantal raadgevingen": "niet gekend",
+                "Aanmaning": "niet gekend",
+                "Verslagen van vaststelling": "niet gekend",
+                "Procesverbaal": "niet gekend",
+                "Bevel tot staking": "niet gekend",
+                "Bestuurlijke maatregel": "niet gekend",
+                "Afgesloten minnelijke schikking": 0,
+                "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
+                "Herstel gevorderd bij burgelijke rechter": 0,
+                "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
+            },
+            "Thema": {
+                "Verharding": "Geen opmerking",
+                "Ontbossing": "Geen opmerking"
+            },
+            "Opmerking": {
+                "Opmerking": "Geen opmerking."
+            }
+        },
+        "dOMGGOP": {
+            "Gewest": "Departement Omgeving afdeling GOP",
+            "PersoneelRO": {
+                "Verbalisanten": 0,
+                "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
+                "Stedenbouwkundige inspecteurs": 0,
+                "VTE": 0
+            },
+            "Klachten": {
+                "Milieuklachten ruimtelijke ordening": 0,
+                "Verharding": 0,
+                "Ontbossing": 0
+            },
+            "Controles": {
+                "Milieucontroles": 0,
+                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
+            },
+            "Aanvankelijkecontrolesmetschending": {
+                "Totaal aanvankelijk": 0,
+                "Overtredingsgraad": 0,
+                "Verharding": 0,
+                "Ontbossing": 0
+            },
+            "Instrument": {
+                "Aantal raadgevingen": "niet gekend",
+                "Aanmaning": "niet gekend",
+                "Verslagen van vaststelling": "niet gekend",
+                "Procesverbaal": "niet gekend",
+                "Bevel tot staking": "niet gekend",
+                "Bestuurlijke maatregel": "niet gekend",
+                "Afgesloten minnelijke schikking": 0,
+                "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
+                "Herstel gevorderd bij burgelijke rechter": 0,
+                "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
+            },
+            "Thema": {
+                "Verharding": "Geen opmerking",
+                "Ontbossing": "Geen opmerking"
+            },
+            "Opmerking": {
+                "Opmerking": "Geen opmerking."
+            }
+        },
+        "dOMGHH": {
+            "Gewest": "Departement Omgeving afdeling Handhaving",
+            "PersoneelRO": {
+                "Verbalisanten": 0,
+                "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
+                "Stedenbouwkundige inspecteurs": 0,
+                "VTE": 0
+            },
+            "Klachten": {
+                "Milieuklachten ruimtelijke ordening": 0,
+                "Verharding": 0,
+                "Ontbossing": 0
+            },
+            "Controles": {
+                "Milieucontroles": 0,
+                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
+            },
+            "Aanvankelijkecontrolesmetschending": {
+                "Totaal aanvankelijk": 0,
+                "Overtredingsgraad": 0,
+                "Verharding": 0,
+                "Ontbossing": 0
+            },
+            "Instrument": {
+                "Aantal raadgevingen": "niet gekend",
+                "Aanmaning": "niet gekend",
+                "Verslagen van vaststelling": "niet gekend",
+                "Procesverbaal": "niet gekend",
+                "Bevel tot staking": "niet gekend",
+                "Bestuurlijke maatregel": "niet gekend",
+                "Afgesloten minnelijke schikking": 0,
+                "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
+                "Herstel gevorderd bij burgelijke rechter": 0,
+                "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
+            },
+            "Thema": {
+                "Verharding": "Geen opmerking",
+                "Ontbossing": "Geen opmerking"
+            },
+            "Opmerking": {
+                "Opmerking": "Geen opmerking."
+            }
+        },
+        "DOMGVPO": {
+            "Gewest": "Departement omgeving afdeling VPO",
+            "PersoneelRO": {
+                "Verbalisanten": 0,
+                "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
+                "Stedenbouwkundige inspecteurs": 0,
+                "VTE": 0
+            },
+            "Klachten": {
+                "Milieuklachten ruimtelijke ordening": 0,
+                "Verharding": 0,
+                "Ontbossing": 0
+            },
+            "Controles": {
+                "Milieucontroles": 0,
+                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
+            },
+            "Aanvankelijkecontrolesmetschending": {
+                "Totaal aanvankelijk": 0,
+                "Overtredingsgraad": 0,
+                "Verharding": 0,
+                "Ontbossing": 0
+            },
+            "Instrument": {
+                "Aantal raadgevingen": "niet gekend",
+                "Aanmaning": "niet gekend",
+                "Verslagen van vaststelling": "niet gekend",
+                "Procesverbaal": "niet gekend",
+                "Bevel tot staking": "niet gekend",
+                "Bestuurlijke maatregel": "niet gekend",
+                "Afgesloten minnelijke schikking": 0,
+                "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
+                "Herstel gevorderd bij burgelijke rechter": 0,
+                "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
+            },
+            "Thema": {
+                "Verharding": "Geen opmerking",
+                "Ontbossing": "Geen opmerking"
+            },
+            "Opmerking": {
+                "Opmerking": "Geen opmerking."
+            }
+        },
+        "DZORG": {
+            "Gewest": "Departement zorg",
+            "PersoneelRO": {
+                "Verbalisanten": 0,
+                "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
+                "Stedenbouwkundige inspecteurs": 0,
+                "VTE": 0
+            },
+            "Klachten": {
+                "Milieuklachten ruimtelijke ordening": 0,
+                "Verharding": 0,
+                "Ontbossing": 0
+            },
+            "Controles": {
+                "Milieucontroles": 0,
+                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
+            },
+            "Aanvankelijkecontrolesmetschending": {
+                "Totaal aanvankelijk": 0,
+                "Overtredingsgraad": 0,
+                "Verharding": 0,
+                "Ontbossing": 0
+            },
+            "Instrument": {
+                "Aantal raadgevingen": "niet gekend",
+                "Aanmaning": "niet gekend",
+                "Verslagen van vaststelling": "niet gekend",
+                "Procesverbaal": "niet gekend",
+                "Bevel tot staking": "niet gekend",
+                "Bestuurlijke maatregel": "niet gekend",
+                "Afgesloten minnelijke schikking": 0,
+                "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
+                "Herstel gevorderd bij burgelijke rechter": 0,
+                "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
+            },
+            "Thema": {
+                "Verharding": "Geen opmerking",
+                "Ontbossing": "Geen opmerking"
+            },
+            "Opmerking": {
+                "Opmerking": "Geen opmerking."
+            }
+        },
+        "OVAM": {
+            "Gewest": "Openbare Vlaamse Afvalstoffenmaatschappij",
+            "PersoneelRO": {
+                "Verbalisanten": 0,
+                "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
+                "Stedenbouwkundige inspecteurs": 0,
+                "VTE": 0
+            },
+            "Klachten": {
+                "Milieuklachten ruimtelijke ordening": 0,
+                "Verharding": 0,
+                "Ontbossing": 0
+            },
+            "Controles": {
+                "Milieucontroles": 0,
+                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
+            },
+            "Aanvankelijkecontrolesmetschending": {
+                "Totaal aanvankelijk": 0,
+                "Overtredingsgraad": 0,
+                "Verharding": 0,
+                "Ontbossing": 0
+            },
+            "Instrument": {
+                "Aantal raadgevingen": "niet gekend",
+                "Aanmaning": "niet gekend",
+                "Verslagen van vaststelling": "niet gekend",
+                "Procesverbaal": "niet gekend",
+                "Bevel tot staking": "niet gekend",
+                "Bestuurlijke maatregel": "niet gekend",
+                "Afgesloten minnelijke schikking": 0,
+                "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
+                "Herstel gevorderd bij burgelijke rechter": 0,
+                "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
+            },
+            "Thema": {
+                "Verharding": "Geen opmerking",
+                "Ontbossing": "Geen opmerking"
+            },
+            "Opmerking": {
+                "Opmerking": "Geen opmerking."
+            }
+        },
+        "VEKA": {
+            "Gewest": "Vlaamse Energie- en Klimaatagentschap",
+            "PersoneelRO": {
+                "Verbalisanten": 0,
+                "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
+                "Stedenbouwkundige inspecteurs": 0,
+                "VTE": 0
+            },
+            "Klachten": {
+                "Milieuklachten ruimtelijke ordening": 0,
+                "Verharding": 0,
+                "Ontbossing": 0
+            },
+            "Controles": {
+                "Milieucontroles": 0,
+                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
+            },
+            "Aanvankelijkecontrolesmetschending": {
+                "Totaal aanvankelijk": 0,
+                "Overtredingsgraad": 0,
+                "Verharding": 0,
+                "Ontbossing": 0
+            },
+            "Instrument": {
+                "Aantal raadgevingen": "niet gekend",
+                "Aanmaning": "niet gekend",
+                "Verslagen van vaststelling": "niet gekend",
+                "Procesverbaal": "niet gekend",
+                "Bevel tot staking": "niet gekend",
+                "Bestuurlijke maatregel": "niet gekend",
+                "Afgesloten minnelijke schikking": 0,
+                "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
+                "Herstel gevorderd bij burgelijke rechter": 0,
+                "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
+            },
+            "Thema": {
+                "Verharding": "Geen opmerking",
+                "Ontbossing": "Geen opmerking"
+            },
+            "Opmerking": {
+                "Opmerking": "Geen opmerking."
+            }
+        },
+        "VLM": {
+            "Gewest": "Vlaamse Landmaatschappij",
+            "PersoneelRO": {
+                "Verbalisanten": 0,
+                "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
+                "Stedenbouwkundige inspecteurs": 0,
+                "VTE": 0
+            },
+            "Klachten": {
+                "Milieuklachten ruimtelijke ordening": 0,
+                "Verharding": 0,
+                "Ontbossing": 0
+            },
+            "Controles": {
+                "Milieucontroles": 0,
+                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
+            },
+            "Aanvankelijkecontrolesmetschending": {
+                "Totaal aanvankelijk": 0,
+                "Overtredingsgraad": 0,
+                "Verharding": 0,
+                "Ontbossing": 0
+            },
+            "Instrument": {
+                "Aantal raadgevingen": "niet gekend",
+                "Aanmaning": "niet gekend",
+                "Verslagen van vaststelling": "niet gekend",
+                "Procesverbaal": "niet gekend",
+                "Bevel tot staking": "niet gekend",
+                "Bestuurlijke maatregel": "niet gekend",
+                "Afgesloten minnelijke schikking": 0,
+                "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
+                "Herstel gevorderd bij burgelijke rechter": 0,
+                "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
+            },
+            "Thema": {
+                "Verharding": "Geen opmerking",
+                "Ontbossing": "Geen opmerking"
+            },
+            "Opmerking": {
+                "Opmerking": "Geen opmerking."
+            }
+        },
+        "VMM": {
+            "Gewest": "Vlaamse Milieumaatschappij",
+            "PersoneelRO": {
+                "Verbalisanten": 0,
+                "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
+                "Stedenbouwkundige inspecteurs": 0,
+                "VTE": 0
+            },
+            "Klachten": {
+                "Milieuklachten ruimtelijke ordening": 0,
+                "Verharding": 0,
+                "Ontbossing": 0
+            },
+            "Controles": {
+                "Milieucontroles": 0,
+                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
+            },
+            "Aanvankelijkecontrolesmetschending": {
+                "Totaal aanvankelijk": 0,
+                "Overtredingsgraad": 0,
+                "Verharding": 0,
+                "Ontbossing": 0
+            },
+            "Instrument": {
+                "Aantal raadgevingen": "niet gekend",
+                "Aanmaning": "niet gekend",
+                "Verslagen van vaststelling": "niet gekend",
+                "Procesverbaal": "niet gekend",
+                "Bevel tot staking": "niet gekend",
+                "Bestuurlijke maatregel": "niet gekend",
+                "Afgesloten minnelijke schikking": 0,
+                "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
+                "Herstel gevorderd bij burgelijke rechter": 0,
+                "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
+            },
+            "Thema": {
+                "Verharding": "Geen opmerking",
+                "Ontbossing": "Geen opmerking"
+            },
+            "Opmerking": {
+                "Opmerking": "Geen opmerking."
+            }
+        },
+        "VWI": {
+            "Gewest": "Vlaamse Wooninspectie",
+            "PersoneelRO": {
+                "Verbalisanten": 0,
+                "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
+                "Stedenbouwkundige inspecteurs": 0,
+                "VTE": 0
+            },
+            "Klachten": {
+                "Milieuklachten ruimtelijke ordening": 0,
+                "Verharding": 0,
+                "Ontbossing": 0
+            },
+            "Controles": {
+                "Milieucontroles": 0,
+                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 0,
+                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
+            },
+            "Aanvankelijkecontrolesmetschending": {
+                "Totaal aanvankelijk": 0,
+                "Overtredingsgraad": 0,
+                "Verharding": 0,
+                "Ontbossing": 0
+            },
+            "Instrument": {
+                "Aantal raadgevingen": "niet gekend",
+                "Aanmaning": "niet gekend",
+                "Verslagen van vaststelling": "niet gekend",
+                "Procesverbaal": "niet gekend",
+                "Bevel tot staking": "niet gekend",
+                "Bestuurlijke maatregel": "niet gekend",
+                "Afgesloten minnelijke schikking": 0,
+                "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
+                "Herstel gevorderd bij burgelijke rechter": 0,
+                "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
+            },
+            "Thema": {
+                "Verharding": "Geen opmerking",
+                "Ontbossing": "Geen opmerking"
+            },
+            "Opmerking": {
+                "Opmerking": "Geen opmerking."
+            }
+        }
+    }
+}

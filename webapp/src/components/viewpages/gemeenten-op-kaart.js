@@ -68,13 +68,17 @@ class OhrOpkaart extends LitElement {
         <li>Ruimtelijke ordening: oranje kaarten</li>
         <br>
         <p>De kleurgradaties wijzen op de aantallen in de gemeenten per 1.000 inwoners.</p>
+          <p>De responsgraad voor deze bevraging (of bepaalde vragen in de bevraging) bedraagt geen 100%.</p>
       </vl-typography>`
   }
 
   __renderBackgroundInformation() {
     return html`
           <vl-typography data-cy="typography">
-          <p><em>De responsgraad voor deze bevraging (of bepaalde vragen in de bevraging) bedraagt geen 100%. <br/>Dit maakt dat bepaalde gemeenten als waarde "niet gekend" of "non-repons" tonen.</em></p>
+          <p><em>Non-respons: Gemeenten heeft niet gereageerd op de bevraging.
+          <br/>
+          Niet gekend: Gemeenten kon geen cijfers geven dit aspect.</em>
+          </p>
           </vl-typography>`
   }
 
@@ -141,7 +145,7 @@ class OhrOpkaart extends LitElement {
             },
             {
                 size: 12,
-                template: this.__renderEverVizKaart()
+                template: this.__renderEverVizKaart(),
             },
             {
               size:8,

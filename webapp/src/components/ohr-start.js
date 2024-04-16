@@ -1,5 +1,5 @@
-import {html, LitElement, renderStack} from "./common/commons.js";
-import {vlElementsStyle} from "@domg-wc/elements";
+import { html, LitElement, renderStack } from "./common/commons.js";
+import { vlElementsStyle } from "@domg-wc/elements";
 
 import "@domg-wc/elements/grid";
 import "@domg-wc/elements/introduction";
@@ -14,15 +14,12 @@ import "@domg-wc/components/content-header";
 import "@domg-wc/components/alert";
 
 class OhrLandingPage extends LitElement {
-
-//The styles method is a feature provided by Lit Element to encapsulate styles for a specific component.
+  //The styles method is a feature provided by Lit Element to encapsulate styles for a specific component.
   static get styles() {
-    return [
-      ...vlElementsStyle
-    ]
+    return [...vlElementsStyle];    
   }
 
-/*In the context of a web component, especially one based on Lit Element, 
+  /*In the context of a web component, especially one based on Lit Element, 
 the constructor is often used for setting up initial state, initializing properties, 
 and performing other setup tasks.
 */
@@ -32,82 +29,95 @@ and performing other setup tasks.
   }
 
   //Main Rendering Function of page
-  //It uses various function defined under this render function 
+  //It uses various function defined under this render function
   render() {
-    return html`
-      <vl-content-header>
-        <img is="vl-image"
-             slot="image"
-             src="images/header.jpg"
-             alt="Hoofding afbeelding website"/>
+    return html` <vl-content-header>
+        <img
+          is="vl-image"
+          slot="image"
+          src="images/header.jpg"
+          alt="Hoofding afbeelding website"
+        />
         <a slot="context-link" href="/">Omgevingshandhavingsrapportage</a>
         <a slot="title-link" href="/">Handhaving</a>
       </vl-content-header>
       <section is="vl-region">
         <div is="vl-layout">
           ${renderStack(
-              {
-                size: 8,
-                template: html`<h1 is="vl-h1" data-vl-no-space-bottom>Omgevingshandhavingsrapportage</h1>`,
-              },
-              {
-                size: 8,
-                template: this.__renderIntroductionTextOnTopOfPage(),
-              },
-              {
-                size: 4,
-                template: this.__renderSideNavigation(),
-              },
-              {
-                size: 12,
-                template: this.__renderStaticNumbersKPI(),
-              },
-              {
-                size:8,
-                template: this.__renderStaticNumbersKPI2(),
-              },
-              {
-                size: 12,
-                template: this.__renderMeerJarenRapportage(),
-              },
-              {
-                size: 12,
-                template: this.__renderJaarRapportage(),
-              },
-              {
-                size: 12,
-                template: this.__renderOpKaart(),
-              },
-              {
-                size: 12,
-                template: this.__renderMeerInfo(),
-              },
+            {
+              size: 8,
+              template: html`<h1 is="vl-h1" data-vl-no-space-bottom>
+                Omgevingshandhavingsrapportage
+              </h1>`,
+            },
+            {
+              size: 8,
+              template: this.__renderIntroductionTextOnTopOfPage(),
+            },
+            {
+              size: 4,
+              template: this.__renderSideNavigation(),
+            },
+            {
+              size: 12,
+              template: this.__renderStaticNumbersKPI(),
+            },
+            {
+              size:12,
+              template: this.__renderGeconsolideerdBeeld(),
+            },
+            {
+              size: 12,
+              template: this.__renderMeerJarenRapportage(),
+            },
+            {
+              size: 12,
+              template: this.__renderJaarRapportage(),
+            },
+            {
+              size: 12,
+              template: this.__renderOpKaart(),
+            },
+            {
+              size: 12,
+              template: this.__renderMeerInfo(),
+            }
           )}
         </div>
       </section>`;
   }
 
   __renderIntroductionTextOnTopOfPage() {
-    return html`
-      <div>
+    return html` <div>
         <p is="vl-introduction">
-Het decreet van 5 april 1995 houdende algemene bepalingen inzake milieubeleid (DABM) bepaalt in artikel 16.2.3 dat gegevens over de omgevingshandhavingsuitvoering jaarlijks online worden gepubliceerd.
-Jaarlijks worden de handhavingsactoren in het Vlaamse Gewest op uniforme en gestandaardiseerde wijze bevraagd aangaande hun handhavingsactiviteiten.<br/>
+          Het decreet van 5 april 1995 houdende algemene bepalingen inzake
+          milieubeleid (DABM) bepaalt in artikel 16.2.3 dat gegevens over de
+          omgevingshandhavingsuitvoering jaarlijks online worden gepubliceerd.
+          Jaarlijks worden de handhavingsactoren in het Vlaamse Gewest op
+          uniforme en gestandaardiseerde wijze bevraagd aangaande hun
+          handhavingsactiviteiten.<br />
 
-De data gepresenteerd in deze omgevingshandhavingsrapportage zijn de gegevens zoals ze worden aangeleverd door de handhavingsactoren zelf op basis van hun eigen monitoring.
-Deze bevraging levert geen 100% responsgraad op, hetgeen implicaties heeft op de interpreteerbaarheid van de cijfergegevens. 
-Wanneer totalen worden getoond, betreft dit steeds enkel de gerapporteerde en gekende aantallen. Bij analyses van de data dient rekening te worden gehouden met deze beperking.
+          De data gepresenteerd in deze omgevingshandhavingsrapportage zijn de
+          gegevens zoals ze worden aangeleverd door de handhavingsactoren zelf
+          op basis van hun eigen monitoring. Deze bevraging levert geen 100%
+          responsgraad op, hetgeen implicaties heeft op de interpreteerbaarheid
+          van de cijfergegevens. Wanneer totalen worden getoond, betreft dit
+          steeds enkel de gerapporteerde en gekende aantallen. Bij analyses van
+          de data dient rekening te worden gehouden met deze beperking.
         </p>
       </div>
-      <br/>
+      <br />
       <vl-alert
-          data-vl-icon="business-graph-pie"
-          data-vl-title="Interactieve webtoepassing"
-          data-vl-type="info">
-        <p>Deze website is niet statisch, jaarlijks worden de cijfers
-          geactualiseerd. <br/> Het Departement Omgeving maakt zo verder werk
-          van een
-          digitale en datagedreven overheid.</p>
+        data-vl-icon="business-graph-pie"
+        data-vl-title="Interactieve webtoepassing"
+        data-vl-type="info"
+      >
+        <p>
+          Deze website is niet statisch, jaarlijks worden de cijfers
+          geactualiseerd. <br />
+          Het Departement Omgeving maakt zo verder werk van een digitale en
+          datagedreven overheid.
+        </p>
       </vl-alert>`;
   }
 
@@ -139,123 +149,161 @@ Wanneer totalen worden getoond, betreft dit steeds enkel de gerapporteerde en ge
     </ul>`;
   }
 
-  __renderStaticNumbersKPI() {
+  __renderGeconsolideerdBeeld(){
+    return html `
+    <h3 is="vl-h3" data-vl-alt>
+            Geconsolideerd beeld voorgaande jaar voor Vlaamse Gewest
+          </h3>
+          <div is="vl-grid" data-vl-align-center>
+          <div is="vl-column" data-vl-size="5">
+            <vl-spotlight
+              data-vl-img-src="images/consolm.jpg"
+              data-vl-img-alt="spotlight image"
+            >
+              <span slot="title">Geconsolideerd beeld milieu </span>
+              <span slot="subtitle">Op basis van de cijfers van 2023</span>
+              <span slot="text">
+                De bovenstaande infographic geeft een overzicht van de
+                verschillende instrumenten binnen het milieubeleid voor het volledige vlaamse gewest.<br />
+                <p>
+                  <a href="images/infographic_milieu_gewestelijk_def.png" download
+                    >Download bovenstaande infographic</a
+                  >
+                </p>
+              </span>
+            </vl-spotlight>
+          </div>
+          <div is="vl-column" data-vl-size="5">
+            <vl-spotlight
+              data-vl-img-src="images/infographic_ro_gewestelijk_def.png"
+              data-vl-img-alt="spotlight image"
+            >
+              <span slot="title">
+                Geconsolideerd beeld ruimtelijke ordening
+              </span>
+              <span slot="subtitle">Op basis van de cijfers van 2023</span>
+              <span slot="text">
+                De bovenstaande infographic geeft een overzicht van de
+                verschillende instrumenten binnen het ruimtelijke ordening beleid
+                voor het volledige vlaamse gewest.<br />
+                <p>
+                  <a href="images/infographic_ro_gewestelijk_def.png" download
+                    >Download bovenstaande infographic</a>
+                </p>
+              </span>
+            </vl-spotlight>
+          </div>
+        </div>
+    `
+  }
 
+  __renderStaticNumbersKPI() {
     const jaar = 2021;
     return html`${renderStack(
-      {
-        size: 12,
-        template: html`
-          <h3 is="vl-h3" data-vl-alt>Cijfers van het voorgaande jaar in een oogopslag</h3>`
-      },
-      {
-        size: 2,
-        template: html`
-          <div is="vl-infotext" data-cy="infotext">
+        {
+          size: 12,
+          template: html` <h3 is="vl-h3" data-vl-alt>
+            Cijfers van het voorgaande jaar in een oogopslag
+          </h3>`,
+        },
+        {
+          size: 2,
+          template: html` <div is="vl-infotext" data-cy="infotext">
             <div>
               <div data-vl-value="">98%</div>
               <div data-vl-text="">Reponsgraad</div>
             </div>
-          </div>`
-      },
-      {
-        size: 2,
-        template: html`
-          <div is="vl-infotext" data-cy="infotext">
+          </div>`,
+        },
+        {
+          size: 2,
+          template: html` <div is="vl-infotext" data-cy="infotext">
             <div>
               <div data-vl-value="">+7%</div>
               <div data-vl-text="">Evolutie responsgraad</div>
             </div>
-          </div>`
-      },
-      {
-        size: 2,
-        template: html`
-          <div is="vl-infotext" data-cy="infotext">
+          </div>`,
+        },
+        {
+          size: 2,
+          template: html` <div is="vl-infotext" data-cy="infotext">
             <div>
               <div data-vl-value="">2,32</div>
               <div data-vl-text="">Totaal VTE</div>
             </div>
-          </div>`
-      },
-      {
-        size: 2,
-        template: html`
-          <div is="vl-infotext" data-cy="infotext">
+          </div>`,
+        },
+        {
+          size: 2,
+          template: html` <div is="vl-infotext" data-cy="infotext">
             <div>
               <div data-vl-value="">35689</div>
               <div data-vl-text="">Aantal klachten</div>
             </div>
-          </div>`
-      },
-      {
-        size: 2,
-        template: html`
-          <div is="vl-infotext" data-cy="infotext">
+          </div>`,
+        },
+        {
+          size: 2,
+          template: html` <div is="vl-infotext" data-cy="infotext">
             <div>
               <div data-vl-value="">146511</div>
               <div data-vl-text="">Aantal controles</div>
             </div>
-          </div>`
-      },
-      {
-        size: 2,
-        template: html`
-          <div is="vl-infotext" data-cy="infotext">
+          </div>`,
+        },
+        {
+          size: 2,
+          template: html` <div is="vl-infotext" data-cy="infotext">
             <div>
               <div data-vl-value="">4978</div>
               <div data-vl-text="">Aantal PV's</div>
             </div>
-          </div>`
+          </div>`,
+        }
+      )}
+      `;
+  }
+
+  __renderStaticNumbersKPI2() {
+    return html`${renderStack(
+      {
+        size: 6,
+        template: html` <div is="vl-grid" data-vl-align-center></div> `,
+      },
+      {
+        size: 6,
+        template: html`
+          <vl-spotlight
+            data-vl-img-src="images/infographic_ro_gewestelijk_def.png"
+            data-vl-img-alt="spotlight image"
+          >
+            <span slot="title">
+              Geconsolideerd beeld ruimtelijke ordening
+            </span>
+            <span slot="subtitle">Op basis van de cijfers van 2023</span>
+            <span slot="text">
+              De bovenstaande infographic geeft een overzicht van de
+              verschillende instrumenten binnen het ruimtelijke ordening beleid
+              voor het volledige vlaamse gewest.<br />
+              <p>
+                <a href="images/infographic_ro_gewestelijk_def.png" download
+                  >Download bovenstaande infographic</a
+                >
+              </p>
+            </span>
+          </vl-spotlight>
+        `,
       }
-  )
-  }`
-}
+    )}`;
+  }
 
-__renderStaticNumbersKPI2() {
-  return html`${renderStack(
-    {
-      size: 6,
-      template: html`
-      <vl-spotlight
-      data-vl-img-src="images/consolm.jpg"
-      data-vl-img-alt="spotlight image">
-      <span slot="title">Geconsolideerd beeld milieu </span>
-      <span slot="subtitle">Op basis van de cijfers van 2023</span>
-      <span slot="text">
-          De bovenstaande infographic geeft een overzicht van de verschillende instrumenten binnen het milieubeleid voor de gewesten.<br>
-          <p><a href="images/infographic_milieu_gewestelijk_def.png" download>Download bovenstaande infographic</a></p>
-      </span>
-    </vl-spotlight>
-      `
-    },
-    {
-      size: 6,
-      template: html`
-      <vl-spotlight
-      data-vl-img-src="images/infographic_ro_gewestelijk_def.png"
-      data-vl-img-alt="spotlight image">
-      <span slot="title"> Geconsolideerd beeld ruimtelijke ordening </span>
-      <span slot="subtitle">Op basis van de cijfers van 2023</span>
-      <span slot="text">
-      De bovenstaande infographic geeft een overzicht van de verschillende instrumenten binnen het ruimtelijke ordening beleid voor de gewesten.<br>
-      <p><a href="images/infographic_ro_gewestelijk_def.png" download>Download bovenstaande infographic</a></p>
-      </span>
-  </vl-spotlight>
-      
-      `
-    }
-)
-}`
-}
-
-
-__renderJaarRapportage() {
-  return renderStack(
+  __renderJaarRapportage() {
+    return renderStack(
       {
         size: 12,
-        template: html`
-          <h3 is="vl-h3" data-vl-alt>Bekijk de cijfers van het voorgaande jaar per actor</h3>`
+        template: html` <h3 is="vl-h3" data-vl-alt>
+          Bekijk de cijfers van het voorgaande jaar per actor
+        </h3>`,
       },
       {
         size: 12,
@@ -265,184 +313,160 @@ __renderJaarRapportage() {
             op het voorgaande kalenderjaar (handhavingsactiviteiten uitgevoerd
             tussen 1 januari en 31 december)
           </p>
-        `
+        `,
       },
       {
         size: 6,
-        template: html`
-          <div>
-            <a is="vl-doormat" href="/gewest">
-              <h2 is="vl-doormat-title">Gewest</h2>
-              <div is="vl-doormat-text">
-                De cijfers geven een totaalbeeld van de
-                handhavingsactiviteiten van de gewestelijke handhavingsactoren
-                samen in het voorgaande jaar. Bij selectie van een actor,
-                wordt in de individuele handhavingsfiche van deze gewestelijke
-                handhavingsactor gerapporteerd over de uitvoering van de
-                handhavingsactiviteiten in het voorgaande jaar.
-              </div>
-            </a>
-          </div>`,
-      },
-      {
-        size: 6,
-        template: html`
-          <div>
-            <a is="vl-doormat" href="/provincie">
-              <h2 is="vl-doormat-title">Provincies</h2>
-              <div is="vl-doormat-text">
-                De cijfers geven een totaalbeeld van de
-                handhavingsactiviteiten van de provincies samen in het
-                voorgaande jaar.
-                Bij selectie van een provincie, wordt in de individuele
-                handhavingsfiche van deze provincie gerapporteerd over de
-                uitvoering van de handhavingsactiviteiten in het voorgaande
-                jaar.
-              </div>
-            </a>
-          </div>`,
-      },
-      {
-        size: 6,
-        template: html`
-          <div>
-            <a is="vl-doormat" href="/gemeenten">
-              <h2 is="vl-doormat-title">Gemeenten</h2>
-              <div is="vl-doormat-text">
-                In deze analyse worden de handhavingsactiviteiten van de
-                lokale handhavingsactoren weergegeven.
-              </div>
-            </a>
-          </div>`,
-      },
-      {
-        size: 6,
-        template: html`
-          <div>
-            <a is="vl-doormat" href="/hoge-raad">
-              <h2 is="vl-doormat-title">Hoge Raad</h2>
-              <div is="vl-doormat-text">
-                Bekijk de cijfers van de Hoge Raad voor de
-                Handhavingsuitvoering
-              </div>
-            </a>
-          </div>`,
-      },
-      {
-        size: 6,
-        template: html`
-          <div>
-            <a is="vl-doormat" href="/strafrechtelijk">
-              <h2 is="vl-doormat-title">Strafrechtelijke en bestuurlijke
-                vervolgtraject</h2>
-              <div is="vl-doormat-text">
-                Bekijk de cijfers inzake het strafrechtelijke en bestuurlijke
-                vervolgtraject.
-              </div>
-            </a>
-          </div>`,
-      },
-  )
-}
-
-__renderMeerJarenRapportage() {
-  return renderStack(
-      {
-        size: 12,
-        template: html`
-          <h3 is="vl-h3" data-vl-alt>Analyseer de cijfers voor verschillende thema's</h3>`
-      },
-      {
-        size: 12,
-        template: html`
-          <p>
-            Hieronder wordt op interactieve wijze per categorie ingegaan op de
-            cijfers van de verschillende omgevingshandhavingsactoren doorheen
-            de tijd.
-          </p>`
-      },
-      {
-        size: 6,
-        template: html`
-          <div>
-            <a is="vl-doormat" href="/personeel">
-              <h2 is="vl-doormat-title">Personeel</h2>
-              <div is="vl-doormat-text">
-                Een weergave van de cijfergegevens omtrent de personeelsinzet
-                door de verschillende omgevingshandhavingsactoren op
-                gewestelijk, provinciaal en gemeentelijk niveau.
-              </div>
-            </a>
-          </div>`,
-      },
-      {
-        size: 6,
-        template: html`
-          <div>
-            <a is="vl-doormat" href="/klachten">
-              <h2 is="vl-doormat-title">Klachten</h2>
-              <div is="vl-doormat-text">
-                Een voorstelling van de klachten die werden ontvangen bij de
-                verschillende omgevingshandhavingsactoren op gewestelijk,
-                provinciaal en gemeentelijk niveau.
-              </div>
-            </a>
-          </div>`,
-      },
-      {
-        size: 6,
-        template: html`
-          <div>
-            <a is="vl-doormat" href="/controles">
-              <h2 is="vl-doormat-title">Controles</h2>
-              <div is="vl-doormat-text">
-                Deze pagina toont een beeld van de controles die uitgevoerd
-                worden door de verschillende omgevingshandhavingsactoren op
-                gewestelijk, provinciaal en gemeentelijk niveau.
-              </div>
-            </a>
-          </div>`,
-      },
-      {
-        size: 6,
-        template: html`
-          <div>
-            <a is="vl-doormat" href="/instrumentarium">
-              <h2 is="vl-doormat-title">Instrumentarium</h2>
-              <div is="vl-doormat-text">
-                Een weergave van het instrumentarium dat ingezet wordt door de
-                verschillende omgevingshandhavingsactoren op gewestelijk,
-                provinciaal en gemeentelijk niveau.
-              </div>
-            </a>
-          </div>`,
-      },
-      {
-        size: 6,
-        template: html`
-          <div>
-            <a is="vl-doormat" href="/hogeraad">
-              <h2 is="vl-doormat-title">Hoge raad voor de
-                handhavingsuitvoering</h2>
-              <div is="vl-doormat-text">
-                Een voorstelling van het beeld van de activiteiten van de Hoge
-                Raad voor de Handhavingsuitvoering doorheen de jaren.
-              </div>
-            </a>
-          </div>`,
-      },
-      {
-        size: 6,
-        template: html`
-          <div ">
-          <a is="vl-doormat" href="">
-            <h2 is="vl-doormat-title">Strafrechtelijke
-              vervolgtraject</h2>
+        template: html` <div>
+          <a is="vl-doormat" href="/gewest">
+            <h2 is="vl-doormat-title">Gewest</h2>
             <div is="vl-doormat-text">
-              Deze pagina toont de evolutie van het strafrechtelijke vervolgtraject inzake de omgevingshandhaving.
+              De cijfers geven een totaalbeeld van de handhavingsactiviteiten
+              van de gewestelijke handhavingsactoren samen in het voorgaande
+              jaar. Bij selectie van een actor, wordt in de individuele
+              handhavingsfiche van deze gewestelijke handhavingsactor
+              gerapporteerd over de uitvoering van de handhavingsactiviteiten in
+              het voorgaande jaar.
             </div>
           </a>
-          </div>`,
+        </div>`,
+      },
+      {
+        size: 6,
+        template: html` <div>
+          <a is="vl-doormat" href="/provincie">
+            <h2 is="vl-doormat-title">Provincies</h2>
+            <div is="vl-doormat-text">
+              De cijfers geven een totaalbeeld van de handhavingsactiviteiten
+              van de provincies samen in het voorgaande jaar. Bij selectie van
+              een provincie, wordt in de individuele handhavingsfiche van deze
+              provincie gerapporteerd over de uitvoering van de
+              handhavingsactiviteiten in het voorgaande jaar.
+            </div>
+          </a>
+        </div>`,
+      },
+      {
+        size: 6,
+        template: html` <div>
+          <a is="vl-doormat" href="/gemeenten">
+            <h2 is="vl-doormat-title">Gemeenten</h2>
+            <div is="vl-doormat-text">
+              In deze analyse worden de handhavingsactiviteiten van de lokale
+              handhavingsactoren weergegeven.
+            </div>
+          </a>
+        </div>`,
+      },
+      {
+        size: 6,
+        template: html` <div>
+          <a is="vl-doormat" href="/hoge-raad">
+            <h2 is="vl-doormat-title">Hoge Raad</h2>
+            <div is="vl-doormat-text">
+              Bekijk de cijfers van de Hoge Raad voor de Handhavingsuitvoering
+            </div>
+          </a>
+        </div>`,
+      },
+      {
+        size: 6,
+        template: html` <div>
+          <a is="vl-doormat" href="/strafrechtelijk">
+            <h2 is="vl-doormat-title">
+              Strafrechtelijke en bestuurlijke vervolgtraject
+            </h2>
+            <div is="vl-doormat-text">
+              Bekijk de cijfers inzake het strafrechtelijke en bestuurlijke
+              vervolgtraject.
+            </div>
+          </a>
+        </div>`,
+      }
+    );
+  }
+
+  __renderMeerJarenRapportage() {
+    return renderStack(
+      {
+        size: 12,
+        template: html` <h3 is="vl-h3" data-vl-alt>
+          Analyseer de cijfers voor verschillende thema's
+        </h3>`,
+      },
+      {
+        size: 12,
+        template: html` <p>
+          Hieronder wordt op interactieve wijze per categorie ingegaan op de
+          cijfers van de verschillende omgevingshandhavingsactoren doorheen de
+          tijd.
+        </p>`,
+      },
+      {
+        size: 6,
+        template: html` <div>
+          <a is="vl-doormat" href="/personeel">
+            <h2 is="vl-doormat-title">Personeel</h2>
+            <div is="vl-doormat-text">
+              Een weergave van de cijfergegevens omtrent de personeelsinzet door
+              de verschillende omgevingshandhavingsactoren op gewestelijk,
+              provinciaal en gemeentelijk niveau.
+            </div>
+          </a>
+        </div>`,
+      },
+      {
+        size: 6,
+        template: html` <div>
+          <a is="vl-doormat" href="/klachten">
+            <h2 is="vl-doormat-title">Klachten</h2>
+            <div is="vl-doormat-text">
+              Een voorstelling van de klachten die werden ontvangen bij de
+              verschillende omgevingshandhavingsactoren op gewestelijk,
+              provinciaal en gemeentelijk niveau.
+            </div>
+          </a>
+        </div>`,
+      },
+      {
+        size: 6,
+        template: html` <div>
+          <a is="vl-doormat" href="/controles">
+            <h2 is="vl-doormat-title">Controles</h2>
+            <div is="vl-doormat-text">
+              Deze pagina toont een beeld van de controles die uitgevoerd worden
+              door de verschillende omgevingshandhavingsactoren op gewestelijk,
+              provinciaal en gemeentelijk niveau.
+            </div>
+          </a>
+        </div>`,
+      },
+      {
+        size: 6,
+        template: html` <div>
+          <a is="vl-doormat" href="/instrumentarium">
+            <h2 is="vl-doormat-title">Instrumentarium</h2>
+            <div is="vl-doormat-text">
+              Een weergave van het instrumentarium dat ingezet wordt door de
+              verschillende omgevingshandhavingsactoren op gewestelijk,
+              provinciaal en gemeentelijk niveau.
+            </div>
+          </a>
+        </div>`,
+      },
+      {
+        size: 6,
+        template: html` <div>
+          <a is="vl-doormat" href="/hogeraad">
+            <h2 is="vl-doormat-title">
+              Hoge raad voor de handhavingsuitvoering
+            </h2>
+            <div is="vl-doormat-text">
+              Een voorstelling van het beeld van de activiteiten van de Hoge
+              Raad voor de Handhavingsuitvoering doorheen de jaren.
+            </div>
+          </a>
+        </div>`,
       },
       {
         size: 6,
@@ -458,15 +482,29 @@ __renderMeerJarenRapportage() {
           </a>
           </div>`,
       },
-  )
-}
+      {
+        size: 6,
+        template: html`
+          <div ">
+          <a is="vl-doormat" href="">
+            <h2 is="vl-doormat-title">Strafrechtelijke
+              vervolgtraject</h2>
+            <div is="vl-doormat-text">
+              Deze pagina toont de evolutie van het strafrechtelijke vervolgtraject inzake de omgevingshandhaving.
+            </div>
+          </a>
+          </div>`,
+      }
+    );
+  }
 
   __renderOpKaart() {
     return renderStack(
       {
         size: 12,
-        template: html`
-          <h3 is="vl-h3" data-vl-alt>Bekijk de cijfers van het voorgaande jaar op kaart</h3>`
+        template: html` <h3 is="vl-h3" data-vl-alt>
+          Bekijk de cijfers van het voorgaande jaar op kaart
+        </h3>`,
       },
       {
         size: 12,
@@ -474,69 +512,65 @@ __renderMeerJarenRapportage() {
           <p>
             Hieronder wordt per actor de data weergegeven die betrekking heeft
             op het voorgaande kalenderjaar (handhavingsactiviteiten uitgevoerd
-            tussen 1 januari en 31 december)
-            De data wordt gevisualiseerd op kaarten met informatie over de
-            evolutie van de cijfer.
+            tussen 1 januari en 31 december) De data wordt gevisualiseerd op
+            kaarten met informatie over de evolutie van de cijfer.
           </p>
-        `
+        `,
       },
       {
         size: 6,
-        template: html`
-          <div>
-            <a is="vl-doormat" href="/provincie-op-kaart">
-              <h2 is="vl-doormat-title">Provincies</h2>
-              <div is="vl-doormat-text">
-               Een cartografische weergave van de cijfers van de provincies in het voorgaande jaar.
-              </div>
-            </a>
-          </div>`
+        template: html` <div>
+          <a is="vl-doormat" href="/provincie-op-kaart">
+            <h2 is="vl-doormat-title">Provincies</h2>
+            <div is="vl-doormat-text">
+              Een cartografische weergave van de cijfers van de provincies in
+              het voorgaande jaar.
+            </div>
+          </a>
+        </div>`,
       },
       {
         size: 6,
-        template: html`
-          <div>
-            <a is="vl-doormat" href="/gemeenten-op-kaart">
-              <h2 is="vl-doormat-title">Gemeenten</h2>
-              <div is="vl-doormat-text">
-               Een cartografische weergave van de cijfers van de gemeenten in het voorgaande jaar.
-              </div>
-            </a>
-          </div>`,
-      },
-  )
-}
+        template: html` <div>
+          <a is="vl-doormat" href="/gemeenten-op-kaart">
+            <h2 is="vl-doormat-title">Gemeenten</h2>
+            <div is="vl-doormat-text">
+              Een cartografische weergave van de cijfers van de gemeenten in het
+              voorgaande jaar.
+            </div>
+          </a>
+        </div>`,
+      }
+    );
+  }
 
   __renderMeerInfo() {
     return html`${renderStack(
-        {
-          size: 12,
-          template: html`
-            <h3 is="vl-h3" data-vl-alt>Meer Info</h3>
-          `
-        },
-        {
-          size: 12,
-          template: html`
-            <p>
-              <a
-                  is="vl-link"
-                  href="/download-cijfers-en-meer"
-                  data-vl-block="true"
-                  data-vl-small="false"
-                  data-vl-large="true"
-                  data-vl-bold="true"
-              ><span
-                  is="vl-icon"
-                  data-vl-icon="external"
-                  data-vl-before
-                  data-vl-link
-              ></span>
-                Download data en afbeeldingen van deze rapportage
-              </a></p>`
-        },
-    )
-    }`
+      {
+        size: 12,
+        template: html` <h3 is="vl-h3" data-vl-alt>Meer Info</h3> `,
+      },
+      {
+        size: 12,
+        template: html` <p>
+          <a
+            is="vl-link"
+            href="/download-cijfers-en-meer"
+            data-vl-block="true"
+            data-vl-small="false"
+            data-vl-large="true"
+            data-vl-bold="true"
+            ><span
+              is="vl-icon"
+              data-vl-icon="external"
+              data-vl-before
+              data-vl-link
+            ></span>
+            Download data en afbeeldingen van deze rapportage
+          </a>
+        </p>`,
+      }
+    )}`;
   }
 }
 customElements.define("ohr-start", OhrLandingPage);

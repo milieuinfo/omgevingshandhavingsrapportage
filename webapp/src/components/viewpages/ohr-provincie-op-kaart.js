@@ -56,9 +56,11 @@ import {
 
     __renderBackgroundInformation() {
       return html`
-            <vl-typography data-cy="typography">
-            <p><em>De responsgraad voor deze bevraging (of bepaalde vragen in de bevraging) bedraagt geen 100%. <br/>Dit maakt dat bepaalde gemeenten als waarde "niet gekend" of "non-repons" tonen.</em></p>
-            </vl-typography>`
+      <vl-typography data-cy="typography">
+      <p><em>
+      Niet gekend: Gemeenten kon geen cijfers geven dit aspect.</em>
+      </p>
+      </vl-typography>`
     }
   
     __renderIntroductionOfMaps() {
@@ -69,7 +71,7 @@ import {
       <vl-typography>
       </vl-typography>
       <br/>
-      <p>De kleurgradaties wijzen op de aantalllen in de gemeenten
+      <p>De kleurgradaties wijzen op de aantallen in de provincies
         per 1.000 inwoners. </p>`
     }
   
@@ -139,7 +141,7 @@ import {
                   template: this.__renderEverVizKaart()
               },
               {
-                size:12,
+                size:8,
                 template: this.__renderBackgroundInformation()
               })}
           </div>

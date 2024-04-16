@@ -1,7 +1,7 @@
 import { html, LitElement } from "../common/commons.js";
 import { vlElementsStyle } from "@domg-wc/elements";
 import jsonData from "../datafiles/gewest.json" assert { type: "json" };
-
+import jsonData2 from "../datafiles/Totaal Gewest 2023_e1a6d014-b58b-302d-b023-ab8a4b99391a.json" assert { type: "json" };
 import "@domg-wc/elements/image";
 import "@domg-wc/elements/grid";
 import "@domg-wc/elements/title";
@@ -17,42 +17,102 @@ class OhrAGewest extends LitElement {
   static get styles() {
     return [...vlElementsStyle];
   }
-
   constructor() {
     super();
   }
-
+  /*Main render page*/
   render() {
-    return html` 
-    <vl-functional-header
+    return html` <vl-functional-header
         data-vl-back="Terug"
         data-vl-back-link="/gewest"
         data-vl-title="Gewestelijke handhavingsactoren"
         data-vl-sub-title="Omgevingshandhavingsrapportage"
-        data-vl-link="/">
+        data-vl-link="/"
+      >
       </vl-functional-header>
       <section is="vl-region">
         <div is="vl-layout">
           <vl-typography>
-            <h2>Raadpleeg laatst bekende cijfers van 2023</h2></vl-typography>
+            <h2>Raadpleeg laatst bekende cijfers van 2023</h2></vl-typography
+          >
           <p is="vl-icon-wrapper">
-            <span is="vl-icon" data-vl-icon="calendar"></span><vl-annotation>
-              Laatste wijziging aan de data: 21/02/2024</vl-annotation>
+            <span is="vl-icon" data-vl-icon="calendar"></span
+            ><vl-annotation>
+              Laatste wijziging aan de data: 21/02/2024</vl-annotation
+            >
           </p>
-          <br/>
+          <br />
 
           <p is="vl-introduction" data-cy="introduction">
             Onderstaande weergave geeft een beeld van de bevraging over de
             cijfers van 2023. Navigeer doorheen de weergave om gericht en
             efficiënt data te raadplegen.
           </p>
-          <br/>
+          <br />
 
           <div>${this.__renderPage()}</div>
         </div>
       </section>`;
   }
 
+  /* Render opmerking */
+  renderOpmerkingsection(data) {
+    return html`
+    <vl-typography>
+    <ul>
+    ${Object.entries(data).map(([key,value]) => {
+        return html`
+        <li>${value}</li>
+        `;
+      })
+    }
+</ul>
+</vl-typography>
+    `
+  }
+  /* Render ThemaGerichte Acties */
+  renderThemaGerichteActies() {
+    return html`
+    <p slot="content">
+    TEST
+    
+    </p>
+    `
+  }
+    /* Render data table String*/
+    renderDataSectionTXT(data) {
+      return html`
+        <table is="vl-data-table">
+          <thead>
+            <tr>
+              <th>Thema</th>
+              <th>Beschrijving</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${Object.entries(data).map(([key, value]) => {
+              if (typeof value === "object") {
+                return html`
+                  <tr>
+                    <td data-title="${key}">${key}</td>
+                    <td data-title="${value.value}">${value.value}</td>
+                  </tr>
+                `;
+              } else {
+                return html`
+                  <tr>
+                    <td data-title="${key}">${key}</td>
+                    <td data-title="${value.value}">${value}</td>
+                  </tr>
+                `;
+              }
+            })}
+          </tbody>
+        </table>
+        <br />
+      `;
+    }
+  /* Render data table Numbers*/
   renderDataSection(data) {
     return html`
       <table is="vl-data-table">
@@ -68,9 +128,7 @@ class OhrAGewest extends LitElement {
               return html`
                 <tr>
                   <td data-title="${key}">${key}</td>
-                  <td data-title="${value.value}">
-                    ${value.value}
-                  </td>
+                  <td data-title="${value.value}">${value.value}</td>
                 </tr>
               `;
             } else {
@@ -88,112 +146,79 @@ class OhrAGewest extends LitElement {
     `;
   }
 
+  /*Render page*/
   __renderPage() {
     return html`
    <vl-cascader>
     <vl-cascader-item label="Agentschap Maritieme Dienstverlening en Kust">
-        <vl-cascader-item label="Milieu">
-    <vl-accordion-list slot="content">
-        <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
-        ${this.renderDataSection(
-          jsonData.Milieu.AMDK.gewestelijkeToezichthouders
-        )}
-        </vl-accordion>
-        <vl-accordion data-vl-toggle-text="Klachten">
-        ${this.renderDataSection(
-          jsonData.Milieu.AMDK.klachten
-        )}
-        </vl-accordion>
-        <vl-accordion data-vl-toggle-text="Controles">
-        ${this.renderDataSection(
-          jsonData.Milieu.AMDK.controles
-        )}
-        </vl-accordion>
-        <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-        ${this.renderDataSection(
-          jsonData.Milieu.AMDK.Aanvankelijkecontrolesmetschending
-        )}
-        </vl-accordion>
-        <vl-accordion data-vl-toggle-text="Instrumentarium">
-        ${this.renderDataSection(
-          jsonData.Milieu.AMDK.Instrumentarium
-        )}
-        </vl-accordion>
-
-        <vl-accordion data-vl-toggle-text="Opmerkingen">
-          <vl-typography>
-            <p>Geen opmerkingen.</p>
-          </vl-typography>
-        </vl-accordion>
-    </vl-accordion-list>
-                </vl-cascader-item>
-            <vl-cascader-item label="Ruimtelijke ordening">
-            <p slot="content">
-            <vl-alert
-            data-cy="alert"
-            data-vl-naked=""
-            data-vl-icon="warning"
-            data-vl-title="Geen bevoegheid"
-            data-vl-type="warning"
+      <vl-cascader-item label="Milieu">
+        <p slot="content">
+        <vl-alert data-cy="alert" data-vl-naked="" data-vl-icon="info" data-vl-title="Geen activiteit" data-vl-type="info"
+        data-vl-message="Agentschap Maritieme Dienstverlening en Kust heeft geen milieuhandhaving uitgevoerd.">
+      </vl-alert></p>
+      </vl-cascader-item>
+      <vl-cascader-item label="Ruimtelijke ordening">
+        <p slot="content">
+            <vl-alert data-cy="alert" data-vl-naked="" data-vl-icon="warning" data-vl-title="Geen bevoegheid" data-vl-type="warning"
             data-vl-message="Agentschap Maritieme Dienstverlening en Kust heeft geen bevoegheid voor ruimtelijke ordening.">
-        </vl-alert>
-    </p>
+        </vl-alert></p>
             </vl-cascader-item>
       </vl-cascader-item>
-
 
       <vl-cascader-item label="Agentschap voor Natuur en Bos">
         <vl-cascader-item label="Milieu">
     <vl-accordion-list slot="content">
         <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
-        ${this.renderDataSection(
-          jsonData.Milieu.ANB.gewestelijkeToezichthouders
-        )}
+        ${this.renderDataSection(jsonData2.Milieu.ANB.gewestelijkeToezichthouders)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Klachten">
-        ${this.renderDataSection(
-          jsonData.Milieu.ANB.klachten
-        )}
+        ${this.renderDataSection(jsonData2.Milieu.ANB.Klachten)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Controles">
-        ${this.renderDataSection(
-          jsonData.Milieu.ANB.controles
-        )}
+        ${this.renderDataSection(jsonData2.Milieu.ANB.Controles)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
         ${this.renderDataSection(
-          jsonData.Milieu.AMDK.Aanvankelijkecontrolesmetschending
+          jsonData2.Milieu.ANB.Aanvankelijkecontrolesmetschending
         )}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Instrumentarium">
-        ${this.renderDataSection(
-          jsonData.Milieu.ANB.Instrumentarium
-        )}
+        ${this.renderDataSection(jsonData2.Milieu.ANB.Instrument)}
         </vl-accordion>
+        <vl-accordion data-vl-toggle-text="Themagerichte acties">
+        ${this.renderDataSectionTXT(jsonData2.Milieu.ANB.Thema)}
+      </vl-typography>
+    </vl-accordion>
+      <vl-accordion data-vl-toggle-text="Opmerkingen">
+          ${this.renderOpmerkingsection(jsonData2.Milieu.ANB.Opmerking)}
+      </vl-accordion>
     </vl-accordion-list>
                 </vl-cascader-item>
             <vl-cascader-item label="Ruimtelijke ordening">
             <vl-accordion-list slot="content">
         <vl-accordion data-vl-toggle-text="Verbalisanten en stedenbouwkundige inspecteurs en VTE"> 
         ${this.renderDataSection(
-          jsonData.Milieu.ANB.gewestelijkeToezichthouders
+          jsonData2.RO.ANB.PersoneelRO
         )}</vl-accordion>
         <vl-accordion data-vl-toggle-text="Klachten">
-        ${this.renderDataSection(jsonData.Milieu.ANB.klachten)}
+        ${this.renderDataSection(jsonData2.Milieu.ANB.Klachten)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Controles">
-        ${this.renderDataSection(jsonData.Milieu.ANB.klachten)}
+        ${this.renderDataSection(jsonData2.Milieu.ANB.Klachten)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Aantal aanvankelijke controles met schending">
-        ${this.renderDataSection(
-          jsonData.Milieu.ANB.klachten
-        )}
+        ${this.renderDataSection(jsonData2.Milieu.ANB.Klachten)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Instrumentarium">
-        ${this.renderDataSection(
-          jsonData.Milieu.ANB.klachten
-        )}
+        ${this.renderDataSection(jsonData2.Milieu.ANB.Klachten)}
         </vl-accordion>
+        <vl-accordion data-vl-toggle-text="Themagerichte acties">
+        ${this.renderDataSectionTXT(jsonData2.Milieu.ANB.Thema)}
+      </vl-typography>
+    </vl-accordion>
+      <vl-accordion data-vl-toggle-text="Opmerkingen">
+          ${this.renderOpmerkingsection(jsonData2.Milieu.ANB.Opmerking)}
+      </vl-accordion>
     </vl-accordion-list>
             </vl-cascader-item>
       </vl-cascader-item>
@@ -202,30 +227,29 @@ class OhrAGewest extends LitElement {
         <vl-cascader-item label="Milieu">
     <vl-accordion-list slot="content">
         <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
-        ${this.renderDataSection(
-          jsonData.Milieu.AWV.gewestelijkeToezichthouders
-        )}
+        ${this.renderDataSection(jsonData2.Milieu.AWV.gewestelijkeToezichthouders)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Klachten">
-        ${this.renderDataSection(
-          jsonData.Milieu.AWV.klachten
-        )}
+        ${this.renderDataSection(jsonData2.Milieu.AWV.Klachten)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Controles">
-        ${this.renderDataSection(
-          jsonData.Milieu.AWV.controles
-        )}
+        ${this.renderDataSection(jsonData2.Milieu.AWV.Controles)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
         ${this.renderDataSection(
-          jsonData.Milieu.AWV.Aanvankelijkecontrolesmetschending
+          jsonData2.Milieu.AWV.Aanvankelijkecontrolesmetschending
         )}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Instrumentarium">
-        ${this.renderDataSection(
-          jsonData.Milieu.AWV.Instrumentarium
-        )}
+        ${this.renderDataSection(jsonData2.Milieu.AWV.Instrument)}
         </vl-accordion>
+        <vl-accordion data-vl-toggle-text="Themagerichte acties">
+        ${this.renderDataSectionTXT(jsonData2.Milieu.AWV.Thema)}
+      </vl-typography>
+    </vl-accordion>
+      <vl-accordion data-vl-toggle-text="Opmerkingen">
+          ${this.renderOpmerkingsection(jsonData2.Milieu.AWV.Opmerking)}
+      </vl-accordion>
     </vl-accordion-list>
                 </vl-cascader-item>
             <vl-cascader-item label="Ruimtelijke ordening">
@@ -236,8 +260,7 @@ class OhrAGewest extends LitElement {
             data-vl-icon="warning"
             data-vl-title="Geen bevoegheid"
             data-vl-type="warning"
-            data-vl-message="Agentschap Wegen en Verkeer heeft geen bevoegheid voor ruimtelijke ordening."
-        >
+            data-vl-message="Agentschap Wegen en Verkeer heeft geen bevoegheid voor ruimtelijke ordening.">
         </vl-alert>
     </p>
             </vl-cascader-item>
@@ -247,30 +270,27 @@ class OhrAGewest extends LitElement {
       <vl-cascader-item label="Milieu">
   <vl-accordion-list slot="content">
       <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
-      ${this.renderDataSection(
-        jsonData.Milieu.DVW.gewestelijkeToezichthouders
-      )}
+      ${this.renderDataSection(jsonData2.Milieu.VW.gewestelijkeToezichthouders)}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Klachten">
-      ${this.renderDataSection(
-        jsonData.Milieu.DVW.klachten
-      )}
+      ${this.renderDataSection(jsonData2.Milieu.VW.Klachten)}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Controles">
-      ${this.renderDataSection(
-        jsonData.Milieu.DVW.controles
-      )}
+      ${this.renderDataSection(jsonData2.Milieu.VW.Controles)}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-      ${this.renderDataSection(
-        jsonData.Milieu.DVW.Aanvankelijkecontrolesmetschending
-      )}
+      ${this.renderDataSection(jsonData2.Milieu.VW.Aanvankelijkecontrolesmetschending)}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Instrumentarium">
-      ${this.renderDataSection(
-        jsonData.Milieu.DVW.Instrumentarium
-      )}
+      ${this.renderDataSection(jsonData2.Milieu.VW.Instrument)}
       </vl-accordion>
+      <vl-accordion data-vl-toggle-text="Themagerichte acties">
+      ${this.renderDataSectionTXT(jsonData2.Milieu.VW.Thema)}
+    </vl-typography>
+  </vl-accordion>
+    <vl-accordion data-vl-toggle-text="Opmerkingen">
+        ${this.renderOpmerkingsection(jsonData2.Milieu.VW.Opmerking)}
+    </vl-accordion>
   </vl-accordion-list>
               </vl-cascader-item>
           <vl-cascader-item label="Ruimtelijke ordening">
@@ -291,30 +311,29 @@ class OhrAGewest extends LitElement {
         <vl-cascader-item label="Milieu">
     <vl-accordion-list slot="content">
         <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
-        ${this.renderDataSection(
-          jsonData.Milieu.DMOW.gewestelijkeToezichthouders
-        )}
+        ${this.renderDataSection(jsonData2.Milieu.dMOW.gewestelijkeToezichthouders)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Klachten">
-        ${this.renderDataSection(
-          jsonData.Milieu.DMOW.klachten
-        )}
+        ${this.renderDataSection(jsonData2.Milieu.dMOW.Klachten)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Controles">
-        ${this.renderDataSection(
-          jsonData.Milieu.DMOW.controles
-        )}
+        ${this.renderDataSection(jsonData2.Milieu.dMOW.Controles)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
         ${this.renderDataSection(
-          jsonData.Milieu.DMOW.Aanvankelijkecontrolesmetschending
+          jsonData2.Milieu.dMOW.Aanvankelijkecontrolesmetschending
         )}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Instrumentarium">
-        ${this.renderDataSection(
-          jsonData.Milieu.DMOW.Instrumentarium
-        )}
+        ${this.renderDataSection(jsonData2.Milieu.dMOW.Instrument)}
         </vl-accordion>
+        <vl-accordion data-vl-toggle-text="Themagerichte acties">
+        ${this.renderDataSectionTXT(jsonData2.Milieu.dMOW.Thema)}
+      </vl-typography>
+    </vl-accordion>
+      <vl-accordion data-vl-toggle-text="Opmerkingen">
+          ${this.renderOpmerkingsection(jsonData2.Milieu.dMOW.Opmerking)}
+      </vl-accordion>
     </vl-accordion-list>
     </vl-cascader-item>
             <vl-cascader-item label="Ruimtelijke ordening">
@@ -337,54 +356,56 @@ class OhrAGewest extends LitElement {
       <vl-cascader-item label="Milieu">
   <vl-accordion-list slot="content">
       <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
-      ${this.renderDataSection(
-        jsonData.Milieu.DOMGHH.gewestelijkeToezichthouders
-      )}
+      ${this.renderDataSection(jsonData2.Milieu.dOMGHH.gewestelijkeToezichthouders)}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Klachten">
-      ${this.renderDataSection(
-        jsonData.Milieu.DOMGHH.klachten
-      )}
+      ${this.renderDataSection(jsonData2.Milieu.dOMGHH.Klachten)}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Controles">
-      ${this.renderDataSection(
-        jsonData.Milieu.DOMGHH.controles
-      )}
+      ${this.renderDataSection(jsonData2.Milieu.dOMGHH.Controles)}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
       ${this.renderDataSection(
-        jsonData.Milieu.DOMGHH.Aanvankelijkecontrolesmetschending
+        jsonData2.Milieu.dOMGHH.Aanvankelijkecontrolesmetschending
       )}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Instrumentarium">
-      ${this.renderDataSection(
-        jsonData.Milieu.DOMGHH.Instrumentarium
-      )}
+      ${this.renderDataSection(jsonData2.Milieu.dOMGHH.Instrument)}
       </vl-accordion>
+      <vl-accordion data-vl-toggle-text="Themagerichte acties">
+      ${this.renderDataSectionTXT(jsonData2.Milieu.dOMGHH.Thema)}
+    </vl-typography>
+  </vl-accordion>
+    <vl-accordion data-vl-toggle-text="Opmerkingen">
+        ${this.renderOpmerkingsection(jsonData2.Milieu.dOMGHH.Opmerking)}
+    </vl-accordion>
   </vl-accordion-list>
               </vl-cascader-item>
           <vl-cascader-item label="Ruimtelijke ordening">
           <vl-accordion-list slot="content">
       <vl-accordion data-vl-toggle-text="Verbalisanten en stedenbouwkundige inspecteurs en VTE"> 
       ${this.renderDataSection(
-        jsonData.Milieu.DOMGHH.gewestelijkeToezichthouders
+        jsonData2.Milieu.dOMGHH.gewestelijkeToezichthouders
       )}</vl-accordion>
       <vl-accordion data-vl-toggle-text="Klachten">
-      ${this.renderDataSection(jsonData.Milieu.DOMGHH.klachten)}
+      ${this.renderDataSection(jsonData2.Milieu.dOMGHH.Klachten)}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Controles">
-      ${this.renderDataSection(jsonData.Milieu.DOMGHH.klachten)}
+      ${this.renderDataSection(jsonData2.Milieu.dOMGHH.Klachten)}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Aantal aanvankelijke controles met schending">
-      ${this.renderDataSection(
-        jsonData.Milieu.DOMGHH.klachten
-      )}
+      ${this.renderDataSection(jsonData2.Milieu.dOMGHH.Klachten)}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Instrumentarium">
-      ${this.renderDataSection(
-        jsonData.Milieu.DOMGHH.klachten
-      )}
+      ${this.renderDataSection(jsonData2.Milieu.dOMGHH.Instrument)}
       </vl-accordion>
+      <vl-accordion data-vl-toggle-text="Themagerichte acties">
+      ${this.renderDataSectionTXT(jsonData2.Milieu.dOMGHH.Thema)}
+    </vl-typography>
+  </vl-accordion>
+    <vl-accordion data-vl-toggle-text="Opmerkingen">
+        ${this.renderOpmerkingsection(jsonData2.Milieu.dOMGHH.Opmerking)}
+    </vl-accordion>
   </vl-accordion-list>
           </vl-cascader-item>
     </vl-cascader-item>
@@ -394,29 +415,26 @@ class OhrAGewest extends LitElement {
 <vl-cascader-item label="Milieu">
 <vl-accordion-list slot="content">
 <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
-${this.renderDataSection(
-  jsonData.Milieu.DOMGVPO.gewestelijkeToezichthouders
-)}
+${this.renderDataSection(jsonData2.Milieu.DOMGVPO.gewestelijkeToezichthouders)}
 </vl-accordion>
 <vl-accordion data-vl-toggle-text="Klachten">
-${this.renderDataSection(
-  jsonData.Milieu.DOMGVPO.klachten
-)}
+${this.renderDataSection(jsonData2.Milieu.DOMGVPO.Klachten)}
 </vl-accordion>
 <vl-accordion data-vl-toggle-text="Controles">
-${this.renderDataSection(
-  jsonData.Milieu.DOMGVPO.controles
-)}
+${this.renderDataSection(jsonData2.Milieu.DOMGVPO.Controles)}
 </vl-accordion>
 <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-${this.renderDataSection(
-  jsonData.Milieu.DOMGVPO.Aanvankelijkecontrolesmetschending
-)}
+${this.renderDataSection(jsonData2.Milieu.DOMGVPO.Aanvankelijkecontrolesmetschending)}
 </vl-accordion>
 <vl-accordion data-vl-toggle-text="Instrumentarium">
-${this.renderDataSection(
-  jsonData.Milieu.DOMGVPO.Instrumentarium
-)}
+${this.renderDataSection(jsonData2.Milieu.DOMGVPO.Instrument)}
+</vl-accordion>
+<vl-accordion data-vl-toggle-text="Themagerichte acties">
+${this.renderDataSectionTXT(jsonData2.Milieu.DOMGVPO.Thema)}
+</vl-typography>
+</vl-accordion>
+<vl-accordion data-vl-toggle-text="Opmerkingen">
+  ${this.renderOpmerkingsection(jsonData2.Milieu.DOMGVPO.Opmerking)}
 </vl-accordion>
 </vl-accordion-list>
         </vl-cascader-item>
@@ -425,9 +443,9 @@ ${this.renderDataSection(
     <vl-alert
     data-cy="alert"
     data-vl-naked=""
-    data-vl-icon="info"
+    data-vl-icon="warning"
     data-vl-title="Geen bevoegdheid"
-    data-vl-type="info"
+    data-vl-type="warning"
     data-vl-message="Departement Omgeving - Afdeling VPO heeft geen bevoegheid voor ruimtelijke ordening."
 >
 </vl-alert>
@@ -442,30 +460,30 @@ ${this.renderDataSection(
         <vl-cascader-item label="Milieu">
     <vl-accordion-list slot="content">
         <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
-        ${this.renderDataSection(
-          jsonData.Milieu.DOMGGOP.gewestelijkeToezichthouders
-        )}
+        ${this.renderDataSection(jsonData2.Milieu.dOMGGOP.gewestelijkeToezichthouders)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Klachten">
-        ${this.renderDataSection(
-          jsonData.Milieu.DOMGGOP.klachten
-        )}
+        ${this.renderDataSection(jsonData2.Milieu.dOMGGOP.Klachten)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Controles">
-        ${this.renderDataSection(
-          jsonData.Milieu.DOMGGOP.controles
-        )}
+        ${this.renderDataSection(jsonData2.Milieu.dOMGGOP.Controles)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
         ${this.renderDataSection(
-          jsonData.Milieu.DOMGGOP.Aanvankelijkecontrolesmetschending
+          jsonData2.Milieu.dOMGGOP.Aanvankelijkecontrolesmetschending
         )}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Instrumentarium">
-        ${this.renderDataSection(
-          jsonData.Milieu.DOMGGOP.Instrumentarium
-        )}
+        ${this.renderDataSection(jsonData2.Milieu.dOMGGOP.Instrument)}
         </vl-accordion>
+
+        <vl-accordion data-vl-toggle-text="Themagerichte acties">
+        ${this.renderDataSectionTXT(jsonData2.Milieu.dOMGGOP.Thema)}
+      </vl-typography>
+    </vl-accordion>
+      <vl-accordion data-vl-toggle-text="Opmerkingen">
+          ${this.renderOpmerkingsection(jsonData2.Milieu.dOMGGOP.Opmerking)}
+      </vl-accordion>
     </vl-accordion-list>
                 </vl-cascader-item>
             <vl-cascader-item label="Ruimtelijke ordening">
@@ -473,9 +491,9 @@ ${this.renderDataSection(
             <vl-alert
             data-cy="alert"
             data-vl-naked=""
-            data-vl-icon="info"
+            data-vl-icon="warning"
             data-vl-title="Geen bevoegdheid"
-            data-vl-type="info"
+            data-vl-type="warning"
             data-vl-message="Departement Omgeving - Afdeling GOP heeft geen bevoegheid voor ruimtelijke ordening."
         >
         </vl-alert>
@@ -489,30 +507,29 @@ ${this.renderDataSection(
       <vl-cascader-item label="Milieu">
   <vl-accordion-list slot="content">
       <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
-      ${this.renderDataSection(
-        jsonData.Milieu.OVAM.gewestelijkeToezichthouders
-      )}
+      ${this.renderDataSection(jsonData2.Milieu.OVAM.gewestelijkeToezichthouders)}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Klachten">
-      ${this.renderDataSection(
-        jsonData.Milieu.OVAM.klachten
-      )}
+      ${this.renderDataSection(jsonData2.Milieu.OVAM.Klachten)}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Controles">
-      ${this.renderDataSection(
-        jsonData.Milieu.OVAM.controles
-      )}
+      ${this.renderDataSection(jsonData2.Milieu.OVAM.Controles)}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
       ${this.renderDataSection(
-        jsonData.Milieu.OVAM.Aanvankelijkecontrolesmetschending
+        jsonData2.Milieu.OVAM.Aanvankelijkecontrolesmetschending
       )}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Instrumentarium">
-      ${this.renderDataSection(
-        jsonData.Milieu.OVAM.Instrumentarium
-      )}
+      ${this.renderDataSection(jsonData2.Milieu.OVAM.Instrument)}
       </vl-accordion>
+      <vl-accordion data-vl-toggle-text="Themagerichte acties">
+      ${this.renderDataSectionTXT(jsonData2.Milieu.OVAM.Thema)}
+    </vl-typography>
+  </vl-accordion>
+    <vl-accordion data-vl-toggle-text="Opmerkingen">
+        ${this.renderOpmerkingsection(jsonData2.Milieu.OVAM.Opmerking)}
+    </vl-accordion>
   </vl-accordion-list>
               </vl-cascader-item>
           <vl-cascader-item label="Ruimtelijke ordening">
@@ -520,9 +537,9 @@ ${this.renderDataSection(
           <vl-alert
           data-cy="alert"
           data-vl-naked=""
-          data-vl-icon="info"
+          data-vl-icon="warning"
           data-vl-title="Geen bevoegdheid"
-          data-vl-type="info"
+          data-vl-type="warning"
           data-vl-message="Openbare Vlaamse Afvalmaatschappij heeft geen bevoegheid voor ruimtelijke ordening."
       >
       </vl-alert>
@@ -535,30 +552,29 @@ ${this.renderDataSection(
     <vl-cascader-item label="Milieu">
 <vl-accordion-list slot="content">
     <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
-    ${this.renderDataSection(
-      jsonData.Milieu.ZORG.gewestelijkeToezichthouders
-    )}
+    ${this.renderDataSection(jsonData2.Milieu.DZORG.gewestelijkeToezichthouders)}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Klachten">
-    ${this.renderDataSection(
-      jsonData.Milieu.ZORG.klachten
-    )}
+    ${this.renderDataSection(jsonData2.Milieu.DZORG.Klachten)}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Controles">
-    ${this.renderDataSection(
-      jsonData.Milieu.ZORG.controles
-    )}
+    ${this.renderDataSection(jsonData2.Milieu.DZORG.Controles)}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
     ${this.renderDataSection(
-      jsonData.Milieu.ZORG.Aanvankelijkecontrolesmetschending
+      jsonData2.Milieu.DZORG.Aanvankelijkecontrolesmetschending
     )}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Instrumentarium">
-    ${this.renderDataSection(
-      jsonData.Milieu.ZORG.Instrumentarium
-    )}
+    ${this.renderDataSection(jsonData2.Milieu.DZORG.Instrument)}
     </vl-accordion>
+    <vl-accordion data-vl-toggle-text="Themagerichte acties">
+    ${this.renderDataSectionTXT(jsonData2.Milieu.DZORG.Thema)}
+  </vl-typography>
+</vl-accordion>
+  <vl-accordion data-vl-toggle-text="Opmerkingen">
+      ${this.renderOpmerkingsection(jsonData2.Milieu.DZORG.Opmerking)}
+  </vl-accordion>
 </vl-accordion-list>
             </vl-cascader-item>
         <vl-cascader-item label="Ruimtelijke ordening">
@@ -566,9 +582,9 @@ ${this.renderDataSection(
           <vl-alert
           data-cy="alert"
           data-vl-naked=""
-          data-vl-icon="info"
+          data-vl-icon="warning"
           data-vl-title="Geen bevoegdheid"
-          data-vl-type="info"
+          data-vl-type="warning"
           data-vl-message="Vlaams Agenschap Zorg en Gezondheid heeft geen bevoegheid voor ruimtelijke ordening."
       >
       </vl-alert>
@@ -580,30 +596,27 @@ ${this.renderDataSection(
   <vl-cascader-item label="Milieu">
 <vl-accordion-list slot="content">
   <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
-  ${this.renderDataSection(
-    jsonData.Milieu.VEKA.gewestelijkeToezichthouders
-  )}
+  ${this.renderDataSection(jsonData2.Milieu.VEKA.gewestelijkeToezichthouders)}
   </vl-accordion>
   <vl-accordion data-vl-toggle-text="Klachten">
-  ${this.renderDataSection(
-    jsonData.Milieu.VEKA.klachten
-  )}
+  ${this.renderDataSection(jsonData2.Milieu.VEKA.Klachten)}
   </vl-accordion>
   <vl-accordion data-vl-toggle-text="Controles">
-  ${this.renderDataSection(
-    jsonData.Milieu.VEKA.controles
-  )}
+  ${this.renderDataSection(jsonData2.Milieu.VEKA.Controles)}
   </vl-accordion>
   <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-  ${this.renderDataSection(
-    jsonData.Milieu.VEKA.Aanvankelijkecontrolesmetschending
-  )}
+  ${this.renderDataSection(jsonData2.Milieu.VEKA.Aanvankelijkecontrolesmetschending)}
   </vl-accordion>
   <vl-accordion data-vl-toggle-text="Instrumentarium">
-  ${this.renderDataSection(
-    jsonData.Milieu.VEKA.Instrumentarium
-  )}
+  ${this.renderDataSection(jsonData2.Milieu.VEKA.Instrument)}
   </vl-accordion>
+  <vl-accordion data-vl-toggle-text="Themagerichte acties">
+  ${this.renderDataSectionTXT(jsonData2.Milieu.VEKA.Thema)}
+</vl-typography>
+</vl-accordion>
+<vl-accordion data-vl-toggle-text="Opmerkingen">
+    ${this.renderOpmerkingsection(jsonData2.Milieu.VEKA.Opmerking)}
+</vl-accordion>
 </vl-accordion-list>
           </vl-cascader-item>
       <vl-cascader-item label="Ruimtelijke ordening">
@@ -611,9 +624,9 @@ ${this.renderDataSection(
       <vl-alert
       data-cy="alert"
       data-vl-naked=""
-      data-vl-icon="info"
+      data-vl-icon="warning"
       data-vl-title="Geen bevoegdheid"
-      data-vl-type="info"
+      data-vl-type="warning"
       data-vl-message="Vlaams Energie- en Klimaatagentschap heeft geen bevoegdheid voor ruimtelijke ordening."
   >
   </vl-alert>
@@ -626,30 +639,29 @@ ${this.renderDataSection(
       <vl-cascader-item label="Milieu">
   <vl-accordion-list slot="content">
       <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
-      ${this.renderDataSection(
-        jsonData.Milieu.VLM.gewestelijkeToezichthouders
-      )}
+      ${this.renderDataSection(jsonData2.Milieu.VLM.gewestelijkeToezichthouders)}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Klachten">
-      ${this.renderDataSection(
-        jsonData.Milieu.VLM.klachten
-      )}
+      ${this.renderDataSection(jsonData2.Milieu.VLM.Klachten)}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Controles">
-      ${this.renderDataSection(
-        jsonData.Milieu.VLM.controles
-      )}
+      ${this.renderDataSection(jsonData2.Milieu.VLM.Controles)}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
       ${this.renderDataSection(
-        jsonData.Milieu.VLM.Aanvankelijkecontrolesmetschending
+        jsonData2.Milieu.VLM.Aanvankelijkecontrolesmetschending
       )}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Instrumentarium">
-      ${this.renderDataSection(
-        jsonData.Milieu.VLM.Instrumentarium
-      )}
+      ${this.renderDataSection(jsonData2.Milieu.VLM.Instrument)}
       </vl-accordion>
+      <vl-accordion data-vl-toggle-text="Themagerichte acties">
+      ${this.renderDataSectionTXT(jsonData2.Milieu.VLM.Thema)}
+    </vl-typography>
+  </vl-accordion>
+    <vl-accordion data-vl-toggle-text="Opmerkingen">
+        ${this.renderOpmerkingsection(jsonData2.Milieu.VLM.Opmerking)}
+    </vl-accordion>
   </vl-accordion-list>
               </vl-cascader-item>
           <vl-cascader-item label="Ruimtelijke ordening">
@@ -657,9 +669,9 @@ ${this.renderDataSection(
           <vl-alert
           data-cy="alert"
           data-vl-naked=""
-          data-vl-icon="info"
+          data-vl-icon="warning"
           data-vl-title="Geen bevoegdheid"
-          data-vl-type="info"
+          data-vl-type="warning"
           data-vl-message="Vlaamse Landmaatschappij heeft geen bevoegdheid voor ruimtelijke ordening."
       >
       </vl-alert>
@@ -672,30 +684,27 @@ ${this.renderDataSection(
     <vl-cascader-item label="Milieu">
 <vl-accordion-list slot="content">
     <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
-    ${this.renderDataSection(
-      jsonData.Milieu.VMM.gewestelijkeToezichthouders
-    )}
+    ${this.renderDataSection(jsonData2.Milieu.VMM.gewestelijkeToezichthouders)}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Klachten">
-    ${this.renderDataSection(
-      jsonData.Milieu.VMM.klachten
-    )}
+    ${this.renderDataSection(jsonData2.Milieu.VMM.Klachten)}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Controles">
-    ${this.renderDataSection(
-      jsonData.Milieu.VMM.controles
-    )}
+    ${this.renderDataSection(jsonData2.Milieu.VMM.Controles)}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-    ${this.renderDataSection(
-      jsonData.Milieu.VMM.Aanvankelijkecontrolesmetschending
-    )}
+    ${this.renderDataSection(jsonData2.Milieu.VMM.Aanvankelijkecontrolesmetschending)}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Instrumentarium">
-    ${this.renderDataSection(
-      jsonData.Milieu.VMM.Instrumentarium
-    )}
+    ${this.renderDataSection(jsonData2.Milieu.VMM.Instrument)}
     </vl-accordion>
+    <vl-accordion data-vl-toggle-text="Themagerichte acties">
+    ${this.renderDataSectionTXT(jsonData2.Milieu.VMM.Thema)}
+  </vl-typography>
+</vl-accordion>
+  <vl-accordion data-vl-toggle-text="Opmerkingen">
+      ${this.renderOpmerkingsection(jsonData2.Milieu.VMM.Opmerking)}
+  </vl-accordion>
 </vl-accordion-list>
             </vl-cascader-item>
         <vl-cascader-item label="Ruimtelijke ordening">
@@ -704,9 +713,9 @@ ${this.renderDataSection(
         <vl-alert
         data-cy="alert"
         data-vl-naked=""
-        data-vl-icon="info"
+        data-vl-icon="warning"
         data-vl-title="Geen bevoegdheid"
-        data-vl-type="info"
+        data-vl-type="warning"
         data-vl-message="Openbare Vlaamse Milieumaatschappij heeft geen bevoegdheid voor ruimtelijke ordening."
     >
     </vl-alert>
@@ -721,9 +730,9 @@ ${this.renderDataSection(
   <vl-alert
   data-cy="alert"
   data-vl-naked=""
-  data-vl-icon="info"
+  data-vl-icon="warning"
   data-vl-title="Geen bevoegdheid"
-  data-vl-type="info"
+  data-vl-type="warning"
   data-vl-message="Vlaamse Wooninspectie heeft geen bevoegdheid voor ruimtelijke ordening."
 >
 </vl-alert>
@@ -733,24 +742,27 @@ ${this.renderDataSection(
       <vl-accordion-list slot="content">
   <vl-accordion data-vl-toggle-text="Verbalisanten en stedenbouwkundige inspecteurs en VTE"> 
   ${this.renderDataSection(
-    jsonData.Milieu.Wooninspectie.gewestelijkeToezichthouders
+    jsonData2.Milieu.VWI.gewestelijkeToezichthouders
   )}</vl-accordion>
   <vl-accordion data-vl-toggle-text="Klachten">
-  ${this.renderDataSection( jsonData.Milieu.Wooninspectie.klachten)}
+  ${this.renderDataSection(jsonData2.Milieu.VWI.Klachten)}
   </vl-accordion>
   <vl-accordion data-vl-toggle-text="Controles">
-  ${this.renderDataSection(jsonData.Milieu.Wooninspectie.klachten)}
+  ${this.renderDataSection(jsonData2.Milieu.VWI.Controles)}
   </vl-accordion>
   <vl-accordion data-vl-toggle-text="Aantal aanvankelijke controles met schending">
-  ${this.renderDataSection(
-    jsonData.Milieu.Wooninspectie.klachten
-  )}
+  ${this.renderDataSection(jsonData2.Milieu.VWI.Aanvankelijkecontrolesmetschending)}
   </vl-accordion>
   <vl-accordion data-vl-toggle-text="Instrumentarium">
-  ${this.renderDataSection(
-    jsonData.Milieu.Wooninspectie.klachten
-  )}
+  ${this.renderDataSection(jsonData2.Milieu.VWI.Instrument)}
   </vl-accordion>
+  <vl-accordion data-vl-toggle-text="Themagerichte acties">
+  ${this.renderDataSectionTXT(jsonData2.Milieu.VWI.Thema)}
+</vl-typography>
+</vl-accordion>
+<vl-accordion data-vl-toggle-text="Opmerkingen">
+    ${this.renderOpmerkingsection(jsonData2.Milieu.VWI.Opmerking)}
+</vl-accordion>
 </vl-accordion-list>
       </vl-cascader-item>
 </vl-cascader-item>

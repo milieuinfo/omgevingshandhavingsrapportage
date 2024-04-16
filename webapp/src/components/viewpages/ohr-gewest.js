@@ -47,7 +47,9 @@ class OhrGewest extends LitElement {
               {
                 size: 4,
                 template: this.__renderSideNavigation(),
-              },
+              }
+              /*
+              ,
               {
                 size:12,
                 template: this.__rendertitleconsolidated(),
@@ -59,7 +61,7 @@ class OhrGewest extends LitElement {
               {
                 size:4,
                 template: this.__renderConsolidatedBeeldro(),
-              }
+              }*/
               
           )}
         </div>
@@ -72,7 +74,9 @@ class OhrGewest extends LitElement {
     <h5 is="vl-h5" data-vl-alt>Interessante links</h5>
     <ul is="vl-link-list">
     <li is="vl-link-list-item">
-   
+    <li is="vl-link-list-item">
+    <a is="vl-link" href="/download-cijfers-en-meer">Geconsolideerd beeld gewesten</a>
+  </li> 
       </li>
       <li is="vl-link-list-item">
         <a is="vl-link" href="/">Meerjarenrapportage</a>
