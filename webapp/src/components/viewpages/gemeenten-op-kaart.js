@@ -77,7 +77,7 @@ class OhrOpkaart extends LitElement {
           <vl-typography data-cy="typography">
           <p><em>Non-respons: Gemeenten heeft niet gereageerd op de bevraging.
           <br/>
-          Niet gekend: Gemeenten kon geen cijfers geven dit aspect.</em>
+          Niet gekend: Gemeenten kon geen cijfers geven over dit handhavingsthema.</em>
           </p>
           </vl-typography>`
   }
@@ -97,12 +97,12 @@ class OhrOpkaart extends LitElement {
     <ul is="vl-link-list">
       <li is="vl-link-list-item">
         <a is="vl-link"
-           href="#">
+           href="/">
            Laatst bekende cijfers per actor
         </a>
       </li>
       <li is="vl-link-list-item">
-        <a is="vl-link" href="#">Analyseer de cijfers</a>
+        <a is="vl-link" href="/">Analyseer de cijfers</a>
       </li>   
       <li is="vl-link-list-item">
         <a is="vl-link"

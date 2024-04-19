@@ -36,8 +36,7 @@ and performing other setup tasks.
           is="vl-image"
           slot="image"
           src="images/header.jpg"
-          alt="Hoofding afbeelding website"
-        />
+          alt="Hoofding afbeelding website"/>
         <a slot="context-link" href="/">Omgevingshandhavingsrapportage</a>
         <a slot="title-link" href="/">Handhaving</a>
       </vl-content-header>
@@ -155,9 +154,9 @@ and performing other setup tasks.
             Geconsolideerd beeld voorgaande jaar voor Vlaamse Gewest
           </h3>
           <div is="vl-grid" data-vl-align-center>
-          <div is="vl-column" data-vl-size="5">
+          <div is="vl-column" data-vl-size="6">
             <vl-spotlight
-              data-vl-img-src="images/consolm.jpg"
+              data-vl-img-src="images/rsz_infographic_milieu.png"
               data-vl-img-alt="spotlight image"
             >
               <span slot="title">Geconsolideerd beeld milieu </span>
@@ -173,9 +172,9 @@ and performing other setup tasks.
               </span>
             </vl-spotlight>
           </div>
-          <div is="vl-column" data-vl-size="5">
+          <div is="vl-column" data-vl-size="6">
             <vl-spotlight
-              data-vl-img-src="images/infographic_ro_gewestelijk_def.png"
+              data-vl-img-src="images/rsz_infographic_ro.png"
               data-vl-img-alt="spotlight image"
             >
               <span slot="title">
@@ -228,8 +227,8 @@ and performing other setup tasks.
           size: 2,
           template: html` <div is="vl-infotext" data-cy="infotext">
             <div>
-              <div data-vl-value="">2,32</div>
-              <div data-vl-text="">Totaal VTE</div>
+              <div data-vl-value="">1871</div>
+              <div data-vl-text="">Aantal handhavers</div>
             </div>
           </div>`,
         },
@@ -262,39 +261,6 @@ and performing other setup tasks.
         }
       )}
       `;
-  }
-
-  __renderStaticNumbersKPI2() {
-    return html`${renderStack(
-      {
-        size: 6,
-        template: html` <div is="vl-grid" data-vl-align-center></div> `,
-      },
-      {
-        size: 6,
-        template: html`
-          <vl-spotlight
-            data-vl-img-src="images/infographic_ro_gewestelijk_def.png"
-            data-vl-img-alt="spotlight image"
-          >
-            <span slot="title">
-              Geconsolideerd beeld ruimtelijke ordening
-            </span>
-            <span slot="subtitle">Op basis van de cijfers van 2023</span>
-            <span slot="text">
-              De bovenstaande infographic geeft een overzicht van de
-              verschillende instrumenten binnen het ruimtelijke ordening beleid
-              voor het volledige vlaamse gewest.<br />
-              <p>
-                <a href="images/infographic_ro_gewestelijk_def.png" download
-                  >Download bovenstaande infographic</a
-                >
-              </p>
-            </span>
-          </vl-spotlight>
-        `,
-      }
-    )}`;
   }
 
   __renderJaarRapportage() {
