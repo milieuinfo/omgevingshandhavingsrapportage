@@ -66,7 +66,7 @@
             "gewestelijkeToezichthouders": {
                 "Toezichthouders": 132,
                 "VTE Toezichthouders": "42,98",
-                "VTE administratieve en juridische ondersteuning": "0,05"
+                "VTE administratieve en juridische ondersteuning": "0,15"
             },
             "Klachten": {
                 "Milieuklachten milieu": 1896,
@@ -110,7 +110,7 @@
                 "Aantal aanmaningen": 1013,
                 "Aantal verslagen van vaststelling": 464,
                 "Aantal proces verbalen": 443,
-                "Bestuurlijke maatregelen zonder dwangsom": 443,
+                "Bestuurlijke maatregelen zonder dwangsom": 345,
                 "Bestuurlijke maatregelen met dwangsom": 98,
                 "Veiligheidsmaatregel": 1
             },
@@ -121,7 +121,7 @@
             "Opmerking": {
                 "Opmerking1": "Klachten: hieronder verstaan wij meldingen die een klacht zijn.",
                 "Opmerking2": "Aantal navolgende controles voor verdere opvolging van deze milieuhandhavingscontroles op eigen initiatief?: wordt niet bijgehouden",
-                "Opmerking3": "wordt bij NI onder ontbossing genomen De personeelsbeschikbaarheid wordt gedefinieerd als de verhouding van het aantal dagen dat een personeelslid in een bepaalde periode geacht wordt om te werken, op basis van diens arbeidsregime, inclusief feestdagen, ten opzichte van het aantal dagen dat een voltijds personeelslid in diezelfde periode dient te werken.",
+                "Opmerking3": "wordt bij NI onder ontbossing genomen. De personeelsbeschikbaarheid wordt gedefinieerd als de verhouding van het aantal dagen dat een personeelslid in een bepaalde periode geacht wordt om te werken, op basis van diens arbeidsregime, inclusief feestdagen, ten opzichte van het aantal dagen dat een voltijds personeelslid in diezelfde periode dient te werken.",
                 "Opmerking4":"Om de totale personeelsbeschikbaarheid te berekenen wordt voor alle personeelsleden het totaal aantal te werken dagen, volgens een voltijds arbeidsregime, in een periode bepaald en vervolgens de onbeschikbaarheden afgetrokken."
                 
             }
@@ -937,38 +937,38 @@
                 "Verbalisanten": 0,
                 "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
                 "Stedenbouwkundige inspecteurs": 0,
-                "VTE": 0
+                "VTE": "2,98"
             },
             "Klachten": {
-                "Milieuklachten ruimtelijke ordening": 0,
+                "Milieuklachten ruimtelijke ordening": 4,
                 "Verharding": 0,
                 "Ontbossing": 0
             },
             "Controles": {
-                "Milieucontroles": 0,
-                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
-                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 0,
-                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
-                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 0,
-                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
+                "Milieucontroles": 145,
+                "navolgende stedenbouwkundige controles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+                "aanvankelijke stedenbouwkundige controles naar aanleiding van klachten": 1,
+                "navolgende stedenbouwkundige controles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+                "aanvankelijke stedenbouwkundige controles  op eigen initiatief": 0,
+                "navolgende stedenbouwkundige controles voor verdere opvolging van de controles op eigen initiatief": 0
             },
             "Aanvankelijkecontrolesmetschending": {
-                "Totaal aanvankelijk": 0,
-                "Overtredingsgraad": 0,
-                "Verharding": 0,
-                "Ontbossing": 0
+                "Totaal aanvankelijk": 141,
+                "Overtredingsgraad": "aanvullen",
+                "Verharding": "aanvullen",
+                "Ontbossing": "aanvullen"
             },
             "Instrument": {
-                "Aantal raadgevingen": "niet gekend",
-                "Aanmaning": "niet gekend",
-                "Verslagen van vaststelling": "niet gekend",
-                "Procesverbaal": "niet gekend",
-                "Bevel tot staking": "niet gekend",
+                "Aantal raadgevingen": 2,
+                "Aanmaning": 59,
+                "Verslagen van vaststelling": 3,
+                "Procesverbaal": 79,
+                "Bevel tot staking": 0,
                 "Bestuurlijke maatregel": "niet gekend",
-                "Afgesloten minnelijke schikking": 0,
-                "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
-                "Herstel gevorderd bij burgelijke rechter": 0,
-                "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
+                "Afgesloten minnelijke schikking": "niet gekend",
+                "Ingeleide herstelvordering bij Openbaar Ministerie": "niet gekend",
+                "Herstel gevorderd bij burgelijke rechter": "niet gekend",
+                "Ambtshalve uitvoering gerechtelijke herstelmaatregel": "niet gekend"
             },
             "Thema": {
                 "Verharding": "Geen opmerking",

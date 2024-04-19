@@ -201,23 +201,23 @@ class OhrAGewest extends LitElement {
           jsonData2.RO.ANB.PersoneelRO
         )}</vl-accordion>
         <vl-accordion data-vl-toggle-text="Klachten">
-        ${this.renderDataSection(jsonData2.Milieu.ANB.Klachten)}
+        ${this.renderDataSection(jsonData2.RO.ANB.Klachten)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Controles">
-        ${this.renderDataSection(jsonData2.Milieu.ANB.Klachten)}
+        ${this.renderDataSection(jsonData2.RO.ANB.Controles)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Aantal aanvankelijke controles met schending">
-        ${this.renderDataSection(jsonData2.Milieu.ANB.Klachten)}
+        ${this.renderDataSection(jsonData2.RO.ANB.Aanvankelijkecontrolesmetschending)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Instrumentarium">
-        ${this.renderDataSection(jsonData2.Milieu.ANB.Klachten)}
+        ${this.renderDataSection(jsonData2.RO.ANB.Instrument)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Themagerichte acties">
-        ${this.renderDataSectionTXT(jsonData2.Milieu.ANB.Thema)}
+        ${this.renderDataSectionTXT(jsonData2.RO.ANB.Thema)}
       </vl-typography>
     </vl-accordion>
       <vl-accordion data-vl-toggle-text="Opmerkingen">
-          ${this.renderOpmerkingsection(jsonData2.Milieu.ANB.Opmerking)}
+          ${this.renderOpmerkingsection(jsonData2.RO.ANB.Opmerking)}
       </vl-accordion>
     </vl-accordion-list>
             </vl-cascader-item>
