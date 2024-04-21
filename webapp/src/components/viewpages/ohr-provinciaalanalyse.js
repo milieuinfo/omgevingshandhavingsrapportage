@@ -112,7 +112,7 @@ class OhrProvincieAnalyse extends LitElement {
         ${this.renderDataSection(jsonData.Milieu.Antwerpen.Instrument)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Opmerking">
-        <p>Geen opmerkingen.</p>
+        <p>Totaal aantal milieuhandhavingscontroles uitgevoerd in 2023: dit maakt deel uit van het dagdagelijkse werk van de controleurs/toezichthouders. In 2023 is een voltijdse handhaver gestart bij provincie Antwerpen. Dit heeft geleid tot een toename van het aantal controles en acties. Verder werd in het najaar 2023 een nieuwe applicatie voor registratie en opvolging van handhaving in gebruik genomen. Verwacht wordt dat vanaf 2024 een realistischer beeld van het aantal uitgevoerde controles gegeven zal kunnen worden, en bijgevolg het aantal acties ook zal toenemen.</p>
         </vl-accordion>
     </vl-accordion-list>
                 </vl-cascader-item>
@@ -225,7 +225,7 @@ class OhrProvincieAnalyse extends LitElement {
     ${this.renderDataSection(jsonData.Milieu.VlaamsBrabant.Instrument)}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Opmerking">
-  <p>Geen opmerkingen.</p>
+  <p>De toezichthouders van de provincie Vlaams-Brabant handhaven eerder reactief dan actief. Elke toezichthouder is de vertegenwoordiger van een team van 4 personen dat instaat voor het onderhoud van een deelgebied en de wateradviesverlening binnen dit deelgebied. Elk teamlid voert terreincontroles uit in het kader van hun onderhoudsopdracht. Deze controles starten dus niet met het doel die de definitie van "controle" in het kader van handhaving omschrijft, maar evolueren hier wel naar indien noodzakelijk. Overtredingen die vastgesteld worden tijdens deze opdracht worden doorgegeven aan de toezichthouder van het team. Overtredingen worden dus opgemerkt per toeval, wanneer ze de beheerstaken hinderen of wanneer er melding van derden bij onze dienst van wordt gemaakt. Zoals boven vermeld wordt er geen onderscheid geregistreerd tussen meldingen die betrekking hebben op het onderhoud of functioneren van de waterloop en meldingen die het gevolg zijn van handhavingsgerelateerde oorzaken.</p>
 </vl-accordion>
     </vl-accordion-list>
                 </vl-cascader-item>
