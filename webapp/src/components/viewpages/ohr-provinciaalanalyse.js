@@ -97,41 +97,26 @@ class OhrProvincieAnalyse extends LitElement {
         <p>Geen opgelegde bestuurlijke maatregelen of veiligsheidsmaatregelen voor provinciegouverneur.</p>
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Provinciale toezichthouders en VTE">
-        ${this.renderDataSection(jsonData.Antwerpen.Personeel)}
+        ${this.renderDataSection(jsonData.Milieu.Antwerpen.gewestelijkeToezichthouders)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Klachten">
-        <p>Aantal milieuklachten zijn niet gekend voor provincie Antwerpen.</p>
+        ${this.renderDataSection(jsonData.Milieu.Antwerpen.Klachten)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Controles">
-        ${this.renderDataSection(jsonData.Antwerpen.Controles)}
+        ${this.renderDataSection(jsonData.Milieu.Antwerpen.Controles)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-        ${this.renderDataSection(jsonData.Antwerpen.Aanvankelijkecontrolesmetschending)}
+        ${this.renderDataSection(jsonData.Milieu.Antwerpen.Aanvankelijkecontrolesmetschending)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Instrumentarium">
-        ${this.renderDataSection(jsonData.Antwerpen.Instrumentarium)}
+        ${this.renderDataSection(jsonData.Milieu.Antwerpen.Instrument)}
         </vl-accordion>
         <vl-accordion data-vl-toggle-text="Opmerking">
         <p>Geen opmerkingen.</p>
         </vl-accordion>
     </vl-accordion-list>
                 </vl-cascader-item>
-            <vl-cascader-item label="Ruimtelijke ordening">
-            <p slot="content">
-            <vl-alert
-            data-cy="alert"
-            data-vl-naked=""
-            data-vl-icon="warning"
-            data-vl-title="Geen bevoegheid"
-            data-vl-type="warning"
-            data-vl-message="Provincie Antwerpen heeft geen bevoegheid voor ruimtelijke ordening."
-        >
-        </vl-alert>
-    </p>
-            </vl-cascader-item>
       </vl-cascader-item>
-
-
       <vl-cascader-item label="Provincie Limburg">
         <vl-cascader-item label="Milieu">
     <vl-accordion-list slot="content">
@@ -139,37 +124,24 @@ class OhrProvincieAnalyse extends LitElement {
         <p>Geen opgelegde bestuurlijke maatregelen of veiligsheidsmaatregelen voor provinciegouverneur.</p>
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Provinciale toezichthouders en VTE">
-    ${this.renderDataSection(jsonData.Limburg.Personeel)}
+    ${this.renderDataSection(jsonData.Milieu.Limburg.gewestelijkeToezichthouders)}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Klachten">
-    ${this.renderDataSection(jsonData.Limburg.Klachten)}
+    ${this.renderDataSection(jsonData.Milieu.Limburg.Klachten)}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Controles">
-    ${this.renderDataSection(jsonData.Limburg.Controles)}
+    ${this.renderDataSection(jsonData.Milieu.Limburg.Controles)}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-    ${this.renderDataSection(jsonData.Limburg.Aanvankelijkecontrolesmetschending)}
+    ${this.renderDataSection(jsonData.Milieu.Limburg.Aanvankelijkecontrolesmetschending)}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Instrumentarium">
-    ${this.renderDataSection(jsonData.Limburg.Instrumentarium)}
+    ${this.renderDataSection(jsonData.Milieu.Limburg.Instrument)}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Opmerking">
         <p>Geen opmerkingen.</p>
     </vl-accordion>
     </vl-accordion-list>
-                </vl-cascader-item>
-                <vl-cascader-item label="Ruimtelijke ordening">
-                <p slot="content">
-                <vl-alert
-                data-cy="alert"
-                data-vl-naked=""
-                data-vl-icon="warning"
-                data-vl-title="Geen bevoegheid"
-                data-vl-type="warning"
-                data-vl-message="Provincie Limburg heeft geen bevoegheid voor ruimtelijke ordening."
-            >
-            </vl-alert>
-        </p>
                 </vl-cascader-item>
       </vl-cascader-item>
 
@@ -180,38 +152,25 @@ class OhrProvincieAnalyse extends LitElement {
     <p>Geen opgelegde bestuurlijke maatregelen of veiligsheidsmaatregelen voor provinciegouverneur.</p>
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Provinciale toezichthouders en VTE">
-    ${this.renderDataSection(jsonData.OostVlaanderen.Personeel)}
+    ${this.renderDataSection(jsonData.Milieu.OostVlaanderen.gewestelijkeToezichthouders)}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Klachten">
-    ${this.renderDataSection(jsonData.OostVlaanderen.Klachten)}
+    ${this.renderDataSection(jsonData.Milieu.OostVlaanderen.Klachten)}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Controles">
-    ${this.renderDataSection(jsonData.OostVlaanderen.Controles)}
+    ${this.renderDataSection(jsonData.Milieu.OostVlaanderen.Controles)}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-    ${this.renderDataSection(jsonData.OostVlaanderen.Aanvankelijkecontrolesmetschending)}
+    ${this.renderDataSection(jsonData.Milieu.OostVlaanderen.Aanvankelijkecontrolesmetschending)}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Instrumentarium">
-    ${this.renderDataSection(jsonData.OostVlaanderen.Instrumentarium)}
+    ${this.renderDataSection(jsonData.Milieu.OostVlaanderen.Instrument)}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Opmerking">
         <p>Geen opmerkingen.</p>
     </vl-accordion>
     </vl-accordion-list>
                 </vl-cascader-item>
-            <vl-cascader-item label="Ruimtelijke ordening">
-            <p slot="content">
-            <vl-alert
-            data-cy="alert"
-            data-vl-naked=""
-            data-vl-icon="warning"
-            data-vl-title="Geen bevoegheid"
-            data-vl-type="warning"
-            data-vl-message="Provincie Oost-Vlaanderen heeft geen bevoegheid voor ruimtelijke ordening."
-        >
-        </vl-alert>
-    </p>
-            </vl-cascader-item>
       </vl-cascader-item>
 
       <vl-cascader-item label="Provincie West-Vlaanderen">
@@ -221,38 +180,25 @@ class OhrProvincieAnalyse extends LitElement {
   <p>Geen opgelegde bestuurlijke maatregelen of veiligsheidsmaatregelen voor provinciegouverneur.</p>
   </vl-accordion>
   <vl-accordion data-vl-toggle-text="Provinciale toezichthouders en VTE">
-  ${this.renderDataSection(jsonData.WestVlaanderen.Personeel)}
+  ${this.renderDataSection(jsonData.Milieu.WestVlaanderen.gewestelijkeToezichthouders)}
   </vl-accordion>
   <vl-accordion data-vl-toggle-text="Klachten">
-  ${this.renderDataSection(jsonData.WestVlaanderen.Klachten)}
+  ${this.renderDataSection(jsonData.Milieu.WestVlaanderen.Klachten)}
   </vl-accordion>
   <vl-accordion data-vl-toggle-text="Controles">
-  ${this.renderDataSection(jsonData.WestVlaanderen.Controles)}
+  ${this.renderDataSection(jsonData.Milieu.WestVlaanderen.Controles)}
   </vl-accordion>
   <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-  ${this.renderDataSection(jsonData.WestVlaanderen.Aanvankelijkecontrolesmetschending)}
+  ${this.renderDataSection(jsonData.Milieu.WestVlaanderen.Aanvankelijkecontrolesmetschending)}
   </vl-accordion>
   <vl-accordion data-vl-toggle-text="Instrumentarium">
-  ${this.renderDataSection(jsonData.WestVlaanderen.Instrumentarium)}
+  ${this.renderDataSection(jsonData.Milieu.WestVlaanderen.Instrument)}
   </vl-accordion>
   <vl-accordion data-vl-toggle-text="Opmerking">
   <p>Geen opmerkingen.</p>
 </vl-accordion>
   </vl-accordion-list>
               </vl-cascader-item>
-          <vl-cascader-item label="Ruimtelijke ordening">
-          <p slot="content">
-          <vl-alert
-          data-cy="alert"
-          data-vl-naked=""
-          data-vl-icon="warning"
-          data-vl-title="Geen bevoegheid"
-          data-vl-type="warning"
-          data-vl-message="Provincie West-Vlaanderen heeft geen bevoegheid voor ruimtelijke ordening."
-      >
-      </vl-alert>
-  </p>
-          </vl-cascader-item>
     </vl-cascader-item>
 
 
@@ -264,38 +210,25 @@ class OhrProvincieAnalyse extends LitElement {
     <p>Geen opgelegde bestuurlijke maatregelen of veiligsheidsmaatregelen voor provinciegouverneur.</p>
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Provinciale toezichthouders en VTE">
-    ${this.renderDataSection(jsonData.VlaamsBrabant.Personeel)}
+    ${this.renderDataSection(jsonData.Milieu.VlaamsBrabant.gewestelijkeToezichthouders)}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Klachten">
-    ${this.renderDataSection(jsonData.VlaamsBrabant.Klachten)}
+    ${this.renderDataSection(jsonData.Milieu.VlaamsBrabant.Klachten)}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Controles">
-    ${this.renderDataSection(jsonData.VlaamsBrabant.Controles)}
+    ${this.renderDataSection(jsonData.Milieu.VlaamsBrabant.Controles)}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-    ${this.renderDataSection(jsonData.VlaamsBrabant.Aanvankelijkecontrolesmetschending)}
+    ${this.renderDataSection(jsonData.Milieu.VlaamsBrabant.Aanvankelijkecontrolesmetschending)}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Instrumentarium">
-    ${this.renderDataSection(jsonData.VlaamsBrabant.Instrumentarium)}
+    ${this.renderDataSection(jsonData.Milieu.VlaamsBrabant.Instrument)}
     </vl-accordion>
     <vl-accordion data-vl-toggle-text="Opmerking">
   <p>Geen opmerkingen.</p>
 </vl-accordion>
     </vl-accordion-list>
                 </vl-cascader-item>
-            <vl-cascader-item label="Ruimtelijke ordening">
-            <p slot="content">
-            <vl-alert
-            data-cy="alert"
-            data-vl-naked=""
-            data-vl-icon="warning"
-            data-vl-title="Geen bevoegheid"
-            data-vl-type="warning"
-            data-vl-message="Provincie Vlaams-Brabant heeft geen bevoegheid voor ruimtelijke ordening."
-        >
-        </vl-alert>
-    </p>
-            </vl-cascader-item>
       </vl-cascader-item>
 </vl-cascader>
 `;
