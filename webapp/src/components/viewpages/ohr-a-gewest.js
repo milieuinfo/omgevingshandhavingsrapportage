@@ -165,7 +165,7 @@ class OhrAGewest extends LitElement {
             </vl-cascader-item>
       </vl-cascader-item>
 
-      <vl-cascader-item label="Agentschap voor Natuur en Bos">
+      <vl-cascader-item label="Agentschap Natuur en Bos">
         <vl-cascader-item label="Milieu">
     <vl-accordion-list slot="content">
         <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
@@ -190,7 +190,14 @@ class OhrAGewest extends LitElement {
       </vl-typography>
     </vl-accordion>
       <vl-accordion data-vl-toggle-text="Opmerkingen">
-          ${this.renderOpmerkingsection(jsonData2.Milieu.ANB.Opmerking)}
+          <p>"Klachten": hieronder verstaan wij meldingen die een klacht zijn. " aantal navolgende milieuhandhavingscontroles voor verdere opvolging van deze milieuhandhavingscontroles naar aanleiding van klachten?": wordt niet bijgehouden. "aantal navolgende controles voor verdere opvolging van deze milieuhandhavingscontroles op eigen initiatief?": wordt niet bijgehouden. "Verharding": wordt bij NI onder ontbossing genomen
+
+          De personeelsbeschikbaarheid wordt gedefinieerd als de verhouding van
+          het aantal dagen dat een personeelslid in een bepaalde periode geacht wordt om te werken,
+          op basis van diens arbeidsregime,
+          inclusief feestdagen,
+          ten opzichte van het aantal dagen dat een voltijds personeelslid in diezelfde periode dient te werken.
+          Om de totale personeelsbeschikbaarheid te berekenen wordt voor alle personeelsleden het totaal aantal te werken dagen, volgens een voltijds arbeidsregime, in een periode bepaald en vervolgens de onbeschikbaarheden afgetrokken.</p>
       </vl-accordion>
     </vl-accordion-list>
                 </vl-cascader-item>
@@ -248,7 +255,7 @@ class OhrAGewest extends LitElement {
       </vl-typography>
     </vl-accordion>
       <vl-accordion data-vl-toggle-text="Opmerkingen">
-          ${this.renderOpmerkingsection(jsonData2.Milieu.AWV.Opmerking)}
+          <p>Geen opmerking</p>
       </vl-accordion>
     </vl-accordion-list>
                 </vl-cascader-item>
@@ -289,7 +296,7 @@ class OhrAGewest extends LitElement {
     </vl-typography>
   </vl-accordion>
     <vl-accordion data-vl-toggle-text="Opmerkingen">
-        ${this.renderOpmerkingsection(jsonData2.Milieu.VW.Opmerking)}
+       <p>De toezichthouders begeven zich in het kader van hun opdracht en verantwoordelijkheden dagelijks op het terrein. Bijgevolg werden er geen afzonderlijke milieuhandhavingscontroles ingepland en/of uitgevoerd, behoudens tijdens de Week van de Handhaving. Milieuhandhaving maakt deel uit van hun dagelijks takenpakket dat voor het overgrote deel bestaat uit niet-handhavings-gerelateerde aspecten. De betrokkenheid bestaat ook vaak uit een signaalfunctie en bijstand als waterwegbeheerder aan andere lokale en gewestelijke handhavingsdiensten.</p>
     </vl-accordion>
   </vl-accordion-list>
               </vl-cascader-item>
@@ -310,30 +317,15 @@ class OhrAGewest extends LitElement {
   <vl-cascader-item label="Departement Mobiliteit en Openbare Werken">
         <vl-cascader-item label="Milieu">
     <vl-accordion-list slot="content">
-        <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
-        ${this.renderDataSection(jsonData2.Milieu.dMOW.gewestelijkeToezichthouders)}
-        </vl-accordion>
-        <vl-accordion data-vl-toggle-text="Klachten">
-        ${this.renderDataSection(jsonData2.Milieu.dMOW.Klachten)}
-        </vl-accordion>
-        <vl-accordion data-vl-toggle-text="Controles">
-        ${this.renderDataSection(jsonData2.Milieu.dMOW.Controles)}
-        </vl-accordion>
-        <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-        ${this.renderDataSection(
-          jsonData2.Milieu.dMOW.Aanvankelijkecontrolesmetschending
-        )}
-        </vl-accordion>
-        <vl-accordion data-vl-toggle-text="Instrumentarium">
-        ${this.renderDataSection(jsonData2.Milieu.dMOW.Instrument)}
-        </vl-accordion>
-        <vl-accordion data-vl-toggle-text="Themagerichte acties">
-        ${this.renderDataSectionTXT(jsonData2.Milieu.dMOW.Thema)}
-      </vl-typography>
-    </vl-accordion>
-      <vl-accordion data-vl-toggle-text="Opmerkingen">
-          ${this.renderOpmerkingsection(jsonData2.Milieu.dMOW.Opmerking)}
-      </vl-accordion>
+    <p slot="content">
+    <vl-alert data-cy="alert" data-vl-naked="" data-vl-icon="info" data-vl-title="Geen activiteit" data-vl-type="info"
+    data-vl-message="Departement Mobiliteit en Openbare Werken heeft geen milieuhandhaving uitgevoerd.">
+  </vl-alert></p>
+<vl-accordion data-vl-default-open data-vl-toggle-text="Opmerkingen">
+    <p>Voor 2023 is het antwoord hetzelfde als in 2022. Onze gewestelijke toezichthouders werden bevraagd en er werden geen acties ondernomen. Vanuit de LOM kan hier niet op gereageerd worden. De LOM is immers geen handhavingsinstantie. De LOM ontvangt wel af en toe aanmaningen en PV’s van de afdeling Handhaving voor vermeende overtredingen die de LOM zou begaan hebben (en die wij steeds inhoudelijk weerleggen). 
+    Maar het lijkt niet de bedoeling dat we hierover rapporteren.</p>
+</vl-accordion>
+</vl-accordion-list>
     </vl-accordion-list>
     </vl-cascader-item>
             <vl-cascader-item label="Ruimtelijke ordening">
@@ -377,7 +369,7 @@ class OhrAGewest extends LitElement {
     </vl-typography>
   </vl-accordion>
     <vl-accordion data-vl-toggle-text="Opmerkingen">
-        ${this.renderOpmerkingsection(jsonData2.Milieu.dOMGHH.Opmerking)}
+        <p>Geen opmerking</p>
     </vl-accordion>
   </vl-accordion-list>
               </vl-cascader-item>
@@ -482,7 +474,7 @@ ${this.renderDataSectionTXT(jsonData2.Milieu.DOMGVPO.Thema)}
       </vl-typography>
     </vl-accordion>
       <vl-accordion data-vl-toggle-text="Opmerkingen">
-          ${this.renderOpmerkingsection(jsonData2.Milieu.dOMGGOP.Opmerking)}
+          <p>Geen opmerking</p>
       </vl-accordion>
     </vl-accordion-list>
                 </vl-cascader-item>
@@ -528,7 +520,10 @@ ${this.renderDataSectionTXT(jsonData2.Milieu.DOMGVPO.Thema)}
     </vl-typography>
   </vl-accordion>
     <vl-accordion data-vl-toggle-text="Opmerkingen">
-        ${this.renderOpmerkingsection(jsonData2.Milieu.OVAM.Opmerking)}
+       <p>In het huidig dossiersysteem is het onderscheid niet duidelijk te maken tussen navolgende en aanvankelijke controles. Alle navolgende controles zitten inbegrepen in het cijfer van de aanvankelijke controles.
+
+       aantal aanvankelijke milieuhandhavingscontroles op eigen initiatief inzake PFAS: Dit zijn geen 100 % PFAS-controles. Onder meer alle "grondverzet-controles" zijn hier meegenomen. 
+       De grondverzet-controles spitsen zich toe op het controleren van grondverzet bij werven en tijdelijke opslagplaatsen (TOP’s). Pfas-verbindingen behoren tot de verbindingen die gemeten worden bij staalname van grondhopen. Deze zitten dus verwerkt in analyseresultaten opgenomen in het technisch verslag nodig om aan grondverzet te doen. Indien bij analyse van een bodemstaal de waarden voor Pfas-verbindingen overschreden worden dan spreken we van een afvalstof en valt dit niet meer onder het grondvezet. Controles op Pfas worden dus meegenomen in de controles op grondverzet als 1 van de parameters. Daarnaast wordt ook gecontroleerd op de aanwezigheid van pfas-vervuilde gronden bij GRC’s (grondreinigingcentra) of de regels van het grondverzet nageleefd wordaen.</p>
     </vl-accordion>
   </vl-accordion-list>
               </vl-cascader-item>
@@ -548,7 +543,7 @@ ${this.renderDataSectionTXT(jsonData2.Milieu.DOMGVPO.Thema)}
     </vl-cascader-item>
 
     
-    <vl-cascader-item label="Vlaams Agenschap Zorg en Gezondheid">
+    <vl-cascader-item label="Departement Zorg">
     <vl-cascader-item label="Milieu">
 <vl-accordion-list slot="content">
     <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
@@ -594,30 +589,10 @@ ${this.renderDataSectionTXT(jsonData2.Milieu.DOMGVPO.Thema)}
 
   <vl-cascader-item label="Vlaamse Energie- en Klimaatmaatschappij">
   <vl-cascader-item label="Milieu">
-<vl-accordion-list slot="content">
-  <vl-accordion data-vl-toggle-text="Gewestelijke toezichthouders en VTE van 2023"> 
-  ${this.renderDataSection(jsonData2.Milieu.VEKA.gewestelijkeToezichthouders)}
-  </vl-accordion>
-  <vl-accordion data-vl-toggle-text="Klachten">
-  ${this.renderDataSection(jsonData2.Milieu.VEKA.Klachten)}
-  </vl-accordion>
-  <vl-accordion data-vl-toggle-text="Controles">
-  ${this.renderDataSection(jsonData2.Milieu.VEKA.Controles)}
-  </vl-accordion>
-  <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-  ${this.renderDataSection(jsonData2.Milieu.VEKA.Aanvankelijkecontrolesmetschending)}
-  </vl-accordion>
-  <vl-accordion data-vl-toggle-text="Instrumentarium">
-  ${this.renderDataSection(jsonData2.Milieu.VEKA.Instrument)}
-  </vl-accordion>
-  <vl-accordion data-vl-toggle-text="Themagerichte acties">
-  ${this.renderDataSectionTXT(jsonData2.Milieu.VEKA.Thema)}
-</vl-typography>
-</vl-accordion>
-<vl-accordion data-vl-toggle-text="Opmerkingen">
-    ${this.renderOpmerkingsection(jsonData2.Milieu.VEKA.Opmerking)}
-</vl-accordion>
-</vl-accordion-list>
+  <p slot="content">
+  <vl-alert data-cy="alert" data-vl-naked="" data-vl-icon="info" data-vl-title="Geen activiteit" data-vl-type="info"
+  data-vl-message="Vlaamse Energie- en Klimaatmaatschappij heeft geen milieuhandhaving uitgevoerd voor 2023.">
+</vl-alert></p>
           </vl-cascader-item>
       <vl-cascader-item label="Ruimtelijke ordening">
       <p slot="content">
@@ -660,7 +635,11 @@ ${this.renderDataSectionTXT(jsonData2.Milieu.DOMGVPO.Thema)}
     </vl-typography>
   </vl-accordion>
     <vl-accordion data-vl-toggle-text="Opmerkingen">
-        ${this.renderOpmerkingsection(jsonData2.Milieu.VLM.Opmerking)}
+       <p>Er zijn ook nog een beperkt aantal controles uitgevoerd in samenwerking met of op vraag van andere overheden. Deze zitten niet in de totale lijst van uitgevoerde controles, noch in de lijst van 'meldingen of klachten'. 
+       Navolgende controles die uitgevoerd worden kortelings na de initiële controle (binnen de maand na controle), worden gewoonlijk niet afzonderlijk geregistreerd. 
+       Ook bij een navolgende controle kun je een schending opnieuw vaststellen. In deze bevraging wordt het totaal aantal schendingen gevraagd bij de aanvankelijke controles.
+       De VLM legt ook administratieve geldboetes op conform het Mestdecreet. Dit zijn ook schendingen maar zijn geen aanmaningen of Pv's. 
+       De BM-DS werd opgelegd volgens de procedures opgenomen in het Mestdecreet d.m.v. de oplegging van een Bevel met Dwangsom. Voor de rest verloopt dit op dezelfde manier als in het DABM via invordering etc. </p>
     </vl-accordion>
   </vl-accordion-list>
               </vl-cascader-item>
@@ -703,7 +682,7 @@ ${this.renderDataSectionTXT(jsonData2.Milieu.DOMGVPO.Thema)}
   </vl-typography>
 </vl-accordion>
   <vl-accordion data-vl-toggle-text="Opmerkingen">
-      ${this.renderOpmerkingsection(jsonData2.Milieu.VMM.Opmerking)}
+      <p>Geen opmerking</p>
   </vl-accordion>
 </vl-accordion-list>
             </vl-cascader-item>
@@ -761,7 +740,7 @@ ${this.renderDataSectionTXT(jsonData2.Milieu.DOMGVPO.Thema)}
 </vl-typography>
 </vl-accordion>
 <vl-accordion data-vl-toggle-text="Opmerkingen">
-    ${this.renderOpmerkingsection(jsonData2.Milieu.VWI.Opmerking)}
+   <p>in de praktijk wordt ondanks de bevoegdheid niet geverbaliseerd als er schendingen RO worden vastgesteld wegens onder meer niet prioritair voor het gewest, reeds verjaard of omdat ze aan de lokale overheid ter kennis gegeven worden om op te treden.</p>
 </vl-accordion>
 </vl-accordion-list>
       </vl-cascader-item>

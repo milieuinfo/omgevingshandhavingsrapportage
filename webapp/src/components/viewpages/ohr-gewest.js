@@ -131,7 +131,6 @@ class OhrGewest extends LitElement {
 
   __renderTable() {
     return html`
-      <div is="vl-grid">
         <vl-typography>
           <table>
           <caption>
@@ -145,7 +144,7 @@ class OhrGewest extends LitElement {
             </thead>
             <tbody>
               <tr>
-                <td>Departement Omgeving, Afdeling Handhaving</td>
+                <td>Departement Omgeving - Afdeling Handhaving</td>
                 <td><a
                     href="https://navigator.emis.vito.be/mijn-navigator?woId=25212&woLang=nl&woVersion=2022-03-11"
                     target="_blank">Milieu</a>
@@ -155,65 +154,15 @@ class OhrGewest extends LitElement {
                 </td>
               </tr>
               <tr>
-                <td>Agentschap voor Natuur en Bos</td>
+                <td>Agentschap Natuur en Bos</td>
                 <td><a
                     href="https://navigator.emis.vito.be/mijn-navigator?woId=25216&woLang=nl&woVersion=2022-03-11"
-                    target="_blank">Milieu en Ruimtelijke ordening</a></td>
-              </tr>
-              <tr>
-                <td>Vlaamse Landmaatschappij</td>
-                <td><a
-                    href="https://navigator.emis.vito.be/mijn-navigator?woId=25221&woLang=nl&woVersion=2022-03-11"
-                    target="_blank">Milieu</a></td>
-              </tr>
-              <tr>
-                <td>Openbare Vlaamse Afvalstoffenmaatschappij</td>
-                <td><a
-                    href="https://navigator.emis.vito.be/mijn-navigator?woId=25217&woLang=nl&woVersion=2022-03-11"
-                    target="_blank">Milieu</a></td>
-              </tr>
-              <tr>
-                <td>Departement Omgeving, Afdeling Gebiedsontwikkeling,
-                  Omgevingsplanning en
-                  -projecten
-                </td>
-                <td><a
-                    href="https://navigator.emis.vito.be/mijn-navigator?woId=25213&woLang=nl&woVersion=2022-03-11"
-                    target="_blank">Milieu</a></td>
-              </tr>
-              <tr>
-                <td>Departement Omgeving, Vlaams Planbureau voor Omgeving</td>
-                <td><a
-                    href="https://navigator.emis.vito.be/mijn-navigator?woId=25215&woLang=nl&woVersion=2022-03-11"
-                    target="_blank">Milieu</a></td>
-              </tr>
-              <tr>
-                <td>Departement Mobiliteit en Openbare Werken</td>
-                <td><a
-                    href="https://navigator.emis.vito.be/mijn-navigator?woId=25225&woLang=nl&woVersion=2022-03-11"
-                    target="_blank">Milieu</a></td>
-              </tr>
-              <tr>
-                <td>Vlaams Agentschap Zorg en Gezondheid</td>
-                <td><a
-                    href="https://navigator.emis.vito.be/mijn-navigator?woId=25223&woLang=nl&woVersion=2022-03-11"
-                    target="_blank">Milieu</a></td>
-
-              </tr>
-              <tr>
-                <td>De Vlaamse Waterweg</td>
-                <td><a
-                    href="https://navigator.emis.vito.be/mijn-navigator?woId=25225&woLang=nl&woVersion=2022-03-11"
-                    target="_blank">Milieu</a></td>
-              </tr>
-              <tr>
-                <td>Agentschap Wonen Vlaanderen - Afdeling Woonkwaliteit -
-                  Vlaamse
-                  Wooninspectie
-                </td>
-                <td><a
-                    href="https://navigator.emis.vito.be/mijn-navigator?woId=74328&woLang=nl&woVersion=2022-03-11"
-                    target="_blank">Ruimtelijke ordening</a></td>
+                    target="_blank">Milieu</a>
+                    |
+                    <a
+                    href="https://navigator.emis.vito.be/mijn-navigator?woId=25216&woLang=nl&woVersion=2022-03-11"
+                    target="_blank">Ruimtelijke ordening</a>
+                    </td>
               </tr>
               <tr>
                 <td>Agentschap Maritieme Dienstverlening en Kust</td>
@@ -228,15 +177,71 @@ class OhrGewest extends LitElement {
                     target="_blank">Milieu</a></td>
               </tr>
               <tr>
+                <td>Departement Mobiliteit en Openbare Werken</td>
+                <td><a
+                    href="https://navigator.emis.vito.be/mijn-navigator?woId=25225&woLang=nl&woVersion=2022-03-11"
+                    target="_blank">Milieu</a></td>
+              </tr>
+              <tr>
+              <td>Departement Omgeving - Afdeling GOP
+              </td>
+              <td><a
+                  href="https://navigator.emis.vito.be/mijn-navigator?woId=25213&woLang=nl&woVersion=2022-03-11"
+                  target="_blank">Milieu</a></td>
+            </tr>
+            <tr>
+                <td>Departement Omgeving - Afdeling VPO</td>
+                <td><a
+                    href="https://navigator.emis.vito.be/mijn-navigator?woId=25215&woLang=nl&woVersion=2022-03-11"
+                    target="_blank">Milieu</a></td>
+              </tr>
+              <tr>
+                <td>Departement zorg</td>
+                <td><a
+                    href="https://navigator.emis.vito.be/mijn-navigator?woId=25223&woLang=nl&woVersion=2022-03-11"
+                    target="_blank">Milieu</a></td>
+
+              </tr>
+              <tr>
+              <td>De Vlaamse Waterweg</td>
+              <td><a
+                  href="https://navigator.emis.vito.be/mijn-navigator?woId=25225&woLang=nl&woVersion=2022-03-11"
+                  target="_blank">Milieu</a></td>
+            </tr>
+
+            <tr>
+            <td>Openbare Vlaamse Afvalstoffenmaatschappij</td>
+            <td><a
+                href="https://navigator.emis.vito.be/mijn-navigator?woId=25217&woLang=nl&woVersion=2022-03-11"
+                target="_blank">Milieu</a></td>
+          </tr>
+              
+              <tr>
+                <td>Vlaamse Landmaatschappij</td>
+                <td><a
+                    href="https://navigator.emis.vito.be/mijn-navigator?woId=25221&woLang=nl&woVersion=2022-03-11"
+                    target="_blank">Milieu</a></td>
+              </tr>
+              <tr>
+                <td>Vlaamse Milieumaatschappij</td>
+                <td>Milieu</td>
+              </tr>
+              <tr>
+                <td>Vlaamse Wooninspectie</td>
+                <td><a
+                    href="https://navigator.emis.vito.be/mijn-navigator?woId=74328&woLang=nl&woVersion=2022-03-11"
+                    target="_blank">Ruimtelijke ordening</a></td>
+              </tr>
+              <tr>
                 <td>Vlaams Energie- en Klimaatagentschap</td>
                 <td><a
                     href="https://navigator.emis.vito.be/mijn-navigator?woId=25220&woLang=nl"
                     target="_blank">Milieu</a></td>
               </tr>
+             
             </tbody>
           </table>
-        </vl-typography>
-      </div>`;
+        </vl-typography>`;
   }
 }
 
