@@ -22,6 +22,14 @@
       [
         {
           "type": "visual",
+          "id": "NhJE",
+          "height": "400px",
+          "visual_type": "barchart",
+          "label": "Behandeling bindende adviezen"
+          
+        },
+        {
+          "type": "visual",
           "id": "fsJRSj",
           "height": "400px",
           "visual_type": "barchart",
