@@ -1,13 +1,14 @@
 import {html, LitElement} from "../common/commons.js";
 
-import viz from "../config/instrumentarium.json" assert {type: "json"};
-import filters from "../config/instrumentarium-filters.js";
+import viz from "../config/bestuurlijkevervolgtrajet.json" assert {type: "json"};
+import filters from "../config/bestuurlijkevervolgtraject-filters.js";
 
 import "@domg-wc/components/functional-header";
 import "@domg-wc/components/typography";
 import "@domg-wc/components/loader";
 import "@domg-wc/qlik/dashboard-page";
 import {vlElementsStyle} from "@domg-wc/elements";
+import "@domg-wc/components/alert";
 
 class OhrBestuurlijkevervolgtraject extends LitElement {
 
@@ -27,16 +28,15 @@ class OhrBestuurlijkevervolgtraject extends LitElement {
           data-vl-back="Terug"
           data-vl-back-link="/"
           data-vl-title="Omgevingshandhavingsrapportage"
-          data-vl-sub-title="Instrumentarium"
-          data-vl-link="/instrumentarium">
+          data-vl-sub-title="Bestuurlijke vervolgtraject"
+          data-vl-link="/bestuurlijkevervolg-analyse">
       </vl-functional-header>
       <div style="margin: 3rem 0px">
         <vl-qlik-dashboard-page
-            title="Instrumentarium"
+            title="Bestuurlijke vervolgtraject"
             export-id="JgmbA"
             url="omgevingsloketrapport.omgeving.vlaanderen.be"
-            app-id="4e2b7e4c-70df-4e58-a44d-234e18cb0739"
-            selected-view="Milieu"
+            app-id="9865ab27-e0a5-4c1f-96b9-6cafc9d14a61"
             .views="${viz}"
             .filters="${filters}"
             @initialized="${() => this.initialized = true}">
@@ -55,8 +55,16 @@ class OhrBestuurlijkevervolgtraject extends LitElement {
     return html`
       <vl-typography slot="introduction">
         <p>
-        Dit krachtige instrument biedt een gestructureerd overzicht van essentiële informatie en tools om besluitvorming te ondersteunen. Met een eenvoudige dropdown-menu kunt u moeiteloos schakelen tussen milieu- en ruimtelijke ordeningsaspecten. Filters en andere functionaliteiten staan tot uw beschikking om gegevens te verfijnen en analyses uit te voeren. Dit dashboard is ontworpen om uw planning en beleidsvorming te verbeteren en bij te dragen aan een duurzamere toekomst. 
+        Dit efficiënte hulpmiddel biedt een gestructureerd overzicht van cruciale informatie en middelen om het besluitvormingsproces te ondersteunen in het bestuurlijke vervolgtraject. Met slechts een eenvoudige klik kunt u naadloos schakelen tussen verschillende bestuursaspecten, zoals financiën en juridische kwesties. Diverse filters en andere functionaliteiten staan tot uw beschikking om gegevens te verfijnen en diepgaande analyses uit te voeren. Dit dashboard is speciaal ontworpen om uw planning en beleidsvorming te optimaliseren en zo bij te dragen aan een effectiever bestuur en een duurzamere toekomst.
         </p>
+        <vl-info-tile data-vl-toggleable>
+          <span slot="title">Informatie over het gebruik van het dashboard</span>
+          <div slot="content">Het standaard beeld geeft de totale cijfers van 2021 tot en met het voorgaande jaar weer voor de omgevingsinspectie in heel Vlaanderen. <br>
+          Via de filters kan u kiezen om de cijfers van één jaar,  één beleidsniveau of één actor weer te geven.
+          De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk hieronder. Wanneer de gegevens niet gekend zijn, verschijnt “-“ of wordt aangegeven dat de data niet beschikbaar zijn.<br>
+          De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk hieronder. <br>
+          Wanneer de gegevens niet gekend zijn, verschijnt “-“ of wordt aangegeven dat de data niet beschikbaar zijn.</div>
+        </vl-info-tile>
       </vl-typography>
     `;
   }

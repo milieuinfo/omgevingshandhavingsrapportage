@@ -91,3 +91,26 @@ export const F1 = {
   nrOfValues: 10,
 }
 
+export const BESTUURLIJKTHEMA = {
+
+  name: "Thema",
+  fieldQualifier: "qText",
+  field: "[Thema]",
+  nrOfValues: 10,
+}
+
+export const BESTUURLIJKCAT = {
+
+  name: "Categorie",
+  fieldQualifier: "qText",
+  field: "[categorie]",
+  nrOfValues: 10,
+}
+
+export const BESTUURLIJKSOORT = {
+
+  name: "Soort",
+  fieldQualifier: "qText",
+  field: "[soort]",
+  nrOfValues: 10,
+}

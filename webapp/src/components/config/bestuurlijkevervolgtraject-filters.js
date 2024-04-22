@@ -1,8 +1,8 @@
 import {
     JAAR,
-    INSTROOM,
-    THEMA,
-    F1
+    BESTUURLIJKTHEMA,
+    BESTUURLIJKCAT,
+    BESTUURLIJKSOORT
     } from "./qlik_resources.js";
     
     const filters = [
@@ -12,19 +12,19 @@ import {
         filter: JAAR
       },
       {
-          name: "Instroom",
-          id: "Instroom",
-          filter: INSTROOM
+          name: "Thema",
+          id: "Thema",
+          filter: BESTUURLIJKTHEMA
       },
       {
-        name: "Thema",
-        id: "Thema",
-        filter: THEMA
+        name: "Categorie",
+        id: "Categorie",
+        filter: BESTUURLIJKCAT
       },
       {
         name: "Soort",
         id: "Soort",
-        filter: F1
+        filter: BESTUURLIJKSOORT
       },
       
     ]

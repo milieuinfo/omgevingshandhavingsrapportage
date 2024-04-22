@@ -1,183 +1,29 @@
-{
-    "Milieu": {
-      "order": 1,
-      "label": "Milieu",
-      "visualisations": [
+[
         [
           {
             "type": "visual",
-            "id": "WbMQyaJ",
-            "height": "55px",
-            "visual_type": "kpi",
-            "label": "Totaal aantal raadgevingen",
-            "align-label": "center",
-            "align-visual": "center"
-          },
-          {
-            "type": "visual",
-            "id": "NmhGmXD",
-            "height": "55px",
-            "visual_type": "kpi",
-            "label": "Totaal aantal aanmaningen",
-            "align-label": "center",
-            "align-visual": "center"
-          },
-  
-          {
-            "type": "visual",
-            "id": "hjVgys",
-            "height": "55px",
-            "visual_type": "kpi",
-            "label": "Totaal aantal proces-verbalen",
-            "align-label": "center",
-            "align-visual": "center"
-          },
-          {
-            "type": "visual",
-            "id": "KQPjSb",
-            "height": "55px",
-            "visual_type": "kpi",
-            "label": "Totaal aantal verslagen van vaststelling",
-            "align-label": "center",
-            "align-visual": "center"
-          },
-          {
-            "type": "visual",
-            "id": "dgNuKf",
-            "height": "55px",
-            "visual_type": "kpi",
-            "label": "Totaal aantal bestuurlijke maatregelen",
-            "align-label": "center",
-            "align-visual": "center"
-          },
-          {
-            "type": "visual",
-            "id": "azPSVT",
-            "height": "55px",
-            "visual_type": "kpi",
-            "label": "Totaal aantal veiligsheidsmaatregelen",
-            "align-label": "center",
-            "align-visual": "center"
-          }
-        ],
-        [
-          {
-            "type": "visual",
-            "id": "jfMZn",
-            "height": "300px",
+            "id": "cJJjPjw",
+            "height": "400px",
             "visual_type": "barchart",
-            "label": "Uitgevoerde instrumenten per bevraginsjaartal"
+            "label": "Aantal misdrijven per thema (drill down beschikbaar)"
           },
           {
             "type": "visual",
-            "id": "mnNYJg",
-            "height": "300px",
-            "visual_type": "barchart",
-            "label": "Absolute verschil tussen 2023 tov 2021"
+            "id": "UPhGBM",
+            "height": "400px",
+            "visual_type": "linechart",
+            "label": "Evolutie"
           } 
         ],
         [
           {
             "type": "visual",
-            "id": "XkkQZv",
-            "height": "300px",
+            "id": "PqtD",
+            "height": "400px",
             "visual_type": "barchart",
-            "label": "Verhouding zachte instrumenten tov repressieve instrumenten"
-          },
-          {
-            "type": "visual",
-            "id": "MTtweGq",
-            "height": "300px",
-            "visual_type": "barchart",
-            "label": "Verhouding zachte instrumenten tov repressieve instrumenten"
+            "label": "Stijging of daling t.o.v. 2021"
           }
+         
         ]
-      ]
-    },
-    "Ruimtelijke ordening": {
-      "order": 2,
-      "label": "Ruimtelijke ordening",
-      "visualisations": [
-        [
-          {
-            "type": "visual",
-            "id": "MhGP",
-            "height": "55px",
-            "visual_type": "kpi",
-            "label": "Totaal aantal raadgevingen",
-            "align-label": "center",
-            "align-visual": "center"
-          },
-          {
-            "type": "visual",
-            "id": "tamgU",
-            "height": "55px",
-            "visual_type": "kpi",
-            "label": "Totaal aantal aanmaningen",
-            "align-label": "center",
-            "align-visual": "center"
-          },
-          {
-            "type": "visual",
-            "id": "ZJhKw",
-            "height": "55px",
-            "visual_type": "kpi",
-            "label": "Totaal aantal proces-verbalen",
-            "align-label": "center",
-            "align-visual": "center"
-          },
-          {
-            "type": "visual",
-            "id": "PXpzfjF",
-            "height": "55px",
-            "visual_type": "kpi",
-            "label": "Totaal aantal verslagen van vaststelling",
-            "align-label": "center",
-            "align-visual": "center"
-          },
-          {
-            "type": "visual",
-            "id": "NjJhRz",
-            "height": "55px",
-            "visual_type": "kpi",
-            "label": "Totaal aantal bestuurlijke maatregelen",
-            "align-label": "center",
-            "align-visual": "center"
-          }
-        ],
-        [
-          {
-            "type": "visual",
-            "id": "TvbwGkT",
-            "height": "300px",
-            "visual_type": "barchart",
-            "label": "Uitgevoerde instrumenten per bevraginsjaartal"
-          },
-          {
-            "type": "visual",
-            "id": "DwLMXx",
-            "height": "300px",
-            "visual_type": "barchart",
-            "label": "Absolute verschil tussen 2023 tov 2021"
-          } 
-        ],    
-        [
-          {
-            "type": "visual",
-            "id": "Qerzqn",
-            "height": "300px",
-            "visual_type": "barchart",
-            "label": "Verhouding zachte instrumenten tov repressieve instrumenten"
-          },
-          {
-            "type": "visual",
-            "id": "PBJHCs",
-            "height": "300px",
-            "visual_type": "barchart",
-            "label": "Verhouding zachte instrumenten tov repressieve instrumenten"
-          }
-        ]
-      ]
-    }
-    }
+    ]
   

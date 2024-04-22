@@ -8,6 +8,7 @@ import "@domg-wc/components/typography";
 import "@domg-wc/components/loader";
 import "@domg-wc/qlik/dashboard-page";
 import {vlElementsStyle} from "@domg-wc/elements";
+import "@domg-wc/components/alert";
 
 class OhrPersoneel extends LitElement {
 
