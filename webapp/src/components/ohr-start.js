@@ -12,6 +12,7 @@ import "@domg-wc/elements/icon";
 import "@domg-wc/elements/image";
 import "@domg-wc/components/content-header";
 import "@domg-wc/components/alert";
+import "@domg-wc/components/spotlight";
 
 class OhrLandingPage extends LitElement {
   //The styles method is a feature provided by Lit Element to encapsulate styles for a specific component.
@@ -328,7 +329,7 @@ and performing other setup tasks.
         size: 6,
         template: html` <div>
           <a is="vl-doormat" href="/hoge-raad">
-            <h2 is="vl-doormat-title">Hoge Raad</h2>
+            <h2 is="vl-doormat-title">Hoge raad voor de handhavingsuitvoering</h2>
             <div is="vl-doormat-text">
               Bekijk de cijfers van de Hoge Raad voor de Handhavingsuitvoering
             </div>
@@ -438,7 +439,7 @@ and performing other setup tasks.
         size: 6,
         template: html`
           <div ">
-          <a is="vl-doormat" href="/bestuurlijkevervolg-analyse">
+          <a is="vl-doormat" href="/">
             <h2 is="vl-doormat-title">Bestuurlijke vervolgtraject</h2>
             <div is="vl-doormat-text">
               Deze pagina toont de evolutie van het

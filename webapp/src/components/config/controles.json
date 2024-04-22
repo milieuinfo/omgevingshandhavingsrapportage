@@ -54,7 +54,7 @@
           "id": "pUYDCJ",
           "height": "300px",
           "visual_type": "barchart",
-          "label": "Stijging of daling totaal aantal milieucontroles 2021 t.o.v. 2022"
+          "label": "Verschil aantal controles 2023 t.o.v. 2021"
         },
         {
           "type": "visual",
@@ -139,7 +139,7 @@
           "id": "rZmqc",
           "height": "300px",
           "visual_type": "barchart",
-          "label": "Stijging of daling totaal aantal stedenbouwkundige controles 2021 t.o.v. 2023"
+          "label": "Verschil aantal controles 2023 t.o.v. 2021"
         },
         {
           "type": "visual",

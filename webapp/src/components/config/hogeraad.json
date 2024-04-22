@@ -16,7 +16,7 @@
           "id": "HZdrm",
           "height": "400px",
           "visual_type": "barchart",
-          "label": "Evolutie van de geformuleerde adviezen"
+          "label": "Evolutie van de bindende adviezen"
         }
       ],
       [
@@ -25,7 +25,7 @@
           "id": "fsJRSj",
           "height": "400px",
           "visual_type": "barchart",
-          "label": "Totaal aantal adviezen"
+          "label": "Evolutie adviezen"
         }
       ]
     ]

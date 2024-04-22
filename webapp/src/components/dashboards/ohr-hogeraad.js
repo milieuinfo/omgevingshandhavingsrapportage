@@ -28,12 +28,12 @@ class OhrHogeRaadDashboard extends LitElement {
           data-vl-back="Terug"
           data-vl-back-link="/"
           data-vl-title="Omgevingshandhavingsrapportage"
-          data-vl-sub-title="Hoge Raad"
+          data-vl-sub-title="Hoge raad voor de handhavingsuitvoering"
           data-vl-link="/hogeraad">
       </vl-functional-header>
       <div style="margin: 3rem 0px">
         <vl-qlik-dashboard-page
-            title="Hoge Raad"
+            title="Hoge raad voor de handhavingsuitvoering"
             export-id="JgmbA"
             url="omgevingsloketrapport.omgeving.vlaanderen.be"
             app-id="4202d739-538c-4d7f-8d92-3950359a3602"
@@ -56,12 +56,15 @@ class OhrHogeRaadDashboard extends LitElement {
     return html`
       <vl-typography slot="introduction">
         <p>
-        Op dit dashboard vind je verschillende visualisaties die je kunt bekijken door een optie te kiezen uit het dropdown-menu hierboven. Deze visualisaties bieden inzicht in verschillende aspecten van de Hoge Raad.
-
-        Daarnaast kun je filters vinden aan de linkerkant van het dashboard, waarmee je de gegevens verder kunt verfijnen en specifieke informatie kunt vinden.
-        
-        Ontdek de gegevens en trends van de Hoge Raad en gebruik de filters om de informatie te vinden die voor jou relevant is. Veel ontdekplezier!
+        De Hoge Raad voor de Handhavingsuitvoering adviseert over de inzet van bepaalde handhavingsinstrumenten van de ruimtelijke ordening.
+Deze pagina geeft via een interactieve tool de cijfers van de opdrachten van de Hoge Raad voor de Handhavingsuitvoering over de jaren heen weer. De cijfers zullen wijzigen naargelang de gekozen filtering.
+Het standaard beeld geeft de totale cijfers van 2021 tot en met het voorgaande jaar weer voor de Hoge Raad voor de Handhavingsuitvoering in heel Vlaanderen.
         </p>
+        <vl-info-tile data-vl-toggleable>
+        <span slot="title">Informatie over het gebruik van het dashboard</span>
+        <div slot="content">Via de filters kan u kiezen om de cijfers van één jaar of één aanvrager weer te geven.
+        De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk hieronder. Wanneer de gegevens niet gekend zijn, verschijnt “-“ of wordt aangegeven dat de data niet beschikbaar zijn.</div>
+      </vl-info-tile>
       </vl-typography>
     `;
   }

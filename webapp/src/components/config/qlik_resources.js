@@ -69,7 +69,7 @@ export const PROVVRAGEN = {
 
 export const INSTROOM = {
 
-  name: "Instroom",
+  name: "Advies gevraagd door",
   fieldQualifier: "qText",
   field: "[Instroom]",
   nrOfValues: 10,
@@ -85,7 +85,7 @@ export const THEMA = {
 
 export const F1 = {
 
-  name: "Soort",
+  name: "Advies gevraagd aan",
   fieldQualifier: "qText",
   field: "[F1]",
   nrOfValues: 10,

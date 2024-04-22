@@ -14,6 +14,7 @@ import "@domg-wc/components/accordion-list";
 import "@domg-wc/components/alert";
 import "@domg-wc/components/next/cascader";
 import "@domg-wc/elements/data-table";
+import "@domg-wc/components/spotlight";
 
 class OhrHogeRaadAnalyse extends LitElement {
 
@@ -45,7 +46,7 @@ class OhrHogeRaadAnalyse extends LitElement {
       <section is="vl-region">
         <div is="vl-layout">
         <vl-typography>
-        <h2>Hoge raad van 2023</h2></vl-typography>
+        <h2>Cijfers van de Hoge raad voor de handhavingsuitvoering van 2023</h2></vl-typography>
         <p is="vl-icon-wrapper"><vl-annotation><span is="vl-icon" data-vl-icon="calendar"></span> Laatste wijziging aan de data: 21/02/2024</vl-annotation></p><br>
 
     <p is="vl-introduction" data-cy="introduction">
@@ -130,8 +131,8 @@ class OhrHogeRaadAnalyse extends LitElement {
 
 
 
-      <vl-cascader-item label="Advies dwangsom">
-      <vl-cascader-item label="Advies dwangsom">
+      <vl-cascader-item label="Adviezen">
+      <vl-cascader-item label="Adviezen">
     <vl-accordion-list slot="content">
     <vl-accordion data-vl-toggle-text="Aantal in 2023 gegeven adviezen aan de Vlaamse Regering of het college van burgemeester en schepenen
 over het gemotiveerd verzoek om tijdelijk of definitief af te zien van verdere inning van

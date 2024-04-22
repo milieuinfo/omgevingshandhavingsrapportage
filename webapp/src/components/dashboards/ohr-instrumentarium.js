@@ -56,8 +56,14 @@ class OhrInstrumentarium extends LitElement {
     return html`
       <vl-typography slot="introduction">
         <p>
-        Dit krachtige instrument biedt een gestructureerd overzicht van essentiële informatie en tools om besluitvorming te ondersteunen. Met een eenvoudige dropdown-menu kunt u moeiteloos schakelen tussen milieu- en ruimtelijke ordeningsaspecten. Filters en andere functionaliteiten staan tot uw beschikking om gegevens te verfijnen en analyses uit te voeren. Dit dashboard is ontworpen om uw planning en beleidsvorming te verbeteren en bij te dragen aan een duurzamere toekomst. 
+        De omgevingsinspectie wordt uitgevoerd op verschillende beleidsniveaus uitgevoerd, namelijk door gewestelijke, provinciale en gemeentelijke handhavingsactoren.
+Deze pagina geeft via een interactieve tool het gebruikte instrumentarium weer dat over de jaren heen ingezet wordt door de handhavingsactoren voor de omgevingshandhaving in Vlaanderen. De cijfers zullen wijzigen naargelang de gekozen filtering.
         </p>
+        <vl-info-tile data-vl-toggleable>
+        <span slot="title">Informatie over het gebruik van het dashboard</span>
+        <div slot="content">Via de filters kan u kiezen om de cijfers van één jaar of één aanvrager weer te geven.
+        De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk hieronder. Wanneer de gegevens niet gekend zijn, verschijnt “-“ of wordt aangegeven dat de data niet beschikbaar zijn.</div>
+      </vl-info-tile>
       </vl-typography>
     `;
   }

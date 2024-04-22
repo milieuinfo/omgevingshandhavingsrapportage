@@ -1,4 +1,4 @@
-import {html, LitElement,} from "../common/commons.js";
+import {html, LitElement} from "../common/commons.js";
 
 import charts from "../config/controles.json" assert {type: "json"};
 import filters from "../config/controles-filters.js";

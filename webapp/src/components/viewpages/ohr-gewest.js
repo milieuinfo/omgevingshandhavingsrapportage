@@ -8,7 +8,6 @@ import "@domg-wc/elements/doormat";
 import "@domg-wc/elements/link";
 import "@domg-wc/elements/link-list";
 import "@domg-wc/components/content-header";
-import "@domg-wc/components/typography";
 
 class OhrGewest extends LitElement {
 

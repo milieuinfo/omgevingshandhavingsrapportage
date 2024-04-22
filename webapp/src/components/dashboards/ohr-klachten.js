@@ -1,4 +1,4 @@
-import {html, LitElement,} from "../common/commons.js";
+import {html, LitElement} from "../common/commons.js";
 
 import charts from "../config/klachten.json" assert {type: "json"};
 import filters from "../config/klachten-filters.js";

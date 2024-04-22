@@ -9,6 +9,7 @@ import {
   import "@domg-wc/elements/select";
   import "@domg-wc/components/functional-header";
   import "@domg-wc/qlik/infoblock";
+  import "@domg-wc/components/accordion";
   import {vlElementsStyle} from "@domg-wc/elements";
   
   import options from "../config/provincie-op-kaart.json" assert {type: "json"};

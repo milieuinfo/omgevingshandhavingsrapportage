@@ -2,6 +2,7 @@ import { html, LitElement } from "../common/commons.js";
 import { vlElementsStyle } from "@domg-wc/elements";
 import jsonData from "../datafiles/gewest.json" assert { type: "json" };
 import jsonData2 from "../datafiles/Totaal Gewest 2023_e1a6d014-b58b-302d-b023-ab8a4b99391a.json" assert { type: "json" };
+
 import "@domg-wc/elements/image";
 import "@domg-wc/elements/grid";
 import "@domg-wc/elements/title";
@@ -377,26 +378,26 @@ class OhrAGewest extends LitElement {
           <vl-accordion-list slot="content">
       <vl-accordion data-vl-toggle-text="Verbalisanten en stedenbouwkundige inspecteurs en VTE"> 
       ${this.renderDataSection(
-        jsonData2.Milieu.dOMGHH.gewestelijkeToezichthouders
+        jsonData2.RO.dOMGHH.gewestelijkeToezichthouders
       )}</vl-accordion>
       <vl-accordion data-vl-toggle-text="Klachten">
-      ${this.renderDataSection(jsonData2.Milieu.dOMGHH.Klachten)}
+      ${this.renderDataSection(jsonData2.RO.dOMGHH.Klachten)}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Controles">
-      ${this.renderDataSection(jsonData2.Milieu.dOMGHH.Klachten)}
+      ${this.renderDataSection(jsonData2.RO.dOMGHH.Klachten)}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Aantal aanvankelijke controles met schending">
-      ${this.renderDataSection(jsonData2.Milieu.dOMGHH.Klachten)}
+      ${this.renderDataSection(jsonData2.RO.dOMGHH.Klachten)}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Instrumentarium">
-      ${this.renderDataSection(jsonData2.Milieu.dOMGHH.Instrument)}
+      ${this.renderDataSection(jsonData2.RO.dOMGHH.Instrument)}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Themagerichte acties">
-      ${this.renderDataSectionTXT(jsonData2.Milieu.dOMGHH.Thema)}
+      ${this.renderDataSectionTXT(jsonData2.RO.dOMGHH.Thema)}
     </vl-typography>
   </vl-accordion>
     <vl-accordion data-vl-toggle-text="Opmerkingen">
-        ${this.renderOpmerkingsection(jsonData2.Milieu.dOMGHH.Opmerking)}
+        ${this.renderOpmerkingsection(jsonData2.RO.dOMGHH.Opmerking)}
     </vl-accordion>
   </vl-accordion-list>
           </vl-cascader-item>

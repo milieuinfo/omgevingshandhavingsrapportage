@@ -12,17 +12,12 @@ import {
         filter: JAAR
       },
       {
-          name: "Instroom",
+          name: "Advies gevraagd door",
           id: "Instroom",
           filter: INSTROOM
       },
       {
-        name: "Thema",
-        id: "Thema",
-        filter: THEMA
-      },
-      {
-        name: "Soort",
+        name: "Advies gevraagd aan",
         id: "Soort",
         filter: F1
       },

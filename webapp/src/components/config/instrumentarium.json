@@ -66,14 +66,14 @@
           "id": "jfMZn",
           "height": "300px",
           "visual_type": "barchart",
-          "label": "Uitgevoerde instrumenten per bevraginsjaartal"
+          "label": "Uitgevoerde instrumenten per bevragingsjaartal"
         },
         {
           "type": "visual",
           "id": "mnNYJg",
           "height": "300px",
           "visual_type": "barchart",
-          "label": "Absolute verschil tussen 2023 tov 2021"
+          "label": "Verschil tussen 2023 tov 2021"
         } 
       ],
       [
@@ -82,7 +82,7 @@
           "id": "XkkQZv",
           "height": "300px",
           "visual_type": "barchart",
-          "label": "Verhouding zachte instrumenten tov repressieve instrumenten"
+          "label": "Evolutie bestuurlijke maatregelen"
         },
         {
           "type": "visual",
@@ -151,14 +151,14 @@
           "id": "TvbwGkT",
           "height": "300px",
           "visual_type": "barchart",
-          "label": "Uitgevoerde instrumenten per bevraginsjaartal"
+          "label": "Uitgevoerde instrumenten per bevragingsjaartal"
         },
         {
           "type": "visual",
           "id": "DwLMXx",
           "height": "300px",
           "visual_type": "barchart",
-          "label": "Absolute verschil tussen 2023 tov 2021"
+          "label": "Verschil tussen 2023 tov 2021"
         } 
       ],    
       [
@@ -167,7 +167,7 @@
           "id": "Qerzqn",
           "height": "300px",
           "visual_type": "barchart",
-          "label": "Verhouding zachte instrumenten tov repressieve instrumenten"
+          "label": "Evolutie bestuurlijke maatregelen"
         },
         {
           "type": "visual",

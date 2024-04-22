@@ -55,15 +55,17 @@ class OhrBestuurlijkevervolgtraject extends LitElement {
     return html`
       <vl-typography slot="introduction">
         <p>
-        Dit efficiënte hulpmiddel biedt een gestructureerd overzicht van cruciale informatie en middelen om het besluitvormingsproces te ondersteunen in het bestuurlijke vervolgtraject. Met slechts een eenvoudige klik kunt u naadloos schakelen tussen verschillende bestuursaspecten, zoals financiën en juridische kwesties. Diverse filters en andere functionaliteiten staan tot uw beschikking om gegevens te verfijnen en diepgaande analyses uit te voeren. Dit dashboard is speciaal ontworpen om uw planning en beleidsvorming te optimaliseren en zo bij te dragen aan een effectiever bestuur en een duurzamere toekomst.
+        De gewestelijke beboetingsentiteit heeft kennis van alle verslagen van vaststelling en alle processen-verbaal die door het openbaar ministerie naar hen werden doorgestuurd voor het opleggen van een bestuurlijke geldboete. Ze staat in voor de verdere bestuurlijke afhandeling van de dossiers.
+ 
+Deze pagina geeft via een interactieve tool de cijfers van het bestuurlijk vervolgtraject over de jaren heen weer. De cijfers zullen wijzigen naargelang de gekozen filtering.
+ 
+Het standaard beeld geeft de totale cijfers tot en met het voorgaande jaar weer voor het bestuurlijk vervolgtraject in heel Vlaanderen.
         </p>
         <vl-info-tile data-vl-toggleable>
           <span slot="title">Informatie over het gebruik van het dashboard</span>
           <div slot="content">Het standaard beeld geeft de totale cijfers van 2021 tot en met het voorgaande jaar weer voor de omgevingsinspectie in heel Vlaanderen. <br>
-          Via de filters kan u kiezen om de cijfers van één jaar,  één beleidsniveau of één actor weer te geven.
-          De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk hieronder. Wanneer de gegevens niet gekend zijn, verschijnt “-“ of wordt aangegeven dat de data niet beschikbaar zijn.<br>
-          De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk hieronder. <br>
-          Wanneer de gegevens niet gekend zijn, verschijnt “-“ of wordt aangegeven dat de data niet beschikbaar zijn.</div>
+          Via de filters kan u kiezen om de cijfers van één jaar weer te geven.
+          De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk hieronder. Wanneer de gegevens niet gekend zijn, verschijnt “-“ of wordt aangegeven dat de data niet beschikbaar zijn.</div>
         </vl-info-tile>
       </vl-typography>
     `;
