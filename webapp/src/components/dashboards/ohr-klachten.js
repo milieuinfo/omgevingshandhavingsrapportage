@@ -27,8 +27,8 @@ class OhrKlachten extends LitElement {
       <vl-functional-header
           data-vl-back="Terug"
           data-vl-back-link="/"
-          data-vl-title="Analyseer de cijfers | Klachten"
-          data-vl-sub-title="Omgevingshandhavingsrapportage"
+          data-vl-title="Omgevingshandhavingsrapportage"
+          data-vl-sub-title="Klachten"
           data-vl-link="/klachten">
       </vl-functional-header>
       <div style="margin: 3rem 0px">

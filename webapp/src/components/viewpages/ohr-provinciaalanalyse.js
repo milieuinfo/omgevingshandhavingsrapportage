@@ -9,6 +9,7 @@ import "@domg-wc/components/content-header";
 import "@domg-wc/components/loader";
 import "@domg-wc/qlik/infoblock";
 import "@domg-wc/components/accordion-list";
+import "@domg-wc/components/accordion";
 import "@domg-wc/components/next/cascader";
 import "@domg-wc/elements/data-table";
 

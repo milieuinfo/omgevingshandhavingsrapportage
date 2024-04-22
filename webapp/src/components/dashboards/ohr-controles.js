@@ -27,8 +27,8 @@ class OhrControles extends LitElement {
       <vl-functional-header
           data-vl-back="Terug"
           data-vl-back-link="/"
-          data-vl-title="Analyseer de cijfers | Controles"
-          data-vl-sub-title="Omgevingshandhavingsrapportage"
+          data-vl-title="Omgevingshandhavingsrapportage"
+          data-vl-sub-title="Controles"
           data-vl-link="/controles">
       </vl-functional-header>
 
