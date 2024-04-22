@@ -10,6 +10,7 @@ import "@domg-wc/elements/link";
 import "@domg-wc/elements/link-list";
 import "@domg-wc/components/content-header";
 
+
 class OhrHogeRaad extends LitElement {
 
   static get styles() {
@@ -75,7 +76,7 @@ class OhrHogeRaad extends LitElement {
 
   __renderSideNavigation() {
     return html`    
-    <a is="vl-link-button" href="/hoge-raad">Bekijk de cijfers voor dit thema</a>`;
+    <a is="vl-link-button" href="/hoge-raad-analyse">Bekijk de cijfers voor dit thema</a>`;
   }
 }
 

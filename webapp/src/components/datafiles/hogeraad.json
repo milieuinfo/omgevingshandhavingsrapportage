@@ -1,0 +1,57 @@
+{
+        "Instroom": {
+            "Vraag1": {
+                "Gewestelijke stedenbouwkundige inspecteurs": 66,
+                "Gemeentelijke stedenbouwkundige inspecteurs / Burgemeesters": 171,
+                "Derde belanghebbende": ""
+            },
+            "Vraag2": {
+                "Gewestelijke stedenbouwkundige inspecteurs": "",
+                "Gemeentelijke stedenbouwkundige inspecteurs / Burgemeesters": "",
+                "Derde belanghebbende": ""
+            },
+            "Vraag3":{
+                "Gewestelijke stedenbouwkundige inspecteurs": 1,
+                "Gemeentelijke stedenbouwkundige inspecteurs / Burgemeesters": "",
+                "Derde belanghebbende": ""
+            },
+            "Vraag4":{
+                "Gewestelijke stedenbouwkundige inspecteurs": "",
+                "Gemeentelijke stedenbouwkundige inspecteurs / Burgemeesters": 2,
+                "Derde belanghebbende": ""
+            },
+            "Vraag5":{
+                "Gewestelijke stedenbouwkundige inspecteurs": "",
+                "Gemeentelijke stedenbouwkundige inspecteurs / Burgemeesters": "",
+                "Derde belanghebbende": ""
+            },
+            "VraagB1": {
+                "Onontvankelijke adviezen": 0,
+                "Geen advies wegens vrijwillig herstel": 2,
+                "Positieve adviezen": 56,
+                "Negatieve adviezen": 6,
+                "Gecombineerde adviezen (deels positief – deels negatief)": 3
+            },
+            "VraagB2": {
+                "Onontvankelijke adviezen": 0,
+                "Geen advies wegens vrijwillig herstel": 3,
+                "Positieve adviezen": 150,
+                "Negatieve adviezen": 14,
+                "Gecombineerde adviezen (deels positief – deels negatief)": 6
+            },
+            "VraagC1": {
+                "Aan Vlaamse Regering": 3,
+                "Aan College van Burgmeester en Schepenen": 0 
+            },
+            "VraagC2": {
+                "Aan Vlaamse Regering": 11,
+                "Aan College van Burgmeester en Schepenen": 0 
+            },
+            "VraagD1": {
+                "In het kader van een dading": 0,
+                "In het kader van een minnelijke schikking met de gewestelijke SI": 3,
+                "In het kader van een minnelijke schikking met de gemeentelijke SI": 0,
+                "In het kader van een minnelijke schikking met de burgemeester": 0
+            }
+        }
+ }

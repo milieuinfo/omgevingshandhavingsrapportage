@@ -200,9 +200,6 @@ class OhrProvincieAnalyse extends LitElement {
   </vl-accordion-list>
               </vl-cascader-item>
     </vl-cascader-item>
-
-
-
   <vl-cascader-item label="Provincie Vlaams-Brabant">
         <vl-cascader-item label="Milieu">
     <vl-accordion-list slot="content">
