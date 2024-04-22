@@ -63,27 +63,26 @@
       [
         {
           "type": "visual",
-          "id": "UqUhSvX",
-          "height": "300px",
-          "visual_type": "linechart",
-          "label": "Evolutie uitgevoerde instrumenten per bevragingsjaartal en beleidsniveau"
-        },
-        {
-          "type": "visual",
           "id": "jfMZn",
           "height": "300px",
           "visual_type": "barchart",
           "label": "Uitgevoerde instrumenten per bevraginsjaartal"
-        }
-      ],
-      [
-        
+        },
         {
           "type": "visual",
           "id": "mnNYJg",
           "height": "300px",
           "visual_type": "barchart",
           "label": "Absolute verschil tussen 2023 tov 2021"
+        } 
+      ],
+      [
+        {
+          "type": "visual",
+          "id": "XkkQZv",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Verhouding zachte instrumenten tov repressieve instrumenten"
         },
         {
           "type": "visual",
@@ -102,29 +101,46 @@
       [
         {
           "type": "visual",
-          "id": "QcxsBZ",
+          "id": "MhGP",
           "height": "55px",
           "visual_type": "kpi",
-          "label": "Totaal aantal stedenbouwkundige controles",
+          "label": "Totaal aantal raadgevingen",
           "align-label": "center",
           "align-visual": "center"
         },
         {
           "type": "visual",
-          "id": "bSUxjz",
+          "id": "tamgU",
           "height": "55px",
           "visual_type": "kpi",
-          "label": "Totaal aanvankelijke controles",
+          "label": "Totaal aantal aanmaningen",
           "align-label": "center",
           "align-visual": "center"
         },
-
         {
           "type": "visual",
-          "id": "ggzjP",
+          "id": "ZJhKw",
           "height": "55px",
           "visual_type": "kpi",
-          "label": "Totaal navolgende controles",
+          "label": "Totaal aantal proces-verbalen",
+          "align-label": "center",
+          "align-visual": "center"
+        },
+        {
+          "type": "visual",
+          "id": "PXpzfjF",
+          "height": "55px",
+          "visual_type": "kpi",
+          "label": "Totaal aantal verslagen van vaststelling",
+          "align-label": "center",
+          "align-visual": "center"
+        },
+        {
+          "type": "visual",
+          "id": "NjJhRz",
+          "height": "55px",
+          "visual_type": "kpi",
+          "label": "Totaal aantal bestuurlijke maatregelen",
           "align-label": "center",
           "align-visual": "center"
         }
@@ -132,51 +148,33 @@
       [
         {
           "type": "visual",
-          "id": "stTYks",
+          "id": "TvbwGkT",
           "height": "300px",
           "visual_type": "barchart",
-          "label": "Aantal stedenbouwkundige controles per beleidsniveau"
+          "label": "Uitgevoerde instrumenten per bevraginsjaartal"
         },
         {
           "type": "visual",
-          "id": "hsfXY",
+          "id": "DwLMXx",
           "height": "300px",
           "visual_type": "barchart",
-          "label": "Evolutie stedenbouwkundige controles per beleidsniveau"
-        }
-      ],
+          "label": "Absolute verschil tussen 2023 tov 2021"
+        } 
+      ],    
       [
         {
           "type": "visual",
-          "id": "rZmqc",
+          "id": "Qerzqn",
           "height": "300px",
           "visual_type": "barchart",
-          "label": "Stijging of daling totaal aantal stedenbouwkundige controles 2021 t.o.v. 2023"
-        }
-      ],
-      [
-          {
-            "type": "visual",
-            "id": "yMzvwNK",
-            "height": "300px",
-            "visual_type": "linechart",
-            "label": "Evolutie proactief vs reactieve stedenbouwkundige controles"
-          }
-      ],
-      [
-        {
-          "type": "visual",
-          "id": "jea",
-          "height": "400px",
-          "visual_type": "linechart",
-          "label": "Proactieve controles per actor en beleidsniveau"
+          "label": "Verhouding zachte instrumenten tov repressieve instrumenten"
         },
         {
           "type": "visual",
-          "id": "cmXPHga",
-          "height": "400px",
-          "visual_type": "piechart",
-          "label": "Reactieve controles per actor en beleidsniveau"
+          "id": "PBJHCs",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Verhouding zachte instrumenten tov repressieve instrumenten"
         }
       ]
     ]

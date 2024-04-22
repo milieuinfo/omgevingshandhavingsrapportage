@@ -75,3 +75,19 @@ export const INSTROOM = {
   nrOfValues: 10,
 }
 
+export const THEMA = {
+
+  name: "Thema",
+  fieldQualifier: "qText",
+  field: "[Thema]",
+  nrOfValues: 10,
+}
+
+export const F1 = {
+
+  name: "Soort",
+  fieldQualifier: "qText",
+  field: "[F1]",
+  nrOfValues: 10,
+}
+

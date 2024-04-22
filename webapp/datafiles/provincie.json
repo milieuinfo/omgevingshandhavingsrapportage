@@ -1,0 +1,261 @@
+{
+   "Milieu": {
+       "OostVlaanderen": {
+           "gewestelijkeToezichthouders": {
+               "Toezichthouders": 3,
+               "VTE Toezichthouders": "0,05",
+               "VTE administratieve en juridische ondersteuning": "0,2"
+           },
+           "Klachten": {
+               "Milieuklachten milieu": 4,
+               "Afval": 0,
+               "Andere": 2,
+               "Bodem": 0,
+               "Geluid": 0,
+               "Lucht": 0,
+               "Mest": 0,
+               "Milieubeheer": 0,
+               "Vergunningen": 0,
+               "Water": 2
+           },
+           "Controles": {
+               "Milieucontroles": 4,
+               "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 1,
+               "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 4,
+               "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 1,
+               "aanvankelijke milieuhandhavingscontroles op eigen initiatief": 51,
+               "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 47
+           },
+           "Aanvankelijkecontrolesmetschending": {
+               "Totaal aanvankelijk": 51,
+               "Milieubeheer": 0,
+               "Lucht": 0,
+               "Water": 2,
+               "Bodem": 6,
+               "Geluid": 0,
+               "Vergunningen": 0,
+               "Mest": 1,
+               "Afval": 16,
+               "Andere": 26
+           },
+           "Instrument": {
+               "Aantal raadgevingen": 0,
+               "Aantal aanmaningen": 47,
+               "Aantal verslagen van vaststelling": 0,
+               "Aantal proces verbalen": 0,
+               "Aantal bestuurlijke maatregel zonder dwangsom": 0,
+               "Aantal bestuurlijke maatregel met dwangsom": 0,
+               "Aantal veiligheidsmaatregel": 0
+           },
+           "Thema": {
+               "PFAS": "Geen actie ondernomen",
+               "Stikstof": "Geen actie ondernomen"
+           },
+           "Opmerking": {
+               "Opmerking": "Geen opmerking."
+           }
+       },
+       "WestVlaanderen": {
+           "gewestelijkeToezichthouders": {
+               "Toezichthouders": 3,
+               "VTE Toezichthouders": "0,5",
+               "VTE administratieve en juridische ondersteuning": "0,2"
+           },
+           "Klachten": {
+               "Milieuklachten milieu": 0
+           },
+           "Controles": {
+               "Milieucontroles": "niet gekend"
+           },
+           "Aanvankelijkecontrolesmetschending": {
+               "Totaal aanvankelijk": 131,
+               "Milieubeheer": 0,
+               "Lucht": 0,
+               "Water": 131,
+               "Bodem": 0,
+               "Geluid": 0,
+               "Vergunningen": 0,
+               "Mest": 0,
+               "Afval": 0,
+               "Andere": 0
+           },
+           "Instrument": {
+            "Aantal raadgevingen": 30,
+            "Aantal aanmaningen": 39,
+            "Aantal verslagen van vaststelling": 0,
+            "Aantal proces verbalen": 3,
+            "Aantal bestuurlijke maatregel zonder dwangsom": 0,
+            "Aantal bestuurlijke maatregel met dwangsom": 0,
+            "Aantal veiligheidsmaatregel": 0
+           },
+           "Thema": {
+               "PFAS": "Geen actie ondernomen",
+               "Stikstof": "Geen actie ondernomen"
+           },
+           "Opmerking": {
+               "Opmerking1": "Klachten: hieronder verstaan wij meldingen die een klacht zijn.",
+               "Opmerking2": "Aantal navolgende controles voor verdere opvolging van deze milieuhandhavingscontroles op eigen initiatief?: wordt niet bijgehouden",
+               "Opmerking3": "wordt bij NI onder ontbossing genomen. De personeelsbeschikbaarheid wordt gedefinieerd als de verhouding van het aantal dagen dat een personeelslid in een bepaalde periode geacht wordt om te werken, op basis van diens arbeidsregime, inclusief feestdagen, ten opzichte van het aantal dagen dat een voltijds personeelslid in diezelfde periode dient te werken.",
+               "Opmerking4": "Om de totale personeelsbeschikbaarheid te berekenen wordt voor alle personeelsleden het totaal aantal te werken dagen, volgens een voltijds arbeidsregime, in een periode bepaald en vervolgens de onbeschikbaarheden afgetrokken."
+           }
+       },
+       "Antwerpen": {
+           "gewestelijkeToezichthouders": {
+               "Toezichthouders": 10,
+               "VTE Toezichthouders": "1,2",
+               "VTE administratieve en juridische ondersteuning": 1
+           },
+           "Klachten": {
+               "Milieuklachten milieu": "niet gekend"
+           },
+           "Controles": {
+               "Milieucontroles": 194,
+               "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": "niet gekend",
+               "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 7,
+               "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": "niet gekend",
+               "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 186,
+               "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": "niet gekend"
+           },
+           "Aanvankelijkecontrolesmetschending": {
+               "Totaal aanvankelijk": 194,
+               "PFAS": 0,
+               "Stikstof": 0,
+               "Milieubeheer": 0,
+               "Lucht": 0,
+               "Water": 194,
+               "Bodem": 0,
+               "Geluid": 0,
+               "Vergunningen": 0,
+               "Mest": 0,
+               "Afval": 0,
+               "Andere": 0
+           },
+           "Instrument": {
+            "Aantal raadgevingen": 4,
+            "Aantal aanmaningen": 102,
+            "Aantal verslagen van vaststelling": 0,
+            "Aantal proces verbalen": 3,
+            "Aantal bestuurlijke maatregel zonder dwangsom": 0,
+            "Aantal bestuurlijke maatregel met dwangsom": 0,
+            "Aantal veiligheidsmaatregel": 0
+           },
+           "Thema": {
+               "PFAS": "Geen actie ondernomen",
+               "Stikstof": "Geen actie ondernomen"
+           },
+           "Opmerking": {
+               "Opmerking": "Geen opmerking."
+           }
+       },
+       "Limburg": {
+           "gewestelijkeToezichthouders": {
+               "Toezichthouders": 1,
+               "VTE Toezichthouders": "0,2",
+               "VTE administratieve en juridische ondersteuning": "0,01"
+           },
+           "Klachten": {
+               "Milieuklachten milieu": 17,
+               "Milieubeheer": 0,
+               "Lucht": 0,
+               "Water": 4,
+               "Bodem": 0,
+               "Geluid": 0,
+               "Vergunningen": 0,
+               "Mest": 0,
+               "Afval": 4,
+               "Andere": 0
+           },
+           "Controles": {
+               "Milieucontroles": 17,
+               "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+               "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 17,
+               "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 9,
+               "aanvankelijke milieuhandhavingscontroles op eigen initiatief": 45,
+               "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
+           },
+           "Aanvankelijkecontrolesmetschending": {
+               "Totaal aanvankelijk": 17,
+               "Milieubeheer": 0,
+               "Lucht": 0,
+               "Water": 4,
+               "Bodem": 0,
+               "Geluid": 0,
+               "Vergunningen": 9,
+               "Mest": 0,
+               "Afval": 4,
+               "Andere": 0
+           },
+           "Instrument": {
+            "Aantal raadgevingen": 0,
+            "Aantal aanmaningen": 17,
+            "Aantal verslagen van vaststelling": 0,
+            "Aantal proces verbalen": 1,
+            "Aantal bestuurlijke maatregel zonder dwangsom": 1,
+            "Aantal bestuurlijke maatregel met dwangsom": 0,
+            "Aantal veiligheidsmaatregel": 0
+           },
+           "Thema": {
+               "PFAS": "Geen actie ondernomen",
+               "Stikstof": "Geen actie ondernomen"
+           },
+           "Opmerking": {
+               "Opmerking": "Geen opmerking"
+           }
+       },
+       "VlaamsBrabant": {
+           "gewestelijkeToezichthouders": {
+               "Toezichthouders": 2,
+               "VTE Toezichthouders": "1,5",
+               "VTE administratieve en juridische ondersteuning": 0
+           },
+           "Klachten": {
+               "Milieuklachten milieu": 86,
+               "Afval": 30,
+               "Andere": 2,
+               "Bodem": 1,
+               "Geluid": 0,
+               "Lucht": 0,
+               "Mest": 1,
+               "Milieubeheer": 7,
+               "Vergunningen": 43,
+               "Water": 2
+           },
+           "Controles": {
+               "Milieucontroles": 24,
+               "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 5,
+               "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 19,
+               "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": "niet gekend",
+               "aanvankelijke milieuhandhavingscontroles op eigen initiatief": 0,
+               "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
+           },
+           "Aanvankelijkecontrolesmetschending": {
+               "Totaal aanvankelijk": 86,
+               "Milieubeheer": 7,
+               "Lucht": 0,
+               "Water": 2,
+               "Bodem": 1,
+               "Geluid": 0,
+               "Vergunningen": 43,
+               "Mest": 1,
+               "Afval": 30,
+               "Andere": 2
+           },
+           "Instrument": {
+            "Aantal raadgevingen": 65,
+            "Aantal aanmaningen": 10,
+            "Aantal verslagen van vaststelling": 4,
+            "Aantal proces verbalen": 0,
+            "Aantal bestuurlijke maatregel zonder dwangsom": 0,
+            "Aantal bestuurlijke maatregel met dwangsom": 0,
+            "Aantal veiligheidsmaatregel": 4
+           },
+           "Thema": {
+               "PFAS": "Geen actie ondernomen",
+               "Stikstof": "Geen actie ondernomen"
+           },
+           "Opmerking": {
+               "Opmerking": 0
+           }
+       }
+   }
+}
