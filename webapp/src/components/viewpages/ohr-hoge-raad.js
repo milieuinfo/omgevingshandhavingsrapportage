@@ -28,7 +28,7 @@ class OhrHogeRaad extends LitElement {
     <vl-functional-header
     data-vl-back="Terug"
     data-vl-back-link="/"
-    data-vl-title="Hoge Raad"
+    data-vl-title="Hoge raad voor de handhavingsuitvoering"
     data-vl-sub-title="Omgevingshandhavingsrapportage"
     data-vl-link="/hoge-raad">
 </vl-functional-header>
@@ -38,7 +38,7 @@ class OhrHogeRaad extends LitElement {
               {
                 size: 8,
                 template: html`<h1 is="vl-h1" data-vl-no-space-bottom>
-                  Hoge Raad
+                Hoge raad voor de handhavingsuitvoering
                 </h1>`,
               },
               {

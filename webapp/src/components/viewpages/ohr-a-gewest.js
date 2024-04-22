@@ -379,16 +379,16 @@ class OhrAGewest extends LitElement {
           <vl-accordion-list slot="content">
       <vl-accordion data-vl-toggle-text="Verbalisanten en stedenbouwkundige inspecteurs en VTE"> 
       ${this.renderDataSection(
-        jsonData2.RO.dOMGHH.gewestelijkeToezichthouders
+        jsonData2.RO.dOMGHH.PersoneelRO
       )}</vl-accordion>
       <vl-accordion data-vl-toggle-text="Klachten">
       ${this.renderDataSection(jsonData2.RO.dOMGHH.Klachten)}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Controles">
-      ${this.renderDataSection(jsonData2.RO.dOMGHH.Klachten)}
+      ${this.renderDataSection(jsonData2.RO.dOMGHH.Controles)}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Aantal aanvankelijke controles met schending">
-      ${this.renderDataSection(jsonData2.RO.dOMGHH.Klachten)}
+      ${this.renderDataSection(jsonData2.RO.dOMGHH.Aanvankelijkecontrolesmetschending)}
       </vl-accordion>
       <vl-accordion data-vl-toggle-text="Instrumentarium">
       ${this.renderDataSection(jsonData2.RO.dOMGHH.Instrument)}
