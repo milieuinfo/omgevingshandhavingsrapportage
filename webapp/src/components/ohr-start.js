@@ -438,9 +438,8 @@ and performing other setup tasks.
         size: 6,
         template: html`
           <div ">
-          <a is="vl-doormat" href="">
-            <h2 is="vl-doormat-title">Bestuurlijke
-              vervolgtraject</h2>
+          <a is="vl-doormat" href="/bestuurlijkevervolg-analyse">
+            <h2 is="vl-doormat-title">Bestuurlijke vervolgtraject</h2>
             <div is="vl-doormat-text">
               Deze pagina toont de evolutie van het
               bestuurlijke vervolgtraject inzake de omgevingshandhaving.

@@ -29,6 +29,7 @@ import "./viewpages/ohr-strafrechtelijk-analyse.js";
 import "./viewpages/ohr-strafrechtelijk.js";
 import "./viewpages/gemeenten-op-kaart.js";
 import "./viewpages/ohr-provincie-op-kaart.js";
+import "./dashboards/ohr-bestuurlijkevervolgtraject.js";
 
 import {getHeaderFooterId} from "./config/header.js";
 
@@ -81,6 +82,7 @@ class OhrApp extends LitElement {
       {path: "/hoge-raad-analyse", component: "ohr-hogeraadanalyse"},
       {path: "/hogeraad", component: "ohr-hogeraaddashboard"},
       {path: "/strafrechtelijk", component: "ohr-strafrechtelijk"},
+      {path: "/bestuurlijkevervolg-analyse", component: "ohr-bestuurlijkevervolgtraject"},
       {path: "/strafrechtelijk-analyse",component: "ohr-strafrechtelijkanalyse"},
       {path: "/gemeenten-analyse", component: "ohr-gemeentenanalyse"},
       {path: "/gemeenten", component: "ohr-gemeenten"},
