@@ -1,7 +1,15 @@
-import { html, LitElement } from "../common/commons.js";
 import { vlElementsStyle } from "@domg-wc/elements";
 import jsonData from "../datafiles/gewest.json" assert { type: "json" };
 import jsonData2 from "../datafiles/Totaal Gewest 2023_e1a6d014-b58b-302d-b023-ab8a4b99391a.json" assert { type: "json" };
+import options from "../config/keuzegewestanalyse.json" assert {type: "json"};
+
+import {
+  bindVlSelect,
+  html,
+  LitElement,
+  queryById,
+  renderStack
+} from "../common/commons.js";
 
 import "@domg-wc/elements/image";
 import "@domg-wc/elements/grid";
@@ -13,15 +21,43 @@ import "@domg-wc/components/accordion-list";
 import "@domg-wc/components/accordion";
 import "@domg-wc/components/next/cascader";
 import "@domg-wc/elements/data-table";
+import "@domg-wc/elements/select";
 import "@domg-wc/components/spotlight";
 
 class OhrAGewest extends LitElement {
   static get styles() {
     return [...vlElementsStyle];
+    
+  }
+  static get properties() {
+    return {
+      selectedChoiceLabel: {type: String},
+      selectedChoiceUrl: {type: String}
+    }
   }
   constructor() {
     super();
+    this.selectedChoiceUrl = options.find(o => o.selected).value;
+    this.selectedChoiceLabel = options.find((o) => o.selected).label;
   }
+
+  firstUpdated(_changedProperties) {
+    super.firstUpdated(_changedProperties);
+    bindVlSelect({
+      component: queryById(this)("viewselector"),
+      choices: options
+    })
+  }
+
+  __changeView(event) {
+    const selectedOption = options.find((o) => o.value === event.target.value);
+    if (selectedOption) {
+      this.selectedChoiceUrl = selectedOption.value;
+      this.selectedChoiceLabel = selectedOption.label;
+    }
+    
+  }
+
   /*Main render page*/
   render() {
     return html` <vl-functional-header
@@ -51,11 +87,13 @@ class OhrAGewest extends LitElement {
             efficiënt data te raadplegen.
           </p>
           <br />
-
-          <div>${this.__renderPage()}</div>
+          <div>${this.__renderViewSelector()}</div>
+          <div>${this.__renderDynamicContent()}</div>
         </div>
       </section>`;
   }
+
+
 
   /* Render opmerking */
   renderOpmerkingsection(data) {
@@ -148,10 +186,40 @@ class OhrAGewest extends LitElement {
     `;
   }
 
+  __renderViewSelector() {
+    return html`
+    <vl-typography><b>
+    Kies hieronder een handhavingsthema voor een kaartweergave:</b></vl-typography>
+      <select id="viewselector" is="vl-select" data-vl-select @change="${this.__changeView}">
+      </select>
+    `;
+  }
+
+    __renderDynamicContent() {
+      return html`
+          <vl-cascader>
+    <vl-cascader-item label="${this.selectedChoiceUrl}">
+      <vl-cascader-item label="Milieu">
+        <p slot="content">
+        <vl-alert data-cy="alert" data-vl-naked="" data-vl-icon="info" data-vl-title="Geen activiteit" data-vl-type="info"
+        data-vl-message="${this.selectedChoiceUrl}">
+      </vl-alert></p>
+      </vl-cascader-item>
+      <vl-cascader-item label="Ruimtelijke ordening">
+        <p slot="content">
+            <vl-alert data-cy="alert" data-vl-naked="" data-vl-icon="warning" data-vl-title="Geen bevoegheid" data-vl-type="warning"
+            data-vl-message="Agentschap Maritieme Dienstverlening en Kust heeft geen bevoegheid voor ruimtelijke ordening.">
+        </vl-alert></p>
+            </vl-cascader-item>
+      </vl-cascader-item>
+      </vl-cascader>
+      `;
+    }
   /*Render page*/
   __renderPage() {
     return html`
    <vl-cascader>
+   
     <vl-cascader-item label="Agentschap Maritieme Dienstverlening en Kust">
       <vl-cascader-item label="Milieu">
         <p slot="content">

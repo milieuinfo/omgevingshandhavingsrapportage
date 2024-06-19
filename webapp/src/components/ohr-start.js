@@ -137,7 +137,7 @@ and performing other setup tasks.
       <li is="vl-link-list-item">
         <a target="_new_blank" is="vl-link"
            href="https://www.omgeving.vlaanderen.be/nl/inspectie-en-handhaving">
-          Meer info over afdeling handhaving<span is="vl-icon" data-vl-before="" data-vl-link="" data-vl-icon="external"></span>
+          Inspectie en handhaving Departement Omgeving<span is="vl-icon" data-vl-before="" data-vl-link="" data-vl-icon="external"></span>
         </a>
       </li>
       <li is="vl-link-list-item">
@@ -229,7 +229,7 @@ and performing other setup tasks.
           template: html` <div is="vl-infotext" data-cy="infotext">
             <div>
               <div data-vl-value="">1871</div>
-              <div data-vl-text="">Aantal handhavers</div>
+              <div data-vl-text="">Aantal handhavers Omgevingsinspectie</div>
             </div>
           </div>`,
         },
@@ -344,8 +344,7 @@ and performing other setup tasks.
               Strafrechtelijke en bestuurlijke vervolgtraject
             </h2>
             <div is="vl-doormat-text">
-              Bekijk de cijfers inzake het strafrechtelijke en bestuurlijke
-              vervolgtraject.
+              Bekijk de cijfers inzake het strafrechtelijke vervoltraject sanctionering
             </div>
           </a>
         </div>`,
@@ -440,7 +439,7 @@ and performing other setup tasks.
         template: html`
           <div ">
           <a is="vl-doormat" href="/">
-            <h2 is="vl-doormat-title">Bestuurlijke vervolgtraject</h2>
+            <h2 is="vl-doormat-title">Sanctionering</h2>
             <div is="vl-doormat-text">
               Deze pagina toont de evolutie van het
               bestuurlijke vervolgtraject inzake de omgevingshandhaving.
