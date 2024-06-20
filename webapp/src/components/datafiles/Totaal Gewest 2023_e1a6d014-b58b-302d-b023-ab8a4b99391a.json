@@ -1,6 +1,6 @@
 {
     "Milieu": {
-        "AMDK": {
+        "Agentschap voor Maritieme Dienstverlening en Kust": {
             "gewestelijkeToezichthouders": {
                 "Toezichthouders": 0,
                 "VTE Toezichthouders": 0,
@@ -63,7 +63,7 @@
                 "Opmerking": "Geen opmerking."
             }
         },
-        "ANB": {
+        "Agentschap voor Natuur en Bos": {
             "gewestelijkeToezichthouders": {
                 "Toezichthouders": 132,
                 "VTE Toezichthouders": "42,98",
@@ -84,7 +84,7 @@
                 "Water": 0
             },
             "Controles": {
-                "Milieucontroles": 5764,
+                "Totaal Milieucontroles": 5764,
                 "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": "niet gekend",
                 "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 1896,
                 "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": "niet gekend",
@@ -125,7 +125,7 @@
                 "Opmerking4": "Om de totale personeelsbeschikbaarheid te berekenen wordt voor alle personeelsleden het totaal aantal te werken dagen, volgens een voltijds arbeidsregime, in een periode bepaald en vervolgens de onbeschikbaarheden afgetrokken."
             }
         },
-        "AWV": {
+        "Agentschap Wegen en Verkeer": {
             "gewestelijkeToezichthouders": {
                 "Toezichthouders": 13,
                 "VTE Toezichthouders": 2.5,
@@ -184,7 +184,7 @@
                 "Opmerking": "Geen opmerking."
             }
         },
-        "VW": {
+        "Vlaamse Waterweg": {
             "gewestelijkeToezichthouders": {
                 "Toezichthouders": 91,
                 "VTE Toezichthouders": 2,
@@ -232,7 +232,7 @@
                 "Opmerking": "Geen opmerking"
             }
         },
-        "dMOW": {
+        "Departement Mobiliteit en Openbare Werken": {
             "gewestelijkeToezichthouders": {
                 "Toezichthouders": 0,
                 "VTE Toezichthouders": 0,
@@ -461,7 +461,7 @@
                 "Opmerking": "Van de 75 administratief uitgevoerde milieuhandhavingscontroles m.b.t. de verplichte indiening van voortgangsrapporten door ontginners werden ook 28 dronevluchten en 12 peilmetingen uitgevoerd op het terrein ten behoeve van inhoudelijke controle"
             }
         },
-        "DZORG": {
+        "Departement Zorg": {
             "gewestelijkeToezichthouders": {
                 "Toezichthouders": 12,
                 "VTE Toezichthouders": "0,125",
@@ -498,7 +498,7 @@
                 "Opmerking": "Geen opmerking."
             }
         },
-        "OVAM": {
+        "Openbare Vlaamse Afvalstoffenmaatschappij": {
             "gewestelijkeToezichthouders": {
                 "Toezichthouders": 19,
                 "VTE Toezichthouders": "7,5",
@@ -563,7 +563,7 @@
                 "Opmerking": "In het huidig dossiersysteem is het onderscheid niet duidelijk te maken tussen navolgende en aanvankelijke controles. Alle navolgende controles zitten inbegrepen in het cijfer van de aanvankelijke controles. aantal aanvankelijke milieuhandhavingscontroles op eigen initiatief inzake PFAS: Dit zijn geen 100 % PFAS-controles. Onder meer alle 'grondverzet-controles' zijn hier meegenomen. De grondverzet-controles spitsen zich toe op het controleren van grondverzet bij werven en tijdelijke opslagplaatsen (TOP’s). Pfas-verbindingen behoren tot de verbindingen die gemeten worden bij staalname van grondhopen. Deze zitten dus verwerkt in analyseresultaten opgenomen in het technisch verslag nodig om aan grondverzet te doen. Indien bij analyse van een bodemstaal de waarden voor Pfas-verbindingen overschreden worden dan spreken we van een afvalstof en valt dit niet meer onder het grondvezet. Controles op Pfas worden dus meegenomen in de controles op grondverzet als 1 van de parameters. Daarnaast wordt ook gecontroleerd op de aanwezigheid van pfas-vervuilde gronden bij GRC’s (grondreinigingcentra) of de regels van het grondverzet nageleefd worden."
             }
         },
-        "VEKA": {
+        "Vlaams Energie- en Klimaatagentschap": {
             "gewestelijkeToezichthouders": {
                 "Toezichthouders": 0,
                 "VTE Toezichthouders": 0,
@@ -626,7 +626,7 @@
                 "Opmerking": "Geen opmerking."
             }
         },
-        "VLM": {
+        "Vlaamse Landmaatschappij": {
             "gewestelijkeToezichthouders": {
                 "Toezichthouders": 36,
                 "VTE Toezichthouders": "33,6",
@@ -685,7 +685,7 @@
                 "Opmerking": "Geen opmerking."
             }
         },
-        "VMM": {
+        "Vlaamse Milieumaatschappij": {
             "Gewest": "Vlaamse Milieumaatschappij",
             "gewestelijkeToezichthouders": {
                 "Toezichthouders": 46,
@@ -729,7 +729,7 @@
                 "Opmerking": "Geen opmerking."
             }
         },
-        "VWI": {
+        "Vlaamse Wooninspectie": {
             "Gewest": "Vlaamse Wooninspectie",
             "gewestelijkeToezichthouders": {
                 "Toezichthouders": 0,
@@ -791,7 +791,7 @@
         }
     },
     "RO": {
-        "AMDK": {
+        "Agentschap voor Maritieme Dienstverlening en Kust": {
             "PersoneelRO": {
                 "Verbalisanten": 0,
                 "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
@@ -837,7 +837,7 @@
                 "Opmerking": "Geen opmerking."
             }
         },
-        "ANB": {
+        "Agentschap voor Natuur en Bos": {
             "PersoneelRO": {
                 "Verbalisanten": 0,
                 "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
@@ -882,7 +882,7 @@
                 "Opmerking": "Geen opmerking."
             }
         },
-        "AWV": {
+        "Agentschap Wegen en Verkeer": {
             "PersoneelRO": {
                 "Verbalisanten": 0,
                 "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
@@ -928,7 +928,7 @@
                 "Opmerking": "Geen opmerking."
             }
         },
-        "VW": {
+        "Vlaamse Waterweg": {
             "Gewest": "De Vlaamse Waterweg",
             "PersoneelRO": {
                 "Verbalisanten": 0,
@@ -975,7 +975,7 @@
                 "Opmerking": "Geen opmerking."
             }
         },
-        "dMOW": {
+        "Departement Mobiliteit en Openbare Werken": {
             "PersoneelRO": {
                 "Verbalisanten": 0,
                 "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
@@ -1161,7 +1161,7 @@
                 "Opmerking": "Geen opmerking."
             }
         },
-        "DZORG": {
+        "Departement Zorg": {
             "Gewest": "Departement zorg",
             "PersoneelRO": {
                 "Verbalisanten": 0,
@@ -1208,7 +1208,7 @@
                 "Opmerking": "Geen opmerking."
             }
         },
-        "OVAM": {
+        "Openbare Vlaamse Afvalstoffenmaatschappij": {
             "Gewest": "Openbare Vlaamse Afvalstoffenmaatschappij",
             "PersoneelRO": {
                 "Verbalisanten": 0,
@@ -1255,7 +1255,7 @@
                 "Opmerking": "Geen opmerking."
             }
         },
-        "VEKA": {
+        "Vlaams Energie- en Klimaatagentschap": {
             "Gewest": "Vlaamse Energie- en Klimaatagentschap",
             "PersoneelRO": {
                 "Verbalisanten": 0,
@@ -1302,7 +1302,7 @@
                 "Opmerking": "Geen opmerking."
             }
         },
-        "VLM": {
+        "Vlaamse Landmaatschappij": {
             "Gewest": "Vlaamse Landmaatschappij",
             "PersoneelRO": {
                 "Verbalisanten": 0,
@@ -1349,7 +1349,7 @@
                 "Opmerking": "Geen opmerking."
             }
         },
-        "VMM": {
+        "Vlaamse Milieumaatschappij": {
             "Gewest": "Vlaamse Milieumaatschappij",
             "PersoneelRO": {
                 "Verbalisanten": 0,
@@ -1396,7 +1396,7 @@
                 "Opmerking": "Geen opmerking."
             }
         },
-        "VWI": {
+        "Vlaamse Wooninspectie": {
             "Gewest": "Vlaamse Wooninspectie",
             "PersoneelRO": {
                 "Verbalisanten": 11,

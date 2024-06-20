@@ -341,10 +341,10 @@ and performing other setup tasks.
         template: html` <div>
           <a is="vl-doormat" href="/strafrechtelijk">
             <h2 is="vl-doormat-title">
-              Strafrechtelijke en bestuurlijke vervolgtraject
+              Strafrechtelijke en bestuurlijke sanctionering
             </h2>
             <div is="vl-doormat-text">
-              Bekijk de cijfers inzake het strafrechtelijke vervoltraject sanctionering
+              Bekijk de cijfers inzake het strafrechtelijke sanctionering en bestuurlijke sanctionering
             </div>
           </a>
         </div>`,
@@ -439,10 +439,10 @@ and performing other setup tasks.
         template: html`
           <div ">
           <a is="vl-doormat" href="/">
-            <h2 is="vl-doormat-title">Sanctionering</h2>
+            <h2 is="vl-doormat-title">Bestuurlijke sanctionering</h2>
             <div is="vl-doormat-text">
               Deze pagina toont de evolutie van het
-              bestuurlijke vervolgtraject inzake de omgevingshandhaving.
+              bestuurlijke sanctionering inzake de omgevingshandhaving.
             </div>
           </a>
           </div>`,
@@ -453,9 +453,9 @@ and performing other setup tasks.
           <div ">
           <a is="vl-doormat" href="">
             <h2 is="vl-doormat-title">Strafrechtelijke
-              vervolgtraject</h2>
+              sanctionering</h2>
             <div is="vl-doormat-text">
-              Deze pagina toont de evolutie van het strafrechtelijke vervolgtraject inzake de omgevingshandhaving.
+              Deze pagina toont de evolutie van het strafrechtelijke sanctionering inzake de omgevingshandhaving.
             </div>
           </a>
           </div>`,

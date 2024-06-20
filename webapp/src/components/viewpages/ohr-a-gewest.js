@@ -48,14 +48,18 @@ class OhrAGewest extends LitElement {
       choices: options
     })
   }
+  bindVlSelect() {
+    const select = this.shadowRoot.querySelector('#viewselector');
+    select.addEventListener('change', this.__changeView.bind(this));
+  }
 
   __changeView(event) {
     const selectedOption = options.find((o) => o.value === event.target.value);
     if (selectedOption) {
       this.selectedChoiceUrl = selectedOption.value;
       this.selectedChoiceLabel = selectedOption.label;
+      this.requestUpdate();
     }
-    
   }
 
   /*Main render page*/
@@ -65,21 +69,16 @@ class OhrAGewest extends LitElement {
         data-vl-back-link="/gewest"
         data-vl-title="Gewestelijke handhavingsactoren"
         data-vl-sub-title="Omgevingshandhavingsrapportage"
-        data-vl-link="/"
-      >
+        data-vl-link="/">
       </vl-functional-header>
       <section is="vl-region">
         <div is="vl-layout">
           <vl-typography>
-            <h2>Raadpleeg laatst bekende cijfers van 2023</h2></vl-typography
-          >
+            <h2>Raadpleeg laatst bekende cijfers van 2023</h2>
           <p is="vl-icon-wrapper">
-            <span is="vl-icon" data-vl-icon="calendar"></span
-            ><vl-annotation>
-              Laatste wijziging aan de data: 21/02/2024</vl-annotation
-            >
-          </p>
-          <br />
+            <span is="vl-icon" data-vl-icon="calendar"></span><vl-annotation>Laatste wijziging aan de data: 21/02/2024</vl-annotation>
+          </p></vl-typography><br>
+
 
           <p is="vl-introduction" data-cy="introduction">
             Onderstaande weergave geeft een beeld van de bevraging over de
@@ -92,20 +91,20 @@ class OhrAGewest extends LitElement {
         </div>
       </section>`;
   }
-
-
-
   /* Render opmerking */
-  renderOpmerkingsection(data) {
+  renderOpmerkingsection(data,type) {
     return html`
     <vl-typography>
     <ul>
+      <li>${type}</li>
+        <ul>
     ${Object.entries(data).map(([key,value]) => {
         return html`
         <li>${value}</li>
         `;
       })
     }
+    </ul>
 </ul>
 </vl-typography>
     `
@@ -153,9 +152,12 @@ class OhrAGewest extends LitElement {
       `;
     }
   /* Render data table Numbers*/
-  renderDataSection(data) {
+  renderDataSection(data,type) {
     return html`
       <table is="vl-data-table">
+       <caption>
+       ${type}
+      </caption>
         <thead>
           <tr>
             <th>Onderwerp</th>
@@ -189,30 +191,106 @@ class OhrAGewest extends LitElement {
   __renderViewSelector() {
     return html`
     <vl-typography><b>
-    Kies hieronder een handhavingsthema voor een kaartweergave:</b></vl-typography>
+    Kies uit de keuzelijst een gewestelijke handhavingsactor:</b></vl-typography>
       <select id="viewselector" is="vl-select" data-vl-select @change="${this.__changeView}">
-      </select>
+      </select><br>
     `;
   }
 
     __renderDynamicContent() {
       return html`
-          <vl-cascader>
-    <vl-cascader-item label="${this.selectedChoiceUrl}">
-      <vl-cascader-item label="Milieu">
-        <p slot="content">
-        <vl-alert data-cy="alert" data-vl-naked="" data-vl-icon="info" data-vl-title="Geen activiteit" data-vl-type="info"
-        data-vl-message="${this.selectedChoiceUrl}">
-      </vl-alert></p>
-      </vl-cascader-item>
-      <vl-cascader-item label="Ruimtelijke ordening">
-        <p slot="content">
-            <vl-alert data-cy="alert" data-vl-naked="" data-vl-icon="warning" data-vl-title="Geen bevoegheid" data-vl-type="warning"
-            data-vl-message="Agentschap Maritieme Dienstverlening en Kust heeft geen bevoegheid voor ruimtelijke ordening.">
-        </vl-alert></p>
-            </vl-cascader-item>
-      </vl-cascader-item>
-      </vl-cascader>
+<vl-tabs data-vl-active-tab="Personeel" data-vl-disable-links="">
+    <vl-tabs-pane data-vl-id="Personeel" data-vl-title="Personeel">
+        <div is="vl-grid">
+    <div is="vl-column" data-vl-size=6>
+        ${this.renderDataSection(jsonData2.Milieu[this.selectedChoiceUrl].gewestelijkeToezichthouders,"Milieu")}
+    </div>
+
+     <div is="vl-column" data-vl-size=6>
+        ${this.renderDataSection(
+          jsonData2.RO[this.selectedChoiceUrl].PersoneelRO,"Ruimtelijke ordening"
+        )}
+    </div>
+</div>
+    </vl-tabs-pane>
+    <vl-tabs-pane data-vl-id="Klachten" data-vl-title="Klachten">
+            <div is="vl-grid">
+    <div is="vl-column" data-vl-size=6>
+    ${this.renderDataSection(jsonData2.Milieu[this.selectedChoiceUrl].Klachten,"Milieu")}
+    </div>
+
+     <div is="vl-column" data-vl-size=6>
+     ${this.renderDataSection(jsonData2.RO[this.selectedChoiceUrl].Klachten,"Ruimtelijke ordening")}
+    </div>
+</div>   
+    </vl-tabs-pane>
+    <vl-tabs-pane data-vl-id="Controles" data-vl-title="Controles">
+      <div is="vl-grid">
+    <div is="vl-column" data-vl-size=6>
+    ${this.renderDataSection(jsonData2.Milieu[this.selectedChoiceUrl].Controles,"Milieu")}
+    </div>
+
+     <div is="vl-column" data-vl-size=6>
+        ${this.renderDataSection(
+          jsonData2.RO[this.selectedChoiceUrl].Controles,"Ruimtelijke ordening"
+        )}
+    </div>
+</div>
+    <div is="vl-grid">
+    <div is="vl-column" data-vl-size=12>
+    <vl-typography>
+        <h3>
+          Aanvankelijke controles met schending
+        </h3>
+    </vl-typography>
+    </div>
+    </div>
+      <div is="vl-grid">
+    <div is="vl-column" data-vl-size=6>
+         ${this.renderDataSection(
+          jsonData2.Milieu[this.selectedChoiceUrl].Aanvankelijkecontrolesmetschending,"Milieu"
+        )}
+    </div>
+
+     <div is="vl-column" data-vl-size=6>
+     ${this.renderDataSection(jsonData2.RO[this.selectedChoiceUrl].Aanvankelijkecontrolesmetschending,"Ruimtelijke ordening")}
+    </div>
+</div>
+    </vl-tabs-pane>
+     <vl-tabs-pane data-vl-id="Instrumentarium" data-vl-title="Instrumentarium">
+      <div is="vl-grid">
+    <div is="vl-column" data-vl-size=6>
+    ${this.renderDataSection(jsonData2.Milieu[this.selectedChoiceUrl].Instrument,"Milieu")}
+    </div>
+
+     <div is="vl-column" data-vl-size=6>
+     ${this.renderDataSection(jsonData2.RO[this.selectedChoiceUrl].Instrument,"Ruimtelijke ordening")}
+    </div>
+</div>
+    </vl-tabs-pane>
+    <vl-tabs-pane data-vl-id="Themagerichte acties" data-vl-title="Themagerichte acties">
+     <div is="vl-grid">
+    <div is="vl-column" data-vl-size=6>
+    ${this.renderDataSection(jsonData2.Milieu[this.selectedChoiceUrl].Thema,"Milieu")}
+    </div>
+
+     <div is="vl-column" data-vl-size=6>
+     ${this.renderDataSection(jsonData2.RO[this.selectedChoiceUrl].Thema,"Ruimtelijke ordening")}
+    </div>
+</div>  
+    </vl-tabs-pane>
+    <vl-tabs-pane data-vl-id="Opmerkingen" data-vl-title="Opmerkingen">
+     <div is="vl-grid">
+    <div is="vl-column" data-vl-size=6>
+    ${this.renderOpmerkingsection(jsonData2.RO[this.selectedChoiceUrl].Opmerking,"Milieu")}
+    </div>
+
+     <div is="vl-column" data-vl-size=6>
+     ${this.renderOpmerkingsection(jsonData2.RO[this.selectedChoiceUrl].Opmerking,"Ruimtelijke ordening")}
+    </div>
+</div>  
+    </vl-tabs-pane>
+</vl-tabs>
       `;
     }
   /*Render page*/
