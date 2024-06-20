@@ -1,0 +1,23 @@
+[
+    {
+      "label": "Provincie Antwerpen",
+      "value": "Antwerpen",
+      "selected": true
+    },
+    {
+      "label": "Provincie Limburg",
+      "value": "Limburg"
+    },
+    {
+      "label": "Provincie Oost-Vlaanderen",
+      "value": "OostVlaanderen"
+    },
+    {
+      "label": "Provincie Vlaams-Brabant",
+      "value": "VlaamsBrabant"
+    },
+    {
+      "label": "Provincie West-Vlaanderen",
+      "value": "WestVlaanderen"
+    }
+  ]
