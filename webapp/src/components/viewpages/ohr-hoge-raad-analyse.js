@@ -55,7 +55,7 @@ class OhrHogeRaadAnalyse extends LitElement {
     
 <div>
 
-          ${this.__renderPage()}</div>
+          ${this.__renderDynamicContent()}</div>
         </div>
       </section>`;
   }
@@ -160,6 +160,80 @@ ${this.renderDataSection(jsonData.Instroom.VraagC1)}
 </vl-cascader>
 `;
 
+  }
+
+  __renderDynamicContent() {
+    return html`
+<vl-tabs data-vl-active-tab="Instroom" data-vl-disable-links="">
+  <vl-tabs-pane data-vl-id="Instroom" data-vl-title="Instroom">
+      <div is="vl-grid">
+  <div is="vl-column" data-vl-size=12>
+   <vl-accordion-list slot="content">
+        <vl-accordion data-vl-default-open data-vl-toggle-text="Aanvragen voor advies inzake herstelvorderingen"> 
+        ${this.renderDataSection(jsonData.Instroom.Vraag1)}
+        </vl-accordion>
+        <vl-accordion data-vl-default-open data-vl-toggle-text="Verzoeken tot heroverweging van een negatief advies inzake herstelvorderingen">
+        ${this.renderDataSection(jsonData.Instroom.Vraag2)}
+        </vl-accordion>
+        <vl-accordion data-vl-default-open data-vl-toggle-text="Aanvragen voor advies inzake opeenvolgende herstelvorderingen">
+        ${this.renderDataSection(jsonData.Instroom.Vraag3)}
+        </vl-accordion>
+        <vl-accordion data-vl-default-open data-vl-toggle-text="Aanvragen voor advies inzake een ambtshalve uitvoering van een door de rechter bevolen herstelmaatregel">
+        ${this.renderDataSection(jsonData.Instroom.Vraag4)}
+        </vl-accordion>
+        <vl-accordion data-vl-default-open data-vl-toggle-text="Aanvragen voor advies inzake betekeningen van vonnissen of arresten waarin de rechter het bestuur heeft gemachtigd om ambtshalve in de uitvoering ervan te voorzien">
+        ${this.renderDataSection(jsonData.Instroom.Vraag5)}
+        </vl-accordion>
+    </vl-accordion-list>
+  </div>
+</div>
+  </vl-tabs-pane>
+  <vl-tabs-pane data-vl-id="Bindende adviezen" data-vl-title="Bindende adviezen">
+          <div is="vl-grid">
+  <div is="vl-column" data-vl-size=12>
+  <vl-accordion-list slot="content">
+    <vl-accordion data-vl-default-open data-vl-toggle-text="Aan gewestelijke stedenbouwkundige inspecteurs"> 
+    ${this.renderDataSection(jsonData.Instroom.VraagB1)}
+    </vl-accordion>
+    <vl-accordion data-vl-default-open  data-vl-toggle-text="Aan gemeentelijke stedenbouwkundige inspecteurs / burgemeesters">
+    ${this.renderDataSection(jsonData.Instroom.VraagB2)}
+    </vl-accordion>
+    </vl-accordion-list>
+  </div>
+</div>   
+  </vl-tabs-pane>
+  <vl-tabs-pane data-vl-id="Adviezen" data-vl-title="Adviezen">
+    <div is="vl-grid">
+  <div is="vl-column" data-vl-size=12>
+  <vl-accordion-list slot="content">
+    <vl-accordion data-vl-default-open data-vl-toggle-text="Aantal in 2023 gegeven adviezen aan de Vlaamse Regering of het college van burgemeester en schepenen
+over het gemotiveerd verzoek om tijdelijk of definitief af te zien van verdere inning van
+een opeisbaar geworden dwangsomschuld"> 
+${this.renderDataSection(jsonData.Instroom.VraagC1)}
+    </vl-accordion>
+    <vl-accordion data-vl-default-open  data-vl-toggle-text="Aantal in 2023 gegeven adviezen aan de Vlaamse Regering over de herstelmaatregelen in het kader van
+    een beroep ingesteld door de vermoedelijke overtreder tegen de beslissing tot toepassing
+    van bestuursdwang of tot het opleggen van een last onder dwangsom">
+    ${this.renderDataSection(jsonData.Instroom.VraagC2)}
+    </vl-accordion>
+    </vl-accordion-list>
+  </div>
+</div>
+</div>
+  </vl-tabs-pane>
+   <vl-tabs-pane data-vl-id="Bemiddelingsopdracht" data-vl-title="Bemiddelingsopdracht">
+    <div is="vl-grid">
+  <div is="vl-column" data-vl-size=12>
+ <vl-accordion-list slot="content">
+    <vl-accordion data-vl-default-open data-vl-toggle-text="Aantal bemiddelingsopdrachten op verzoek van een vermoedelijke overtreder of de rechtbank in 2023"> 
+    ${this.renderDataSection(jsonData.Instroom.VraagD1)}
+    </vl-accordion>
+    </vl-accordion-list>
+  </div>
+</div>
+  </vl-tabs-pane>
+</vl-tabs>
+    `;
   }
 }
 
