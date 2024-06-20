@@ -57,7 +57,7 @@ class OhrControles extends LitElement {
     <vl-typography slot="introduction">
     <p>
     De omgevingsinspectie wordt uitgevoerd op verschillende beleidsniveaus uitgevoerd, namelijk door gewestelijke, provinciale en gemeentelijke handhavingsactoren.
-    Deze pagina geeft via een interactieve tool de uitgevoerde controles weer die over de jaren heen ingezet worden door de handhavingsactoren voor de omgevingshandhaving in Vlaanderen.
+    Deze pagina geeft via een interactieve tool de uitgevoerde controles weer die over de jaren heen ingezet worden door de handhavingsactoren voor de omgevingshandhaving in Vlaanderen.</p>
    
  <vl-accordion data-vl-toggle-text="Informatie over het gebruik van het dashboard">
           <span>
@@ -67,7 +67,6 @@ class OhrControles extends LitElement {
           De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk hieronder. <br>
           Wanneer de gegevens niet gekend zijn, verschijnt “-“ of wordt aangegeven dat de data niet beschikbaar zijn.</span>
         </vl-accordion>
-</p>
 </vl-typography>`;
   }
 }

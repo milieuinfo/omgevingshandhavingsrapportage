@@ -68,7 +68,7 @@ class OhrKlachten extends LitElement {
           De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk hieronder. <br>
           Wanneer de gegevens niet gekend zijn, verschijnt “-“ of wordt aangegeven dat de data niet beschikbaar zijn.</span>
         </vl-accordion>
-      </p>
+     
       </vl-typography>`;
   }
 }

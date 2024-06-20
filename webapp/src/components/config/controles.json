@@ -1,7 +1,7 @@
 {
   "Controles met betrekking tot milieu": {
     "order": 1,
-    "label": "Milieu",
+    "label": "Controles milieu",
     "visualisations": [
       [
         {
@@ -85,7 +85,7 @@
   },
   "Controles met betrekking tot ruimtelijke ordening": {
     "order": 2,
-    "label": "Ruimtelijke ordening",
+    "label": "Controles ruimtelijke ordening",
     "visualisations": [
       [
         {
