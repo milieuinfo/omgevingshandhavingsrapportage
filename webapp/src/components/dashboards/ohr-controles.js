@@ -35,7 +35,7 @@ class OhrControles extends LitElement {
       <div style="margin: 3rem 0px">
         <vl-qlik-dashboard-page
             title="Controles"
-            export-id="JgmbA"
+            export-id="eubkp"
             url="omgevingsloketrapport.omgeving.vlaanderen.be"
             app-id="00dfde20-5561-47f6-9ff0-66cfb1e7484b"
             .views="${charts}"
