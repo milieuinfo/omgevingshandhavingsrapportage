@@ -23,7 +23,7 @@ import "@domg-wc/components/next/cascader";
 import "@domg-wc/elements/data-table";
 import "@domg-wc/elements/select";
 import "@domg-wc/components/spotlight";
-
+import "@domg-wc/components/typography";
 class OhrAGewest extends LitElement {
   static get styles() {
     return [...vlElementsStyle];
@@ -88,6 +88,8 @@ class OhrAGewest extends LitElement {
           <br />
           <div>${this.__renderViewSelector()}</div>
           <div>${this.__renderDynamicContent()}</div>
+          <vl-typgraphy data-cy="typography">
+          <b>Cijfers gebaseerd op de bevraging van gewestelijke actoren van 2023</b></vl-typgraphy>
         </div>
       </section>`;
   }
