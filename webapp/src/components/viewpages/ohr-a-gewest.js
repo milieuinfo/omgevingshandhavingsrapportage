@@ -24,6 +24,7 @@ import "@domg-wc/elements/data-table";
 import "@domg-wc/elements/select";
 import "@domg-wc/components/spotlight";
 import "@domg-wc/components/typography";
+import "@domg-wc/components/tabs";
 class OhrAGewest extends LitElement {
   static get styles() {
     return [...vlElementsStyle];

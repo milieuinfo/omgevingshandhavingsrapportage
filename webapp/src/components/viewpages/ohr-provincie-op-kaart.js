@@ -10,6 +10,7 @@ import {
   import "@domg-wc/components/functional-header";
   import "@domg-wc/qlik/infoblock";
   import "@domg-wc/components/accordion";
+  import "@domg-wc/components/tabs";
   import {vlElementsStyle} from "@domg-wc/elements";
   
   import options from "../config/provincie-op-kaart.json" assert {type: "json"};
@@ -52,7 +53,20 @@ import {
   
     __renderEverVizKaart() {
       return html`
-      <iframe class="everviz-iframe" src="${this.selectedChoiceUrl}" width="100%" height="450px"></iframe>`;
+          <vl-tabs data-vl-active-tab="Weergave per 1000 inwoners" data-vl-disable-links="">
+    <vl-tabs-pane data-vl-id="Weergave per 1000 inwoners" data-vl-title="Weergave per 1000 inwoners">
+        <div is="vl-grid">
+    <div is="vl-column" data-vl-size=12>
+ <iframe class="everviz-iframe" src="${this.selectedChoiceUrl}" width="100%" height="450px"></iframe>
+</div>
+</div>
+    </vl-tabs-pane>
+    <vl-tabs-pane data-vl-id="Absolute weergave" data-vl-title="Absolute weergave">
+            <div is="vl-grid">
+            <div is="vl-column" data-vl-size=12>
+  <iframe class="everviz-iframe" src="${this.selectedChoiceUrl}" width="100%" height="450px"></iframe></div>
+</div>   
+    </vl-tabs-pane>`;
     }
 
     __renderBackgroundInformation() {

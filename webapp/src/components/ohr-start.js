@@ -210,7 +210,7 @@ and performing other setup tasks.
           size: 2,
           template: html` <div is="vl-infotext" data-cy="infotext">
             <div>
-              <div data-vl-value="">98%</div>
+              <div data-vl-value="">96%</div>
               <div data-vl-text="">Reponsgraad</div>
             </div>
           </div>`,
