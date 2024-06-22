@@ -438,7 +438,7 @@ and performing other setup tasks.
         size: 6,
         template: html`
           <div ">
-          <a is="vl-doormat" href="/">
+          <a is="vl-doormat" href="/bestuurlijkevervolg-analyse">
             <h2 is="vl-doormat-title">Bestuurlijke sanctionering</h2>
             <div is="vl-doormat-text">
               Deze pagina toont de evolutie van het
