@@ -77,7 +77,9 @@ class OhrInleiding extends LitElement {
   __renderIntroduction() {
     return html`
     <vl-typography>
-      <h1>Dataverzameling en data-interpretatie</h1>
+    <h1 is="vl-h1" data-vl-no-space-bottom>
+               Dataverzameling en data-interpretatie
+              </h1>
       <p>
         Het decreet van 5 april 1995 houdende algemene bepalingen inzake
         milieubeleid (DABM) bepaalt in artikel 16.2.3 dat gegevens over de

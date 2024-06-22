@@ -14,13 +14,16 @@ import "@domg-wc/components/tabs";
 import {vlElementsStyle} from "@domg-wc/elements";
 
 import options from "../config/gemeente-op-kaart.json" assert {type: "json"};
+import options2 from "../config/gemeente-op-kaart-absolut.json" assert {type:"json"};
 
 class OhrOpkaart extends LitElement {
 
   static get properties() {
     return {
       selectedChoiceLabel: {type: String},
-      selectedChoiceUrl: {type: String}
+      selectedChoiceUrl: {type: String},
+      selectedChoiceLabelAbsoluut: {type: String},
+      selectedChoiceUrlAbsoluut: {type: String}
     }
   }
 
@@ -32,6 +35,8 @@ class OhrOpkaart extends LitElement {
     super();
     this.selectedChoiceUrl = options.find(o => o.selected).value;
     this.selectedChoiceLabel = options.find((o) => o.selected).label;
+    this.selectedChoiceUrlAbsoluut = options2.find(o2 => o2.selected).value;
+    this.selectedChoiceLabelAbsoluut = options2.find((o2) => o2.selected).label;
   }
 
   firstUpdated(_changedProperties) {
@@ -64,7 +69,7 @@ class OhrOpkaart extends LitElement {
     <vl-tabs-pane data-vl-id="Absolute weergave" data-vl-title="Absolute weergave">
             <div is="vl-grid">
             <div is="vl-column" data-vl-size=12>
-  <iframe class="everviz-iframe" src="${this.selectedChoiceUrl}" width="100%" height="450px"></iframe></div>
+  <iframe class="everviz-iframe" src="${this.selectedChoiceUrlAbsoluut}" width="100%" height="450px"></iframe></div>
 </div>   
     </vl-tabs-pane>`;
     
@@ -94,14 +99,24 @@ class OhrOpkaart extends LitElement {
           </p>
           </vl-typography>`
   }
-
   __changeView(event) {
-    const selectedOption = options.find((o) => o.value === event.target.value);
+    const selectedValue = event.target.value;
+  
+    // Find the selected option from the main options
+    const selectedOption = options.find(o => o.value === selectedValue);
+  
+    // Find the corresponding selected option from the options2
+    const selectedOption2 = options2.find(o2 => o2.label === selectedOption.label);
+  
     if (selectedOption) {
       this.selectedChoiceUrl = selectedOption.value;
       this.selectedChoiceLabel = selectedOption.label;
+      
+      if (selectedOption2) {
+        this.selectedChoiceUrlAbsoluut = selectedOption2.value;
+        this.selectedChoiceLabelAbsoluut = selectedOption2.label;
+      }
     }
-    
   }
 
   __renderSideNavigation() {
