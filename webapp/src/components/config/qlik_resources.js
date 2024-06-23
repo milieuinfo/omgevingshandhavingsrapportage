@@ -114,3 +114,59 @@ export const BESTUURLIJKSOORT = {
   field: "[soort]",
   nrOfValues: 10,
 }
+
+export const JAARTALBESTUURLIJK = {
+  name: "Jaartal",
+  fieldQualifier: "qText",
+  field: "[jaartal]",
+  nrOfValues: 100,
+}
+
+export const BELEIDSDOMEINBESTUURLIJKE = {
+  name: "Beleidsdomein",
+  fieldQualifier: "qText",
+  field: "[Beleidsdomein]",
+  nrOfValues: 10,
+}
+
+export const CATEGORIEBESTUURLIJKE = {
+  name: "Categorie",
+  fieldQualifier: "qText",
+  field: "[Rubriek]",
+  nrOfValues: 10,
+}
+
+export const TYPEBESTUURLIJKE = {
+  name: "Type",
+  fieldQualifier: "qText",
+  field: "[type]",
+  nrOfValues: 100,
+}
+
+export const JAARTALSTRAFRECHTELIJK = {
+  name: "Bevragingsjaartal",
+  fieldQualifier: "qText",
+  field: "[jaartal]",
+  nrOfValues: 100,
+}
+
+export const HOOFDRUBRIEKSTRAFRECHTELIJK = {
+  name: "Hoofdrubriek",
+  fieldQualifier: "qText",
+  field: "[hoofdrubriek]",
+  nrOfValues: 100,
+}
+
+export const RUBRIEKSTRAFRECHTELIJK = {
+  name: "Rubriek",
+  fieldQualifier: "qText",
+  field: "[rubriek]",
+  nrOfValues: 200,
+}
+
+export const BELEIDSDOMEINSTRAFRECHTELIJK = {
+  name: "Beleidsdomein",
+  fieldQualifier: "qText",
+  field: "[beleidsdomein]",
+  nrOfValues: 2,
+}

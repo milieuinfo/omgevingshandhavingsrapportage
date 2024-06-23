@@ -1,29 +1,179 @@
-[
-        [
-          {
-            "type": "visual",
-            "id": "cJJjPjw",
-            "height": "400px",
-            "visual_type": "barchart",
-            "label": "Aantal misdrijven per thema (drill down beschikbaar)"
-          },
-          {
-            "type": "visual",
-            "id": "UPhGBM",
-            "height": "400px",
-            "visual_type": "linechart",
-            "label": "Evolutie"
-          } 
-        ],
-        [
-          {
-            "type": "visual",
-            "id": "PqtD",
-            "height": "400px",
-            "visual_type": "barchart",
-            "label": "Stijging of daling t.o.v. 2021"
-          }
-         
-        ]
+{
+  "Misdrijven: Dashboard": {
+    "order": 1,
+    "label": "Misdrijven: Dashboard",
+    "visualisations": [
+      [
+        {
+          "type": "visual",
+          "id": "fLppYgF",
+          "height": "55px",
+          "visual_type": "kpi",
+          "label": "Ontvangen misdrijven",
+          "align-label": "center",
+          "align-visual": "center"
+        },
+        {
+          "type": "visual",
+          "id": "JjP",
+          "height": "55px",
+          "visual_type": "kpi",
+          "label": "Behandelde misdrijven",
+          "align-label": "center",
+          "align-visual": "center"
+        }
+      ],
+      [
+        {
+          "type": "visual",
+          "id": "NSmxR",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Misdrijven per categorie"
+        },
+        {
+          "type": "visual",
+          "id": "CbQpDq",
+          "height": "300px",
+          "visual_type": "linechart",
+          "label": "Evolutie misdrijven per jaartal"
+        }
+      ]
     ]
-  
+  },
+  "Misdrijven: Afhandeling": {
+    "order": 2,
+    "label": "Misdrijven: Afhandeling",
+    "visualisations": [
+      [
+        {
+          "type": "visual",
+          "id": "JtvJgRe",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Aantal behandelde misdrijven per categorie"
+        },
+        {
+          "type": "visual",
+          "id": "CAgWcS",
+          "height": "300px",
+          "visual_type": "linechart",
+          "label": "Evolutie behandelde misdrijven"
+        }
+      ],
+      [
+        {
+          "type": "visual",
+          "id": "DytA",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Aantal behandelde misdrijven per afhandeling"
+        },
+        {
+          "type": "visual",
+          "id": "beRMsj",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Evolutie behandelde misdrijven per afhandeling"
+        },
+        {
+          "type": "visual",
+          "id": "KCcwrSC",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Evolutie behandelde misdrijven voor beslissingen opportuniteitssepot of technische sepot"
+        }
+
+      ]
+    ]
+  },
+  "Inbreuken: Dashboard": {
+    "order": 3,
+    "label": "Inbreuken: Dashboard",
+    "visualisations": [
+      [
+        {
+          "type": "visual",
+          "id": "VhJb",
+          "height": "55px",
+          "visual_type": "kpi",
+          "label": "Ontvangen inbreuken",
+          "align-label": "center",
+          "align-visual": "center"
+        },
+        {
+          "type": "visual",
+          "id": "qxVnjb",
+          "height": "55px",
+          "visual_type": "kpi",
+          "label": "Behandelde inbreuken",
+          "align-label": "center",
+          "align-visual": "center"
+        }
+      ],
+      [
+        {
+          "type": "visual",
+          "id": "rWRJRD",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Inbreuken per categorie"
+        },
+        {
+          "type": "visual",
+          "id": "vaPUyRY",
+          "height": "300px",
+          "visual_type": "linechart",
+          "label": "Evolutie inbreuken per jaartal"
+        }
+      ]
+    ]
+  },
+  "Inbreuken: Afhandeling": {
+    "order": 2,
+    "label": "Inbreuken: Afhandeling",
+    "visualisations": [
+      [
+        {
+          "type": "visual",
+          "id": "e34d612b-20f5-47a5-a018-e4e8e00536d9",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Aantal behandelde inbreuken per categorie"
+        },
+        {
+          "type": "visual",
+          "id": "558dedf4-7a17-4220-ad15-2e567b742d5b",
+          "height": "300px",
+          "visual_type": "linechart",
+          "label": "Evolutie behandelde inbreuken"
+        }
+      ],
+      [
+        {
+          "type": "visual",
+          "id": "be1e6d9a-0b22-4923-8f84-f2948aadf752",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Aantal behandelde inbreuken per afhandeling"
+        },
+        {
+          "type": "visual",
+          "id": "271280ff-bae3-4181-939b-5d5386f81c3c",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Evolutie behandelde inbreuken per afhandeling"
+        },
+        {
+          "type": "visual",
+          "id": "c49367bd-a994-4a07-b435-d0640bede653",
+          "height": "300px",
+          "visual_type": "barchart",
+          "label": "Evolutie behandelde inbreuken voor beslissingen opportuniteitssepot of technische sepot"
+        }
+
+      ]
+    ]
+  }
+
+}

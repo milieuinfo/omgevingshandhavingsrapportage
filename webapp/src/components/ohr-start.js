@@ -451,7 +451,7 @@ and performing other setup tasks.
         size: 6,
         template: html`
           <div ">
-          <a is="vl-doormat" href="">
+          <a is="vl-doormat" href="/strafrechtelijk-analyse">
             <h2 is="vl-doormat-title">Strafrechtelijke
               sanctionering</h2>
             <div is="vl-doormat-text">

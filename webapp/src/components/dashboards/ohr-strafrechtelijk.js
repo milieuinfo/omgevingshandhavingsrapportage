@@ -1,7 +1,7 @@
 import {html, LitElement} from "../common/commons.js";
 
-import viz from "../config/bestuurlijkevervolgtrajet.json" assert {type: "json"};
-import filters from "../config/bestuurlijkevervolgtraject-filters.js";
+import viz from "../config/strafrechtelijkvervolgtraject.json" assert {type: "json"};
+import filters from "../config/strafrechtelijk-filters.js";
 
 import "@domg-wc/components/functional-header";
 import "@domg-wc/components/typography";
@@ -10,7 +10,7 @@ import "@domg-wc/qlik/dashboard-page";
 import {vlElementsStyle} from "@domg-wc/elements";
 import "@domg-wc/components/alert";
 
-class OhrBestuurlijkevervolgtraject extends LitElement {
+class OhrStrafrechtelijkvervolgtraject extends LitElement {
 
   static get styles() {
     return [...vlElementsStyle];
@@ -28,15 +28,15 @@ class OhrBestuurlijkevervolgtraject extends LitElement {
           data-vl-back="Terug"
           data-vl-back-link="/"
           data-vl-title="Omgevingshandhavingsrapportage"
-          data-vl-sub-title="Bestuurlijke sanctionering"
-          data-vl-link="/bestuurlijkevervolg-analyse">
+          data-vl-sub-title="Strafrechtelijk sanctionering"
+          data-vl-link="/strafrechtelijk-analyse">
       </vl-functional-header>
       <div style="margin: 3rem 0px">
         <vl-qlik-dashboard-page
-            title="Bestuurlijke sanctionering"
-            export-id="HwSaGq"
+            title="Strafrechtelijk sanctionering"
+            export-id="mkWEU"
             url="omgevingsloketrapport.omgeving.vlaanderen.be"
-            app-id="fdb16cce-7388-4b02-84d0-7f31e29fef29"
+            app-id="1b3c1014-cde6-4969-92fb-68fc10753f88"
             .views="${viz}"
             .filters="${filters}"
             @initialized="${() => this.initialized = true}">
@@ -61,7 +61,7 @@ Deze pagina geeft via een interactieve tool de cijfers van het bestuurlijk vervo
  
 Het standaard beeld geeft de totale cijfers tot en met het voorgaande jaar weer voor het bestuurlijk vervolgtraject in heel Vlaanderen.
         </p>
-       <vl-accordion data-vl-toggle-text="Informatie over het gebruik van het dashboard">
+         <vl-accordion data-vl-toggle-text="Informatie over het gebruik van het dashboard">
           <span>
           Het standaard beeld geeft de totale cijfers van 2021 tot en met het voorgaande jaar weer voor de omgevingsinspectie in heel Vlaanderen. <br>
           Via de filters kan u kiezen om de cijfers van één jaar,  één beleidsniveau of één actor weer te geven.
@@ -73,6 +73,5 @@ Het standaard beeld geeft de totale cijfers tot en met het voorgaande jaar weer 
     `;
   }
 }
-
-customElements.define("ohr-bestuurlijkevervolgtraject", OhrBestuurlijkevervolgtraject);
+customElements.define("ohr-strafrechtelijkvervolgtraject", OhrStrafrechtelijkvervolgtraject);
     

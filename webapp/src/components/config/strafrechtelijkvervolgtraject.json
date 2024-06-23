@@ -1,0 +1,177 @@
+{
+    "Instroom": {
+      "order": 1,
+      "label": "Instroom",
+      "visualisations": [
+        [
+          {
+            "type": "visual",
+            "id": "vejkW",
+            "height": "55px",
+            "visual_type": "kpi",
+            "label": "Milieu",
+            "align-label": "center",
+            "align-visual": "center"
+          },
+          {
+            "type": "visual",
+            "id": "SJnjak",
+            "height": "55px",
+            "visual_type": "kpi",
+            "label": "Ruimtelijke ordening",
+            "align-label": "center",
+            "align-visual": "center"
+          }
+        ],
+        [
+          {
+            "type": "visual",
+            "id": "npYK",
+            "height": "300px",
+            "visual_type": "barchart",
+            "label": "Verdeling per categorie"
+          },
+          {
+            "type": "visual",
+            "id": "mkVHeV",
+            "height": "300px",
+            "visual_type": "linechart",
+            "label": "Evolutie instroom per beleidsdomein"
+          }
+        ],
+        [
+            {
+                "type": "visual",
+                "id": "PeEXsph",
+                "height": "300px",
+                "visual_type": "barchart",
+                "label": "Evolutie per categorie"
+              },
+              {
+                "type": "visual",
+                "id": "KPBmpHk",
+                "height": "300px",
+                "visual_type": "barchart",
+                "label": "Verdeling per subcategorie"
+              }
+        ]
+      ]
+    },
+    "Uitstroom": {
+      "order": 2,
+      "label": "Uitstroom",
+      "visualisations": [
+        [
+          {
+            "type": "visual",
+            "id": "DpVmSpA",
+            "height": "55px",
+            "visual_type": "kpi",
+            "label": "Milieu",
+            "align-label": "center",
+            "align-visual": "center"
+          },
+          {
+            "type": "visual",
+            "id": "ywJP",
+            "height": "55px",
+            "visual_type": "kpi",
+            "label": "Ruimtelike ordening",
+            "align-label": "center",
+            "align-visual": "center"
+          }
+        ],
+        [
+          {
+            "type": "visual",
+            "id": "qhes",
+            "height": "300px",
+            "visual_type": "barchart",
+            "label": "Aantal per categorie"
+          },
+          {
+            "type": "visual",
+            "id": "SXmVnJD",
+            "height": "300px",
+            "visual_type": "linechart",
+            "label": "Evolutie uitstroom per beleidsniveau"
+          }
+        ],
+        [
+          {
+            "type": "visual",
+            "id": "xKkPM",
+            "height": "300px",
+            "visual_type": "barchart",
+            "label": "Totaal aantal afhandeling"
+          },
+          {
+            "type": "visual",
+            "id": "BHpJGyx",
+            "height": "300px",
+            "visual_type": "linechart",
+            "label": "Evolutie afhandeling"
+          }
+        ]
+      ]
+    },
+    "Motieven": {
+        "order": 3,
+        "label": "Motieven",
+        "visualisations": [
+          [
+            {
+              "type": "visual",
+              "id": "njpRdm",
+              "height": "55px",
+              "visual_type": "kpi",
+              "label": "Aantal milieu",
+              "align-label": "center",
+              "align-visual": "center"
+            },
+            {
+              "type": "visual",
+              "id": "vMwdQp",
+              "height": "55px",
+              "visual_type": "kpi",
+              "label": "Aantal ruimtelijke ordening",
+              "align-label": "center",
+              "align-visual": "center"
+            }
+          ],
+          [
+            {
+              "type": "visual",
+              "id": "mYUNTw",
+              "height": "300px",
+              "visual_type": "barchart",
+              "label": "Aantal motieven per categorie"
+            },
+            {
+              "type": "visual",
+              "id": "pyUE",
+              "height": "300px",
+              "visual_type": "barchart",
+              "label": "Evolutie motieven per beleidsniveau"
+            }
+          ],
+          [
+            {
+              "type": "visual",
+              "id": "UZmpqp",
+              "height": "300px",
+              "visual_type": "barchart",
+              "label": "Totaal aantal resultaten"
+            },
+            {
+              "type": "visual",
+              "id": "Nfjhr",
+              "height": "300px",
+              "visual_type": "linechart",
+              "label": "Evolutie afhandeling motieven"
+            }
+          ]
+        ]
+      }
+  }
+  

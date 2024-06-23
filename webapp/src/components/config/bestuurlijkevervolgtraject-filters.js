@@ -1,30 +1,30 @@
 import {
-    JAAR,
-    BESTUURLIJKTHEMA,
-    BESTUURLIJKCAT,
-    BESTUURLIJKSOORT
+  JAARTALBESTUURLIJK,
+  BELEIDSDOMEINBESTUURLIJKE,
+  CATEGORIEBESTUURLIJKE,
+  TYPEBESTUURLIJKE
     } from "./qlik_resources.js";
     
     const filters = [
       {
         name: "Jaartal",
         id: "Jaartal",
-        filter: JAAR
+        filter: JAARTALBESTUURLIJK
       },
       {
-          name: "Thema",
-          id: "Thema",
-          filter: BESTUURLIJKTHEMA
+          name: "Beleidsdomein",
+          id: "Beleidsdomein",
+          filter: BELEIDSDOMEINBESTUURLIJKE
       },
       {
         name: "Categorie",
         id: "Categorie",
-        filter: BESTUURLIJKCAT
+        filter: CATEGORIEBESTUURLIJKE
       },
       {
-        name: "Soort",
+        name: "Type",
         id: "Soort",
-        filter: BESTUURLIJKSOORT
+        filter: TYPEBESTUURLIJKE
       },
       
     ]
