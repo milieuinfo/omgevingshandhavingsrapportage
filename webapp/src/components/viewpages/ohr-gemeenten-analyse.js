@@ -16,13 +16,13 @@ import "@domg-wc/elements/grid";
 import "@domg-wc/elements/title";
 import "@domg-wc/components/content-header";
 import "@domg-wc/components/loader";
-import "@domg-wc/qlik/infoblock";
 import "@domg-wc/components/accordion-list";
 import "@domg-wc/components/accordion";
-import "@domg-wc/components/next/cascader";
 import "@domg-wc/elements/data-table";
 import "@domg-wc/elements/select";
-import "@domg-wc/components/spotlight";
+import "@domg-wc/components/tabs";
+import "@domg-wc/components/functional-header";
+import "@domg-wc/components/typography";
 
 class OhrGemeentenAnalyse extends LitElement {
   static get styles() {

@@ -7,8 +7,8 @@ import {
 } from "../common/commons.js";
 
 import "@domg-wc/elements/select";
+import "@domg-wc/elements/grid";
 import "@domg-wc/components/functional-header";
-import "@domg-wc/qlik/infoblock";
 import "@domg-wc/components/accordion";
 import "@domg-wc/components/tabs";
 import "@domg-wc/components/typography";

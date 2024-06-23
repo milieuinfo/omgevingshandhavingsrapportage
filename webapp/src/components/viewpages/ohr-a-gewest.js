@@ -81,8 +81,6 @@ class OhrAGewest extends LitElement {
           <br />
           <div>${this.__renderViewSelector()}</div>
           <div>${this.__renderDynamicContent()}</div>
-          <vl-typgraphy data-cy="typography">
-          <b>Cijfers gebaseerd op de bevraging van gewestelijke actoren van 2023</b></vl-typgraphy>
         </div>
       </section>`;
   }

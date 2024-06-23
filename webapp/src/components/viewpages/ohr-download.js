@@ -7,7 +7,6 @@ import "@domg-wc/elements/image";
 import "@domg-wc/elements/link-list";
 import "@domg-wc/elements/link";
 import "@domg-wc/components/accordion";
-import "@domg-wc/components/content-header";
 
 class OhrDownload extends LitElement {
 

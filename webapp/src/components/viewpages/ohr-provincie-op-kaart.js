@@ -8,7 +8,6 @@ import {
   
   import "@domg-wc/elements/select";
   import "@domg-wc/components/functional-header";
-  import "@domg-wc/qlik/infoblock";
   import "@domg-wc/components/accordion";
   import "@domg-wc/components/tabs";
   import {vlElementsStyle} from "@domg-wc/elements";

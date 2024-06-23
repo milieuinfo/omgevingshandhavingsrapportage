@@ -6,15 +6,12 @@ import jsonData from "../datafiles/hogeraad.json" assert {type: "json"};
 import "@domg-wc/elements/image";
 import "@domg-wc/elements/grid";
 import "@domg-wc/elements/title";
-import "@domg-wc/components/content-header";
 import "@domg-wc/components/loader";
-import "@domg-wc/qlik/infoblock";
 import "@domg-wc/components/accordion";
 import "@domg-wc/components/accordion-list";
-import "@domg-wc/components/alert";
-import "@domg-wc/components/next/cascader";
 import "@domg-wc/elements/data-table";
-import "@domg-wc/components/spotlight";
+import "@domg-wc/components/tabs";
+import "@domg-wc/components/functional-header";
 
 class OhrHogeRaadAnalyse extends LitElement {
 

@@ -6,7 +6,6 @@ import "@domg-wc/elements/grid";
 import "@domg-wc/elements/title";
 import "@domg-wc/elements/link";
 import "@domg-wc/elements/link-list";
-import "@domg-wc/components/content-header";
 
 class OhrInleiding extends LitElement {
 
