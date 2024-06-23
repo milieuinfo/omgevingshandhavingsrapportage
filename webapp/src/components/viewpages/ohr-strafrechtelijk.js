@@ -27,7 +27,7 @@ class OhrStrafrechtelijk extends LitElement {
     <vl-functional-header
     data-vl-back="Terug"
     data-vl-back-link="/"
-    data-vl-title="Strafrechtelijke en bestuurlijke vervolgtraject"
+    data-vl-title="Strafrechtelijke en bestuurlijke sanctionering"
     data-vl-sub-title="Omgevingshandhavingsrapportage"
     data-vl-link="/strafrechtelijk">
 </vl-functional-header>
@@ -37,7 +37,7 @@ class OhrStrafrechtelijk extends LitElement {
               {
                 size: 8,
                 template: html`<h1 is="vl-h1" data-vl-no-space-bottom>
-                  Strafrechtelijke en bestuurlijke vervolgtraject
+                  Strafrechtelijke en bestuurlijke sanctionering
                 </h1><h4 is="vl-h4">Over de cijfers en procedure</h3>`,
               },
               {

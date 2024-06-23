@@ -11,6 +11,7 @@ import "@domg-wc/components/functional-header";
 import "@domg-wc/qlik/infoblock";
 import "@domg-wc/components/accordion";
 import "@domg-wc/components/tabs";
+import "@domg-wc/components/typography";
 import {vlElementsStyle} from "@domg-wc/elements";
 
 import options from "../config/gemeente-op-kaart.json" assert {type: "json"};
@@ -87,7 +88,7 @@ class OhrOpkaart extends LitElement {
         <br>
         <p>De kleurgradaties wijzen op de aantallen in de gemeenten per 1.000 inwoners.</p>
           <p>De responsgraad voor deze bevraging (of bepaalde vragen in de bevraging) bedraagt geen 100%.</p>
-      </vl-typography>`
+      </vl-typography>`;
   }
 
   __renderBackgroundInformation() {
@@ -97,7 +98,7 @@ class OhrOpkaart extends LitElement {
           <br/>
           Niet gekend: Gemeenten kon geen cijfers geven over dit handhavingsthema.</em>
           </p>
-          </vl-typography>`
+          </vl-typography>`;
   }
   __changeView(event) {
     const selectedValue = event.target.value;
