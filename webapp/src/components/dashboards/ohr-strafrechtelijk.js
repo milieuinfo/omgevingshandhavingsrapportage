@@ -55,11 +55,12 @@ class OhrStrafrechtelijkvervolgtraject extends LitElement {
     return html`
       <vl-typography slot="introduction">
         <p>
-        De gewestelijke beboetingsentiteit heeft kennis van alle verslagen van vaststelling en alle processen-verbaal die door het openbaar ministerie naar hen werden doorgestuurd voor het opleggen van een bestuurlijke geldboete. Ze staat in voor de verdere bestuurlijke afhandeling van de dossiers.
+        Het Openbaar Ministerie heeft kennis van alle processen-verbaal die worden opgesteld in het kader van de omgevingshandhaving. Ze staat in voor de verdere strafrechtelijke afhandeling van de dossiers. 
  
-Deze pagina geeft via een interactieve tool de cijfers van het bestuurlijk vervolgtraject over de jaren heen weer. De cijfers zullen wijzigen naargelang de gekozen filtering.
+Deze pagina geeft via een interactieve tool de cijfers van het strafrechtelijk vervolgtraject over de jaren heen weer. De cijfers zullen wijzigen naargelang de gekozen filtering.
  
-Het standaard beeld geeft de totale cijfers tot en met het voorgaande jaar weer voor het bestuurlijk vervolgtraject in heel Vlaanderen.
+Het standaard beeld geeft de totale cijfers tot en met het voorgaande jaar weer voor het strafrechtelijk vervolgtraject in heel Vlaanderen. 
+
         </p>
          <vl-accordion data-vl-toggle-text="Informatie over het gebruik van het dashboard">
           <span>
