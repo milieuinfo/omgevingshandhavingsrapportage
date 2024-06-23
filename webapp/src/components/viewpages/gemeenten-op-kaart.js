@@ -13,6 +13,8 @@ import "@domg-wc/components/accordion";
 import "@domg-wc/components/tabs";
 import "@domg-wc/components/typography";
 import {vlElementsStyle} from "@domg-wc/elements";
+import "@domg-wc/elements/link";
+import "@domg-wc/elements/link-list";
 
 import options from "../config/gemeente-op-kaart.json" assert {type: "json"};
 import options2 from "../config/gemeente-op-kaart-absolut.json" assert {type:"json"};

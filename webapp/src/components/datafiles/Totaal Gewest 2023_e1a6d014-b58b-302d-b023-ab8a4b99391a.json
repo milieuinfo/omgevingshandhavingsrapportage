@@ -44,16 +44,10 @@
             },
             "Instrument": {
                 "Aantal raadgevingen milieu": "niet gekend",
-                "Aantal raadgevingen ruimtelijke ordening": "niet gekend",
                 "Aanmaning milieu": "niet gekend",
-                "Aanmaning": "niet gekend",
                 "Procesverbaal milieu": "niet gekend",
-                "Procesverbaal ro": "niet gekend",
                 "Verslag van vaststelling": "niet gekend",
-                "Verslag van vaststelling1": "niet gekend",
-                "Bevel tot staking": "niet gekend",
-                "Bestuurlijke maatregel milieu": "niet gekend",
-                "Bestuurlijke maatregel RO": "niet gekend"
+                "Bestuurlijke maatregel milieu": "niet gekend"
             },
             "Thema": {
                 "PFAS": "Geen opmerking",
@@ -276,16 +270,11 @@
             },
             "Instrument": {
                 "Aantal raadgevingen milieu": "niet gekend",
-                "Aantal raadgevingen ruimtelijke ordening": "niet gekend",
                 "Aanmaning milieu": "niet gekend",
                 "Aanmaning": "niet gekend",
                 "Procesverbaal milieu": "niet gekend",
-                "Procesverbaal ro": "niet gekend",
                 "Verslag van vaststelling": "niet gekend",
-                "Verslag van vaststelling1": "niet gekend",
-                "Bevel tot staking": "niet gekend",
-                "Bestuurlijke maatregl milieu": "niet gekend",
-                "Bestuurlijke maatregel RO": "niet gekend"
+                "Bestuurlijke maatregl milieu": "niet gekend"
             },
             "Thema": {
                 "PFAS": "Geen actie ondernomen",
@@ -295,7 +284,7 @@
                 "Opmerking": 0
             }
         },
-        "dOMGGOP": {
+        "Departement Omgeving: GOP": {
             "gewestelijkeToezichthouders": {
                 "Toezichthouders": 7,
                 "VTE Toezichthouders": "0,3",
@@ -354,7 +343,7 @@
                 "Opmerking": "Geen opmerking."
             }
         },
-        "dOMGHH": {
+        "Departement Omgeving: Handhaving": {
             "gewestelijkeToezichthouders": {
                 "Toezichthouders": 97,
                 "VTE Toezichthouders": "84,55",
@@ -413,7 +402,7 @@
                 "Opmerking": "Geen opmerking."
             }
         },
-        "DOMGVPO": {
+        "Departement Omgeving: VPO": {
             "gewestelijkeToezichthouders": {
                 "Toezichthouders": 7,
                 "VTE Toezichthouders": "0,2",
@@ -1021,7 +1010,7 @@
                 "Opmerking": "Geen opmerking."
             }
         },
-        "dOMGGOP": {
+        "Departement Omgeving: GOP": {
             "Gewest": "Departement Omgeving afdeling GOP",
             "PersoneelRO": {
                 "Verbalisanten": 0,
@@ -1068,7 +1057,7 @@
                 "Opmerking": "Geen opmerking."
             }
         },
-        "dOMGHH": {
+        "Departement Omgeving: Handhaving": {
             "Gewest": "Departement Omgeving afdeling Handhaving",
             "PersoneelRO": {
                 "Verbalisanten": 10,
@@ -1114,7 +1103,7 @@
                 "Opmerking": "Geen opmerking."
             }
         },
-        "DOMGVPO": {
+        "Departement Omgeving: VPO": {
             "Gewest": "Departement omgeving afdeling VPO",
             "PersoneelRO": {
                 "Verbalisanten": 0,

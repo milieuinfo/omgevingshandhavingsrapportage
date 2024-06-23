@@ -21,8 +21,16 @@
       "value": "Departement Mobiliteit en Openbare Werken"
     },
     {
-      "label": "Departement Omgeving (DOMG)",
-      "value": "Departement Omgeving"
+      "label": "Departement Omgeving: Handhaving",
+      "value": "Departement Omgeving: Handhaving"
+    },
+    {
+       "label": "Departement Omgeving: VPO",
+      "value": "Departement Omgeving: VPO"
+    },
+    {
+      "label": "Departement Omgeving: GOP",
+      "value": "Departement Omgeving: GOP"
     },
     {
       "label": "Departement Zorg",

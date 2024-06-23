@@ -8,7 +8,7 @@ import "@domg-wc/elements/text";
 import "@domg-wc/elements/doormat";
 import "@domg-wc/elements/link";
 import "@domg-wc/elements/link-list";
-import "@domg-wc/components/content-header";
+import "@domg-wc/components/functional-header";
 
 class OhrProvincie extends LitElement {
 

@@ -10,6 +10,7 @@ import {
   import "@domg-wc/components/functional-header";
   import "@domg-wc/components/accordion";
   import "@domg-wc/components/tabs";
+  import "@domg-wc/components/typography";
   import {vlElementsStyle} from "@domg-wc/elements";
   
   import options from "../config/provincie-op-kaart.json" assert {type: "json"};

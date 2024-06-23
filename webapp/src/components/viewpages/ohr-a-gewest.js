@@ -16,6 +16,8 @@ import "@domg-wc/elements/data-table";
 import "@domg-wc/elements/select";
 import "@domg-wc/components/typography";
 import "@domg-wc/components/tabs";
+import "@domg-wc/elements/link";
+import "@domg-wc/elements/link-list";
 
 class OhrAGewest extends LitElement {
   static get styles() {

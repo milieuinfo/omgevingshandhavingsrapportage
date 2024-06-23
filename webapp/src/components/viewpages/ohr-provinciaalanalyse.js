@@ -20,6 +20,8 @@ import "@domg-wc/components/accordion";
 import "@domg-wc/elements/data-table";
 import "@domg-wc/elements/select";
 import "@domg-wc/components/tabs";
+import "@domg-wc/elements/link";
+import "@domg-wc/elements/link-list";
 
 class OhrProvincieAnalyse extends LitElement {
 
