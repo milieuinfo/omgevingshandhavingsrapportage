@@ -193,101 +193,114 @@ class OhrAGewest extends LitElement {
   }
 
   __renderDynamicContent() {
-      return html`
-<vl-tabs data-vl-active-tab="Personeel" data-vl-disable-links="">
-    <vl-tabs-pane data-vl-id="Personeel" data-vl-title="Personeel">
-        <div is="vl-grid">
-    <div is="vl-column" data-vl-size=6>
-        ${this.__renderDataSection(jsonData2.Milieu[this.selectedChoiceUrl].gewestelijkeToezichthouders,"Milieu")}
-    </div>
-
-     <div is="vl-column" data-vl-size=6>
-        ${this.__renderDataSection(
-          jsonData2.RO[this.selectedChoiceUrl].PersoneelRO,"Ruimtelijke ordening"
-        )}
-    </div>
-</div>
-    </vl-tabs-pane>
-    <vl-tabs-pane data-vl-id="Klachten" data-vl-title="Klachten">
-            <div is="vl-grid">
-    <div is="vl-column" data-vl-size=6>
-    ${this.__renderDataSection(jsonData2.Milieu[this.selectedChoiceUrl].Klachten,"Milieu")}
-    </div>
-
-     <div is="vl-column" data-vl-size=6>
-     ${this.__renderDataSection(jsonData2.RO[this.selectedChoiceUrl].Klachten,"Ruimtelijke ordening")}
-    </div>
-</div>   
-    </vl-tabs-pane>
-    <vl-tabs-pane data-vl-id="Controles" data-vl-title="Controles">
-      <div is="vl-grid">
-    <div is="vl-column" data-vl-size=6>
-    ${this.__renderDataSection(jsonData2.Milieu[this.selectedChoiceUrl].Controles,"Milieu")}
-    </div>
-
-     <div is="vl-column" data-vl-size=6>
-        ${this.__renderDataSection(
-          jsonData2.RO[this.selectedChoiceUrl].Controles,"Ruimtelijke ordening"
-        )}
-    </div>
-</div>
-    <div is="vl-grid">
-    <div is="vl-column" data-vl-size=12>
-    <vl-typography>
-        <h3>
-          Aanvankelijke controles met schending
-        </h3>
-    </vl-typography>
-    </div>
-    </div>
-      <div is="vl-grid">
-    <div is="vl-column" data-vl-size=6>
-         ${this.__renderDataSection(
-          jsonData2.Milieu[this.selectedChoiceUrl].Aanvankelijkecontrolesmetschending,"Milieu"
-        )}
-    </div>
-
-     <div is="vl-column" data-vl-size=6>
-     ${this.__renderDataSection(jsonData2.RO[this.selectedChoiceUrl].Aanvankelijkecontrolesmetschending,"Ruimtelijke ordening")}
-    </div>
-</div>
-    </vl-tabs-pane>
-     <vl-tabs-pane data-vl-id="Instrumentarium" data-vl-title="Instrumentarium">
-      <div is="vl-grid">
-    <div is="vl-column" data-vl-size=6>
-    ${this.__renderDataSection(jsonData2.Milieu[this.selectedChoiceUrl].Instrument,"Milieu")}
-    </div>
-
-     <div is="vl-column" data-vl-size=6>
-     ${this.__renderDataSection(jsonData2.RO[this.selectedChoiceUrl].Instrument,"Ruimtelijke ordening")}
-    </div>
-</div>
-    </vl-tabs-pane>
-    <vl-tabs-pane data-vl-id="Themagerichte acties" data-vl-title="Themagerichte acties">
-     <div is="vl-grid">
-    <div is="vl-column" data-vl-size=6>
-    ${this.__renderDataSection(jsonData2.Milieu[this.selectedChoiceUrl].Thema,"Milieu")}
-    </div>
-
-     <div is="vl-column" data-vl-size=6>
-     ${this.__renderDataSection(jsonData2.RO[this.selectedChoiceUrl].Thema,"Ruimtelijke ordening")}
-    </div>
-</div>  
-    </vl-tabs-pane>
-    <vl-tabs-pane data-vl-id="Opmerkingen" data-vl-title="Opmerkingen">
-     <div is="vl-grid">
-    <div is="vl-column" data-vl-size=6>
-    ${this.__renderOpmerkingsection(jsonData2.RO[this.selectedChoiceUrl].Opmerking,"Milieu")}
-    </div>
-
-     <div is="vl-column" data-vl-size=6>
-     ${this.__renderOpmerkingsection(jsonData2.RO[this.selectedChoiceUrl].Opmerking,"Ruimtelijke ordening")}
-    </div>
-</div>  
-    </vl-tabs-pane>
-</vl-tabs>
-      `;
-    }
+    const beleid = jsonData2.Beleid[this.selectedChoiceUrl];
+  
+    const renderColumns = (milieuData, roData, milieuLabel, roLabel) => {
+      if (beleid === 'Both') {
+        return html`
+          <div is="vl-column" data-vl-size=6>
+            ${this.__renderDataSection(milieuData, milieuLabel)}
+          </div>
+          <div is="vl-column" data-vl-size=6>
+            ${this.__renderDataSection(roData, roLabel)}
+          </div>
+        `;
+      } else if (beleid === 'Milieu') {
+        return html`
+          <div is="vl-column" data-vl-size=12>
+            ${this.__renderDataSection(milieuData, milieuLabel)}
+          </div>
+        `;
+      } else if (beleid === 'RO') {
+        return html`
+          <div is="vl-column" data-vl-size=12>
+            ${this.__renderDataSection(roData, roLabel)}
+          </div>
+        `;
+      }
+    };
+  
+    return html`
+      <vl-tabs data-vl-active-tab="Personeel" data-vl-disable-links="">
+        <vl-tabs-pane data-vl-id="Personeel" data-vl-title="Personeel">
+          <div is="vl-grid">
+            ${renderColumns(
+              jsonData2.Milieu[this.selectedChoiceUrl].gewestelijkeToezichthouders,
+              jsonData2.RO[this.selectedChoiceUrl].PersoneelRO,
+              "Milieu",
+              "Ruimtelijke ordening"
+            )}
+          </div>
+        </vl-tabs-pane>
+        <vl-tabs-pane data-vl-id="Klachten" data-vl-title="Klachten">
+          <div is="vl-grid">
+            ${renderColumns(
+              jsonData2.Milieu[this.selectedChoiceUrl].Klachten,
+              jsonData2.RO[this.selectedChoiceUrl].Klachten,
+              "Milieu",
+              "Ruimtelijke ordening"
+            )}
+          </div>
+        </vl-tabs-pane>
+        <vl-tabs-pane data-vl-id="Controles" data-vl-title="Controles">
+          <div is="vl-grid">
+            ${renderColumns(
+              jsonData2.Milieu[this.selectedChoiceUrl].Controles,
+              jsonData2.RO[this.selectedChoiceUrl].Controles,
+              "Milieu",
+              "Ruimtelijke ordening"
+            )}
+          </div>
+          <div is="vl-grid">
+            <div is="vl-column" data-vl-size=12>
+              <vl-typography>
+                <h3>Aanvankelijke controles met schending</h3>
+              </vl-typography>
+            </div>
+          </div>
+          <div is="vl-grid">
+            ${renderColumns(
+              jsonData2.Milieu[this.selectedChoiceUrl].Aanvankelijkecontrolesmetschending,
+              jsonData2.RO[this.selectedChoiceUrl].Aanvankelijkecontrolesmetschending,
+              "Milieu",
+              "Ruimtelijke ordening"
+            )}
+          </div>
+        </vl-tabs-pane>
+        <vl-tabs-pane data-vl-id="Instrumentarium" data-vl-title="Instrumentarium">
+          <div is="vl-grid">
+            ${renderColumns(
+              jsonData2.Milieu[this.selectedChoiceUrl].Instrument,
+              jsonData2.RO[this.selectedChoiceUrl].Instrument,
+              "Milieu",
+              "Ruimtelijke ordening"
+            )}
+          </div>
+        </vl-tabs-pane>
+        <vl-tabs-pane data-vl-id="Themagerichte acties" data-vl-title="Themagerichte acties">
+          <div is="vl-grid">
+            ${renderColumns(
+              jsonData2.Milieu[this.selectedChoiceUrl].Thema,
+              jsonData2.RO[this.selectedChoiceUrl].Thema,
+              "Milieu",
+              "Ruimtelijke ordening"
+            )}
+          </div>
+        </vl-tabs-pane>
+        <vl-tabs-pane data-vl-id="Opmerkingen" data-vl-title="Opmerkingen">
+          <div is="vl-grid">
+            ${renderColumns(
+              jsonData2.RO[this.selectedChoiceUrl].Opmerking,
+              jsonData2.RO[this.selectedChoiceUrl].Opmerking,
+              "Milieu",
+              "Ruimtelijke ordening"
+            )}
+          </div>
+        </vl-tabs-pane>
+      </vl-tabs>
+    `;
+  }
+  
 }
 
 customElements.define("ohr-agewest", OhrAGewest);
