@@ -1,6 +1,7 @@
 {
   "Milieu":{
     "AMDK": {
+     
       "gewestelijkeToezichthouders": {
         "Toezichthouders": "niet gekend",
         "VTE": "niet gekend",
@@ -1801,7 +1802,25 @@
                     }
                   }
                     ,
-                    "RO": {}}
+                    "RO": {},
+                  "Beleid": {
+                    "Agentschap voor Maritieme Dienstverlening en Kust": "Milieu",
+                    "Agentschap voor Natuur en Bos": "Both" ,
+                    "Agentschap Wegen en Verkeer": "Milieu",
+                    "Vlaamse Waterweg": "Milieu",
+                    "Departement Mobiliteit en Openbare Werken": "Milieu",
+                    "Departement Omgeving: Handhaving": "Both" ,
+                    "Departement Omgeving: VPO": "Both" ,
+                    "Departement Omgeving: GOP": "Both",
+                    "Departement Zorg": "Milieu",
+                    "Openbare Vlaamse Afvalstoffenmaatschappij": "Milieu",
+                    "Vlaams Energie- en Klimaatagentschap": "Milieu",
+                    "Vlaamse Landmaatschappij": "Milieu",
+                    "Vlaamse Milieumaatschappij": "Milieu",
+                    "Vlaamse Wooninspectie": "RO"
+
+                  }
+                  }
 
 
 

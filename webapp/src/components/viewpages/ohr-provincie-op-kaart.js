@@ -12,6 +12,7 @@ import {
   import "@domg-wc/components/tabs";
   import "@domg-wc/components/typography";
   import {vlElementsStyle} from "@domg-wc/elements";
+  import "@domg-wc/components/accordion";
   
   import options from "../config/provincie-op-kaart.json" assert {type: "json"};
   import options2 from "../config/provincie-op-kaart-absoluut.json" assert {type:"json"};
@@ -80,19 +81,25 @@ import {
       <p><em>
       Niet gekend: Gemeenten kon geen cijfers geven over deze handhavignsthema.</em>
       </p>
-      </vl-typography>`
+      </vl-typography>`;
     }
   
     __renderIntroductionOfMaps() {
       return html`
-      <h2 is="vl-h2">Hoe interpreteer ik de kaarten?</h2>
+      <h2 is="vl-h2">Provincies op kaart</h2>
       <p>
-        Provinciale handhavingsactoren hebben enkele een bevoegheid voor milieuhandhaving.</p>
-      <vl-typography>
-      </vl-typography>
-      <br/>
-      <p>De kleurgradaties wijzen op de aantallen in de provincies
-        per 1.000 inwoners. </p>`
+      De provincies hebben handhavingsbevoegdheden ten aanzien van de milieuregelgeving. De provinciegouverneur of zijn plaatsvervanger is in bepaalde gevallen bevoegd voor het opleggen van bestuurlijke maatregelen en kan veiligheidsmaatregelen nemen in geval van een aanzienlijk risico voor mens of milieu. De provinciale toezichthouders oefenen daarnaast het toezicht uit op de toepassing van specifieke milieuvoorschriften. 
+
+In de cartografische weergaves wordt gerapporteerd over de uitvoering van hun handhavingsactiviteiten in het voorgaand jaar (handhavingsactiviteiten uitgevoerd tussen 1 januari en 31 december).</p>
+      <br>
+      <p>
+       <vl-accordion data-vl-toggle-text="Hoe interpreteer ik de kaarten?">
+          <span>
+De onderstaande kaarten geven per onderwerp in kleurgradaties de absolute cijfers en de cijfers per 1.000 inwoners weer. (inwonersaantal op basis van <a href="https://statbel.fgov.be" target=_blank>Statbel</a>)
+<br>Bij hoveren over een gemeente worden de cijfers weergegeven.</span>
+        </vl-accordion></p>
+
+`;
     }
   
     __changeView(event) {
@@ -121,13 +128,10 @@ import {
       <ul is="vl-link-list">
         <li is="vl-link-list-item">
           <a is="vl-link"
-             href="#">
-             Laatst bekende cijfers per actor
+             href="/provincie">
+             Cijfers voorgaande kalenderjaar per actor
           </a>
         </li>
-        <li is="vl-link-list-item">
-          <a is="vl-link" href="#">Analyseer de cijfers</a>
-        </li>   
         <li is="vl-link-list-item">
           <a is="vl-link"
              href="/download-cijfers-en-meer">
@@ -148,7 +152,7 @@ import {
         <vl-functional-header
             data-vl-back="Terug"
             data-vl-back-link="/"
-            data-vl-title="Provincies op kaart"
+            data-vl-title="Cartografische weergave"
             data-vl-sub-title="Omgevingshandhavingsrapportage"
             data-vl-link="/provincies-op-kaart">
         </vl-functional-header>

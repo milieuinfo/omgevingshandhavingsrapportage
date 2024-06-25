@@ -27,7 +27,7 @@ class OhrProvincie extends LitElement {
     <vl-functional-header
     data-vl-back="Terug"
     data-vl-back-link="/"
-    data-vl-title="Provinciale handhavingsactoren"
+    data-vl-title="Jaarrapportage provinciale omgevingshandhavingsactoren"
     data-vl-sub-title="Omgevingshandhavingsrapportage"
     data-vl-link="/provincie">
 </vl-functional-header>
@@ -82,9 +82,6 @@ class OhrProvincie extends LitElement {
       <li is="vl-link-list-item">
       <a is="vl-link" href="/provincie-op-kaart">Kaartweergave rapportage provincie</a>
     </li>
-      <li is="vl-link-list-item">
-        <a is="vl-link" href="/">Meerjarenrapportage</a>
-      </li>   
       <li is="vl-link-list-item">
         <a is="vl-link" href="/download-cijfers-en-meer">Download de cijfers</a>
       </li> 

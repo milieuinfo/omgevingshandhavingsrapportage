@@ -27,14 +27,14 @@
         {
           "type": "visual",
           "id": "NSmxR",
-          "height": "300px",
+          "height": "600px",
           "visual_type": "barchart",
           "label": "Misdrijven per categorie"
         },
         {
           "type": "visual",
           "id": "CbQpDq",
-          "height": "300px",
+          "height": "600px",
           "visual_type": "linechart",
           "label": "Evolutie misdrijven per jaartal"
         }

@@ -29,7 +29,7 @@ class OhrGemeente extends LitElement {
     <vl-functional-header
     data-vl-back="Terug"
     data-vl-back-link="/"
-    data-vl-title="Gemeentelijke handhavingsactoren"
+    data-vl-title="Jaarrapportage gemeentelijke omgevingshandhavingsactoren"
     data-vl-sub-title="Omgevingshandhavingsrapportage"
     data-vl-link="/gewest">
 </vl-functional-header>
@@ -39,7 +39,7 @@ class OhrGemeente extends LitElement {
               {
                 size: 8,
                 template: html`<h1 is="vl-h1" data-vl-no-space-bottom>
-                  Gemeentelijke handhavingsactoren
+                 Jaarrapportage gemeentelijke omgevingshandhavingsactoren
                 </h1>`,
               },
               {
@@ -84,7 +84,7 @@ class OhrGemeente extends LitElement {
         administratie
         en/of een intergemeentelijke vereniging en/of intergemeentelijke
         vereniging en/of de lokale politie.
-        In de individuele handhavingsfiches en in de cartografische weergaves
+        In de individuele handhavingsfiches
         wordt gerapporteerd over de
         uitvoering
         van hun handhavingsactiviteiten in het voorgaand jaar.
@@ -93,7 +93,25 @@ class OhrGemeente extends LitElement {
 
   __renderSideNavigation() {
     return html`
-    <a is="vl-link-button" href="/gemeenten-analyse">Bekijk de cijfers voor dit thema</a>`;
+    <a is="vl-link-button" href="/gemeenten-analyse">Bekijk de cijfers voor dit thema</a>
+    <h5 is="vl-h5" data-vl-alt>Interessante links</h5>
+    <ul is="vl-link-list">
+    <li is="vl-link-list-item">
+   
+      </li>
+      <li is="vl-link-list-item">
+      <a is="vl-link" href="/gemeenten-op-kaart">Kaartweergave rapportage gemeente</a>
+    </li>
+      <li is="vl-link-list-item">
+        <a is="vl-link" href="/download-cijfers-en-meer">Download de cijfers</a>
+      </li> 
+      <li is="vl-link-list-item">
+        <a target="_new_blank" is="vl-link"
+           href=https://indicatoren.omgeving.vlaanderen.be/>
+          Indicatoren website<span is="vl-icon" data-vl-before="" data-vl-link="" data-vl-icon="external"></span>
+        </a>
+      </li>
+    </ul>`;
   }
 }
 

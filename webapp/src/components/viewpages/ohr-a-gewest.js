@@ -62,23 +62,23 @@ class OhrAGewest extends LitElement {
     return html` <vl-functional-header
         data-vl-back="Terug"
         data-vl-back-link="/gewest"
-        data-vl-title="Gewestelijke handhavingsactoren"
+        data-vl-title="Jaarrapportage gewestelijke omgevingshandhavingsactoren’"
         data-vl-sub-title="Omgevingshandhavingsrapportage"
         data-vl-link="/">
       </vl-functional-header>
       <section is="vl-region">
         <div is="vl-layout">
           <vl-typography>
-            <h2>Raadpleeg laatst bekende cijfers van 2023</h2>
+            <h2>Cijfers van het jaar 2023</h2>
           <p is="vl-icon-wrapper">
             <span is="vl-icon" data-vl-icon="calendar"></span><vl-annotation>Laatste wijziging aan de data: 21/02/2024</vl-annotation>
           </p></vl-typography><br>
 
 
           <p is="vl-introduction" data-cy="introduction">
-            Onderstaande weergave geeft een beeld van de bevraging over de
-            cijfers van 2023. Navigeer doorheen de weergave om gericht en
-            efficiënt data te raadplegen.
+           Deze pagina toont een overzichtelijk beeld van de handhavingsactiviteiten van de gewestelijke omgevingshandhavingsactoren.
+           <br>Via de filter kan u een gewestelijke omgevingshandhavingsactor kiezen.
+
           </p>
           <br />
           <div>${this.__renderViewSelector()}</div>

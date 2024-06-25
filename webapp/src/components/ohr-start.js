@@ -203,7 +203,7 @@ and performing other setup tasks.
         {
           size: 12,
           template: html` <h3 is="vl-h3" data-vl-alt>
-            Cijfers van het voorgaande jaar in een oogopslag
+            Cijfers van het voorgaande jaar  in een oogopslag
           </h3>`,
         },
         {
@@ -229,7 +229,7 @@ and performing other setup tasks.
           template: html` <div is="vl-infotext" data-cy="infotext">
             <div>
               <div data-vl-value="">1871</div>
-              <div data-vl-text="">Aantal handhavers Omgevingsinspectie</div>
+              <div data-vl-text="">Aantal handhavers omgevingsinspectie</div>
             </div>
           </div>`,
         },
@@ -259,6 +259,10 @@ and performing other setup tasks.
               <div data-vl-text="">Aantal PV's</div>
             </div>
           </div>`,
+        },
+        {
+          size: 12,
+          template: html`<vl-typography><p><b>Cijfers van bevraging voor 2023</b></vl-typography></p>`
         }
       )}
       `;
@@ -288,12 +292,7 @@ and performing other setup tasks.
           <a is="vl-doormat" href="/gewest">
             <h2 is="vl-doormat-title">Gewest</h2>
             <div is="vl-doormat-text">
-              De cijfers geven een totaalbeeld van de handhavingsactiviteiten
-              van de gewestelijke handhavingsactoren samen in het voorgaande
-              jaar. Bij selectie van een actor, wordt in de individuele
-              handhavingsfiche van deze gewestelijke handhavingsactor
-              gerapporteerd over de uitvoering van de handhavingsactiviteiten in
-              het voorgaande jaar.
+              Bekijk de cijfers van de gewestelijke omgevingshandhavingsactoren van het voorgaande jaar.
             </div>
           </a>
         </div>`,
@@ -304,11 +303,7 @@ and performing other setup tasks.
           <a is="vl-doormat" href="/provincie">
             <h2 is="vl-doormat-title">Provincies</h2>
             <div is="vl-doormat-text">
-              De cijfers geven een totaalbeeld van de handhavingsactiviteiten
-              van de provincies samen in het voorgaande jaar. Bij selectie van
-              een provincie, wordt in de individuele handhavingsfiche van deze
-              provincie gerapporteerd over de uitvoering van de
-              handhavingsactiviteiten in het voorgaande jaar.
+              Bekijk de cijfers van de provinciale omgevingshandhavingsactoren van het voorgaande jaar.
             </div>
           </a>
         </div>`,
@@ -319,8 +314,7 @@ and performing other setup tasks.
           <a is="vl-doormat" href="/gemeenten">
             <h2 is="vl-doormat-title">Gemeenten</h2>
             <div is="vl-doormat-text">
-              In deze analyse worden de handhavingsactiviteiten van de lokale
-              handhavingsactoren weergegeven.
+              Bekijk de cijfers van de gemeentelijke omgevingshandhavingsactoren van het voorgaande jaar.
             </div>
           </a>
         </div>`,
@@ -331,7 +325,7 @@ and performing other setup tasks.
           <a is="vl-doormat" href="/hoge-raad">
             <h2 is="vl-doormat-title">Hoge raad voor de handhavingsuitvoering</h2>
             <div is="vl-doormat-text">
-              Bekijk de cijfers van de Hoge Raad voor de Handhavingsuitvoering
+              Bekijk de cijfers van de Hoge Raad voor Handhavingsuitvoering van het voorgaande jaar.
             </div>
           </a>
         </div>`,
@@ -344,9 +338,23 @@ and performing other setup tasks.
               Strafrechtelijke en bestuurlijke sanctionering
             </h2>
             <div is="vl-doormat-text">
-              Bekijk de cijfers inzake het strafrechtelijke sanctionering en bestuurlijke sanctionering
+             Bekijk de cijfers van het Openbaar Ministerie van het voorgaande jaar.
             </div>
           </a>
+        </div>`,
+      },
+      {
+        size: 6,
+        template: html` <div>
+          <a is="vl-doormat" href="/bestuurlijk">
+            <h2 is="vl-doormat-title">
+              Bestuurlijke sanctionering
+            </h2>
+            <div is="vl-doormat-text">
+             Bekijk de cijfers van de gewestelijke beboetingsentiteit en het Handhavingscollege van het voorgaande jaar.
+             </div>
+          </a>
+          
         </div>`,
       }
     );
@@ -428,24 +436,10 @@ and performing other setup tasks.
               Hoge raad voor de handhavingsuitvoering
             </h2>
             <div is="vl-doormat-text">
-              Een voorstelling van het beeld van de activiteiten van de Hoge
-              Raad voor de Handhavingsuitvoering doorheen de jaren.
+              Een beeld van de activiteiten van de Hoge Raad voor Handhavingsuitvoering doorheen de jaren.
             </div>
           </a>
         </div>`,
-      },
-      {
-        size: 6,
-        template: html`
-          <div ">
-          <a is="vl-doormat" href="/bestuurlijkevervolg-analyse">
-            <h2 is="vl-doormat-title">Bestuurlijke sanctionering</h2>
-            <div is="vl-doormat-text">
-              Deze pagina toont de evolutie van het
-              bestuurlijke sanctionering inzake de omgevingshandhaving.
-            </div>
-          </a>
-          </div>`,
       },
       {
         size: 6,
@@ -455,7 +449,19 @@ and performing other setup tasks.
             <h2 is="vl-doormat-title">Strafrechtelijke
               sanctionering</h2>
             <div is="vl-doormat-text">
-              Deze pagina toont de evolutie van het strafrechtelijke sanctionering inzake de omgevingshandhaving.
+              Deze pagina toont de evolutie van de strafrechtelijke sanctionering inzake omgevingshandhaving.
+            </div>
+          </a>
+          </div>`,
+      },
+      {
+        size: 6,
+        template: html`
+          <div ">
+          <a is="vl-doormat" href="/bestuurlijkevervolg-analyse">
+            <h2 is="vl-doormat-title">Bestuurlijke sanctionering</h2>
+            <div is="vl-doormat-text">
+              Deze pagina toont de evolutie van de bestuurlijke sanctionering inzake omgevingshandhaving. Zowel de activiteiten van de gewestelijke beboetingsentiteit als deze van het Handhavingscollege worden hier weergegeven.
             </div>
           </a>
           </div>`,

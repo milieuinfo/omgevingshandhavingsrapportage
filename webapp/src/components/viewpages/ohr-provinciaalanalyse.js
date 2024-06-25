@@ -66,18 +66,21 @@ class OhrProvincieAnalyse extends LitElement {
     <vl-functional-header
     data-vl-back="Terug"
     data-vl-back-link="/"
-    data-vl-title="Provinciale handhavingsactoren"
+    data-vl-title="Jaarrapportage provinciale omgevingshandhavingsactoren"
     data-vl-sub-title="Omgevingshandhavingsrapportage"
     data-vl-link="/provincie-analyse">
     </vl-functional-header>
       <section is="vl-region">
         <div is="vl-layout">
         <vl-typography>
-        <h2>Provinciale handhavingsactoren van 2023</h2></vl-typography>
+        <h2>Cijfers van het jaar 2023</h2></vl-typography>
         <p is="vl-icon-wrapper"><vl-annotation><span is="vl-icon" data-vl-icon="calendar"></span> Laatste wijziging aan de data: 21/02/2024</vl-annotation></p><br>
 
     <p is="vl-introduction" data-cy="introduction">
-    Onderstaande weergave geeft een beeld van de bevraging over de cijfers van 2023. Navigeer doorheen de weergave om gericht en efficiënt data te raadplegen.
+    
+    Deze pagina toont een overzichtelijk beeld van de handhavingsactiviteiten van de provinciale  omgevingshandhavingsactoren.
+    <br>Via de filter kan u een provincie kiezen.
+
     </p><br>
           <div>${this.__renderViewSelector()}</div>
           <div>${this.__renderDynamicContent()}</div>

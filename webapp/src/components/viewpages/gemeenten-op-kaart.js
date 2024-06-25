@@ -15,6 +15,7 @@ import "@domg-wc/components/typography";
 import {vlElementsStyle} from "@domg-wc/elements";
 import "@domg-wc/elements/link";
 import "@domg-wc/elements/link-list";
+import "@domg-wc/components/accordion";
 
 import options from "../config/gemeente-op-kaart.json" assert {type: "json"};
 import options2 from "../config/gemeente-op-kaart-absolut.json" assert {type:"json"};
@@ -80,17 +81,39 @@ class OhrOpkaart extends LitElement {
 
   __renderIntroductionOfMaps() {
     return html`
-    <h2 is="vl-h2">Hoe interpreteer ik de kaarten?</h2>
+    <h2 is="vl-h2">Gemeenten op kaart</h2>
     <p>
-      De kaarten worden onderverdeeld in twee categorieën:
-    </p>
-      <vl-typography>
-        <li>Milieu: groene kaarten</li>
-        <li>Ruimtelijke ordening: oranje kaarten</li>
+      De gemeenten hebben handhavingsbevoegdheden ten aanzien van de milieuregelgeving en/of de regelgeving inzake ruimtelijke ordening.<br>
+      De burgemeester of zijn plaatsvervanger is in bepaalde gevallen bevoegd voor het opleggen van bestuurlijke maatregelen en kan veiligheidsmaatregelen nemen in geval van een aanzienlijk risico voor mens of milieu. 
+      </p><p>
+      De lokale toezichthouders oefenen daarnaast het toezicht uit op de toepassing van specifieke milieuvoorschriften. De lokale verbalisanten, de agenten en de officieren van gerechtelijke politie en de stedenbouwkundige inspecteurs/burgemeesters handhaven de regelgeving van de Vlaamse Codex Ruimtelijke Ordening. 
+      De gemeenten kunnen hun handhavingsactiviteiten organiseren binnen de eigen gemeentelijke administratie en/of een intergemeentelijke vereniging en/of intergemeentelijke vereniging en/of de lokale politie. </p>
+      <p>
+      In de cartografische weergaves wordt gerapporteerd over de uitvoering van hun handhavingsactiviteiten in het voorgaand jaar (handhavingsactiviteiten uitgevoerd tussen 1 januari en 31 december). 
+      </p>
+      <br>
+
+        <vl-typography data-cy="typography">
+          <ul>
+            <li>Milieu : groene kaarten</li>
+            <li>Ruimtelijke ordening: oranje kaarten</li>
+          </ul>
+        </vl-typography>
         <br>
-        <p>De kleurgradaties wijzen op de aantallen in de gemeenten per 1.000 inwoners.</p>
-          <p>De responsgraad voor deze bevraging (of bepaalde vragen in de bevraging) bedraagt geen 100%.</p>
-      </vl-typography>`;
+      <p>
+      <vl-accordion data-vl-toggle-text="Hoe interpreteer ik de kaarten?">
+       <span>
+        De onderstaande kaarten geven per onderwerp in kleurgradaties de absolute cijfers en de cijfers per 1.000 inwoners weer. (inwonersaantal op basis van <a href="https://statbel.fgov.be" target="_blank">Statbel</a>)
+        <br>
+        Bij hoveren over een gemeente worden de cijfers weergegeven.
+
+        De responsgraad voor deze bevraging (of bepaalde vragen in de bevraging) bedraagt geen 100%. Dit maakt dat bepaalde gemeenten als waarde "niet gekend" of “non-respons tonen. 
+        Niet gekend:  het antwoord is niet gekend
+        Non-respons: de gemeente heeft de bevraging niet ingevuld.
+
+       </span>
+          </vl-accordion></p>
+            `;
   }
 
   __renderBackgroundInformation() {
@@ -128,13 +151,10 @@ class OhrOpkaart extends LitElement {
     <ul is="vl-link-list">
       <li is="vl-link-list-item">
         <a is="vl-link"
-           href="/">
-           Laatst bekende cijfers per actor
+           href="/gemeenten">
+           Cijfers voorgaande kalenderjaar per actor
         </a>
       </li>
-      <li is="vl-link-list-item">
-        <a is="vl-link" href="/">Analyseer de cijfers</a>
-      </li>   
       <li is="vl-link-list-item">
         <a is="vl-link"
            href="/download-cijfers-en-meer">
@@ -155,7 +175,7 @@ class OhrOpkaart extends LitElement {
       <vl-functional-header
           data-vl-back="Terug"
           data-vl-back-link="/"
-          data-vl-title="Gemeenten op kaart"
+          data-vl-title="Cartografische weergave"
           data-vl-sub-title="Omgevingshandhavingsrapportage"
           data-vl-link="/gemeenten-op-kaart">
       </vl-functional-header>

@@ -31,6 +31,7 @@ import "./viewpages/gemeenten-op-kaart.js";
 import "./viewpages/ohr-provincie-op-kaart.js";
 import "./dashboards/ohr-bestuurlijkevervolgtraject.js";
 import "./dashboards/ohr-strafrechtelijk.js";
+import "./viewpages/ohr-bestuurlijk.js";
 
 import {getHeaderFooterId} from "./config/header.js";
 
@@ -90,6 +91,7 @@ class OhrApp extends LitElement {
       {path: "/gemeenten-op-kaart", component: "ohr-opkaart"},
       {path: "/provincie-op-kaart", component: "ohr-opkaartprovincies"},
       {path: "/provincie-analyse", component: "ohr-provincieanalyse"},
+      {path: "/bestuurlijk", component: "ohr-bestuurlijk"},
       {path: "(.*)", component: "ohr-view404"},
     ]);
     Router.go(window.location.pathname)

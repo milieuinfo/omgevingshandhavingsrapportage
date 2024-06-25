@@ -38,18 +38,18 @@ class OhrHogeRaadAnalyse extends LitElement {
     <vl-functional-header
     data-vl-back="Terug"
     data-vl-back-link="/hoge-raad"
-    data-vl-title="Hoge raad voor de handhavingsuitvoering"
+    data-vl-title="Jaarrapportage Hoge raad voor de handhavingsuitvoering"
     data-vl-sub-title="Omgevingshandhavingsrapportage"
     data-vl-link="/hoge-raad-analyse">
     </vl-functional-header>
       <section is="vl-region">
         <div is="vl-layout">
         <vl-typography>
-        <h2>Cijfers van de Hoge raad voor de handhavingsuitvoering van 2023</h2></vl-typography>
+        <h2>Cijfers van het jaar 2023</h2></vl-typography>
         <p is="vl-icon-wrapper"><vl-annotation><span is="vl-icon" data-vl-icon="calendar"></span> Laatste wijziging aan de data: 21/02/2024</vl-annotation></p><br>
 
     <p is="vl-introduction" data-cy="introduction">
-    Onderstaande weergave geeft een beeld van de bevraging over de cijfers van 2023. Navigeer doorheen de weergave om gericht en efficiënt data te raadplegen.
+    Deze pagina toont een beeld van de activiteiten van de Hoge Raad voor de Handhavingsuitvoering in het voorafgaande jaar
     </p><br/>
     
 <div>

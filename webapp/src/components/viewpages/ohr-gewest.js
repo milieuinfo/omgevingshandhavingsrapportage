@@ -26,7 +26,7 @@ class OhrGewest extends LitElement {
     <vl-functional-header
     data-vl-back="Terug"
     data-vl-back-link="/"
-    data-vl-title="Jaarrapportage gewestelijke actoren"
+    data-vl-title="Jaarrapportage gewestelijke omgevingshandhavingsactoren"
     data-vl-sub-title="Omgevingshandhavingsrapportage"
     data-vl-link="/gewest">
 </vl-functional-header>
@@ -73,13 +73,6 @@ class OhrGewest extends LitElement {
     <h5 is="vl-h5" data-vl-alt>Interessante links</h5>
     <ul is="vl-link-list">
     <li is="vl-link-list-item">
-    <li is="vl-link-list-item">
-    <a is="vl-link" href="/download-cijfers-en-meer">Geconsolideerd beeld gewesten</a>
-  </li> 
-      </li>
-      <li is="vl-link-list-item">
-        <a is="vl-link" href="/">Meerjarenrapportage</a>
-      </li> 
       <li is="vl-link-list-item">
         <a is="vl-link" href="/download-cijfers-en-meer">Download de cijfers</a>
       </li> 
@@ -142,15 +135,11 @@ class OhrGewest extends LitElement {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Departement Omgeving - Afdeling Handhaving</td>
+                  <tr>
+                <td>Agentschap Maritieme Dienstverlening en Kust</td>
                 <td><a
-                    href="https://navigator.emis.vito.be/mijn-navigator?woId=25212&woLang=nl&woVersion=2022-03-11"
-                    target="_blank">Milieu</a>
-                  | <a
-                      href="https://navigator.emis.vito.be/mijn-navigator?woId=74714&woLang=nl&woVersion=2022-03-11"
-                      target="_blank">Ruimtelijke ordening</a>
-                </td>
+                    href="https://navigator.emis.vito.be/mijn-navigator?woId=25225&woLang=nl&woVersion=2022-03-11"
+                    target="_blank">Milieu</a></td>
               </tr>
               <tr>
                 <td>Agentschap Natuur en Bos</td>
@@ -163,16 +152,16 @@ class OhrGewest extends LitElement {
                     target="_blank">Ruimtelijke ordening</a>
                     </td>
               </tr>
-              <tr>
-                <td>Agentschap Maritieme Dienstverlening en Kust</td>
+                       <tr>
+                <td>Agentschap Wonen in Vlaanderen – Vlaamse wooninspectie</td>
                 <td><a
-                    href="https://navigator.emis.vito.be/mijn-navigator?woId=25225&woLang=nl&woVersion=2022-03-11"
-                    target="_blank">Milieu</a></td>
+                    href="https://navigator.emis.vito.be/mijn-navigator?woId=74328&woLang=nl&woVersion=2022-03-11"
+                    target="_blank">Ruimtelijke ordening</a></td>
               </tr>
               <tr>
                 <td>Agentschap Wegen en Verkeer</td>
                 <td><a
-                    href="https://navigator.emis.vito.be/mijn-navigator?woId=25224&woLang=nl&woVersion=2022-03-11µ"
+                    href="https://navigator.emis.vito.be/mijn-navigator?woId=25224&woLang=nl&woVersion=2022-03-11"
                     target="_blank">Milieu</a></td>
               </tr>
               <tr>
@@ -182,24 +171,21 @@ class OhrGewest extends LitElement {
                     target="_blank">Milieu</a></td>
               </tr>
               <tr>
-              <td>Departement Omgeving - Afdeling GOP
-              </td>
-              <td><a
-                  href="https://navigator.emis.vito.be/mijn-navigator?woId=25213&woLang=nl&woVersion=2022-03-11"
-                  target="_blank">Milieu</a></td>
-            </tr>
-            <tr>
-                <td>Departement Omgeving - Afdeling VPO</td>
-                <td><a
-                    href="https://navigator.emis.vito.be/mijn-navigator?woId=25215&woLang=nl&woVersion=2022-03-11"
-                    target="_blank">Milieu</a></td>
-              </tr>
-              <tr>
-                <td>Departement zorg</td>
+                <td>Departement Zorg</td>
                 <td><a
                     href="https://navigator.emis.vito.be/mijn-navigator?woId=25223&woLang=nl&woVersion=2022-03-11"
                     target="_blank">Milieu</a></td>
 
+              </tr>
+              <tr>
+                <td>Departement Omgeving</td>
+                <td><a
+                    href="https://navigator.emis.vito.be/detail?woId=25211"
+                    target="_blank">Milieu</a>
+                  | <a
+                      href="https://navigator.emis.vito.be/detail?woId=74713"
+                      target="_blank">Ruimtelijke ordening</a>
+                </td>
               </tr>
               <tr>
               <td>De Vlaamse Waterweg</td>
@@ -224,12 +210,6 @@ class OhrGewest extends LitElement {
               <tr>
                 <td>Vlaamse Milieumaatschappij</td>
                 <td>Milieu</td>
-              </tr>
-              <tr>
-                <td>Vlaamse Wooninspectie</td>
-                <td><a
-                    href="https://navigator.emis.vito.be/mijn-navigator?woId=74328&woLang=nl&woVersion=2022-03-11"
-                    target="_blank">Ruimtelijke ordening</a></td>
               </tr>
               <tr>
                 <td>Vlaams Energie- en Klimaatagentschap</td>

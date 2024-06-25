@@ -1,6 +1,6 @@
 [
     {
-      "label": "Agentschap voor Maritieme Dienstverlening en Kust (AMDK)",
+      "label": "Agentschap voor Maritieme Dienstverlening en Kust (aMDK)",
       "value": "Agentschap voor Maritieme Dienstverlening en Kust",
       "selected": true
     },
@@ -13,7 +13,7 @@
       "value": "Agentschap Wegen en Verkeer"
     },
     {
-      "label": "Vlaamse Waterweg (VW)",
+      "label": "Vlaamse Waterweg",
       "value": "Vlaamse Waterweg"
     },
     {
@@ -45,10 +45,6 @@
       "value": "Vlaams Energie- en Klimaatagentschap"
     },
     {
-      "label": "Vlaams Energie- en Klimaatagentschap (VEKA)",
-      "value": "Vlaams Energie- en Klimaatagentschap"
-    },
-    {
       "label": "Vlaamse Landmaatschappij (VLM)",
       "value": "Vlaamse Landmaatschappij"
     },
@@ -57,7 +53,7 @@
       "value": "Vlaamse Milieumaatschappij"
     },
     {
-      "label":"Vlaamse Wooninspectie",
+      "label":"Agentschap Wonen in Vlaanderen - Vlaamse Wooninspectie",
       "value":"Vlaamse Wooninspectie"
     }
   ]

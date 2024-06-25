@@ -65,7 +65,7 @@ class OhrStrafrechtelijkAnalyse extends LitElement {
     <vl-functional-header
     data-vl-back="Terug"
     data-vl-back-link="/"
-    data-vl-title="Strafrechtelijk en bestuurlijk vervoltraject"
+    data-vl-title="Jaarrapportage Strafrechtelijk sanctionering"
     data-vl-sub-title="Omgevingshandhavingsrapportage"
     data-vl-link="/">
     </vl-functional-header>
