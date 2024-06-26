@@ -85,7 +85,7 @@ export const THEMA = {
 
 export const F1 = {
 
-  name: "Advies gevraagd aan",
+  name: "Advies gegeven aan",
   fieldQualifier: "qText",
   field: "[F1]",
   nrOfValues: 10,

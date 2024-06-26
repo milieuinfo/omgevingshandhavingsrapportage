@@ -55,17 +55,14 @@ class OhrHogeRaadDashboard extends LitElement {
     return html`
       <vl-typography slot="introduction">
         <p>
-        De Hoge Raad voor de Handhavingsuitvoering adviseert over de inzet van bepaalde handhavingsinstrumenten van de ruimtelijke ordening.
-Deze pagina geeft via een interactieve tool de cijfers van de opdrachten van de Hoge Raad voor de Handhavingsuitvoering over de jaren heen weer. De cijfers zullen wijzigen naargelang de gekozen filtering.
-Het standaard beeld geeft de totale cijfers van 2021 tot en met het voorgaande jaar weer voor de Hoge Raad voor de Handhavingsuitvoering in heel Vlaanderen.
+       De Hoge Raad voor de Handhavingsuitvoering adviseert over de inzet van bepaalde handhavingsinstrumenten van de ruimtelijke ordening. 
+       Deze pagina geeft via een interactieve tool de cijfers van de opdrachten van de Hoge Raad voor de Handhavingsuitvoering over de jaren heen weer.
         </p>
           <vl-accordion data-vl-toggle-text="Informatie over het gebruik van het dashboard">
           <span>
-          Het standaard beeld geeft de totale cijfers van 2021 tot en met het voorgaande jaar weer voor de omgevingsinspectie in heel Vlaanderen. <br>
-          Via de filters kan u kiezen om de cijfers van één jaar,  één beleidsniveau of één actor weer te geven.
-          De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk hieronder. Wanneer de gegevens niet gekend zijn, verschijnt “-“ of wordt aangegeven dat de data niet beschikbaar zijn.<br>
-          De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk hieronder. <br>
-          Wanneer de gegevens niet gekend zijn, verschijnt “-“ of wordt aangegeven dat de data niet beschikbaar zijn.</span>
+          Het standaard beeld geeft de totale cijfers van 2021 tot en met het voorgaande jaar weer.
+          Via de filters kan u kiezen om de cijfers van één jaar, één adviesaanvrager of één adviesverkrijger weer te geven. De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk hieronder. Wanneer de gegevens niet gekend zijn, verschijnt “-“ of wordt aangegeven dat de data niet beschikbaar zijn. Bij een evolutie weergave zal de lijn onderbroken zijn.
+          </span>
         </vl-accordion>
       </vl-typography>
     `;

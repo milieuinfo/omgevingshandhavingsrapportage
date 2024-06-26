@@ -1,7 +1,7 @@
 {
   "Controles met betrekking tot milieu": {
     "order": 1,
-    "label": "Controles milieu",
+    "label": "Milieu",
     "visualisations": [
       [
         {
@@ -61,7 +61,7 @@
           "id": "RSPTbJJ",
           "height": "300px",
           "visual_type": "barchart",
-          "label": "Aanvankelijke controles met schending"
+          "label": "Aanvankelijke controles met schending per thema"
         }
       ],
       [
@@ -85,7 +85,7 @@
   },
   "Controles met betrekking tot ruimtelijke ordening": {
     "order": 2,
-    "label": "Controles ruimtelijke ordening",
+    "label": "Ruimtelijke ordening",
     "visualisations": [
       [
         {

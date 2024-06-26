@@ -73,7 +73,7 @@
           "id": "mnNYJg",
           "height": "300px",
           "visual_type": "barchart",
-          "label": "Verschil tussen 2023 tov 2021"
+          "label": "Verschil tussen 2023 t.o.v 2021"
         } 
       ],
       [
@@ -89,7 +89,7 @@
           "id": "MTtweGq",
           "height": "300px",
           "visual_type": "barchart",
-          "label": "Verhouding zachte instrumenten tov repressieve instrumenten"
+          "label": "Verhouding zachte instrumenten t.o.v repressieve instrumenten"
         }
       ]
     ]
@@ -158,7 +158,7 @@
           "id": "DwLMXx",
           "height": "300px",
           "visual_type": "barchart",
-          "label": "Verschil tussen 2023 tov 2021"
+          "label": "Verschil tussen 2023 t.o.v 2021"
         } 
       ],    
       [
@@ -174,7 +174,7 @@
           "id": "PBJHCs",
           "height": "300px",
           "visual_type": "barchart",
-          "label": "Verhouding zachte instrumenten tov repressieve instrumenten"
+          "label": "Verhouding zachte instrumenten t.o.v repressieve instrumenten"
         }
       ]
     ]

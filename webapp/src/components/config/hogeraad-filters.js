@@ -17,7 +17,7 @@ import {
           filter: INSTROOM
       },
       {
-        name: "Advies gevraagd aan",
+        name: "Advies gegeven aan",
         id: "Soort",
         filter: F1
       },

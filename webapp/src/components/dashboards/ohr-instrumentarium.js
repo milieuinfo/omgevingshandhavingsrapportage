@@ -58,15 +58,25 @@ class OhrInstrumentarium extends LitElement {
         <p>
         De omgevingsinspectie wordt uitgevoerd op verschillende beleidsniveaus uitgevoerd, namelijk door gewestelijke, provinciale en gemeentelijke handhavingsactoren.
 Deze pagina geeft via een interactieve tool het gebruikte instrumentarium weer dat over de jaren heen ingezet wordt door de handhavingsactoren voor de omgevingshandhaving in Vlaanderen. De cijfers zullen wijzigen naargelang de gekozen filtering.
-        </p>
-         <vl-accordion data-vl-toggle-text="Informatie over het gebruik van het dashboard">
-          <span>
-          Het standaard beeld geeft de totale cijfers van 2021 tot en met het voorgaande jaar weer voor de omgevingsinspectie in heel Vlaanderen. <br>
-          Via de filters kan u kiezen om de cijfers van één jaar,  één beleidsniveau of één actor weer te geven.
-          De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk hieronder. Wanneer de gegevens niet gekend zijn, verschijnt “-“ of wordt aangegeven dat de data niet beschikbaar zijn.<br>
-          De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk hieronder. <br>
-          Wanneer de gegevens niet gekend zijn, verschijnt “-“ of wordt aangegeven dat de data niet beschikbaar zijn.</span>
-        </vl-accordion>
+</p>    
+<b>Weetje:</b>
+        <ul>
+          <li><b>Zachte instrumenten:</b> Onder zachte handhaving vallen bestuurlijke instrumenten zoals de raadgeving en de aanmaning</li>
+          <li><b>Repressieve instrumenten:</b> Als preventieve instrumenten geen of te weinig effect hebben, dan kunnen repressieve instrumenten een uitkomst bieden.
+          <ul>
+            <li>Verslag van vaststelling, proces-verbaal, bestuurlijke maatregel, bevel tot staking, minnelijke schikking, herstelvordering, ambtshalve uitvoering.</li></ul>
+          </li>
+
+        </ul>
+        <vl-accordion data-vl-toggle-text="Informatie over het gebruik van het dashboard">
+        <span>
+          Het standaard beeld geeft de totale cijfers van 2021 tot en met het voorgaande jaar weer voor de omgevingsinspectie in heel Vlaanderen.
+          Via de filters kan u kiezen om de cijfers van één jaar, één beleidsniveau of één actor weer te geven. 
+          De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk hieronder. 
+          Wanneer de gegevens niet gekend zijn, verschijnt “-“ of wordt aangegeven dat de data niet beschikbaar zijn. 
+          Bij een evolutie weergave zal de lijn onderbroken zijn
+        </span>
+  </vl-accordion>
       </vl-typography>
     `;
   }
