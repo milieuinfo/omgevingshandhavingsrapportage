@@ -1,177 +1,141 @@
 {
   "Misdrijven: Dashboard": {
     "order": 1,
-    "label": "Misdrijven: Dashboard",
+    "label": "Gewestelijke beboetingsentiteit: Misdrijven",
     "visualisations": [
-      [
-        {
-          "type": "visual",
-          "id": "fLppYgF",
-          "height": "55px",
-          "visual_type": "kpi",
-          "label": "Ontvangen misdrijven",
-          "align-label": "center",
-          "align-visual": "center"
-        },
-        {
-          "type": "visual",
-          "id": "JjP",
-          "height": "55px",
-          "visual_type": "kpi",
-          "label": "Behandelde misdrijven",
-          "align-label": "center",
-          "align-visual": "center"
-        }
-      ],
       [
         {
           "type": "visual",
           "id": "NSmxR",
-          "height": "600px",
+          "height": "400px",
           "visual_type": "barchart",
-          "label": "Misdrijven per categorie"
+          "label": "Misdrijven per thema"
         },
         {
           "type": "visual",
           "id": "CbQpDq",
-          "height": "600px",
+          "height": "400px",
           "visual_type": "linechart",
-          "label": "Evolutie misdrijven per jaartal"
+          "label": "Evolutie misdrijven"
         }
-      ]
+      ],
+      [
+        {
+          "type": "visual",
+          "id": "USmQab",
+          "height": "400px",
+          "visual_type": "barchart",
+          "label": "Behandelde misdrijven per uitkomst"
+        },
+        {
+          "type": "visual",
+          "id": "YeFZX",
+          "height": "400px",
+          "visual_type": "linechart",
+          "label": "Evolutie opgelegde en betaalde bestuurlijke transacties"
+        }
+      ],
+    [
+      {
+        "type": "visual",
+        "id": "muhpZr",
+        "height": "400px",
+        "visual_type": "linechart",
+        "label": "Reden technisch seponering bij ruimtelijke ordening"
+      },
+      {
+        "type": "visual",
+        "id": "UbcmtC",
+        "height": "400px",
+        "visual_type": "barchart",
+        "label": "Reden opportuniteitsseponering bij ruimtelijke ordening"
+      }
+    ]
     ]
   },
   "Misdrijven: Afhandeling": {
     "order": 2,
-    "label": "Misdrijven: Afhandeling",
+    "label": "Gewestelijke beboetingsentiteit: Inbreuken",
     "visualisations": [
       [
         {
           "type": "visual",
-          "id": "JtvJgRe",
-          "height": "300px",
+          "id": "644c3430-320f-4a2e-bec9-56b93a6b267a",
+          "height": "400px",
           "visual_type": "barchart",
-          "label": "Aantal behandelde misdrijven per categorie"
+          "label": "Inbreuken per thema"
         },
         {
           "type": "visual",
-          "id": "CAgWcS",
-          "height": "300px",
+          "id": "6206355a-1740-4d6f-9117-83f2e6d438ca",
+          "height": "400px",
           "visual_type": "linechart",
-          "label": "Evolutie behandelde misdrijven"
+          "label": "Evolutie inbreuken"
         }
       ],
       [
         {
           "type": "visual",
-          "id": "DytA",
-          "height": "300px",
+          "id": "2d21a73c-4096-4edf-93d2-f2f83d613d6f",
+          "height": "400px",
           "visual_type": "barchart",
-          "label": "Aantal behandelde misdrijven per afhandeling"
+          "label": "Behandelde inbreuken per uitkomst"
         },
         {
           "type": "visual",
-          "id": "beRMsj",
-          "height": "300px",
-          "visual_type": "barchart",
-          "label": "Evolutie behandelde misdrijven per afhandeling"
-        },
-        {
-          "type": "visual",
-          "id": "KCcwrSC",
-          "height": "300px",
-          "visual_type": "barchart",
-          "label": "Evolutie behandelde misdrijven voor beslissingen opportuniteitssepot of technische sepot"
+          "id": "4eff6249-9dda-474b-be8c-a5b154652f95",
+          "height": "400px",
+          "visual_type": "linechart",
+          "label": "Evolutie opgelegde en betaalde bestuurlijke transacties"
         }
-
-      ]
+      ],
+    [
+      {
+        "type": "visual",
+        "id": "ef3362ba-9789-44f4-8b03-3c84dee4e6c7",
+        "height": "400px",
+        "visual_type": "linechart",
+        "label": "Reden technisch seponering bij ruimtelijke ordening"
+      },
+      {
+        "type": "visual",
+        "id": "9cc7aae7-e496-44e8-9a21-cca24c575c7c",
+        "height": "400px",
+        "visual_type": "barchart",
+        "label": "Reden opportuniteitsseponering bij ruimtelijke ordening"
+      }
+    ]
     ]
   },
   "Inbreuken: Dashboard": {
     "order": 3,
-    "label": "Inbreuken: Dashboard",
+    "label": "Handhavingscollege",
     "visualisations": [
       [
         {
           "type": "visual",
-          "id": "VhJb",
-          "height": "55px",
-          "visual_type": "kpi",
-          "label": "Ontvangen inbreuken",
-          "align-label": "center",
-          "align-visual": "center"
-        },
-        {
-          "type": "visual",
-          "id": "qxVnjb",
-          "height": "55px",
-          "visual_type": "kpi",
-          "label": "Behandelde inbreuken",
-          "align-label": "center",
-          "align-visual": "center"
+          "id": "AkCwTZ",
+          "height": "400px",
+          "visual_type": "linechart",
+          "label": "Evolutie ontvangen beroepen "
         }
+   
       ],
       [
         {
           "type": "visual",
-          "id": "rWRJRD",
+          "id": "CaZxtN",
           "height": "300px",
           "visual_type": "barchart",
-          "label": "Inbreuken per categorie"
+          "label": "Evolutie van de uitspraak tegen boetes die werden opgelegd naar aanleiding van een misdrijf"
         },
         {
           "type": "visual",
-          "id": "vaPUyRY",
+          "id": "Jxgnfqm",
           "height": "300px",
-          "visual_type": "linechart",
-          "label": "Evolutie inbreuken per jaartal"
+          "visual_type": "barchart",
+          "label": "Evolutie van de uitspraak tegen boetes die werden opgelegd naar aanleiding van een inbreuk"
         }
-      ]
-    ]
-  },
-  "Inbreuken: Afhandeling": {
-    "order": 2,
-    "label": "Inbreuken: Afhandeling",
-    "visualisations": [
-      [
-        {
-          "type": "visual",
-          "id": "e34d612b-20f5-47a5-a018-e4e8e00536d9",
-          "height": "300px",
-          "visual_type": "barchart",
-          "label": "Aantal behandelde inbreuken per categorie"
-        },
-        {
-          "type": "visual",
-          "id": "558dedf4-7a17-4220-ad15-2e567b742d5b",
-          "height": "300px",
-          "visual_type": "linechart",
-          "label": "Evolutie behandelde inbreuken"
-        }
-      ],
-      [
-        {
-          "type": "visual",
-          "id": "be1e6d9a-0b22-4923-8f84-f2948aadf752",
-          "height": "300px",
-          "visual_type": "barchart",
-          "label": "Aantal behandelde inbreuken per afhandeling"
-        },
-        {
-          "type": "visual",
-          "id": "271280ff-bae3-4181-939b-5d5386f81c3c",
-          "height": "300px",
-          "visual_type": "barchart",
-          "label": "Evolutie behandelde inbreuken per afhandeling"
-        },
-        {
-          "type": "visual",
-          "id": "c49367bd-a994-4a07-b435-d0640bede653",
-          "height": "300px",
-          "visual_type": "barchart",
-          "label": "Evolutie behandelde inbreuken voor beslissingen opportuniteitssepot of technische sepot"
-        }
-
       ]
     ]
   }

@@ -29,7 +29,7 @@
             "id": "npYK",
             "height": "300px",
             "visual_type": "barchart",
-            "label": "Verdeling per categorie"
+            "label": "Instroom per thema"
           },
           {
             "type": "visual",
@@ -45,14 +45,14 @@
                 "id": "PeEXsph",
                 "height": "300px",
                 "visual_type": "barchart",
-                "label": "Evolutie per categorie"
+                "label": "Evolutie per thema"
               },
               {
                 "type": "visual",
                 "id": "KPBmpHk",
                 "height": "300px",
                 "visual_type": "barchart",
-                "label": "Verdeling per subcategorie"
+                "label": "Evolutie percentuele verdeling per thema"
               }
         ]
       ]
@@ -64,30 +64,10 @@
         [
           {
             "type": "visual",
-            "id": "DpVmSpA",
-            "height": "55px",
-            "visual_type": "kpi",
-            "label": "Milieu",
-            "align-label": "center",
-            "align-visual": "center"
-          },
-          {
-            "type": "visual",
-            "id": "ywJP",
-            "height": "55px",
-            "visual_type": "kpi",
-            "label": "Ruimtelike ordening",
-            "align-label": "center",
-            "align-visual": "center"
-          }
-        ],
-        [
-          {
-            "type": "visual",
             "id": "qhes",
             "height": "300px",
             "visual_type": "barchart",
-            "label": "Aantal per categorie"
+            "label": "Uitstroom per thema"
           },
           {
             "type": "visual",
@@ -98,13 +78,6 @@
           }
         ],
         [
-          {
-            "type": "visual",
-            "id": "xKkPM",
-            "height": "300px",
-            "visual_type": "barchart",
-            "label": "Totaal aantal afhandeling"
-          },
           {
             "type": "visual",
             "id": "BHpJGyx",
@@ -122,53 +95,34 @@
           [
             {
               "type": "visual",
-              "id": "njpRdm",
-              "height": "55px",
-              "visual_type": "kpi",
-              "label": "Aantal milieu",
-              "align-label": "center",
-              "align-visual": "center"
-            },
-            {
-              "type": "visual",
-              "id": "vMwdQp",
-              "height": "55px",
-              "visual_type": "kpi",
-              "label": "Aantal ruimtelijke ordening",
-              "align-label": "center",
-              "align-visual": "center"
-            }
-          ],
-          [
-            {
-              "type": "visual",
-              "id": "mYUNTw",
-              "height": "300px",
-              "visual_type": "barchart",
-              "label": "Aantal motieven per categorie"
-            },
-            {
-              "type": "visual",
-              "id": "pyUE",
-              "height": "300px",
-              "visual_type": "barchart",
-              "label": "Evolutie motieven per beleidsniveau"
-            }
-          ],
-          [
-            {
-              "type": "visual",
-              "id": "UZmpqp",
-              "height": "300px",
-              "visual_type": "barchart",
-              "label": "Totaal aantal resultaten"
-            },
-            {
-              "type": "visual",
-              "id": "Nfjhr",
+              "id": "mHbfzaJ",
               "height": "300px",
               "visual_type": "linechart",
-              "label": "Evolutie afhandeling motieven"
+              "label": "Evolutie motieven technische seponering"
+            },
+            {
+              "type": "visual",
+              "id": "aUVeWs",
+              "height": "300px",
+              "visual_type": "linechart",
+              "label": "Evolutie motieven seponering om opportuniteitsredenen"
+            }
+          ],
+          [
+            {
+              "type": "visual",
+              "id": "YZyntxN",
+              "height": "300px",
+              "visual_type": "barchart",
+              "label": "Evolutie percentuele verdeling motieven technische seponering"
+              
+            },
+            {
+              "type": "visual",
+              "id": "ETSWd",
+              "height": "300px",
+              "visual_type": "linechart",
+              "label": "Evolutie percentuele verdeling motieven seponering om opportuniteitsredenen"
             }
           ]
         ]

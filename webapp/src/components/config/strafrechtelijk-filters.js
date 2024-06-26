@@ -17,12 +17,12 @@ import {
           filter: BELEIDSDOMEINSTRAFRECHTELIJK
         },
         {
-            name: "Hoofdrubriek",
+            name: "Thema",
             id: "Hoofdrubriek",
             filter: HOOFDRUBRIEKSTRAFRECHTELIJK
         },
         {
-          name: "Rubriek",
+          name: "Tenlastenleggingscode",
           id: "Rubriek",
           filter: RUBRIEKSTRAFRECHTELIJK
         }

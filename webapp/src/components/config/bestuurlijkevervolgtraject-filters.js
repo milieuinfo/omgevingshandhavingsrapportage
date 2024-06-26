@@ -1,8 +1,7 @@
 import {
   JAARTALBESTUURLIJK,
   BELEIDSDOMEINBESTUURLIJKE,
-  CATEGORIEBESTUURLIJKE,
-  TYPEBESTUURLIJKE
+  CATEGORIEBESTUURLIJKE
     } from "./qlik_resources.js";
     
     const filters = [
@@ -17,17 +16,10 @@ import {
           filter: BELEIDSDOMEINBESTUURLIJKE
       },
       {
-        name: "Categorie",
+        name: "Thema",
         id: "Categorie",
         filter: CATEGORIEBESTUURLIJKE
-      },
-      {
-        name: "Type",
-        id: "Soort",
-        filter: TYPEBESTUURLIJKE
-      },
+      }
       
     ]
-
-  
     export {filters as default};

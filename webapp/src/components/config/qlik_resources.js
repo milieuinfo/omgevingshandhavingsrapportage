@@ -91,17 +91,9 @@ export const F1 = {
   nrOfValues: 10,
 }
 
-export const BESTUURLIJKTHEMA = {
-
-  name: "Thema",
-  fieldQualifier: "qText",
-  field: "[Thema]",
-  nrOfValues: 10,
-}
-
 export const BESTUURLIJKCAT = {
 
-  name: "Categorie",
+  name: "Thema",
   fieldQualifier: "qText",
   field: "[categorie]",
   nrOfValues: 10,
@@ -130,7 +122,7 @@ export const BELEIDSDOMEINBESTUURLIJKE = {
 }
 
 export const CATEGORIEBESTUURLIJKE = {
-  name: "Categorie",
+  name: "Thema",
   fieldQualifier: "qText",
   field: "[Rubriek]",
   nrOfValues: 10,
@@ -151,14 +143,14 @@ export const JAARTALSTRAFRECHTELIJK = {
 }
 
 export const HOOFDRUBRIEKSTRAFRECHTELIJK = {
-  name: "Hoofdrubriek",
+  name: "Thema",
   fieldQualifier: "qText",
   field: "[hoofdrubriek]",
   nrOfValues: 100,
 }
 
 export const RUBRIEKSTRAFRECHTELIJK = {
-  name: "Rubriek",
+  name: "Tenlastenleggingscode",
   fieldQualifier: "qText",
   field: "[rubriek]",
   nrOfValues: 200,
