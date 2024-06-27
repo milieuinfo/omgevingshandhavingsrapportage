@@ -45,7 +45,7 @@ and performing other setup tasks.
         <div is="vl-layout">
           ${renderStack(
             {
-              size: 8,
+              size: 12,
               template: html`<h1 is="vl-h1" data-vl-no-space-bottom>
                 Omgevingshandhavingsrapportage
               </h1>`,
