@@ -262,7 +262,7 @@ and performing other setup tasks.
         },
         {
           size: 12,
-          template: html`<vl-typography><p><b>Cijfers van bevraging voor 2023</b></vl-typography></p>`
+          template: html`<vl-typography><p><b>Cijfers van 2023</b></vl-typography></p>`
         }
       )}
       `;
