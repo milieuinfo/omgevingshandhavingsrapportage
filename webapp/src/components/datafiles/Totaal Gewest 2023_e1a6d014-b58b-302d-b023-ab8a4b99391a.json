@@ -779,660 +779,660 @@
             }
         }
     },
-    "RO": {
-        "Agentschap voor Maritieme Dienstverlening en Kust": {
-            "PersoneelRO": {
-                "Verbalisanten": 0,
-                "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
-                "Stedenbouwkundige inspecteurs": 0,
-                "VTE": 0
-            },
-            "Klachten": {
-                "Milieuklachten ruimtelijke ordening": 0,
-                "Verharding": 0,
-                "Ontbossing": 0
-            },
-            "Controles": {
-                "Milieucontroles": 0,
-                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
-                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 0,
-                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
-                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 0,
-                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
-            },
-            "Aanvankelijkecontrolesmetschending": {
-                "Totaal aanvankelijk": 0,
-                "Overtredingsgraad": 0,
-                "Verharding": 0,
-                "Ontbossing": 0
-            },
-            "Instrument": {
-                "Aantal raadgevingen": "niet gekend",
-                "Aanmaning": "niet gekend",
-                "Verslagen van vaststelling": "niet gekend",
-                "Procesverbaal": "niet gekend",
-                "Bevel tot staking": "niet gekend",
-                "Bestuurlijke maatregel": "niet gekend",
-                "Afgesloten minnelijke schikking": 0,
-                "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
-                "Herstel gevorderd bij burgelijke rechter": 0,
-                "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
-            },
-            "Thema": {
-                "Verharding": "Geen opmerking",
-                "Ontbossing": "Geen opmerking"
-            },
-            "Opmerking": {
-                "Opmerking": "Geen opmerking."
-            }
+"RO": {
+    "Agentschap voor Maritieme Dienstverlening en Kust": {
+        "PersoneelRO": {
+            "Verbalisanten": 0,
+            "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
+            "Stedenbouwkundige inspecteurs": 0,
+            "VTE": 0
         },
-        "Agentschap voor Natuur en Bos": {
-            "PersoneelRO": {
-                "Verbalisanten": 0,
-                "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
-                "Stedenbouwkundige inspecteurs": 0,
-                "VTE": "2,98"
-            },
-            "Klachten": {
-                "Milieuklachten ruimtelijke ordening": 4,
-                "Verharding": 0,
-                "Ontbossing": 0
-            },
-            "Controles": {
-                "Milieucontroles": 145,
-                "navolgende stedenbouwkundige controles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
-                "aanvankelijke stedenbouwkundige controles naar aanleiding van klachten": 1,
-                "navolgende stedenbouwkundige controles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
-                "aanvankelijke stedenbouwkundige controles  op eigen initiatief": 0,
-                "navolgende stedenbouwkundige controles voor verdere opvolging van de controles op eigen initiatief": 0
-            },
-            "Aanvankelijkecontrolesmetschending": {
-                "Totaal aanvankelijk": 141,
-                "Verharding": "aanvullen",
-                "Ontbossing": "aanvullen"
-            },
-            "Instrument": {
-                "Aantal raadgevingen": 1,
-                "Aantal aanmaningen": 59,
-                "Aantal verslagen van vaststelling": 3,
-                "Aantal proces verbalen": 79,
-                "Bevel tot staking": 0,
-                "Afgesloten minnelijke schikking": 0,
-                "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
-                "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0,
-                "Bestuurlijke maatregelen zonder dwangsom": 345,
-                "Bestuurlijke maatregelen met dwangsom": 98
-            },
-            "Thema": {
-                "Verharding": "Geen actie ondernomen",
-                "Ontbossing": "Geen actie ondernomen"
-            },
-            "Opmerking": {
-                "Opmerking": "Geen opmerking."
-            }
+        "Klachten": {
+            "Klachten ruimtelijke ordening": 0,
+            "Verharding": 0,
+            "Ontbossing": 0
         },
-        "Agentschap Wegen en Verkeer": {
-            "PersoneelRO": {
-                "Verbalisanten": 0,
-                "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
-                "Stedenbouwkundige inspecteurs": 0,
-                "VTE": 0
-            },
-            "Klachten": {
-                "Milieuklachten ruimtelijke ordening": 0,
-                "Verharding": 0,
-                "Ontbossing": 0
-            },
-            "Controles": {
-                "Milieucontroles": 0,
-                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
-                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 0,
-                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
-                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 0,
-                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
-            },
-            "Aanvankelijkecontrolesmetschending": {
-                "Totaal aanvankelijk": 0,
-                "Overtredingsgraad": 0,
-                "Verharding": 0,
-                "Ontbossing": 0
-            },
-            "Instrument": {
-                "Aantal raadgevingen": "niet gekend",
-                "Aanmaning": "niet gekend",
-                "Verslagen van vaststelling": "niet gekend",
-                "Procesverbaal": "niet gekend",
-                "Bevel tot staking": "niet gekend",
-                "Bestuurlijke maatregel": "niet gekend",
-                "Afgesloten minnelijke schikking": 0,
-                "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
-                "Herstel gevorderd bij burgelijke rechter": 0,
-                "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
-            },
-            "Thema": {
-                "Verharding": "Geen opmerking",
-                "Ontbossing": "Geen opmerking"
-            },
-            "Opmerking": {
-                "Opmerking": "Geen opmerking."
-            }
+        "Controles": {
+            "Milieucontroles": 0,
+            "navolgende controles ruimtelijke ordening  naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+            "aanvankelijke controles ruimtelijke ordening  naar aanleiding van klachten": 0,
+            "navolgende controles ruimtelijke ordening  voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+            "aanvankelijke controles ruimtelijke ordening   op eigen initiatief": 0,
+            "navolgende controles ruimtelijke ordening  voor verdere opvolging van de controles op eigen initiatief": 0
         },
-        "Vlaamse Waterweg": {
-            "Gewest": "De Vlaamse Waterweg",
-            "PersoneelRO": {
-                "Verbalisanten": 0,
-                "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
-                "Stedenbouwkundige inspecteurs": 0,
-                "VTE": 0
-            },
-            "Klachten": {
-                "Milieuklachten ruimtelijke ordening": 0,
-                "Verharding": 0,
-                "Ontbossing": 0
-            },
-            "Controles": {
-                "Milieucontroles": 0,
-                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
-                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 0,
-                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
-                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 0,
-                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
-            },
-            "Aanvankelijkecontrolesmetschending": {
-                "Totaal aanvankelijk": 0,
-                "Overtredingsgraad": 0,
-                "Verharding": 0,
-                "Ontbossing": 0
-            },
-            "Instrument": {
-                "Aantal raadgevingen": "niet gekend",
-                "Aanmaning": "niet gekend",
-                "Verslagen van vaststelling": "niet gekend",
-                "Procesverbaal": "niet gekend",
-                "Bevel tot staking": "niet gekend",
-                "Bestuurlijke maatregel": "niet gekend",
-                "Afgesloten minnelijke schikking": 0,
-                "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
-                "Herstel gevorderd bij burgelijke rechter": 0,
-                "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
-            },
-            "Thema": {
-                "Verharding": "Geen opmerking",
-                "Ontbossing": "Geen opmerking"
-            },
-            "Opmerking": {
-                "Opmerking": "Geen opmerking."
-            }
+        "Aanvankelijkecontrolesmetschending": {
+            "Totaal aanvankelijk": 0,
+            "Overtredingsgraad": 0,
+            "Verharding": 0,
+            "Ontbossing": 0
         },
-        "Departement Mobiliteit en Openbare Werken": {
-            "PersoneelRO": {
-                "Verbalisanten": 0,
-                "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
-                "Stedenbouwkundige inspecteurs": 0,
-                "VTE": 0
-            },
-            "Klachten": {
-                "Milieuklachten ruimtelijke ordening": 0,
-                "Verharding": 0,
-                "Ontbossing": 0
-            },
-            "Controles": {
-                "Milieucontroles": 0,
-                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
-                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 0,
-                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
-                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 0,
-                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
-            },
-            "Aanvankelijkecontrolesmetschending": {
-                "Totaal aanvankelijk": 0,
-                "Overtredingsgraad": 0,
-                "Verharding": 0,
-                "Ontbossing": 0
-            },
-            "Instrument": {
-                "Aantal raadgevingen": "niet gekend",
-                "Aanmaning": "niet gekend",
-                "Verslagen van vaststelling": "niet gekend",
-                "Procesverbaal": "niet gekend",
-                "Bevel tot staking": "niet gekend",
-                "Bestuurlijke maatregel": "niet gekend",
-                "Afgesloten minnelijke schikking": 0,
-                "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
-                "Herstel gevorderd bij burgelijke rechter": 0,
-                "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
-            },
-            "Thema": {
-                "Verharding": "Geen opmerking",
-                "Ontbossing": "Geen opmerking"
-            },
-            "Opmerking": {
-                "Opmerking": "Geen opmerking."
-            }
+        "Instrument": {
+            "Aantal raadgevingen": "niet gekend",
+            "Aanmaning": "niet gekend",
+            "Verslagen van vaststelling": "niet gekend",
+            "Procesverbaal": "niet gekend",
+            "Bevel tot staking": "niet gekend",
+            "Bestuurlijke maatregel": "niet gekend",
+            "Afgesloten minnelijke schikking": 0,
+            "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
+            "Herstel gevorderd bij burgelijke rechter": 0,
+            "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
         },
-        "Departement Omgeving: GOP": {
-            "Gewest": "Departement Omgeving afdeling GOP",
-            "PersoneelRO": {
-                "Verbalisanten": 0,
-                "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
-                "Stedenbouwkundige inspecteurs": 0,
-                "VTE": 0
-            },
-            "Klachten": {
-                "Milieuklachten ruimtelijke ordening": 0,
-                "Verharding": 0,
-                "Ontbossing": 0
-            },
-            "Controles": {
-                "Milieucontroles": 0,
-                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
-                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 0,
-                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
-                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 0,
-                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
-            },
-            "Aanvankelijkecontrolesmetschending": {
-                "Totaal aanvankelijk": 0,
-                "Overtredingsgraad": 0,
-                "Verharding": 0,
-                "Ontbossing": 0
-            },
-            "Instrument": {
-                "Aantal raadgevingen": "niet gekend",
-                "Aanmaning": "niet gekend",
-                "Verslagen van vaststelling": "niet gekend",
-                "Procesverbaal": "niet gekend",
-                "Bevel tot staking": "niet gekend",
-                "Bestuurlijke maatregel": "niet gekend",
-                "Afgesloten minnelijke schikking": 0,
-                "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
-                "Herstel gevorderd bij burgelijke rechter": 0,
-                "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
-            },
-            "Thema": {
-                "Verharding": "Geen opmerking",
-                "Ontbossing": "Geen opmerking"
-            },
-            "Opmerking": {
-                "Opmerking": "Geen opmerking."
-            }
+        "Thema": {
+            "Verharding": "Geen opmerking",
+            "Ontbossing": "Geen opmerking"
         },
-        "Departement Omgeving: Handhaving": {
-            "Gewest": "Departement Omgeving afdeling Handhaving",
-            "PersoneelRO": {
-                "Verbalisanten": 10,
-                "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 11,
-                "Stedenbouwkundige inspecteurs": 0,
-                "VTE": "32,35"
-            },
-            "Klachten": {
-                "Milieuklachten ruimtelijke ordening": 612,
-                "Verharding": 0,
-                "Ontbossing": 0
-            },
-            "Controles": {
-                "Milieucontroles": 1065,
-                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 570,
-                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 146,
-                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 12,
-                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 50,
-                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 30
-            },
-            "Aanvankelijkecontrolesmetschending": {
-                "Totaal aanvankelijk": 180,
-                "Verharding": 0,
-                "Ontbossing": 0
-            },
-            "Instrument": {
-                "Aantal raadgevingen": 4,
-                "Aantal aanmaningen": 304,
-                "Aantal verslagen van vaststelling": 30,
-                "Aantal proces verbalen": 121,
-                "Bevel tot staking": 12,
-                "Afgesloten minnelijke schikking": 28,
-                "Ingeleide herstelvordering bij Openbaar Ministerie": 32,
-                "Ambtshalve uitvoering gerechtelijke herstelmaatregel": "niet gekend",
-                "Bestuurlijke maatregelen zonder dwangsom": 0,
-                "Bestuurlijke maatregelen met dwangsom": 3
-            },
-            "Thema": {
-                "Verharding": "Het aanpakken van de verharding is opgenomen in de gewestelijke prioriteiten van het Vlaamse meerjarenprogramma omgevingshandhaving zodat we bij onze reactieve controles hier op focussen. Er is ook een meer proactieve aanpak via de gebiedsgerichte werking waarin er wordt gehandhaafd op illegale verhardingen. Indien er sprake is van een onvergunde verharding dan wel ontbossing zal deze schending steeds meegenomen worden in het handhavingstraject. Bij elke handhavingshandeling wordt immers steeds de volledige illegaliteit in aanmerking genomen. Hoewel deze schendingen evenzeer aangepakt worden in een enkele casus zullen dergelijke feiten veelal op een meer gestructureerde wijze opduiken bij de verschillende gebiedsgerichte acties die de afdeling Handhaving heeft opgezet. ",
-                "Ontbossing": "Indien er sprake is van een onvergunde verharding dan wel ontbossing zal deze schending steeds meegenomen worden in het handhavingstraject. Bij elke handhavingshandeling wordt immers steeds de volledige illegaliteit in aanmerking genomen. Hoewel deze schendingen evenzeer aangepakt worden in een enkele casus zullen dergelijke feiten veelal op een meer gestructureerde wijze opduiken bij de verschillende gebiedsgerichte acties die de afdeling Handhaving heeft opgezet.  "
-            },
-            "Opmerking": {
-                "Opmerking": "Geen opmerking."
-            }
-        },
-        "Departement Omgeving: VPO": {
-            "Gewest": "Departement omgeving afdeling VPO",
-            "PersoneelRO": {
-                "Verbalisanten": 0,
-                "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
-                "Stedenbouwkundige inspecteurs": 0,
-                "VTE": 0
-            },
-            "Klachten": {
-                "Milieuklachten ruimtelijke ordening": 0,
-                "Verharding": 0,
-                "Ontbossing": 0
-            },
-            "Controles": {
-                "Milieucontroles": 0,
-                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
-                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 0,
-                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
-                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 0,
-                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
-            },
-            "Aanvankelijkecontrolesmetschending": {
-                "Totaal aanvankelijk": 0,
-                "Overtredingsgraad": 0,
-                "Verharding": 0,
-                "Ontbossing": 0
-            },
-            "Instrument": {
-                "Aantal raadgevingen": "niet gekend",
-                "Aanmaning": "niet gekend",
-                "Verslagen van vaststelling": "niet gekend",
-                "Procesverbaal": "niet gekend",
-                "Bevel tot staking": "niet gekend",
-                "Bestuurlijke maatregel": "niet gekend",
-                "Afgesloten minnelijke schikking": 0,
-                "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
-                "Herstel gevorderd bij burgelijke rechter": 0,
-                "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
-            },
-            "Thema": {
-                "Verharding": "Geen opmerking",
-                "Ontbossing": "Geen opmerking"
-            },
-            "Opmerking": {
-                "Opmerking": "Geen opmerking."
-            }
-        },
-        "Departement Zorg": {
-            "Gewest": "Departement zorg",
-            "PersoneelRO": {
-                "Verbalisanten": 0,
-                "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
-                "Stedenbouwkundige inspecteurs": 0,
-                "VTE": 0
-            },
-            "Klachten": {
-                "Milieuklachten ruimtelijke ordening": 0,
-                "Verharding": 0,
-                "Ontbossing": 0
-            },
-            "Controles": {
-                "Milieucontroles": 0,
-                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
-                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 0,
-                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
-                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 0,
-                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
-            },
-            "Aanvankelijkecontrolesmetschending": {
-                "Totaal aanvankelijk": 0,
-                "Overtredingsgraad": 0,
-                "Verharding": 0,
-                "Ontbossing": 0
-            },
-            "Instrument": {
-                "Aantal raadgevingen": "niet gekend",
-                "Aanmaning": "niet gekend",
-                "Verslagen van vaststelling": "niet gekend",
-                "Procesverbaal": "niet gekend",
-                "Bevel tot staking": "niet gekend",
-                "Bestuurlijke maatregel": "niet gekend",
-                "Afgesloten minnelijke schikking": 0,
-                "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
-                "Herstel gevorderd bij burgelijke rechter": 0,
-                "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
-            },
-            "Thema": {
-                "Verharding": "Geen opmerking",
-                "Ontbossing": "Geen opmerking"
-            },
-            "Opmerking": {
-                "Opmerking": "Geen opmerking."
-            }
-        },
-        "Openbare Vlaamse Afvalstoffenmaatschappij": {
-            "Gewest": "Openbare Vlaamse Afvalstoffenmaatschappij",
-            "PersoneelRO": {
-                "Verbalisanten": 0,
-                "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
-                "Stedenbouwkundige inspecteurs": 0,
-                "VTE": 0
-            },
-            "Klachten": {
-                "Milieuklachten ruimtelijke ordening": 0,
-                "Verharding": 0,
-                "Ontbossing": 0
-            },
-            "Controles": {
-                "Milieucontroles": 0,
-                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
-                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 0,
-                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
-                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 0,
-                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
-            },
-            "Aanvankelijkecontrolesmetschending": {
-                "Totaal aanvankelijk": 0,
-                "Overtredingsgraad": 0,
-                "Verharding": 0,
-                "Ontbossing": 0
-            },
-            "Instrument": {
-                "Aantal raadgevingen": "niet gekend",
-                "Aanmaning": "niet gekend",
-                "Verslagen van vaststelling": "niet gekend",
-                "Procesverbaal": "niet gekend",
-                "Bevel tot staking": "niet gekend",
-                "Bestuurlijke maatregel": "niet gekend",
-                "Afgesloten minnelijke schikking": 0,
-                "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
-                "Herstel gevorderd bij burgelijke rechter": 0,
-                "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
-            },
-            "Thema": {
-                "Verharding": "Geen opmerking",
-                "Ontbossing": "Geen opmerking"
-            },
-            "Opmerking": {
-                "Opmerking": "Geen opmerking."
-            }
-        },
-        "Vlaams Energie- en Klimaatagentschap": {
-            "Gewest": "Vlaamse Energie- en Klimaatagentschap",
-            "PersoneelRO": {
-                "Verbalisanten": 0,
-                "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
-                "Stedenbouwkundige inspecteurs": 0,
-                "VTE": 0
-            },
-            "Klachten": {
-                "Milieuklachten ruimtelijke ordening": 0,
-                "Verharding": 0,
-                "Ontbossing": 0
-            },
-            "Controles": {
-                "Milieucontroles": 0,
-                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
-                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 0,
-                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
-                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 0,
-                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
-            },
-            "Aanvankelijkecontrolesmetschending": {
-                "Totaal aanvankelijk": 0,
-                "Overtredingsgraad": 0,
-                "Verharding": 0,
-                "Ontbossing": 0
-            },
-            "Instrument": {
-                "Aantal raadgevingen": "niet gekend",
-                "Aanmaning": "niet gekend",
-                "Verslagen van vaststelling": "niet gekend",
-                "Procesverbaal": "niet gekend",
-                "Bevel tot staking": "niet gekend",
-                "Bestuurlijke maatregel": "niet gekend",
-                "Afgesloten minnelijke schikking": 0,
-                "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
-                "Herstel gevorderd bij burgelijke rechter": 0,
-                "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
-            },
-            "Thema": {
-                "Verharding": "Geen opmerking",
-                "Ontbossing": "Geen opmerking"
-            },
-            "Opmerking": {
-                "Opmerking": "Geen opmerking."
-            }
-        },
-        "Vlaamse Landmaatschappij": {
-            "Gewest": "Vlaamse Landmaatschappij",
-            "PersoneelRO": {
-                "Verbalisanten": 0,
-                "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
-                "Stedenbouwkundige inspecteurs": 0,
-                "VTE": 0
-            },
-            "Klachten": {
-                "Milieuklachten ruimtelijke ordening": 0,
-                "Verharding": 0,
-                "Ontbossing": 0
-            },
-            "Controles": {
-                "Milieucontroles": 0,
-                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
-                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 0,
-                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
-                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 0,
-                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
-            },
-            "Aanvankelijkecontrolesmetschending": {
-                "Totaal aanvankelijk": 0,
-                "Overtredingsgraad": 0,
-                "Verharding": 0,
-                "Ontbossing": 0
-            },
-            "Instrument": {
-                "Aantal raadgevingen": "niet gekend",
-                "Aanmaning": "niet gekend",
-                "Verslagen van vaststelling": "niet gekend",
-                "Procesverbaal": "niet gekend",
-                "Bevel tot staking": "niet gekend",
-                "Bestuurlijke maatregel": "niet gekend",
-                "Afgesloten minnelijke schikking": 0,
-                "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
-                "Herstel gevorderd bij burgelijke rechter": 0,
-                "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
-            },
-            "Thema": {
-                "Verharding": "Geen opmerking",
-                "Ontbossing": "Geen opmerking"
-            },
-            "Opmerking": {
-                "Opmerking": "Geen opmerking."
-            }
-        },
-        "Vlaamse Milieumaatschappij": {
-            "Gewest": "Vlaamse Milieumaatschappij",
-            "PersoneelRO": {
-                "Verbalisanten": 0,
-                "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
-                "Stedenbouwkundige inspecteurs": 0,
-                "VTE": 0
-            },
-            "Klachten": {
-                "Milieuklachten ruimtelijke ordening": 0,
-                "Verharding": 0,
-                "Ontbossing": 0
-            },
-            "Controles": {
-                "Milieucontroles": 0,
-                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
-                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 0,
-                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
-                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 0,
-                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
-            },
-            "Aanvankelijkecontrolesmetschending": {
-                "Totaal aanvankelijk": 0,
-                "Overtredingsgraad": 0,
-                "Verharding": 0,
-                "Ontbossing": 0
-            },
-            "Instrument": {
-                "Aantal raadgevingen": "niet gekend",
-                "Aanmaning": "niet gekend",
-                "Verslagen van vaststelling": "niet gekend",
-                "Procesverbaal": "niet gekend",
-                "Bevel tot staking": "niet gekend",
-                "Bestuurlijke maatregel": "niet gekend",
-                "Afgesloten minnelijke schikking": 0,
-                "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
-                "Herstel gevorderd bij burgelijke rechter": 0,
-                "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
-            },
-            "Thema": {
-                "Verharding": "Geen opmerking",
-                "Ontbossing": "Geen opmerking"
-            },
-            "Opmerking": {
-                "Opmerking": "Geen opmerking."
-            }
-        },
-        "Vlaamse Wooninspectie": {
-            "Gewest": "Vlaamse Wooninspectie",
-            "PersoneelRO": {
-                "Verbalisanten": 11,
-                "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
-                "Stedenbouwkundige inspecteurs": 0,
-                "VTE": 0
-            },
-            "Klachten": {
-                "Milieuklachten ruimtelijke ordening": 0,
-                "Verharding": 0,
-                "Ontbossing": 0
-            },
-            "Controles": {
-                "Milieucontroles": 0,
-                "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
-                "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 0,
-                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
-                "aanvankelijke milieuhandhavingscontroles  op eigen initiatief": 0,
-                "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles op eigen initiatief": 0
-            },
-            "Aanvankelijkecontrolesmetschending": {
-                "Totaal aanvankelijk": 0,
-                "Overtredingsgraad": 0,
-                "Verharding": 0,
-                "Ontbossing": 0
-            },
-            "Instrument": {
-                "Aantal raadgevingen": 0,
-                "Aantal aanmaningen": 0,
-                "Aantal verslagen van vaststelling": 0,
-                "Aantal proces verbalen": 0,
-                "Bevel tot staking": 0,
-                "Afgesloten minnelijke schikking": "niet gekend",
-                "Ingeleide herstelvordering bij Openbaar Ministerie": "niet gekend",
-                "Ambtshalve uitvoering gerechtelijke herstelmaatregel": "niet gekend",
-                "Bestuurlijke maatregelen zonder dwangsom": "niet gekend",
-                "Bestuurlijke maatregelen met dwangsom": "niet gekend"
-            },
-            "Thema": {
-                "Verharding": "Niet van toepassing",
-                "Ontbossing": "Niet van toepassing"
-            },
-            "Opmerking": {
-                "Opmerking": "Geen opmerking."
-            }
+        "Opmerking": {
+            "Opmerking": "Geen opmerking."
         }
     },
+    "Agentschap voor Natuur en Bos": {
+        "PersoneelRO": {
+            "Verbalisanten": 0,
+            "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
+            "Stedenbouwkundige inspecteurs": 0,
+            "VTE": "2,98"
+        },
+        "Klachten": {
+            "Klachten ruimtelijke ordening": 4,
+            "Verharding": 0,
+            "Ontbossing": 0
+        },
+        "Controles": {
+            "Milieucontroles": 145,
+            "navolgende stedenbouwkundige controles naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+            "aanvankelijke stedenbouwkundige controles naar aanleiding van klachten": 1,
+            "navolgende stedenbouwkundige controles voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+            "aanvankelijke stedenbouwkundige controles  op eigen initiatief": 0,
+            "navolgende stedenbouwkundige controles voor verdere opvolging van de controles op eigen initiatief": 0
+        },
+        "Aanvankelijkecontrolesmetschending": {
+            "Totaal aanvankelijk": 141,
+            "Verharding": "aanvullen",
+            "Ontbossing": "aanvullen"
+        },
+        "Instrument": {
+            "Aantal raadgevingen": 1,
+            "Aantal aanmaningen": 59,
+            "Aantal verslagen van vaststelling": 3,
+            "Aantal proces verbalen": 79,
+            "Bevel tot staking": 0,
+            "Afgesloten minnelijke schikking": 0,
+            "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
+            "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0,
+            "Bestuurlijke maatregelen zonder dwangsom": 345,
+            "Bestuurlijke maatregelen met dwangsom": 98
+        },
+        "Thema": {
+            "Verharding": "Geen actie ondernomen",
+            "Ontbossing": "Geen actie ondernomen"
+        },
+        "Opmerking": {
+            "Opmerking": "Geen opmerking."
+        }
+    },
+    "Agentschap Wegen en Verkeer": {
+        "PersoneelRO": {
+            "Verbalisanten": 0,
+            "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
+            "Stedenbouwkundige inspecteurs": 0,
+            "VTE": 0
+        },
+        "Klachten": {
+            "Klachten ruimtelijke ordening": 0,
+            "Verharding": 0,
+            "Ontbossing": 0
+        },
+        "Controles": {
+            "Milieucontroles": 0,
+            "navolgende controles ruimtelijke ordening  naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+            "aanvankelijke controles ruimtelijke ordening  naar aanleiding van klachten": 0,
+            "navolgende controles ruimtelijke ordening  voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+            "aanvankelijke controles ruimtelijke ordening   op eigen initiatief": 0,
+            "navolgende controles ruimtelijke ordening  voor verdere opvolging van de controles op eigen initiatief": 0
+        },
+        "Aanvankelijkecontrolesmetschending": {
+            "Totaal aanvankelijk": 0,
+            "Overtredingsgraad": 0,
+            "Verharding": 0,
+            "Ontbossing": 0
+        },
+        "Instrument": {
+            "Aantal raadgevingen": "niet gekend",
+            "Aanmaning": "niet gekend",
+            "Verslagen van vaststelling": "niet gekend",
+            "Procesverbaal": "niet gekend",
+            "Bevel tot staking": "niet gekend",
+            "Bestuurlijke maatregel": "niet gekend",
+            "Afgesloten minnelijke schikking": 0,
+            "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
+            "Herstel gevorderd bij burgelijke rechter": 0,
+            "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
+        },
+        "Thema": {
+            "Verharding": "Geen opmerking",
+            "Ontbossing": "Geen opmerking"
+        },
+        "Opmerking": {
+            "Opmerking": "Geen opmerking."
+        }
+    },
+    "Vlaamse Waterweg": {
+        "Gewest": "De Vlaamse Waterweg",
+        "PersoneelRO": {
+            "Verbalisanten": 0,
+            "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
+            "Stedenbouwkundige inspecteurs": 0,
+            "VTE": 0
+        },
+        "Klachten": {
+            "Klachten ruimtelijke ordening": 0,
+            "Verharding": 0,
+            "Ontbossing": 0
+        },
+        "Controles": {
+            "Milieucontroles": 0,
+            "navolgende controles ruimtelijke ordening  naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+            "aanvankelijke controles ruimtelijke ordening  naar aanleiding van klachten": 0,
+            "navolgende controles ruimtelijke ordening  voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+            "aanvankelijke controles ruimtelijke ordening   op eigen initiatief": 0,
+            "navolgende controles ruimtelijke ordening  voor verdere opvolging van de controles op eigen initiatief": 0
+        },
+        "Aanvankelijkecontrolesmetschending": {
+            "Totaal aanvankelijk": 0,
+            "Overtredingsgraad": 0,
+            "Verharding": 0,
+            "Ontbossing": 0
+        },
+        "Instrument": {
+            "Aantal raadgevingen": "niet gekend",
+            "Aanmaning": "niet gekend",
+            "Verslagen van vaststelling": "niet gekend",
+            "Procesverbaal": "niet gekend",
+            "Bevel tot staking": "niet gekend",
+            "Bestuurlijke maatregel": "niet gekend",
+            "Afgesloten minnelijke schikking": 0,
+            "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
+            "Herstel gevorderd bij burgelijke rechter": 0,
+            "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
+        },
+        "Thema": {
+            "Verharding": "Geen opmerking",
+            "Ontbossing": "Geen opmerking"
+        },
+        "Opmerking": {
+            "Opmerking": "Geen opmerking."
+        }
+    },
+    "Departement Mobiliteit en Openbare Werken": {
+        "PersoneelRO": {
+            "Verbalisanten": 0,
+            "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
+            "Stedenbouwkundige inspecteurs": 0,
+            "VTE": 0
+        },
+        "Klachten": {
+            "Klachten ruimtelijke ordening": 0,
+            "Verharding": 0,
+            "Ontbossing": 0
+        },
+        "Controles": {
+            "Milieucontroles": 0,
+            "navolgende controles ruimtelijke ordening  naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+            "aanvankelijke controles ruimtelijke ordening  naar aanleiding van klachten": 0,
+            "navolgende controles ruimtelijke ordening  voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+            "aanvankelijke controles ruimtelijke ordening   op eigen initiatief": 0,
+            "navolgende controles ruimtelijke ordening  voor verdere opvolging van de controles op eigen initiatief": 0
+        },
+        "Aanvankelijkecontrolesmetschending": {
+            "Totaal aanvankelijk": 0,
+            "Overtredingsgraad": 0,
+            "Verharding": 0,
+            "Ontbossing": 0
+        },
+        "Instrument": {
+            "Aantal raadgevingen": "niet gekend",
+            "Aanmaning": "niet gekend",
+            "Verslagen van vaststelling": "niet gekend",
+            "Procesverbaal": "niet gekend",
+            "Bevel tot staking": "niet gekend",
+            "Bestuurlijke maatregel": "niet gekend",
+            "Afgesloten minnelijke schikking": 0,
+            "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
+            "Herstel gevorderd bij burgelijke rechter": 0,
+            "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
+        },
+        "Thema": {
+            "Verharding": "Geen opmerking",
+            "Ontbossing": "Geen opmerking"
+        },
+        "Opmerking": {
+            "Opmerking": "Geen opmerking."
+        }
+    },
+    "Departement Omgeving: GOP": {
+        "Gewest": "Departement Omgeving afdeling GOP",
+        "PersoneelRO": {
+            "Verbalisanten": 0,
+            "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
+            "Stedenbouwkundige inspecteurs": 0,
+            "VTE": 0
+        },
+        "Klachten": {
+            "Klachten ruimtelijke ordening": 0,
+            "Verharding": 0,
+            "Ontbossing": 0
+        },
+        "Controles": {
+            "Milieucontroles": 0,
+            "navolgende controles ruimtelijke ordening  naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+            "aanvankelijke controles ruimtelijke ordening  naar aanleiding van klachten": 0,
+            "navolgende controles ruimtelijke ordening  voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+            "aanvankelijke controles ruimtelijke ordening   op eigen initiatief": 0,
+            "navolgende controles ruimtelijke ordening  voor verdere opvolging van de controles op eigen initiatief": 0
+        },
+        "Aanvankelijkecontrolesmetschending": {
+            "Totaal aanvankelijk": 0,
+            "Overtredingsgraad": 0,
+            "Verharding": 0,
+            "Ontbossing": 0
+        },
+        "Instrument": {
+            "Aantal raadgevingen": "niet gekend",
+            "Aanmaning": "niet gekend",
+            "Verslagen van vaststelling": "niet gekend",
+            "Procesverbaal": "niet gekend",
+            "Bevel tot staking": "niet gekend",
+            "Bestuurlijke maatregel": "niet gekend",
+            "Afgesloten minnelijke schikking": 0,
+            "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
+            "Herstel gevorderd bij burgelijke rechter": 0,
+            "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
+        },
+        "Thema": {
+            "Verharding": "Geen opmerking",
+            "Ontbossing": "Geen opmerking"
+        },
+        "Opmerking": {
+            "Opmerking": "Geen opmerking."
+        }
+    },
+    "Departement Omgeving: Handhaving": {
+        "Gewest": "Departement Omgeving afdeling Handhaving",
+        "PersoneelRO": {
+            "Verbalisanten": 10,
+            "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 11,
+            "Stedenbouwkundige inspecteurs": 0,
+            "VTE": "32,35"
+        },
+        "Klachten": {
+            "Klachten ruimtelijke ordening": 612,
+            "Verharding": 0,
+            "Ontbossing": 0
+        },
+        "Controles": {
+            "Milieucontroles": 1065,
+            "navolgende controles ruimtelijke ordening  naar aanleiding van schendingen vastgesteld in voorgaande jaren": 570,
+            "aanvankelijke controles ruimtelijke ordening  naar aanleiding van klachten": 146,
+            "navolgende controles ruimtelijke ordening  voor verdere opvolging van de controles naar aanleiding van klachten": 12,
+            "aanvankelijke controles ruimtelijke ordening   op eigen initiatief": 50,
+            "navolgende controles ruimtelijke ordening  voor verdere opvolging van de controles op eigen initiatief": 30
+        },
+        "Aanvankelijkecontrolesmetschending": {
+            "Totaal aanvankelijk": 180,
+            "Verharding": 0,
+            "Ontbossing": 0
+        },
+        "Instrument": {
+            "Aantal raadgevingen": 4,
+            "Aantal aanmaningen": 304,
+            "Aantal verslagen van vaststelling": 30,
+            "Aantal proces verbalen": 121,
+            "Bevel tot staking": 12,
+            "Afgesloten minnelijke schikking": 28,
+            "Ingeleide herstelvordering bij Openbaar Ministerie": 32,
+            "Ambtshalve uitvoering gerechtelijke herstelmaatregel": "niet gekend",
+            "Bestuurlijke maatregelen zonder dwangsom": 0,
+            "Bestuurlijke maatregelen met dwangsom": 3
+        },
+        "Thema": {
+            "Verharding": "Het aanpakken van de verharding is opgenomen in de gewestelijke prioriteiten van het Vlaamse meerjarenprogramma omgevingshandhaving zodat we bij onze reactieve controles hier op focussen. Er is ook een meer proactieve aanpak via de gebiedsgerichte werking waarin er wordt gehandhaafd op illegale verhardingen. Indien er sprake is van een onvergunde verharding dan wel ontbossing zal deze schending steeds meegenomen worden in het handhavingstraject. Bij elke handhavingshandeling wordt immers steeds de volledige illegaliteit in aanmerking genomen. Hoewel deze schendingen evenzeer aangepakt worden in een enkele casus zullen dergelijke feiten veelal op een meer gestructureerde wijze opduiken bij de verschillende gebiedsgerichte acties die de afdeling Handhaving heeft opgezet. ",
+            "Ontbossing": "Indien er sprake is van een onvergunde verharding dan wel ontbossing zal deze schending steeds meegenomen worden in het handhavingstraject. Bij elke handhavingshandeling wordt immers steeds de volledige illegaliteit in aanmerking genomen. Hoewel deze schendingen evenzeer aangepakt worden in een enkele casus zullen dergelijke feiten veelal op een meer gestructureerde wijze opduiken bij de verschillende gebiedsgerichte acties die de afdeling Handhaving heeft opgezet.  "
+        },
+        "Opmerking": {
+            "Opmerking": "Geen opmerking."
+        }
+    },
+    "Departement Omgeving: VPO": {
+        "Gewest": "Departement omgeving afdeling VPO",
+        "PersoneelRO": {
+            "Verbalisanten": 0,
+            "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
+            "Stedenbouwkundige inspecteurs": 0,
+            "VTE": 0
+        },
+        "Klachten": {
+            "Klachten ruimtelijke ordening": 0,
+            "Verharding": 0,
+            "Ontbossing": 0
+        },
+        "Controles": {
+            "Milieucontroles": 0,
+            "navolgende controles ruimtelijke ordening  naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+            "aanvankelijke controles ruimtelijke ordening  naar aanleiding van klachten": 0,
+            "navolgende controles ruimtelijke ordening  voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+            "aanvankelijke controles ruimtelijke ordening   op eigen initiatief": 0,
+            "navolgende controles ruimtelijke ordening  voor verdere opvolging van de controles op eigen initiatief": 0
+        },
+        "Aanvankelijkecontrolesmetschending": {
+            "Totaal aanvankelijk": 0,
+            "Overtredingsgraad": 0,
+            "Verharding": 0,
+            "Ontbossing": 0
+        },
+        "Instrument": {
+            "Aantal raadgevingen": "niet gekend",
+            "Aanmaning": "niet gekend",
+            "Verslagen van vaststelling": "niet gekend",
+            "Procesverbaal": "niet gekend",
+            "Bevel tot staking": "niet gekend",
+            "Bestuurlijke maatregel": "niet gekend",
+            "Afgesloten minnelijke schikking": 0,
+            "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
+            "Herstel gevorderd bij burgelijke rechter": 0,
+            "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
+        },
+        "Thema": {
+            "Verharding": "Geen opmerking",
+            "Ontbossing": "Geen opmerking"
+        },
+        "Opmerking": {
+            "Opmerking": "Geen opmerking."
+        }
+    },
+    "Departement Zorg": {
+        "Gewest": "Departement zorg",
+        "PersoneelRO": {
+            "Verbalisanten": 0,
+            "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
+            "Stedenbouwkundige inspecteurs": 0,
+            "VTE": 0
+        },
+        "Klachten": {
+            "Klachten ruimtelijke ordening": 0,
+            "Verharding": 0,
+            "Ontbossing": 0
+        },
+        "Controles": {
+            "Milieucontroles": 0,
+            "navolgende controles ruimtelijke ordening  naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+            "aanvankelijke controles ruimtelijke ordening  naar aanleiding van klachten": 0,
+            "navolgende controles ruimtelijke ordening  voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+            "aanvankelijke controles ruimtelijke ordening   op eigen initiatief": 0,
+            "navolgende controles ruimtelijke ordening  voor verdere opvolging van de controles op eigen initiatief": 0
+        },
+        "Aanvankelijkecontrolesmetschending": {
+            "Totaal aanvankelijk": 0,
+            "Overtredingsgraad": 0,
+            "Verharding": 0,
+            "Ontbossing": 0
+        },
+        "Instrument": {
+            "Aantal raadgevingen": "niet gekend",
+            "Aanmaning": "niet gekend",
+            "Verslagen van vaststelling": "niet gekend",
+            "Procesverbaal": "niet gekend",
+            "Bevel tot staking": "niet gekend",
+            "Bestuurlijke maatregel": "niet gekend",
+            "Afgesloten minnelijke schikking": 0,
+            "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
+            "Herstel gevorderd bij burgelijke rechter": 0,
+            "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
+        },
+        "Thema": {
+            "Verharding": "Geen opmerking",
+            "Ontbossing": "Geen opmerking"
+        },
+        "Opmerking": {
+            "Opmerking": "Geen opmerking."
+        }
+    },
+    "Openbare Vlaamse Afvalstoffenmaatschappij": {
+        "Gewest": "Openbare Vlaamse Afvalstoffenmaatschappij",
+        "PersoneelRO": {
+            "Verbalisanten": 0,
+            "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
+            "Stedenbouwkundige inspecteurs": 0,
+            "VTE": 0
+        },
+        "Klachten": {
+            "Klachten ruimtelijke ordening": 0,
+            "Verharding": 0,
+            "Ontbossing": 0
+        },
+        "Controles": {
+            "Milieucontroles": 0,
+            "navolgende controles ruimtelijke ordening  naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+            "aanvankelijke controles ruimtelijke ordening  naar aanleiding van klachten": 0,
+            "navolgende controles ruimtelijke ordening  voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+            "aanvankelijke controles ruimtelijke ordening   op eigen initiatief": 0,
+            "navolgende controles ruimtelijke ordening  voor verdere opvolging van de controles op eigen initiatief": 0
+        },
+        "Aanvankelijkecontrolesmetschending": {
+            "Totaal aanvankelijk": 0,
+            "Overtredingsgraad": 0,
+            "Verharding": 0,
+            "Ontbossing": 0
+        },
+        "Instrument": {
+            "Aantal raadgevingen": "niet gekend",
+            "Aanmaning": "niet gekend",
+            "Verslagen van vaststelling": "niet gekend",
+            "Procesverbaal": "niet gekend",
+            "Bevel tot staking": "niet gekend",
+            "Bestuurlijke maatregel": "niet gekend",
+            "Afgesloten minnelijke schikking": 0,
+            "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
+            "Herstel gevorderd bij burgelijke rechter": 0,
+            "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
+        },
+        "Thema": {
+            "Verharding": "Geen opmerking",
+            "Ontbossing": "Geen opmerking"
+        },
+        "Opmerking": {
+            "Opmerking": "Geen opmerking."
+        }
+    },
+    "Vlaams Energie- en Klimaatagentschap": {
+        "Gewest": "Vlaamse Energie- en Klimaatagentschap",
+        "PersoneelRO": {
+            "Verbalisanten": 0,
+            "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
+            "Stedenbouwkundige inspecteurs": 0,
+            "VTE": 0
+        },
+        "Klachten": {
+            "Klachten ruimtelijke ordening": 0,
+            "Verharding": 0,
+            "Ontbossing": 0
+        },
+        "Controles": {
+            "Milieucontroles": 0,
+            "navolgende controles ruimtelijke ordening  naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+            "aanvankelijke controles ruimtelijke ordening  naar aanleiding van klachten": 0,
+            "navolgende controles ruimtelijke ordening  voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+            "aanvankelijke controles ruimtelijke ordening   op eigen initiatief": 0,
+            "navolgende controles ruimtelijke ordening  voor verdere opvolging van de controles op eigen initiatief": 0
+        },
+        "Aanvankelijkecontrolesmetschending": {
+            "Totaal aanvankelijk": 0,
+            "Overtredingsgraad": 0,
+            "Verharding": 0,
+            "Ontbossing": 0
+        },
+        "Instrument": {
+            "Aantal raadgevingen": "niet gekend",
+            "Aanmaning": "niet gekend",
+            "Verslagen van vaststelling": "niet gekend",
+            "Procesverbaal": "niet gekend",
+            "Bevel tot staking": "niet gekend",
+            "Bestuurlijke maatregel": "niet gekend",
+            "Afgesloten minnelijke schikking": 0,
+            "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
+            "Herstel gevorderd bij burgelijke rechter": 0,
+            "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
+        },
+        "Thema": {
+            "Verharding": "Geen opmerking",
+            "Ontbossing": "Geen opmerking"
+        },
+        "Opmerking": {
+            "Opmerking": "Geen opmerking."
+        }
+    },
+    "Vlaamse Landmaatschappij": {
+        "Gewest": "Vlaamse Landmaatschappij",
+        "PersoneelRO": {
+            "Verbalisanten": 0,
+            "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
+            "Stedenbouwkundige inspecteurs": 0,
+            "VTE": 0
+        },
+        "Klachten": {
+            "Klachten ruimtelijke ordening": 0,
+            "Verharding": 0,
+            "Ontbossing": 0
+        },
+        "Controles": {
+            "Milieucontroles": 0,
+            "navolgende controles ruimtelijke ordening  naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+            "aanvankelijke controles ruimtelijke ordening  naar aanleiding van klachten": 0,
+            "navolgende controles ruimtelijke ordening  voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+            "aanvankelijke controles ruimtelijke ordening   op eigen initiatief": 0,
+            "navolgende controles ruimtelijke ordening  voor verdere opvolging van de controles op eigen initiatief": 0
+        },
+        "Aanvankelijkecontrolesmetschending": {
+            "Totaal aanvankelijk": 0,
+            "Overtredingsgraad": 0,
+            "Verharding": 0,
+            "Ontbossing": 0
+        },
+        "Instrument": {
+            "Aantal raadgevingen": "niet gekend",
+            "Aanmaning": "niet gekend",
+            "Verslagen van vaststelling": "niet gekend",
+            "Procesverbaal": "niet gekend",
+            "Bevel tot staking": "niet gekend",
+            "Bestuurlijke maatregel": "niet gekend",
+            "Afgesloten minnelijke schikking": 0,
+            "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
+            "Herstel gevorderd bij burgelijke rechter": 0,
+            "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
+        },
+        "Thema": {
+            "Verharding": "Geen opmerking",
+            "Ontbossing": "Geen opmerking"
+        },
+        "Opmerking": {
+            "Opmerking": "Geen opmerking."
+        }
+    },
+    "Vlaamse Milieumaatschappij": {
+        "Gewest": "Vlaamse Milieumaatschappij",
+        "PersoneelRO": {
+            "Verbalisanten": 0,
+            "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
+            "Stedenbouwkundige inspecteurs": 0,
+            "VTE": 0
+        },
+        "Klachten": {
+            "Klachten ruimtelijke ordening": 0,
+            "Verharding": 0,
+            "Ontbossing": 0
+        },
+        "Controles": {
+            "Milieucontroles": 0,
+            "navolgende controles ruimtelijke ordening  naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+            "aanvankelijke controles ruimtelijke ordening  naar aanleiding van klachten": 0,
+            "navolgende controles ruimtelijke ordening  voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+            "aanvankelijke controles ruimtelijke ordening   op eigen initiatief": 0,
+            "navolgende controles ruimtelijke ordening  voor verdere opvolging van de controles op eigen initiatief": 0
+        },
+        "Aanvankelijkecontrolesmetschending": {
+            "Totaal aanvankelijk": 0,
+            "Overtredingsgraad": 0,
+            "Verharding": 0,
+            "Ontbossing": 0
+        },
+        "Instrument": {
+            "Aantal raadgevingen": "niet gekend",
+            "Aanmaning": "niet gekend",
+            "Verslagen van vaststelling": "niet gekend",
+            "Procesverbaal": "niet gekend",
+            "Bevel tot staking": "niet gekend",
+            "Bestuurlijke maatregel": "niet gekend",
+            "Afgesloten minnelijke schikking": 0,
+            "Ingeleide herstelvordering bij Openbaar Ministerie": 0,
+            "Herstel gevorderd bij burgelijke rechter": 0,
+            "Ambtshalve uitvoering gerechtelijke herstelmaatregel": 0
+        },
+        "Thema": {
+            "Verharding": "Geen opmerking",
+            "Ontbossing": "Geen opmerking"
+        },
+        "Opmerking": {
+            "Opmerking": "Geen opmerking."
+        }
+    },
+    "Vlaamse Wooninspectie": {
+        "Gewest": "Vlaamse Wooninspectie",
+        "PersoneelRO": {
+            "Verbalisanten": 11,
+            "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur": 0,
+            "Stedenbouwkundige inspecteurs": 0,
+            "VTE": 0
+        },
+        "Klachten": {
+            "Klachten ruimtelijke ordening": 0,
+            "Verharding": 0,
+            "Ontbossing": 0
+        },
+        "Controles": {
+            "Milieucontroles": 0,
+            "navolgende controles ruimtelijke ordening  naar aanleiding van schendingen vastgesteld in voorgaande jaren": 0,
+            "aanvankelijke controles ruimtelijke ordening  naar aanleiding van klachten": 0,
+            "navolgende controles ruimtelijke ordening  voor verdere opvolging van de controles naar aanleiding van klachten": 0,
+            "aanvankelijke controles ruimtelijke ordening   op eigen initiatief": 0,
+            "navolgende controles ruimtelijke ordening  voor verdere opvolging van de controles op eigen initiatief": 0
+        },
+        "Aanvankelijkecontrolesmetschending": {
+            "Totaal aanvankelijk": 0,
+            "Overtredingsgraad": 0,
+            "Verharding": 0,
+            "Ontbossing": 0
+        },
+        "Instrument": {
+            "Aantal raadgevingen": 0,
+            "Aantal aanmaningen": 0,
+            "Aantal verslagen van vaststelling": 0,
+            "Aantal proces verbalen": 0,
+            "Bevel tot staking": 0,
+            "Afgesloten minnelijke schikking": "niet gekend",
+            "Ingeleide herstelvordering bij Openbaar Ministerie": "niet gekend",
+            "Ambtshalve uitvoering gerechtelijke herstelmaatregel": "niet gekend",
+            "Bestuurlijke maatregelen zonder dwangsom": "niet gekend",
+            "Bestuurlijke maatregelen met dwangsom": "niet gekend"
+        },
+        "Thema": {
+            "Verharding": "Niet van toepassing",
+            "Ontbossing": "Niet van toepassing"
+        },
+        "Opmerking": {
+            "Opmerking": "Geen opmerking."
+        }
+    }
+},
     "Beleid": {
         "Agentschap voor Maritieme Dienstverlening en Kust": "Milieu",
         "Agentschap voor Natuur en Bos": "Both" ,
