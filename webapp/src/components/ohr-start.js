@@ -166,7 +166,7 @@ and performing other setup tasks.
                 De bovenstaande infographic geeft een overzicht van de
                 verschillende instrumenten binnen het milieubeleid voor het volledige vlaamse gewest.<br />
                 <p>
-                  <a href="images/infographic_milieu_gewestelijk_def.png" download
+                  <a href=""
                     >Download bovenstaande infographic</a
                   >
                 </p>
@@ -187,7 +187,7 @@ and performing other setup tasks.
                 verschillende instrumenten binnen het ruimtelijke ordening beleid
                 voor het volledige vlaamse gewest.<br />
                 <p>
-                  <a href="images/infographic_ro_gewestelijk_def.png" download
+                  <a href=""
                     >Download bovenstaande infographic</a>
                 </p>
               </span>
