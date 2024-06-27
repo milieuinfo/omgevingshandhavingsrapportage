@@ -335,7 +335,7 @@ and performing other setup tasks.
         template: html` <div>
           <a is="vl-doormat" href="/strafrechtelijk">
             <h2 is="vl-doormat-title">
-              Strafrechtelijke en bestuurlijke sanctionering
+              Strafrechtelijke sanctionering
             </h2>
             <div is="vl-doormat-text">
              Bekijk de cijfers van het Openbaar Ministerie van het voorgaande jaar.

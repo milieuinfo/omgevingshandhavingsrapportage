@@ -334,7 +334,7 @@ Het Handhavingscollege is een onafhankelijk Vlaams administratief rechtscollege.
 
   __renderSideNavigation() {
     return html`
-    <a is="vl-link-button" href="/gemeenten-analyse">Bekijk de cijfers voor dit thema</a>
+    <a is="vl-link-button" href="/bestuurlijk">Bekijk de cijfers voor dit thema</a>
     <h5 is="vl-h5" data-vl-alt>Interessante links</h5>
     <ul is="vl-link-list">
     <li is="vl-link-list-item">
