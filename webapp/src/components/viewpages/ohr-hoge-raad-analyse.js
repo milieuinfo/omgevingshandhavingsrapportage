@@ -49,7 +49,7 @@ class OhrHogeRaadAnalyse extends LitElement {
         <p is="vl-icon-wrapper"><vl-annotation><span is="vl-icon" data-vl-icon="calendar"></span> Laatste wijziging aan de data: 21/02/2024</vl-annotation></p><br>
 
     <p is="vl-introduction" data-cy="introduction">
-    Deze pagina toont een beeld van de activiteiten van de Hoge Raad voor de Handhavingsuitvoering in het voorafgaande jaar
+    Deze pagina toont de cijfers van de activiteiten van de Hoge Raad voor de Handhavingsuitvoering in het voorafgaande jaar.
     </p><br/>
     
 <div>
@@ -61,10 +61,10 @@ class OhrHogeRaadAnalyse extends LitElement {
 
   renderDataSection(data) {
     return html`
-                        <table is="vl-data-table">
+                        <table is="vl-data-table" data-vl-grid>
                             <thead>
                                 <tr>
-                                    <th>Onderwerp</th>
+                                    <th>Advies gevraagd aan</th>
                                     <th>Aantal</th>
                                 </tr>
                             </thead>
@@ -91,76 +91,148 @@ class OhrHogeRaadAnalyse extends LitElement {
                         <br>
     `;
 }
-  __renderPage() {
-    return html`
-   <vl-cascader>
-        <vl-cascader-item label="Instroom">
-        <vl-cascader-item label="Instroom">
-    <vl-accordion-list slot="content">
-        <vl-accordion data-vl-toggle-text="Aanvragen voor advies inzake herstelvorderingen"> 
-        ${this.renderDataSection(jsonData.Instroom.Vraag1)}
-        </vl-accordion>
-        <vl-accordion data-vl-toggle-text="Verzoeken tot heroverweging van een negatief advies inzake herstelvorderingen">
-        ${this.renderDataSection(jsonData.Instroom.Vraag2)}
-        </vl-accordion>
-        <vl-accordion data-vl-toggle-text="Aanvragen voor advies inzake opeenvolgende herstelvorderingen">
-        ${this.renderDataSection(jsonData.Instroom.Vraag3)}
-        </vl-accordion>
-        <vl-accordion data-vl-toggle-text="Aanvragen voor advies inzake een ambtshalve uitvoering van een door de rechter bevolen herstelmaatregel">
-        ${this.renderDataSection(jsonData.Instroom.Vraag4)}
-        </vl-accordion>
-        <vl-accordion data-vl-toggle-text="Aanvragen voor advies inzake betekeningen van vonnissen of arresten waarin de rechter het bestuur heeft gemachtigd om ambtshalve in de uitvoering ervan te voorzien">
-        ${this.renderDataSection(jsonData.Instroom.Vraag5)}
-        </vl-accordion>
-    </vl-accordion-list>
-                </vl-cascader-item>
-                </vl-cascader-item>
-      <vl-cascader-item label="Bindende adviezen">
-      <vl-cascader-item label="Bindende adviezen">
-    <vl-accordion-list slot="content">
-    <vl-accordion data-vl-toggle-text="Aan gewestelijke stedenbouwkundige inspecteurs"> 
-    ${this.renderDataSection(jsonData.Instroom.VraagB1)}
-    </vl-accordion>
-    <vl-accordion  data-vl-toggle-text="Aan gemeentelijke stedenbouwkundige inspecteurs / burgemeesters">
-    ${this.renderDataSection(jsonData.Instroom.VraagB2)}
-    </vl-accordion>
-    </vl-accordion-list>
-                </vl-cascader-item>
-                </vl-cascader-item>
 
+renderDataSectionSpecial(data) {
+  return html`
+                      <table is="vl-data-table" data-vl-grid>
+                          <thead>
+                              <tr>
+                                  <th>&nbsp;</th>
+                                  <th>Aantal</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              ${Object.entries(data).map(([key, value]) => {
+                                  if (typeof value === 'object') {
+                                      return html`
+                                          <tr>
+                                              <td data-title="${key}">${key}</td>
+                                              <td data-title="${value.value}">${value.value} ( tijdig uitgevoerd: ${value.extra} )</td>
+                                          </tr>
+                                      `;
+                                  } else {
+                                      return html`
+                                          <tr>
+                                              <td data-title="${key}">${key}</td>
+                                              <td data-title="${value.value}">${value}</td>
+                                          </tr>
+                                      `;
+                                  }
+                              })}
+                          </tbody>
+                      </table>
+                      <br>
+  `;
+}
 
+__renderDataSection_BindendeAdviezen_Herstelvordering(data) {
+  return html`
+                      <table is="vl-data-table" data-vl-grid>
+                          <thead>
+                              <tr>
+                                  <th>Soort advies</th>
+                                  <th>Gewestelijke stedenbouwkundige inspecteurs</th>
+                                  <th>Gemeentelijke stedenbouwkundige inspecteurs / burgemeesters</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              ${Object.entries(data).map(([key, value]) => {
+                                  if (typeof value === 'object') {
+                                      return html`
+                                          <tr>
+                                              <td data-title="${key}">${key}</td>
+                                              <td data-title="Gewestelijke stedenbouwkundige inspecteurs">${value.value1}</td>
+                                              <td data-title="Gemeentelijke stedenbouwkundige inspecteurs / burgemeesters">${value.value2}</td>
+                                          </tr>
+                                      `;
+                                  } else {
+                                      return html`
+                                          <tr>
+                                              <td data-title="${key}">${key}</td>
+                                              <td data-title="${value.value}">${value}</td>
+                                          </tr>
+                                      `;
+                                  }
+                              })}
+                          </tbody>
+                      </table>
+                      <br>
+  `;
+}
 
-      <vl-cascader-item label="Adviezen">
-      <vl-cascader-item label="Adviezen">
-    <vl-accordion-list slot="content">
-    <vl-accordion data-vl-toggle-text="Aantal in 2023 gegeven adviezen aan de Vlaamse Regering of het college van burgemeester en schepenen
-over het gemotiveerd verzoek om tijdelijk of definitief af te zien van verdere inning van
-een opeisbaar geworden dwangsomschuld"> 
-${this.renderDataSection(jsonData.Instroom.VraagC1)}
-    </vl-accordion>
-    <vl-accordion  data-vl-toggle-text="Aantal in 2023 gegeven adviezen aan de Vlaamse Regering over de herstelmaatregelen in het kader van
-    een beroep ingesteld door de vermoedelijke overtreder tegen de beslissing tot toepassing
-    van bestuursdwang of tot het opleggen van een last onder dwangsom">
-    ${this.renderDataSection(jsonData.Instroom.VraagC2)}
-    </vl-accordion>
-    </vl-accordion-list>
-                </vl-cascader-item>
-                </vl-cascader-item>
+__renderDataSection_BindendeAdviezen_Herstelvordering_Heroverweging(data) {
+  return html`
+                      <table is="vl-data-table" data-vl-grid>
+                          <thead>
+                              <tr>
+                                  <th>Soort advies</th>
+                                  <th>Gewestelijke stedenbouwkundige inspecteurs</th>
+                                  <th>Gemeentelijke stedenbouwkundige inspecteurs / burgemeesters</th>
+                                  <th>Derde belanghebbende</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              ${Object.entries(data).map(([key, value]) => {
+                                  if (typeof value === 'object') {
+                                      return html`
+                                          <tr>
+                                              <td data-title="${key}">${key}</td>
+                                              <td data-title="Gewestelijke stedenbouwkundige inspecteurs">${value.value1}</td>
+                                              <td data-title="Gemeentelijke stedenbouwkundige inspecteurs / burgemeesters">${value.value2}</td>
+                                              <td data-title="Derde belanghebbende">${value.value3}</td>
+                                          </tr>
+                                      `;
+                                  } else {
+                                      return html`
+                                          <tr>
+                                              <td data-title="${key}">${key}</td>
+                                              <td data-title="${value.value}">${value}</td>
+                                          </tr>
+                                      `;
+                                  }
+                              })}
+                          </tbody>
+                      </table>
+                      <br>
+  `;
+}
 
-      <vl-cascader-item label="Bemiddelingsopdracht">
-      <vl-cascader-item label="Bemiddelingsopdracht">
-    <vl-accordion-list slot="content">
-    <vl-accordion data-vl-toggle-text="Aantal bemiddelingsopdrachten op verzoek van een vermoedelijke overtreder of de rechtbank in 2023"> 
-    ${this.renderDataSection(jsonData.Instroom.VraagD1)}
-    </vl-accordion>
-    </vl-accordion-list>
-                </vl-cascader-item>
-      </vl-cascader-item>
-</vl-cascader>
-`;
-
-  }
-
+__renderDataSection_BindendeAdviezen_Herstelvordering_Ambtshalve_uitvoering(data) {
+  return html`
+                      <table is="vl-data-table" data-vl-grid>
+                          <thead>
+                              <tr>
+                                  <th>Soort advies</th>
+                                  <th>Gewestelijke stedenbouwkundige inspecteurs</th>
+                                  <th>Gemeentelijke stedenbouwkundige inspecteurs / burgemeesters</th>
+                                  <th>Burgemeester</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              ${Object.entries(data).map(([key, value]) => {
+                                  if (typeof value === 'object') {
+                                      return html`
+                                          <tr>
+                                              <td data-title="${key}">${key}</td>
+                                              <td data-title="Gewestelijke stedenbouwkundige inspecteurs">${value.value1}</td>
+                                              <td data-title="Gemeentelijke stedenbouwkundige inspecteurs / burgemeesters">${value.value2}</td>
+                                              <td data-title="Derde belanghebbende">${value.value3}</td>
+                                          </tr>
+                                      `;
+                                  } else {
+                                      return html`
+                                          <tr>
+                                              <td data-title="${key}">${key}</td>
+                                              <td data-title="${value.value}">${value}</td>
+                                          </tr>
+                                      `;
+                                  }
+                              })}
+                          </tbody>
+                      </table>
+                      <br>
+  `;
+}
   __renderDynamicContent() {
     return html`
 <vl-tabs data-vl-active-tab="Instroom" data-vl-disable-links="">
@@ -191,12 +263,28 @@ ${this.renderDataSection(jsonData.Instroom.VraagC1)}
           <div is="vl-grid">
   <div is="vl-column" data-vl-size=12>
   <vl-accordion-list slot="content">
-    <vl-accordion data-vl-default-open data-vl-toggle-text="Aan gewestelijke stedenbouwkundige inspecteurs"> 
-    ${this.renderDataSection(jsonData.Instroom.VraagB1)}
+    <vl-accordion data-vl-default-open data-vl-toggle-text="Herstelvorderingen"> 
+    ${this.__renderDataSection_BindendeAdviezen_Herstelvordering(jsonData.Instroom.Herstelvorderingen)}
     </vl-accordion>
-    <vl-accordion data-vl-default-open  data-vl-toggle-text="Aan gemeentelijke stedenbouwkundige inspecteurs / burgemeesters">
-    ${this.renderDataSection(jsonData.Instroom.VraagB2)}
+    <vl-accordion data-vl-default-open  data-vl-toggle-text="Herstelvorderingen naar aanleiding van gemotiveerd verzoek tot heroverweging van een negatief advies inzake herstelvorderingen">
+    ${this.__renderDataSection_BindendeAdviezen_Herstelvordering_Heroverweging(jsonData.Instroom.HerstelvorderingenHeroverweging)}
     </vl-accordion>
+
+     <vl-accordion data-vl-default-open  data-vl-toggle-text="Inleiden van opeenvolgende herstelvorderingen">
+     ${this.__renderDataSection_BindendeAdviezen_Herstelvordering_Heroverweging(jsonData.Instroom.Herstelvorderingopeenvolgend)}
+     
+    </vl-accordion>
+
+    <vl-accordion data-vl-default-open  data-vl-toggle-text="Vooraleer een ambtshalve uitvoering van een door de rechter bevolen herstelmaatregel kan worden opgestart">
+    ${this.__renderDataSection_BindendeAdviezen_Herstelvordering_Ambtshalve_uitvoering(jsonData.Instroom.Ambtshalveuitvoering)}
+    </vl-accordion>
+
+    <vl-accordion data-vl-default-open  data-vl-toggle-text="Voorafgaand aan sommige betekeningen van vonnissen of arresten waarin de rechter het bestuur heeft gemachtigd om ambtshalve in de uitvoering ervan te voorzien">
+   ${this.__renderDataSection_BindendeAdviezen_Herstelvordering_Ambtshalve_uitvoering(jsonData.Instroom.Betekening)}
+    </vl-accordion>
+
+
+    
     </vl-accordion-list>
   </div>
 </div>   
@@ -205,15 +293,14 @@ ${this.renderDataSection(jsonData.Instroom.VraagC1)}
     <div is="vl-grid">
   <div is="vl-column" data-vl-size=12>
   <vl-accordion-list slot="content">
-    <vl-accordion data-vl-default-open data-vl-toggle-text="Aantal in 2023 gegeven adviezen aan de Vlaamse Regering of het college van burgemeester en schepenen
-over het gemotiveerd verzoek om tijdelijk of definitief af te zien van verdere inning van
+    <vl-accordion data-vl-default-open data-vl-toggle-text="Over het gemotiveerd verzoek om tijdelijk of definitief af te zien van verdere inning van
 een opeisbaar geworden dwangsomschuld"> 
-${this.renderDataSection(jsonData.Instroom.VraagC1)}
+ ${this.renderDataSectionSpecial(jsonData.Instroom.VraagC1)}
     </vl-accordion>
-    <vl-accordion data-vl-default-open  data-vl-toggle-text="Aantal in 2023 gegeven adviezen aan de Vlaamse Regering over de herstelmaatregelen in het kader van
+    <vl-accordion data-vl-default-open  data-vl-toggle-text="Over de herstelmaatregelen in het kader van
     een beroep ingesteld door de vermoedelijke overtreder tegen de beslissing tot toepassing
     van bestuursdwang of tot het opleggen van een last onder dwangsom">
-    ${this.renderDataSection(jsonData.Instroom.VraagC2)}
+    ${this.renderDataSectionSpecial(jsonData.Instroom.VraagC2)}
     </vl-accordion>
     </vl-accordion-list>
   </div>
@@ -224,8 +311,8 @@ ${this.renderDataSection(jsonData.Instroom.VraagC1)}
     <div is="vl-grid">
   <div is="vl-column" data-vl-size=12>
  <vl-accordion-list slot="content">
-    <vl-accordion data-vl-default-open data-vl-toggle-text="Aantal bemiddelingsopdrachten op verzoek van een vermoedelijke overtreder of de rechtbank in 2023"> 
-    ${this.renderDataSection(jsonData.Instroom.VraagD1)}
+    <vl-accordion data-vl-default-open data-vl-toggle-text="Aantal bemiddelingsopdrachten op verzoek van een vermoedelijke overtreder of de rechtbank"> 
+    ${this.renderDataSectionSpecial(jsonData.Instroom.VraagD1)}
     </vl-accordion>
     </vl-accordion-list>
   </div>
