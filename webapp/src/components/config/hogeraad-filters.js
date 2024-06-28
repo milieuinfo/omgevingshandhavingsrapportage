@@ -1,7 +1,5 @@
 import {
-    JAAR,
-    INSTROOM,
-    THEMA,
+  JAARTALBESTUURLIJK,
     F1
     } from "./qlik_resources.js";
     
@@ -9,12 +7,12 @@ import {
       {
         name: "Jaartal",
         id: "Jaartal",
-        filter: JAAR
+        filter: JAARTALBESTUURLIJK
       },
       {
           name: "Advies gevraagd door",
           id: "Instroom",
-          filter: INSTROOM
+          filter: F1
       },
       {
         name: "Advies gegeven aan",

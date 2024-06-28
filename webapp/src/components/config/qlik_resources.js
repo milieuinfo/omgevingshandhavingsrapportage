@@ -87,7 +87,7 @@ export const F1 = {
 
   name: "Advies gegeven aan",
   fieldQualifier: "qText",
-  field: "[F1]",
+  field: "[Advies gegeven aan]",
   nrOfValues: 10,
 }
 

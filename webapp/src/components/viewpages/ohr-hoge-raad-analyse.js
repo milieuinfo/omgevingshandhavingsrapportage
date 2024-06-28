@@ -64,7 +64,7 @@ class OhrHogeRaadAnalyse extends LitElement {
                         <table is="vl-data-table" data-vl-grid>
                             <thead>
                                 <tr>
-                                    <th>Advies gevraagd aan</th>
+                                    <th>Advies gevraagd door</th>
                                     <th>Aantal</th>
                                 </tr>
                             </thead>
