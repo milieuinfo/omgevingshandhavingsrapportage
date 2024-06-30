@@ -290,7 +290,7 @@ class OhrAGewest extends LitElement {
         <vl-tabs-pane data-vl-id="Opmerkingen" data-vl-title="Opmerkingen">
           <div is="vl-grid">
             ${renderColumns(
-              jsonData2.RO[this.selectedChoiceUrl].Opmerking,
+              jsonData2.Milieu[this.selectedChoiceUrl].Opmerking,
               jsonData2.RO[this.selectedChoiceUrl].Opmerking,
               "Milieu",
               "Ruimtelijke ordening"
