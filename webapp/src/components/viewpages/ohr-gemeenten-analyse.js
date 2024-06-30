@@ -270,6 +270,23 @@ class OhrGemeentenAnalyse extends LitElement {
     </div>
 </div>
     </vl-tabs-pane>
+     <vl-tabs-pane data-vl-id="Themagerichte acties" data-vl-title="Themagerichte acties">
+      <div is="vl-grid">
+    <div is="vl-column" data-vl-size=6>
+    </div>
+</div>
+    </vl-tabs-pane>
+     <vl-tabs-pane data-vl-id="Opmerkingen" data-vl-title="Opmerkingen">
+      <div is="vl-grid">
+    <div is="vl-column" data-vl-size=6>
+          <vl-typography>
+            <ul>
+                <li>Geen opmerkingen.</li>
+            </ul>
+          </vl-typography>
+    </div>
+</div>
+    </vl-tabs-pane>
 </vl-tabs>
       `;
     }
