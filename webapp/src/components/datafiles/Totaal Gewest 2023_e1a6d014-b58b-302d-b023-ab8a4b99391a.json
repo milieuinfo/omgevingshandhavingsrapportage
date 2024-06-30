@@ -44,7 +44,7 @@
             },
             "Instrument": {
                 "Raadgeving": "niet gekend",
-                "Aanmaning milieu": "niet gekend",
+                "Aanmaning": "niet gekend",
                 "Proces-verbaal milieu": "niet gekend",
                 "Verslag van vaststelling": "niet gekend",
                 "Bestuurlijke maatregel milieu": "niet gekend"
@@ -489,7 +489,7 @@
             "Instrument": {
                 "Raadgeving": "niet gekend",
                 "Raadgeving ruimtelijke ordening": "niet gekend",
-                "Aanmaning milieu": "niet gekend",
+                "Aanmaning": "niet gekend",
                 "Aanmaning": "niet gekend",
                 "Proces-verbaal milieu": "niet gekend",
                 "Proces-verbaal ro": "niet gekend",
