@@ -61,9 +61,10 @@ class OhrHogeRaadDashboard extends LitElement {
     return html`
       <vl-typography slot="introduction">
         <p>
-       De Hoge Raad voor de Handhavingsuitvoering adviseert over de inzet van bepaalde handhavingsinstrumenten van de ruimtelijke ordening. 
-       Deze pagina geeft via een interactieve tool de cijfers van de opdrachten van de Hoge Raad voor de Handhavingsuitvoering over de jaren heen weer.
-        </p>
+       De Hoge Raad voor de Handhavingsuitvoering adviseert over de inzet van bepaalde handhavingsinstrumenten van de ruimtelijke ordening. Deze pagina geeft via een interactieve tool de cijfers van de opdrachten van de Hoge Raad voor de Handhavingsuitvoering over de jaren heen weer.
+       De cijfers worden weergegeven per bevoegdheid: adviesverlening en bemiddeling.
+      De cijfers zullen wijzigen naargelang de gekozen filtering. 
+       </p>
           <vl-accordion data-vl-toggle-text="Informatie over het gebruik van het dashboard">
           <span>
           Het standaard beeld geeft de totale cijfers van 2021 tot en met ${this.yearofanalysis}.

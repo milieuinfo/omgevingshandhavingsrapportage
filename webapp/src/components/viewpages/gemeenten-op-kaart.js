@@ -87,7 +87,7 @@ class OhrOpkaart extends LitElement {
       De burgemeester of zijn plaatsvervanger is in bepaalde gevallen bevoegd voor het opleggen van bestuurlijke maatregelen en kan veiligheidsmaatregelen nemen in geval van een aanzienlijk risico voor mens of milieu. 
       </p><p>
       De lokale toezichthouders oefenen daarnaast het toezicht uit op de toepassing van specifieke milieuvoorschriften. De lokale verbalisanten, de agenten en de officieren van gerechtelijke politie en de stedenbouwkundige inspecteurs/burgemeesters handhaven de regelgeving van de Vlaamse Codex Ruimtelijke Ordening. 
-      De gemeenten kunnen hun handhavingsactiviteiten organiseren binnen de eigen gemeentelijke administratie en/of een intergemeentelijke vereniging en/of intergemeentelijke vereniging en/of de lokale politie. </p>
+      De gemeenten kunnen hun handhavingsactiviteiten organiseren binnen de eigen gemeentelijke administratie en/of een intergemeentelijke vereniging en/of in samenwerking lokale politie. </p>
       <p>
       In de cartografische weergaves wordt gerapporteerd over de uitvoering van hun handhavingsactiviteiten in het voorgaand jaar (handhavingsactiviteiten uitgevoerd tussen 1 januari en 31 december). 
       </p>
