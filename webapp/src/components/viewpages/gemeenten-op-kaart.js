@@ -105,7 +105,7 @@ class OhrOpkaart extends LitElement {
        <span>
         De onderstaande kaarten geven per onderwerp in kleurgradaties de absolute cijfers en de cijfers per 1.000 inwoners weer. (inwonersaantal op basis van <a href="https://statbel.fgov.be" target="_blank">Statbel</a>)
         <br>
-        Bij hoveren over een gemeente worden de cijfers weergegeven.
+        Wanneer u de cursor over een gemeente beweegt, worden de cijfers weergegeven.
 
         De responsgraad voor deze bevraging (of bepaalde vragen in de bevraging) bedraagt geen 100%. Dit maakt dat bepaalde gemeenten als waarde "niet gekend" of “non-respons tonen. 
         Niet gekend:  het antwoord is niet gekend
@@ -119,9 +119,9 @@ class OhrOpkaart extends LitElement {
   __renderBackgroundInformation() {
     return html`
           <vl-typography data-cy="typography">
-          <p><em>Non-respons: Gemeenten heeft niet gereageerd op de bevraging.
+          <p><em>Non-respons: Gemeente heeft niet gereageerd op de bevraging.
           <br/>
-          Niet gekend: Gemeenten kon geen cijfers geven over dit handhavingsthema.</em>
+          Niet gekend: Gemeente kon geen cijfers geven over dit handhavingsthema.</em>
           </p>
           </vl-typography>`;
   }

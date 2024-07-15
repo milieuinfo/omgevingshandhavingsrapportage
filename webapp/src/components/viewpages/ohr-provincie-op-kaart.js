@@ -82,7 +82,7 @@ import {
       return html`
       <vl-typography data-cy="typography">
       <p><em>
-      Niet gekend: Gemeenten kon geen cijfers geven over deze handhavignsthema.</em>
+      Niet gekend: Provincie kon geen cijfers geven over deze handhavignsthema.</em>
       </p>
       </vl-typography>`;
     }
@@ -99,7 +99,7 @@ In de cartografische weergaves wordt gerapporteerd over de uitvoering van hun ha
        <vl-accordion data-vl-toggle-text="Hoe interpreteer ik de kaarten?">
           <span>
 De onderstaande kaarten geven per onderwerp in kleurgradaties de absolute cijfers en de cijfers per 1.000 inwoners weer. (inwonersaantal op basis van <a href="https://statbel.fgov.be" target=_blank>Statbel</a>)
-<br>Bij hoveren over een gemeente worden de cijfers weergegeven.</span>
+<br>Wanneer u de cursor over een gemeente beweegt, worden de cijfers weergegeven.</span>
         </vl-accordion></p>
 
 `;
