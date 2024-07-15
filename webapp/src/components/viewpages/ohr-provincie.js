@@ -10,6 +10,9 @@ import "@domg-wc/elements/link";
 import "@domg-wc/elements/link-list";
 import "@domg-wc/components/functional-header";
 
+import yearofanalsysis from "../config/yearofanalysis.json" assert {type: "json"};
+
+
 class OhrProvincie extends LitElement {
 
   static get styles() {
@@ -20,6 +23,8 @@ class OhrProvincie extends LitElement {
 
   constructor() {
     super();
+    this.yearofanalysis = yearofanalsysis.value;
+
   }
 
   render() {
@@ -67,7 +72,7 @@ class OhrProvincie extends LitElement {
         milieuvoorschriften.
         In de individuele handhavingsfiches wordt per provincie gerapporteerd
         over de uitvoering
-        van hun handhavingsactiviteiten in het voorgaand jaar.
+        van hun handhavingsactiviteiten in ${this.yearofanalysis}.
       </p>`;
   }
 

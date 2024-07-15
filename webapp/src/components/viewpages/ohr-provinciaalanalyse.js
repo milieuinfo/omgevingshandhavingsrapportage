@@ -22,6 +22,7 @@ import "@domg-wc/elements/select";
 import "@domg-wc/components/tabs";
 import "@domg-wc/elements/link";
 import "@domg-wc/elements/link-list";
+import yearofanalsysis from "../config/yearofanalysis.json" assert {type: "json"};
 
 class OhrProvincieAnalyse extends LitElement {
 
@@ -39,6 +40,7 @@ class OhrProvincieAnalyse extends LitElement {
     super();
     this.selectedChoiceUrl = options.find(o => o.selected).value;
     this.selectedChoiceLabel = options.find((o) => o.selected).label;
+    this.yearofanalysis = yearofanalsysis.value;
   }
 
   firstUpdated(_changedProperties) {
@@ -73,7 +75,7 @@ class OhrProvincieAnalyse extends LitElement {
       <section is="vl-region">
         <div is="vl-layout">
         <vl-typography>
-        <h2>Cijfers van het jaar 2023</h2></vl-typography>
+        <h2>Cijfers van het jaar ${this.yearofanalysis}</h2></vl-typography>
         <p is="vl-icon-wrapper"><vl-annotation><span is="vl-icon" data-vl-icon="calendar"></span> Laatste wijziging aan de data: 21/02/2024</vl-annotation></p><br>
 
     <p is="vl-introduction" data-cy="introduction">
@@ -87,153 +89,6 @@ class OhrProvincieAnalyse extends LitElement {
         </div>
       </section>`;
   }
-
-  /*
-  __renderPage() {
-    return html`
-   <vl-cascader>
-    <vl-cascader-item label="Provincie Antwerpen">
-        <vl-cascader-item label="Milieu">
-    <vl-accordion-list slot="content">
-        <vl-accordion data-vl-toggle-text="Provinciegouverneur"> 
-        <p>Geen opgelegde bestuurlijke maatregelen of veiligsheidsmaatregelen voor provinciegouverneur.</p>
-        </vl-accordion>
-        <vl-accordion data-vl-toggle-text="Provinciale toezichthouders en VTE">
-        ${this.renderDataSection(jsonData.Milieu.Antwerpen.gewestelijkeToezichthouders)}
-        </vl-accordion>
-        <vl-accordion data-vl-toggle-text="Klachten">
-        ${this.renderDataSection(jsonData.Milieu.Antwerpen.Klachten)}
-        </vl-accordion>
-        <vl-accordion data-vl-toggle-text="Controles">
-        ${this.renderDataSection(jsonData.Milieu.Antwerpen.Controles)}
-        </vl-accordion>
-        <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-        ${this.renderDataSection(jsonData.Milieu.Antwerpen.Aanvankelijkecontrolesmetschending)}
-        </vl-accordion>
-        <vl-accordion data-vl-toggle-text="Instrumentarium">
-        ${this.renderDataSection(jsonData.Milieu.Antwerpen.Instrument)}
-        </vl-accordion>
-        <vl-accordion data-vl-toggle-text="Opmerking">
-        <p>Totaal aantal milieuhandhavingscontroles uitgevoerd in 2023: dit maakt deel uit van het dagdagelijkse werk van de controleurs/toezichthouders. In 2023 is een voltijdse handhaver gestart bij provincie Antwerpen. Dit heeft geleid tot een toename van het aantal controles en acties. Verder werd in het najaar 2023 een nieuwe applicatie voor registratie en opvolging van handhaving in gebruik genomen. Verwacht wordt dat vanaf 2024 een realistischer beeld van het aantal uitgevoerde controles gegeven zal kunnen worden, en bijgevolg het aantal acties ook zal toenemen.</p>
-        </vl-accordion>
-    </vl-accordion-list>
-                </vl-cascader-item>
-      </vl-cascader-item>
-      <vl-cascader-item label="Provincie Limburg">
-        <vl-cascader-item label="Milieu">
-    <vl-accordion-list slot="content">
-    <vl-accordion data-vl-toggle-text="Provinciegouverneur"> 
-        <p>Geen opgelegde bestuurlijke maatregelen of veiligsheidsmaatregelen voor provinciegouverneur.</p>
-    </vl-accordion>
-    <vl-accordion data-vl-toggle-text="Provinciale toezichthouders en VTE">
-    ${this.renderDataSection(jsonData.Milieu.Limburg.gewestelijkeToezichthouders)}
-    </vl-accordion>
-    <vl-accordion data-vl-toggle-text="Klachten">
-    ${this.renderDataSection(jsonData.Milieu.Limburg.Klachten)}
-    </vl-accordion>
-    <vl-accordion data-vl-toggle-text="Controles">
-    ${this.renderDataSection(jsonData.Milieu.Limburg.Controles)}
-    </vl-accordion>
-    <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-    ${this.renderDataSection(jsonData.Milieu.Limburg.Aanvankelijkecontrolesmetschending)}
-    </vl-accordion>
-    <vl-accordion data-vl-toggle-text="Instrumentarium">
-    ${this.renderDataSection(jsonData.Milieu.Limburg.Instrument)}
-    </vl-accordion>
-    <vl-accordion data-vl-toggle-text="Opmerking">
-        <p>Geen opmerkingen.</p>
-    </vl-accordion>
-    </vl-accordion-list>
-                </vl-cascader-item>
-      </vl-cascader-item>
-
-      <vl-cascader-item label="Provincie Oost-Vlaanderen">
-        <vl-cascader-item label="Milieu">
-    <vl-accordion-list slot="content">
-    <vl-accordion data-vl-toggle-text="Provinciegouverneur"> 
-    <p>Geen opgelegde bestuurlijke maatregelen of veiligsheidsmaatregelen voor provinciegouverneur.</p>
-    </vl-accordion>
-    <vl-accordion data-vl-toggle-text="Provinciale toezichthouders en VTE">
-    ${this.renderDataSection(jsonData.Milieu.OostVlaanderen.gewestelijkeToezichthouders)}
-    </vl-accordion>
-    <vl-accordion data-vl-toggle-text="Klachten">
-    ${this.renderDataSection(jsonData.Milieu.OostVlaanderen.Klachten)}
-    </vl-accordion>
-    <vl-accordion data-vl-toggle-text="Controles">
-    ${this.renderDataSection(jsonData.Milieu.OostVlaanderen.Controles)}
-    </vl-accordion>
-    <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-    ${this.renderDataSection(jsonData.Milieu.OostVlaanderen.Aanvankelijkecontrolesmetschending)}
-    </vl-accordion>
-    <vl-accordion data-vl-toggle-text="Instrumentarium">
-    ${this.renderDataSection(jsonData.Milieu.OostVlaanderen.Instrument)}
-    </vl-accordion>
-    <vl-accordion data-vl-toggle-text="Opmerking">
-        <p>Geen opmerkingen.</p>
-    </vl-accordion>
-    </vl-accordion-list>
-                </vl-cascader-item>
-      </vl-cascader-item>
-
-      <vl-cascader-item label="Provincie West-Vlaanderen">
-      <vl-cascader-item label="Milieu">
-  <vl-accordion-list slot="content">
-  <vl-accordion data-vl-toggle-text="Provinciegouverneur"> 
-  <p>Geen opgelegde bestuurlijke maatregelen of veiligsheidsmaatregelen voor provinciegouverneur.</p>
-  </vl-accordion>
-  <vl-accordion data-vl-toggle-text="Provinciale toezichthouders en VTE">
-  ${this.renderDataSection(jsonData.Milieu.WestVlaanderen.gewestelijkeToezichthouders)}
-  </vl-accordion>
-  <vl-accordion data-vl-toggle-text="Klachten">
-  ${this.renderDataSection(jsonData.Milieu.WestVlaanderen.Klachten)}
-  </vl-accordion>
-  <vl-accordion data-vl-toggle-text="Controles">
-  ${this.renderDataSection(jsonData.Milieu.WestVlaanderen.Controles)}
-  </vl-accordion>
-  <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-  ${this.renderDataSection(jsonData.Milieu.WestVlaanderen.Aanvankelijkecontrolesmetschending)}
-  </vl-accordion>
-  <vl-accordion data-vl-toggle-text="Instrumentarium">
-  ${this.renderDataSection(jsonData.Milieu.WestVlaanderen.Instrument)}
-  </vl-accordion>
-  <vl-accordion data-vl-toggle-text="Opmerking">
-  <p>Geen opmerkingen.</p>
-</vl-accordion>
-  </vl-accordion-list>
-              </vl-cascader-item>
-    </vl-cascader-item>
-  <vl-cascader-item label="Provincie Vlaams-Brabant">
-        <vl-cascader-item label="Milieu">
-    <vl-accordion-list slot="content">
-    <vl-accordion data-vl-toggle-text="Provinciegouverneur"> 
-    <p>Geen opgelegde bestuurlijke maatregelen of veiligsheidsmaatregelen voor provinciegouverneur.</p>
-    </vl-accordion>
-    <vl-accordion data-vl-toggle-text="Provinciale toezichthouders en VTE">
-    ${this.renderDataSection(jsonData.Milieu.VlaamsBrabant.gewestelijkeToezichthouders)}
-    </vl-accordion>
-    <vl-accordion data-vl-toggle-text="Klachten">
-    ${this.renderDataSection(jsonData.Milieu.VlaamsBrabant.Klachten)}
-    </vl-accordion>
-    <vl-accordion data-vl-toggle-text="Controles">
-    ${this.renderDataSection(jsonData.Milieu.VlaamsBrabant.Controles)}
-    </vl-accordion>
-    <vl-accordion data-vl-toggle-text="Aanvankelijke controles met schending">
-    ${this.renderDataSection(jsonData.Milieu.VlaamsBrabant.Aanvankelijkecontrolesmetschending)}
-    </vl-accordion>
-    <vl-accordion data-vl-toggle-text="Instrumentarium">
-    ${this.renderDataSection(jsonData.Milieu.VlaamsBrabant.Instrument)}
-    </vl-accordion>
-    <vl-accordion data-vl-toggle-text="Opmerking">
-  <p>De toezichthouders van de provincie Vlaams-Brabant handhaven eerder reactief dan actief. Elke toezichthouder is de vertegenwoordiger van een team van 4 personen dat instaat voor het onderhoud van een deelgebied en de wateradviesverlening binnen dit deelgebied. Elk teamlid voert terreincontroles uit in het kader van hun onderhoudsopdracht. Deze controles starten dus niet met het doel die de definitie van "controle" in het kader van handhaving omschrijft, maar evolueren hier wel naar indien noodzakelijk. Overtredingen die vastgesteld worden tijdens deze opdracht worden doorgegeven aan de toezichthouder van het team. Overtredingen worden dus opgemerkt per toeval, wanneer ze de beheerstaken hinderen of wanneer er melding van derden bij onze dienst van wordt gemaakt. Zoals boven vermeld wordt er geen onderscheid geregistreerd tussen meldingen die betrekking hebben op het onderhoud of functioneren van de waterloop en meldingen die het gevolg zijn van handhavingsgerelateerde oorzaken.</p>
-</vl-accordion>
-    </vl-accordion-list>
-                </vl-cascader-item>
-      </vl-cascader-item>
-</vl-cascader>
-`;
-
-  }
-*/
 
 /* Render opmerking */
 renderOpmerkingsection(data,type) {

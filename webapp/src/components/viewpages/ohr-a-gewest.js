@@ -19,6 +19,8 @@ import "@domg-wc/components/tabs";
 import "@domg-wc/elements/link";
 import "@domg-wc/elements/link-list";
 
+import yearofanalsysis from "../config/yearofanalysis.json" assert {type: "json"};
+
 class OhrAGewest extends LitElement {
   static get styles() {
     return [...vlElementsStyle];
@@ -34,6 +36,7 @@ class OhrAGewest extends LitElement {
     super();
     this.selectedChoiceUrl = options.find(o => o.selected).value;
     this.selectedChoiceLabel = options.find((o) => o.selected).label;
+    this.yearofanalysis = yearofanalsysis.value;
   }
 
   firstUpdated(_changedProperties) {
@@ -69,7 +72,7 @@ class OhrAGewest extends LitElement {
       <section is="vl-region">
         <div is="vl-layout">
           <vl-typography>
-            <h2>Cijfers van het jaar 2023</h2>
+            <h2>Cijfers van het jaar ${this.yearofanalysis}</h2>
           <p is="vl-icon-wrapper">
             <span is="vl-icon" data-vl-icon="calendar"></span><vl-annotation>Laatste wijziging aan de data: 21/02/2024</vl-annotation>
           </p></vl-typography><br>

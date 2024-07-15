@@ -10,6 +10,8 @@ import "@domg-wc/qlik/dashboard-page";
 import {vlElementsStyle} from "@domg-wc/elements";
 import "@domg-wc/components/alert";
 
+import yearofanalsysis from "../config/yearofanalysis.json" assert {type: "json"};
+
 class OhrBestuurlijkevervolgtraject extends LitElement {
 
   static get styles() {
@@ -20,6 +22,11 @@ class OhrBestuurlijkevervolgtraject extends LitElement {
     return {
       initialized: {type: Boolean}
     }
+  }
+
+  constructor() {
+    super();
+    this.yearofanalysis = yearofanalsysis.value;
   }
 
   render() {
@@ -62,7 +69,7 @@ class OhrBestuurlijkevervolgtraject extends LitElement {
         </p>
        <vl-accordion data-vl-toggle-text="Informatie over het gebruik van het dashboard">
           <span>
-          Het standaard beeld geeft de totale cijfers van 2021 tot en met het voorgaande jaar.
+          Het standaard beeld geeft de totale cijfers van 2021 tot en met ${this.yearofanalysis}.
           Via de filters kan u kiezen om de cijfers van één jaar, één beleidsdomein of één thema weer te geven. De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk hieronder. Wanneer de gegevens niet gekend zijn, verschijnt “-“ of wordt aangegeven dat de data niet beschikbaar zijn. Bij een evolutie weergave zal de lijn onderbroken zijn.
           </span>
         </vl-accordion>

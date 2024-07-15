@@ -16,6 +16,7 @@ import {
   
   import options from "../config/provincie-op-kaart.json" assert {type: "json"};
   import options2 from "../config/provincie-op-kaart-absoluut.json" assert {type:"json"};
+  import yearofanalsysis from "../config/yearofanalysis.json" assert {type: "json"};
   
   class OhrOpkaartprovincie extends LitElement {
   
@@ -38,6 +39,8 @@ import {
       this.selectedChoiceLabel = options.find((o) => o.selected).label;
       this.selectedChoiceUrlAbsoluut = options2.find(o2 => o2.selected).value;
       this.selectedChoiceLabelAbsoluut = options2.find((o2) => o2.selected).label;
+      this.yearofanalysis = yearofanalsysis.value;
+
     }
   
     firstUpdated(_changedProperties) {
@@ -90,7 +93,7 @@ import {
       <p>
       De provincies hebben handhavingsbevoegdheden ten aanzien van de milieuregelgeving. De provinciegouverneur of zijn plaatsvervanger is in bepaalde gevallen bevoegd voor het opleggen van bestuurlijke maatregelen en kan veiligheidsmaatregelen nemen in geval van een aanzienlijk risico voor mens of milieu. De provinciale toezichthouders oefenen daarnaast het toezicht uit op de toepassing van specifieke milieuvoorschriften. 
 
-In de cartografische weergaves wordt gerapporteerd over de uitvoering van hun handhavingsactiviteiten in het voorgaand jaar (handhavingsactiviteiten uitgevoerd tussen 1 januari en 31 december).</p>
+In de cartografische weergaves wordt gerapporteerd over de uitvoering van hun handhavingsactiviteiten in ${this.yearofanalysis} (handhavingsactiviteiten uitgevoerd tussen 1 januari en 31 december).</p>
       <br>
       <p>
        <vl-accordion data-vl-toggle-text="Hoe interpreteer ik de kaarten?">

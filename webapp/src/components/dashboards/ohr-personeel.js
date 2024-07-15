@@ -10,6 +10,8 @@ import "@domg-wc/qlik/dashboard-page";
 import {vlElementsStyle} from "@domg-wc/elements";
 import "@domg-wc/components/alert";
 
+import yearofanalsysis from "../config/yearofanalysis.json" assert {type: "json"};
+
 class OhrPersoneel extends LitElement {
 
   static get styles() {
@@ -20,6 +22,11 @@ class OhrPersoneel extends LitElement {
     return {
       initialized: {type: Boolean}
     }
+  }
+
+  constructor() {
+    super();
+    this.yearofanalysis = yearofanalsysis.value;
   }
 
   render() {
@@ -63,7 +70,7 @@ class OhrPersoneel extends LitElement {
         <br>De cijfers zullen wijzigen naargelang de gekozen filtering.<br></p>
         <vl-accordion data-vl-toggle-text="Informatie over het gebruik van het dashboard">
           <span>
-           Het standaard beeld geeft de totale cijfers van 2021 tot en met het voorgaande jaar weer voor de omgevingsinspectie in heel Vlaanderen.
+           Het standaard beeld geeft de totale cijfers van 2021 tot en met ${this.yearofanalysis} weer voor de omgevingsinspectie in heel Vlaanderen.
 Via de filters kan u kiezen om de cijfers van één jaar, één beleidsniveau of één actor weer te geven. De gekozen filtering kan op elk moment worden verwijderd aan de hand van de selectiebalk hieronder. Wanneer de gegevens niet gekend zijn, verschijnt “-“ of wordt aangegeven dat de data niet beschikbaar zijn. Bij een evolutie weergave zal de lijn onderbroken zijn
 </span>
         </vl-accordion>

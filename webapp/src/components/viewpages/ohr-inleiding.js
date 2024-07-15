@@ -81,7 +81,7 @@ class OhrInleiding extends LitElement {
               </h1>
       <p>
         Het decreet van 5 april 1995 houdende algemene bepalingen inzake
-        milieubeleid (DABM) bepaalt in artikel 16.2.3 dat gegevens over de
+        milieubeleid (DABM) bepaalt in artikel 16.2.3 en 6.1.3 (VCRO) dat gegevens over de
         omgevingshandhavingsuitvoering jaarlijks online worden gepubliceerd.
         Deze data bevatten een input- en outputweergave (handhavingsfiche) van
         de handhavingsactiviteiten in het kader van het DABM en de Vlaamse Codex

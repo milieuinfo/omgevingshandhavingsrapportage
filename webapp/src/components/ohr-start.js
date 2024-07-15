@@ -14,6 +14,8 @@ import "@domg-wc/components/content-header";
 import "@domg-wc/components/alert";
 import "@domg-wc/components/spotlight";
 
+import yearofanalsysis from "./config/yearofanalysis.json" assert {type: "json"};
+
 class OhrLandingPage extends LitElement {
   //The styles method is a feature provided by Lit Element to encapsulate styles for a specific component.
   static get styles() {
@@ -27,6 +29,7 @@ and performing other setup tasks.
 
   constructor() {
     super();
+    this.yearofanalysis = yearofanalsysis.value;
   }
 
   //Main Rendering Function of page
@@ -91,11 +94,11 @@ and performing other setup tasks.
     return html` <div>
         <p is="vl-introduction">
           Het decreet van 5 april 1995 houdende algemene bepalingen inzake
-          milieubeleid (DABM) bepaalt in artikel 16.2.3 dat gegevens over de
+          milieubeleid (DABM) bepaalt in artikel 16.2.3 en 6.1.3 (VCRO) dat gegevens over de
           omgevingshandhavingsuitvoering jaarlijks online worden gepubliceerd.
           Jaarlijks worden de handhavingsactoren in het Vlaamse Gewest op
           uniforme en gestandaardiseerde wijze bevraagd aangaande hun
-          handhavingsactiviteiten.<br />
+          handhavingsactiviteiten in het voorgaande jaar.<br />
 
           De data gepresenteerd in deze omgevingshandhavingsrapportage zijn de
           gegevens zoals ze worden aangeleverd door de handhavingsactoren zelf
@@ -152,7 +155,7 @@ and performing other setup tasks.
   __renderGeconsolideerdBeeld(){
     return html `
     <h3 is="vl-h3" data-vl-alt>
-            Geconsolideerd beeld voorgaande jaar voor Vlaamse Gewest
+            Geconsolideerd beeld Omgevingshandhaving ${this.yearofanalysis} voor het Vlaamse Gewest
           </h3>
           <div is="vl-grid" data-vl-align-center>
           <div is="vl-column" data-vl-size="6">
@@ -203,7 +206,7 @@ and performing other setup tasks.
         {
           size: 12,
           template: html` <h3 is="vl-h3" data-vl-alt>
-            Cijfers van het voorgaande jaar  in een oogopslag
+            Cijfers ${this.yearofanalysis} in een oogopslag
           </h3>`,
         },
         {
@@ -273,7 +276,7 @@ and performing other setup tasks.
       {
         size: 12,
         template: html` <h3 is="vl-h3" data-vl-alt>
-          Bekijk de cijfers van het voorgaande jaar per actor
+          Bekijk de cijfers van ${this.yearofanalysis} jaar per actor
         </h3>`,
       },
       {
@@ -281,7 +284,7 @@ and performing other setup tasks.
         template: html`
           <p>
             Hieronder wordt per actor de data weergegeven die betrekking heeft
-            op het voorgaande kalenderjaar (handhavingsactiviteiten uitgevoerd
+            op ${this.yearofanalysis} (handhavingsactiviteiten uitgevoerd
             tussen 1 januari en 31 december)
           </p>
         `,
@@ -292,7 +295,7 @@ and performing other setup tasks.
           <a is="vl-doormat" href="/gewest">
             <h2 is="vl-doormat-title">Gewest</h2>
             <div is="vl-doormat-text">
-              Bekijk de cijfers van de gewestelijke omgevingshandhavingsactoren van het voorgaande jaar.
+              Bekijk de cijfers van de gewestelijke omgevingshandhavingsactoren van ${this.yearofanalysis}.
             </div>
           </a>
         </div>`,
@@ -303,7 +306,7 @@ and performing other setup tasks.
           <a is="vl-doormat" href="/provincie">
             <h2 is="vl-doormat-title">Provincies</h2>
             <div is="vl-doormat-text">
-              Bekijk de cijfers van de provinciale omgevingshandhavingsactoren van het voorgaande jaar.
+              Bekijk de cijfers van de provinciale omgevingshandhavingsactoren van ${this.yearofanalysis}.
             </div>
           </a>
         </div>`,
@@ -314,7 +317,7 @@ and performing other setup tasks.
           <a is="vl-doormat" href="/gemeenten">
             <h2 is="vl-doormat-title">Gemeenten</h2>
             <div is="vl-doormat-text">
-              Bekijk de cijfers van de gemeentelijke omgevingshandhavingsactoren van het voorgaande jaar.
+              Bekijk de cijfers van de gemeentelijke omgevingshandhavingsactoren van ${this.yearofanalysis}.
             </div>
           </a>
         </div>`,
@@ -325,7 +328,7 @@ and performing other setup tasks.
           <a is="vl-doormat" href="/hoge-raad">
             <h2 is="vl-doormat-title">Hoge raad voor de handhavingsuitvoering</h2>
             <div is="vl-doormat-text">
-              Bekijk de cijfers van de Hoge Raad voor Handhavingsuitvoering van het voorgaande jaar.
+              Bekijk de cijfers van de Hoge Raad voor Handhavingsuitvoering van ${this.yearofanalysis}.
             </div>
           </a>
         </div>`,
@@ -338,7 +341,7 @@ and performing other setup tasks.
               Strafrechtelijke sanctionering
             </h2>
             <div is="vl-doormat-text">
-             Bekijk de cijfers van het Openbaar Ministerie van het voorgaande jaar.
+             Bekijk de cijfers van het Openbaar Ministerie van ${this.yearofanalysis}.
             </div>
           </a>
         </div>`,
@@ -351,7 +354,7 @@ and performing other setup tasks.
               Bestuurlijke sanctionering
             </h2>
             <div is="vl-doormat-text">
-             Bekijk de cijfers van de gewestelijke beboetingsentiteit en het Handhavingscollege van het voorgaande jaar.
+             Bekijk de cijfers van de gewestelijke beboetingsentiteit en het Handhavingscollege van ${this.yearofanalysis}.
              </div>
           </a>
           
@@ -474,7 +477,7 @@ and performing other setup tasks.
       {
         size: 12,
         template: html` <h3 is="vl-h3" data-vl-alt>
-          Bekijk de cijfers van het voorgaande jaar op kaart
+          Bekijk de cijfers van ${this.yearofanalysis} op kaart
         </h3>`,
       },
       {
@@ -482,7 +485,7 @@ and performing other setup tasks.
         template: html`
           <p>
             Hieronder wordt per actor de data weergegeven die betrekking heeft
-            op het voorgaande kalenderjaar (handhavingsactiviteiten uitgevoerd
+            op ${this.yearofanalysis} (handhavingsactiviteiten uitgevoerd
             tussen 1 januari en 31 december) De data wordt gevisualiseerd op
             kaarten met informatie over de evolutie van de cijfer.
           </p>
@@ -495,7 +498,7 @@ and performing other setup tasks.
             <h2 is="vl-doormat-title">Provincies</h2>
             <div is="vl-doormat-text">
               Een cartografische weergave van de cijfers van de provincies in
-              het voorgaande jaar.
+              ${this.yearofanalysis}.
             </div>
           </a>
         </div>`,
@@ -507,7 +510,7 @@ and performing other setup tasks.
             <h2 is="vl-doormat-title">Gemeenten</h2>
             <div is="vl-doormat-text">
               Een cartografische weergave van de cijfers van de gemeenten in het
-              voorgaande jaar.
+              ${this.yearofanalysis}.
             </div>
           </a>
         </div>`,
