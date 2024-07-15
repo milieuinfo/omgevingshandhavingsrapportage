@@ -15,6 +15,8 @@ import "@domg-wc/components/functional-header";
 import "@domg-wc/elements/link";
 import "@domg-wc/elements/link-list";
 
+import yearofanalsysis from "../config/yearofanalysis.json" assert {type: "json"};
+
 class OhrHogeRaadAnalyse extends LitElement {
 
   static get styles() {
@@ -31,6 +33,7 @@ class OhrHogeRaadAnalyse extends LitElement {
 
   constructor() {
     super();
+    this.yearofanalysis = yearofanalsysis.value;
   }
 
   render() {
@@ -38,14 +41,14 @@ class OhrHogeRaadAnalyse extends LitElement {
     <vl-functional-header
     data-vl-back="Terug"
     data-vl-back-link="/hoge-raad"
-    data-vl-title="Jaarrapportage Hoge raad voor de handhavingsuitvoering"
+    data-vl-title="Jaarrapportage Hoge raad voor de Handhavingsuitvoering"
     data-vl-sub-title="Omgevingshandhavingsrapportage"
     data-vl-link="/hoge-raad-analyse">
     </vl-functional-header>
       <section is="vl-region">
         <div is="vl-layout">
         <vl-typography>
-        <h2>Cijfers van het jaar 2023</h2></vl-typography>
+        <h2>Cijfers van het jaar ${this.yearofanalysis}</h2></vl-typography>
         <p is="vl-icon-wrapper"><vl-annotation><span is="vl-icon" data-vl-icon="calendar"></span> Laatste wijziging aan de data: 21/02/2024</vl-annotation></p><br>
 
     <p is="vl-introduction" data-cy="introduction">
@@ -289,7 +292,7 @@ __renderDataSection_BindendeAdviezen_Herstelvordering_Ambtshalve_uitvoering(data
   </div>
 </div>   
   </vl-tabs-pane>
-  <vl-tabs-pane data-vl-id="Adviezen" data-vl-title="Adviezen">
+  <vl-tabs-pane data-vl-id="Niet-bindende adviezen" data-vl-title="Niet-bindende adviezen">
     <div is="vl-grid">
   <div is="vl-column" data-vl-size=12>
   <vl-accordion-list slot="content">
@@ -307,7 +310,7 @@ een opeisbaar geworden dwangsomschuld">
 </div>
 </div>
   </vl-tabs-pane>
-   <vl-tabs-pane data-vl-id="Bemiddelingsopdracht" data-vl-title="Bemiddelingsopdracht">
+   <vl-tabs-pane data-vl-id="Bemiddelingsopdrachten" data-vl-title="Bemiddelingsopdrachten">
     <div is="vl-grid">
   <div is="vl-column" data-vl-size=12>
  <vl-accordion-list slot="content">
