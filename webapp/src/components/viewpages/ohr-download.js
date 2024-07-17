@@ -75,9 +75,9 @@ class OhrDownload extends LitElement {
   __renderLinkList() {
     return html`
       <h3 is="vl-h3">Data van de rapportage</h3>
-        <p><a href="https://omgeving.vlaanderen.be/sites/default/files/2022-11/drive-download-20221117T123910Z-001.zip" download">Download de data van 2021</a></p>
-        <p><a href="https://omgeving.vlaanderen.be/sites/default/files/2023-04/Data%20Omgevingshandhavingsrapportage%202022.zip" download">Download de data van 2022</a></p>
-        <p><a href="/images/drive-download.zip" download>Download de data van 2023</a></p>
+        <p><a href="/datafiles/omgevingshandhavingscijfers_2021.zip" download">Download de data van 2021</a></p>
+        <p><a href="/datafiles/omgevingshandhavingscijfers_2022.zip" download">Download de data van 2022</a></p>
+        <p><a href="/datafiles/omgevingshandhavingscijfers_2023.zip" download>Download de data van 2023</a></p>
         <br>
      
       <h3 is="vl-h3">Downloadbare afbeeldingen van geconsolideerd beeld</h3>
