@@ -10,7 +10,7 @@ import "@domg-wc/elements/link";
 import "@domg-wc/elements/link-list";
 import "@domg-wc/components/functional-header";
 import "@domg-wc/components/typography";
-
+import yearofanalsysis from "../config/yearofanalysis.json" assert {type: "json"};
 
 class OhrHogeRaad extends LitElement {
 
@@ -22,6 +22,7 @@ class OhrHogeRaad extends LitElement {
 
   constructor() {
     super();
+    this.yearofanalysis = yearofanalsysis.value;
     
   }
 
@@ -30,7 +31,7 @@ class OhrHogeRaad extends LitElement {
     <vl-functional-header
     data-vl-back="Terug"
     data-vl-back-link="/"
-    data-vl-title="Jaarrapportage Hoge raad voor de Handhavingsuitvoering"
+    data-vl-title="Jaarrapportage Hoge Raad voor de Handhavingsuitvoering"
     data-vl-sub-title="Omgevingshandhavingsrapportage"
     data-vl-link="/hoge-raad">
 </vl-functional-header>
@@ -40,7 +41,7 @@ class OhrHogeRaad extends LitElement {
               {
                 size: 8,
                 template: html`<h1 is="vl-h1" data-vl-no-space-bottom>
-                Hoge raad voor de Handhavingsuitvoering
+                Hoge Raad voor de Handhavingsuitvoering
                 </h1>`,
               },
               {
@@ -59,7 +60,7 @@ class OhrHogeRaad extends LitElement {
     return html`
       <div is="vl-grid">
         <p is="vl-text">
-          Deze pagina toont een beeld van de activiteiten van de Hoge Raad voor de Handhavingsuitvoering in het voorafgaande jaar.</p>
+          Deze pagina toont een beeld van de activiteiten van de Hoge Raad voor de Handhavingsuitvoering in ${this.yearofanalysis}.</p>
              <p is="vl-text">
         De Hoge Raad voor de Handhavingsuitvoering adviseert over de inzet van bepaalde handhavingsinstrumenten in het kader van de handhaving van de ruimtelijke ordening.
         </p>
@@ -67,7 +68,7 @@ class OhrHogeRaad extends LitElement {
         <br>
         <div is="vl-grid">
         <p is="vl-text">
-        Meer informatie hieromtrent kan u terugvinden de website van <a href="https://www.hogeraadvoordehandhavingsuitvoering.be" target="_blank">Hoge Raad voor de Handhavingsuitvoering</a> 
+        Meer informatie hieromtrent kan u terugvinden op de website van <a href="https://www.hogeraadvoordehandhavingsuitvoering.be" target="_blank">Hoge Raad voor de Handhavingsuitvoering</a> 
         </p>
           </div>`;
   }
@@ -89,9 +90,7 @@ class OhrHogeRaad extends LitElement {
       </li>
     </ul>
     
-    
     `;
   }
 }
-
 customElements.define("ohr-hogeraad", OhrHogeRaad);

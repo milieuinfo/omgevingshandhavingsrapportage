@@ -326,7 +326,7 @@ and performing other setup tasks.
         size: 6,
         template: html` <div>
           <a is="vl-doormat" href="/hoge-raad">
-            <h2 is="vl-doormat-title">Hoge raad voor de handhavingsuitvoering</h2>
+            <h2 is="vl-doormat-title">Hoge Raad voor de Handhavingsuitvoering</h2>
             <div is="vl-doormat-text">
               Bekijk de cijfers van de Hoge Raad voor Handhavingsuitvoering van ${this.yearofanalysis}.
             </div>
@@ -436,7 +436,7 @@ and performing other setup tasks.
         template: html` <div>
           <a is="vl-doormat" href="/hogeraad">
             <h2 is="vl-doormat-title">
-              Hoge raad voor de handhavingsuitvoering
+              Hoge Raad voor de Handhavingsuitvoering
             </h2>
             <div is="vl-doormat-text">
               Een beeld van de activiteiten van de Hoge Raad voor Handhavingsuitvoering doorheen de jaren.

@@ -41,7 +41,7 @@ class OhrHogeRaadAnalyse extends LitElement {
     <vl-functional-header
     data-vl-back="Terug"
     data-vl-back-link="/hoge-raad"
-    data-vl-title="Jaarrapportage Hoge raad voor de Handhavingsuitvoering"
+    data-vl-title="Jaarrapportage Hoge Raad voor de Handhavingsuitvoering"
     data-vl-sub-title="Omgevingshandhavingsrapportage"
     data-vl-link="/hoge-raad-analyse">
     </vl-functional-header>

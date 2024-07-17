@@ -34,12 +34,12 @@ class OhrHogeRaadDashboard extends LitElement {
           data-vl-back="Terug"
           data-vl-back-link="/"
           data-vl-title="Omgevingshandhavingsrapportage"
-          data-vl-sub-title="Hoge raad voor de handhavingsuitvoering"
+          data-vl-sub-title="Hoge Raad voor de Handhavingsuitvoering"
           data-vl-link="/hogeraad">
       </vl-functional-header>
       <div style="margin: 3rem 0px">
         <vl-qlik-dashboard-page
-            title="Hoge raad voor de handhavingsuitvoering"
+            title="Hoge Raad voor de Handhavingsuitvoering"
             url="omgevingsloketrapport.omgeving.vlaanderen.be"
             app-id="4202d739-538c-4d7f-8d92-3950359a3602"
             selected-view="Instroom"
