@@ -262,10 +262,6 @@ and performing other setup tasks.
               <div data-vl-text="">Aantal PV's</div>
             </div>
           </div>`,
-        },
-        {
-          size: 12,
-          template: html`<vl-typography><p><b>Cijfers van 2023</b></vl-typography></p>`
         }
       )}
       `;
