@@ -51,6 +51,9 @@ class OhrInleiding extends LitElement {
       <li is="vl-link-list-item">
         <a is="vl-link" href="/">Analyseer de cijfers</a>
       </li>   
+       <li is="vl-link-list-item">
+        <a is="vl-link" href="/download-cijfers-en-meer">Download de cijfers</a>
+      </li>   
     </ul>`;
   }
 
@@ -62,9 +65,7 @@ class OhrInleiding extends LitElement {
                Dataverzameling en data-interpretatie
               </h1>
       <p>
-        Het decreet van 5 april 1995 houdende algemene bepalingen inzake
-        milieubeleid (DABM) bepaalt in artikel 16.2.3 en 6.1.3 (VCRO) dat gegevens over de
-        omgevingshandhavingsuitvoering jaarlijks online worden gepubliceerd.
+        Artikel 16.2.3 van het decreet van 5 april 1995 houdende algemene bepalingen inzake milieubeleid (DABM) en artikel 6.1.3 van de Vlaamse Codex Ruimtelijke Ordening (VCRO) bepaalt dat gegevens over de omgevingshandhavingsuitvoering jaarlijks online worden gepubliceerd.<br>
         Deze data bevatten een input- en outputweergave (handhavingsfiche) van
         de handhavingsactiviteiten in het kader van het DABM en de Vlaamse Codex
         Ruimtelijke Ordening (VCRO) van de handhavingsactoren in het Vlaamse

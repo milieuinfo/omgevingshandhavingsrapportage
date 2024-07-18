@@ -82,7 +82,7 @@ import {
       return html`
       <vl-typography data-cy="typography">
       <p><em>
-      Niet gekend: Provincie kon geen cijfers geven over deze handhavignsthema.</em>
+      Niet gekend: Provincie kon geen cijfers geven over dit handhavingsthema.</em>
       </p>
       </vl-typography>`;
     }

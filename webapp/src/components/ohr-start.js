@@ -93,9 +93,7 @@ and performing other setup tasks.
   __renderIntroductionTextOnTopOfPage() {
     return html` <div>
         <p is="vl-introduction">
-          Het decreet van 5 april 1995 houdende algemene bepalingen inzake
-          milieubeleid (DABM) bepaalt in artikel 16.2.3 en 6.1.3 (VCRO) dat gegevens over de
-          omgevingshandhavingsuitvoering jaarlijks online worden gepubliceerd.
+          Artikel 16.2.3 van het decreet van 5 april 1995 houdende algemene bepalingen inzake milieubeleid (DABM) en artikel 6.1.3 van de Vlaamse Codex Ruimtelijke Ordening (VCRO) bepaalt dat gegevens over de omgevingshandhavingsuitvoering jaarlijks online worden gepubliceerd.<br>
           Jaarlijks worden de handhavingsactoren in het Vlaamse Gewest op
           uniforme en gestandaardiseerde wijze bevraagd aangaande hun
           handhavingsactiviteiten in het voorgaande jaar.<br />
