@@ -1,5 +1,4 @@
 import {html, LitElement} from "../common/commons.js";
-import {Qlik} from "@domg/qlik-lib";
 import {vlElementsStyle} from "@domg-wc/elements";
 import jsonData from "../datafiles/hogeraad.json" assert {type: "json"};
 

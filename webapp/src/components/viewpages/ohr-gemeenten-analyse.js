@@ -1,5 +1,4 @@
 import { vlElementsStyle } from "@domg-wc/elements";
-import jsonData from "../datafiles/gewest.json" assert { type: "json" };
 import jsonData2 from "../datafiles/gemeente.json" assert { type: "json" };
 import options from "../config/keuzegemeenteanalyse.json" assert {type: "json"};
 
