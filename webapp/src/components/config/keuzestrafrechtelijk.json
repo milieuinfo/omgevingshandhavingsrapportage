@@ -1,0 +1,15 @@
+[
+    {
+      "label": "Instroom",
+      "value": "Instroom",
+      "selected": true
+    },
+    {
+      "label": "Uitstroom",
+      "value": "Uitstroom"
+    },
+    {
+      "label": "Motieven",
+      "value": "Motieven"
+    }
+  ]
