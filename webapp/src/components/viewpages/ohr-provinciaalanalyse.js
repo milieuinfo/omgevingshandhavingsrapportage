@@ -67,7 +67,7 @@ class OhrProvincieAnalyse extends LitElement {
     return html`
     <vl-functional-header
     data-vl-back="Terug"
-    data-vl-back-link="/"
+    data-vl-back-link="/provincie"
     data-vl-title="Jaarrapportage provinciale omgevingshandhavingsactoren"
     data-vl-sub-title="Omgevingshandhavingsrapportage"
     data-vl-link="/provincie-analyse">

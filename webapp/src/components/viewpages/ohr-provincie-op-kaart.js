@@ -132,19 +132,13 @@ De onderstaande kaarten geven per onderwerp in kleurgradaties de absolute cijfer
         <li is="vl-link-list-item">
           <a is="vl-link"
              href="/provincie">
-             Cijfers voorgaande kalenderjaar per actor
+             Cijfers ${this.yearofanalysis} per provinciale actor
           </a>
         </li>
         <li is="vl-link-list-item">
           <a is="vl-link"
              href="/download-cijfers-en-meer">
             Downloads
-          </a>
-        </li>
-        <li is="vl-link-list-item">
-          <a target="_new_blank" is="vl-link"
-             href=https://indicatoren.omgeving.vlaanderen.be/>
-            Indicatoren website<span is="vl-icon" data-vl-before="" data-vl-link="" data-vl-icon="external"></span>
           </a>
         </li>
       </ul>`;

@@ -90,12 +90,6 @@ class OhrProvincie extends LitElement {
       <li is="vl-link-list-item">
         <a is="vl-link" href="/download-cijfers-en-meer">Download de cijfers</a>
       </li> 
-      <li is="vl-link-list-item">
-        <a target="_new_blank" is="vl-link"
-           href=https://indicatoren.omgeving.vlaanderen.be/>
-          Indicatoren website<span is="vl-icon" data-vl-before="" data-vl-link="" data-vl-icon="external"></span>
-        </a>
-      </li>
     </ul>
     `; 
   }

@@ -19,6 +19,7 @@ import "@domg-wc/components/accordion";
 
 import options from "../config/gemeente-op-kaart.json" assert {type: "json"};
 import options2 from "../config/gemeente-op-kaart-absolut.json" assert {type:"json"};
+import yearofanalsysis from "../config/yearofanalysis.json" assert {type: "json"};
 
 class OhrOpkaart extends LitElement {
 
@@ -41,6 +42,7 @@ class OhrOpkaart extends LitElement {
     this.selectedChoiceLabel = options.find((o) => o.selected).label;
     this.selectedChoiceUrlAbsoluut = options2.find(o2 => o2.selected).value;
     this.selectedChoiceLabelAbsoluut = options2.find((o2) => o2.selected).label;
+    this.yearofanalysis = yearofanalsysis.value;
   }
 
   firstUpdated(_changedProperties) {
@@ -152,19 +154,13 @@ class OhrOpkaart extends LitElement {
       <li is="vl-link-list-item">
         <a is="vl-link"
            href="/gemeenten">
-           Cijfers voorgaande kalenderjaar per actor
+           Cijfers ${this.yearofanalysis} per gemeentelijke actor
         </a>
       </li>
       <li is="vl-link-list-item">
         <a is="vl-link"
            href="/download-cijfers-en-meer">
           Downloads
-        </a>
-      </li>
-      <li is="vl-link-list-item">
-        <a target="_new_blank" is="vl-link"
-           href=https://indicatoren.omgeving.vlaanderen.be/>
-          Indicatoren website<span is="vl-icon" data-vl-before="" data-vl-link="" data-vl-icon="external"></span>
         </a>
       </li>
     </ul>`;

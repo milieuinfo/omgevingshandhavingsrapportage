@@ -341,18 +341,6 @@ Het Handhavingscollege is een onafhankelijk Vlaams administratief rechtscollege.
       <li is="vl-link-list-item">
         <a is="vl-link" href="/download-cijfers-en-meer">Download de cijfers</a>
       </li> 
-      <li is="vl-link-list-item">
-        <a target="_new_blank" is="vl-link"
-           href=https://indicatoren.omgeving.vlaanderen.be/>
-          Indicatoren website<span is="vl-icon" data-vl-before="" data-vl-link="" data-vl-icon="external"></span>
-        </a>
-      </li>
-       <li is="vl-link-list-item">
-        <a target="_new_blank" is="vl-link"
-           href="https://www.omgeving.vlaanderen.be/nl/inspectie-en-handhaving">
-          Inspectie en handhaving Departement Omgeving<span is="vl-icon" data-vl-before="" data-vl-link="" data-vl-icon="external"></span>
-        </a>
-      </li>
        <li is="vl-link-list-item">
         <a target="_new_blank" is="vl-link"
            href="https://www.dbrc.be/handhaving">
