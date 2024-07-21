@@ -114,13 +114,40 @@ class OhrGemeentenAnalyse extends LitElement {
     `
   }
   /* Render ThemaGerichte Acties */
-  renderThemaGerichteActies() {
+  renderThemaGerichteActies(data,type) {
     return html`
-    <p slot="content">
-    TEST
-    
-    </p>
-    `
+      <table is="vl-data-table">
+       <caption>
+       ${type}
+      </caption>
+        <thead>
+          <tr>
+            <th>Onderwerp</th>
+            <th>Opmerking</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${Object.entries(data).map(([key, value]) => {
+            if (typeof value === "object") {
+              return html`
+                <tr>
+                  <td data-title="${key}">${key}</td>
+                  <td data-title="${value.value}">${value.value}</td>
+                </tr>
+              `;
+            } else {
+              return html`
+                <tr>
+                  <td data-title="${key}">${key}</td>
+                  <td data-title="${value.value}">${value}</td>
+                </tr>
+              `;
+            }
+          })}
+        </tbody>
+      </table>
+      <br />
+    `;
   }
     /* Render data table String*/
     renderDataSectionTXT(data) {
@@ -202,6 +229,8 @@ class OhrGemeentenAnalyse extends LitElement {
   }
 
     __renderDynamicContent() {
+
+
       return html`
 <vl-tabs data-vl-active-tab="Personeel" data-vl-disable-links="">
     <vl-tabs-pane data-vl-id="Personeel" data-vl-title="Personeel">
@@ -275,6 +304,11 @@ class OhrGemeentenAnalyse extends LitElement {
      <vl-tabs-pane data-vl-id="Themagerichte acties" data-vl-title="Themagerichte acties">
       <div is="vl-grid">
     <div is="vl-column" data-vl-size=6>
+    ${this.renderThemaGerichteActies(jsonData2.Milieu[this.selectedChoiceUrl].Thema,"Milieu")}
+    </div>
+
+     <div is="vl-column" data-vl-size=6>
+     ${this.renderThemaGerichteActies(jsonData2.RO[this.selectedChoiceUrl].Thema,"Ruimtelijke ordening")}
     </div>
 </div>
     </vl-tabs-pane>

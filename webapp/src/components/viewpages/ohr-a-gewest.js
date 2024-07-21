@@ -108,13 +108,40 @@ class OhrAGewest extends LitElement {
     `
   }
   /* Render ThemaGerichte Acties */
-  __renderThemaGerichteActies() {
+  __renderThemaGerichteActies(data,type) {
     return html`
-    <p slot="content">
-    TEST
-    
-    </p>
-    `
+    <table is="vl-data-table">
+     <caption>
+     ${type}
+    </caption>
+      <thead>
+        <tr>
+          <th>Onderwerp</th>
+          <th>Opmerking</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${Object.entries(data).map(([key, value]) => {
+          if (typeof value === "object") {
+            return html`
+              <tr>
+                <td data-title="${key}">${key}</td>
+                <td data-title="${value.value}">${value.value}</td>
+              </tr>
+            `;
+          } else {
+            return html`
+              <tr>
+                <td data-title="${key}">${key}</td>
+                <td data-title="${value.value}">${value}</td>
+              </tr>
+            `;
+          }
+        })}
+      </tbody>
+    </table>
+    <br />
+  `;
   }
     /* Render data table String*/
   __renderDataSectionTXT(data) {
@@ -222,6 +249,31 @@ class OhrAGewest extends LitElement {
         `;
       }
     };
+
+    const renderColumnsThema = (milieuData, roData, milieuLabel, roLabel) => {
+      if (beleid === 'Both') {
+        return html`
+          <div is="vl-column" data-vl-size=6>
+            ${this.__renderThemaGerichteActies(milieuData, milieuLabel)}
+          </div>
+          <div is="vl-column" data-vl-size=6>
+            ${this.__renderThemaGerichteActies(roData, roLabel)}
+          </div>
+        `;
+      } else if (beleid === 'Milieu') {
+        return html`
+          <div is="vl-column" data-vl-size=12>
+            ${this.__renderThemaGerichteActies(milieuData, milieuLabel)}
+          </div>
+        `;
+      } else if (beleid === 'RO') {
+        return html`
+          <div is="vl-column" data-vl-size=12>
+            ${this.__renderThemaGerichteActies(roData, roLabel)}
+          </div>
+        `;
+      }
+    };
   
     return html`
       <vl-tabs data-vl-active-tab="Personeel" data-vl-disable-links="">
@@ -282,7 +334,7 @@ class OhrAGewest extends LitElement {
         </vl-tabs-pane>
         <vl-tabs-pane data-vl-id="Themagerichte acties" data-vl-title="Themagerichte acties">
           <div is="vl-grid">
-            ${renderColumns(
+            ${renderColumnsThema(
               jsonData2.Milieu[this.selectedChoiceUrl].Thema,
               jsonData2.RO[this.selectedChoiceUrl].Thema,
               "Milieu",
@@ -292,7 +344,7 @@ class OhrAGewest extends LitElement {
         </vl-tabs-pane>
         <vl-tabs-pane data-vl-id="Opmerkingen" data-vl-title="Opmerkingen">
           <div is="vl-grid">
-            ${renderColumns(
+            ${renderColumnsThema(
               jsonData2.Milieu[this.selectedChoiceUrl].Opmerking,
               jsonData2.RO[this.selectedChoiceUrl].Opmerking,
               "Milieu",
