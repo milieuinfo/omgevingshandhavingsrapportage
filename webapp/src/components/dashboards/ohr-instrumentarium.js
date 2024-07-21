@@ -33,8 +33,8 @@ class OhrInstrumentarium extends LitElement {
       <vl-functional-header
           data-vl-back="Terug"
           data-vl-back-link="/"
-          data-vl-title="Omgevingshandhavingsrapportage"
-          data-vl-sub-title="Instrumentarium"
+          data-vl-title="Instrumentarium"
+          data-vl-sub-title="Omgevingshandhavingsrapportage"
           data-vl-link="/instrumentarium">
       </vl-functional-header>
       <div style="margin: 3rem 0px">

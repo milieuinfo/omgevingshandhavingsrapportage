@@ -34,8 +34,8 @@ class OhrBestuurlijkevervolgtraject extends LitElement {
       <vl-functional-header
           data-vl-back="Terug"
           data-vl-back-link="/"
-          data-vl-title="Omgevingshandhavingsrapportage"
-          data-vl-sub-title="Bestuurlijke sanctionering"
+          data-vl-title="Bestuurlijke sanctionering"
+          data-vl-sub-title="Omgevingshandhavingsrapportage"
           data-vl-link="/bestuurlijkevervolg-analyse">
       </vl-functional-header>
       <div style="margin: 3rem 0px">

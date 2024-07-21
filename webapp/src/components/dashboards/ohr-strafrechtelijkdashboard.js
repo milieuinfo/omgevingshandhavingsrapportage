@@ -33,8 +33,8 @@ class OhrStrafrechtelijkvervolgtraject extends LitElement {
       <vl-functional-header
           data-vl-back="Terug"
           data-vl-back-link="/"
-          data-vl-title="Omgevingshandhavingsrapportage"
-          data-vl-sub-title="Strafrechtelijk sanctionering"
+          data-vl-title="Strafrechtelijk sanctionering"
+          data-vl-sub-title="Omgevingshandhavingsrapportage"
           data-vl-link="/strafrechtelijk-analyse">
       </vl-functional-header>
       <div style="margin: 3rem 0px">

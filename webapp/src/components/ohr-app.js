@@ -20,6 +20,7 @@ import "./viewpages/ohr-gewest.js";
 import "./viewpages/ohr-provinciaalanalyse.js";
 import "./viewpages/ohr-gemeenten-analyse.js";
 import "./viewpages/ohr-hoge-raad-analyse.js";
+import "./viewpages/ohr-bestuurlijk-analyse.js";
 import "./viewpages/ohr-gemeenten.js";
 import "./viewpages/ohr-hoge-raad.js";
 import "./viewpages/ohr-provincie.js";
@@ -80,6 +81,7 @@ class OhrApp extends LitElement {
       {path: "/gewest-analyse", component: "ohr-agewest"},
       {path: "/download-cijfers-en-meer", component: "ohr-download"},
       {path: "/provincie", component: "ohr-provincie"},
+      {path: "/bestuurlijk-analyse", component: "ohr-bestuurlijkanalyse"},
       {path: "/hoge-raad", component: "ohr-hogeraad"},
       {path: "/hoge-raad-analyse", component: "ohr-hogeraadanalyse"},
       {path: "/hogeraad", component: "ohr-hogeraaddashboard"},

@@ -34,8 +34,8 @@ class OhrPersoneel extends LitElement {
       <vl-functional-header
           data-vl-back="Terug"
           data-vl-back-link="/"
-          data-vl-title="Omgevingshandhavingsrapportage"
-          data-vl-sub-title="Personeel"
+          data-vl-title="Personeel"
+          data-vl-sub-title="Omgevingshandhavingsrapportage"
           data-vl-link="/personeel">
       </vl-functional-header>
       <div style="margin: 1rem 3px">

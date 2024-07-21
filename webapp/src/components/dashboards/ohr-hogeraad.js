@@ -33,8 +33,8 @@ class OhrHogeRaadDashboard extends LitElement {
       <vl-functional-header
           data-vl-back="Terug"
           data-vl-back-link="/"
-          data-vl-title="Omgevingshandhavingsrapportage"
           data-vl-sub-title="Hoge Raad voor de Handhavingsuitvoering"
+          data-vl-title="Omgevingshandhavingsrapportage"
           data-vl-link="/hogeraad">
       </vl-functional-header>
       <div style="margin: 3rem 0px">
