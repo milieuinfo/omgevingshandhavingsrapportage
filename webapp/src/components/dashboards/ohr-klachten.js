@@ -62,10 +62,12 @@ class OhrKlachten extends LitElement {
     return html`
       <vl-typography slot="introduction">
       <p>
-      De omgevingsinspectie wordt uitgevoerd op verschillende beleidsniveaus uitgevoerd, namelijk door gewestelijke, provinciale en gemeentelijke handhavingsactoren.</p> 
-
-      Deze pagina geeft via een interactieve tool de ontvangen klachten weer die over de jaren heen ingezet worden door de handhavingsactoren voor de omgevingshandhaving in Vlaanderen. <br>
-      De cijfers zullen wijzigen naargelang de gekozen filtering.</p>
+De omgevingsinspectie wordt uitgevoerd op verschillende beleidsniveaus uitgevoerd, namelijk door gewestelijke, provinciale en gemeentelijke handhavingsactoren.
+Deze pagina geeft via een interactieve tool de klachten weer die over de jaren heen werden ontvangen door de handhavingsactoren voor de omgevingshandhaving in Vlaanderen.
+<br>
+<b>De cijfers worden voor milieu en ruimtelijke ordening samen weergegeven.</b><br><br>
+De cijfers zullen wijzigen naargelang de gekozen filtering.
+ </p>
 
         <vl-accordion data-vl-toggle-text="Informatie over het gebruik van het dashboard">
           <span>

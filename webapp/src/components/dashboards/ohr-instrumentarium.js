@@ -63,10 +63,19 @@ class OhrInstrumentarium extends LitElement {
       <vl-typography slot="introduction">
         <p is="vl-text">
         De omgevingsinspectie wordt op verschillende beleidsniveaus uitgevoerd, namelijk door gewestelijke, provinciale en gemeentelijke handhavingsactoren.
-        Deze pagina geeft via een interactieve tool de gebruikte instrumenten weer die over de jaren heen ingezet worden door de handhavingsactoren voor de omgevingshandhaving in Vlaanderen. De cijfers worden weergegeven per beleidsdomein: milieu en ruimtelijke ordening. 
-        
-        
-        <br>De cijfers zullen wijzigen naargelang de gekozen filtering.<br></p>
+        Deze pagina geeft via een interactieve tool de gebruikte instrumenten weer die over de jaren heen ingezet worden door de handhavingsactoren voor de omgevingshandhaving in Vlaanderen. 
+        <br>
+        De cijfers worden weergegeven per beleidsdomein:<b> milieu en ruimtelijke ordening.</b>
+        <ul>
+              <li>
+            Bijkomende informatie
+            <ul>
+                <li><b>Zachte instrumenten:</b> raadgeving en aanmaning</li>
+                <li><b>Repressieve instrumenten:</b> Verslag van vaststelling, proces-verbaal, bestuurlijke maatregel,veiligheidsmaatregelen, bevel tot staking, minnelijke schikking, herstelvordering, ambtshalve uitvoering.</li>
+            </ul>
+        </li>
+        </ul>
+        De cijfers zullen wijzigen naargelang de gekozen filtering.<br></p>
         <vl-accordion data-vl-toggle-text="Informatie over het gebruik van het dashboard">
           <span>
            Het standaard beeld geeft de totale cijfers van 2021 tot en met ${this.yearofanalysis} weer voor de omgevingsinspectie in heel Vlaanderen.

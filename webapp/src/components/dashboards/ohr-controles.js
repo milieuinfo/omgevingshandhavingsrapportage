@@ -64,7 +64,9 @@ class OhrControles extends LitElement {
     <vl-typography slot="introduction">
         <p is="vl-text">
         De omgevingsinspectie wordt op verschillende beleidsniveaus uitgevoerd, namelijk door gewestelijke, provinciale en gemeentelijke handhavingsactoren.
-        Deze pagina geeft via een interactieve tool de controles weer die over de jaren heen ingezet worden door de handhavingsactoren voor de omgevingshandhaving in Vlaanderen. De cijfers worden weergegeven per beleidsdomein: milieu en ruimtelijke ordening. 
+        Deze pagina geeft via een interactieve tool de controles weer die over de jaren heen ingezet worden door de handhavingsactoren voor de omgevingshandhaving in Vlaanderen. 
+        <br>
+        De cijfers worden weergegeven per beleidsdomein:<b> milieu en ruimtelijke ordening.</b><br>
         
         
         <br>De cijfers zullen wijzigen naargelang de gekozen filtering.<br></p>
