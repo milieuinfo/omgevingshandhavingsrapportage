@@ -1,0 +1,49 @@
+{
+    "GewestelijkeBB": {
+        "Misdrijven": {
+            "Ontvangen proces-verbalen": 3351,
+            "Behandelde proces-verbalen": 3221,
+            "Beslissingen opportuniteitssepot": 357,
+            "Bestuurlijke transacties": 2804,
+            "Betaalde bestuurlijke transacties": 1590,
+            "Geen geldboete": 240,
+            "Geldboetes met voordeelontneming": 12,
+            "Geldboetes zonder voordeelontneming": 1098,
+            "Technische seponering": 346
+        },
+        "Inbreuken": {
+            "Ontvangen verslagen van vaststellingen": 491,
+            "Behandelde verslagen van vaststellingen": 471,
+            "Beslissingen opportuniteitssepot": 14,
+            "Bestuurlijke transacties": 478,
+            "Betaalde bestuurlijke transacties": 329,
+            "Geen geldboete": 18,
+            "Geldboetes met voordeelontneming": 20,
+            "Geldboetes zonder voordeelontneming": 122,
+            "Technische seponering": 44
+        }
+    },
+    "HHC": {
+        "Misdrijven": {
+            "Ontvangen beroepen": 61,
+            "Beroep geheel of gedeeltelijk gegrond, beslissing gewestelijke entiteit van de afdeling Handhaving van het departement Omgeving vernietigd zonder meer":6,
+            "Beroep geheel of gedeeltelijk gegrond, met vermindering/kwijtschelding boete":3,
+            "Beroep ongegrond, boete bevestigd":25,
+            "Beroep onontvankelijk (na vereenvoudigde procedure)":10,
+            "Beroep zonder voorwerp verklaard": 0,
+            "Inwilliging afstand van beroep":4,
+            "Tussenarrest":1
+            
+        },
+        "Inbreuken": {
+            "Ontvangen beroepen": 3,
+            "Beroep geheel of gedeeltelijk gegrond, beslissing gewestelijke entiteit van de afdeling Handhaving van het departement Omgeving vernietigd zonder meer":0,
+            "Beroep geheel of gedeeltelijk gegrond, met vermindering/kwijtschelding boete":0,
+            "Beroep ongegrond, boete bevestigd":3,
+            "Beroep onontvankelijk (na vereenvoudigde procedure)":2,
+            "Beroep zonder voorwerp verklaard": 0,
+            "Inwilliging afstand van beroep":0,
+            "Tussenarrest":0
+        }
+    }
+}

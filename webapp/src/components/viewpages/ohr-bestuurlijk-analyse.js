@@ -1,5 +1,5 @@
 import {vlElementsStyle} from "@domg-wc/elements";
-import options from "../config/keuzestrafrechtelijk.json" assert {type: "json"};
+import options from "../config/keuzebestuurlijk.json" assert {type: "json"};
 import {
   bindVlSelect,
   html,
@@ -21,7 +21,7 @@ import "@domg-wc/components/tabs";
 import "@domg-wc/elements/link";
 import "@domg-wc/elements/link-list";
 import yearofanalsysis from "../config/yearofanalysis.json" assert {type: "json"};
-import jsonData from "../datafiles/strafrechtelijk.json" assert {type: "json"};
+import jsonData from "../datafiles/bestuurlijk.json" assert {type: "json"};
 
 class OhrBestuurlijkAnalyse extends LitElement {
 
@@ -88,73 +88,13 @@ render() {
       </div>
     </section>`;
 }
-/* Render opmerking */
-renderOpmerkingsection(data,type) {
-  return html`
-  <vl-typography>
-  <ul>
-    <li>${type}</li>
-      <ul>
-  ${Object.entries(data).map(([key,value]) => {
-      return html`
-      <li>${value}</li>
-      `;
-    })
-  }
-  </ul>
-</ul>
-</vl-typography>
-  `
-}
-/* Render ThemaGerichte Acties */
-renderThemaGerichteActies() {
-  return html`
-  <p slot="content">
-  TEST
-  
-  </p>
-  `
-}
-  /* Render data table String*/
-  renderDataSectionTXT(data) {
-    return html`
-      <table is="vl-data-table">
-        <thead>
-          <tr>
-            <th>Thema</th>
-            <th>Beschrijving</th>
-          </tr>
-        </thead>
-        <tbody>
-          ${Object.entries(data).map(([key, value]) => {
-            if (typeof value === "object") {
-              return html`
-                <tr>
-                  <td data-title="${key}">${key}</td>
-                  <td data-title="${value.value}">${value.value}</td>
-                </tr>
-              `;
-            } else {
-              return html`
-                <tr>
-                  <td data-title="${key}">${key}</td>
-                  <td data-title="${value.value}">${value}</td>
-                </tr>
-              `;
-            }
-          })}
-        </tbody>
-      </table>
-      <br />
-    `;
-  }
 /* Render data table Numbers*/
 renderDataSection(data) {
   return html`
     <table is="vl-data-table">
       <thead>
         <tr>
-          <th>Thema</th>
+          <th>Beslissingen</th>
           <th>Aantal</th>
         </tr>
       </thead>
@@ -193,49 +133,21 @@ __renderViewSelector() {
 
   __renderDynamicContent() {
     return html`
-<vl-tabs data-vl-active-tab="Afval" data-vl-disable-links="">
-  <vl-tabs-pane data-vl-id="Afval" data-vl-title="Afval">
+<vl-tabs data-vl-active-tab="Misdrijven" data-vl-disable-links="">
+  <vl-tabs-pane data-vl-id="Misdrijven" data-vl-title="Misdrijven">
       <div is="vl-grid">
   <div is="vl-column" data-vl-size=12>
-   ${this.renderDataSection(jsonData[this.selectedChoiceUrl].Afval)}
+  ${this.renderDataSection(jsonData[this.selectedChoiceUrl].Misdrijven)}
   </div>
 </div>
   </vl-tabs-pane>
-  <vl-tabs-pane data-vl-id="Lucht/water/bodem/geluid (emissies)" data-vl-title="Lucht/water/bodem/geluid (emissies)">
+  <vl-tabs-pane data-vl-id="Inbreuken" data-vl-title="Inbreuken">
           <div is="vl-grid">
   <div is="vl-column" data-vl-size=12>
- ${this.renderDataSection(jsonData[this.selectedChoiceUrl].LWBGE)}
-  
+ 
+  ${this.renderDataSection(jsonData[this.selectedChoiceUrl].Inbreuken)}
   </div>
 </div>   
-  </vl-tabs-pane>
-  <vl-tabs-pane data-vl-id="Mest" data-vl-title="Mest">
-    <div is="vl-grid">
-  <div is="vl-column" data-vl-size=12>
-   ${this.renderDataSection(jsonData[this.selectedChoiceUrl].Mest)}
-  </div>
-</div>
-  </vl-tabs-pane>
-   <vl-tabs-pane data-vl-id="Milieubeheersrecht" data-vl-title="Milieubeheersrecht">
-    <div is="vl-grid">
-  <div is="vl-column" data-vl-size=12>
- ${this.renderDataSection(jsonData[this.selectedChoiceUrl].Milieubeheersrecht)}
-  </div>
-</div>
-  </vl-tabs-pane>
-   <vl-tabs-pane data-vl-id="Milieuvergunningen" data-vl-title="Milieuvergunningen">
-    <div is="vl-grid">
-  <div is="vl-column" data-vl-size=12>
-   ${this.renderDataSection(jsonData[this.selectedChoiceUrl].Milieuvergunningen)}
-  </div>
-</div>
-  </vl-tabs-pane>
-   <vl-tabs-pane data-vl-id="Ruimtelijke ordening" data-vl-title="Ruimtelijke ordening">
-    <div is="vl-grid">
-  <div is="vl-column" data-vl-size=12>
-   ${this.renderDataSection(jsonData[this.selectedChoiceUrl].RO)}
-  </div>
-</div>
   </vl-tabs-pane>
 </vl-tabs>
     `;
