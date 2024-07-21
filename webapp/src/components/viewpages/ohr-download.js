@@ -63,9 +63,8 @@ class OhrDownload extends LitElement {
         <br>
      
       <h3 is="vl-h3">Downloadbare afbeeldingen van geconsolideerd beeld</h3>
-        <p><a href="/images/infographic_ro_gewestelijk_def.png" download>Download de weergave van 2021</a></p>
-        <p><a href="/images/infographic_ro_gewestelijk_def.png" download>Download de weergave van 2022</a></p>
-        <p><a href="/images/infographic_ro_gewestelijk_def.png" download>Download de weergave van 2023</a></p>
+        <p><a href="/images/Geconsolideerd beeld 2022.zip" download>Download de weergave van 2022</a></p>
+        <p><a href="/images/Geconsolideerd beeld 2023.zip" download>Download de weergave van 2023</a></p>
       </vl-accordion>`;
   }
 }

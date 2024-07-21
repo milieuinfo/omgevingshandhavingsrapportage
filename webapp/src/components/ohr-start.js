@@ -158,25 +158,24 @@ and performing other setup tasks.
           <div is="vl-grid" data-vl-align-center>
           <div is="vl-column" data-vl-size="6">
             <vl-spotlight
-              data-vl-img-src="images/rsz_infographic_milieu.png"
-              data-vl-img-alt="spotlight image"
+              data-vl-img-src="images/info milieu.jpg"
+              data-vl-img-alt="spotlight image" download
             >
-              <span slot="title">Geconsolideerd beeld milieu </span>
+              <span slot="title">Geconsolideerd beeld milieu</span>
               <span slot="subtitle">Op basis van de cijfers van 2023</span>
               <span slot="text">
                 De bovenstaande infographic geeft een overzicht van de
                 verschillende instrumenten binnen het milieubeleid voor het volledige vlaamse gewest.<br />
                 <p>
-                  <a href=""
-                    >Download bovenstaande infographic</a
-                  >
+                  <a href="images/info milieu.jpg" download
+                    >Download bovenstaande infographic</a>
                 </p>
               </span>
             </vl-spotlight>
           </div>
           <div is="vl-column" data-vl-size="6">
             <vl-spotlight
-              data-vl-img-src="images/rsz_infographic_ro.png"
+              data-vl-img-src="images/info ro.jpg"
               data-vl-img-alt="spotlight image"
             >
               <span slot="title">
@@ -188,7 +187,7 @@ and performing other setup tasks.
                 verschillende instrumenten binnen het ruimtelijke ordening beleid
                 voor het volledige vlaamse gewest.<br />
                 <p>
-                  <a href=""
+                  <a href="images/info ro.jpg" download
                     >Download bovenstaande infographic</a>
                 </p>
               </span>
