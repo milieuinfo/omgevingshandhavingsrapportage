@@ -57,8 +57,8 @@ class OhrDownload extends LitElement {
   __renderLinkList() {
     return html`
       <h3 is="vl-h3">Data van de rapportage</h3>
-        <p><a href="/datafiles/omgevingshandhavingscijfers_2021.zip" download">Download de data van 2021</a></p>
-        <p><a href="/datafiles/omgevingshandhavingscijfers_2022.zip" download">Download de data van 2022</a></p>
+        <p><a href="/datafiles/omgevingshandhavingscijfers_2021.zip" download>Download de data van 2021</a></p>
+        <p><a href="/datafiles/omgevingshandhavingscijfers_2022.zip" download>Download de data van 2022</a></p>
         <p><a href="/datafiles/omgevingshandhavingscijfers_2023.zip" download>Download de data van 2023</a></p>
         <br>
      
