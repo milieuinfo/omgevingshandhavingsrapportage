@@ -67,7 +67,7 @@ render() {
   return html` <vl-functional-header
       data-vl-back="Terug"
       data-vl-back-link="/strafrechtelijk"
-      data-vl-title="Jaarrapportage strafrechtelijk sanctionering"
+      data-vl-title="Jaarrapportage strafrechtelijke sanctionering"
       data-vl-sub-title="Omgevingshandhavingsrapportage"
       data-vl-link="/">
     </vl-functional-header>

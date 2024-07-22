@@ -33,13 +33,13 @@ class OhrStrafrechtelijkvervolgtraject extends LitElement {
       <vl-functional-header
           data-vl-back="Terug"
           data-vl-back-link="/"
-          data-vl-title="Strafrechtelijk sanctionering"
+          data-vl-title="Strafrechtelijke sanctionering"
           data-vl-sub-title="Omgevingshandhavingsrapportage"
           data-vl-link="/strafrechtelijk-analyse">
       </vl-functional-header>
       <div style="margin: 3rem 0px">
         <vl-qlik-dashboard-page
-            title="Strafrechtelijk sanctionering"
+            title="Strafrechtelijke sanctionering"
             export-id="mkWEU"
             url="omgevingsloketrapport.omgeving.vlaanderen.be"
             app-id="1b3c1014-cde6-4969-92fb-68fc10753f88"
