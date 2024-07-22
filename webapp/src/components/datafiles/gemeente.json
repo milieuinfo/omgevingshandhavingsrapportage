@@ -17,8 +17,8 @@
                 "Vergunning": "2",
                 "Water": "0",
                 "Andere": "16",
-                "Stikstof": 0,
-                "PFAS": 0
+                "Stikstof": "niet gekend",
+                "PFAS": 1
             },
             "Controles": {
                 "Totaal aantal milieucontroles": "20",
@@ -396,7 +396,7 @@
                 "Water": "0",
                 "Andere": "0",
                 "Stikstof": 0,
-                "PFAS": 0
+                "PFAS": "niet gekend"
             },
             "Controles": {
                 "Totaal aantal milieucontroles": "43",
@@ -417,8 +417,8 @@
                 "Vergunning": "26",
                 "Water": "0",
                 "Andere": "0",
-                "PFAS": 0,
-                "Stikstof": 0
+                "PFAS": "niet gekend",
+                "Stikstof": "niet gekend"
             },
             "Instrument": {
                 "Raadgeving": "87",
@@ -666,7 +666,7 @@
                 "Water": "3",
                 "Andere": "0",
                 "Stikstof": 0,
-                "PFAS": 0
+                "PFAS": 1
             },
             "Controles": {
                 "Totaal aantal milieucontroles": "62",
@@ -1584,7 +1584,7 @@
                 "Water": "25",
                 "Andere": "20",
                 "Stikstof": 0,
-                "PFAS": 0
+                "PFAS": 10
             },
             "Controles": {
                 "Totaal aantal milieucontroles": "50",
@@ -1746,7 +1746,7 @@
                 "Water": "60",
                 "Andere": "0",
                 "Stikstof": 0,
-                "PFAS": 0
+                "PFAS": 2
             },
             "Controles": {
                 "Totaal aantal milieucontroles": "0",
@@ -2015,8 +2015,8 @@
                 "Vergunning": "3",
                 "Water": "1",
                 "Andere": "0",
-                "Stikstof": 0,
-                "PFAS": 0
+                "Stikstof": "niet gekend",
+                "PFAS": "niet gekend"
             },
             "Controles": {
                 "Totaal aantal milieucontroles": "31",
@@ -2037,8 +2037,8 @@
                 "Vergunning": "0",
                 "Water": "0",
                 "Andere": "0",
-                "PFAS": 0,
-                "Stikstof": 0
+                "PFAS": "niet gekend",
+                "Stikstof": "niet gekend"
             },
             "Instrument": {
                 "Raadgeving": "niet gekend",
@@ -2556,7 +2556,7 @@
                 "Water": "1",
                 "Andere": "1",
                 "Stikstof": 0,
-                "PFAS": 0
+                "PFAS": 1
             },
             "Controles": {
                 "Totaal aantal milieucontroles": "16",
@@ -2825,7 +2825,7 @@
                 "Vergunning": "5",
                 "Water": "11",
                 "Andere": "5",
-                "Stikstof": 0,
+                "Stikstof": 5,
                 "PFAS": 0
             },
             "Controles": {
@@ -3311,8 +3311,8 @@
                 "Vergunning": "0",
                 "Water": "0",
                 "Andere": "0",
-                "Stikstof": 0,
-                "PFAS": 0
+                "Stikstof": "niet gekend",
+                "PFAS": "niet gekend"
             },
             "Controles": {
                 "Totaal aantal milieucontroles": "50",
@@ -3333,8 +3333,8 @@
                 "Vergunning": "14",
                 "Water": "0",
                 "Andere": "4",
-                "PFAS": 0,
-                "Stikstof": 0
+                "PFAS": "niet gekend",
+                "Stikstof": "niet gekend"
             },
             "Instrument": {
                 "Raadgeving": "niet gekend",
@@ -3474,7 +3474,7 @@
                 "Water": "0",
                 "Andere": "0",
                 "Stikstof": 0,
-                "PFAS": 0
+                "PFAS": "niet gekend"
             },
             "Controles": {
                 "Totaal aantal milieucontroles": "9",
@@ -4446,7 +4446,7 @@
                 "Water": "1",
                 "Andere": "29",
                 "Stikstof": 0,
-                "PFAS": 0
+                "PFAS": 16
             },
             "Controles": {
                 "Totaal aantal milieucontroles": "28",
@@ -6498,7 +6498,7 @@
                 "Water": "0",
                 "Andere": "0",
                 "Stikstof": 0,
-                "PFAS": 0
+                "PFAS": "niet gekend"
             },
             "Controles": {
                 "Totaal aantal milieucontroles": "16",
@@ -7091,8 +7091,8 @@
                 "Vergunning": "4",
                 "Water": "0",
                 "Andere": "1",
-                "Stikstof": 0,
-                "PFAS": 0
+                "Stikstof": "niet gekend",
+                "PFAS": "niet gekend"
             },
             "Controles": {
                 "Totaal aantal milieucontroles": "7",
@@ -7113,8 +7113,8 @@
                 "Vergunning": "4",
                 "Water": "0",
                 "Andere": "1",
-                "PFAS": 0,
-                "Stikstof": 0
+                "PFAS": "niet gekend",
+                "Stikstof": "niet gekend"
             },
             "Instrument": {
                 "Raadgeving": "niet gekend",
@@ -7146,7 +7146,7 @@
                 "Water": "0",
                 "Andere": "5",
                 "Stikstof": 0,
-                "PFAS": 0
+                "PFAS": 5
             },
             "Controles": {
                 "Totaal aantal milieucontroles": "55",
@@ -7739,8 +7739,8 @@
                 "Vergunning": "0",
                 "Water": "0",
                 "Andere": "0",
-                "Stikstof": 0,
-                "PFAS": 0
+                "Stikstof": "niet gekend",
+                "PFAS": "niet gekend"
             },
             "Controles": {
                 "Totaal aantal milieucontroles": "0",
@@ -7761,8 +7761,8 @@
                 "Vergunning": "0",
                 "Water": "0",
                 "Andere": "0",
-                "PFAS": 0,
-                "Stikstof": 0
+                "PFAS": "niet gekend",
+                "Stikstof": "niet gekend"
             },
             "Instrument": {
                 "Raadgeving": "niet gekend",
@@ -8010,7 +8010,7 @@
                 "Water": "3",
                 "Andere": "5",
                 "Stikstof": 0,
-                "PFAS": 0
+                "PFAS": 5
             },
             "Controles": {
                 "Totaal aantal milieucontroles": "17",
@@ -8031,7 +8031,7 @@
                 "Vergunning": "2",
                 "Water": "2",
                 "Andere": "4",
-                "PFAS": 0,
+                "PFAS": 1,
                 "Stikstof": 0
             },
             "Instrument": {
@@ -8334,7 +8334,7 @@
                 "Water": "57",
                 "Andere": "7",
                 "Stikstof": 0,
-                "PFAS": 0
+                "PFAS": 1
             },
             "Controles": {
                 "Totaal aantal milieucontroles": "64",
@@ -8356,7 +8356,7 @@
                 "Water": "1",
                 "Andere": "0",
                 "PFAS": 0,
-                "Stikstof": 0
+                "Stikstof": 2
             },
             "Instrument": {
                 "Raadgeving": "non-respons",
@@ -8442,7 +8442,7 @@
                 "Water": "2",
                 "Andere": "18",
                 "Stikstof": 0,
-                "PFAS": 0
+                "PFAS": 5
             },
             "Controles": {
                 "Totaal aantal milieucontroles": "73",
@@ -8712,7 +8712,7 @@
                 "Water": "5",
                 "Andere": "0",
                 "Stikstof": 0,
-                "PFAS": 0
+                "PFAS": 1
             },
             "Controles": {
                 "Totaal aantal milieucontroles": "53",
@@ -9359,8 +9359,8 @@
                 "Vergunning": "1",
                 "Water": "2",
                 "Andere": "8",
-                "Stikstof": 0,
-                "PFAS": 0
+                "Stikstof": "niet gekend",
+                "PFAS": "niet gekend"
             },
             "Controles": {
                 "Totaal aantal milieucontroles": "16",
@@ -9381,8 +9381,8 @@
                 "Vergunning": "1",
                 "Water": "2",
                 "Andere": "4",
-                "PFAS": 0,
-                "Stikstof": 0
+                "PFAS": "niet gekend",
+                "Stikstof": "niet gekend"
             },
             "Instrument": {
                 "Raadgeving": "niet gekend",
@@ -9522,7 +9522,7 @@
                 "Water": "2",
                 "Andere": "0",
                 "Stikstof": 0,
-                "PFAS": 0
+                "PFAS": 2
             },
             "Controles": {
                 "Totaal aantal milieucontroles": "5",
@@ -9846,7 +9846,7 @@
                 "Water": "0",
                 "Andere": "0",
                 "Stikstof": 0,
-                "PFAS": 0
+                "PFAS": 2
             },
             "Controles": {
                 "Totaal aantal milieucontroles": "13",
@@ -10440,7 +10440,7 @@
                 "Water": "0",
                 "Andere": "0",
                 "Stikstof": 0,
-                "PFAS": 0
+                "PFAS": 1
             },
             "Controles": {
                 "Totaal aantal milieucontroles": "6",
@@ -12600,7 +12600,7 @@
                 "Water": "35",
                 "Andere": "2",
                 "Stikstof": 0,
-                "PFAS": 0
+                "PFAS": 25
             },
             "Controles": {
                 "Totaal aantal milieucontroles": "92",
@@ -12708,7 +12708,7 @@
                 "Water": "4",
                 "Andere": "22",
                 "Stikstof": 0,
-                "PFAS": 0
+                "PFAS": "niet gekend"
             },
             "Controles": {
                 "Totaal aantal milieucontroles": "3",
@@ -13733,7 +13733,7 @@
                 "Vergunning": "1",
                 "Water": "0",
                 "Andere": "3",
-                "Stikstof": 0,
+                "Stikstof": 1,
                 "PFAS": 0
             },
             "Controles": {
@@ -14705,8 +14705,8 @@
                 "Vergunning": "0",
                 "Water": "0",
                 "Andere": "0",
-                "Stikstof": 0,
-                "PFAS": 0
+                "Stikstof": "niet gekend",
+                "PFAS": "niet gekend"
             },
             "Controles": {
                 "Totaal aantal milieucontroles": "5",
@@ -14727,8 +14727,8 @@
                 "Vergunning": "0",
                 "Water": "0",
                 "Andere": "0",
-                "PFAS": 0,
-                "Stikstof": 0
+                "PFAS": "niet gekend",
+                "Stikstof": "niet gekend"
             },
             "Instrument": {
                 "Raadgeving": "niet gekend",
@@ -14760,7 +14760,7 @@
                 "Water": "17",
                 "Andere": "1",
                 "Stikstof": 0,
-                "PFAS": 0
+                "PFAS": 2
             },
             "Controles": {
                 "Totaal aantal milieucontroles": "599",
@@ -14922,7 +14922,7 @@
                 "Water": "0",
                 "Andere": "0",
                 "Stikstof": 0,
-                "PFAS": 0
+                "PFAS": 1
             },
             "Controles": {
                 "Totaal aantal milieucontroles": "0",
@@ -14943,7 +14943,7 @@
                 "Vergunning": "0",
                 "Water": "0",
                 "Andere": "0",
-                "PFAS": 0,
+                "PFAS": 1,
                 "Stikstof": 0
             },
             "Instrument": {
@@ -15030,7 +15030,7 @@
                 "Water": "3",
                 "Andere": "1",
                 "Stikstof": 0,
-                "PFAS": 0
+                "PFAS": "niet gekend"
             },
             "Controles": {
                 "Totaal aantal milieucontroles": "17",
@@ -16164,7 +16164,7 @@
                 "Water": "0",
                 "Andere": "0",
                 "Stikstof": 0,
-                "PFAS": 0
+                "PFAS": 12
             },
             "Controles": {
                 "Totaal aantal milieucontroles": "5",

@@ -300,8 +300,8 @@
                 "Vergunningen": 420,
                 "Water": 176,
                 "Andere": 2791,
-                "PFAS": 0,
-                "Stikstof": 0
+                "PFAS": "niet gekend",
+                "Stikstof": "niet gekend"
             },
             "Controles": {
                 "Totaal aantal milieucontroles": 10863,
@@ -322,8 +322,8 @@
                 "Vergunningen": 2835,
                 "Water": 1850,
                 "Andere": 1413,
-                "PFAS": 0,
-                "Stikstof": 0
+                "PFAS": "niet gekend",
+                "Stikstof": "niet gekend"
             },
             "Instrument": {
                 "Raadgeving": 132,
