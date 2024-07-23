@@ -47,9 +47,9 @@
                 "Aanmaning": 47,
                 "Verslag van vaststelling": 0,
                 "Proces-verbaal": 0,
-                "Bestuurlijke maatregelzonder dwangsom": 0,
-                "Bestuurlijke maatregelmet dwangsom": 0,
-                "Aantal veiligheidsmaatregel": 0
+                "Bestuurlijke maatregel zonder dwangsom": 0,
+                "Bestuurlijke maatregel met dwangsom": 0,
+                "Aantal veiligheidsmaatregelen": 0
             },
             "Thema": {
                 "PFAS": "Geen actie ondernomen",
@@ -61,9 +61,9 @@
         },
         "WestVlaanderen": {
             "gewestelijkeToezichthouders": {
-                "Toezichthouders": 3,
-                "VTE Toezichthouders": "0,5",
-                "VTE administratieve en juridische ondersteuning": "0,2"
+                "Toezichthouders": 2,
+                "VTE Toezichthouders": "1,5",
+                "VTE administratieve en juridische ondersteuning": "0"
             },
             "Klachten": {
                 "Totaal aantal milieuklachten": 0,
@@ -101,19 +101,16 @@
                 "Aanmaning": 39,
                 "Verslag van vaststelling": 0,
                 "Proces-verbaal": 3,
-                "Bestuurlijke maatregelzonder dwangsom": 0,
-                "Bestuurlijke maatregelmet dwangsom": 0,
-                "Aantal veiligheidsmaatregel": 0
+                "Bestuurlijke maatregel zonder dwangsom": 0,
+                "Bestuurlijke maatregel met dwangsom": 0,
+                "Aantal veiligheidsmaatregelen": 0
             },
             "Thema": {
                 "PFAS": "Geen actie ondernomen",
                 "Stikstof": "Geen actie ondernomen"
             },
             "Opmerking": {
-                "Opmerking1": "Klachten: hieronder verstaan wij meldingen die een klacht zijn.",
-                "Opmerking2": "Aantal navolgende controles voor verdere opvolging van deze milieuhandhavingscontroles op eigen initiatief?: wordt niet bijgehouden",
-                "Opmerking3": "wordt bij NI onder ontbossing genomen. De personeelsbeschikbaarheid wordt gedefinieerd als de verhouding van het aantal dagen dat een personeelslid in een bepaalde periode geacht wordt om te werken, op basis van diens arbeidsregime, inclusief feestdagen, ten opzichte van het aantal dagen dat een voltijds personeelslid in diezelfde periode dient te werken.",
-                "Opmerking4": "Om de totale personeelsbeschikbaarheid te berekenen wordt voor alle personeelsleden het totaal aantal te werken dagen, volgens een voltijds arbeidsregime, in een periode bepaald en vervolgens de onbeschikbaarheden afgetrokken."
+                "Opmerking": "Geen opmerking"
             }
         },
         "Antwerpen": {
@@ -124,17 +121,17 @@
             },
             "Klachten": {
                 "Totaal aantal milieuklachten": "niet gekend",
-                "Afval": 0,
-                "Bodem": 0,
-                "Geluid": 0,
-                "Lucht": 0,
-                "Mest": 0,
-                "Milieubeheer": 0,
-                "Vergunning": 0,
-                "Water": 0,
-                "Andere": 0,
-                "PFAS": 0,
-                "Stikstof": 0
+                "Afval": "niet gekend",
+                "Bodem": "niet gekend",
+                "Geluid": "niet gekend",
+                "Lucht": "niet gekend",
+                "Mest": "niet gekend",
+                "Milieubeheer": "niet gekend",
+                "Vergunning": "niet gekend",
+                "Water": "niet gekend",
+                "Andere": "niet gekend",
+                "PFAS": "niet gekend",
+                "Stikstof": "niet gekend"
             },
             "Controles": {
                 "Totaal aantal milieucontroles": 194,
@@ -163,13 +160,13 @@
                 "Aanmaning": 102,
                 "Verslag van vaststelling": 0,
                 "Proces-verbaal": 3,
-                "Bestuurlijke maatregelzonder dwangsom": 0,
-                "Bestuurlijke maatregelmet dwangsom": 0,
-                "Aantal veiligheidsmaatregel": 0
+                "Bestuurlijke maatregel zonder dwangsom": 0,
+                "Bestuurlijke maatregel met dwangsom": 0,
+                "Aantal veiligheidsmaatregelenen": 0
             },
             "Thema": {
-                "PFAS": "Geen actie ondernomen",
-                "Stikstof": "Geen actie ondernomen"
+                "PFAS": "Niet bevoegd",
+                "Stikstof": "Niet bevoegd"
             },
             "Opmerking": {
                 "Opmerking": "Totaal aantal milieuhandhavingscontroles uitgevoerd in 2023: dit maakt deel uit van het dagdagelijkse werk van de controleurs/toezichthouders. In 2023 is een voltijdse handhaver gestart bij provincie Antwerpen. Dit heeft geleid tot een toename van het aantal controles en acties. Verder werd in het najaar 2023 een nieuwe applicatie voor registratie en opvolging van handhaving in gebruik genomen. Verwacht wordt dat vanaf 2024 een realistischer beeld van het aantal uitgevoerde controles gegeven zal kunnen worden, en bijgevolg het aantal acties ook zal toenemen."
@@ -189,7 +186,7 @@
                 "Lucht": 0,
                 "Mest": 0,
                 "Milieubeheer": 0,
-                "Vergunning": 0,
+                "Vergunning": 9,
                 "Water": 4,
                 "Andere": 0,
                 "PFAS": 0,
@@ -222,9 +219,9 @@
                 "Aanmaning": 17,
                 "Verslag van vaststelling": 0,
                 "Proces-verbaal": 1,
-                "Bestuurlijke maatregelzonder dwangsom": 1,
-                "Bestuurlijke maatregelmet dwangsom": 0,
-                "Aantal veiligheidsmaatregel": 0
+                "Bestuurlijke maatregel zonder dwangsom": 1,
+                "Bestuurlijke maatregel met dwangsom": 0,
+                "Aantal veiligheidsmaatregelen": 0
             },
             "Thema": {
                 "PFAS": "Geen actie ondernomen",
@@ -236,9 +233,9 @@
         },
         "VlaamsBrabant": {
             "gewestelijkeToezichthouders": {
-                "Toezichthouders": 2,
-                "VTE Toezichthouders": "1,5",
-                "VTE administratieve en juridische ondersteuning": 0
+                "Toezichthouders": 3,
+                "VTE Toezichthouders": "0,5",
+                "VTE administratieve en juridische ondersteuning": "0,2"
             },
             "Klachten": {
                 "Totaal aantal milieuklachten": 86,
@@ -281,9 +278,9 @@
                 "Aanmaning": 10,
                 "Verslag van vaststelling": 4,
                 "Proces-verbaal": 0,
-                "Bestuurlijke maatregelzonder dwangsom": 0,
-                "Bestuurlijke maatregelmet dwangsom": 0,
-                "Aantal veiligheidsmaatregel": 4
+                "Bestuurlijke maatregel zonder dwangsom": 0,
+                "Bestuurlijke maatregel met dwangsom": 0,
+                "Aantal veiligheidsmaatregelen": 4
             },
             "Thema": {
                 "PFAS": "Geen actie ondernomen",

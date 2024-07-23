@@ -76,7 +76,7 @@ class OhrProvincieAnalyse extends LitElement {
         <div is="vl-layout">
         <vl-typography>
         <h2>Cijfers van het jaar ${this.yearofanalysis}</h2></vl-typography>
-        <p is="vl-icon-wrapper"><vl-annotation><span is="vl-icon" data-vl-icon="calendar"></span> Laatste wijziging aan de data: 21/02/2024</vl-annotation></p><br>
+        <p is="vl-icon-wrapper"><vl-annotation><span is="vl-icon" data-vl-icon="calendar"></span> Laatste wijziging aan de data: 05/03/2024</vl-annotation></p><br>
 
     <p is="vl-introduction" data-cy="introduction">
     
