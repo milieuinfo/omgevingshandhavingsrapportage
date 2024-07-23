@@ -90,6 +90,9 @@ import {
     __renderIntroductionOfMaps() {
       return html`
       <h2 is="vl-h2">Provincies op kaart</h2>
+       <p is="vl-icon-wrapper">
+          <span is="vl-icon" data-vl-icon="calendar"></span><vl-annotation>Laatste wijziging aan de data: 05/03/2024</vl-annotation>
+        </p><br>
       <p>
       De provincies hebben handhavingsbevoegdheden ten aanzien van de milieuregelgeving. De provinciegouverneur of zijn plaatsvervanger is in bepaalde gevallen bevoegd voor het opleggen van bestuurlijke maatregelen en kan veiligheidsmaatregelen nemen in geval van een aanzienlijk risico voor mens of milieu. De provinciale toezichthouders oefenen daarnaast het toezicht uit op de toepassing van specifieke milieuvoorschriften. 
 

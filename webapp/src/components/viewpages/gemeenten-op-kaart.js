@@ -16,6 +16,7 @@ import {vlElementsStyle} from "@domg-wc/elements";
 import "@domg-wc/elements/link";
 import "@domg-wc/elements/link-list";
 import "@domg-wc/components/accordion";
+import "@domg-wc/components/typography";
 
 import options from "../config/gemeente-op-kaart.json" assert {type: "json"};
 import options2 from "../config/gemeente-op-kaart-absolut.json" assert {type:"json"};
@@ -83,7 +84,11 @@ class OhrOpkaart extends LitElement {
 
   __renderIntroductionOfMaps() {
     return html`
+   
     <h2 is="vl-h2">Gemeenten op kaart</h2>
+    <p is="vl-icon-wrapper">
+          <span is="vl-icon" data-vl-icon="calendar"></span><vl-annotation>Laatste wijziging aan de data: 05/03/2024</vl-annotation>
+        </p><br>
     <p>
       De gemeenten hebben handhavingsbevoegdheden ten aanzien van de milieuregelgeving en/of de regelgeving inzake ruimtelijke ordening.<br>
       De burgemeester of zijn plaatsvervanger is in bepaalde gevallen bevoegd voor het opleggen van bestuurlijke maatregelen en kan veiligheidsmaatregelen nemen in geval van een aanzienlijk risico voor mens of milieu. 
