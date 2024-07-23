@@ -74,10 +74,10 @@ render() {
     <section is="vl-region">
       <div is="vl-layout">
         <vl-typography>
-          <h2>Cijfers van het jaar ${this.yearofanalysis}</h2>
+          <h2>Cijfers van het jaar ${this.yearofanalysis}</h2></vl-typography>
         <p is="vl-icon-wrapper">
-          <span is="vl-icon" data-vl-icon="calendar"></span><vl-annotation>Laatste wijziging aan de data: 05/03/2024</vl-annotation>
-        </p></vl-typography><br>
+          <span is="vl-icon" data-vl-icon="calendar"></span><vl-annotation>&nbsp;Laatste wijziging aan de data: 05/03/2024</vl-annotation>
+        </p><br>
         <p is="vl-introduction" data-cy="introduction">
           Deze pagina geeft de cijfers van het bestuurlijk vervolgtraject in ${this.yearofanalysis} weer. 
           <br>Via de filter kan u kiezen welke cijfers u wenst te raadplegen: de cijfers van de gewestelijke beboetingsentiteit inzake misdrijven of inbreuken, of de cijfers van het handhavingscollege. De cijfers zullen wijzigen naargelang de gekozen filtering.

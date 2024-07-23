@@ -74,10 +74,10 @@ render() {
     <section is="vl-region">
       <div is="vl-layout">
         <vl-typography>
-          <h2>Cijfers van het jaar ${this.yearofanalysis}</h2>
+          <h2>Cijfers van het jaar ${this.yearofanalysis}</h2></vl-typography>
         <p is="vl-icon-wrapper">
-          <span is="vl-icon" data-vl-icon="calendar"></span><vl-annotation>Laatste wijziging aan de data: 05/03/2024</vl-annotation>
-        </p></vl-typography><br>
+          <span is="vl-icon" data-vl-icon="calendar"></span><vl-annotation>&nbsp;Laatste wijziging aan de data: 05/03/2024</vl-annotation>
+        </p><br>
         <p is="vl-introduction" data-cy="introduction">
         Deze pagina geeft de cijfers van het strafrechtelijk vervolgtraject in ${this.yearofanalysis} weer.
         Via de filter kan u kiezen welke cijfers u wenst te raadplegen: instroom, uitstroom of de motieven van de seponering om technische of opportuniteitsredenen. 

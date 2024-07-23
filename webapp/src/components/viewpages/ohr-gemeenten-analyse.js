@@ -77,10 +77,11 @@ class OhrGemeentenAnalyse extends LitElement {
       <section is="vl-region">
         <div is="vl-layout">
           <vl-typography>
-            <h2>Cijfers van het jaar ${this.yearofanalysis}</h2>
+            <h2>Cijfers van het jaar ${this.yearofanalysis}</h2></vl-typography>
           <p is="vl-icon-wrapper">
-            <span is="vl-icon" data-vl-icon="calendar"></span><vl-annotation>Laatste wijziging aan de data: 05/03/2024</vl-annotation>
-          </p></vl-typography><br>
+            <span is="vl-icon" data-vl-icon="calendar"></span><vl-annotation>&nbsp;Laatste wijziging aan de data: 05/03/2024</vl-annotation>
+          </p><br>
+
 
 
           <p is="vl-introduction" data-cy="introduction">
