@@ -62,10 +62,12 @@ class OhrBestuurlijk extends LitElement {
   __renderIntroduction() {
     return html`
     <p is="vl-text">
-      De gewestelijke beboetingsentiteit van het Departement Omgeving staat in voor de behandeling van enerzijds de omgevingshandhavingsdossiers die het ontvangt van het Openbaar Ministerie en van anderzijds de ontvangen verslagen van vaststelling van de inspectiediensten.
-
-Het Handhavingscollege is een onafhankelijk Vlaams administratief rechtscollege. Dit college behandeld de beroepen die ingesteld worden tegen beslissingen omtrent een bestuurlijke geldboete in het kader van milieu- en stedenbouwreglementering, in het kader van omgevingsvergunningen of in het kader van onroerend erfgoed
+     De gewestelijke beboetingsentiteit heeft kennis van alle verslagen van vaststelling en alle processen-verbaal die door het openbaar ministerie naar hen werden doorgestuurd voor het opleggen van een bestuurlijke geldboete. Ze staat in voor de verdere bestuurlijke afhandeling van de dossiers.
+    </p><br>
+     <p is="vl-text">
+     Het Handhavingscollege is een onafhankelijk Vlaams administratief rechtscollege. Dit college behandeld de beroepen die ingesteld worden tegen beslissingen omtrent een bestuurlijke geldboete in het kader van milieu- en stedenbouwreglementering, in het kader van omgevingsvergunningen of in het kader van onroerend erfgoed. 
     </p>
+    
     <p>
               <br>
       <?xml version="1.0" encoding="UTF-8"?>

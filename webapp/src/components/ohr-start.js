@@ -158,16 +158,16 @@ and performing other setup tasks.
           <div is="vl-grid" data-vl-align-center>
           <div is="vl-column" data-vl-size="6">
             <vl-spotlight
-              data-vl-img-src="images/info milieu.jpg"
+              data-vl-img-src="images/info milieu.png"
               data-vl-img-alt="spotlight image" download
             >
               <span slot="title">Geconsolideerd beeld milieu</span>
               <span slot="subtitle">Op basis van de cijfers van 2023</span>
               <span slot="text">
-                De bovenstaande infographic geeft een overzicht van de
+                De bovenstaande preview van de infographic geeft een overzicht van de
                 verschillende instrumenten binnen het milieubeleid voor het volledige vlaamse gewest.<br />
                 <p>
-                  <a href="images/info milieu.jpg" download
+                  <a href="images/info milieu.png" download
                     >Download bovenstaande infographic</a>
                 </p>
               </span>
@@ -175,7 +175,7 @@ and performing other setup tasks.
           </div>
           <div is="vl-column" data-vl-size="6">
             <vl-spotlight
-              data-vl-img-src="images/info ro.jpg"
+              data-vl-img-src="images/info ro.png"
               data-vl-img-alt="spotlight image"
             >
               <span slot="title">
@@ -183,11 +183,11 @@ and performing other setup tasks.
               </span>
               <span slot="subtitle">Op basis van de cijfers van 2023</span>
               <span slot="text">
-                De bovenstaande infographic geeft een overzicht van de
+                De bovenstaande preview van de infographic geeft een overzicht van de
                 verschillende instrumenten binnen het ruimtelijke ordening beleid
                 voor het volledige vlaamse gewest.<br />
                 <p>
-                  <a href="images/info ro.jpg" download
+                  <a href="images/info ro.png" download
                     >Download bovenstaande infographic</a>
                 </p>
               </span>
@@ -334,7 +334,7 @@ and performing other setup tasks.
               Strafrechtelijke sanctionering
             </h2>
             <div is="vl-doormat-text">
-             Bekijk de cijfers van het Openbaar Ministerie van ${this.yearofanalysis}.
+             Bekijk de cijfers van het Openbaar Ministerie van <br> ${this.yearofanalysis}.
             </div>
           </a>
         </div>`,

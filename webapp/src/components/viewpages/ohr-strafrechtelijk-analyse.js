@@ -79,8 +79,9 @@ render() {
           <span is="vl-icon" data-vl-icon="calendar"></span><vl-annotation>Laatste wijziging aan de data: 05/03/2024</vl-annotation>
         </p></vl-typography><br>
         <p is="vl-introduction" data-cy="introduction">
-          Deze pagina toont een overzichtelijk beeld van de handhavingsactiviteiten van de Openbaar Ministerie.
-          <br>Via de filter kan u een dimensie kiezen.
+        Deze pagina geeft de cijfers van het strafrechtelijk vervolgtraject in ${this.yearofanalysis} weer.
+        Via de filter kan u kiezen welke cijfers u wenst te raadplegen: instroom, uitstroom of de motieven van de seponering om technische of opportuniteitsredenen. 
+        <br>De cijfers zullen wijzigen naargelang de gekozen filtering
         </p>
         <br />
         <div>${this.__renderViewSelector()}</div>

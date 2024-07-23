@@ -79,10 +79,10 @@ render() {
           <span is="vl-icon" data-vl-icon="calendar"></span><vl-annotation>Laatste wijziging aan de data: 05/03/2024</vl-annotation>
         </p></vl-typography><br>
         <p is="vl-introduction" data-cy="introduction">
-          Deze pagina toont de cijfers van het bestuurlijk vervolgtraject voor ${this.yearofanalysis}.
-          <br>Via de filter kan u een dimensie kiezen.
+          Deze pagina geeft de cijfers van het bestuurlijk vervolgtraject in ${this.yearofanalysis} weer. 
+          <br>Via de filter kan u kiezen welke cijfers u wenst te raadplegen: de cijfers van de gewestelijke beboetingsentiteit inzake misdrijven of inbreuken, of de cijfers van het handhavingscollege. De cijfers zullen wijzigen naargelang de gekozen filtering.
+        <br><br>
         </p>
-        <br />
         <div>${this.__renderViewSelector()}</div>
         <div>${this.__renderDynamicContent()}</div>
       </div>

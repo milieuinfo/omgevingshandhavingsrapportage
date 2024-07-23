@@ -78,7 +78,7 @@
                 "Stikstof": 0
             },
             "Controles": {
-                "Totaal Totaal aantal milieucontroles": 5764,
+                "Totaal aantal milieucontroles": 5764,
                 "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren": "niet gekend",
                 "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten": 1896,
                 "navolgende milieuhandhavingscontroles voor verdere opvolging van de controles naar aanleiding van klachten": "niet gekend",
@@ -182,7 +182,7 @@
             "gewestelijkeToezichthouders": {
                 "Toezichthouders": 91,
                 "VTE Toezichthouders": 2,
-                "VTE administratieve en juridische ondersteuning": "0,1"
+                "VTE administratieve en juridische ondersteuning": "0,10"
             },
             "Klachten": {
                 "Totaal aantal milieuklachten": "niet gekend"
@@ -287,7 +287,7 @@
             "gewestelijkeToezichthouders": {
                 "Toezichthouders": 111,
                 "VTE Toezichthouders": "85,05",
-                "VTE administratieve en juridische ondersteuning": "17,8"
+                "VTE administratieve en juridische ondersteuning": "17,80"
             },
             "Klachten": {
                 "Totaal aantal milieuklachten": 4665,
@@ -382,8 +382,8 @@
         "Openbare Vlaamse Afvalstoffenmaatschappij": {
             "gewestelijkeToezichthouders": {
                 "Toezichthouders": 19,
-                "VTE Toezichthouders": "7,5",
-                "VTE administratieve en juridische ondersteuning": "1,2"
+                "VTE Toezichthouders": "7,50",
+                "VTE administratieve en juridische ondersteuning": "1,20"
             },
             "Klachten": {
                 "Totaal aantal milieuklachten": 247,
@@ -509,8 +509,8 @@
         "Vlaamse Landmaatschappij": {
             "gewestelijkeToezichthouders": {
                 "Toezichthouders": 36,
-                "VTE Toezichthouders": "33,6",
-                "VTE administratieve en juridische ondersteuning": "0,1"
+                "VTE Toezichthouders": "33,60",
+                "VTE administratieve en juridische ondersteuning": "0,10"
             },
             "Klachten": {
                 "Totaal aantal milieuklachten": 169,
@@ -570,7 +570,7 @@
             "gewestelijkeToezichthouders": {
                 "Toezichthouders": 46,
                 "VTE Toezichthouders": 3,
-                "VTE administratieve en juridische ondersteuning": "0.1"
+                "VTE administratieve en juridische ondersteuning": "0,10"
             },
             "Klachten": {
                 "Totaal aantal milieuklachten": "niet gekend"
@@ -740,8 +740,8 @@
             },
             "Aanvankelijkecontrolesmetschending": {
                 "Totaal aantal aanvankelijke controles ruimtelijke ordening met schending": 141,
-                "Verharding": "aanvullen",
-                "Ontbossing": "aanvullen"
+                "Verharding": "niet gekend",
+                "Ontbossing": "niet gekend"
             },
             "Instrument": {
                 "Raadgeving": 1,
