@@ -76,7 +76,7 @@ render() {
         <vl-typography>
           <h2>Cijfers van het jaar ${this.yearofanalysis}</h2>
         <p is="vl-icon-wrapper">
-          <span is="vl-icon" data-vl-icon="calendar"></span><vl-annotation>Laatste wijziging aan de data: 21/02/2024</vl-annotation>
+          <span is="vl-icon" data-vl-icon="calendar"></span><vl-annotation>Laatste wijziging aan de data: 05/03/2024</vl-annotation>
         </p></vl-typography><br>
         <p is="vl-introduction" data-cy="introduction">
           Deze pagina toont een overzichtelijk beeld van de handhavingsactiviteiten van de Openbaar Ministerie.
