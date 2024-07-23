@@ -490,7 +490,7 @@ and performing other setup tasks.
           <a is="vl-doormat" href="/provincie-op-kaart">
             <h2 is="vl-doormat-title">Provincies</h2>
             <div is="vl-doormat-text">
-              Een cartografische weergave van de cijfers van de provincies in
+              Een cartografische weergave van de cijfers van de provincies in<br>
               ${this.yearofanalysis}.
             </div>
           </a>
@@ -502,7 +502,7 @@ and performing other setup tasks.
           <a is="vl-doormat" href="/gemeenten-op-kaart">
             <h2 is="vl-doormat-title">Gemeenten</h2>
             <div is="vl-doormat-text">
-              Een cartografische weergave van de cijfers van de gemeenten in het
+              Een cartografische weergave van de cijfers van de gemeenten in<br>
               ${this.yearofanalysis}.
             </div>
           </a>
