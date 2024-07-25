@@ -1,0 +1,16 @@
+[
+  
+    {
+      "label": "Bevraging van 2021",
+      "value": "2021"
+    },
+    {
+        "label": "Bevraging van 2022",
+        "value": "2022"
+      },
+      {
+        "label": "Bevraging van 2023",
+        "value": "2023",
+        "selected": true
+      }
+  ]

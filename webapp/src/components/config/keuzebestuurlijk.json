@@ -1,11 +1,15 @@
 [
     {
-      "label": "Gewestelijke beboetingsentiteit",
-      "value": "GewestelijkeBB",
+      "label": "Gewestelijke beboetingsentiteit: Misdrijven",
+      "value": "Misdrijven",
       "selected": true
     },
     {
-      "label": "HHC",
+      "label": "Gewestelijke beboetingsentiteit: Inbreuken",
+      "value": "Inbreuken"
+    },
+    {
+      "label": "Handhavingscollege",
       "value": "HHC"
     }
   ]

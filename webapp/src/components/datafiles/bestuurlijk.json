@@ -1,26 +1,164 @@
 {
     "GewestelijkeBB": {
         "Misdrijven": {
-            "Ontvangen proces-verbalen": 3351,
-            "Behandelde proces-verbalen": 3221,
-            "Beslissingen opportuniteitssepot": 357,
-            "Bestuurlijke transacties": 2804,
-            "Betaalde bestuurlijke transacties": 1590,
-            "Geen geldboete": 240,
-            "Geldboetes met voordeelontneming": 12,
-            "Geldboetes zonder voordeelontneming": 1098,
-            "Technische seponering": 346
+            "Afval": 
+            {
+                "Ontvangen proces-verbalen": 810,
+                "Behandelde proces-verbalen": 881,
+                "Beslissingen technische seponering": 6,
+                "Opgelegde bestuurlijke transacties": 666,
+                "Betaalde bestuurlijke transacties": 356,
+                "Geen geldboete": 151,
+                "Geldboetes met voordeelontneming": 1,
+                "Geldboetes zonder voordeelontneming": 518
+            },
+            "Vergunningen": 
+            {
+                "Ontvangen proces-verbalen": 435,
+                "Behandelde proces-verbalen": 420,
+                "Beslissingen technische seponering": 9,
+                "Opgelegde bestuurlijke transacties": 318,
+                "Betaalde bestuurlijke transacties": 171,
+                "Geen geldboete": 40,
+                "Geldboetes met voordeelontneming": 8,
+                "Geldboetes zonder voordeelontneming": 137
+            },
+            "Milieubeheer": 
+            {
+                "Ontvangen proces-verbalen": 318,
+                "Behandelde proces-verbalen": 333,
+                "Beslissingen technische seponering": 3,
+                "Opgelegde bestuurlijke transacties": 335,
+                "Betaalde bestuurlijke transacties": 218,
+                "Geen geldboete": 11,
+                "Geldboetes met voordeelontneming": 0,
+                "Geldboetes zonder voordeelontneming": 136
+            },
+            "Emissies": 
+            {
+                "Ontvangen proces-verbalen": 616,
+                "Behandelde proces-verbalen": 638,
+                "Beslissingen technische seponering": 83,
+                "Opgelegde bestuurlijke transacties": 465,
+                "Betaalde bestuurlijke transacties": 286,
+                "Geen geldboete": 16,
+                "Geldboetes met voordeelontneming": 3,
+                "Geldboetes zonder voordeelontneming": 124
+            },
+            "Mest": 
+            {
+                "Ontvangen proces-verbalen": 319,
+                "Behandelde proces-verbalen": 301,
+                "Beslissingen technische seponering": 7,
+                "Opgelegde bestuurlijke transacties": 320,
+                "Betaalde bestuurlijke transacties": 255,
+                "Geen geldboete": 8,
+                "Geldboetes met voordeelontneming": 0,
+                "Geldboetes zonder voordeelontneming": 43
+            },
+            "RO": 
+            {
+                "Ontvangen proces-verbalen": 723,
+                "Behandelde proces-verbalen": 778,
+                "Beslissingen technische seponering": 135,
+                "Opgelegde bestuurlijke transacties": 700,
+                "Betaalde bestuurlijke transacties": 304,
+                "Geen geldboete": 14,
+                "Geldboetes met voordeelontneming": 0,
+                "Geldboetes zonder voordeelontneming": 140
+            },
+            "Sepot": {
+                "Opportuniteitssepot" : {
+                        "Geen handhavingsprioriteit": 115,
+                        "Volledig geregulariseerd": 242
+                },
+                "Technische sepot": {
+                    "Dader onbekend/Overleden/faillissement": 1,
+                    "Geen misdrijf": 25,
+                    "Onvoldoende vaststaand": 66,
+                    "Parket te laat": 11
+                }
+            }
         },
         "Inbreuken": {
-            "Ontvangen verslagen van vaststellingen": 491,
-            "Behandelde verslagen van vaststellingen": 471,
-            "Beslissingen opportuniteitssepot": 14,
-            "Bestuurlijke transacties": 478,
-            "Betaalde bestuurlijke transacties": 329,
-            "Geen geldboete": 18,
-            "Geldboetes met voordeelontneming": 20,
-            "Geldboetes zonder voordeelontneming": 122,
-            "Technische seponering": 44
+          "Afval": 
+            {
+                "Ontvangen verslagen van vaststelling": 0,
+                "Behandelde verslagen van vaststelling": 0,
+                "Beslissingen technische seponering": 0,
+                "Opgelegde bestuurlijke transacties": 0,
+                "Betaalde bestuurlijke transacties": 0,
+                "Geen geldboete": 14,
+                "Geldboetes met voordeelontneming": 0,
+                "Geldboetes zonder voordeelontneming": 6
+            },
+            "Vergunningen": 
+            {
+                "Ontvangen proces-verbalen": 2,
+                "Behandelde proces-verbalen": 3,
+                "Beslissingen technische seponering": 0,
+                "Opgelegde bestuurlijke transacties": 3,
+                "Betaalde bestuurlijke transacties": 3,
+                "Geen geldboete": 1,
+                "Geldboetes met voordeelontneming": 0,
+                "Geldboetes zonder voordeelontneming": 0
+            },
+            "Milieubeheer": 
+            {
+                "Ontvangen proces-verbalen": 436,
+                "Behandelde proces-verbalen": 421,
+                "Beslissingen technische seponering": 2,
+                "Opgelegde bestuurlijke transacties": 427,
+                "Betaalde bestuurlijke transacties": 307,
+                "Geen geldboete": 1,
+                "Geldboetes met voordeelontneming": 20,
+                "Geldboetes zonder voordeelontneming": 111
+            },
+            "Emissies": 
+            {
+                "Ontvangen proces-verbalen": 7,
+                "Behandelde proces-verbalen": 7,
+                "Beslissingen technische seponering": 0,
+                "Opgelegde bestuurlijke transacties": 7,
+                "Betaalde bestuurlijke transacties": 5,
+                "Geen geldboete": 0,
+                "Geldboetes met voordeelontneming": 0,
+                "Geldboetes zonder voordeelontneming": 0
+            },
+            "Mest": 
+            {
+                "Ontvangen proces-verbalen": 1,
+                "Behandelde proces-verbalen": 1,
+                "Beslissingen technische seponering": 7,
+                "Opgelegde bestuurlijke transacties": 2,
+                "Betaalde bestuurlijke transacties": 0,
+                "Geen geldboete": 0,
+                "Geldboetes met voordeelontneming": 0,
+                "Geldboetes zonder voordeelontneming": 0
+            },
+            "RO": 
+            {
+                "Ontvangen proces-verbalen": 45,
+                "Behandelde proces-verbalen": 39,
+                "Beslissingen technische seponering": 5,
+                "Opgelegde bestuurlijke transacties": 39,
+                "Betaalde bestuurlijke transacties": 14,
+                "Geen geldboete": 2,
+                "Geldboetes met voordeelontneming": 0,
+                "Geldboetes zonder voordeelontneming": 5
+            },
+            "Sepot": {
+                "opportuniteitssepot" : {
+                        "Geen handhavingsprioriteit": 14,
+                        "Volledig geregulariseerd": 0
+                },
+                "technische": {
+                    "Dader onbekend/Overleden/faillissement": 0,
+                    "Geen misdrijf": 0,
+                    "Onvoldoende vaststaand": 3,
+                    "Parket te laat": 0
+                }
+            }
         }
     },
     "HHC": {

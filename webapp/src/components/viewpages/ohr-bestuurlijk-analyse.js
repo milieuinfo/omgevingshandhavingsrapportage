@@ -122,6 +122,41 @@ renderDataSection(data) {
   `;
 }
 
+__renderDataSectionSepot(data) {
+  return html`
+    <table is="vl-data-table">
+    <caption>De gepresenteerde cijfers geven inzicht in de seponering van zaken binnen de ruimtelijke ordening </caption>
+      <thead>
+        <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        ${Object.entries(data).map(([category, items]) => {
+          const rows = Object.entries(items).map(([subCategory, value], index) => html`
+            <tr>
+              ${index === 0 ? html`
+                <th rowspan="${Object.keys(items).length}" scope="rowgroup">
+                  ${category}
+                </th>
+              ` : null}
+              <td>${subCategory}</td>
+              <td>${value}</td>
+            </tr>
+          `);
+          return rows;
+        })}
+      </tbody>
+    </table>
+    <br />
+  `;
+}
+
+
+
 __renderViewSelector() {
   return html`
   <vl-typography><b>
@@ -130,27 +165,85 @@ __renderViewSelector() {
     </select><br>
   `;
 }
-
   __renderDynamicContent() {
-    return html`
-<vl-tabs data-vl-active-tab="Misdrijven" data-vl-disable-links="">
-  <vl-tabs-pane data-vl-id="Misdrijven" data-vl-title="Misdrijven">
-      <div is="vl-grid">
-  <div is="vl-column" data-vl-size=12>
-  ${this.renderDataSection(jsonData[this.selectedChoiceUrl].Misdrijven)}
-  </div>
-</div>
-  </vl-tabs-pane>
-  <vl-tabs-pane data-vl-id="Inbreuken" data-vl-title="Inbreuken">
-          <div is="vl-grid">
-  <div is="vl-column" data-vl-size=12>
- 
-  ${this.renderDataSection(jsonData[this.selectedChoiceUrl].Inbreuken)}
-  </div>
-</div>   
-  </vl-tabs-pane>
-</vl-tabs>
-    `;
+    console.log(this.selectedChoiceUrl);
+    if (this.selectedChoiceUrl == 'Misdrijven' || this.selectedChoiceUrl == 'Inbreuken') {
+      return html`
+        <vl-tabs data-vl-active-tab="Afval" data-vl-disable-links="">
+          <vl-tabs-pane data-vl-id="Afval" data-vl-title="Afval">
+            <div is="vl-grid">
+              <div is="vl-column" data-vl-size=12>
+                ${this.renderDataSection(jsonData.GewestelijkeBB[this.selectedChoiceUrl].Afval)}
+              </div>
+            </div>
+          </vl-tabs-pane>
+          <vl-tabs-pane data-vl-id="Emissies" data-vl-title="Emissies">
+            <div is="vl-grid">
+              <div is="vl-column" data-vl-size=12>
+                ${this.renderDataSection(jsonData.GewestelijkeBB[this.selectedChoiceUrl].Emissies)}
+              </div>
+            </div>
+          </vl-tabs-pane>
+          <vl-tabs-pane data-vl-id="Mest" data-vl-title="Mest">
+            <div is="vl-grid">
+              <div is="vl-column" data-vl-size=12>
+                ${this.renderDataSection(jsonData.GewestelijkeBB[this.selectedChoiceUrl].Mest)}
+              </div>
+            </div>
+          </vl-tabs-pane>
+          <vl-tabs-pane data-vl-id="Milieubeheersrecht" data-vl-title="Milieubeheersrecht">
+            <div is="vl-grid">
+              <div is="vl-column" data-vl-size=12>
+                ${this.renderDataSection(jsonData.GewestelijkeBB[this.selectedChoiceUrl].Milieubeheer)}
+              </div>
+            </div>
+          </vl-tabs-pane>
+          <vl-tabs-pane data-vl-id="Milieuvergunningen" data-vl-title="Milieuvergunningen">
+            <div is="vl-grid">
+              <div is="vl-column" data-vl-size=12>
+                ${this.renderDataSection(jsonData.GewestelijkeBB[this.selectedChoiceUrl].Vergunningen)}
+              </div>
+            </div>
+          </vl-tabs-pane>
+          <vl-tabs-pane data-vl-id="Ruimtelijke ordening" data-vl-title="Ruimtelijke ordening">
+            <div is="vl-grid">
+              <div is="vl-column" data-vl-size=12>
+                ${this.renderDataSection(jsonData.GewestelijkeBB[this.selectedChoiceUrl].RO)}
+              </div>
+            </div>
+          </vl-tabs-pane>
+          <vl-tabs-pane data-vl-id="Seponering" data-vl-title="Seponering inzake ruimtelijke ordening">
+            <div is="vl-grid">
+              <div is="vl-column" data-vl-size=12>
+                ${this.__renderDataSectionSepot(jsonData.GewestelijkeBB[this.selectedChoiceUrl].Sepot)}
+              </div>
+            </div>
+          </vl-tabs-pane>
+        </vl-tabs>
+      `;
+    }
+    else if (this.selectedChoiceUrl === 'HHC') {
+      return html`
+        <vl-tabs data-vl-active-tab="Misdrijven" data-vl-disable-links="">
+          <vl-tabs-pane data-vl-id="Misdrijven" data-vl-title="Misdrijven">
+            <div is="vl-grid">
+              <div is="vl-column" data-vl-size=12>
+              ${this.renderDataSection(jsonData[this.selectedChoiceUrl].Misdrijven)}
+              </div>
+            </div>
+          </vl-tabs-pane>
+          <vl-tabs-pane data-vl-id="Inbreuken" data-vl-title="Inbreuken">
+            <div is="vl-grid">
+              <div is="vl-column" data-vl-size=12>
+              ${this.renderDataSection(jsonData[this.selectedChoiceUrl].Inbreuken)}
+              </div>
+            </div>
+          </vl-tabs-pane>
+        </vl-tabs>
+      `;
+    }
+    return 'Selecteer een optie';
+    
   }
 }
 
