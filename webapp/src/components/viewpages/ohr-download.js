@@ -105,25 +105,25 @@ class OhrDownload extends LitElement {
       return html`
       <vl-typography>
         <p><b>${this.selectedChoiceLabel}</b></p></vl-typography>
-        <p><a is="vl-link" data-cy="link-with-icon" href="datafiles/${this.selectedChoiceUrl}/Bevraging_gewest.xlsx" download>
+        <p><a is="vl-link" data-cy="link-with-icon" href="datafilesdownload/${this.selectedChoiceUrl}/Bevraging_gewest.xlsx" download>
         <span is="vl-icon" data-vl-search-placeholder = "Kies een item"data-vl-before="" data-vl-link="" data-vl-icon="arrow-right-fat"></span>
         Bevraging van gewesten</a></p>
-           <p><a is="vl-link" data-cy="link-with-icon" href="datafiles/${this.selectedChoiceUrl}/Bevraging_provincie.xlsx" download>
+           <p><a is="vl-link" data-cy="link-with-icon" href="datafilesdownload/${this.selectedChoiceUrl}/Bevraging_provincie.xlsx" download>
         <span is="vl-icon" data-vl-search-placeholder = "Kies een item"data-vl-before="" data-vl-link="" data-vl-icon="arrow-right-fat"></span>
         Bevraging van provincies</a></p>
-           <p><a is="vl-link" data-cy="link-with-icon" href="datafiles/${this.selectedChoiceUrl}/Bevraging_gemeente.csv" download>
+           <p><a is="vl-link" data-cy="link-with-icon" href="datafilesdownload/${this.selectedChoiceUrl}/Bevraging_gemeente.csv" download>
         <span is="vl-icon" data-vl-search-placeholder = "Kies een item"data-vl-before="" data-vl-link="" data-vl-icon="arrow-right-fat"></span>
         Bevraging van gemeenten</a></p>
-           <p><a is="vl-link" data-cy="link-with-icon" href="datafiles/${this.selectedChoiceUrl}/Bevraging_Hoge_Raad_voor_Handhavingsuitvoeringen.xlsx" download>
+           <p><a is="vl-link" data-cy="link-with-icon" href="datafilesdownload/${this.selectedChoiceUrl}/Bevraging_Hoge_Raad_voor_Handhavingsuitvoeringen.xlsx" download>
         <span is="vl-icon" data-vl-search-placeholder = "Kies een item"data-vl-before="" data-vl-link="" data-vl-icon="arrow-right-fat"></span>
         Bevraging van Hoge Raad voor Handhavingsuitvoering</a></p>
-           <p><a is="vl-link" data-cy="link-with-icon" href="datafiles/${this.selectedChoiceUrl}/Bevraging_parket.xlsx" download>
+           <p><a is="vl-link" data-cy="link-with-icon" href="datafilesdownload/${this.selectedChoiceUrl}/Bevraging_parket.xlsx" download>
         <span is="vl-icon" data-vl-search-placeholder = "Kies een item"data-vl-before="" data-vl-link="" data-vl-icon="arrow-right-fat"></span>
         Bevraging van Parket</a></p>
-           <p><a is="vl-link" data-cy="link-with-icon" href="datafiles/${this.selectedChoiceUrl}/Bevraging_gewestelijke_beboetingsentiteit.xlsx" download>
+           <p><a is="vl-link" data-cy="link-with-icon" href="datafilesdownload/${this.selectedChoiceUrl}/Bevraging_gewestelijke_beboetingsentiteit.xlsx" download>
         <span is="vl-icon" data-vl-search-placeholder = "Kies een item"data-vl-before="" data-vl-link="" data-vl-icon="arrow-right-fat"></span>
         Bevraging van Gewestelijke Beboetingsentiteit</a></p>
-           <p><a is="vl-link" data-cy="link-with-icon" href="datafiles/${this.selectedChoiceUrl}/Bevraging_Handhavingscollege.csv" download>
+           <p><a is="vl-link" data-cy="link-with-icon" href="datafilesdownload/${this.selectedChoiceUrl}/Bevraging_Handhavingscollege.csv" download>
         <span is="vl-icon" data-vl-search-placeholder = "Kies een item"data-vl-before="" data-vl-link="" data-vl-icon="arrow-right-fat"></span>
         Bevraging van Handhavingscollege</a></p>
       `;
