@@ -24,6 +24,7 @@ import "@domg-wc/components/functional-header";
 import "@domg-wc/components/typography";
 import "@domg-wc/elements/link";
 import "@domg-wc/elements/link-list";
+import "@domg-wc/components/alert";
 import yearofanalsysis from "../config/yearofanalysis.json" assert { type: "json" };
 
 class OhrGemeentenAnalyse extends LitElement {
