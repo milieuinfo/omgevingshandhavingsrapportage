@@ -15,6 +15,7 @@ import "@domg-wc/elements/link";
 import "@domg-wc/components/accordion";
 import "@domg-wc/components/alert";
 import "@domg-wc/elements/select";
+import "@domg-wc/components/typography";
 
 import options from "../config/downloadkeuze.json" assert {type: "json"};
 import yearofanalsysis from "../config/yearofanalysis.json" assert {type: "json"};

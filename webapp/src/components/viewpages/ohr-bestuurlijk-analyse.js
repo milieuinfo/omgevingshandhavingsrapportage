@@ -125,7 +125,7 @@ renderDataSection(data) {
 __renderDataSectionSepot(data) {
   return html`
     <table is="vl-data-table">
-    <caption>De gepresenteerde cijfers geven inzicht in de seponering van zaken binnen de ruimtelijke ordening </caption>
+    <caption>De gepresenteerde cijfers geven inzicht in de seponering van zaken binnen ruimtelijke ordening </caption>
       <thead>
         <tr>
           <th></th>
