@@ -10,7 +10,7 @@ const output = `build/release`;
 
 const copyTargets = [
   {src: 'images/**', dest: `${output}/images`},
-  {src: 'datafiles/**', dest: `${output}/datafiles`},
+  {src: 'datafilesdownload/**', dest: `${output}/datafilesdownload`},
 ];
 
 const copyFlattenTargets = [

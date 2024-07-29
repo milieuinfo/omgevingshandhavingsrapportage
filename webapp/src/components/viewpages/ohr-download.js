@@ -78,10 +78,6 @@ class OhrDownload extends LitElement {
                 template: this.__renderSideNavigation(),
               },
               {
-                size:6,
-                template: this.__renderViewSelector()
-              },
-              {
                 size: 7,
                 template: this.__renderdownloadlinks(),
             },
@@ -105,28 +101,25 @@ class OhrDownload extends LitElement {
   __renderdownloadlinks() {
       return html`
       <vl-typography>
-        <p><b>${this.selectedChoiceLabel}</b></p></vl-typography>
-        <p><a is="vl-link" data-cy="link-with-icon" href="datafilesdownload/${this.selectedChoiceUrl}/Bevraging_gewest.xlsx" download>
-        <span is="vl-icon" data-vl-search-placeholder = "Kies een item"data-vl-before="" data-vl-link="" data-vl-icon="arrow-right-fat"></span>
-        Bevraging van gewesten</a></p>
-           <p><a is="vl-link" data-cy="link-with-icon" href="datafilesdownload/${this.selectedChoiceUrl}/Bevraging_provincie.xlsx" download>
-        <span is="vl-icon" data-vl-search-placeholder = "Kies een item"data-vl-before="" data-vl-link="" data-vl-icon="arrow-right-fat"></span>
-        Bevraging van provincies</a></p>
-           <p><a is="vl-link" data-cy="link-with-icon" href="datafilesdownload/${this.selectedChoiceUrl}/Bevraging_gemeente.csv" download>
-        <span is="vl-icon" data-vl-search-placeholder = "Kies een item"data-vl-before="" data-vl-link="" data-vl-icon="arrow-right-fat"></span>
-        Bevraging van gemeenten</a></p>
-           <p><a is="vl-link" data-cy="link-with-icon" href="datafilesdownload/${this.selectedChoiceUrl}/Bevraging_Hoge_Raad_voor_Handhavingsuitvoeringen.xlsx" download>
-        <span is="vl-icon" data-vl-search-placeholder = "Kies een item"data-vl-before="" data-vl-link="" data-vl-icon="arrow-right-fat"></span>
-        Bevraging van Hoge Raad voor Handhavingsuitvoering</a></p>
-           <p><a is="vl-link" data-cy="link-with-icon" href="datafilesdownload/${this.selectedChoiceUrl}/Bevraging_parket.xlsx" download>
-        <span is="vl-icon" data-vl-search-placeholder = "Kies een item"data-vl-before="" data-vl-link="" data-vl-icon="arrow-right-fat"></span>
-        Bevraging van Parket</a></p>
-           <p><a is="vl-link" data-cy="link-with-icon" href="datafilesdownload/${this.selectedChoiceUrl}/Bevraging_gewestelijke_beboetingsentiteit.xlsx" download>
-        <span is="vl-icon" data-vl-search-placeholder = "Kies een item"data-vl-before="" data-vl-link="" data-vl-icon="arrow-right-fat"></span>
-        Bevraging van Gewestelijke Beboetingsentiteit</a></p>
-           <p><a is="vl-link" data-cy="link-with-icon" href="datafilesdownload/${this.selectedChoiceUrl}/Bevraging_Handhavingscollege.csv" download>
-        <span is="vl-icon" data-vl-search-placeholder = "Kies een item"data-vl-before="" data-vl-link="" data-vl-icon="arrow-right-fat"></span>
-        Bevraging van Handhavingscollege</a></p>
+      <b>Download bestanden voor de bevraging</b>
+      </vl-typography><br>
+      <ul is="vl-link-list" data-cy="link-list">
+    <li is="vl-link-list-item">
+        <a is="vl-link" href="https://omgeving.vlaanderen.be/sites/default/files/2024-07/omgevingshandhavingscijfers_2021.zip" download>
+            Download de bevraging van 2021
+        </a>
+    </li>
+    <li is="vl-link-list-item">
+        <a is="vl-link" href="https://omgeving.vlaanderen.be/sites/default/files/2024-07/omgevingshandhavingscijfers_2022.zip" download>
+            Download de bevraging van 2022
+        </a>
+    </li>
+     <li is="vl-link-list-item">
+        <a is="vl-link" href="https://omgeving.vlaanderen.be/sites/default/files/2024-07/omgevingshandhavingscijfers_2023.zip" download>
+            Download de bevraging van 2023
+        </a>
+    </li>
+</ul>
       `;
   }
   __renderSideNavigation() {
@@ -144,20 +137,9 @@ class OhrDownload extends LitElement {
       <h2 is="vl-h2">Download</h2>
     </vl-typography>
     <p is="vl-introduction" data-cy="introduction">
-          Deze pagina kunt u bestanden downloaden met data van de bevraging tot het jaar ${this.yearofanalysis}. 
-          <br>
-          Kies via de filter een thema en de downloadlink verschijnt om te downloaden.
-        <br>
+          Op deze pagina kunt u bestanden downloaden met data van de bevraging tot het jaar ${this.yearofanalysis}. 
+          
         </p>`;
-  }
-
-  __renderViewSelector() {
-    return html`
-    <vl-typography><b>
-    Kies een bevragingjaartal uit de keuzelijst om de gegevens hieronder weer te geven.</b></vl-typography>
-      <select id="viewselector" is="vl-select" data-vl-select @change="${this.__changeView}">
-      </select>
-    `;
   }
 }
 
