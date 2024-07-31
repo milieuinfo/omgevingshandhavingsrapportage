@@ -45,14 +45,14 @@
                 "id": "PeEXsph",
                 "height": "300px",
                 "visual_type": "barchart",
-                "label": "Evolutie per thema"
+                "label": "Evolutie percentuele verdeling per thema"
               },
               {
                 "type": "visual",
                 "id": "KPBmpHk",
                 "height": "300px",
                 "visual_type": "barchart",
-                "label": "Evolutie percentuele verdeling per thema"
+                "label": "Evolutie percentuele verdeling per tenlastenleggingscode"
               }
         ]
       ]
