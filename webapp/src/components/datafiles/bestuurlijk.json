@@ -72,7 +72,7 @@
                         "Geen handhavingsprioriteit": 115,
                         "Volledig geregulariseerd": 242
                 },
-                "Technische sepot": {
+                "Technisch sepot": {
                     "Dader onbekend/Overleden/faillissement": 1,
                     "Geen misdrijf": 25,
                     "Onvoldoende vaststaand": 66,
@@ -152,7 +152,7 @@
                         "Geen handhavingsprioriteit": 14,
                         "Volledig geregulariseerd": 0
                 },
-                "technische": {
+                "Technisch sepot": {
                     "Dader onbekend/Overleden/faillissement": 0,
                     "Geen misdrijf": 0,
                     "Onvoldoende vaststaand": 3,
