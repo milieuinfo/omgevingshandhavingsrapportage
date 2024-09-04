@@ -23,10 +23,8 @@ import {
         },
         {
           name: "Tenlastenleggingscode",
-          id: "Rubriek",
+          id: "Tenlastenleggingscode",
           filter: RUBRIEKSTRAFRECHTELIJK
         }
       ]
-  
-    
       export {filters as default};

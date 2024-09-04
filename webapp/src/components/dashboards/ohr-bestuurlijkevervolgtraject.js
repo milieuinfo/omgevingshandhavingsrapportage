@@ -63,7 +63,7 @@ class OhrBestuurlijkevervolgtraject extends LitElement {
       <vl-typography slot="introduction">
         <p>
           De gewestelijke beboetingsentiteit heeft kennis van alle verslagen van vaststelling en alle processen-verbaal die door het openbaar ministerie naar hen werden doorgestuurd voor het opleggen van een bestuurlijke geldboete. Ze staat in voor de verdere bestuurlijke afhandeling van de dossiers. 
-          Het Handhavingscollege is een onafhankelijk Vlaams administratief rechtscollege. Dit college behandeld de beroepen die ingesteld worden tegen beslissingen omtrent een bestuurlijke geldboete in het kader van milieu- en stedenbouwreglementering, in het kader van omgevingsvergunningen of in het kader van onroerend erfgoed. 
+          Het Handhavingscollege is een onafhankelijk Vlaams administratief rechtscollege. Dit college behandelt de beroepen die ingesteld worden tegen beslissingen omtrent een bestuurlijke geldboete in het kader van milieu- en stedenbouwreglementering, in het kader van omgevingsvergunningen of in het kader van onroerend erfgoed. 
           Deze pagina geeft via een interactieve tool de cijfers van het bestuurlijk vervolgtraject over de jaren heen weer.
 
         </p>
