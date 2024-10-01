@@ -149,13 +149,6 @@ export const HOOFDRUBRIEKSTRAFRECHTELIJK = {
   nrOfValues: 100,
 }
 
-export const RUBRIEKSTRAFRECHTELIJK = {
-  name: "Tenlastenleggingscode",
-  fieldQualifier: "qText",
-  field: "[rubriek]",
-  nrOfValues: 200,
-}
-
 export const BELEIDSDOMEINSTRAFRECHTELIJK = {
   name: "Beleidsdomein",
   fieldQualifier: "qText",

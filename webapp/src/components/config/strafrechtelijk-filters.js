@@ -1,7 +1,6 @@
 import {
   JAARTALSTRAFRECHTELIJK,
   HOOFDRUBRIEKSTRAFRECHTELIJK,
-  RUBRIEKSTRAFRECHTELIJK,
   BELEIDSDOMEINSTRAFRECHTELIJK
       } from "./qlik_resources.js";
       
@@ -17,14 +16,9 @@ import {
           filter: BELEIDSDOMEINSTRAFRECHTELIJK
         },
         {
-            name: "Thema",
-            id: "Hoofdrubriek",
-            filter: HOOFDRUBRIEKSTRAFRECHTELIJK
-        },
-        {
-          name: "Tenlastenleggingscode",
-          id: "Tenlastenleggingscode",
-          filter: RUBRIEKSTRAFRECHTELIJK
+          name: "Thema",
+          id: "Hoofdrubriek",
+          filter: HOOFDRUBRIEKSTRAFRECHTELIJK
         }
       ]
       export {filters as default};
