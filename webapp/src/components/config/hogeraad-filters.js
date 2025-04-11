@@ -1,6 +1,7 @@
 import {
   JAARTALBESTUURLIJK,
-    F1
+    F1,
+    F2
     } from "./qlik_resources.js";
     
     const filters = [
@@ -17,7 +18,7 @@ import {
       {
         name: "Advies gegeven aan",
         id: "Soort",
-        filter: F1
+        filter: F2
       },
       
     ]

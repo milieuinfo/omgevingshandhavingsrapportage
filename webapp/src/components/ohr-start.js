@@ -126,6 +126,12 @@ and performing other setup tasks.
     return html`
     <h5 is="vl-h5" data-vl-alt>Interessante links</h5>
     <ul is="vl-link-list">
+    <li is="vl-link-list-item">
+        <a target="_new_blank" is="vl-link"
+           href="https://www.vlaanderen.be/publicaties/omgevingshandhavingsrapport-handhavingsuitvoering">
+          Lees meer over de cijfers in het handhavingsrapport van 2023<span is="vl-icon" data-vl-before="" data-vl-link="" data-vl-icon="external"></span>
+        </a>
+      </li>
       <li is="vl-link-list-item">
         <a is="vl-link"
            href="/dataverzameling-en-data-interpretatie">
