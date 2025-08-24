@@ -1,18 +1,18 @@
-[
-  {
-    "Actor": "Aalst",
-    "Beleidsniveau": "Gemeente",
+{
+  "0": {
+    "Actor": "Provincie Antwerpen",
+    "Beleidsniveau": "Provincie",
     "Respons": "respons",
-    "Milieu Toezichthouders": 4,
-    "Milieu VTE Toezichthouders": "1,4",
-    "Milieu VTE Administratieve en Juridische ondersteuning": "0,5",
-    "RO Gecombineerde functie": "1",
-    "RO Verbalisanten": "1",
-    "RO Stedenbouwkundige Inspecteurs": "0",
-    "RO VTE Gecombineerde functie": "1",
-    "RO VTE Verbalisanten": "1",
-    "RO VTE Stedenbouwkundige Inspecteurs": "0",
-    "RO VTE Administratieve en Juridische ondersteuning": "1",
+    "Milieu Toezichthouders": 12,
+    "Milieu VTE Toezichthouders": "1,7",
+    "Milieu VTE Administratieve en Juridische ondersteuning": "1",
+    "RO Gecombineerde functie": "-",
+    "RO Verbalisanten": "0",
+    "RO Stedenbouwkundige Inspecteurs": "-",
+    "RO VTE Gecombineerde functie": "-",
+    "RO VTE Verbalisanten": "2,44",
+    "RO VTE Stedenbouwkundige Inspecteurs": "-",
+    "RO VTE Administratieve en Juridische ondersteuning": "0,54",
     "Milieu IGS Toezichthouders": "-",
     "Milieu IGS VTE Toezichthouders": "-",
     "Milieu IGS VTE Administratieve en Juridische ondersteuning": "-",
@@ -37,17 +37,17 @@
     "RO AndereGemeente VTE Verbalisant": "-",
     "RO AndereGemeente VTE Stedenbouwkundige Inspecteurs": "-",
     "RO AndereGemeente VTE Administratieve en Juridische ondersteuning": "-",
-    "Milieu Klachten": 65,
-    "Milieu Milieubeheer": 7,
-    "Milieu Lucht": 13,
-    "Milieu Water": 7,
-    "Milieu Bodem": 1,
-    "Milieu Geluid": 22,
-    "Milieu Vergunningen": 0,
-    "Milieu Mest": 2,
-    "Milieu Afval": 3482,
-    "Milieu Andere": 8,
-    "RO Klachten": 244,
+    "Milieu Klachten": "-",
+    "Milieu Milieubeheer": "-",
+    "Milieu Lucht": "-",
+    "Milieu Water": "-",
+    "Milieu Bodem": "-",
+    "Milieu Geluid": "-",
+    "Milieu Vergunningen": "-",
+    "Milieu Mest": "-",
+    "Milieu Afval": "-",
+    "Milieu Andere": "-",
+    "RO Klachten": "-",
     "Milieu IGS Klachten": "-",
     "Milieubeheer IGS": "-",
     "Lucht IGS": "-",
@@ -81,29 +81,29 @@
     "Milieu AndereGemeente Afval": "-",
     "Milieu AndereGemeente Andere": "-",
     "RO AndereGemeente Klachten": "-",
-    "Milieu Controles": "30",
-    "Milieu Controles Navolgende Aanleiding Schending": "5",
-    "Milieu Controles Aanvankelijk Aanleiding Klacht": "19",
-    "Milieu Controles Navolgende Aanleiding Klacht": "11",
-    "Milieu Controles Aanvankelijk op eigen initiatief": "0",
-    "Milieu Controles Navolgende op eigen initiatief": "0",
-    "Milieu Aanvankelijke Controles": "4",
-    "Milieu Aanvankelijke Controles Milieubeheer": "4",
+    "Milieu Controles": "338",
+    "Milieu Controles Navolgende Aanleiding Schending": "20",
+    "Milieu Controles Aanvankelijk Aanleiding Klacht": "6",
+    "Milieu Controles Navolgende Aanleiding Klacht": "0",
+    "Milieu Controles Aanvankelijk op eigen initiatief": "278",
+    "Milieu Controles Navolgende op eigen initiatief": "34",
+    "Milieu Aanvankelijke Controles": "0",
+    "Milieu Aanvankelijke Controles Milieubeheer": "0",
     "Milieu Aanvankelijke Controles Lucht": "0",
-    "Milieu Aanvankelijke Controles Water": "0",
+    "Milieu Aanvankelijke Controles Water": "284",
     "Milieu Aanvankelijke Controles Bodem": "0",
     "Milieu Aanvankelijke Controles Geluid": "0",
     "Milieu Aanvankelijke Controles Vergunningen": "0",
     "Milieu Aanvankelijke Controles Mest": "0",
-    "Milieu Aanvankelijke Controles Afval": "407",
+    "Milieu Aanvankelijke Controles Afval": "0",
     "Milieu Aanvankelijke Controles Andere": "0",
-    "RO Controles": "211",
-    "RO Controles Navolgende Aanleiding Schending": "niet gekend",
-    "RO Controles Aanvankelijk Aanleiding Klacht": "122",
-    "RO Controles Navolgende Aanleiding Klacht": "niet gekend",
-    "RO Controles Aanvankelijk op eigen initiatief": "0",
-    "RO Controles Navolgende op eigen initiatief": "x",
-    "RO Aanvankelijke Controles": "x",
+    "RO Controles": "-",
+    "RO Controles Navolgende Aanleiding Schending": "-",
+    "RO Controles Aanvankelijk Aanleiding Klacht": "-",
+    "RO Controles Navolgende Aanleiding Klacht": "-",
+    "RO Controles Aanvankelijk op eigen initiatief": "-",
+    "RO Controles Navolgende op eigen initiatief": "-",
+    "RO Aanvankelijke Controles": "-",
     "Milieu IGS Controles": "-",
     "Milieu IGS Controles Navolgende Aanleiding Schending": "-",
     "Milieu IGS Controles Aanvankelijk Aanleiding Klacht": "-",
@@ -177,28 +177,28 @@
     "RO Controles Overtredingsgraad": "-",
     "RO IGS Controles Overtredingsgraad": "-",
     "Milieu LP Controles Overtredingsgraad": "-",
-    "Milieu Raadgeving": "59",
-    "Milieu Aanmaning": "7",
+    "Milieu Raadgeving": "2",
+    "Milieu Aanmaning": "305",
     "Milieu Verslag van Vaststelling": "0",
     "Milieu Proces-verbaal": "2",
     "Milieu Bestuurlijke maatregelen Zonder Dwangsom": "0",
-    "Milieu Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "0",
+    "Milieu Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "-",
     "Milieu Bestuurlijke maatregelen Met Dwangsom": "0",
-    "Milieu Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "0",
-    "Milieu Veiligheidsmaatregel": "0",
-    "Milieu Veiligheidsmaatregel tijdig uitgevoerd": "0",
-    "RO Raadgeving": "0",
-    "RO Aanmaning": "181",
-    "RO Verslag van Vaststelling": "0",
-    "RO Proces-verbaal": "7",
-    "RO Bevel tot staking": "1",
-    "RO Bestuurlijke maatregelen Zonder Dwangsom": "0",
+    "Milieu Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "-",
+    "Milieu Veiligheidsmaatregel": "-",
+    "Milieu Veiligheidsmaatregel tijdig uitgevoerd": "-",
+    "RO Raadgeving": "-",
+    "RO Aanmaning": "-",
+    "RO Verslag van Vaststelling": "-",
+    "RO Proces-verbaal": "-",
+    "RO Bevel tot staking": "-",
+    "RO Bestuurlijke maatregelen Zonder Dwangsom": "-",
     "RO Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "-",
-    "RO Bestuurlijke maatregelen Met Dwangsom": "0",
+    "RO Bestuurlijke maatregelen Met Dwangsom": "-",
     "RO Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "-",
-    "RO Afgesloten minnelijke schikking": "0",
-    "RO Ingeleide herstelvordering bij Openbaar Ministerie": "4",
-    "RO Ambtshalve uitvoering gerechtelijke herstelmaatregel": "0",
+    "RO Afgesloten minnelijke schikking": "-",
+    "RO Ingeleide herstelvordering bij Openbaar Ministerie": "-",
+    "RO Ambtshalve uitvoering gerechtelijke herstelmaatregel": "-",
     "Milieu IGS Raadgeving": "-",
     "Milieu IGS Aanmaning": "-",
     "Milieu IGS Verslag van Vaststelling": "-",
@@ -262,15 +262,18 @@
     "Ambtshalve uitvoering gerechtelijke herstelmaartegel": "-",
     "Milieu AndereGemeente Raageving": "-",
     "Milieu Bestuurlijke maatregelen": "-",
-    "RO Herstel gevorderd bij burgerlijk rechter": "-"
+    "RO Herstel gevorderd bij burgerlijk rechter": "-",
+    "PFAS": "Neen",
+    "Stikstof": "Neen",
+    "Opmerking": "Totaal aantal milieuhandhavingscontroles: dit maakt deel uit van het dagdagelijkse werk van de controleurs/toezichthouders. Het werkelijk aantal 'geziene plaatsen' is dus veel groter. het opgegeven getal gaat over controles die aanleiding hebben gegeven tot een handhavingsopvolging."
   },
-  {
-    "Actor": "Aalter",
-    "Beleidsniveau": "Gemeente",
+  "1": {
+    "Actor": "Provincie Limburg",
+    "Beleidsniveau": "Provincie",
     "Respons": "respons",
-    "Milieu Toezichthouders": 3,
-    "Milieu VTE Toezichthouders": "0,05",
-    "Milieu VTE Administratieve en Juridische ondersteuning": "0",
+    "Milieu Toezichthouders": 1,
+    "Milieu VTE Toezichthouders": "0,2",
+    "Milieu VTE Administratieve en Juridische ondersteuning": "0,01",
     "RO Gecombineerde functie": "-",
     "RO Verbalisanten": "-",
     "RO Stedenbouwkundige Inspecteurs": "-",
@@ -302,16 +305,16 @@
     "RO AndereGemeente VTE Verbalisant": "-",
     "RO AndereGemeente VTE Stedenbouwkundige Inspecteurs": "-",
     "RO AndereGemeente VTE Administratieve en Juridische ondersteuning": "-",
-    "Milieu Klachten": 16,
-    "Milieu Milieubeheer": 2,
-    "Milieu Lucht": 3,
-    "Milieu Water": 2,
-    "Milieu Bodem": 1,
-    "Milieu Geluid": 2,
-    "Milieu Vergunningen": 3,
+    "Milieu Klachten": 12,
+    "Milieu Milieubeheer": 0,
+    "Milieu Lucht": 0,
+    "Milieu Water": 3,
+    "Milieu Bodem": 0,
+    "Milieu Geluid": 0,
+    "Milieu Vergunningen": 7,
     "Milieu Mest": 0,
     "Milieu Afval": 2,
-    "Milieu Andere": 2,
+    "Milieu Andere": 0,
     "RO Klachten": "-",
     "Milieu IGS Klachten": 0,
     "Milieubeheer IGS": 0,
@@ -346,21 +349,21 @@
     "Milieu AndereGemeente Afval": "-",
     "Milieu AndereGemeente Andere": "-",
     "RO AndereGemeente Klachten": "-",
-    "Milieu Controles": "18",
-    "Milieu Controles Navolgende Aanleiding Schending": "0",
-    "Milieu Controles Aanvankelijk Aanleiding Klacht": "16",
-    "Milieu Controles Navolgende Aanleiding Klacht": "0",
+    "Milieu Controles": "19",
+    "Milieu Controles Navolgende Aanleiding Schending": "7",
+    "Milieu Controles Aanvankelijk Aanleiding Klacht": "12",
+    "Milieu Controles Navolgende Aanleiding Klacht": "8",
     "Milieu Controles Aanvankelijk op eigen initiatief": "0",
     "Milieu Controles Navolgende op eigen initiatief": "0",
-    "Milieu Aanvankelijke Controles": "0",
+    "Milieu Aanvankelijke Controles": "12",
     "Milieu Aanvankelijke Controles Milieubeheer": "0",
     "Milieu Aanvankelijke Controles Lucht": "0",
-    "Milieu Aanvankelijke Controles Water": "0",
+    "Milieu Aanvankelijke Controles Water": "3",
     "Milieu Aanvankelijke Controles Bodem": "0",
     "Milieu Aanvankelijke Controles Geluid": "0",
-    "Milieu Aanvankelijke Controles Vergunningen": "0",
+    "Milieu Aanvankelijke Controles Vergunningen": "7",
     "Milieu Aanvankelijke Controles Mest": "0",
-    "Milieu Aanvankelijke Controles Afval": "0",
+    "Milieu Aanvankelijke Controles Afval": "2",
     "Milieu Aanvankelijke Controles Andere": "0",
     "RO Controles": "-",
     "RO Controles Navolgende Aanleiding Schending": "-",
@@ -442,16 +445,16 @@
     "RO Controles Overtredingsgraad": "-",
     "RO IGS Controles Overtredingsgraad": "-",
     "Milieu LP Controles Overtredingsgraad": "-",
-    "Milieu Raadgeving": "16",
-    "Milieu Aanmaning": "0",
+    "Milieu Raadgeving": "0",
+    "Milieu Aanmaning": "12",
     "Milieu Verslag van Vaststelling": "0",
-    "Milieu Proces-verbaal": "0",
-    "Milieu Bestuurlijke maatregelen Zonder Dwangsom": "0",
-    "Milieu Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "0",
+    "Milieu Proces-verbaal": "1",
+    "Milieu Bestuurlijke maatregelen Zonder Dwangsom": "1",
+    "Milieu Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "-",
     "Milieu Bestuurlijke maatregelen Met Dwangsom": "0",
-    "Milieu Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "0",
-    "Milieu Veiligheidsmaatregel": "0",
-    "Milieu Veiligheidsmaatregel tijdig uitgevoerd": "0",
+    "Milieu Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "-",
+    "Milieu Veiligheidsmaatregel": "-",
+    "Milieu Veiligheidsmaatregel tijdig uitgevoerd": "-",
     "RO Raadgeving": "-",
     "RO Aanmaning": "-",
     "RO Verslag van Vaststelling": "-",
@@ -527,22 +530,24 @@
     "Ambtshalve uitvoering gerechtelijke herstelmaartegel": "-",
     "Milieu AndereGemeente Raageving": "-",
     "Milieu Bestuurlijke maatregelen": "-",
-    "RO Herstel gevorderd bij burgerlijk rechter": "-"
+    "RO Herstel gevorderd bij burgerlijk rechter": "-",
+    "PFAS": "Neen",
+    "Stikstof": "Neen"
   },
-  {
-    "Actor": "Aarschot",
-    "Beleidsniveau": "Gemeente",
+  "2": {
+    "Actor": "Provincie Oost-Vlaanderen",
+    "Beleidsniveau": "Provincie",
     "Respons": "respons",
-    "Milieu Toezichthouders": "-",
-    "Milieu VTE Toezichthouders": "-",
-    "Milieu VTE Administratieve en Juridische ondersteuning": "-",
-    "RO Gecombineerde functie": "0",
-    "RO Verbalisanten": "1",
-    "RO Stedenbouwkundige Inspecteurs": "0",
-    "RO VTE Gecombineerde functie": "0",
-    "RO VTE Verbalisanten": "0,1",
-    "RO VTE Stedenbouwkundige Inspecteurs": "0",
-    "RO VTE Administratieve en Juridische ondersteuning": "0",
+    "Milieu Toezichthouders": 5,
+    "Milieu VTE Toezichthouders": "0,27",
+    "Milieu VTE Administratieve en Juridische ondersteuning": "0,45",
+    "RO Gecombineerde functie": "-",
+    "RO Verbalisanten": "-",
+    "RO Stedenbouwkundige Inspecteurs": "-",
+    "RO VTE Gecombineerde functie": "-",
+    "RO VTE Verbalisanten": "-",
+    "RO VTE Stedenbouwkundige Inspecteurs": "-",
+    "RO VTE Administratieve en Juridische ondersteuning": "-",
     "Milieu IGS Toezichthouders": "-",
     "Milieu IGS VTE Toezichthouders": "-",
     "Milieu IGS VTE Administratieve en Juridische ondersteuning": "-",
@@ -577,7 +582,7 @@
     "Milieu Mest": "-",
     "Milieu Afval": "-",
     "Milieu Andere": "-",
-    "RO Klachten": 49,
+    "RO Klachten": "-",
     "Milieu IGS Klachten": "-",
     "Milieubeheer IGS": "-",
     "Lucht IGS": "-",
@@ -611,29 +616,29 @@
     "Milieu AndereGemeente Afval": "-",
     "Milieu AndereGemeente Andere": "-",
     "RO AndereGemeente Klachten": "-",
-    "Milieu Controles": "-",
-    "Milieu Controles Navolgende Aanleiding Schending": "-",
-    "Milieu Controles Aanvankelijk Aanleiding Klacht": "-",
-    "Milieu Controles Navolgende Aanleiding Klacht": "-",
-    "Milieu Controles Aanvankelijk op eigen initiatief": "-",
-    "Milieu Controles Navolgende op eigen initiatief": "-",
-    "Milieu Aanvankelijke Controles": "-",
-    "Milieu Aanvankelijke Controles Milieubeheer": "-",
-    "Milieu Aanvankelijke Controles Lucht": "-",
-    "Milieu Aanvankelijke Controles Water": "-",
-    "Milieu Aanvankelijke Controles Bodem": "-",
-    "Milieu Aanvankelijke Controles Geluid": "-",
-    "Milieu Aanvankelijke Controles Vergunningen": "-",
-    "Milieu Aanvankelijke Controles Mest": "-",
-    "Milieu Aanvankelijke Controles Afval": "-",
-    "Milieu Aanvankelijke Controles Andere": "-",
-    "RO Controles": "51",
-    "RO Controles Navolgende Aanleiding Schending": "0",
-    "RO Controles Aanvankelijk Aanleiding Klacht": "51",
-    "RO Controles Navolgende Aanleiding Klacht": "0",
-    "RO Controles Aanvankelijk op eigen initiatief": "0",
-    "RO Controles Navolgende op eigen initiatief": "0",
-    "RO Aanvankelijke Controles": "48",
+    "Milieu Controles": "341",
+    "Milieu Controles Navolgende Aanleiding Schending": "24",
+    "Milieu Controles Aanvankelijk Aanleiding Klacht": "81",
+    "Milieu Controles Navolgende Aanleiding Klacht": "56",
+    "Milieu Controles Aanvankelijk op eigen initiatief": "36",
+    "Milieu Controles Navolgende op eigen initiatief": "28",
+    "Milieu Aanvankelijke Controles": "92",
+    "Milieu Aanvankelijke Controles Milieubeheer": "0",
+    "Milieu Aanvankelijke Controles Lucht": "0",
+    "Milieu Aanvankelijke Controles Water": "16",
+    "Milieu Aanvankelijke Controles Bodem": "8",
+    "Milieu Aanvankelijke Controles Geluid": "1",
+    "Milieu Aanvankelijke Controles Vergunningen": "0",
+    "Milieu Aanvankelijke Controles Mest": "2",
+    "Milieu Aanvankelijke Controles Afval": "24",
+    "Milieu Aanvankelijke Controles Andere": "42",
+    "RO Controles": "-",
+    "RO Controles Navolgende Aanleiding Schending": "-",
+    "RO Controles Aanvankelijk Aanleiding Klacht": "-",
+    "RO Controles Navolgende Aanleiding Klacht": "-",
+    "RO Controles Aanvankelijk op eigen initiatief": "-",
+    "RO Controles Navolgende op eigen initiatief": "-",
+    "RO Aanvankelijke Controles": "-",
     "Milieu IGS Controles": "-",
     "Milieu IGS Controles Navolgende Aanleiding Schending": "-",
     "Milieu IGS Controles Aanvankelijk Aanleiding Klacht": "-",
@@ -707,28 +712,28 @@
     "RO Controles Overtredingsgraad": "-",
     "RO IGS Controles Overtredingsgraad": "-",
     "Milieu LP Controles Overtredingsgraad": "-",
-    "Milieu Raadgeving": "-",
-    "Milieu Aanmaning": "-",
-    "Milieu Verslag van Vaststelling": "-",
-    "Milieu Proces-verbaal": "-",
-    "Milieu Bestuurlijke maatregelen Zonder Dwangsom": "-",
+    "Milieu Raadgeving": "0",
+    "Milieu Aanmaning": "98",
+    "Milieu Verslag van Vaststelling": "0",
+    "Milieu Proces-verbaal": "1",
+    "Milieu Bestuurlijke maatregelen Zonder Dwangsom": "1",
     "Milieu Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "-",
-    "Milieu Bestuurlijke maatregelen Met Dwangsom": "-",
+    "Milieu Bestuurlijke maatregelen Met Dwangsom": "0",
     "Milieu Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "-",
-    "Milieu Veiligheidsmaatregel": "-",
+    "Milieu Veiligheidsmaatregel": "0",
     "Milieu Veiligheidsmaatregel tijdig uitgevoerd": "-",
-    "RO Raadgeving": "0",
-    "RO Aanmaning": "48",
-    "RO Verslag van Vaststelling": "0",
-    "RO Proces-verbaal": "3",
-    "RO Bevel tot staking": "3",
-    "RO Bestuurlijke maatregelen Zonder Dwangsom": "0",
-    "RO Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "0",
-    "RO Bestuurlijke maatregelen Met Dwangsom": "0",
-    "RO Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "0",
-    "RO Afgesloten minnelijke schikking": "0",
-    "RO Ingeleide herstelvordering bij Openbaar Ministerie": "0",
-    "RO Ambtshalve uitvoering gerechtelijke herstelmaatregel": "0",
+    "RO Raadgeving": "-",
+    "RO Aanmaning": "-",
+    "RO Verslag van Vaststelling": "-",
+    "RO Proces-verbaal": "-",
+    "RO Bevel tot staking": "-",
+    "RO Bestuurlijke maatregelen Zonder Dwangsom": "-",
+    "RO Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "-",
+    "RO Bestuurlijke maatregelen Met Dwangsom": "-",
+    "RO Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "-",
+    "RO Afgesloten minnelijke schikking": "-",
+    "RO Ingeleide herstelvordering bij Openbaar Ministerie": "-",
+    "RO Ambtshalve uitvoering gerechtelijke herstelmaatregel": "-",
     "Milieu IGS Raadgeving": "-",
     "Milieu IGS Aanmaning": "-",
     "Milieu IGS Verslag van Vaststelling": "-",
@@ -792,15 +797,17 @@
     "Ambtshalve uitvoering gerechtelijke herstelmaartegel": "-",
     "Milieu AndereGemeente Raageving": "-",
     "Milieu Bestuurlijke maatregelen": "-",
-    "RO Herstel gevorderd bij burgerlijk rechter": "-"
+    "RO Herstel gevorderd bij burgerlijk rechter": "-",
+    "PFAS": "Neen",
+    "Stikstof": "Neen"
   },
-  {
-    "Actor": "Aartselaar",
-    "Beleidsniveau": "Gemeente",
-    "Respons": "non-respons",
-    "Milieu Toezichthouders": "-",
-    "Milieu VTE Toezichthouders": "-",
-    "Milieu VTE Administratieve en Juridische ondersteuning": "-",
+  "3": {
+    "Actor": "Provincie Vlaams-Brabant",
+    "Beleidsniveau": "Provincie",
+    "Respons": "respons",
+    "Milieu Toezichthouders": 4,
+    "Milieu VTE Toezichthouders": "0,5",
+    "Milieu VTE Administratieve en Juridische ondersteuning": "0,2",
     "RO Gecombineerde functie": "-",
     "RO Verbalisanten": "-",
     "RO Stedenbouwkundige Inspecteurs": "-",
@@ -876,22 +883,22 @@
     "Milieu AndereGemeente Afval": "-",
     "Milieu AndereGemeente Andere": "-",
     "RO AndereGemeente Klachten": "-",
-    "Milieu Controles": "-",
-    "Milieu Controles Navolgende Aanleiding Schending": "-",
-    "Milieu Controles Aanvankelijk Aanleiding Klacht": "-",
-    "Milieu Controles Navolgende Aanleiding Klacht": "-",
-    "Milieu Controles Aanvankelijk op eigen initiatief": "-",
-    "Milieu Controles Navolgende op eigen initiatief": "-",
-    "Milieu Aanvankelijke Controles": "-",
-    "Milieu Aanvankelijke Controles Milieubeheer": "-",
-    "Milieu Aanvankelijke Controles Lucht": "-",
-    "Milieu Aanvankelijke Controles Water": "-",
-    "Milieu Aanvankelijke Controles Bodem": "-",
-    "Milieu Aanvankelijke Controles Geluid": "-",
-    "Milieu Aanvankelijke Controles Vergunningen": "-",
-    "Milieu Aanvankelijke Controles Mest": "-",
-    "Milieu Aanvankelijke Controles Afval": "-",
-    "Milieu Aanvankelijke Controles Andere": "-",
+    "Milieu Controles": "71",
+    "Milieu Controles Navolgende Aanleiding Schending": "15",
+    "Milieu Controles Aanvankelijk Aanleiding Klacht": "0",
+    "Milieu Controles Navolgende Aanleiding Klacht": "0",
+    "Milieu Controles Aanvankelijk op eigen initiatief": "56",
+    "Milieu Controles Navolgende op eigen initiatief": "0",
+    "Milieu Aanvankelijke Controles": "27",
+    "Milieu Aanvankelijke Controles Milieubeheer": "3",
+    "Milieu Aanvankelijke Controles Lucht": "0",
+    "Milieu Aanvankelijke Controles Water": "3",
+    "Milieu Aanvankelijke Controles Bodem": "0",
+    "Milieu Aanvankelijke Controles Geluid": "0",
+    "Milieu Aanvankelijke Controles Vergunningen": "15",
+    "Milieu Aanvankelijke Controles Mest": "1",
+    "Milieu Aanvankelijke Controles Afval": "5",
+    "Milieu Aanvankelijke Controles Andere": "0",
     "RO Controles": "-",
     "RO Controles Navolgende Aanleiding Schending": "-",
     "RO Controles Aanvankelijk Aanleiding Klacht": "-",
@@ -972,15 +979,15 @@
     "RO Controles Overtredingsgraad": "-",
     "RO IGS Controles Overtredingsgraad": "-",
     "Milieu LP Controles Overtredingsgraad": "-",
-    "Milieu Raadgeving": "-",
-    "Milieu Aanmaning": "-",
-    "Milieu Verslag van Vaststelling": "-",
-    "Milieu Proces-verbaal": "-",
-    "Milieu Bestuurlijke maatregelen Zonder Dwangsom": "-",
+    "Milieu Raadgeving": "21",
+    "Milieu Aanmaning": "38",
+    "Milieu Verslag van Vaststelling": "2",
+    "Milieu Proces-verbaal": "1",
+    "Milieu Bestuurlijke maatregelen Zonder Dwangsom": "0",
     "Milieu Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "-",
-    "Milieu Bestuurlijke maatregelen Met Dwangsom": "-",
+    "Milieu Bestuurlijke maatregelen Met Dwangsom": "0",
     "Milieu Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "-",
-    "Milieu Veiligheidsmaatregel": "-",
+    "Milieu Veiligheidsmaatregel": "0",
     "Milieu Veiligheidsmaatregel tijdig uitgevoerd": "-",
     "RO Raadgeving": "-",
     "RO Aanmaning": "-",
@@ -1057,22 +1064,25 @@
     "Ambtshalve uitvoering gerechtelijke herstelmaartegel": "-",
     "Milieu AndereGemeente Raageving": "-",
     "Milieu Bestuurlijke maatregelen": "-",
-    "RO Herstel gevorderd bij burgerlijk rechter": "-"
+    "RO Herstel gevorderd bij burgerlijk rechter": "-",
+    "PFAS": "Neen",
+    "Stikstof": "Neen",
+    "Opmerking": "Voor toekomstige rapportage zou het duidelijker zijn om een definiëring mee te geven bij de verschillende categorieën opgenomen in de vragen (milieubeheer, water, vergunningen...)."
   },
-  {
-    "Actor": "Affligem",
-    "Beleidsniveau": "Gemeente",
+  "4": {
+    "Actor": "Provincie West-Vlaanderen",
+    "Beleidsniveau": "Provincie",
     "Respons": "respons",
-    "Milieu Toezichthouders": "-",
-    "Milieu VTE Toezichthouders": "-",
-    "Milieu VTE Administratieve en Juridische ondersteuning": "-",
-    "RO Gecombineerde functie": "0",
-    "RO Verbalisanten": "0",
-    "RO Stedenbouwkundige Inspecteurs": "0",
-    "RO VTE Gecombineerde functie": "0,1",
-    "RO VTE Verbalisanten": "niet gekend",
-    "RO VTE Stedenbouwkundige Inspecteurs": "niet gekend",
-    "RO VTE Administratieve en Juridische ondersteuning": "0,5",
+    "Milieu Toezichthouders": 2,
+    "Milieu VTE Toezichthouders": "0,2",
+    "Milieu VTE Administratieve en Juridische ondersteuning": "0",
+    "RO Gecombineerde functie": 10,
+    "RO Verbalisanten": 8,
+    "RO Stedenbouwkundige Inspecteurs": 0,
+    "RO VTE Gecombineerde functie": 8.85,
+    "RO VTE Verbalisanten": 7,
+    "RO VTE Stedenbouwkundige Inspecteurs": 0,
+    "RO VTE Administratieve en Juridische ondersteuning": 4.58,
     "Milieu IGS Toezichthouders": "-",
     "Milieu IGS VTE Toezichthouders": "-",
     "Milieu IGS VTE Administratieve en Juridische ondersteuning": "-",
@@ -1107,7 +1117,7 @@
     "Milieu Mest": "-",
     "Milieu Afval": "-",
     "Milieu Andere": "-",
-    "RO Klachten": 30,
+    "RO Klachten": 627,
     "Milieu IGS Klachten": "-",
     "Milieubeheer IGS": "-",
     "Lucht IGS": "-",
@@ -1141,29 +1151,29 @@
     "Milieu AndereGemeente Afval": 21,
     "Milieu AndereGemeente Andere": 0,
     "RO AndereGemeente Klachten": "-",
-    "Milieu Controles": "-",
-    "Milieu Controles Navolgende Aanleiding Schending": "-",
-    "Milieu Controles Aanvankelijk Aanleiding Klacht": "-",
-    "Milieu Controles Navolgende Aanleiding Klacht": "-",
-    "Milieu Controles Aanvankelijk op eigen initiatief": "-",
-    "Milieu Controles Navolgende op eigen initiatief": "-",
-    "Milieu Aanvankelijke Controles": "-",
-    "Milieu Aanvankelijke Controles Milieubeheer": "-",
-    "Milieu Aanvankelijke Controles Lucht": "-",
-    "Milieu Aanvankelijke Controles Water": "-",
-    "Milieu Aanvankelijke Controles Bodem": "-",
-    "Milieu Aanvankelijke Controles Geluid": "-",
-    "Milieu Aanvankelijke Controles Vergunningen": "-",
-    "Milieu Aanvankelijke Controles Mest": "-",
-    "Milieu Aanvankelijke Controles Afval": "-",
-    "Milieu Aanvankelijke Controles Andere": "-",
-    "RO Controles": "36",
-    "RO Controles Navolgende Aanleiding Schending": "2",
-    "RO Controles Aanvankelijk Aanleiding Klacht": "21",
-    "RO Controles Navolgende Aanleiding Klacht": "3",
-    "RO Controles Aanvankelijk op eigen initiatief": "2",
-    "RO Controles Navolgende op eigen initiatief": "1",
-    "RO Aanvankelijke Controles": "17",
+    "Milieu Controles": "0",
+    "Milieu Controles Navolgende Aanleiding Schending": "0",
+    "Milieu Controles Aanvankelijk Aanleiding Klacht": "0",
+    "Milieu Controles Navolgende Aanleiding Klacht": "0",
+    "Milieu Controles Aanvankelijk op eigen initiatief": "0",
+    "Milieu Controles Navolgende op eigen initiatief": "0",
+    "Milieu Aanvankelijke Controles": "0",
+    "Milieu Aanvankelijke Controles Milieubeheer": "0",
+    "Milieu Aanvankelijke Controles Lucht": "0",
+    "Milieu Aanvankelijke Controles Water": "0",
+    "Milieu Aanvankelijke Controles Bodem": "0",
+    "Milieu Aanvankelijke Controles Geluid": "0",
+    "Milieu Aanvankelijke Controles Vergunningen": "0",
+    "Milieu Aanvankelijke Controles Mest": "0",
+    "Milieu Aanvankelijke Controles Afval": "0",
+    "Milieu Aanvankelijke Controles Andere": "0",
+    "RO Controles": 1242,
+    "RO Controles Navolgende Aanleiding Schending": 571,
+    "RO Controles Aanvankelijk Aanleiding Klacht": 139,
+    "RO Controles Navolgende Aanleiding Klacht": 12,
+    "RO Controles Aanvankelijk op eigen initiatief": 176,
+    "RO Controles Navolgende op eigen initiatief": 63,
+    "RO Aanvankelijke Controles": 292,
     "Milieu IGS Controles": "-",
     "Milieu IGS Controles Navolgende Aanleiding Schending": "-",
     "Milieu IGS Controles Aanvankelijk Aanleiding Klacht": "-",
@@ -1237,28 +1247,28 @@
     "RO Controles Overtredingsgraad": "-",
     "RO IGS Controles Overtredingsgraad": "-",
     "Milieu LP Controles Overtredingsgraad": "-",
-    "Milieu Raadgeving": "-",
-    "Milieu Aanmaning": "-",
-    "Milieu Verslag van Vaststelling": "-",
-    "Milieu Proces-verbaal": "-",
-    "Milieu Bestuurlijke maatregelen Zonder Dwangsom": "-",
+    "Milieu Raadgeving": "0",
+    "Milieu Aanmaning": "1",
+    "Milieu Verslag van Vaststelling": "0",
+    "Milieu Proces-verbaal": "0",
+    "Milieu Bestuurlijke maatregelen Zonder Dwangsom": "0",
     "Milieu Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "-",
-    "Milieu Bestuurlijke maatregelen Met Dwangsom": "-",
+    "Milieu Bestuurlijke maatregelen Met Dwangsom": "0",
     "Milieu Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "-",
-    "Milieu Veiligheidsmaatregel": "-",
+    "Milieu Veiligheidsmaatregel": "0",
     "Milieu Veiligheidsmaatregel tijdig uitgevoerd": "-",
-    "RO Raadgeving": "27",
-    "RO Aanmaning": "2",
-    "RO Verslag van Vaststelling": "0",
-    "RO Proces-verbaal": "0",
-    "RO Bevel tot staking": "0",
-    "RO Bestuurlijke maatregelen Zonder Dwangsom": "0",
-    "RO Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "0",
-    "RO Bestuurlijke maatregelen Met Dwangsom": "0",
-    "RO Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "0",
-    "RO Afgesloten minnelijke schikking": "0",
-    "RO Ingeleide herstelvordering bij Openbaar Ministerie": "0",
-    "RO Ambtshalve uitvoering gerechtelijke herstelmaatregel": "0",
+    "RO Raadgeving": "-",
+    "RO Aanmaning": "-",
+    "RO Verslag van Vaststelling": "-",
+    "RO Proces-verbaal": "-",
+    "RO Bevel tot staking": "-",
+    "RO Bestuurlijke maatregelen Zonder Dwangsom": "-",
+    "RO Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "-",
+    "RO Bestuurlijke maatregelen Met Dwangsom": "-",
+    "RO Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "-",
+    "RO Afgesloten minnelijke schikking": "-",
+    "RO Ingeleide herstelvordering bij Openbaar Ministerie": "-",
+    "RO Ambtshalve uitvoering gerechtelijke herstelmaatregel": "-",
     "Milieu IGS Raadgeving": "-",
     "Milieu IGS Aanmaning": "-",
     "Milieu IGS Verslag van Vaststelling": "-",
@@ -1322,22 +1332,24 @@
     "Ambtshalve uitvoering gerechtelijke herstelmaartegel": "-",
     "Milieu AndereGemeente Raageving": "-",
     "Milieu Bestuurlijke maatregelen": "-",
-    "RO Herstel gevorderd bij burgerlijk rechter": "-"
+    "RO Herstel gevorderd bij burgerlijk rechter": "-",
+    "PFAS": "Neen",
+    "Stikstof": "Neen"
   },
-  {
-    "Actor": "Alken",
-    "Beleidsniveau": "Gemeente",
+  "5": {
+    "Actor": "Departement Zorg",
+    "Beleidsniveau": "Gewest",
     "Respons": "respons",
-    "Milieu Toezichthouders": 1,
-    "Milieu VTE Toezichthouders": "0,2",
-    "Milieu VTE Administratieve en Juridische ondersteuning": "0",
-    "RO Gecombineerde functie": "1",
-    "RO Verbalisanten": "0",
-    "RO Stedenbouwkundige Inspecteurs": "0",
-    "RO VTE Gecombineerde functie": "1",
-    "RO VTE Verbalisanten": "0,5",
-    "RO VTE Stedenbouwkundige Inspecteurs": "0,5",
-    "RO VTE Administratieve en Juridische ondersteuning": "0",
+    "Milieu Toezichthouders": 12,
+    "Milieu VTE Toezichthouders": "0,0995",
+    "Milieu VTE Administratieve en Juridische ondersteuning": "0,104",
+    "RO Gecombineerde functie": "-",
+    "RO Verbalisanten": "-",
+    "RO Stedenbouwkundige Inspecteurs": "-",
+    "RO VTE Gecombineerde functie": "-",
+    "RO VTE Verbalisanten": "-",
+    "RO VTE Stedenbouwkundige Inspecteurs": "-",
+    "RO VTE Administratieve en Juridische ondersteuning": "-",
     "Milieu IGS Toezichthouders": "-",
     "Milieu IGS VTE Toezichthouders": "-",
     "Milieu IGS VTE Administratieve en Juridische ondersteuning": "-",
@@ -1362,17 +1374,17 @@
     "RO AndereGemeente VTE Verbalisant": "-",
     "RO AndereGemeente VTE Stedenbouwkundige Inspecteurs": "-",
     "RO AndereGemeente VTE Administratieve en Juridische ondersteuning": "-",
-    "Milieu Klachten": 17,
-    "Milieu Milieubeheer": 17,
+    "Milieu Klachten": 28,
+    "Milieu Milieubeheer": 0,
     "Milieu Lucht": 0,
-    "Milieu Water": 6,
+    "Milieu Water": 0,
     "Milieu Bodem": 0,
     "Milieu Geluid": 0,
-    "Milieu Vergunningen": 5,
-    "Milieu Mest": 2,
-    "Milieu Afval": 4,
-    "Milieu Andere": 0,
-    "RO Klachten": "niet gekend",
+    "Milieu Vergunningen": 0,
+    "Milieu Mest": 0,
+    "Milieu Afval": 0,
+    "Milieu Andere": 29,
+    "RO Klachten": "-",
     "Milieu IGS Klachten": "-",
     "Milieubeheer IGS": "-",
     "Lucht IGS": "-",
@@ -1406,29 +1418,29 @@
     "Milieu AndereGemeente Afval": "-",
     "Milieu AndereGemeente Andere": "-",
     "RO AndereGemeente Klachten": "-",
-    "Milieu Controles": "19",
-    "Milieu Controles Navolgende Aanleiding Schending": "0",
-    "Milieu Controles Aanvankelijk Aanleiding Klacht": "19",
-    "Milieu Controles Navolgende Aanleiding Klacht": "8",
+    "Milieu Controles": "45",
+    "Milieu Controles Navolgende Aanleiding Schending": "5",
+    "Milieu Controles Aanvankelijk Aanleiding Klacht": "28",
+    "Milieu Controles Navolgende Aanleiding Klacht": "0",
     "Milieu Controles Aanvankelijk op eigen initiatief": "0",
     "Milieu Controles Navolgende op eigen initiatief": "0",
-    "Milieu Aanvankelijke Controles": "11",
-    "Milieu Aanvankelijke Controles Milieubeheer": "11",
+    "Milieu Aanvankelijke Controles": "0",
+    "Milieu Aanvankelijke Controles Milieubeheer": "0",
     "Milieu Aanvankelijke Controles Lucht": "0",
-    "Milieu Aanvankelijke Controles Water": "3",
+    "Milieu Aanvankelijke Controles Water": "0",
     "Milieu Aanvankelijke Controles Bodem": "0",
     "Milieu Aanvankelijke Controles Geluid": "0",
-    "Milieu Aanvankelijke Controles Vergunningen": "5",
-    "Milieu Aanvankelijke Controles Mest": "2",
-    "Milieu Aanvankelijke Controles Afval": "2",
+    "Milieu Aanvankelijke Controles Vergunningen": "0",
+    "Milieu Aanvankelijke Controles Mest": "0",
+    "Milieu Aanvankelijke Controles Afval": "0",
     "Milieu Aanvankelijke Controles Andere": "0",
-    "RO Controles": "niet gekend",
-    "RO Controles Navolgende Aanleiding Schending": "niet gekend",
-    "RO Controles Aanvankelijk Aanleiding Klacht": "niet gekend",
-    "RO Controles Navolgende Aanleiding Klacht": "niet gekend",
-    "RO Controles Aanvankelijk op eigen initiatief": "niet gekend",
-    "RO Controles Navolgende op eigen initiatief": "niet gekend",
-    "RO Aanvankelijke Controles": "niet gekend",
+    "RO Controles": "-",
+    "RO Controles Navolgende Aanleiding Schending": "-",
+    "RO Controles Aanvankelijk Aanleiding Klacht": "-",
+    "RO Controles Navolgende Aanleiding Klacht": "-",
+    "RO Controles Aanvankelijk op eigen initiatief": "-",
+    "RO Controles Navolgende op eigen initiatief": "-",
+    "RO Aanvankelijke Controles": "-",
     "Milieu IGS Controles": "-",
     "Milieu IGS Controles Navolgende Aanleiding Schending": "-",
     "Milieu IGS Controles Aanvankelijk Aanleiding Klacht": "-",
@@ -1502,28 +1514,28 @@
     "RO Controles Overtredingsgraad": "-",
     "RO IGS Controles Overtredingsgraad": "-",
     "Milieu LP Controles Overtredingsgraad": "-",
-    "Milieu Raadgeving": "0",
-    "Milieu Aanmaning": "5",
-    "Milieu Verslag van Vaststelling": "0",
-    "Milieu Proces-verbaal": "1",
-    "Milieu Bestuurlijke maatregelen Zonder Dwangsom": "0",
-    "Milieu Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "0",
-    "Milieu Bestuurlijke maatregelen Met Dwangsom": "0",
-    "Milieu Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "0",
-    "Milieu Veiligheidsmaatregel": "0",
-    "Milieu Veiligheidsmaatregel tijdig uitgevoerd": "0",
-    "RO Raadgeving": "niet gekend",
-    "RO Aanmaning": "niet gekend",
-    "RO Verslag van Vaststelling": "niet gekend",
-    "RO Proces-verbaal": "niet gekend",
-    "RO Bevel tot staking": "niet gekend",
-    "RO Bestuurlijke maatregelen Zonder Dwangsom": "niet gekend",
-    "RO Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "niet gekend",
-    "RO Bestuurlijke maatregelen Met Dwangsom": "niet gekend",
-    "RO Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "niet gekend",
-    "RO Afgesloten minnelijke schikking": "niet gekend",
-    "RO Ingeleide herstelvordering bij Openbaar Ministerie": "niet gekend",
-    "RO Ambtshalve uitvoering gerechtelijke herstelmaatregel": "niet gekend",
+    "Milieu Raadgeving": "-",
+    "Milieu Aanmaning": "-",
+    "Milieu Verslag van Vaststelling": "-",
+    "Milieu Proces-verbaal": "-",
+    "Milieu Bestuurlijke maatregelen Zonder Dwangsom": "-",
+    "Milieu Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "-",
+    "Milieu Bestuurlijke maatregelen Met Dwangsom": "-",
+    "Milieu Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "-",
+    "Milieu Veiligheidsmaatregel": "-",
+    "Milieu Veiligheidsmaatregel tijdig uitgevoerd": "-",
+    "RO Raadgeving": "-",
+    "RO Aanmaning": "-",
+    "RO Verslag van Vaststelling": "-",
+    "RO Proces-verbaal": "-",
+    "RO Bevel tot staking": "-",
+    "RO Bestuurlijke maatregelen Zonder Dwangsom": "-",
+    "RO Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "-",
+    "RO Bestuurlijke maatregelen Met Dwangsom": "-",
+    "RO Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "-",
+    "RO Afgesloten minnelijke schikking": "-",
+    "RO Ingeleide herstelvordering bij Openbaar Ministerie": "-",
+    "RO Ambtshalve uitvoering gerechtelijke herstelmaatregel": "-",
     "Milieu IGS Raadgeving": "-",
     "Milieu IGS Aanmaning": "-",
     "Milieu IGS Verslag van Vaststelling": "-",
@@ -1587,15 +1599,18 @@
     "Ambtshalve uitvoering gerechtelijke herstelmaartegel": "-",
     "Milieu AndereGemeente Raageving": "-",
     "Milieu Bestuurlijke maatregelen": "-",
-    "RO Herstel gevorderd bij burgerlijk rechter": "-"
+    "RO Herstel gevorderd bij burgerlijk rechter": "-",
+    "PFAS": "Neen",
+    "Stikstof": "Neen",
+    "Opmerking": "Ons registratiesysteem is er niet op voorzien dat we de klachten en controles kunnen rapporteren volgens het lijstje 'inzake ...' en ook het aantal schendingen wordt niet concreet bijgehouden. Soms is het een combinatie van factoren en 'geur' ontbreekt nog in het lijstje."
   },
-  {
-    "Actor": "Alveringem",
-    "Beleidsniveau": "Gemeente",
-    "Respons": "non-respons",
-    "Milieu Toezichthouders": "-",
-    "Milieu VTE Toezichthouders": "-",
-    "Milieu VTE Administratieve en Juridische ondersteuning": "-",
+  "6": {
+    "Actor": "Openbare Vlaamse Afvalstoffenmaatschappij",
+    "Beleidsniveau": "Gewest",
+    "Respons": "respons",
+    "Milieu Toezichthouders": 19,
+    "Milieu VTE Toezichthouders": "7",
+    "Milieu VTE Administratieve en Juridische ondersteuning": "1,7",
     "RO Gecombineerde functie": "-",
     "RO Verbalisanten": "-",
     "RO Stedenbouwkundige Inspecteurs": "-",
@@ -1617,6 +1632,274 @@
     "Milieu LP VTE Toezichthouders": "-",
     "Milieu LP VTE Administratieve en Juridische ondersteuning": "-",
     "RO LP VTE": "-",
+    "Milieu AndereGemeente Toezichthouders": "-",
+    "Milieu AndereGemeente VTE Toezichthouders": "-",
+    "Milieu AndereGemeente VTE Administratieve en Juridische ondersteuning": "-",
+    "RO AndereGemeente Gecombineerde functie": "-",
+    "RO AndereGemeente Verbalisant": "-",
+    "RO AndereGemeente Stedenbouwkundige Inspecteurs": "-",
+    "RO AndereGemeente VTE Gecombineerde functie": "-",
+    "RO AndereGemeente VTE Verbalisant": "-",
+    "RO AndereGemeente VTE Stedenbouwkundige Inspecteurs": "-",
+    "RO AndereGemeente VTE Administratieve en Juridische ondersteuning": "-",
+    "Milieu Klachten": 247,
+    "Milieu Milieubeheer": "niet gekend",
+    "Milieu Lucht": "niet gekend",
+    "Milieu Water": "niet gekend",
+    "Milieu Bodem": "niet gekend",
+    "Milieu Geluid": "niet gekend",
+    "Milieu Vergunningen": "niet gekend",
+    "Milieu Mest": "niet gekend",
+    "Milieu Afval": "niet gekend",
+    "Milieu Andere": "niet gekend",
+    "RO Klachten": "-",
+    "Milieu IGS Klachten": "-",
+    "Milieubeheer IGS": "-",
+    "Lucht IGS": "-",
+    "Water IGS": "-",
+    "Bodem IGS": "-",
+    "Geluid IGS": "-",
+    "Vergunningen IGS": "-",
+    "Mest IGS": "-",
+    "Afval IGS": "-",
+    "Andere IGS": "-",
+    "RO IGS Klachten": "-",
+    "Milieu LP Klachten": "-",
+    "Milieubeheer LP": "-",
+    "Lucht LP": "-",
+    "Water LP": "-",
+    "Bodem LP": "-",
+    "Geluid LP": "-",
+    "Vergunningen LP": "-",
+    "Mest LP": "-",
+    "Afval LP": "-",
+    "Overige LP": "-",
+    "RO LP Klachten": "-",
+    "Milieu AndereGemeente Klachten": "-",
+    "Milieu AndereGemeente Milieubeheer": "-",
+    "Milieu AndereGemeente Lucht": "-",
+    "Milieu AndereGemeente Water": "-",
+    "Milieu AndereGemeente Bodem": "-",
+    "Milieu AndereGemeente Geluid": "-",
+    "Milieu AndereGemeente Vergunningen": "-",
+    "Milieu AndereGemeente Mest": "-",
+    "Milieu AndereGemeente Afval": "-",
+    "Milieu AndereGemeente Andere": "-",
+    "RO AndereGemeente Klachten": "-",
+    "Milieu Controles": "1092",
+    "Milieu Controles Navolgende Aanleiding Schending": "niet gekend",
+    "Milieu Controles Aanvankelijk Aanleiding Klacht": "63",
+    "Milieu Controles Navolgende Aanleiding Klacht": "2",
+    "Milieu Controles Aanvankelijk op eigen initiatief": "1029",
+    "Milieu Controles Navolgende op eigen initiatief": "3",
+    "Milieu Aanvankelijke Controles": "507",
+    "Milieu Aanvankelijke Controles Milieubeheer": "0",
+    "Milieu Aanvankelijke Controles Lucht": "0",
+    "Milieu Aanvankelijke Controles Water": "0",
+    "Milieu Aanvankelijke Controles Bodem": "431",
+    "Milieu Aanvankelijke Controles Geluid": "0",
+    "Milieu Aanvankelijke Controles Vergunningen": "0",
+    "Milieu Aanvankelijke Controles Mest": "0",
+    "Milieu Aanvankelijke Controles Afval": "76",
+    "Milieu Aanvankelijke Controles Andere": "0",
+    "RO Controles": "-",
+    "RO Controles Navolgende Aanleiding Schending": "-",
+    "RO Controles Aanvankelijk Aanleiding Klacht": "-",
+    "RO Controles Navolgende Aanleiding Klacht": "-",
+    "RO Controles Aanvankelijk op eigen initiatief": "-",
+    "RO Controles Navolgende op eigen initiatief": "-",
+    "RO Aanvankelijke Controles": "-",
+    "Milieu IGS Controles": "-",
+    "Milieu IGS Controles Navolgende Aanleiding Schending": "-",
+    "Milieu IGS Controles Aanvankelijk Aanleiding Klacht": "-",
+    "Milieu IGS Controles Navolgende Aanleiding Klacht": "-",
+    "Milieu IGS Controles Aanvankelijk op eigen initiatief": "-",
+    "Milieu IGS Controles Navolgende op eigen initiatief": "-",
+    "Milieu IGS Aanvankelijke Controles": "-",
+    "Milieu IGS Aanvankelijke Controles Milieubeheer": "-",
+    "Milieu IGS Aanvankelijke Controles Lucht": "-",
+    "Milieu IGS Aanvankelijke Controles Water": "-",
+    "Milieu IGS Aanvankelijke Controles Bodem": "-",
+    "Milieu IGS Aanvankelijke Controles Geluid": "-",
+    "Milieu IGS Aanvankelijke Controles Vergunningen": "-",
+    "Milieu IGS Aanvankelijke Controles Mest": "-",
+    "Milieu IGS Aanvankelijke Controles Afval": "-",
+    "Milieu IGS Aanvankelijke Controles Andere": "-",
+    "RO IGS Controles": "-",
+    "RO IGS Controles Navolgende Aanleiding Schending": "-",
+    "RO IGS Controles Aanvankelijk Aanleiding Klacht": "-",
+    "RO IGS Controles Navolgende Aanleiding Klacht": "-",
+    "RO IGS Controles Aanvankelijk op eigen initiatief": "-",
+    "RO IGS Controles Navolgende op eigen initiatief": "-",
+    "RO IGS Aanvankelijke Controles": "-",
+    "Milieu LP Controles": "-",
+    "Milieu LP Controles Navolgende Aanleiding Schending": "-",
+    "Milieu LP Controles Aanvankelijk Aanleiding Klacht": "-",
+    "Milieu LP Controles Navolgende Aanleiding Klacht": "-",
+    "Milieu LP Controles Aanvankelijk op eigen initiatief": "-",
+    "Milieu LP Controles Navolgende op eigen initiatief": "-",
+    "Milieu LP Aanvankelijke Controles": "-",
+    "Milieu LP Aanvankelijke Controles Milieubeheer": "-",
+    "Milieu LP Aanvankelijke Controles Lucht": "-",
+    "Milieu LP Aanvankelijke Controles Water": "-",
+    "Milieu LP Aanvankelijke Controles Bodem": "-",
+    "Milieu LP Aanvankelijke Controles Geluid": "-",
+    "Milieu LP Aanvankelijke Controles Vergunningen": "-",
+    "Milieu LP Aanvankelijke Controles Mest": "-",
+    "Milieu LP Aanvankelijke Controles Afval": "-",
+    "Milieu LP Aanvankelijke Controles Andere": "-",
+    "RO LP Controles": "-",
+    "RO LP Controles Navolgende Aanleiding Schending": "-",
+    "RO LP Controles Aanvankelijk Aanleiding Klacht": "-",
+    "RO LP Controles Navolgende Aanleiding Klacht": "-",
+    "RO LP Controles Aanvankelijk op eigen initiatief": "-",
+    "RO LP Controles Navolgende op eigen initiatief": "-",
+    "RO LP Aanvankelijke Controles": "-",
+    "Milieu AndereGemeente Controles": "-",
+    "Milieu AndereGemeente Controles Navolgende Aanleiding Schending": "-",
+    "Milieu AndereGemeente Controles Aanvankelijk Aanleiding Klacht": "-",
+    "Milieu AndereGemeente Controles Navolgende Aanleiding Klacht": "-",
+    "Milieu AndereGemeente Controles Aanvankelijk op eigen initiatief": "-",
+    "Milieu AndereGemeente Controles Navolgende op eigen initiatief": "-",
+    "Milieu AndereGemeente Aanvankelijke Controles": "-",
+    "Milieu AndereGemeente Aanvankelijke Controles Milieubeheer": "-",
+    "Milieu AndereGemeente Aanvankelijke Controles Lucht": "-",
+    "Milieu AndereGemeente Aanvankelijke Controles Water": "-",
+    "Milieu AndereGemeente Aanvankelijke Controles Bodem": "-",
+    "Milieu AndereGemeente Aanvankelijke Controles Geluid": "-",
+    "Milieu AndereGemeente Aanvankelijke Controles Vergunningen": "-",
+    "Milieu AndereGemeente Aanvankelijke Controles Mest": "-",
+    "Milieu AndereGemeente Aanvankelijke Controles Afval": "-",
+    "Milieu AndereGemeente Aanvankelijke Controles Andere": "-",
+    "RO AndereGemeente Controles": "-",
+    "RO AndereGemeente Controles Navolgende Aanleiding Schending": "-",
+    "RO AndereGemeente Controles Aanvankelijk Aanleiding Klacht": "-",
+    "RO AndereGemeente Controles Navolgende Aanleiding Klacht": "-",
+    "RO AndereGemeente Controles Aanvankelijk op eigen initiatief": "-",
+    "RO AndereGemeente Controles Navolgende op eigen initiatief": "-",
+    "RO AndereGemeente Aanvankelijke Controles": "-",
+    "Milieu IGS Controles Overtredingsgraad": "-",
+    "RO Controles Overtredingsgraad": "-",
+    "RO IGS Controles Overtredingsgraad": "-",
+    "Milieu LP Controles Overtredingsgraad": "-",
+    "Milieu Raadgeving": "-",
+    "Milieu Aanmaning": "-",
+    "Milieu Verslag van Vaststelling": "-",
+    "Milieu Proces-verbaal": "-",
+    "Milieu Bestuurlijke maatregelen Zonder Dwangsom": "-",
+    "Milieu Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "-",
+    "Milieu Bestuurlijke maatregelen Met Dwangsom": "-",
+    "Milieu Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "-",
+    "Milieu Veiligheidsmaatregel": "-",
+    "Milieu Veiligheidsmaatregel tijdig uitgevoerd": "-",
+    "RO Raadgeving": "-",
+    "RO Aanmaning": "-",
+    "RO Verslag van Vaststelling": "-",
+    "RO Proces-verbaal": "-",
+    "RO Bevel tot staking": "-",
+    "RO Bestuurlijke maatregelen Zonder Dwangsom": "-",
+    "RO Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "-",
+    "RO Bestuurlijke maatregelen Met Dwangsom": "-",
+    "RO Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "-",
+    "RO Afgesloten minnelijke schikking": "-",
+    "RO Ingeleide herstelvordering bij Openbaar Ministerie": "-",
+    "RO Ambtshalve uitvoering gerechtelijke herstelmaatregel": "-",
+    "Milieu IGS Raadgeving": "-",
+    "Milieu IGS Aanmaning": "-",
+    "Milieu IGS Verslag van Vaststelling": "-",
+    "Milieu IGS Proces-verbaal": "-",
+    "Milieu IGS Bestuurlijke maatregelen Zonder Dwangsom": "-",
+    "Milieu IGS Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "-",
+    "Milieu IGS Bestuurlijke maatregelen Met Dwangsom": "-",
+    "Milieu IGS Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "-",
+    "Milieu IGS Veiligheidsmaatregel": "-",
+    "Milieu IGS Veiligheidsmaatregel tijdig uitgevoerd": "-",
+    "RO IGS Raadgeving": "-",
+    "RO IGS Aanmaning": "-",
+    "RO IGS Verslag van Vaststelling": "-",
+    "RO IGS Proces-verbaal": "-",
+    "RO IGS Bevel tot Staking": "-",
+    "RO IGS Bestuurlijke maatregelen Zonder Dwangsom": "-",
+    "RO IGS Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "-",
+    "RO IGS Bestuurlijke maatregelen Met Dwangsom": "-",
+    "RO IGS Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "-",
+    "RO IGS Afgesloten minnelijke schikking": "-",
+    "RO IGS Ingeleide herstelvordering bij Openbaar Ministerie": "-",
+    "RO IGS Herstel gevorderd bij burgerlijk rechter": "-",
+    "RO IGS Ambtshalve uitvoering gerechtelijke herstelmaatregel": "-",
+    "Milieu LP Raadgeving": "-",
+    "Milieu LP Aanmaning": "-",
+    "Milieu LP Verslag van Vaststelling": "-",
+    "Milieu LP Proces-verbaal": "-",
+    "Milieu LP Bestuurlijke maatregelen Zonder Dwangsom": "-",
+    "Milieu LP Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "-",
+    "Milieu LP Bestuurlijke maatregelen Met Dwangsom": "-",
+    "Milieu LP Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "-",
+    "Milieu LP Veiligheidsmaatregel": "-",
+    "Milieu LP Veiligheidsmaatregel tijdig uitgevoerd": "-",
+    "RO LP Verslag van Vaststelling": "-",
+    "RO LP Proces-verbaal": "-",
+    "RO LP Bevel tot Staking": "-",
+    "RO LP Raadgeving": "-",
+    "Milieu AndereGemeente Raadgeving": "-",
+    "Milieu AndereGemeente Aanmaning": "-",
+    "Milieu AndereGemeente Verslag van Vaststelling": "-",
+    "Milieu AndereGemeente Proces-verbaal": "-",
+    "Milieu AndereGemeente Bestuurlijke maatregelen Zonder Dwangsom": "-",
+    "Milieu AndereGemeente Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "-",
+    "Milieu AndereGemeente Bestuurlijke maatregelen Met Dwangsom": "-",
+    "Milieu AndereGemeente Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "-",
+    "Milieu AndereGemeente Veiligheidsmaatregel": "-",
+    "Milieu AndereGemeente Veiligheidsmaatregel tijdig uitgevoerd": "-",
+    "RO AndereGemeente Raadgeving": "-",
+    "RO AndereGemeente Aanmaning": "-",
+    "RO AndereGemeente Verslag van vaststelling": "-",
+    "RO AndereGemeente Proces-verbaal": "-",
+    "RO AndereGemeente Bevel tot Staking": "-",
+    "RO AndereGemeente Bestuurlijke maatregelen Zonder Dwangsom": "-",
+    "RO AndereGemeente Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "-",
+    "RO AndereGemeente Bestuurlijke maatregelen Met Dwangsom": "-",
+    "RO AndereGemeente Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "-",
+    "RO AndereGemeente Afgesloten minnelijke schikking": "-",
+    "RO AndereGemeente Ingeleide herstelvordering bij Openbaar Ministerie": "-",
+    "RO AndereGemeente Herstel gevorderd bij burgerlijk rechter": "-",
+    "RO AndereGemeente Ambtshalve uitvoering gerechtelijke herstelmaatregel": "-",
+    "Ambtshalve uitvoering gerechtelijke herstelmaartegel": "-",
+    "Milieu AndereGemeente Raageving": "-",
+    "Milieu Bestuurlijke maatregelen": "-",
+    "RO Herstel gevorderd bij burgerlijk rechter": "-",
+    "PFAS": "Neen",
+    "Stikstof": "Neen",
+    "Opmerking": "Aantal milieuklachten: onze databank kan momenteel geen onderscheid maken volgens thema. Vooral afval en bodem. Ook hierbij inbegrepen klachten die niet voor ons zijn en we aan een andere dienst moeten doorgeven. De andere jaren werden ook aparte cijfers voor controles gevraagd. Dit is nu niet gevraagd, terwijl dit voor de OVAM gaat over 809 van de in totaal 1092 controles. Dit heeft een impact op de interpretatie van de cijfers. De controles op afstand betreffen vooral brieven in kader van rapportering voor het Integraal Milieujaarverslag en opvolging van niet tijdig indienen oriënterend bodemonderzoek (OBO) en/of beschrijvend bodemonderzoek (BBO). Binnen de OVAM zit een grote verscheidenheid aan soorten controles. Van klassieke controles ter plaatse bij bedrijven en/of particulieren tot eerder administratieve controles. De gerapporteerde cijfers zijn totaalcijfers voor de OVAM, maar deze kunnen niet altijd 1 op 1 vergeleken worden en ook de registratie hiervan is verschillend. Het zijn opgetelde cijfers van de afdeling. Bodembeheer, Algemene diensten en Afval- en materialenbeheer. Binnen de Ovam is er 1 team dat als hoofdtaak handhaving heeft (Team terreincontrole van de Afdeling Algemene diensten). Binnen dit team gebeuren de meeste klassieke controles, namelijk controles ter plaatse bij bedrijven (garages, schroothandels, grondverzet-bedrijven, containerdiensten,...)."
+  },
+  "7": {
+    "Actor": "Vlaams Energie- en Klimaatagentschap",
+    "Beleidsniveau": "Gewest",
+    "Respons": "respons",
+    "Milieu Toezichthouders": "-",
+    "Milieu VTE Toezichthouders": "-",
+    "Milieu VTE Administratieve en Juridische ondersteuning": "-",
+    "RO Gecombineerde functie": "-",
+    "RO Verbalisanten": "-",
+    "RO Stedenbouwkundige Inspecteurs": "-",
+    "RO VTE Gecombineerde functie": "-",
+    "RO VTE Verbalisanten": "-",
+    "RO VTE Stedenbouwkundige Inspecteurs": "-",
+    "RO VTE Administratieve en Juridische ondersteuning": "-",
+    "Milieu IGS Toezichthouders": "-",
+    "Milieu IGS VTE Toezichthouders": "-",
+    "Milieu IGS VTE Administratieve en Juridische ondersteuning": "-",
+    "RO IGS Gecombineerde functie": "-",
+    "RO IGS Verbalisanten": "-",
+    "RO IGS Stedenbouwkundig inspecteurs": "-",
+    "RO IGS VTE Gecombineerde functie": "-",
+    "RO IGS VTE Verbalisanten": "-",
+    "RO IGS VTE Stedenbouwkundige Inspecteurs": "-",
+    "RO IGS VTE Administratieve en Juridische ondersteuning": "-",
+    "Milieu LP Toezichthouders": "15",
+    "Milieu LP VTE Toezichthouders": "3",
+    "Milieu LP VTE Administratieve en Juridische ondersteuning": "1",
+    "RO LP VTE": "1",
     "Milieu AndereGemeente Toezichthouders": "-",
     "Milieu AndereGemeente VTE Toezichthouders": "-",
     "Milieu AndereGemeente VTE Administratieve en Juridische ondersteuning": "-",
@@ -1649,17 +1932,17 @@
     "Afval IGS": "-",
     "Andere IGS": "-",
     "RO IGS Klachten": "-",
-    "Milieu LP Klachten": "-",
-    "Milieubeheer LP": "-",
-    "Lucht LP": "-",
-    "Water LP": "-",
-    "Bodem LP": "-",
-    "Geluid LP": "-",
-    "Vergunningen LP": "-",
-    "Mest LP": "-",
-    "Afval LP": "-",
-    "Overige LP": "-",
-    "RO LP Klachten": "-",
+    "Milieu LP Klachten": 26,
+    "Milieubeheer LP": 0,
+    "Lucht LP": 0,
+    "Water LP": 0,
+    "Bodem LP": 0,
+    "Geluid LP": 26,
+    "Vergunningen LP": 0,
+    "Mest LP": 0,
+    "Afval LP": 0,
+    "Overige LP": 0,
+    "RO LP Klachten": 0,
     "Milieu AndereGemeente Klachten": "-",
     "Milieu AndereGemeente Milieubeheer": "-",
     "Milieu AndereGemeente Lucht": "-",
@@ -1852,22 +2135,24 @@
     "Ambtshalve uitvoering gerechtelijke herstelmaartegel": "-",
     "Milieu AndereGemeente Raageving": "-",
     "Milieu Bestuurlijke maatregelen": "-",
-    "RO Herstel gevorderd bij burgerlijk rechter": "-"
+    "RO Herstel gevorderd bij burgerlijk rechter": "-",
+    "PFAS": "Neen",
+    "Stikstof": "Neen"
   },
-  {
-    "Actor": "Antwerpen",
-    "Beleidsniveau": "Gemeente",
+  "8": {
+    "Actor": "Vlaamse Landmaatschappij",
+    "Beleidsniveau": "Gewest",
     "Respons": "respons",
-    "Milieu Toezichthouders": 5,
-    "Milieu VTE Toezichthouders": "3",
-    "Milieu VTE Administratieve en Juridische ondersteuning": "0,2",
-    "RO Gecombineerde functie": "0",
-    "RO Verbalisanten": "7",
-    "RO Stedenbouwkundige Inspecteurs": "0",
-    "RO VTE Gecombineerde functie": "niet gekend",
-    "RO VTE Verbalisanten": "5,3",
-    "RO VTE Stedenbouwkundige Inspecteurs": "niet gekend",
-    "RO VTE Administratieve en Juridische ondersteuning": "7,5",
+    "Milieu Toezichthouders": 50,
+    "Milieu VTE Toezichthouders": "42,8",
+    "Milieu VTE Administratieve en Juridische ondersteuning": "0,1",
+    "RO Gecombineerde functie": "-",
+    "RO Verbalisanten": "-",
+    "RO Stedenbouwkundige Inspecteurs": "-",
+    "RO VTE Gecombineerde functie": "-",
+    "RO VTE Verbalisanten": "-",
+    "RO VTE Stedenbouwkundige Inspecteurs": "-",
+    "RO VTE Administratieve en Juridische ondersteuning": "-",
     "Milieu IGS Toezichthouders": "-",
     "Milieu IGS VTE Toezichthouders": "-",
     "Milieu IGS VTE Administratieve en Juridische ondersteuning": "-",
@@ -1892,17 +2177,17 @@
     "RO AndereGemeente VTE Verbalisant": "-",
     "RO AndereGemeente VTE Stedenbouwkundige Inspecteurs": "-",
     "RO AndereGemeente VTE Administratieve en Juridische ondersteuning": "-",
-    "Milieu Klachten": 183,
+    "Milieu Klachten": 230,
     "Milieu Milieubeheer": 0,
-    "Milieu Lucht": 4,
-    "Milieu Water": 32,
-    "Milieu Bodem": 4,
-    "Milieu Geluid": 19,
-    "Milieu Vergunningen": 19,
-    "Milieu Mest": 1,
-    "Milieu Afval": 51,
-    "Milieu Andere": 53,
-    "RO Klachten": 829,
+    "Milieu Lucht": 3,
+    "Milieu Water": 7,
+    "Milieu Bodem": 0,
+    "Milieu Geluid": 0,
+    "Milieu Vergunningen": 0,
+    "Milieu Mest": 220,
+    "Milieu Afval": 0,
+    "Milieu Andere": 1,
+    "RO Klachten": "-",
     "Milieu IGS Klachten": "-",
     "Milieubeheer IGS": "-",
     "Lucht IGS": "-",
@@ -1936,22 +2221,22 @@
     "Milieu AndereGemeente Afval": "-",
     "Milieu AndereGemeente Andere": "-",
     "RO AndereGemeente Klachten": "-",
-    "Milieu Controles": "338",
-    "Milieu Controles Navolgende Aanleiding Schending": "20",
-    "Milieu Controles Aanvankelijk Aanleiding Klacht": "6",
-    "Milieu Controles Navolgende Aanleiding Klacht": "0",
-    "Milieu Controles Aanvankelijk op eigen initiatief": "278",
-    "Milieu Controles Navolgende op eigen initiatief": "34",
-    "Milieu Aanvankelijke Controles": "284",
+    "Milieu Controles": "8484",
+    "Milieu Controles Navolgende Aanleiding Schending": "227",
+    "Milieu Controles Aanvankelijk Aanleiding Klacht": "230",
+    "Milieu Controles Navolgende Aanleiding Klacht": "22",
+    "Milieu Controles Aanvankelijk op eigen initiatief": "7999",
+    "Milieu Controles Navolgende op eigen initiatief": "198",
+    "Milieu Aanvankelijke Controles": "1089",
     "Milieu Aanvankelijke Controles Milieubeheer": "0",
-    "Milieu Aanvankelijke Controles Lucht": "0",
-    "Milieu Aanvankelijke Controles Water": "284",
+    "Milieu Aanvankelijke Controles Lucht": "33",
+    "Milieu Aanvankelijke Controles Water": "48",
     "Milieu Aanvankelijke Controles Bodem": "0",
     "Milieu Aanvankelijke Controles Geluid": "0",
     "Milieu Aanvankelijke Controles Vergunningen": "0",
-    "Milieu Aanvankelijke Controles Mest": "0",
+    "Milieu Aanvankelijke Controles Mest": "994",
     "Milieu Aanvankelijke Controles Afval": "0",
-    "Milieu Aanvankelijke Controles Andere": "0",
+    "Milieu Aanvankelijke Controles Andere": "14",
     "RO Controles": "-",
     "RO Controles Navolgende Aanleiding Schending": "-",
     "RO Controles Aanvankelijk Aanleiding Klacht": "-",
@@ -2032,15 +2317,15 @@
     "RO Controles Overtredingsgraad": "-",
     "RO IGS Controles Overtredingsgraad": "-",
     "Milieu LP Controles Overtredingsgraad": "-",
-    "Milieu Raadgeving": "2",
-    "Milieu Aanmaning": "305",
-    "Milieu Verslag van Vaststelling": "0",
-    "Milieu Proces-verbaal": "2",
-    "Milieu Bestuurlijke maatregelen Zonder Dwangsom": "0",
+    "Milieu Raadgeving": "-",
+    "Milieu Aanmaning": "-",
+    "Milieu Verslag van Vaststelling": "-",
+    "Milieu Proces-verbaal": "-",
+    "Milieu Bestuurlijke maatregelen Zonder Dwangsom": "-",
     "Milieu Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "-",
-    "Milieu Bestuurlijke maatregelen Met Dwangsom": "0",
+    "Milieu Bestuurlijke maatregelen Met Dwangsom": "-",
     "Milieu Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "-",
-    "Milieu Veiligheidsmaatregel": "0",
+    "Milieu Veiligheidsmaatregel": "-",
     "Milieu Veiligheidsmaatregel tijdig uitgevoerd": "-",
     "RO Raadgeving": "-",
     "RO Aanmaning": "-",
@@ -2077,20 +2362,20 @@
     "RO IGS Ingeleide herstelvordering bij Openbaar Ministerie": "-",
     "RO IGS Herstel gevorderd bij burgerlijk rechter": "-",
     "RO IGS Ambtshalve uitvoering gerechtelijke herstelmaatregel": "-",
-    "Milieu LP Raadgeving": "-",
-    "Milieu LP Aanmaning": "-",
-    "Milieu LP Verslag van Vaststelling": "-",
-    "Milieu LP Proces-verbaal": "-",
-    "Milieu LP Bestuurlijke maatregelen Zonder Dwangsom": "-",
-    "Milieu LP Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "-",
-    "Milieu LP Bestuurlijke maatregelen Met Dwangsom": "-",
-    "Milieu LP Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "-",
-    "Milieu LP Veiligheidsmaatregel": "-",
-    "Milieu LP Veiligheidsmaatregel tijdig uitgevoerd": "-",
-    "RO LP Verslag van Vaststelling": "-",
-    "RO LP Proces-verbaal": "-",
-    "RO LP Bevel tot Staking": "-",
-    "RO LP Raadgeving": "-",
+    "Milieu LP Raadgeving": "12",
+    "Milieu LP Aanmaning": "0",
+    "Milieu LP Verslag van Vaststelling": "0",
+    "Milieu LP Proces-verbaal": "23",
+    "Milieu LP Bestuurlijke maatregelen Zonder Dwangsom": "0",
+    "Milieu LP Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "0",
+    "Milieu LP Bestuurlijke maatregelen Met Dwangsom": "0",
+    "Milieu LP Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "0",
+    "Milieu LP Veiligheidsmaatregel": "0",
+    "Milieu LP Veiligheidsmaatregel tijdig uitgevoerd": "0",
+    "RO LP Verslag van Vaststelling": "0",
+    "RO LP Proces-verbaal": "0",
+    "RO LP Bevel tot Staking": "0",
+    "RO LP Raadgeving": 0,
     "Milieu AndereGemeente Raadgeving": "-",
     "Milieu AndereGemeente Aanmaning": "-",
     "Milieu AndereGemeente Verslag van Vaststelling": "-",
@@ -2117,22 +2402,25 @@
     "Ambtshalve uitvoering gerechtelijke herstelmaartegel": "-",
     "Milieu AndereGemeente Raageving": "-",
     "Milieu Bestuurlijke maatregelen": "-",
-    "RO Herstel gevorderd bij burgerlijk rechter": "-"
+    "RO Herstel gevorderd bij burgerlijk rechter": "-",
+    "PFAS": "Neen",
+    "Stikstof": "De meeste acties die de VLM uitvoert zijn acties rond stikstof. Deze omvatten: opbrengingscontroles, transportcontroles, controles op de teeltvrije zone, controles op het kunstmestgebruik, controles op luchtwassers, controles op mestverwerkingsinstallaties, controles op tuinbouwbedrijven, controles op mestopslagplaatsen. ",
+    "Opmerking": "Er zijn ook nog een beperkt aantal controles uitgevoerd in samenwerking met of op vraag van andere overheden. Deze zitten niet in de totale lijst van uitgevoerde controles, noch in de lijst van 'meldingen of klachten'. Het gaat hier over 28 aanvankelijke controles en 7 navolgende. Navolgende controles die uitgevoerd worden kortelings na de initiële controle (binnen de maand na controle), worden gewoonlijk niet afzonderlijk geregistreerd. Ook bij een navolgende controle kun je een schending opnieuw vaststellen. In deze bevraging wordt het totaal aantal schendingen gevraagd bij de aanvankelijke controles. De VLM legt ook administratieve geldboetes op conform het Mestdecreet. Dit zijn ook schendingen maar zijn geen aanmaningen of Pv's. De VLM heeft in 148 dossiers vanuit de handhavingsdienst eigen geldboetes opgelegd. Bij een navolgende controle wordt er niet gekeken of dit voortkomt uit een controle uit het voorgaande jaar of het huidige jaar. We kunnen dit dan ook niet correct opsplitsen. "
   },
-  {
-    "Actor": "Antwerpen",
-    "Beleidsniveau": "Gemeente",
+  "9": {
+    "Actor": "Vlaamse Milieumaatschappij",
+    "Beleidsniveau": "Gewest",
     "Respons": "respons",
-    "Milieu Toezichthouders": 5,
-    "Milieu VTE Toezichthouders": "3",
-    "Milieu VTE Administratieve en Juridische ondersteuning": "0,2",
-    "RO Gecombineerde functie": "0",
-    "RO Verbalisanten": "7",
-    "RO Stedenbouwkundige Inspecteurs": "0",
-    "RO VTE Gecombineerde functie": "niet gekend",
-    "RO VTE Verbalisanten": "5,3",
-    "RO VTE Stedenbouwkundige Inspecteurs": "niet gekend",
-    "RO VTE Administratieve en Juridische ondersteuning": "7,5",
+    "Milieu Toezichthouders": 61,
+    "Milieu VTE Toezichthouders": "3,55",
+    "Milieu VTE Administratieve en Juridische ondersteuning": "4,05",
+    "RO Gecombineerde functie": "-",
+    "RO Verbalisanten": "-",
+    "RO Stedenbouwkundige Inspecteurs": "-",
+    "RO VTE Gecombineerde functie": "-",
+    "RO VTE Verbalisanten": "-",
+    "RO VTE Stedenbouwkundige Inspecteurs": "-",
+    "RO VTE Administratieve en Juridische ondersteuning": "-",
     "Milieu IGS Toezichthouders": "-",
     "Milieu IGS VTE Toezichthouders": "-",
     "Milieu IGS VTE Administratieve en Juridische ondersteuning": "-",
@@ -2157,17 +2445,17 @@
     "RO AndereGemeente VTE Verbalisant": "-",
     "RO AndereGemeente VTE Stedenbouwkundige Inspecteurs": "-",
     "RO AndereGemeente VTE Administratieve en Juridische ondersteuning": "-",
-    "Milieu Klachten": 183,
-    "Milieu Milieubeheer": 0,
-    "Milieu Lucht": 4,
-    "Milieu Water": 32,
-    "Milieu Bodem": 4,
-    "Milieu Geluid": 19,
-    "Milieu Vergunningen": 19,
-    "Milieu Mest": 1,
-    "Milieu Afval": 51,
-    "Milieu Andere": 53,
-    "RO Klachten": 829,
+    "Milieu Klachten": 676,
+    "Milieu Milieubeheer": "-",
+    "Milieu Lucht": "-",
+    "Milieu Water": "-",
+    "Milieu Bodem": 437,
+    "Milieu Geluid": "-",
+    "Milieu Vergunningen": "-",
+    "Milieu Mest": 74,
+    "Milieu Afval": "-",
+    "Milieu Andere": "-",
+    "RO Klachten": "-",
     "Milieu IGS Klachten": "-",
     "Milieubeheer IGS": "-",
     "Lucht IGS": "-",
@@ -2201,22 +2489,22 @@
     "Milieu AndereGemeente Afval": "-",
     "Milieu AndereGemeente Andere": "-",
     "RO AndereGemeente Klachten": "-",
-    "Milieu Controles": "338",
-    "Milieu Controles Navolgende Aanleiding Schending": "20",
-    "Milieu Controles Aanvankelijk Aanleiding Klacht": "6",
-    "Milieu Controles Navolgende Aanleiding Klacht": "0",
-    "Milieu Controles Aanvankelijk op eigen initiatief": "278",
-    "Milieu Controles Navolgende op eigen initiatief": "34",
-    "Milieu Aanvankelijke Controles": "284",
-    "Milieu Aanvankelijke Controles Milieubeheer": "0",
-    "Milieu Aanvankelijke Controles Lucht": "0",
-    "Milieu Aanvankelijke Controles Water": "284",
-    "Milieu Aanvankelijke Controles Bodem": "0",
-    "Milieu Aanvankelijke Controles Geluid": "0",
-    "Milieu Aanvankelijke Controles Vergunningen": "0",
-    "Milieu Aanvankelijke Controles Mest": "0",
-    "Milieu Aanvankelijke Controles Afval": "0",
-    "Milieu Aanvankelijke Controles Andere": "0",
+    "Milieu Controles": "-",
+    "Milieu Controles Navolgende Aanleiding Schending": "niet gekend",
+    "Milieu Controles Aanvankelijk Aanleiding Klacht": "niet gekend",
+    "Milieu Controles Navolgende Aanleiding Klacht": "-",
+    "Milieu Controles Aanvankelijk op eigen initiatief": "niet gekend",
+    "Milieu Controles Navolgende op eigen initiatief": "-",
+    "Milieu Aanvankelijke Controles": "141",
+    "Milieu Aanvankelijke Controles Milieubeheer": "83",
+    "Milieu Aanvankelijke Controles Lucht": "-",
+    "Milieu Aanvankelijke Controles Water": "83",
+    "Milieu Aanvankelijke Controles Bodem": "-",
+    "Milieu Aanvankelijke Controles Geluid": "-",
+    "Milieu Aanvankelijke Controles Vergunningen": "20",
+    "Milieu Aanvankelijke Controles Mest": "2",
+    "Milieu Aanvankelijke Controles Afval": "38",
+    "Milieu Aanvankelijke Controles Andere": "36",
     "RO Controles": "-",
     "RO Controles Navolgende Aanleiding Schending": "-",
     "RO Controles Aanvankelijk Aanleiding Klacht": "-",
@@ -2247,271 +2535,6 @@
     "RO IGS Controles Aanvankelijk op eigen initiatief": "-",
     "RO IGS Controles Navolgende op eigen initiatief": "-",
     "RO IGS Aanvankelijke Controles": "-",
-    "Milieu LP Controles": "-",
-    "Milieu LP Controles Navolgende Aanleiding Schending": "-",
-    "Milieu LP Controles Aanvankelijk Aanleiding Klacht": "-",
-    "Milieu LP Controles Navolgende Aanleiding Klacht": "-",
-    "Milieu LP Controles Aanvankelijk op eigen initiatief": "-",
-    "Milieu LP Controles Navolgende op eigen initiatief": "-",
-    "Milieu LP Aanvankelijke Controles": "-",
-    "Milieu LP Aanvankelijke Controles Milieubeheer": "-",
-    "Milieu LP Aanvankelijke Controles Lucht": "-",
-    "Milieu LP Aanvankelijke Controles Water": "-",
-    "Milieu LP Aanvankelijke Controles Bodem": "-",
-    "Milieu LP Aanvankelijke Controles Geluid": "-",
-    "Milieu LP Aanvankelijke Controles Vergunningen": "-",
-    "Milieu LP Aanvankelijke Controles Mest": "-",
-    "Milieu LP Aanvankelijke Controles Afval": "-",
-    "Milieu LP Aanvankelijke Controles Andere": "-",
-    "RO LP Controles": "-",
-    "RO LP Controles Navolgende Aanleiding Schending": "-",
-    "RO LP Controles Aanvankelijk Aanleiding Klacht": "-",
-    "RO LP Controles Navolgende Aanleiding Klacht": "-",
-    "RO LP Controles Aanvankelijk op eigen initiatief": "-",
-    "RO LP Controles Navolgende op eigen initiatief": "-",
-    "RO LP Aanvankelijke Controles": "-",
-    "Milieu AndereGemeente Controles": "-",
-    "Milieu AndereGemeente Controles Navolgende Aanleiding Schending": "-",
-    "Milieu AndereGemeente Controles Aanvankelijk Aanleiding Klacht": "-",
-    "Milieu AndereGemeente Controles Navolgende Aanleiding Klacht": "-",
-    "Milieu AndereGemeente Controles Aanvankelijk op eigen initiatief": "-",
-    "Milieu AndereGemeente Controles Navolgende op eigen initiatief": "-",
-    "Milieu AndereGemeente Aanvankelijke Controles": "-",
-    "Milieu AndereGemeente Aanvankelijke Controles Milieubeheer": "-",
-    "Milieu AndereGemeente Aanvankelijke Controles Lucht": "-",
-    "Milieu AndereGemeente Aanvankelijke Controles Water": "-",
-    "Milieu AndereGemeente Aanvankelijke Controles Bodem": "-",
-    "Milieu AndereGemeente Aanvankelijke Controles Geluid": "-",
-    "Milieu AndereGemeente Aanvankelijke Controles Vergunningen": "-",
-    "Milieu AndereGemeente Aanvankelijke Controles Mest": "-",
-    "Milieu AndereGemeente Aanvankelijke Controles Afval": "-",
-    "Milieu AndereGemeente Aanvankelijke Controles Andere": "-",
-    "RO AndereGemeente Controles": "-",
-    "RO AndereGemeente Controles Navolgende Aanleiding Schending": "-",
-    "RO AndereGemeente Controles Aanvankelijk Aanleiding Klacht": "-",
-    "RO AndereGemeente Controles Navolgende Aanleiding Klacht": "-",
-    "RO AndereGemeente Controles Aanvankelijk op eigen initiatief": "-",
-    "RO AndereGemeente Controles Navolgende op eigen initiatief": "-",
-    "RO AndereGemeente Aanvankelijke Controles": "-",
-    "Milieu IGS Controles Overtredingsgraad": "-",
-    "RO Controles Overtredingsgraad": "-",
-    "RO IGS Controles Overtredingsgraad": "-",
-    "Milieu LP Controles Overtredingsgraad": "-",
-    "Milieu Raadgeving": "17",
-    "Milieu Aanmaning": "127",
-    "Milieu Verslag van Vaststelling": "0",
-    "Milieu Proces-verbaal": "41",
-    "Milieu Bestuurlijke maatregelen Zonder Dwangsom": "27",
-    "Milieu Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "2",
-    "Milieu Bestuurlijke maatregelen Met Dwangsom": "0",
-    "Milieu Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "0",
-    "Milieu Veiligheidsmaatregel": "0",
-    "Milieu Veiligheidsmaatregel tijdig uitgevoerd": "0",
-    "RO Raadgeving": "43",
-    "RO Aanmaning": "133",
-    "RO Verslag van Vaststelling": "57",
-    "RO Proces-verbaal": "295",
-    "RO Bevel tot staking": "63",
-    "RO Bestuurlijke maatregelen Zonder Dwangsom": "0",
-    "RO Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "0",
-    "RO Bestuurlijke maatregelen Met Dwangsom": "11",
-    "RO Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "9",
-    "RO Afgesloten minnelijke schikking": "0",
-    "RO Ingeleide herstelvordering bij Openbaar Ministerie": "1",
-    "RO Ambtshalve uitvoering gerechtelijke herstelmaatregel": "0",
-    "Milieu IGS Raadgeving": "-",
-    "Milieu IGS Aanmaning": "-",
-    "Milieu IGS Verslag van Vaststelling": "-",
-    "Milieu IGS Proces-verbaal": "-",
-    "Milieu IGS Bestuurlijke maatregelen Zonder Dwangsom": "-",
-    "Milieu IGS Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "-",
-    "Milieu IGS Bestuurlijke maatregelen Met Dwangsom": "-",
-    "Milieu IGS Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "-",
-    "Milieu IGS Veiligheidsmaatregel": "-",
-    "Milieu IGS Veiligheidsmaatregel tijdig uitgevoerd": "-",
-    "RO IGS Raadgeving": "-",
-    "RO IGS Aanmaning": "-",
-    "RO IGS Verslag van Vaststelling": "-",
-    "RO IGS Proces-verbaal": "-",
-    "RO IGS Bevel tot Staking": "-",
-    "RO IGS Bestuurlijke maatregelen Zonder Dwangsom": "-",
-    "RO IGS Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "-",
-    "RO IGS Bestuurlijke maatregelen Met Dwangsom": "-",
-    "RO IGS Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "-",
-    "RO IGS Afgesloten minnelijke schikking": "-",
-    "RO IGS Ingeleide herstelvordering bij Openbaar Ministerie": "-",
-    "RO IGS Herstel gevorderd bij burgerlijk rechter": "-",
-    "RO IGS Ambtshalve uitvoering gerechtelijke herstelmaatregel": "-",
-    "Milieu LP Raadgeving": "12",
-    "Milieu LP Aanmaning": "0",
-    "Milieu LP Verslag van Vaststelling": "0",
-    "Milieu LP Proces-verbaal": "23",
-    "Milieu LP Bestuurlijke maatregelen Zonder Dwangsom": "0",
-    "Milieu LP Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "0",
-    "Milieu LP Bestuurlijke maatregelen Met Dwangsom": "0",
-    "Milieu LP Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "0",
-    "Milieu LP Veiligheidsmaatregel": "0",
-    "Milieu LP Veiligheidsmaatregel tijdig uitgevoerd": "0",
-    "RO LP Verslag van Vaststelling": "0",
-    "RO LP Proces-verbaal": "0",
-    "RO LP Bevel tot Staking": "0",
-    "RO LP Raadgeving": 0,
-    "Milieu AndereGemeente Raadgeving": "-",
-    "Milieu AndereGemeente Aanmaning": "-",
-    "Milieu AndereGemeente Verslag van Vaststelling": "-",
-    "Milieu AndereGemeente Proces-verbaal": "-",
-    "Milieu AndereGemeente Bestuurlijke maatregelen Zonder Dwangsom": "-",
-    "Milieu AndereGemeente Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "-",
-    "Milieu AndereGemeente Bestuurlijke maatregelen Met Dwangsom": "-",
-    "Milieu AndereGemeente Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "-",
-    "Milieu AndereGemeente Veiligheidsmaatregel": "-",
-    "Milieu AndereGemeente Veiligheidsmaatregel tijdig uitgevoerd": "-",
-    "RO AndereGemeente Raadgeving": "-",
-    "RO AndereGemeente Aanmaning": "-",
-    "RO AndereGemeente Verslag van vaststelling": "-",
-    "RO AndereGemeente Proces-verbaal": "-",
-    "RO AndereGemeente Bevel tot Staking": "-",
-    "RO AndereGemeente Bestuurlijke maatregelen Zonder Dwangsom": "-",
-    "RO AndereGemeente Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "-",
-    "RO AndereGemeente Bestuurlijke maatregelen Met Dwangsom": "-",
-    "RO AndereGemeente Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "-",
-    "RO AndereGemeente Afgesloten minnelijke schikking": "-",
-    "RO AndereGemeente Ingeleide herstelvordering bij Openbaar Ministerie": "-",
-    "RO AndereGemeente Herstel gevorderd bij burgerlijk rechter": "-",
-    "RO AndereGemeente Ambtshalve uitvoering gerechtelijke herstelmaatregel": "-",
-    "Ambtshalve uitvoering gerechtelijke herstelmaartegel": "-",
-    "Milieu AndereGemeente Raageving": "-",
-    "Milieu Bestuurlijke maatregelen": "-",
-    "RO Herstel gevorderd bij burgerlijk rechter": "-"
-  },
-  {
-    "Actor": "Antwerpen",
-    "Beleidsniveau": "Gemeente",
-    "Respons": "respons",
-    "Milieu Toezichthouders": 5,
-    "Milieu VTE Toezichthouders": "3",
-    "Milieu VTE Administratieve en Juridische ondersteuning": "0,2",
-    "RO Gecombineerde functie": "0",
-    "RO Verbalisanten": "7",
-    "RO Stedenbouwkundige Inspecteurs": "0",
-    "RO VTE Gecombineerde functie": "niet gekend",
-    "RO VTE Verbalisanten": "5,3",
-    "RO VTE Stedenbouwkundige Inspecteurs": "niet gekend",
-    "RO VTE Administratieve en Juridische ondersteuning": "7,5",
-    "Milieu IGS Toezichthouders": "-",
-    "Milieu IGS VTE Toezichthouders": "-",
-    "Milieu IGS VTE Administratieve en Juridische ondersteuning": "-",
-    "RO IGS Gecombineerde functie": "-",
-    "RO IGS Verbalisanten": "-",
-    "RO IGS Stedenbouwkundig inspecteurs": "-",
-    "RO IGS VTE Gecombineerde functie": "-",
-    "RO IGS VTE Verbalisanten": "-",
-    "RO IGS VTE Stedenbouwkundige Inspecteurs": "-",
-    "RO IGS VTE Administratieve en Juridische ondersteuning": "-",
-    "Milieu LP Toezichthouders": "15",
-    "Milieu LP VTE Toezichthouders": "3",
-    "Milieu LP VTE Administratieve en Juridische ondersteuning": "1",
-    "RO LP VTE": "1",
-    "Milieu AndereGemeente Toezichthouders": "-",
-    "Milieu AndereGemeente VTE Toezichthouders": "-",
-    "Milieu AndereGemeente VTE Administratieve en Juridische ondersteuning": "-",
-    "RO AndereGemeente Gecombineerde functie": "-",
-    "RO AndereGemeente Verbalisant": "-",
-    "RO AndereGemeente Stedenbouwkundige Inspecteurs": "-",
-    "RO AndereGemeente VTE Gecombineerde functie": "-",
-    "RO AndereGemeente VTE Verbalisant": "-",
-    "RO AndereGemeente VTE Stedenbouwkundige Inspecteurs": "-",
-    "RO AndereGemeente VTE Administratieve en Juridische ondersteuning": "-",
-    "Milieu Klachten": 183,
-    "Milieu Milieubeheer": 0,
-    "Milieu Lucht": 4,
-    "Milieu Water": 32,
-    "Milieu Bodem": 4,
-    "Milieu Geluid": 19,
-    "Milieu Vergunningen": 19,
-    "Milieu Mest": 1,
-    "Milieu Afval": 51,
-    "Milieu Andere": 53,
-    "RO Klachten": 829,
-    "Milieu IGS Klachten": "-",
-    "Milieubeheer IGS": "-",
-    "Lucht IGS": "-",
-    "Water IGS": "-",
-    "Bodem IGS": "-",
-    "Geluid IGS": "-",
-    "Vergunningen IGS": "-",
-    "Mest IGS": "-",
-    "Afval IGS": "-",
-    "Andere IGS": "-",
-    "RO IGS Klachten": "-",
-    "Milieu LP Klachten": 26,
-    "Milieubeheer LP": 0,
-    "Lucht LP": 0,
-    "Water LP": 0,
-    "Bodem LP": 0,
-    "Geluid LP": 26,
-    "Vergunningen LP": 0,
-    "Mest LP": 0,
-    "Afval LP": 0,
-    "Overige LP": 0,
-    "RO LP Klachten": 0,
-    "Milieu AndereGemeente Klachten": "-",
-    "Milieu AndereGemeente Milieubeheer": "-",
-    "Milieu AndereGemeente Lucht": "-",
-    "Milieu AndereGemeente Water": "-",
-    "Milieu AndereGemeente Bodem": "-",
-    "Milieu AndereGemeente Geluid": "-",
-    "Milieu AndereGemeente Vergunningen": "-",
-    "Milieu AndereGemeente Mest": "-",
-    "Milieu AndereGemeente Afval": "-",
-    "Milieu AndereGemeente Andere": "-",
-    "RO AndereGemeente Klachten": "-",
-    "Milieu Controles": "480",
-    "Milieu Controles Navolgende Aanleiding Schending": "30",
-    "Milieu Controles Aanvankelijk Aanleiding Klacht": "143",
-    "Milieu Controles Navolgende Aanleiding Klacht": "160",
-    "Milieu Controles Aanvankelijk op eigen initiatief": "100",
-    "Milieu Controles Navolgende op eigen initiatief": "80",
-    "Milieu Aanvankelijke Controles": "143",
-    "Milieu Aanvankelijke Controles Milieubeheer": "0",
-    "Milieu Aanvankelijke Controles Lucht": "4",
-    "Milieu Aanvankelijke Controles Water": "32",
-    "Milieu Aanvankelijke Controles Bodem": "4",
-    "Milieu Aanvankelijke Controles Geluid": "19",
-    "Milieu Aanvankelijke Controles Vergunningen": "19",
-    "Milieu Aanvankelijke Controles Mest": "1",
-    "Milieu Aanvankelijke Controles Afval": "51",
-    "Milieu Aanvankelijke Controles Andere": "13",
-    "RO Controles": "877",
-    "RO Controles Navolgende Aanleiding Schending": "niet gekend",
-    "RO Controles Aanvankelijk Aanleiding Klacht": "535",
-    "RO Controles Navolgende Aanleiding Klacht": "329",
-    "RO Controles Aanvankelijk op eigen initiatief": "0",
-    "RO Controles Navolgende op eigen initiatief": "niet gekend",
-    "RO Aanvankelijke Controles": "niet gekend",
-    "Milieu IGS Controles": "-",
-    "Milieu IGS Controles Navolgende Aanleiding Schending": "-",
-    "Milieu IGS Controles Aanvankelijk Aanleiding Klacht": "-",
-    "Milieu IGS Controles Navolgende Aanleiding Klacht": "-",
-    "Milieu IGS Controles Aanvankelijk op eigen initiatief": "-",
-    "Milieu IGS Controles Navolgende op eigen initiatief": "-",
-    "Milieu IGS Aanvankelijke Controles": "-",
-    "Milieu IGS Aanvankelijke Controles Milieubeheer": "-",
-    "Milieu IGS Aanvankelijke Controles Lucht": "-",
-    "Milieu IGS Aanvankelijke Controles Water": "-",
-    "Milieu IGS Aanvankelijke Controles Bodem": "-",
-    "Milieu IGS Aanvankelijke Controles Geluid": "-",
-    "Milieu IGS Aanvankelijke Controles Vergunningen": "-",
-    "Milieu IGS Aanvankelijke Controles Mest": "-",
-    "Milieu IGS Aanvankelijke Controles Afval": "-",
-    "Milieu IGS Aanvankelijke Controles Andere": "-",
-    "RO IGS Controles": "-",
-    "RO IGS Controles Navolgende Aanleiding Schending": "-",
-    "RO IGS Controles Aanvankelijk Aanleiding Klacht": "-",
-    "RO IGS Controles Navolgende Aanleiding Klacht": "-",
-    "RO IGS Controles Aanvankelijk op eigen initiatief": "-",
-    "RO IGS Controles Navolgende op eigen initiatief": "-",
-    "RO IGS Aanvankelijke Controles": "-",
     "Milieu LP Controles": "0",
     "Milieu LP Controles Navolgende Aanleiding Schending": "0",
     "Milieu LP Controles Aanvankelijk Aanleiding Klacht": "0",
@@ -2562,15 +2585,15 @@
     "RO Controles Overtredingsgraad": "-",
     "RO IGS Controles Overtredingsgraad": "-",
     "Milieu LP Controles Overtredingsgraad": "-",
-    "Milieu Raadgeving": "2",
-    "Milieu Aanmaning": "305",
-    "Milieu Verslag van Vaststelling": "0",
-    "Milieu Proces-verbaal": "2",
-    "Milieu Bestuurlijke maatregelen Zonder Dwangsom": "0",
+    "Milieu Raadgeving": "-",
+    "Milieu Aanmaning": "-",
+    "Milieu Verslag van Vaststelling": "-",
+    "Milieu Proces-verbaal": "-",
+    "Milieu Bestuurlijke maatregelen Zonder Dwangsom": "-",
     "Milieu Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "-",
-    "Milieu Bestuurlijke maatregelen Met Dwangsom": "0",
+    "Milieu Bestuurlijke maatregelen Met Dwangsom": "-",
     "Milieu Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "-",
-    "Milieu Veiligheidsmaatregel": "0",
+    "Milieu Veiligheidsmaatregel": "-",
     "Milieu Veiligheidsmaatregel tijdig uitgevoerd": "-",
     "RO Raadgeving": "-",
     "RO Aanmaning": "-",
@@ -2647,22 +2670,24 @@
     "Ambtshalve uitvoering gerechtelijke herstelmaartegel": "-",
     "Milieu AndereGemeente Raageving": "-",
     "Milieu Bestuurlijke maatregelen": "-",
-    "RO Herstel gevorderd bij burgerlijk rechter": "-"
+    "RO Herstel gevorderd bij burgerlijk rechter": "-",
+    "PFAS": "Neen",
+    "Stikstof": "Neen"
   },
-  {
-    "Actor": "Antwerpen",
-    "Beleidsniveau": "Gemeente",
+  "10": {
+    "Actor": "Vlaamse Wooninspectie",
+    "Beleidsniveau": "Gewest",
     "Respons": "respons",
-    "Milieu Toezichthouders": 5,
-    "Milieu VTE Toezichthouders": "3",
-    "Milieu VTE Administratieve en Juridische ondersteuning": "0,2",
-    "RO Gecombineerde functie": "0",
-    "RO Verbalisanten": "7",
-    "RO Stedenbouwkundige Inspecteurs": "0",
-    "RO VTE Gecombineerde functie": "niet gekend",
-    "RO VTE Verbalisanten": "5,3",
-    "RO VTE Stedenbouwkundige Inspecteurs": "niet gekend",
-    "RO VTE Administratieve en Juridische ondersteuning": "7,5",
+    "Milieu Toezichthouders": "-",
+    "Milieu VTE Toezichthouders": "-",
+    "Milieu VTE Administratieve en Juridische ondersteuning": "-",
+    "RO Gecombineerde functie": "-",
+    "RO Verbalisanten": "10",
+    "RO Stedenbouwkundige Inspecteurs": "-",
+    "RO VTE Gecombineerde functie": "-",
+    "RO VTE Verbalisanten": "0",
+    "RO VTE Stedenbouwkundige Inspecteurs": "-",
+    "RO VTE Administratieve en Juridische ondersteuning": "0",
     "Milieu IGS Toezichthouders": "-",
     "Milieu IGS VTE Toezichthouders": "-",
     "Milieu IGS VTE Administratieve en Juridische ondersteuning": "-",
@@ -2687,17 +2712,17 @@
     "RO AndereGemeente VTE Verbalisant": "-",
     "RO AndereGemeente VTE Stedenbouwkundige Inspecteurs": "-",
     "RO AndereGemeente VTE Administratieve en Juridische ondersteuning": "-",
-    "Milieu Klachten": 183,
-    "Milieu Milieubeheer": 0,
-    "Milieu Lucht": 4,
-    "Milieu Water": 32,
-    "Milieu Bodem": 4,
-    "Milieu Geluid": 19,
-    "Milieu Vergunningen": 19,
-    "Milieu Mest": 1,
-    "Milieu Afval": 51,
-    "Milieu Andere": 53,
-    "RO Klachten": 829,
+    "Milieu Klachten": "-",
+    "Milieu Milieubeheer": "-",
+    "Milieu Lucht": "-",
+    "Milieu Water": "-",
+    "Milieu Bodem": "-",
+    "Milieu Geluid": "-",
+    "Milieu Vergunningen": "-",
+    "Milieu Mest": "-",
+    "Milieu Afval": "-",
+    "Milieu Andere": "-",
+    "RO Klachten": 0,
     "Milieu IGS Klachten": "-",
     "Milieubeheer IGS": "-",
     "Lucht IGS": "-",
@@ -2731,29 +2756,29 @@
     "Milieu AndereGemeente Afval": "-",
     "Milieu AndereGemeente Andere": "-",
     "RO AndereGemeente Klachten": "-",
-    "Milieu Controles": "480",
-    "Milieu Controles Navolgende Aanleiding Schending": "30",
-    "Milieu Controles Aanvankelijk Aanleiding Klacht": "143",
-    "Milieu Controles Navolgende Aanleiding Klacht": "160",
-    "Milieu Controles Aanvankelijk op eigen initiatief": "100",
-    "Milieu Controles Navolgende op eigen initiatief": "80",
-    "Milieu Aanvankelijke Controles": "143",
-    "Milieu Aanvankelijke Controles Milieubeheer": "0",
-    "Milieu Aanvankelijke Controles Lucht": "4",
-    "Milieu Aanvankelijke Controles Water": "32",
-    "Milieu Aanvankelijke Controles Bodem": "4",
-    "Milieu Aanvankelijke Controles Geluid": "19",
-    "Milieu Aanvankelijke Controles Vergunningen": "19",
-    "Milieu Aanvankelijke Controles Mest": "1",
-    "Milieu Aanvankelijke Controles Afval": "51",
-    "Milieu Aanvankelijke Controles Andere": "13",
-    "RO Controles": "877",
-    "RO Controles Navolgende Aanleiding Schending": "niet gekend",
-    "RO Controles Aanvankelijk Aanleiding Klacht": "535",
-    "RO Controles Navolgende Aanleiding Klacht": "329",
+    "Milieu Controles": "-",
+    "Milieu Controles Navolgende Aanleiding Schending": "-",
+    "Milieu Controles Aanvankelijk Aanleiding Klacht": "-",
+    "Milieu Controles Navolgende Aanleiding Klacht": "-",
+    "Milieu Controles Aanvankelijk op eigen initiatief": "-",
+    "Milieu Controles Navolgende op eigen initiatief": "-",
+    "Milieu Aanvankelijke Controles": "-",
+    "Milieu Aanvankelijke Controles Milieubeheer": "-",
+    "Milieu Aanvankelijke Controles Lucht": "-",
+    "Milieu Aanvankelijke Controles Water": "-",
+    "Milieu Aanvankelijke Controles Bodem": "-",
+    "Milieu Aanvankelijke Controles Geluid": "-",
+    "Milieu Aanvankelijke Controles Vergunningen": "-",
+    "Milieu Aanvankelijke Controles Mest": "-",
+    "Milieu Aanvankelijke Controles Afval": "-",
+    "Milieu Aanvankelijke Controles Andere": "-",
+    "RO Controles": "0",
+    "RO Controles Navolgende Aanleiding Schending": "0",
+    "RO Controles Aanvankelijk Aanleiding Klacht": "0",
+    "RO Controles Navolgende Aanleiding Klacht": "0",
     "RO Controles Aanvankelijk op eigen initiatief": "0",
-    "RO Controles Navolgende op eigen initiatief": "niet gekend",
-    "RO Aanvankelijke Controles": "niet gekend",
+    "RO Controles Navolgende op eigen initiatief": "0",
+    "RO Aanvankelijke Controles": "0",
     "Milieu IGS Controles": "-",
     "Milieu IGS Controles Navolgende Aanleiding Schending": "-",
     "Milieu IGS Controles Aanvankelijk Aanleiding Klacht": "-",
@@ -2827,28 +2852,28 @@
     "RO Controles Overtredingsgraad": "-",
     "RO IGS Controles Overtredingsgraad": "-",
     "Milieu LP Controles Overtredingsgraad": "-",
-    "Milieu Raadgeving": "17",
-    "Milieu Aanmaning": "127",
-    "Milieu Verslag van Vaststelling": "0",
-    "Milieu Proces-verbaal": "41",
-    "Milieu Bestuurlijke maatregelen Zonder Dwangsom": "27",
-    "Milieu Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "2",
-    "Milieu Bestuurlijke maatregelen Met Dwangsom": "0",
-    "Milieu Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "0",
-    "Milieu Veiligheidsmaatregel": "0",
-    "Milieu Veiligheidsmaatregel tijdig uitgevoerd": "0",
-    "RO Raadgeving": "43",
-    "RO Aanmaning": "133",
-    "RO Verslag van Vaststelling": "57",
-    "RO Proces-verbaal": "295",
-    "RO Bevel tot staking": "63",
-    "RO Bestuurlijke maatregelen Zonder Dwangsom": "0",
-    "RO Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "0",
-    "RO Bestuurlijke maatregelen Met Dwangsom": "11",
-    "RO Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "9",
-    "RO Afgesloten minnelijke schikking": "0",
-    "RO Ingeleide herstelvordering bij Openbaar Ministerie": "1",
-    "RO Ambtshalve uitvoering gerechtelijke herstelmaatregel": "0",
+    "Milieu Raadgeving": "-",
+    "Milieu Aanmaning": "-",
+    "Milieu Verslag van Vaststelling": "-",
+    "Milieu Proces-verbaal": "-",
+    "Milieu Bestuurlijke maatregelen Zonder Dwangsom": "-",
+    "Milieu Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "-",
+    "Milieu Bestuurlijke maatregelen Met Dwangsom": "-",
+    "Milieu Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "-",
+    "Milieu Veiligheidsmaatregel": "-",
+    "Milieu Veiligheidsmaatregel tijdig uitgevoerd": "-",
+    "RO Raadgeving": "-",
+    "RO Aanmaning": "-",
+    "RO Verslag van Vaststelling": "-",
+    "RO Proces-verbaal": "-",
+    "RO Bevel tot staking": "-",
+    "RO Bestuurlijke maatregelen Zonder Dwangsom": "-",
+    "RO Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "-",
+    "RO Bestuurlijke maatregelen Met Dwangsom": "-",
+    "RO Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "-",
+    "RO Afgesloten minnelijke schikking": "-",
+    "RO Ingeleide herstelvordering bij Openbaar Ministerie": "-",
+    "RO Ambtshalve uitvoering gerechtelijke herstelmaatregel": "-",
     "Milieu IGS Raadgeving": "-",
     "Milieu IGS Aanmaning": "-",
     "Milieu IGS Verslag van Vaststelling": "-",
@@ -2912,15 +2937,17 @@
     "Ambtshalve uitvoering gerechtelijke herstelmaartegel": "-",
     "Milieu AndereGemeente Raageving": "-",
     "Milieu Bestuurlijke maatregelen": "-",
-    "RO Herstel gevorderd bij burgerlijk rechter": "-"
+    "RO Herstel gevorderd bij burgerlijk rechter": "-",
+    "PFAS": "Neen",
+    "Stikstof": "Neen"
   },
-  {
-    "Actor": "Anzegem",
-    "Beleidsniveau": "Gemeente",
+  "11": {
+    "Actor": "Departement Mobiliteit en Openbare Werken",
+    "Beleidsniveau": "Gewest",
     "Respons": "respons",
-    "Milieu Toezichthouders": 1,
-    "Milieu VTE Toezichthouders": "0,05",
-    "Milieu VTE Administratieve en Juridische ondersteuning": "0,02",
+    "Milieu Toezichthouders": "-",
+    "Milieu VTE Toezichthouders": "-",
+    "Milieu VTE Administratieve en Juridische ondersteuning": "-",
     "RO Gecombineerde functie": "-",
     "RO Verbalisanten": "-",
     "RO Stedenbouwkundige Inspecteurs": "-",
@@ -2952,16 +2979,16 @@
     "RO AndereGemeente VTE Verbalisant": "-",
     "RO AndereGemeente VTE Stedenbouwkundige Inspecteurs": "-",
     "RO AndereGemeente VTE Administratieve en Juridische ondersteuning": "-",
-    "Milieu Klachten": 19,
-    "Milieu Milieubeheer": 0,
-    "Milieu Lucht": 2,
-    "Milieu Water": 1,
-    "Milieu Bodem": 1,
-    "Milieu Geluid": 10,
-    "Milieu Vergunningen": 1,
-    "Milieu Mest": 1,
-    "Milieu Afval": 2,
-    "Milieu Andere": 1,
+    "Milieu Klachten": "-",
+    "Milieu Milieubeheer": "-",
+    "Milieu Lucht": "-",
+    "Milieu Water": "-",
+    "Milieu Bodem": "-",
+    "Milieu Geluid": "-",
+    "Milieu Vergunningen": "-",
+    "Milieu Mest": "-",
+    "Milieu Afval": "-",
+    "Milieu Andere": "-",
     "RO Klachten": "-",
     "Milieu IGS Klachten": "-",
     "Milieubeheer IGS": "-",
@@ -2996,22 +3023,22 @@
     "Milieu AndereGemeente Afval": "-",
     "Milieu AndereGemeente Andere": "-",
     "RO AndereGemeente Klachten": "-",
-    "Milieu Controles": "11",
-    "Milieu Controles Navolgende Aanleiding Schending": "2",
-    "Milieu Controles Aanvankelijk Aanleiding Klacht": "7",
-    "Milieu Controles Navolgende Aanleiding Klacht": "2",
-    "Milieu Controles Aanvankelijk op eigen initiatief": "0",
-    "Milieu Controles Navolgende op eigen initiatief": "0",
-    "Milieu Aanvankelijke Controles": "x",
-    "Milieu Aanvankelijke Controles Milieubeheer": "x",
-    "Milieu Aanvankelijke Controles Lucht": "x",
-    "Milieu Aanvankelijke Controles Water": "x",
-    "Milieu Aanvankelijke Controles Bodem": "x",
-    "Milieu Aanvankelijke Controles Geluid": "x",
-    "Milieu Aanvankelijke Controles Vergunningen": "x",
-    "Milieu Aanvankelijke Controles Mest": "x",
-    "Milieu Aanvankelijke Controles Afval": "x",
-    "Milieu Aanvankelijke Controles Andere": "x",
+    "Milieu Controles": "-",
+    "Milieu Controles Navolgende Aanleiding Schending": "-",
+    "Milieu Controles Aanvankelijk Aanleiding Klacht": "-",
+    "Milieu Controles Navolgende Aanleiding Klacht": "-",
+    "Milieu Controles Aanvankelijk op eigen initiatief": "-",
+    "Milieu Controles Navolgende op eigen initiatief": "-",
+    "Milieu Aanvankelijke Controles": "-",
+    "Milieu Aanvankelijke Controles Milieubeheer": "-",
+    "Milieu Aanvankelijke Controles Lucht": "-",
+    "Milieu Aanvankelijke Controles Water": "-",
+    "Milieu Aanvankelijke Controles Bodem": "-",
+    "Milieu Aanvankelijke Controles Geluid": "-",
+    "Milieu Aanvankelijke Controles Vergunningen": "-",
+    "Milieu Aanvankelijke Controles Mest": "-",
+    "Milieu Aanvankelijke Controles Afval": "-",
+    "Milieu Aanvankelijke Controles Andere": "-",
     "RO Controles": "-",
     "RO Controles Navolgende Aanleiding Schending": "-",
     "RO Controles Aanvankelijk Aanleiding Klacht": "-",
@@ -3092,16 +3119,16 @@
     "RO Controles Overtredingsgraad": "-",
     "RO IGS Controles Overtredingsgraad": "-",
     "Milieu LP Controles Overtredingsgraad": "-",
-    "Milieu Raadgeving": "7",
-    "Milieu Aanmaning": "1",
-    "Milieu Verslag van Vaststelling": "0",
-    "Milieu Proces-verbaal": "0",
-    "Milieu Bestuurlijke maatregelen Zonder Dwangsom": "0",
-    "Milieu Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "0",
-    "Milieu Bestuurlijke maatregelen Met Dwangsom": "0",
-    "Milieu Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "0",
-    "Milieu Veiligheidsmaatregel": "0",
-    "Milieu Veiligheidsmaatregel tijdig uitgevoerd": "0",
+    "Milieu Raadgeving": "-",
+    "Milieu Aanmaning": "-",
+    "Milieu Verslag van Vaststelling": "-",
+    "Milieu Proces-verbaal": "-",
+    "Milieu Bestuurlijke maatregelen Zonder Dwangsom": "-",
+    "Milieu Bestuurlijke maatregelen Zonder Dwangsom tijdig uitgevoerd": "-",
+    "Milieu Bestuurlijke maatregelen Met Dwangsom": "-",
+    "Milieu Bestuurlijke maatregelen Met Dwangsom tijdig uitgevoerd": "-",
+    "Milieu Veiligheidsmaatregel": "-",
+    "Milieu Veiligheidsmaatregel tijdig uitgevoerd": "-",
     "RO Raadgeving": "-",
     "RO Aanmaning": "-",
     "RO Verslag van Vaststelling": "-",
@@ -3177,9 +3204,11 @@
     "Ambtshalve uitvoering gerechtelijke herstelmaartegel": "-",
     "Milieu AndereGemeente Raageving": "-",
     "Milieu Bestuurlijke maatregelen": "-",
-    "RO Herstel gevorderd bij burgerlijk rechter": "-"
+    "RO Herstel gevorderd bij burgerlijk rechter": "-",
+    "PFAS": "Neen",
+    "Stikstof": "Neen"
   },
-  {
+  "12": {
     "Actor": "Ardooie",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -3444,7 +3473,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "13": {
     "Actor": "Arendonk",
     "Beleidsniveau": "Gemeente",
     "Respons": "non-respons",
@@ -3709,7 +3738,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "14": {
     "Actor": "As",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -3974,7 +4003,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "15": {
     "Actor": "Asse",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -4239,7 +4268,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "16": {
     "Actor": "Assenede",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -4504,7 +4533,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "17": {
     "Actor": "Avelgem",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -4769,7 +4798,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "18": {
     "Actor": "Baarle-Hertog",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -5034,7 +5063,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "19": {
     "Actor": "Balen",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -5299,7 +5328,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "20": {
     "Actor": "Beernem",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -5564,7 +5593,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "21": {
     "Actor": "Beerse",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -5829,7 +5858,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "22": {
     "Actor": "Beersel",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -6094,7 +6123,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "23": {
     "Actor": "Begijnendijk",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -6359,7 +6388,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "24": {
     "Actor": "Bekkevoort",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -6624,7 +6653,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "25": {
     "Actor": "Beringen",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -6889,7 +6918,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "26": {
     "Actor": "Berlaar",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -7154,7 +7183,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "27": {
     "Actor": "Berlare",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -7419,7 +7448,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "28": {
     "Actor": "Bertem",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -7684,7 +7713,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "29": {
     "Actor": "Bever",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -7949,7 +7978,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "30": {
     "Actor": "Beveren",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -8214,7 +8243,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "31": {
     "Actor": "Bierbeek",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -8479,7 +8508,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "32": {
     "Actor": "Bilzen",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -8744,7 +8773,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "33": {
     "Actor": "Blankenberge",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -9009,7 +9038,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "34": {
     "Actor": "Bocholt",
     "Beleidsniveau": "Gemeente",
     "Respons": "non-respons",
@@ -9274,7 +9303,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "35": {
     "Actor": "Boechout",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -9539,7 +9568,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "36": {
     "Actor": "Boom",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -9804,7 +9833,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "37": {
     "Actor": "Boortmeerbeek",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -10069,7 +10098,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "38": {
     "Actor": "Borgloon",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -10334,7 +10363,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "39": {
     "Actor": "Bornem",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -10599,7 +10628,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "40": {
     "Actor": "Borsbeek",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -10864,7 +10893,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "41": {
     "Actor": "Boutersem",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -11129,7 +11158,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "42": {
     "Actor": "Brakel",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -11394,7 +11423,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "43": {
     "Actor": "Brasschaat",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -11659,7 +11688,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "44": {
     "Actor": "Brecht",
     "Beleidsniveau": "Gemeente",
     "Respons": "non-respons",
@@ -11924,7 +11953,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "45": {
     "Actor": "Bredene",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -12189,7 +12218,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "46": {
     "Actor": "Bree",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -12454,7 +12483,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "47": {
     "Actor": "Brugge",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -12719,7 +12748,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "48": {
     "Actor": "Buggenhout",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -12984,7 +13013,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "49": {
     "Actor": "Damme",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -13249,7 +13278,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "50": {
     "Actor": "De Haan",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -13514,7 +13543,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "51": {
     "Actor": "De Panne",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -13779,7 +13808,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "52": {
     "Actor": "De Pinte",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -14044,7 +14073,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "53": {
     "Actor": "Deerlijk",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -14309,7 +14338,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "54": {
     "Actor": "Deinze",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -14574,7 +14603,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "55": {
     "Actor": "Denderleeuw",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -14839,7 +14868,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "56": {
     "Actor": "Dendermonde",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -15104,7 +15133,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "57": {
     "Actor": "Dentergem",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -15369,7 +15398,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "58": {
     "Actor": "Dessel",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -15634,7 +15663,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "59": {
     "Actor": "Destelbergen",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -15899,7 +15928,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "60": {
     "Actor": "Diepenbeek",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -16164,7 +16193,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "61": {
     "Actor": "Diest",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -16429,7 +16458,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "62": {
     "Actor": "Diksmuide",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -16694,7 +16723,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "63": {
     "Actor": "Dilbeek",
     "Beleidsniveau": "Gemeente",
     "Respons": "non-respons",
@@ -16959,7 +16988,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "64": {
     "Actor": "Dilsen-Stokkem",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -17224,7 +17253,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "65": {
     "Actor": "Drogenbos",
     "Beleidsniveau": "Gemeente",
     "Respons": "non-respons",
@@ -17489,7 +17518,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "66": {
     "Actor": "Duffel",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -17754,7 +17783,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "67": {
     "Actor": "Edegem",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -18019,7 +18048,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "68": {
     "Actor": "Eeklo",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -18284,7 +18313,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "69": {
     "Actor": "Erpe-Mere",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -18549,7 +18578,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "70": {
     "Actor": "Essen",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -18814,7 +18843,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "71": {
     "Actor": "Evergem",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -19079,7 +19108,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "72": {
     "Actor": "Galmaarden",
     "Beleidsniveau": "Gemeente",
     "Respons": "non-respons",
@@ -19344,7 +19373,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "73": {
     "Actor": "Gavere",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -19609,7 +19638,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "74": {
     "Actor": "Geel",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -19874,7 +19903,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "75": {
     "Actor": "Geetbets",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -20139,7 +20168,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "76": {
     "Actor": "Gemeente Bonheiden",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -20404,7 +20433,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "77": {
     "Actor": "Genk",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -20669,7 +20698,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "78": {
     "Actor": "Gent",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -20934,7 +20963,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "79": {
     "Actor": "Geraardsbergen",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -21199,7 +21228,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "80": {
     "Actor": "Gingelom",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -21464,7 +21493,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "81": {
     "Actor": "Gistel",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -21729,7 +21758,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "82": {
     "Actor": "Glabbeek",
     "Beleidsniveau": "Gemeente",
     "Respons": "non-respons",
@@ -21994,7 +22023,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "83": {
     "Actor": "Gooik",
     "Beleidsniveau": "Gemeente",
     "Respons": "non-respons",
@@ -22259,7 +22288,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "84": {
     "Actor": "Grimbergen",
     "Beleidsniveau": "Gemeente",
     "Respons": "non-respons",
@@ -22524,7 +22553,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "85": {
     "Actor": "Grobbendonk",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -22789,7 +22818,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "86": {
     "Actor": "Haacht",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -23054,7 +23083,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "87": {
     "Actor": "Haaltert",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -23319,7 +23348,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "88": {
     "Actor": "Halen",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -23584,7 +23613,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "89": {
     "Actor": "Halle",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -23849,7 +23878,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "90": {
     "Actor": "Ham",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -24114,7 +24143,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "91": {
     "Actor": "Hamme",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -24379,7 +24408,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "92": {
     "Actor": "Hamont-Achel",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -24644,7 +24673,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "93": {
     "Actor": "Harelbeke",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -24909,7 +24938,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "94": {
     "Actor": "Hechtel-Eksel",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -25174,7 +25203,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "95": {
     "Actor": "Heers",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -25439,7 +25468,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "96": {
     "Actor": "Heist-op-den-Berg",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -25704,7 +25733,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "97": {
     "Actor": "Hemiksem",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -25969,7 +25998,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "98": {
     "Actor": "Herent",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -26234,7 +26263,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "99": {
     "Actor": "Herentals",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -26499,7 +26528,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "100": {
     "Actor": "Herenthout",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -26764,7 +26793,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "101": {
     "Actor": "Herk-de-Stad",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -27029,7 +27058,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "102": {
     "Actor": "Herk-de-Stad",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -27294,7 +27323,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "103": {
     "Actor": "Herk-de-Stad",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -27559,7 +27588,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "104": {
     "Actor": "Herk-de-Stad",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -27824,7 +27853,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "105": {
     "Actor": "Herk-de-Stad",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -28089,7 +28118,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "106": {
     "Actor": "Herk-de-Stad",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -28354,7 +28383,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "107": {
     "Actor": "Herk-de-Stad",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -28619,7 +28648,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "108": {
     "Actor": "Herk-de-Stad",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -28884,7 +28913,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "109": {
     "Actor": "Herk-de-Stad",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -29149,7 +29178,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "110": {
     "Actor": "Herk-de-Stad",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -29414,7 +29443,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "111": {
     "Actor": "Herk-de-Stad",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -29679,7 +29708,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "112": {
     "Actor": "Herk-de-Stad",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -29944,7 +29973,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "113": {
     "Actor": "Herk-de-Stad",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -30209,7 +30238,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "114": {
     "Actor": "Herk-de-Stad",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -30474,7 +30503,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "115": {
     "Actor": "Herk-de-Stad",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -30739,7 +30768,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "116": {
     "Actor": "Herk-de-Stad",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -31004,7 +31033,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "117": {
     "Actor": "Herne",
     "Beleidsniveau": "Gemeente",
     "Respons": "non-respons",
@@ -31269,7 +31298,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "118": {
     "Actor": "Herselt",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -31534,7 +31563,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "119": {
     "Actor": "Herstappe",
     "Beleidsniveau": "Gemeente",
     "Respons": "non-respons",
@@ -31799,7 +31828,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "120": {
     "Actor": "Herzele",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -32064,7 +32093,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "121": {
     "Actor": "Heusden-Zolder",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -32329,7 +32358,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "122": {
     "Actor": "Heuvelland",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -32594,7 +32623,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "123": {
     "Actor": "Hoegaarden",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -32859,7 +32888,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "124": {
     "Actor": "Hoeilaart",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -33124,7 +33153,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "125": {
     "Actor": "Hoeselt",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -33389,7 +33418,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "126": {
     "Actor": "Holsbeek",
     "Beleidsniveau": "Gemeente",
     "Respons": "non-respons",
@@ -33654,7 +33683,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "127": {
     "Actor": "Hooglede",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -33919,7 +33948,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "128": {
     "Actor": "Hoogstraten",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -34184,7 +34213,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "129": {
     "Actor": "Horebeke",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -34449,7 +34478,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "130": {
     "Actor": "Houthalen-Helchteren",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -34714,7 +34743,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "131": {
     "Actor": "Houthulst",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -34979,7 +35008,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "132": {
     "Actor": "Hove",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -35244,7 +35273,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "133": {
     "Actor": "Huldenberg",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -35509,7 +35538,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "134": {
     "Actor": "Hulshout",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -35774,7 +35803,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "135": {
     "Actor": "Ichtegem",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -36039,7 +36068,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "136": {
     "Actor": "Ieper",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -36304,7 +36333,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "137": {
     "Actor": "Ingelmunster",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -36569,7 +36598,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "138": {
     "Actor": "Izegem",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -36834,7 +36863,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "139": {
     "Actor": "Jabbeke",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -37099,7 +37128,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "140": {
     "Actor": "Kalmthout",
     "Beleidsniveau": "Gemeente",
     "Respons": "non-respons",
@@ -37364,7 +37393,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "141": {
     "Actor": "Kampenhout",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -37629,7 +37658,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "142": {
     "Actor": "Kapelle-op-den-Bos",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -37894,7 +37923,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "143": {
     "Actor": "Kapellen",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -38159,7 +38188,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "144": {
     "Actor": "Kaprijke",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -38424,7 +38453,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "145": {
     "Actor": "Kasterlee",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -38689,7 +38718,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "146": {
     "Actor": "Keerbergen",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -38954,7 +38983,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "147": {
     "Actor": "Kinrooi",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -39219,7 +39248,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "148": {
     "Actor": "Kluisbergen",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -39484,7 +39513,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "149": {
     "Actor": "Knokke-Heist",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -39749,7 +39778,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "150": {
     "Actor": "Koekelare",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -40014,7 +40043,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "151": {
     "Actor": "Koksijde",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -40279,7 +40308,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "152": {
     "Actor": "Kontich",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -40544,7 +40573,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "153": {
     "Actor": "Kortemark",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -40809,7 +40838,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "154": {
     "Actor": "Kortenaken",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -41074,7 +41103,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "155": {
     "Actor": "Kortenberg",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -41339,7 +41368,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "156": {
     "Actor": "Kortessem",
     "Beleidsniveau": "Gemeente",
     "Respons": "non-respons",
@@ -41604,7 +41633,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "157": {
     "Actor": "Kortrijk",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -41869,7 +41898,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "158": {
     "Actor": "Kraainem",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -42134,7 +42163,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "159": {
     "Actor": "Kruibeke",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -42399,7 +42428,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "160": {
     "Actor": "Kruisem",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -42664,7 +42693,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "161": {
     "Actor": "Kuurne",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -42929,7 +42958,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "162": {
     "Actor": "Laakdal",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -43194,7 +43223,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "163": {
     "Actor": "Laarne",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -43459,7 +43488,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "164": {
     "Actor": "Lanaken",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -43724,7 +43753,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "165": {
     "Actor": "Landen",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -43989,7 +44018,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "166": {
     "Actor": "Langemark-Poelkapelle",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -44254,7 +44283,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "167": {
     "Actor": "Lebbeke",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -44519,7 +44548,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "168": {
     "Actor": "Lede",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -44784,7 +44813,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "169": {
     "Actor": "Ledegem",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -45049,7 +45078,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "170": {
     "Actor": "Lendelede",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -45314,7 +45343,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "171": {
     "Actor": "Lennik",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -45579,7 +45608,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "172": {
     "Actor": "Leopoldsburg",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -45844,7 +45873,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "173": {
     "Actor": "Leuven",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -46109,7 +46138,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "174": {
     "Actor": "Lichtervelde",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -46374,7 +46403,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "175": {
     "Actor": "Liedekerke",
     "Beleidsniveau": "Gemeente",
     "Respons": "non-respons",
@@ -46639,7 +46668,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "176": {
     "Actor": "Lier",
     "Beleidsniveau": "Gemeente",
     "Respons": "non-respons",
@@ -46904,7 +46933,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "177": {
     "Actor": "Lierde",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -47169,7 +47198,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "178": {
     "Actor": "Lievegem",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -47434,7 +47463,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "179": {
     "Actor": "Lille",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -47699,7 +47728,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "180": {
     "Actor": "Linkebeek",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -47964,7 +47993,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "181": {
     "Actor": "Lint",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -48229,7 +48258,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "182": {
     "Actor": "Linter",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -48494,7 +48523,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "183": {
     "Actor": "Lo-Reninge",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -48759,7 +48788,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "184": {
     "Actor": "Lochristi",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -49024,7 +49053,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "185": {
     "Actor": "Lokeren",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -49289,7 +49318,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "186": {
     "Actor": "Lommel",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -49554,7 +49583,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "187": {
     "Actor": "Londerzeel",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -49819,7 +49848,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "188": {
     "Actor": "Lubbeek",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -50084,7 +50113,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "189": {
     "Actor": "Lummen",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -50349,7 +50378,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "190": {
     "Actor": "Maarkedal",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -50614,7 +50643,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "191": {
     "Actor": "Maaseik",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -50879,7 +50908,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "192": {
     "Actor": "Maasmechelen",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -51144,7 +51173,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "193": {
     "Actor": "Machelen",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -51409,7 +51438,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "194": {
     "Actor": "Maldegem",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -51674,7 +51703,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "195": {
     "Actor": "Malle",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -51939,7 +51968,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "196": {
     "Actor": "Mechelen",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -52204,7 +52233,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "197": {
     "Actor": "Meerhout",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -52469,7 +52498,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "198": {
     "Actor": "Meise",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -52734,7 +52763,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "199": {
     "Actor": "Melle",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -52999,7 +53028,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "200": {
     "Actor": "Menen",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -53264,7 +53293,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "201": {
     "Actor": "Merchtem",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -53529,7 +53558,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "202": {
     "Actor": "Merelbeke",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -53794,7 +53823,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "203": {
     "Actor": "Merksplas",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -54059,7 +54088,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "204": {
     "Actor": "Mesen",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -54324,7 +54353,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "205": {
     "Actor": "Meulebeke",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -54589,7 +54618,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "206": {
     "Actor": "Middelkerke",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -54854,7 +54883,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "207": {
     "Actor": "Moerbeke",
     "Beleidsniveau": "Gemeente",
     "Respons": "non-respons",
@@ -55119,7 +55148,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "208": {
     "Actor": "Mol",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -55384,7 +55413,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "209": {
     "Actor": "Moorslede",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -55649,7 +55678,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "210": {
     "Actor": "Mortsel",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -55914,7 +55943,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "211": {
     "Actor": "Nazareth",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -56179,7 +56208,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "212": {
     "Actor": "Niel",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -56444,7 +56473,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "213": {
     "Actor": "Nieuwerkerken",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -56709,7 +56738,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "214": {
     "Actor": "Nieuwpoort",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -56974,7 +57003,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "215": {
     "Actor": "Nijlen",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -57239,7 +57268,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "216": {
     "Actor": "Ninove",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -57504,7 +57533,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "217": {
     "Actor": "Olen",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -57769,7 +57798,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "218": {
     "Actor": "Oostende",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -58034,7 +58063,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "219": {
     "Actor": "Oosterzele",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -58299,7 +58328,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "220": {
     "Actor": "Oostkamp",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -58564,7 +58593,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "221": {
     "Actor": "Oostrozebeke",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -58829,7 +58858,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "222": {
     "Actor": "Opwijk",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -59094,7 +59123,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "223": {
     "Actor": "Oud-Heverlee",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -59359,7 +59388,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "224": {
     "Actor": "Oud-Turnhout",
     "Beleidsniveau": "Gemeente",
     "Respons": "non-respons",
@@ -59624,7 +59653,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "225": {
     "Actor": "Oudenaarde",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -59889,7 +59918,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "226": {
     "Actor": "Oudenburg",
     "Beleidsniveau": "Gemeente",
     "Respons": "non-respons",
@@ -60154,7 +60183,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "227": {
     "Actor": "Oudsbergen",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -60419,7 +60448,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "228": {
     "Actor": "Overijse",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -60684,7 +60713,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "229": {
     "Actor": "Peer",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -60949,7 +60978,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "230": {
     "Actor": "Pelt",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -61214,7 +61243,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "231": {
     "Actor": "Pepingen",
     "Beleidsniveau": "Gemeente",
     "Respons": "non-respons",
@@ -61479,7 +61508,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "232": {
     "Actor": "Pittem",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -61744,7 +61773,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "233": {
     "Actor": "Poperinge",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -62009,7 +62038,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "234": {
     "Actor": "Putte",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -62274,7 +62303,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "235": {
     "Actor": "Puurs-Sint-Amands",
     "Beleidsniveau": "Gemeente",
     "Respons": "non-respons",
@@ -62539,7 +62568,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "236": {
     "Actor": "Ranst",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -62804,7 +62833,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "237": {
     "Actor": "Ravels",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -63069,7 +63098,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "238": {
     "Actor": "Retie",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -63334,7 +63363,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "239": {
     "Actor": "Riemst",
     "Beleidsniveau": "Gemeente",
     "Respons": "non-respons",
@@ -63599,7 +63628,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "240": {
     "Actor": "Rijkevorsel",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -63864,7 +63893,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "241": {
     "Actor": "Roeselare",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -64129,7 +64158,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "242": {
     "Actor": "Ronse",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -64394,7 +64423,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "243": {
     "Actor": "Roosdaal",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -64659,7 +64688,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "244": {
     "Actor": "Rotselaar",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -64924,7 +64953,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "245": {
     "Actor": "Ruiselede",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -65189,7 +65218,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "246": {
     "Actor": "Rumst",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -65454,7 +65483,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "247": {
     "Actor": "Schelle",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -65719,7 +65748,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "248": {
     "Actor": "Scherpenheuvel-Zichem",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -65984,7 +66013,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "249": {
     "Actor": "Schilde",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -66249,7 +66278,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "250": {
     "Actor": "Schoten",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -66514,7 +66543,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "251": {
     "Actor": "Sint-Genesius-Rode",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -66779,7 +66808,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "252": {
     "Actor": "Sint-Gillis-Waas",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -67044,7 +67073,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "253": {
     "Actor": "Sint-Katelijne-Waver",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -67309,7 +67338,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "254": {
     "Actor": "Sint-Laureins",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -67574,7 +67603,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "255": {
     "Actor": "Sint-Lievens-Houtem",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -67839,7 +67868,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "256": {
     "Actor": "Sint-Martens-Latem",
     "Beleidsniveau": "Gemeente",
     "Respons": "non-respons",
@@ -68104,7 +68133,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "257": {
     "Actor": "Sint-Niklaas",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -68369,7 +68398,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "258": {
     "Actor": "Sint-Pieters-Leeuw",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -68634,7 +68663,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "259": {
     "Actor": "Sint-Truiden",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -68899,7 +68928,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "260": {
     "Actor": "Spiere-Helkijn",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -69164,7 +69193,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "261": {
     "Actor": "Stabroek",
     "Beleidsniveau": "Gemeente",
     "Respons": "non-respons",
@@ -69429,7 +69458,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "262": {
     "Actor": "Stad Hasselt",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -69694,7 +69723,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "263": {
     "Actor": "Staden",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -69959,7 +69988,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "264": {
     "Actor": "Steenokkerzeel",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -70224,7 +70253,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "265": {
     "Actor": "Stekene",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -70489,7 +70518,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "266": {
     "Actor": "Temse",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -70754,7 +70783,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "267": {
     "Actor": "Ternat",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -71019,7 +71048,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "268": {
     "Actor": "Tervuren",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -71284,7 +71313,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "269": {
     "Actor": "Tessenderlo",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -71549,7 +71578,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "270": {
     "Actor": "Tielt",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -71814,7 +71843,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "271": {
     "Actor": "Tielt-Winge",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -72079,7 +72108,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "272": {
     "Actor": "Tienen",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -72344,7 +72373,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "273": {
     "Actor": "Tongeren",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -72609,7 +72638,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "274": {
     "Actor": "Torhout",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -72874,7 +72903,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "275": {
     "Actor": "Tremelo",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -73139,7 +73168,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "276": {
     "Actor": "Turnhout",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -73404,7 +73433,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "277": {
     "Actor": "Veurne",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -73669,7 +73698,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "278": {
     "Actor": "Vilvoorde",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -73934,7 +73963,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "279": {
     "Actor": "Vleteren",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -74199,7 +74228,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "280": {
     "Actor": "Voeren",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -74464,7 +74493,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "281": {
     "Actor": "Vorselaar",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -74729,7 +74758,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "282": {
     "Actor": "Vosselaar",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -74994,7 +75023,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "283": {
     "Actor": "Waasmunster",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -75259,7 +75288,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "284": {
     "Actor": "Wachtebeke",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -75524,7 +75553,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "285": {
     "Actor": "Waregem",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -75789,7 +75818,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "286": {
     "Actor": "Wellen",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -76054,7 +76083,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "287": {
     "Actor": "Wemmel",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -76319,7 +76348,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "288": {
     "Actor": "Wervik",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -76584,7 +76613,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "289": {
     "Actor": "Westerlo",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -76849,7 +76878,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "290": {
     "Actor": "Wetteren",
     "Beleidsniveau": "Gemeente",
     "Respons": "non-respons",
@@ -77114,7 +77143,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "291": {
     "Actor": "Wevelgem",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -77379,7 +77408,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "292": {
     "Actor": "Wezembeek-Oppem",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -77644,7 +77673,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "293": {
     "Actor": "Wichelen",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -77909,7 +77938,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "294": {
     "Actor": "Wielsbeke",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -78174,7 +78203,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "295": {
     "Actor": "Wijnegem",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -78439,7 +78468,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "296": {
     "Actor": "Willebroek",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -78704,7 +78733,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "297": {
     "Actor": "Wingene",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -78969,7 +78998,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "298": {
     "Actor": "Wommelgem",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -79234,7 +79263,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "299": {
     "Actor": "Wortegem-Petegem",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -79499,7 +79528,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "300": {
     "Actor": "Wuustwezel",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -79764,7 +79793,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "301": {
     "Actor": "Zandhoven",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -80029,7 +80058,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "302": {
     "Actor": "Zaventem",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -80294,7 +80323,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "303": {
     "Actor": "Zedelgem",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -80559,7 +80588,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "304": {
     "Actor": "Zele",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -80824,7 +80853,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "305": {
     "Actor": "Zelzate",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -81089,7 +81118,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "306": {
     "Actor": "Zemst",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -81354,7 +81383,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "307": {
     "Actor": "Zoersel",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -81619,7 +81648,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "308": {
     "Actor": "Zonhoven",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -81884,7 +81913,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "309": {
     "Actor": "Zonnebeke",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -82149,7 +82178,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "310": {
     "Actor": "Zottegem",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -82414,7 +82443,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "311": {
     "Actor": "Zoutleeuw",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -82679,7 +82708,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "312": {
     "Actor": "Zuienkerke",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -82944,7 +82973,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "313": {
     "Actor": "Zulte",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -83209,7 +83238,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "314": {
     "Actor": "Zutendaal",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -83474,7 +83503,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "315": {
     "Actor": "Zwalm",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -83739,7 +83768,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "316": {
     "Actor": "Zwevegem",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -84004,7 +84033,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "317": {
     "Actor": "Zwijndrecht",
     "Beleidsniveau": "Gemeente",
     "Respons": "respons",
@@ -84269,7 +84298,7 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   },
-  {
+  "318": {
     "Actor": "-",
     "Beleidsniveau": "Gemeente",
     "Respons": "non-respons",
@@ -84534,4 +84563,4 @@
     "Milieu Bestuurlijke maatregelen": "-",
     "RO Herstel gevorderd bij burgerlijk rechter": "-"
   }
-]
+}

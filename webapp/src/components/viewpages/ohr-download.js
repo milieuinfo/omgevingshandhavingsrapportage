@@ -119,7 +119,7 @@ class OhrDownload extends LitElement {
         </a>
     </li>
       <li is="vl-link-list-item">
-           <a is="vl-link">Download de bevraging van 2024</a>
+           <a is="vl-link" href="datafilesdownload/data2024.json" download>Download de bevraging van 2024</a>
     </li>
 </ul>
       `;

@@ -84,7 +84,7 @@ class OhrOpkaart extends LitElement {
    
     <h2 is="vl-h2">Gemeenten op kaart</h2>
     <p is="vl-icon-wrapper">
-          <span is="vl-icon" data-vl-icon="calendar"></span><vl-annotation>&nbsp;Laatste wijziging aan de data: 05/03/2024</vl-annotation>
+          <span is="vl-icon" data-vl-icon="calendar"></span><vl-annotation>&nbsp;Laatste wijziging aan de data: 01/09/2025</vl-annotation>
         </p><br>
     <p>
       De gemeenten hebben handhavingsbevoegdheden ten aanzien van de milieuregelgeving en/of de regelgeving inzake ruimtelijke ordening.<br>

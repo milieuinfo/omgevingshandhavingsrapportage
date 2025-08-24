@@ -1,8 +1,7 @@
 {
     "GewestelijkeBB": {
         "Misdrijven": {
-            "Afval": 
-            {
+            "Afval": {
                 "Ontvangen proces-verbalen": 741,
                 "Behandelde proces-verbalen": 717,
                 "Beslissingen technische seponering": 9,
@@ -12,8 +11,7 @@
                 "Geldboetes met voordeelontneming": 10,
                 "Geldboetes zonder voordeelontneming": 336
             },
-            "Vergunningen": 
-            {
+            "Vergunningen": {
                 "Ontvangen proces-verbalen": 376,
                 "Behandelde proces-verbalen": 314,
                 "Beslissingen technische seponering": 10,
@@ -23,8 +21,7 @@
                 "Geldboetes met voordeelontneming": 16,
                 "Geldboetes zonder voordeelontneming": 174
             },
-            "Milieubeheer": 
-            {
+            "Milieubeheer": {
                 "Ontvangen proces-verbalen": 330,
                 "Behandelde proces-verbalen": 309,
                 "Beslissingen technische seponering": 8,
@@ -34,8 +31,7 @@
                 "Geldboetes met voordeelontneming": 2,
                 "Geldboetes zonder voordeelontneming": 115
             },
-            "Emissies": 
-            {
+            "Emissies": {
                 "Ontvangen proces-verbalen": 618,
                 "Behandelde proces-verbalen": 448,
                 "Beslissingen technische seponering": 65,
@@ -45,8 +41,7 @@
                 "Geldboetes met voordeelontneming": 7,
                 "Geldboetes zonder voordeelontneming": 89
             },
-            "Mest": 
-            {
+            "Mest": {
                 "Ontvangen proces-verbalen": 445,
                 "Behandelde proces-verbalen": 406,
                 "Beslissingen technische seponering": 6,
@@ -56,8 +51,7 @@
                 "Geldboetes met voordeelontneming": 0,
                 "Geldboetes zonder voordeelontneming": 32
             },
-            "RO": 
-            {
+            "RO": {
                 "Ontvangen proces-verbalen": 958,
                 "Behandelde proces-verbalen": 774,
                 "Beslissingen technische seponering": 114,
@@ -68,9 +62,9 @@
                 "Geldboetes zonder voordeelontneming": 267
             },
             "Sepot": {
-                "Opportuniteitssepot" : {
-                        "Geen handhavingsprioriteit": 5,
-                        "Volledig geregulariseerd": 5
+                "Opportuniteitssepot": {
+                    "Geen handhavingsprioriteit": 5,
+                    "Volledig geregulariseerd": 5
                 },
                 "Technisch sepot": {
                     "Dader onbekend/Overleden/faillissement": 0,
@@ -81,8 +75,7 @@
             }
         },
         "Inbreuken": {
-          "Afval": 
-            {
+            "Afval": {
                 "Ontvangen verslagen van vaststelling": 0,
                 "Behandelde verslagen van vaststelling": 0,
                 "Beslissingen technische seponering": 0,
@@ -92,9 +85,8 @@
                 "Geldboetes met voordeelontneming": 0,
                 "Geldboetes zonder voordeelontneming": 3
             },
-            "Vergunningen": 
-            {
-                 "Ontvangen verslagen van vaststelling": 6,
+            "Vergunningen": {
+                "Ontvangen verslagen van vaststelling": 6,
                 "Behandelde verslagen van vaststelling": 6,
                 "Beslissingen technische seponering": 0,
                 "Opgelegde bestuurlijke transacties": 6,
@@ -103,9 +95,8 @@
                 "Geldboetes met voordeelontneming": 0,
                 "Geldboetes zonder voordeelontneming": 0
             },
-            "Milieubeheer": 
-            {
-               "Ontvangen verslagen van vaststelling": 514,
+            "Milieubeheer": {
+                "Ontvangen verslagen van vaststelling": 514,
                 "Behandelde verslagen van vaststelling": 512,
                 "Beslissingen technische seponering": 2,
                 "Opgelegde bestuurlijke transacties": 512,
@@ -114,8 +105,7 @@
                 "Geldboetes met voordeelontneming": 27,
                 "Geldboetes zonder voordeelontneming": 27
             },
-            "Emissies": 
-            {
+            "Emissies": {
                 "Ontvangen verslagen van vaststelling": 2,
                 "Behandelde verslagen van vaststelling": 1,
                 "Beslissingen technische seponering": 1,
@@ -125,9 +115,8 @@
                 "Geldboetes met voordeelontneming": 0,
                 "Geldboetes zonder voordeelontneming": 0
             },
-            "Mest": 
-            {
-              "Ontvangen verslagen van vaststelling": 3,
+            "Mest": {
+                "Ontvangen verslagen van vaststelling": 3,
                 "Behandelde verslagen van vaststelling": 1,
                 "Beslissingen technische seponering": 0,
                 "Opgelegde bestuurlijke transacties": 2,
@@ -136,8 +125,8 @@
                 "Geldboetes met voordeelontneming": 0,
                 "Geldboetes zonder voordeelontneming": 0
             },
-            "RO": 
-            {  "Ontvangen verslagen van vaststelling": 77,
+            "RO": {
+                "Ontvangen verslagen van vaststelling": 77,
                 "Behandelde verslagen van vaststelling": 76,
                 "Beslissingen technische seponering": 7,
                 "Opgelegde bestuurlijke transacties": 116,
@@ -147,9 +136,9 @@
                 "Geldboetes zonder voordeelontneming": 0
             },
             "Sepot": {
-                "opportuniteitssepot" : {
-                        "Geen handhavingsprioriteit": 5,
-                        "Volledig geregulariseerd": 5
+                "opportuniteitssepot": {
+                    "Geen handhavingsprioriteit": 5,
+                    "Volledig geregulariseerd": 5
                 },
                 "Technisch sepot": {
                     "Dader onbekend/Overleden/faillissement": 0,
@@ -163,24 +152,23 @@
     "HHC": {
         "Misdrijven": {
             "Ontvangen beroepen": 57,
-            "Beroep geheel of gedeeltelijk gegrond, beslissing gewestelijke entiteit van de afdeling Handhaving van het departement Omgeving vernietigd zonder meer":4,
-            "Beroep geheel of gedeeltelijk gegrond, met vermindering/kwijtschelding boete":3,
-            "Beroep ongegrond, boete bevestigd":25,
-            "Beroep onontvankelijk (na vereenvoudigde procedure)":11,
+            "Beroep geheel of gedeeltelijk gegrond, beslissing gewestelijke entiteit van de afdeling Handhaving van het departement Omgeving vernietigd zonder meer": 4,
+            "Beroep geheel of gedeeltelijk gegrond, met vermindering/kwijtschelding boete": 3,
+            "Beroep ongegrond, boete bevestigd": 25,
+            "Beroep onontvankelijk (na vereenvoudigde procedure)": 11,
             "Beroep zonder voorwerp verklaard": 0,
-            "Inwilliging afstand van beroep":3,
-            "Tussenarrest":0
-            
+            "Inwilliging afstand van beroep": 3,
+            "Tussenarrest": 0
         },
         "Inbreuken": {
             "Ontvangen beroepen": 4,
-            "Beroep geheel of gedeeltelijk gegrond, beslissing gewestelijke entiteit van de afdeling Handhaving van het departement Omgeving vernietigd zonder meer":0,
-            "Beroep geheel of gedeeltelijk gegrond, met vermindering/kwijtschelding boete":0,
-            "Beroep ongegrond, boete bevestigd":1,
-            "Beroep onontvankelijk (na vereenvoudigde procedure)":0,
+            "Beroep geheel of gedeeltelijk gegrond, beslissing gewestelijke entiteit van de afdeling Handhaving van het departement Omgeving vernietigd zonder meer": 0,
+            "Beroep geheel of gedeeltelijk gegrond, met vermindering/kwijtschelding boete": 0,
+            "Beroep ongegrond, boete bevestigd": 1,
+            "Beroep onontvankelijk (na vereenvoudigde procedure)": 0,
             "Beroep zonder voorwerp verklaard": 0,
-            "Inwilliging afstand van beroep":1,
-            "Tussenarrest":0
+            "Inwilliging afstand van beroep": 1,
+            "Tussenarrest": 0
         }
     }
 }

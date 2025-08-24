@@ -1,216 +1,205 @@
 {
-        "Instroom": {
-            "Afval": {
-                "Beheer van afvalstoffen": 461,
-                "Invoer en doorvoer van afvalstoffen (wet 12 mei 2011)": 12,
-                "Sluikstorten": 1051
-            },
-            "LWBGE": {
-                "Geluidsnormen in stedelijke omgeving (KB 24 februari 1977)": 101,
-                "Grondwaterverontreiniging": 31,
-                "Illegale waterwinning": 9,
-                "Koolstofmonoxyde (CO)": 2,
-                "Lucht": 185,
-                "Oppervlaktewaterverontreiniging": 68
-            },
-            "Mest": {
-                "Mestdecreet": 277,
-                "Meststoffen": 203
-            },
-            "Milieubeheersrecht": {
-                "Beschermde diersoorten, planten en ivoor (conventie van Washington, 9 maart 1973)": 186,
-                "Bosdecreet": 259,
-                "Jacht": 50,
-                "Visvangst": 35,
-                "Vlaams decreet betreffende het natuurbehoud en natuurlijk milieu (21 oktober 1997)": 164
-            },
-            "Milieuvergunningen": {
-                "Commodo ": 2,
-                "Exploitatie van een inrichting zonder vergunning": 207,
-                "Niet naleven Vlarem": 878
-            },
-            "RO": {
-                "Bescherming van monumenten, stads": 30,
-                "Reclameborden": 6,
-                "Ruimtelijke ordening en stedenbouw": 2194,
-                "Vellen hoogstammige bomen": 42
-            }
+    "Instroom": {
+        "Afval": {
+            "Beheer van afvalstoffen": 461,
+            "Invoer en doorvoer van afvalstoffen (wet 12 mei 2011)": 12,
+            "Sluikstorten": 1051
         },
+        "LWBGE": {
+            "Geluidsnormen in stedelijke omgeving (KB 24 februari 1977)": 101,
+            "Grondwaterverontreiniging": 31,
+            "Illegale waterwinning": 9,
+            "Koolstofmonoxyde (CO)": 2,
+            "Lucht": 185,
+            "Oppervlaktewaterverontreiniging": 68
+        },
+        "Mest": {
+            "Mestdecreet": 277,
+            "Meststoffen": 203
+        },
+        "Milieubeheersrecht": {
+            "Beschermde diersoorten, planten en ivoor (conventie van Washington, 9 maart 1973)": 186,
+            "Bosdecreet": 259,
+            "Jacht": 50,
+            "Visvangst": 35,
+            "Vlaams decreet betreffende het natuurbehoud en natuurlijk milieu (21 oktober 1997)": 164
+        },
+        "Milieuvergunningen": {
+            "Commodo ": 2,
+            "Exploitatie van een inrichting zonder vergunning": 207,
+            "Niet naleven Vlarem": 878
+        },
+        "RO": {
+            "Bescherming van monumenten, stads": 30,
+            "Reclameborden": 6,
+            "Ruimtelijke ordening en stedenbouw": 2194,
+            "Vellen hoogstammige bomen": 42
+        }
+    },
     "Uitstroom": {
-            "Afval": {
+        "Afval": {
             "Vooronderzoek": 313,
-            "Afhandeling zonder strafvervolging om technische redenen":242,
-             "Afhandeling zonder strafvervolging om opportuniteitsredenen":101,
-             "Seining van de verdachte":14,
-             "Ter beschikking": 8,
-             "Pretoriaanse probatie": 21,
-             "Ketengerichte afhandeling: administratieve behandeling (GAS)": 4,
-             "Ketengerichte afhandeling: administratieve behandeling (Niet-GAS)": 777,
-            "Andere ketengerichte afhandeling":9,
-             "Betaling van een geldsom": 1,
-             "Bemiddeling & maatregelen": 5,
-             "Gerechtelijk onderzoek": 28,
-             "Raadkamer": 1,
-             "Dagvaarding":10,
-            "Arrest na beroep":1
-
-            },
-            "LWBGE": {
-               "Vooronderzoek": 95,
-            "Afhandeling zonder strafvervolging om technische redenen":46,
-             "Afhandeling zonder strafvervolging om opportuniteitsredenen":31,
-             "Seining van de verdachte":1,
-             "Ter beschikking": 3,
-             "Pretoriaanse probatie": 2,
-             "Ketengerichte afhandeling: administratieve behandeling (GAS)": 1,
-             "Ketengerichte afhandeling: administratieve behandeling (Niet-GAS)": 204,
-             "Andere ketengerichte afhandeling":1,
-             "Betaling van een geldsom": 2,
-             "Gerechtelijk onderzoek": 1,
-             "Dagvaarding":8,
-             "Vonnis 1ste aanleg":1
-
-            },
-            "Mest": {
-            "Vooronderzoek": 52,
-            "Afhandeling zonder strafvervolging om technische redenen":1,
-             "Afhandeling zonder strafvervolging om opportuniteitsredenen":5,
-             "Ter beschikking": 4,
-             "Pretoriaanse probatie": 1,
-             "Ketengerichte afhandeling: administratieve behandeling (Niet-GAS)": 412,
-             "Betaling van een geldsom": 4,
-             "Dagvaarding":1
-
-            },
-            "Milieubeheersrecht": {
-            "Vooronderzoek": 158,
-            "Afhandeling zonder strafvervolging om technische redenen":63,
-             "Afhandeling zonder strafvervolging om opportuniteitsredenen":25,
-             "Ter beschikking": 54,
-             "Pretoriaanse probatie": 7,
-             "Ketengerichte afhandeling: administratieve behandeling (GAS)": 1,
-             "Ketengerichte afhandeling: administratieve behandeling (Niet-GAS)": 286,
-             "Betaling van een geldsom": 20,
-             "Gerechtelijk onderzoek": 5,
-             "Dagvaarding":5,
-             "Vonnis 1ste aanleg":3
-
-            },
-            "Milieuvergunningen": {
-             "Vooronderzoek": 483,
-             "Afhandeling zonder strafvervolging om technische redenen":30,
-             "Afhandeling zonder strafvervolging om opportuniteitsredenen":21,
-             "Seining van de verdachte":3,
-             "Ter beschikking": 2,
-             "Pretoriaanse probatie": 12,
-             "Ketengerichte afhandeling: administratieve behandeling (Niet-GAS)": 497,
-             "Betaling van een geldsom": 5,
-             "Gerechtelijk onderzoek": 1,
-             "Raadkamer": 1,
-             "Dagvaarding":27,
-             "Vonnis 1ste aanleg":4,
-             "Beroep tegen vonnis": 1
-
-            },
-            "RO": {
-                "Vooronderzoek": 1220,
-                "Afhandeling zonder strafvervolging om technische redenen":114,
-             "Afhandeling zonder strafvervolging om opportuniteitsredenen":103,
-             "Ter beschikking": 4,
-             "Pretoriaanse probatie": 59,
-             "Ketengerichte afhandeling: administratieve behandeling (Niet-GAS)": 750,
-             "Betaling van een geldsom": 4,
-             "Gerechtelijk onderzoek": 4,
-             "Raadkamer": 1,
-             "Dagvaarding":10,
-             "Vonnis 1ste aanleg":3
-            }
+            "Afhandeling zonder strafvervolging om technische redenen": 242,
+            "Afhandeling zonder strafvervolging om opportuniteitsredenen": 101,
+            "Seining van de verdachte": 14,
+            "Ter beschikking": 8,
+            "Pretoriaanse probatie": 21,
+            "Ketengerichte afhandeling: administratieve behandeling (GAS)": 4,
+            "Ketengerichte afhandeling: administratieve behandeling (Niet-GAS)": 777,
+            "Andere ketengerichte afhandeling": 9,
+            "Betaling van een geldsom": 1,
+            "Bemiddeling & maatregelen": 5,
+            "Gerechtelijk onderzoek": 28,
+            "Raadkamer": 1,
+            "Dagvaarding": 10,
+            "Arrest na beroep": 1
         },
-        "Motieven": {
-                "Afval": {
-                    "Geen misdrijf": 28,			
-                    "Onvoldoende bewijzen":156,			
-                    "Dader(s) onbekend":56,			
-                    "Verjaring":1,		
-                    "Overlijden van de verdachte": 1,					
-                   "Beperkte maatschappelijke weerslag": 1,			
-                    "Nadeel gering":1,			
-                    "Wanverhouding tussen de gevolgen van de strafvervolging en de maatschappelijke verstoring": 10,			
-                    "Toevallige feiten met oorzaak in specifieke omstandigheden": 6,					
-                    "Mogelijke opslorping":2,			
-                    "Afwezigheid van voorgaanden": 8,		
-                    "Schade geregeld of onwettige toestand geregulariseerd door de verdachte": 40,			
-                    "Te weinig recherchecapaciteit": 9,			
-                    "Andere prioriteiten bij opsporings- en vervolgingsbeleid": 8,			
-                    "Voorrang aan de burgerlijke afhandeling": 16		
-     
-            },
-            "LWBGE": {
-                    "Geen misdrijf": 8,			
-                   "Onvoldoende bewijzen": 23,			
-                    "Dader(s) onbekend": 13,			
-                    "Verjaring": 1,			
-                    "Overlijden van de verdachte": 1,					
-                    "Nadeel gering": 1,				
-                    "Toevallige feiten met oorzaak in specifieke omstandigheden": 5,			
-                    "Schade geregeld of onwettige toestand geregulariseerd door de verdachte": 12,			
-                    "Te weinig recherchecapaciteit": 2,						
-                    "Voorrang aan de burgerlijke afhandeling": 11		
-
-            },
-            "Mest": {		
-                    "Onvoldoende bewijzen": 1,				
-                    "Toevallige feiten met oorzaak in specifieke omstandigheden": 1,			
-                    "Schade geregeld of onwettige toestand geregulariseerd door de verdachte": 3,					
-                    "Voorrang aan de burgerlijke afhandeling": 1		
-            },
-            "Milieubeheersrecht": {
-                    "Geen misdrijf": 6,			
-                    "Onvoldoende bewijzen": 42,			
-                    "Dader(s) onbekend": 13,				
-                    "Kracht van gewijsde": 1,			
-                    "Ne bis in idem": 1,			
-                    "Wanverhouding tussen de gevolgen van de strafvervolging en de maatschappelijke verstoring": 4,
-                    "Redelijke termijn vervolging overschreden": 1,					
-                    "Afwezigheid van voorgaanden":4,			
-                    "Schade geregeld of onwettige toestand geregulariseerd door de verdachte": 5,			
-                    "Te weinig recherchecapaciteit": 7,			
-                    "Andere prioriteiten bij opsporings- en vervolgingsbeleid": 1,			
-                    "Voorrang aan de burgerlijke afhandeling": 3		
-                
-            },
-            "Milieuvergunningen": {
-                     "Geen misdrijf": 6,			
-                    "Onvoldoende bewijzen": 17,			
-                    "Dader(s) onbekend": 3,					
-                    "Overlijden van de verdachte": 1,			
-                    "Kracht van gewijsde": 3,			
-                    "Wanverhouding tussen de gevolgen van de strafvervolging en de maatschappelijke verstoring": 6,		
-                    "Afwezigheid van voorgaanden": 1,			
-                    "Schade geregeld of onwettige toestand geregulariseerd door de verdachte": 6,			
-                    "Te weinig recherchecapaciteit": 4, 			
-                    "Andere prioriteiten bij opsporings- en vervolgingsbeleid": 1,			
-                    "Voorrang aan de burgerlijke afhandeling": 3		
-
-            },
-            "RO": {
-                "Geen misdrijf": 13,			
-                    "Onvoldoende bewijzen": 37,	
-                    "Verjaring": 59,						
-                    "Overlijden van de verdachte": 1,			
-                    "Kracht van gewijsde":3,
-                    "Ne bis in idem": 1,
-                    "Beperkte maatschappelijke weerslag": 1,			
-                    "Wanverhouding tussen de gevolgen van de strafvervolging en de maatschappelijke verstoring": 68,
-                    "Toevallige feiten met oorzaak in specifieke omstandigheden": 2,
-                    "Redelijke termijn vervolging overschreven": 2,	
-                    "Afwezigheid van voorgaanden": 1,			
-                    "Schade geregeld of onwettige toestand geregulariseerd door de verdachte": 41,			
-                    "Te weinig recherchecapaciteit": 7, 			
-                    "Andere prioriteiten bij opsporings- en vervolgingsbeleid": 24,			
-                    "Voorrang aan de burgerlijke afhandeling": 17		
-
-            }
+        "LWBGE": {
+            "Vooronderzoek": 95,
+            "Afhandeling zonder strafvervolging om technische redenen": 46,
+            "Afhandeling zonder strafvervolging om opportuniteitsredenen": 31,
+            "Seining van de verdachte": 1,
+            "Ter beschikking": 3,
+            "Pretoriaanse probatie": 2,
+            "Ketengerichte afhandeling: administratieve behandeling (GAS)": 1,
+            "Ketengerichte afhandeling: administratieve behandeling (Niet-GAS)": 204,
+            "Andere ketengerichte afhandeling": 1,
+            "Betaling van een geldsom": 2,
+            "Gerechtelijk onderzoek": 1,
+            "Dagvaarding": 8,
+            "Vonnis 1ste aanleg": 1
+        },
+        "Mest": {
+            "Vooronderzoek": 52,
+            "Afhandeling zonder strafvervolging om technische redenen": 1,
+            "Afhandeling zonder strafvervolging om opportuniteitsredenen": 5,
+            "Ter beschikking": 4,
+            "Pretoriaanse probatie": 1,
+            "Ketengerichte afhandeling: administratieve behandeling (Niet-GAS)": 412,
+            "Betaling van een geldsom": 4,
+            "Dagvaarding": 1
+        },
+        "Milieubeheersrecht": {
+            "Vooronderzoek": 158,
+            "Afhandeling zonder strafvervolging om technische redenen": 63,
+            "Afhandeling zonder strafvervolging om opportuniteitsredenen": 25,
+            "Ter beschikking": 54,
+            "Pretoriaanse probatie": 7,
+            "Ketengerichte afhandeling: administratieve behandeling (GAS)": 1,
+            "Ketengerichte afhandeling: administratieve behandeling (Niet-GAS)": 286,
+            "Betaling van een geldsom": 20,
+            "Gerechtelijk onderzoek": 5,
+            "Dagvaarding": 5,
+            "Vonnis 1ste aanleg": 3
+        },
+        "Milieuvergunningen": {
+            "Vooronderzoek": 483,
+            "Afhandeling zonder strafvervolging om technische redenen": 30,
+            "Afhandeling zonder strafvervolging om opportuniteitsredenen": 21,
+            "Seining van de verdachte": 3,
+            "Ter beschikking": 2,
+            "Pretoriaanse probatie": 12,
+            "Ketengerichte afhandeling: administratieve behandeling (Niet-GAS)": 497,
+            "Betaling van een geldsom": 5,
+            "Gerechtelijk onderzoek": 1,
+            "Raadkamer": 1,
+            "Dagvaarding": 27,
+            "Vonnis 1ste aanleg": 4,
+            "Beroep tegen vonnis": 1
+        },
+        "RO": {
+            "Vooronderzoek": 1220,
+            "Afhandeling zonder strafvervolging om technische redenen": 114,
+            "Afhandeling zonder strafvervolging om opportuniteitsredenen": 103,
+            "Ter beschikking": 4,
+            "Pretoriaanse probatie": 59,
+            "Ketengerichte afhandeling: administratieve behandeling (Niet-GAS)": 750,
+            "Betaling van een geldsom": 4,
+            "Gerechtelijk onderzoek": 4,
+            "Raadkamer": 1,
+            "Dagvaarding": 10,
+            "Vonnis 1ste aanleg": 3
         }
+    },
+    "Motieven": {
+        "Afval": {
+            "Geen misdrijf": 28,
+            "Onvoldoende bewijzen": 156,
+            "Dader(s) onbekend": 56,
+            "Verjaring": 1,
+            "Overlijden van de verdachte": 1,
+            "Beperkte maatschappelijke weerslag": 1,
+            "Nadeel gering": 1,
+            "Wanverhouding tussen de gevolgen van de strafvervolging en de maatschappelijke verstoring": 10,
+            "Toevallige feiten met oorzaak in specifieke omstandigheden": 6,
+            "Mogelijke opslorping": 2,
+            "Afwezigheid van voorgaanden": 8,
+            "Schade geregeld of onwettige toestand geregulariseerd door de verdachte": 40,
+            "Te weinig recherchecapaciteit": 9,
+            "Andere prioriteiten bij opsporings- en vervolgingsbeleid": 8,
+            "Voorrang aan de burgerlijke afhandeling": 16
+        },
+        "LWBGE": {
+            "Geen misdrijf": 8,
+            "Onvoldoende bewijzen": 23,
+            "Dader(s) onbekend": 13,
+            "Verjaring": 1,
+            "Overlijden van de verdachte": 1,
+            "Nadeel gering": 1,
+            "Toevallige feiten met oorzaak in specifieke omstandigheden": 5,
+            "Schade geregeld of onwettige toestand geregulariseerd door de verdachte": 12,
+            "Te weinig recherchecapaciteit": 2,
+            "Voorrang aan de burgerlijke afhandeling": 11
+        },
+        "Mest": {
+            "Onvoldoende bewijzen": 1,
+            "Toevallige feiten met oorzaak in specifieke omstandigheden": 1,
+            "Schade geregeld of onwettige toestand geregulariseerd door de verdachte": 3,
+            "Voorrang aan de burgerlijke afhandeling": 1
+        },
+        "Milieubeheersrecht": {
+            "Geen misdrijf": 6,
+            "Onvoldoende bewijzen": 42,
+            "Dader(s) onbekend": 13,
+            "Kracht van gewijsde": 1,
+            "Ne bis in idem": 1,
+            "Wanverhouding tussen de gevolgen van de strafvervolging en de maatschappelijke verstoring": 4,
+            "Redelijke termijn vervolging overschreden": 1,
+            "Afwezigheid van voorgaanden": 4,
+            "Schade geregeld of onwettige toestand geregulariseerd door de verdachte": 5,
+            "Te weinig recherchecapaciteit": 7,
+            "Andere prioriteiten bij opsporings- en vervolgingsbeleid": 1,
+            "Voorrang aan de burgerlijke afhandeling": 3
+        },
+        "Milieuvergunningen": {
+            "Geen misdrijf": 6,
+            "Onvoldoende bewijzen": 17,
+            "Dader(s) onbekend": 3,
+            "Overlijden van de verdachte": 1,
+            "Kracht van gewijsde": 3,
+            "Wanverhouding tussen de gevolgen van de strafvervolging en de maatschappelijke verstoring": 6,
+            "Afwezigheid van voorgaanden": 1,
+            "Schade geregeld of onwettige toestand geregulariseerd door de verdachte": 6,
+            "Te weinig recherchecapaciteit": 4,
+            "Andere prioriteiten bij opsporings- en vervolgingsbeleid": 1,
+            "Voorrang aan de burgerlijke afhandeling": 3
+        },
+        "RO": {
+            "Geen misdrijf": 13,
+            "Onvoldoende bewijzen": 37,
+            "Verjaring": 59,
+            "Overlijden van de verdachte": 1,
+            "Kracht van gewijsde": 3,
+            "Ne bis in idem": 1,
+            "Beperkte maatschappelijke weerslag": 1,
+            "Wanverhouding tussen de gevolgen van de strafvervolging en de maatschappelijke verstoring": 68,
+            "Toevallige feiten met oorzaak in specifieke omstandigheden": 2,
+            "Redelijke termijn vervolging overschreven": 2,
+            "Afwezigheid van voorgaanden": 1,
+            "Schade geregeld of onwettige toestand geregulariseerd door de verdachte": 41,
+            "Te weinig recherchecapaciteit": 7,
+            "Andere prioriteiten bij opsporings- en vervolgingsbeleid": 24,
+            "Voorrang aan de burgerlijke afhandeling": 17
         }
- 
+    }
+}

@@ -1,5 +1,5 @@
 [
-      {
+  {
     "Actor": "Provincie Antwerpen",
     "Beleidsniveau": "Provincie",
     "Respons": "respons",
@@ -46,7 +46,7 @@
     "Stikstof": "Neen",
     "Opmerking": "Totaal aantal milieuhandhavingscontroles: dit maakt deel uit van het dagdagelijkse werk van de controleurs/toezichthouders. Het werkelijk aantal 'geziene plaatsen' is dus veel groter. het opgegeven getal gaat over controles die aanleiding hebben gegeven tot een handhavingsopvolging."
   },
-    {
+  {
     "Actor": "Provincie Limburg",
     "Beleidsniveau": "Provincie",
     "Respons": "respons",
@@ -97,7 +97,7 @@
     "PFAS": "Neen",
     "Stikstof": "Neen"
   },
-    {
+  {
     "Actor": "Provincie Oost-Vlaanderen",
     "Beleidsniveau": "Provincie",
     "Respons": "respons",
@@ -194,7 +194,7 @@
     "Stikstof": "Neen",
     "Opmerking": "Voor toekomstige rapportage zou het duidelijker zijn om een definiëring mee te geven bij de verschillende categorieën opgenomen in de vragen (milieubeheer, water, vergunningen...)."
   },
-   {
+  {
     "Actor": "Provincie West-Vlaanderen",
     "Beleidsniveau": "Provincie",
     "Respons": "respons",
