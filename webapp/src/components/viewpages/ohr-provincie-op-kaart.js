@@ -5,7 +5,6 @@ import {
     queryById,
     renderStack
   } from "../common/commons.js";
-  
   import "@domg-wc/elements/select";
   import "@domg-wc/components/functional-header";
   import "@domg-wc/components/accordion";
@@ -13,7 +12,6 @@ import {
   import "@domg-wc/components/typography";
   import {vlElementsStyle} from "@domg-wc/elements";
   import "@domg-wc/components/accordion";
-  
   import options from "../config/provincie-op-kaart.json" assert {type: "json"};
   import options2 from "../config/provincie-op-kaart-absoluut.json" assert {type:"json"};
   import yearofanalsysis from "../config/yearofanalysis.json" assert {type: "json"};

@@ -1,15 +1,12 @@
 import {html, LitElement} from "../common/commons.js";
-
 import charts from "../config/controles.json" assert {type: "json"};
 import filters from "../config/controles-filters.js";
-
 import "@domg-wc/components/functional-header";
 import "@domg-wc/components/typography";
 import "@domg-wc/components/loader";
 import "@domg-wc/qlik/dashboard-page";
 import {vlElementsStyle} from "@domg-wc/elements";
 import "@domg-wc/components/alert";
-
 import yearofanalsysis from "../config/yearofanalysis.json" assert {type: "json"};
 
 class OhrControles extends LitElement {
@@ -44,7 +41,7 @@ class OhrControles extends LitElement {
             title="Controles"
             export-id="eubkp"
             url="omgevingsloketrapport.omgeving.vlaanderen.be"
-            app-id="00dfde20-5561-47f6-9ff0-66cfb1e7484b"
+            app-id="56259dfc-3460-4cd9-8572-1e3729ef4f64"
             .views="${charts}"
             .filters="${filters}"
             @initialized="${() => this.initialized = true}">

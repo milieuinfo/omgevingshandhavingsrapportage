@@ -6,7 +6,6 @@ import {
   queryById,
   renderStack
 } from "../common/commons.js";
-
 import "@domg-wc/elements/grid";
 import "@domg-wc/elements/title";
 import "@domg-wc/elements/data-table";

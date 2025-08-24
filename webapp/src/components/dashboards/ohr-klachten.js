@@ -1,15 +1,12 @@
 import {html, LitElement} from "../common/commons.js";
-
 import charts from "../config/klachten.json" assert {type: "json"};
 import filters from "../config/klachten-filters.js";
-
 import "@domg-wc/components/functional-header";
 import "@domg-wc/components/typography";
 import "@domg-wc/components/loader";
 import "@domg-wc/qlik/dashboard-page";
 import {vlElementsStyle} from "@domg-wc/elements";
 import "@domg-wc/components/alert";
-
 import yearofanalsysis from "../config/yearofanalysis.json" assert {type: "json"};
 
 class OhrKlachten extends LitElement {
@@ -43,7 +40,7 @@ class OhrKlachten extends LitElement {
             title="Klachten"
             export-id="VSaSEgy"
             url="omgevingsloketrapport.omgeving.vlaanderen.be"
-            app-id="bfc74772-e65e-43ae-9528-4a0f4e75c497"
+            app-id="42b658f1-349c-47fd-8a3b-1d039237bbd9"
             .views="${charts}"
             .filters="${filters}"
             @initialized="${() => this.initialized = true}">

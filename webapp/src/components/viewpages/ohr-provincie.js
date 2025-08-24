@@ -1,6 +1,5 @@
 import {html, LitElement, renderStack} from "../common/commons.js";
 import {vlElementsStyle} from "@domg-wc/elements";
-
 import "@domg-wc/elements/image";
 import "@domg-wc/elements/grid";
 import "@domg-wc/elements/title";
@@ -9,7 +8,6 @@ import "@domg-wc/elements/doormat";
 import "@domg-wc/elements/link";
 import "@domg-wc/elements/link-list";
 import "@domg-wc/components/functional-header";
-
 import yearofanalsysis from "../config/yearofanalysis.json" assert {type: "json"};
 
 

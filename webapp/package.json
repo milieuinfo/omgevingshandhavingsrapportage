@@ -26,9 +26,9 @@
     "@domg-wc/common-utilities": "1.37.2",
     "@domg-wc/components": "1.37.2",
     "@domg-wc/elements": "1.37.2",
-    "@domg-wc/qlik": "1.37.2",
+    "@domg-wc/qlik": "1.43.1",
     "@domg-wc/sections": "1.37.2",
-    "@domg/qlik-lib": "1.0.15",
+    "@domg/qlik-lib": "1.0.16",
     "@vaadin/router": "1.7.5",
     "lit": "3.2.0"
   },

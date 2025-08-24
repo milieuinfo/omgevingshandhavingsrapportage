@@ -6,7 +6,6 @@ import {
   renderStack
 } from "../common/commons.js";
 import {vlElementsStyle} from "@domg-wc/elements";
-
 import "@domg-wc/elements/grid";
 import "@domg-wc/elements/title";
 import "@domg-wc/elements/image";
@@ -17,7 +16,6 @@ import "@domg-wc/components/alert";
 import "@domg-wc/elements/select";
 import "@domg-wc/components/typography";
 import "@domg-wc/components/functional-header";
-
 import options from "../config/downloadkeuze.json" assert {type: "json"};
 import yearofanalsysis from "../config/yearofanalysis.json" assert {type: "json"};
 
@@ -119,6 +117,9 @@ class OhrDownload extends LitElement {
         <a is="vl-link" href="https://omgeving.vlaanderen.be/sites/default/files/2024-07/omgevingshandhavingscijfers_2023.zip" download>
             Download de bevraging van 2023
         </a>
+    </li>
+      <li is="vl-link-list-item">
+           <a is="vl-link">Download de bevraging van 2024</a>
     </li>
 </ul>
       `;

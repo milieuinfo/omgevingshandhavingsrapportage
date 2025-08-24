@@ -5,8 +5,7 @@ class OhrPrivacy extends LitElement {
 
   render() {
     return html`
-      <vl-privacy></vl-privacy>
-    `;
+      <vl-privacy></vl-privacy>`;
   }
 }
 

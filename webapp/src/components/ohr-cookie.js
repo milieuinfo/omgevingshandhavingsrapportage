@@ -5,8 +5,7 @@ class OhrCookie extends LitElement {
 
   render() {
     return html`
-      <vl-cookie-statement></vl-cookie-statements>
-    `;
+      <vl-cookie-statement></vl-cookie-statements>`;
   }
 }
 customElements.define('ohr-cookie', OhrCookie);

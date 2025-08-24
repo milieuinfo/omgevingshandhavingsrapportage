@@ -1,15 +1,12 @@
 import {html, LitElement} from "../common/commons.js";
-
 import viz from "../config/strafrechtelijkvervolgtraject.json" assert {type: "json"};
 import filters from "../config/strafrechtelijk-filters.js";
-
 import "@domg-wc/components/functional-header";
 import "@domg-wc/components/typography";
 import "@domg-wc/components/loader";
 import "@domg-wc/qlik/dashboard-page";
 import {vlElementsStyle} from "@domg-wc/elements";
 import "@domg-wc/components/alert";
-
 import yearofanalsysis from "../config/yearofanalysis.json" assert {type: "json"};
 
 class OhrStrafrechtelijkvervolgtraject extends LitElement {
@@ -42,7 +39,7 @@ class OhrStrafrechtelijkvervolgtraject extends LitElement {
             title="Strafrechtelijke sanctionering"
             export-id="mkWEU"
             url="omgevingsloketrapport.omgeving.vlaanderen.be"
-            app-id="1b3c1014-cde6-4969-92fb-68fc10753f88"
+            app-id="95f68afd-45be-4176-8a2a-8bb05ef4094e"
             .views="${viz}"
             .filters="${filters}"
             @initialized="${() => this.initialized = true}">

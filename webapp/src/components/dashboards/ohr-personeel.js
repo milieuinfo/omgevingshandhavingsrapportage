@@ -1,15 +1,12 @@
 import {html, LitElement} from "../common/commons.js";
-
 import viz_personeel from "../config/personeel.json" assert {type: "json"};
 import filters from "../config/personeel-filters.js";
-
 import "@domg-wc/components/functional-header";
 import "@domg-wc/components/typography";
 import "@domg-wc/components/loader";
 import "@domg-wc/qlik/dashboard-page";
 import {vlElementsStyle} from "@domg-wc/elements";
 import "@domg-wc/components/alert";
-
 import yearofanalsysis from "../config/yearofanalysis.json" assert {type: "json"};
 
 class OhrPersoneel extends LitElement {
@@ -44,7 +41,7 @@ class OhrPersoneel extends LitElement {
             title="Personeel"
             export-id="bLvkB"
             url="omgevingsloketrapport.omgeving.vlaanderen.be"
-            app-id="0db83606-08ee-44db-9b05-f64aa721f68c"
+            app-id="8b128a48-4cf1-4c81-9acf-03dce127d392"
             .views="${viz_personeel}"
             .filters = "${filters}"
             @initialized="${() => this.initialized = true}">

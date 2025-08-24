@@ -1,8 +1,6 @@
 import {html, LitElement} from "../common/commons.js";
-
 import viz from "../config/hogeraad.json" assert {type: "json"};
 import filters from "../config/hogeraad-filters.js";
-
 import "@domg-wc/components/functional-header";
 import "@domg-wc/components/typography";
 import "@domg-wc/components/loader";
@@ -41,7 +39,7 @@ class OhrHogeRaadDashboard extends LitElement {
         <vl-qlik-dashboard-page
             title="Hoge Raad voor de Handhavingsuitvoering"
             url="omgevingsloketrapport.omgeving.vlaanderen.be"
-            app-id="4202d739-538c-4d7f-8d92-3950359a3602"
+            app-id="0f578cd6-84ab-46c7-9415-686c3f5aa59f"
             selected-view="Instroom"
             .views="${viz}"
             .filters="${filters}"

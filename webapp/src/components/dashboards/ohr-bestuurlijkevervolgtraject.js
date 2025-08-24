@@ -1,15 +1,12 @@
 import {html, LitElement} from "../common/commons.js";
-
 import viz from "../config/bestuurlijkevervolgtrajet.json" assert {type: "json"};
 import filters from "../config/bestuurlijkevervolgtraject-filters.js";
-
 import "@domg-wc/components/functional-header";
 import "@domg-wc/components/typography";
 import "@domg-wc/components/loader";
 import "@domg-wc/qlik/dashboard-page";
 import {vlElementsStyle} from "@domg-wc/elements";
 import "@domg-wc/components/alert";
-
 import yearofanalsysis from "../config/yearofanalysis.json" assert {type: "json"};
 
 class OhrBestuurlijkevervolgtraject extends LitElement {
@@ -43,7 +40,7 @@ class OhrBestuurlijkevervolgtraject extends LitElement {
             title="Bestuurlijke sanctionering"
             export-id="HwSaGq"
             url="omgevingsloketrapport.omgeving.vlaanderen.be"
-            app-id="fdb16cce-7388-4b02-84d0-7f31e29fef29"
+            app-id="3b477102-375f-4ff0-acc2-81438cbefe1d"
             .views="${viz}"
             .filters="${filters}"
             @initialized="${() => this.initialized = true}">

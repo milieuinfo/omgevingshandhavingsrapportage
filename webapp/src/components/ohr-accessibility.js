@@ -5,8 +5,7 @@ class OhrAccessibility extends LitElement {
   
   render() {
     return html`
-      <vl-accessibility></vl-accessibility>
-    `;
+      <vl-accessibility></vl-accessibility>`;
   }
 }
 customElements.define('ohr-accessibility', OhrAccessibility);

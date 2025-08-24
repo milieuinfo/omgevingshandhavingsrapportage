@@ -4,8 +4,8 @@ import "@domg-wc/elements/grid";
 import "@domg-wc/elements/button";
 import "@domg-wc/components/functional-header";
 import "@domg-wc/components/http-error-message";
-class OhrView404 extends LitElement {
 
+class OhrView404 extends LitElement {
 
   static get styles(){
     return [
@@ -13,7 +13,7 @@ class OhrView404 extends LitElement {
     ]
   }
 
-  constructor() {
+  constructor() { 
     super();
   }
 

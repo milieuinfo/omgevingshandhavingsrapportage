@@ -1,6 +1,5 @@
 import {html, LitElement, renderStack} from "../common/commons.js";
 import {vlElementsStyle} from "@domg-wc/elements";
-
 import "@domg-wc/elements/image";
 import "@domg-wc/elements/grid";
 import "@domg-wc/elements/text";

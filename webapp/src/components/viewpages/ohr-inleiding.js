@@ -1,6 +1,5 @@
 import {html, LitElement, renderStack} from "../common/commons.js";
 import {vlElementsStyle} from "@domg-wc/elements";
-
 import "@domg-wc/elements/image";
 import "@domg-wc/elements/grid";
 import "@domg-wc/elements/title";
@@ -56,8 +55,7 @@ class OhrInleiding extends LitElement {
       </li>   
     </ul>`;
   }
-
-
+  
   __renderIntroduction() {
     return html`
     <vl-typography>

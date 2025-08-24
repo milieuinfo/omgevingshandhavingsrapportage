@@ -1,8 +1,8 @@
 {
         "Instroom": {
             "Vraag1": {
-                "Gewestelijke stedenbouwkundige inspecteurs": 66,
-                "Gemeentelijke stedenbouwkundige inspecteurs / Burgemeesters": 171,
+                "Gewestelijke stedenbouwkundige inspecteurs": 54,
+                "Gemeentelijke stedenbouwkundige inspecteurs / Burgemeesters": 202,
                 "Derde belanghebbende": 0
             },
             "Vraag2": {
@@ -11,45 +11,45 @@
                 "Derde belanghebbende": 0
             },
             "Vraag3":{
-                "Gewestelijke stedenbouwkundige inspecteurs": 1,
-                "Gemeentelijke stedenbouwkundige inspecteurs / Burgemeesters": 0,
-                "Derde belanghebbende": 0
+                "Gewestelijke stedenbouwkundige inspecteurs": "/",
+                "Gemeentelijke stedenbouwkundige inspecteurs / Burgemeesters": "/",
+                "Derde belanghebbende": "/"
             },
             "Vraag4":{
-                "Gewestelijke stedenbouwkundige inspecteurs": 0,
-                "Gemeentelijke stedenbouwkundige inspecteurs / Burgemeesters": 2,
-                "Derde belanghebbende": 0
+                "Gewestelijke stedenbouwkundige inspecteurs": "/",
+                "Gemeentelijke stedenbouwkundige inspecteurs / Burgemeesters": "/",
+                "Derde belanghebbende": "/"
             },
             "Vraag5":{
-                "Gewestelijke stedenbouwkundige inspecteurs": 0,
-                "Gemeentelijke stedenbouwkundige inspecteurs / Burgemeesters": 0,
-                "Derde belanghebbende": 0
+                "Gewestelijke stedenbouwkundige inspecteurs": "/",
+                "Gemeentelijke stedenbouwkundige inspecteurs / Burgemeesters": "/",
+                "Derde belanghebbende": "/"
             },
             "Herstelvorderingen": {
                 "Onontvankelijke adviezen": 
                 {
                     "value1": 0,
-                    "value2": 0 
+                    "value2": 1 
                 },
                 "Geen advies wegens vrijwillig herstel":
                 {
-                    "value1": 2,
-                    "value2": 3 
+                    "value1": "/",
+                    "value2": 7 
                 },
                 "Positieve adviezen": 
                 {
-                    "value1": 55,
-                    "value2": 149 
+                    "value1": 41,
+                    "value2": 172 
                 },
                 "Negatieve adviezen": 
                 {
-                    "value1": 6,
-                    "value2": 13 
+                    "value1": 8,
+                    "value2": 10 
                 },
                 "Gecombineerde adviezen (deels positief – deels negatief)": 
                 {
-                    "value1": 3,
-                    "value2": 6 
+                    "value1": 5,
+                    "value2": 9 
                 }
             },
             "HerstelvorderingenHeroverweging": {
@@ -94,7 +94,7 @@
                     "value3": 0
                 },
                 "Positieve adviezen":    {
-                    "value1": 1,
+                    "value1": 0,
                     "value2": 0,
                     "value3": 0
                 },
@@ -124,12 +124,12 @@
                 },
                 "Positieve adviezen":    {
                     "value1": 0,
-                    "value2": 1,
+                    "value2": 0,
                     "value3": 0
                 },
                 "Negatieve adviezen":    {
                     "value1": 0,
-                    "value2": 1,
+                    "value2": 0,
                     "value3": 0
                 },
                 "Gecombineerde adviezen (deels positief – deels negatief)":
@@ -169,18 +169,18 @@
                 }
             },
             "VraagC1": {
-                "Aan Vlaamse Regering": 3,
-                "Aan College van Burgmeester en Schepenen": 0 
+                "Aan Vlaamse Regering": 2,
+                "Aan College van Burgmeester en Schepenen": 1 
             },
             "VraagC2": {
-                "Aan Vlaamse Regering": 11,
+                "Aan Vlaamse Regering": 23,
                 "Aan College van Burgmeester en Schepenen": 0 
             },
             "VraagD1": {
                 "In het kader van een dading": 0,
-                "In het kader van een minnelijke schikking met de gewestelijke SI": 3,
+                "In het kader van een minnelijke schikking met de gewestelijke SI": 1,
                 "In het kader van een minnelijke schikking met de gemeentelijke SI": 0,
-                "In het kader van een minnelijke schikking met de burgemeester": 0
+                "In het kader van een minnelijke schikking met de burgemeester": 1
             }
         },
         "Bindend": {

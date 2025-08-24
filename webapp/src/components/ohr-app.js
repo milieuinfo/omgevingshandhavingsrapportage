@@ -4,7 +4,6 @@ import {html, LitElement, queryById} from "./common/commons.js";
 import "@domg-wc/sections/header";
 import "@domg-wc/sections/footer";
 import "@domg-wc/components/template"
-
 import "./ohr-start.js";
 import "./dashboards/ohr-personeel.js";
 import "./viewpages/ohr-inleiding.js";
@@ -33,6 +32,7 @@ import "./viewpages/ohr-provincie-op-kaart.js";
 import "./dashboards/ohr-bestuurlijkevervolgtraject.js";
 import "./dashboards/ohr-strafrechtelijkdashboard.js";
 import "./viewpages/ohr-bestuurlijk.js";
+import "./viewpages/ohr-omgevingshandhavingsrapporten.js";
 
 import {getHeaderFooterId} from "./config/header.js";
 
@@ -95,6 +95,7 @@ class OhrApp extends LitElement {
       {path: "/provincie-op-kaart", component: "ohr-opkaartprovincies"},
       {path: "/provincie-analyse", component: "ohr-provincieanalyse"},
       {path: "/bestuurlijk", component: "ohr-bestuurlijk"},
+      {path: "/omgevingshandhavingsrapporten", component: "ohr-omgevingshandhavingsrapporten"},
       {path: "(.*)", component: "ohr-view404"},
     ]);
     Router.go(window.location.pathname)

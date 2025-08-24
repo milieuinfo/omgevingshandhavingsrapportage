@@ -1,15 +1,12 @@
 import {html, LitElement} from "../common/commons.js";
-
 import viz from "../config/instrumentarium.json" assert {type: "json"};
 import filters from "../config/instrumentarium-filters.js";
-
 import "@domg-wc/components/functional-header";
 import "@domg-wc/components/typography";
 import "@domg-wc/components/loader";
 import "@domg-wc/qlik/dashboard-page";
 import {vlElementsStyle} from "@domg-wc/elements";
 import "@domg-wc/components/alert";
-
 import yearofanalsysis from "../config/yearofanalysis.json" assert {type: "json"};
 
 class OhrInstrumentarium extends LitElement {
@@ -42,7 +39,7 @@ class OhrInstrumentarium extends LitElement {
             title="Instrumentarium"
             export-id="CdmbBP"
             url="omgevingsloketrapport.omgeving.vlaanderen.be"
-            app-id="4e2b7e4c-70df-4e58-a44d-234e18cb0739"
+            app-id="f60653ef-014c-4f79-8864-4d13128e5662"
             selected-view="Milieu"
             .views="${viz}"
             .filters="${filters}"

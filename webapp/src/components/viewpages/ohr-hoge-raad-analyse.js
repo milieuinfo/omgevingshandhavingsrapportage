@@ -13,6 +13,7 @@ import "@domg-wc/components/tabs";
 import "@domg-wc/components/functional-header";
 import "@domg-wc/elements/link";
 import "@domg-wc/elements/link-list";
+import "@domg-wc/components/alert";
 
 import yearofanalsysis from "../config/yearofanalysis.json" assert {type: "json"};
 
@@ -48,7 +49,7 @@ class OhrHogeRaadAnalyse extends LitElement {
         <div is="vl-layout">
         <vl-typography>
         <h2>Cijfers van het jaar ${this.yearofanalysis}</h2></vl-typography>
-        <p is="vl-icon-wrapper"><vl-annotation><span is="vl-icon" data-vl-icon="calendar"></span> Laatste wijziging aan de data: 05/03/2024</vl-annotation></p><br>
+        <p is="vl-icon-wrapper"><vl-annotation><span is="vl-icon" data-vl-icon="calendar"></span> Laatste wijziging aan de data: 01/09/2025</vl-annotation></p><br>
 
     <p is="vl-introduction" data-cy="introduction">
     Deze pagina toont de cijfers van de activiteiten van de Hoge Raad voor de Handhavingsuitvoering in het voorafgaande jaar.
@@ -269,20 +270,45 @@ __renderDataSection_BindendeAdviezen_Herstelvordering_Ambtshalve_uitvoering(data
     ${this.__renderDataSection_BindendeAdviezen_Herstelvordering(jsonData.Instroom.Herstelvorderingen)}
     </vl-accordion>
     <vl-accordion data-vl-default-open  data-vl-toggle-text="Herstelvorderingen naar aanleiding van gemotiveerd verzoek tot heroverweging van een negatief advies inzake herstelvorderingen">
-    ${this.__renderDataSection_BindendeAdviezen_Herstelvordering_Heroverweging(jsonData.Instroom.HerstelvorderingenHeroverweging)}
+
+    <vl-alert
+    data-cy="alert"
+    data-vl-naked
+    data-vl-icon="warning"
+    data-vl-type="warning"
+    data-vl-message="Geen adviezen uitgebracht"
+></vl-alert>
     </vl-accordion>
 
      <vl-accordion data-vl-default-open  data-vl-toggle-text="Inleiden van opeenvolgende herstelvorderingen">
-     ${this.__renderDataSection_BindendeAdviezen_Herstelvordering_Heroverweging(jsonData.Instroom.Herstelvorderingopeenvolgend)}
-     
+     <vl-alert
+    data-cy="alert"
+    data-vl-naked
+    data-vl-icon="warning"
+    data-vl-type="warning"
+    data-vl-message="Geen adviezen uitgebracht"
+></vl-alert> 
     </vl-accordion>
 
     <vl-accordion data-vl-default-open  data-vl-toggle-text="Vooraleer een ambtshalve uitvoering van een door de rechter bevolen herstelmaatregel kan worden opgestart">
-    ${this.__renderDataSection_BindendeAdviezen_Herstelvordering_Ambtshalve_uitvoering(jsonData.Instroom.Ambtshalveuitvoering)}
+    <vl-alert
+    data-cy="alert"
+    data-vl-naked
+    data-vl-icon="warning"
+    data-vl-type="warning"
+    data-vl-message="Geen adviezen uitgebracht"
+></vl-alert>
     </vl-accordion>
 
     <vl-accordion data-vl-default-open  data-vl-toggle-text="Voorafgaand aan sommige betekeningen van vonnissen of arresten waarin de rechter het bestuur heeft gemachtigd om ambtshalve in de uitvoering ervan te voorzien">
-   ${this.__renderDataSection_BindendeAdviezen_Herstelvordering_Ambtshalve_uitvoering(jsonData.Instroom.Betekening)}
+   
+   <vl-alert
+    data-cy="alert"
+    data-vl-naked
+    data-vl-icon="warning"
+    data-vl-type="warning"
+    data-vl-message="Geen adviezen uitgebracht"
+></vl-alert>
     </vl-accordion>
 
 

@@ -5,7 +5,6 @@ import {
   queryById,
   renderStack
 } from "../common/commons.js";
-
 import "@domg-wc/elements/select";
 import "@domg-wc/elements/grid";
 import "@domg-wc/components/functional-header";
@@ -17,7 +16,6 @@ import "@domg-wc/elements/link";
 import "@domg-wc/elements/link-list";
 import "@domg-wc/components/accordion";
 import "@domg-wc/components/typography";
-
 import options from "../config/gemeente-op-kaart.json" assert {type: "json"};
 import options2 from "../config/gemeente-op-kaart-absolut.json" assert {type:"json"};
 import yearofanalsysis from "../config/yearofanalysis.json" assert {type: "json"};
@@ -79,7 +77,6 @@ class OhrOpkaart extends LitElement {
   <iframe class="everviz-iframe" src="${this.selectedChoiceUrlAbsoluut}" width="100%" height="450px"></iframe></div>
 </div>   
     </vl-tabs-pane>`;
-    
   }
 
   __renderIntroductionOfMaps() {
@@ -122,7 +119,6 @@ class OhrOpkaart extends LitElement {
           </vl-accordion></p>
             `;
   }
-
   __renderBackgroundInformation() {
     return html`
           <vl-typography data-cy="typography">

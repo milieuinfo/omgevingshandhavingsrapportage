@@ -35,7 +35,8 @@ and performing other setup tasks.
   //Main Rendering Function of page
   //It uses various function defined under this render function
   render() {
-    return html` <vl-content-header>
+    return html` 
+    <vl-content-header>
         <img
           is="vl-image"
           slot="image"
@@ -43,7 +44,7 @@ and performing other setup tasks.
           alt="Hoofding afbeelding website"/>
         <a slot="context-link" href="/">Omgevingshandhavingsrapportage</a>
         <a slot="title-link" href="/">Handhaving</a>
-      </vl-content-header>
+    </vl-content-header>
       <section is="vl-region">
         <div is="vl-layout">
           ${renderStack(
@@ -91,7 +92,8 @@ and performing other setup tasks.
   }
 
   __renderIntroductionTextOnTopOfPage() {
-    return html` <div>
+    return html` 
+    <div>
         <p is="vl-introduction">
           Artikel 16.2.3 van het decreet van 5 april 1995 houdende algemene bepalingen inzake milieubeleid (DABM) en artikel 6.1.3 van de Vlaamse Codex Ruimtelijke Ordening (VCRO) bepaalt dat gegevens over de omgevingshandhavingsuitvoering jaarlijks online worden gepubliceerd.<br>
           Jaarlijks worden de handhavingsactoren in het Vlaamse Gewest op
@@ -111,8 +113,7 @@ and performing other setup tasks.
       <vl-alert
         data-vl-icon="business-graph-pie"
         data-vl-title="Interactieve webtoepassing"
-        data-vl-type="info"
-      >
+        data-vl-type="info">
         <p>
           Deze website is niet statisch, jaarlijks worden de cijfers
           geactualiseerd. <br />
@@ -126,12 +127,6 @@ and performing other setup tasks.
     return html`
     <h5 is="vl-h5" data-vl-alt>Interessante links</h5>
     <ul is="vl-link-list">
-    <li is="vl-link-list-item">
-        <a target="_new_blank" is="vl-link"
-           href="https://www.vlaanderen.be/publicaties/omgevingshandhavingsrapport-handhavingsuitvoering">
-          Lees meer over de cijfers in het handhavingsrapport van 2023<span is="vl-icon" data-vl-before="" data-vl-link="" data-vl-icon="external"></span>
-        </a>
-      </li>
       <li is="vl-link-list-item">
         <a is="vl-link"
            href="/dataverzameling-en-data-interpretatie">
@@ -149,8 +144,13 @@ and performing other setup tasks.
       </li>
       <li is="vl-link-list-item">
         <a target="_new_blank" is="vl-link"
-           href=https://indicatoren.omgeving.vlaanderen.be/>
+           href="https://indicatoren.omgeving.vlaanderen.be/">
           Indicatoren website<span is="vl-icon" data-vl-before="" data-vl-link="" data-vl-icon="external"></span>
+        </a>
+      </li>
+      <li is="vl-link-list-item">
+        <a is="vl-link" href="/omgevingshandhavingsrapporten">
+          Omgevingshandhavingsrapporten
         </a>
       </li>
     </ul>`;
@@ -199,8 +199,7 @@ and performing other setup tasks.
               </span>
             </vl-spotlight>
           </div>
-        </div>
-    `
+        </div>`
   }
 
   __renderStaticNumbersKPI() {
@@ -546,4 +545,5 @@ and performing other setup tasks.
     )}`;
   }
 }
+
 customElements.define("ohr-start", OhrLandingPage);

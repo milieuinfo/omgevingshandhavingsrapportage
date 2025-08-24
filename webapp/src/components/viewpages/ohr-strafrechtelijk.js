@@ -1,6 +1,5 @@
 import {html, LitElement, renderStack} from "../common/commons.js";
 import {vlElementsStyle} from "@domg-wc/elements";
-
 import "@domg-wc/elements/image";
 import "@domg-wc/elements/grid";
 import "@domg-wc/elements/title";
@@ -115,5 +114,4 @@ Nadat het Openbaar Ministerie het dossier ontvangen heeft, zal ze het dossier be
     
   }
 }
-
 customElements.define("ohr-strafrechtelijk", OhrStrafrechtelijk);
