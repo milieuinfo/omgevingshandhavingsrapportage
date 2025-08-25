@@ -164,16 +164,16 @@ and performing other setup tasks.
           <div is="vl-grid" data-vl-align-center>
           <div is="vl-column" data-vl-size="6">
             <vl-spotlight
-              data-vl-img-src="images/info milieu.png"
+              data-vl-img-src="images/info24 MIL.png"
               data-vl-img-alt="spotlight image" download
             >
               <span slot="title">Geconsolideerd beeld milieu</span>
-              <span slot="subtitle">Op basis van de cijfers van 2023</span>
+              <span slot="subtitle">Op basis van de cijfers van 2024</span>
               <span slot="text">
                 De bovenstaande preview van de infographic geeft een overzicht van de
                 verschillende instrumenten binnen het milieubeleid voor het volledige vlaamse gewest.<br />
                 <p>
-                  <a href="images/info milieu.png" download
+                  <a href="images/info24 MIL.png" download
                     >Download bovenstaande infographic</a>
                 </p>
               </span>
@@ -181,19 +181,19 @@ and performing other setup tasks.
           </div>
           <div is="vl-column" data-vl-size="6">
             <vl-spotlight
-              data-vl-img-src="images/info ro.png"
+              data-vl-img-src="images/info24 RO.png"
               data-vl-img-alt="spotlight image"
             >
               <span slot="title">
                 Geconsolideerd beeld ruimtelijke ordening
               </span>
-              <span slot="subtitle">Op basis van de cijfers van 2023</span>
+              <span slot="subtitle">Op basis van de cijfers van 2024</span>
               <span slot="text">
                 De bovenstaande preview van de infographic geeft een overzicht van de
                 verschillende instrumenten binnen het ruimtelijke ordening beleid
                 voor het volledige vlaamse gewest.<br />
                 <p>
-                  <a href="images/info ro.png" download
+                  <a href="images/info24 RO.png" download
                     >Download bovenstaande infographic</a>
                 </p>
               </span>
