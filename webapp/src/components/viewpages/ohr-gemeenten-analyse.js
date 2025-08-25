@@ -1,5 +1,5 @@
 import { vlElementsStyle } from "@domg-wc/elements";
-import jsonData2 from "../datafiles/gemeenten_dataset_2024.json" assert { type: "json" };
+import jsonData2 from "../datafiles/gemeenten_dataset_2024_clean.json" assert { type: "json" };
 import options from "../config/keuzegemeenteanalyse.json" assert { type: "json" };
 import {
   bindVlSelect,
@@ -20,22 +20,6 @@ import "@domg-wc/elements/link";
 import "@domg-wc/elements/link-list";
 import "@domg-wc/components/alert";
 import yearofanalsysis from "../config/yearofanalysis.json" assert { type: "json" };
-
-// Fixed mapping for beleid (keys must exactly match your option values)
-const BELEID_MAP = {
-  "Agentschap voor Maritieme Dienstverlening en Kust": "Milieu",
-  "Agentschap voor Natuur en Bos": "Both",
-  "Agentschap Wegen en Verkeer": "Milieu",
-  "Vlaamse Waterweg": "Milieu",
-  "Departement Mobiliteit en Openbare Werken": "Milieu",
-  "Departement Omgeving": "Both",
-  "Departement Zorg": "Milieu",
-  "Openbare Vlaamse Afvalstoffenmaatschappij": "Milieu",
-  "Vlaams Energie- en Klimaatagentschap": "Milieu",
-  "Vlaamse Landmaatschappij": "Milieu",
-  "Vlaamse Milieumaatschappij": "Milieu",
-  "Vlaamse Wooninspectie": "RO",
-};
 
 const RESPONS = {
   Aartselaar: "non-respons",
@@ -64,7 +48,7 @@ const RESPONS = {
   Riemst: "non-respons",
   "Sint-Martens-Latem": "non-respons",
   Stabroek: "non-respons",
-  Wetteren: "non-respons",
+  Wetteren: "non-respons"
 };
 
 class OhrGemeentenAnalyse extends LitElement {
@@ -77,25 +61,13 @@ class OhrGemeentenAnalyse extends LitElement {
       selectedChoiceUrl: { type: String },
     };
   }
+
   constructor() {
     super();
     this.selectedChoiceUrl = options.find((o) => o.selected).value;
     this.selectedChoiceLabel = options.find((o) => o.selected).label;
     this.yearofanalysis = yearofanalsysis.value;
   }
-  __nonEmpty(o) {
-    return o && typeof o === "object" && Object.keys(o).length > 0;
-  }
-
-  __deriveBeleid(actor) {
-    const hasMilieu = this.__nonEmpty(jsonData2?.Milieu?.[actor]);
-    const hasRO = this.__nonEmpty(jsonData2?.RO?.[actor]);
-    if (hasMilieu && hasRO) return "Both";
-    if (hasMilieu) return "Milieu";
-    if (hasRO) return "RO";
-    return "None";
-  }
-
   // Safe getter for sections; always returns an object
   __sec(branch, actor, key) {
     return jsonData2?.[branch]?.[actor]?.[key] ?? {};
@@ -121,6 +93,15 @@ class OhrGemeentenAnalyse extends LitElement {
       this.requestUpdate();
     }
   }
+
+  __milieuThemaGerichteacties(r) {
+  if(!r) return [];
+  const obj = {
+    "PFAS": r["PFAS"] ?? "-",
+    "Stikstof": r["Stikstof"] ?? "-",
+  }
+  return obj;
+}
 
   render() {
     return html` <vl-functional-header
@@ -157,21 +138,16 @@ class OhrGemeentenAnalyse extends LitElement {
       </section>`;
   }
 
-  /* Render opmerking */
-  __renderOpmerkingsection(data, type) {
-    return html`
-      <vl-typography>
-        <ul>
-          <li>${type}</li>
-          <ul>
-            ${Object.entries(data).map(([key, value]) => {
-              return html` <li>${value}</li> `;
-            })}
-          </ul>
-        </ul>
-      </vl-typography>
-    `;
-  }
+  __roOpmerkingenFromRecord(r) {
+  if (!r) return {};
+  const obj = {
+    "Opmerking": r["Opmerking"] ?? "-",
+  };
+  return obj;
+}
+
+
+
   /* Render ThemaGerichte Acties */
   __renderThemaGerichteActies(data, type) {
     return html`
@@ -293,24 +269,6 @@ class OhrGemeentenAnalyse extends LitElement {
     `;
   }
 
-  // Find the JSON record for the selected actor (works for array or keyed object)
-  __getActorRecord(actor) {
-    if (Array.isArray(jsonData2)) {
-      return jsonData2.find((r) => r?.Actor === actor) ?? null;
-    }
-    // common fallbacks if your converter wrapped rows
-    const rows = jsonData2?.data || jsonData2?.rows;
-    if (Array.isArray(rows)) {
-      return rows.find((r) => r?.Actor === actor) ?? null;
-    }
-    // direct keyed by actor name
-    if (jsonData2 && typeof jsonData2 === "object" && jsonData2[actor]) {
-      return jsonData2[actor];
-    }
-    return null;
-  }
-
-  // Already added earlier (keeps working for flat JSON too)
   __getActorRecord(actor) {
     if (Array.isArray(jsonData2))
       return jsonData2.find((r) => r?.Actor === actor) ?? null;
@@ -321,14 +279,6 @@ class OhrGemeentenAnalyse extends LitElement {
       return jsonData2[actor];
     return null;
   }
-
-  __hasValue(v) {
-    if (v === null || v === undefined) return false;
-    const s = String(v).trim();
-    return s !== "" && s !== "-";
-  }
-
-  // Milieu personnel (with a fallback for the typo’d key)
   __milieuPersoneelFromRecord(r) {
     if (!r) return {};
     const vteToez =
@@ -340,8 +290,6 @@ class OhrGemeentenAnalyse extends LitElement {
         r["Milieu VTE Administratieve en Juridische ondersteuning"] ?? "-",
     };
   }
-
-  // NEW: RO personnel
   __roPersoneelFromRecord(r) {
     if (!r) return {};
     const roVTEKeys = [
@@ -353,42 +301,13 @@ class OhrGemeentenAnalyse extends LitElement {
     return {
       Verbalisanten: r["RO Verbalisanten"] ?? "-",
       "Personeelsleden met de gecombineerde functie verbalisant en stedenbouwkundig inspecteur":
-        r["RO Gecombineerde functie"] ?? "-",
-      "Stedenbouwkundige inspecteurs":
-        r["RO Stedenbouwkundige Inspecteurs"] ?? "-",
-      "VTE handhavers": this.__formatBE(roVTETotal),
+        r["RO Gecombineerd"] ?? "-",
+      "Stedenbouwkundige inspecteurs": r["RO Stedenbouwkundig"] ?? "-",
+      "VTE handhavers": r["VTE Handhavers"] ?? "-",
       "VTE administratieve en juridische ondersteuning":
         r["RO VTE Administratieve en Juridische ondersteuning"] ?? "-",
     };
   }
-
-  // OPTIONAL: make the 'derive' work on your flat JSON too
-  __deriveBeleid(actor) {
-    const r = this.__getActorRecord(actor);
-    if (!r) return "None";
-    const hasMilieu = [
-      "Milieu Toezichthouders",
-      "Milieu VTE Toezichthouders",
-      "Milieu VTE toezicthouders",
-      "Milieu VTE Administratieve en Juridische ondersteuning",
-    ].some((k) => this.__hasValue(r[k]));
-
-    const hasRO = [
-      "RO Gecombineerde functie",
-      "RO Verbalisanten",
-      "RO Stedenbouwkundige Inspecteurs",
-      "RO VTE Gecombineerde functie",
-      "RO VTE Verbalisanten",
-      "RO VTE Stedenbouwkundige Inspecteurs",
-      "RO VTE Administratieve en Juridische ondersteuning",
-    ].some((k) => this.__hasValue(r[k]));
-
-    if (hasMilieu && hasRO) return "Both";
-    if (hasMilieu) return "Milieu";
-    if (hasRO) return "RO";
-    return "None";
-  }
-
   // Parse numbers like "1,4" or "1.234,56"; treat "-" / "" as 0
   __toNumber(v) {
     const s = String(v ?? "").trim();
@@ -410,7 +329,7 @@ class OhrGemeentenAnalyse extends LitElement {
   __milieuControlesFromRecord(r) {
     if (!r) return {};
     const obj = {
-      "Totaal aantal milieucontroles": r["Milieu Controles"] ?? "-",
+      "Totaal aantal milieucontroles": r["milieucontroles"] ?? "-",
       "navolgende milieuhandhavingscontroles naar aanleiding van schendingen vastgesteld in voorgaande jaren":
         r["Milieu Controles Navolgende Aanleiding Schending"] ?? "-",
       "aanvankelijke milieuhandhavingscontroles naar aanleiding van klachten":
@@ -428,7 +347,6 @@ class OhrGemeentenAnalyse extends LitElement {
   __roControlesFromRecord(r) {
     if (!r) return {};
     const obj = {
-      "Totaal aantal controles ruimtelijke ordening": r["RO Controles"] ?? "-",
       "navolgende stedenbouwkundige controles naar aanleiding van schendingen vastgesteld in voorgaande jaren":
         r["RO Controles Navolgende Aanleiding Schending"] ?? "-",
       "aanvankelijke stedenbouwkundige controles naar aanleiding van klachten":
@@ -443,78 +361,74 @@ class OhrGemeentenAnalyse extends LitElement {
     return obj;
   }
 
-  // If you want a focused “schending” mini-table like before:
   __milieuControlesSchendingFromRecord(r) {
     if (!r) return {};
     return {
       "Totaal aantal aanvankelijke milieucontroles met schending":
         r["Milieu Aanvankelijke Controles"] ?? "-",
-      Afval: r["Milieu Aanvankelijke Controles Afval"] ?? "-",
-      Bodem: r["Milieu Aanvankelijke Controles Bodem"] ?? "-",
-      Geluid: r["Milieu Aanvankelijke Controles Geluid"] ?? "-",
-      Lucht: r["Milieu Aanvankelijke Controles Lucht"] ?? "-",
-      Mest: r["Milieu Aanvankelijke Controles Mest"] ?? "-",
-      Milieubeheer: r["Milieu Aanvankelijke Controles Milieubeheer"] ?? "-",
-      Vergunningen: r["Milieu Aanvankelijke Controles Vergunningen"] ?? "-",
-      Water: r["Milieu Aanvankelijke Controles Water"] ?? "-",
-      Andere: r["Milieu Aanvankelijke Controles Andere"] ?? "-",
+      Afval: r["Afval controles"] ?? "-",
+      Andere: r["Andere controles"] ?? "-",
+      Bodem: r["Bodem controles"] ?? "-",
+      Geluid: r["Geluid controles"] ?? "-",
+      Lucht: r["Lucht controles"] ?? "-",
+      Mest: r["Mest controles"] ?? "-",
+      Milieubeheer: r["Milieubeheer controles"] ?? "-",
+      Vergunningen: r["Vergunningen controles"] ?? "-",
+      Water: r["Water controles"] ?? "-",
     };
   }
   __roControlesSchendingFromRecord(r) {
     if (!r) return {};
     return {
       "Totaal aantal aanvankelijke controles ruimtelijke ordening met schending":
-        r["RO Aanvankelijke Controles"] ?? "-",
+        r["RO Controles"] ?? "-",
     };
   }
 
   __milieuKlachtenFromRecord(r) {
     if (!r) return {};
     return {
-      "Totaal aantal milieuklachten": r["Milieu Klachten"] ?? "-",
-      Afval: r["Milieu Afval"] ?? "-",
-      Bodem: r["Milieu Bodem"] ?? "-",
-      Geluid: r["Milieu Geluid"] ?? "-",
-      Lucht: r["Milieu Lucht"] ?? "-",
-      Mest: r["Milieu Mest"] ?? "-",
-      Milieubeheer: r["Milieu Milieubeheer"] ?? "-",
-      Vergunningen: r["Milieu Vergunningen"] ?? "-",
-      Water: r["Milieu Water"] ?? "-",
-      Andere: r["Milieu Andere"] ?? "-",
+      "Totaal aantal milieuklachten": r["Totaal aantal milieuklachten"] ?? "-",
+      Afval: r["Afval"] ?? "-",
+      Andere: r["Andere"] ?? "-",
+      Bodem: r["Bodem"] ?? "-",
+      Geluid: r["Geluid"] ?? "-",
+      Lucht: r["Lucht"] ?? "-",
+      Mest: r["Mest"] ?? "-",
+      Milieubeheer: r["Milieubeheer"] ?? "-",
+      Vergunningen: r["Vergunningen"] ?? "-",
+      Water: r["Water"] ?? "-",
     };
   }
-
   __roKlachtenFromRecord(r) {
     if (!r) return {};
     return {
       "Totaal aantal klachten ruimtelijke ordening": r["RO Klachten"] ?? "-",
     };
   }
-
   __milieuInstrumentFromRecord(r) {
     if (!r) return {};
     const obj = {
       Raadgeving: r["Milieu Raadgeving"] ?? "-",
       Aanmaning: r["Milieu Aanmaning"] ?? "-",
-      "Verslag van vaststelling": r["Milieu Verslag van Vaststelling"] ?? "-",
+      "Verslag van vaststelling": r["Milieu verslag van vaststelling"] ?? "-",
       "Proces-verbaal": r["Milieu Proces-verbaal"] ?? "-",
       "Bestuurlijke maatregelen zonder dwangsom":
-        r["Milieu Bestuurlijke maatregelen Zonder Dwangsom"] ?? "-",
+        r["Milieu bestuurlijke maatregel zonder dwangsom"] ?? "-",
       "Bestuurlijke maatregelen Met Dwangsom":
-        r["Milieu Bestuurlijke maatregelen met dwangsom"] ?? "-",
+        r["Milieu bestuurlijke maatregel met dwangsom"] ?? "-",
       Veiligheidsmaatregel: r["Milieu Veiligheidsmaatregel"] ?? "-",
     };
     return obj;
   }
-
   __roInstrumentFromRecord(r) {
     if (!r) return {};
     const obj = {
       Raadgeving: r["RO Raadgeving"] ?? "-",
       Aanmaning: r["RO Aanmaning"] ?? "-",
-      "Verslag van vaststelling": r["RO Verslag van Vaststelling"] ?? "-",
+      "Verslag van vaststelling": r["RO verslag van vaststelling"] ?? "-",
       "Proces-verbaal": r["RO Proces-verbaal"] ?? "-",
-      "Bevel tot staking": r["RO Bevel tot staking"] ?? "-",
+      "Bevel tot staking": r["RO Bevel tot Staking"] ?? "-",
       "Afgesloten minnelijke schikking":
         r["RO Afgesloten minnelijke schikking"] ?? "-",
       "Ingeleide herstelvordering bij Openbaar Ministerie":
@@ -529,16 +443,20 @@ class OhrGemeentenAnalyse extends LitElement {
     return obj;
   }
 
+  
+
   __renderDynamicContent() {
     let beleid;
-
     if (RESPONS[this.selectedChoiceUrl]) {
-      // case 1: in RESPONS map
       beleid = "non-respons";
     } else {
-      // case 2: just use the actor name
       beleid = this.selectedChoiceUrl;
     }
+
+    const renderColumns_milieu = (milieuData,milieuLabel) => {
+      return html`<div is="vl-column" data-vl-size="12">${this.__renderDataSection(milieuData, milieuLabel)}</div>`;
+  };
+
 
     // shortcut to safely read sections
     const s = (branch, key) => this.__sec(branch, this.selectedChoiceUrl, key);
@@ -788,23 +706,21 @@ class OhrGemeentenAnalyse extends LitElement {
             data-vl-title="Themagerichte acties"
           >
             <div is="vl-grid">
-              ${renderColumnsThema(
-                s("Milieu", "Thema"),
-                s("RO", "Thema"),
-                "Milieu",
-                "Ruimtelijke ordening"
-              )}
+                 ${(() => {
+      const rec = this.__getActorRecord(this.selectedChoiceUrl);
+      const milieu = this.__milieuThemaGerichteacties(rec);
+      return renderColumns_milieu(milieu);
+    })()}
             </div>
           </vl-tabs-pane>
 
           <vl-tabs-pane data-vl-id="Opmerkingen" data-vl-title="Opmerkingen">
             <div is="vl-grid">
-              ${renderColumnsThema(
-                s("Milieu", "Opmerking"),
-                s("RO", "Opmerking"),
-                "Milieu",
-                "Ruimtelijke ordening"
-              )}
+             ${(() => {
+      const rec = this.__getActorRecord(this.selectedChoiceUrl);
+      const milieu = this.__roOpmerkingenFromRecord(rec);
+      return renderColumns_milieu(milieu);
+    })()}
             </div>
           </vl-tabs-pane>
         </vl-tabs>
