@@ -215,7 +215,7 @@ and performing other setup tasks.
           size: 2,
           template: html` <div is="vl-infotext" data-cy="infotext">
             <div>
-              <div data-vl-value="">96%</div>
+              <div data-vl-value="">92%</div>
               <div data-vl-text="">Reponsgraad</div>
             </div>
           </div>`,
@@ -224,7 +224,7 @@ and performing other setup tasks.
           size: 2,
           template: html` <div is="vl-infotext" data-cy="infotext">
             <div>
-              <div data-vl-value="">+7%</div>
+              <div data-vl-value="">+1%</div>
               <div data-vl-text="">Evolutie responsgraad</div>
             </div>
           </div>`,
@@ -233,7 +233,7 @@ and performing other setup tasks.
           size: 2,
           template: html` <div is="vl-infotext" data-cy="infotext">
             <div>
-              <div data-vl-value="">1871</div>
+              <div data-vl-value="">1769</div>
               <div data-vl-text="">Aantal handhavers omgevingsinspectie</div>
             </div>
           </div>`,
@@ -242,7 +242,7 @@ and performing other setup tasks.
           size: 2,
           template: html` <div is="vl-infotext" data-cy="infotext">
             <div>
-              <div data-vl-value="">35689</div>
+              <div data-vl-value="">29322</div>
               <div data-vl-text="">Aantal klachten</div>
             </div>
           </div>`,
@@ -251,7 +251,7 @@ and performing other setup tasks.
           size: 2,
           template: html` <div is="vl-infotext" data-cy="infotext">
             <div>
-              <div data-vl-value="">47130</div>
+              <div data-vl-value="">36144</div>
               <div data-vl-text="">Aantal controles</div>
             </div>
           </div>`,
@@ -260,7 +260,7 @@ and performing other setup tasks.
           size: 2,
           template: html` <div is="vl-infotext" data-cy="infotext">
             <div>
-              <div data-vl-value="">4978</div>
+              <div data-vl-value="">3871</div>
               <div data-vl-text="">Aantal PV's</div>
             </div>
           </div>`,
