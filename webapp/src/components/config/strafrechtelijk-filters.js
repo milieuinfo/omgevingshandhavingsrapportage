@@ -1,7 +1,8 @@
 import {
   JAARTALSTRAFRECHTELIJK,
   HOOFDRUBRIEKSTRAFRECHTELIJK,
-  BELEIDSDOMEINSTRAFRECHTELIJK
+  BELEIDSDOMEINSTRAFRECHTELIJK,
+  Tenlastenleggingscodes
       } from "./qlik_resources.js";
       
       const filters = [
@@ -19,6 +20,11 @@ import {
           name: "Thema",
           id: "Hoofdrubriek",
           filter: HOOFDRUBRIEKSTRAFRECHTELIJK
+        },
+        {
+          name: "Tenlastenleggingscodes",
+          id: "Tenlastenleggingscodes",
+          filter: Tenlastenleggingscodes
         }
       ]
       export {filters as default};

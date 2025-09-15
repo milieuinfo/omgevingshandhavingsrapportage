@@ -149,8 +149,9 @@ renderThemaGerichteActies() {
     `;
   }
 /* Render data table Numbers*/
-renderDataSection(data) {
-  return html`
+renderDataSection(data,url) {
+  if(url === 'Instroom') {
+return html`
     <table is="vl-data-table">
       <thead>
         <tr>
@@ -180,7 +181,69 @@ renderDataSection(data) {
     </table>
     <br />
   `;
-}
+  } else if(url === 'Uitstroom') {
+  return html`
+    <table is="vl-data-table">
+      <thead>
+        <tr>
+          <th>Vooruitgangsstaten</th>
+          <th>Aantal</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${Object.entries(data).map(([key, value]) => {
+          if (typeof value === "object") {
+            return html`
+              <tr>
+                <td data-title="${key}">${key}</td>
+                <td data-title="${value.value}">${value.value}</td>
+              </tr>
+            `;
+          } else {
+            return html`
+              <tr>
+                <td data-title="${key}">${key}</td>
+                <td data-title="${value.value}">${value}</td>
+              </tr>
+            `;
+          }
+        })}
+      </tbody>
+    </table>
+    <br />
+  `;
+} else {
+  return html`
+    <table is="vl-data-table">
+      <thead>
+        <tr>
+          <th>Motieven</th>
+          <th>Aantal</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${Object.entries(data).map(([key, value]) => {
+          if (typeof value === "object") {
+            return html`
+              <tr>
+                <td data-title="${key}">${key}</td>
+                <td data-title="${value.value}">${value.value}</td>
+              </tr>
+            `;
+          } else {
+            return html`
+              <tr>
+                <td data-title="${key}">${key}</td>
+                <td data-title="${value.value}">${value}</td>
+              </tr>
+            `;
+          }
+        })}
+      </tbody>
+    </table>
+    <br />
+  `;
+}}
 
 __renderViewSelector() {
   return html`
@@ -197,14 +260,14 @@ __renderViewSelector() {
   <vl-tabs-pane data-vl-id="Afval" data-vl-title="Afval">
       <div is="vl-grid">
   <div is="vl-column" data-vl-size=12>
-   ${this.renderDataSection(jsonData[this.selectedChoiceUrl].Afval)}
+   ${this.renderDataSection(jsonData[this.selectedChoiceUrl].Afval,this.selectedChoiceUrl)}
   </div>
 </div>
   </vl-tabs-pane>
   <vl-tabs-pane data-vl-id="Lucht/water/bodem/geluid (emissies)" data-vl-title="Lucht/water/bodem/geluid (emissies)">
           <div is="vl-grid">
   <div is="vl-column" data-vl-size=12>
- ${this.renderDataSection(jsonData[this.selectedChoiceUrl].LWBGE)}
+ ${this.renderDataSection(jsonData[this.selectedChoiceUrl].LWBGE,this.selectedChoiceUrl)}
   
   </div>
 </div>   
@@ -212,28 +275,28 @@ __renderViewSelector() {
   <vl-tabs-pane data-vl-id="Mest" data-vl-title="Mest">
     <div is="vl-grid">
   <div is="vl-column" data-vl-size=12>
-   ${this.renderDataSection(jsonData[this.selectedChoiceUrl].Mest)}
+   ${this.renderDataSection(jsonData[this.selectedChoiceUrl].Mest,this.selectedChoiceUrl)}
   </div>
 </div>
   </vl-tabs-pane>
    <vl-tabs-pane data-vl-id="Milieubeheersrecht" data-vl-title="Milieubeheersrecht">
     <div is="vl-grid">
   <div is="vl-column" data-vl-size=12>
- ${this.renderDataSection(jsonData[this.selectedChoiceUrl].Milieubeheersrecht)}
+ ${this.renderDataSection(jsonData[this.selectedChoiceUrl].Milieubeheersrecht,this.selectedChoiceUrl)}
   </div>
 </div>
   </vl-tabs-pane>
    <vl-tabs-pane data-vl-id="Milieuvergunningen" data-vl-title="Milieuvergunningen">
     <div is="vl-grid">
   <div is="vl-column" data-vl-size=12>
-   ${this.renderDataSection(jsonData[this.selectedChoiceUrl].Milieuvergunningen)}
+   ${this.renderDataSection(jsonData[this.selectedChoiceUrl].Milieuvergunningen,this.selectedChoiceUrl)}
   </div>
 </div>
   </vl-tabs-pane>
    <vl-tabs-pane data-vl-id="Ruimtelijke ordening" data-vl-title="Ruimtelijke ordening">
     <div is="vl-grid">
   <div is="vl-column" data-vl-size=12>
-   ${this.renderDataSection(jsonData[this.selectedChoiceUrl].RO)}
+   ${this.renderDataSection(jsonData[this.selectedChoiceUrl].RO,this.selectedChoiceUrl)}
   </div>
 </div>
   </vl-tabs-pane>

@@ -35,7 +35,7 @@ class OhrOmgevingshandhavingsrapporten extends LitElement {
         <div is="vl-layout">
           ${renderStack(
               {
-                size: 8,
+                size: 12,
                 template: html`<h1 is="vl-h1" data-vl-no-space-bottom>
                   Omgevingshandhavingsrapporten
                 </h1>`,
@@ -43,6 +43,10 @@ class OhrOmgevingshandhavingsrapporten extends LitElement {
               {
                 size:8,
                 template: this.__renderIntro(),
+              },
+              {
+                size:4,
+                template: this.__renderSideNavigation(),
               },
               {
                 size:8,
@@ -59,17 +63,25 @@ class OhrOmgevingshandhavingsrapporten extends LitElement {
 
 __renderIntro() {
   return html`<p is="vl-introduction">
-        Op de onderstaande pagina vindt u een overzicht van alle publicaties van de omgevingshandhavingsrapporten. Deze rapporten worden periodiek gepubliceerd en bieden inzicht in de naleving van de omgevingsregelgeving, de uitgevoerde controles en de genomen handhavingsmaatregelen.
+        Op deze pagina vindt u een overzicht van alle publicaties omtrent de rapportage inzake de handhaving van milieu en ruimtelijke ordening. Sinds 2020 worden deze rapportages gebundeld in een omgevingshandhavingsrapportage.
         </p>`
 }
-
+__renderSideNavigation() {
+    return html`
+    <h5 is="vl-h5" data-vl-alt>Interessante links</h5>
+    <ul is="vl-link-list">
+      <li is="vl-link-list-item">
+        <a is="vl-link" href="/">Analyseer de cijfers</a>
+      </li>  
+    </ul>`;
+  }
 __rendercurrentreport() {
   return html`
     <vl-typography data-cy="typography">
     <strong>Handhaving ruimtelijke ordening en milieu:</strong>
       <ul>
         <li><a href="https://publicaties.vlaanderen.be/view-file/72474" target ="new_blank">Omgevingshandhavingsrapport 2023</a></li>
-        <li><a href="https://publicaties.vlaanderen.be/view-file/72474" target ="new_blank">Omgevingshandhavingsrapport 2020</a></li>
+        <li><a href="https://publicaties.vlaanderen.be/view-file/47164" target ="new_blank">Omgevingshandhavingsrapport 2020</a></li>
       </ul></vl-typography>
   `; 
 }
@@ -119,7 +131,7 @@ __rendercurrentreport() {
                 <td><a href="https://publicaties.vlaanderen.be/view-file/33302" target="new_blank">2011</a></td>
             </tr>
             <tr>
-                <td><a href="https://publicaties.vlaanderen.be/view-file/33303" target="new_blank">2010</a></td>
+                <td><a href="https://publicaties.vlaanderen.be/view-file/33305" target="new_blank">2010</a></td>
             </tr>
             <tr>
                 <td><a href="https://publicaties.vlaanderen.be/view-file/33303" target="new_blank">2009</a></td>
@@ -130,25 +142,5 @@ __rendercurrentreport() {
       </section>`;
   }
 
-  __renderSideNavigation() {
-    return html`
-    <a is="vl-link-button" href="/strafrechtelijke-analyse">Bekijk de cijfers voor dit thema</a><br><br>
-    <h5 is="vl-h5" data-vl-alt>Interessante links</h5>
-    <ul is="vl-link-list">
-    <li is="vl-link-list-item">
-   
-      </li>
-      <li is="vl-link-list-item">
-        <a is="vl-link" href="/download-cijfers-en-meer">Download de cijfers</a>
-      </li> 
-        <li is="vl-link-list-item">
-        <a target="_new_blank" is="vl-link"
-           href="https://www.om-mp.be/nl/">
-          Website Openbaar Ministerie<span is="vl-icon" data-vl-before="" data-vl-link="" data-vl-icon="external"></span>
-        </a>
-      </li>
-    </ul>`;
-    
-  }
 }
 customElements.define("ohr-omgevingshandhavingsrapporten", OhrOmgevingshandhavingsrapporten);

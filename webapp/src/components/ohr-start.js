@@ -224,15 +224,6 @@ and performing other setup tasks.
           size: 2,
           template: html` <div is="vl-infotext" data-cy="infotext">
             <div>
-              <div data-vl-value="">+1%</div>
-              <div data-vl-text="">Evolutie responsgraad</div>
-            </div>
-          </div>`,
-        },
-        {
-          size: 2,
-          template: html` <div is="vl-infotext" data-cy="infotext">
-            <div>
               <div data-vl-value="">1769</div>
               <div data-vl-text="">Aantal handhavers omgevingsinspectie</div>
             </div>
@@ -253,6 +244,15 @@ and performing other setup tasks.
             <div>
               <div data-vl-value="">36144</div>
               <div data-vl-text="">Aantal controles</div>
+            </div>
+          </div>`,
+        },
+        {
+          size: 2,
+          template: html` <div is="vl-infotext" data-cy="infotext">
+            <div>
+              <div data-vl-value="">36144</div>
+              <div data-vl-text="">Aantal controles met schending</div>
             </div>
           </div>`,
         },
@@ -282,8 +282,8 @@ and performing other setup tasks.
         template: html`
           <p>
             Hieronder wordt per actor de data weergegeven die betrekking heeft
-            op ${this.yearofanalysis} (handhavingsactiviteiten uitgevoerd
-            tussen 1 januari en 31 december)
+            op het jaar ${this.yearofanalysis} (handhavingsactiviteiten uitgevoerd
+            tussen 1 januari en 31 december).
           </p>
         `,
       },
@@ -293,7 +293,7 @@ and performing other setup tasks.
           <a is="vl-doormat" href="/gewest">
             <h2 is="vl-doormat-title">Gewest</h2>
             <div is="vl-doormat-text">
-              Bekijk de cijfers van de gewestelijke omgevingshandhavingsactoren van ${this.yearofanalysis}.
+              Bekijk de cijfers van de gewestelijke omgevingshandhavingsactoren.
             </div>
           </a>
         </div>`,
@@ -304,7 +304,7 @@ and performing other setup tasks.
           <a is="vl-doormat" href="/provincie">
             <h2 is="vl-doormat-title">Provincies</h2>
             <div is="vl-doormat-text">
-              Bekijk de cijfers van de provinciale omgevingshandhavingsactoren van ${this.yearofanalysis}.
+              Bekijk de cijfers van de provinciale omgevingshandhavingsactoren.
             </div>
           </a>
         </div>`,
@@ -315,7 +315,7 @@ and performing other setup tasks.
           <a is="vl-doormat" href="/gemeenten">
             <h2 is="vl-doormat-title">Gemeenten</h2>
             <div is="vl-doormat-text">
-              Bekijk de cijfers van de gemeentelijke omgevingshandhavingsactoren van ${this.yearofanalysis}.
+              Bekijk de cijfers van de gemeentelijke omgevingshandhavingsactoren.
             </div>
           </a>
         </div>`,
@@ -326,7 +326,7 @@ and performing other setup tasks.
           <a is="vl-doormat" href="/hoge-raad">
             <h2 is="vl-doormat-title">Hoge Raad voor de Handhavingsuitvoering</h2>
             <div is="vl-doormat-text">
-              Bekijk de cijfers van de Hoge Raad voor Handhavingsuitvoering van ${this.yearofanalysis}.
+              Bekijk de cijfers van de Hoge Raad voor Handhavingsuitvoering.
             </div>
           </a>
         </div>`,
@@ -339,7 +339,7 @@ and performing other setup tasks.
               Strafrechtelijke sanctionering
             </h2>
             <div is="vl-doormat-text">
-             Bekijk de cijfers van het Openbaar Ministerie van <br> ${this.yearofanalysis}.
+             Bekijk de cijfers van het Openbaar Ministerie.
             </div>
           </a>
         </div>`,
@@ -352,7 +352,7 @@ and performing other setup tasks.
               Bestuurlijke sanctionering
             </h2>
             <div is="vl-doormat-text">
-             Bekijk de cijfers van de gewestelijke beboetingsentiteit en het Handhavingscollege van ${this.yearofanalysis}.
+             Bekijk de cijfers van de gewestelijke beboetingsentiteit en het Handhavingscollege.
              </div>
           </a>
           
@@ -483,8 +483,8 @@ and performing other setup tasks.
         template: html`
           <p>
             Hieronder wordt per actor de data weergegeven die betrekking heeft
-            op ${this.yearofanalysis} (handhavingsactiviteiten uitgevoerd
-            tussen 1 januari en 31 december) De data wordt gevisualiseerd op
+            op het jaar ${this.yearofanalysis} (handhavingsactiviteiten uitgevoerd
+            tussen 1 januari en 31 december). De data wordt gevisualiseerd op
             kaarten met informatie over de evolutie van de cijfer.
           </p>
         `,

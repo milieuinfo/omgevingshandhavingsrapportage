@@ -19,6 +19,13 @@ export const ACTOR = {
   nrOfValues: 500
 };
 
+export const Tenlastenleggingscodes = {
+  name: "Tenlastenleggingscodes",
+  fieldQualifier: "qText",
+  field: "[rubriek]",
+  nrOfValues: 100
+}
+
 export const BELEID = {
   name: "Beleidsniveau",
   fieldQualifier: "qText",

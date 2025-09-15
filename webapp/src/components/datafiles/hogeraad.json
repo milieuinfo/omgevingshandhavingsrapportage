@@ -11,19 +11,19 @@
             "Derde belanghebbende": 0
         },
         "Vraag3": {
-            "Gewestelijke stedenbouwkundige inspecteurs": "/",
-            "Gemeentelijke stedenbouwkundige inspecteurs / Burgemeesters": "/",
-            "Derde belanghebbende": "/"
+            "Gewestelijke stedenbouwkundige inspecteurs": "0",
+            "Gemeentelijke stedenbouwkundige inspecteurs / Burgemeesters": "0",
+            "Derde belanghebbende": "0"
         },
         "Vraag4": {
-            "Gewestelijke stedenbouwkundige inspecteurs": "/",
-            "Gemeentelijke stedenbouwkundige inspecteurs / Burgemeesters": "/",
-            "Derde belanghebbende": "/"
+            "Gewestelijke stedenbouwkundige inspecteurs": "0",
+            "Gemeentelijke stedenbouwkundige inspecteurs / Burgemeesters": "0",
+            "Derde belanghebbende": "0"
         },
         "Vraag5": {
-            "Gewestelijke stedenbouwkundige inspecteurs": "/",
-            "Gemeentelijke stedenbouwkundige inspecteurs / Burgemeesters": "/",
-            "Derde belanghebbende": "/"
+            "Gewestelijke stedenbouwkundige inspecteurs": "0",
+            "Gemeentelijke stedenbouwkundige inspecteurs / Burgemeesters": "0",
+            "Derde belanghebbende": "0"
         },
         "Herstelvorderingen": {
             "Onontvankelijke adviezen": {
@@ -31,7 +31,7 @@
                 "value2": 1
             },
             "Geen advies wegens vrijwillig herstel": {
-                "value1": "/",
+                "value1": "0",
                 "value2": 7
             },
             "Positieve adviezen": {

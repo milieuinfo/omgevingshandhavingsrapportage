@@ -247,16 +247,40 @@ __renderDataSection_BindendeAdviezen_Herstelvordering_Ambtshalve_uitvoering(data
         ${this.renderDataSection(jsonData.Instroom.Vraag1)}
         </vl-accordion>
         <vl-accordion data-vl-default-open data-vl-toggle-text="Verzoeken tot heroverweging van een negatief advies inzake herstelvorderingen">
-        ${this.renderDataSection(jsonData.Instroom.Vraag2)}
+         <vl-alert
+    data-cy="alert"
+    data-vl-naked
+    data-vl-icon="warning"
+    data-vl-type="warning"
+    data-vl-message="Geen aanvragen ontvangen"
+></vl-alert>
         </vl-accordion>
         <vl-accordion data-vl-default-open data-vl-toggle-text="Aanvragen voor advies inzake opeenvolgende herstelvorderingen">
-        ${this.renderDataSection(jsonData.Instroom.Vraag3)}
+         <vl-alert
+    data-cy="alert"
+    data-vl-naked
+    data-vl-icon="warning"
+    data-vl-type="warning"
+    data-vl-message="Geen aanvragen ontvangen"
+></vl-alert>
         </vl-accordion>
         <vl-accordion data-vl-default-open data-vl-toggle-text="Aanvragen voor advies inzake een ambtshalve uitvoering van een door de rechter bevolen herstelmaatregel">
-        ${this.renderDataSection(jsonData.Instroom.Vraag4)}
+        <vl-alert
+    data-cy="alert"
+    data-vl-naked
+    data-vl-icon="warning"
+    data-vl-type="warning"
+    data-vl-message="Geen aanvragen ontvangen"
+></vl-alert>
         </vl-accordion>
         <vl-accordion data-vl-default-open data-vl-toggle-text="Aanvragen voor advies inzake betekeningen van vonnissen of arresten waarin de rechter het bestuur heeft gemachtigd om ambtshalve in de uitvoering ervan te voorzien">
-        ${this.renderDataSection(jsonData.Instroom.Vraag5)}
+         <vl-alert
+    data-cy="alert"
+    data-vl-naked
+    data-vl-icon="warning"
+    data-vl-type="warning"
+    data-vl-message="Geen aanvragen ontvangen"
+></vl-alert>
         </vl-accordion>
     </vl-accordion-list>
   </div>
