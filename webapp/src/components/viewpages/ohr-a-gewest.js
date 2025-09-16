@@ -54,6 +54,7 @@ class OhrAGewest extends LitElement {
   }
   __nonEmpty(o) { return o && typeof o === "object" && Object.keys(o).length > 0; }
 
+
 __deriveBeleid(actor) {
   const hasMilieu = this.__nonEmpty(jsonData2?.Milieu?.[actor]);
   const hasRO     = this.__nonEmpty(jsonData2?.RO?.[actor]);
@@ -446,8 +447,8 @@ __roKlachtenFromRecord(r) {
 __milieuInstrumentFromRecord(r) {
   if (!r) return {};
   const obj = {
-    "Raadgeving": r["Milieu Raadgeving"] ?? "-",
-    "Aanmaning": r["Milieu Aanmaning"] ?? "-",
+    "Raadgeving": r["Milieu Raadgeving"] ?? "test",
+    "Aanmaning": r["Milieu Aanmaning"] ?? "test",
     "Verslag van vaststelling": r["Milieu Verslag van Vaststelling"] ?? "-",
     "Proces-verbaal": r["Milieu Proces-verbaal"] ?? "-",
     "Bestuurlijke maatregelen zonder dwangsom":
@@ -596,7 +597,8 @@ __roOpmerkingenFromRecord(r) {
          ${(() => {
       const rec = this.__getActorRecord(this.selectedChoiceUrl);
       const milieu = this.__milieuInstrumentFromRecord(rec);
-      return renderColumns_opmerking(milieu, "Milieu");
+      const ro = this.__roInstrumentFromRecord(rec);
+      return renderColumns(milieu,ro, "Milieu","Ruimtelijke ordening");
     })()}
         </div>
       </vl-tabs-pane>

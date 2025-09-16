@@ -233,7 +233,7 @@ and performing other setup tasks.
           size: 2,
           template: html` <div is="vl-infotext" data-cy="infotext">
             <div>
-              <div data-vl-value="">29322</div>
+              <div data-vl-value="">39380</div>
               <div data-vl-text="">Aantal klachten</div>
             </div>
           </div>`,
@@ -242,7 +242,7 @@ and performing other setup tasks.
           size: 2,
           template: html` <div is="vl-infotext" data-cy="infotext">
             <div>
-              <div data-vl-value="">36144</div>
+              <div data-vl-value="">50904</div>
               <div data-vl-text="">Aantal controles</div>
             </div>
           </div>`,
@@ -251,16 +251,7 @@ and performing other setup tasks.
           size: 2,
           template: html` <div is="vl-infotext" data-cy="infotext">
             <div>
-              <div data-vl-value="">36144</div>
-              <div data-vl-text="">Aantal controles met schending</div>
-            </div>
-          </div>`,
-        },
-        {
-          size: 2,
-          template: html` <div is="vl-infotext" data-cy="infotext">
-            <div>
-              <div data-vl-value="">3871</div>
+              <div data-vl-value="">4599</div>
               <div data-vl-text="">Aantal PV's</div>
             </div>
           </div>`,
