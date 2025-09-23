@@ -118,9 +118,6 @@ class OhrDownload extends LitElement {
             Download de bevraging van 2023
         </a>
     </li>
-      <li is="vl-link-list-item">
-           <a is="vl-link" href="datafilesdownload/data2024.json" download>Download de bevraging van 2024</a>
-    </li>
 </ul>
       `;
   }

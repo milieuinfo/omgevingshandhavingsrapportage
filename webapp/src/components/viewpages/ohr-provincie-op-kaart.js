@@ -61,7 +61,7 @@ import {
     __renderEverVizKaart() {
       return html`
           <vl-tabs data-vl-active-tab="Weergave per 1000 inwoners" data-vl-disable-links="">
-    <vl-tabs-pane data-vl-id="Weergave per 1000 inwoners" data-vl-title="Weergave per 1000 inwoners">
+    <vl-tabs-pane data-vl-id="Weergave per 1000 inwoners" data-vl-title="Weergave per 100.000 inwoners">
         <div is="vl-grid">
     <div is="vl-column" data-vl-size=12>
  <iframe class="everviz-iframe" src="${this.selectedChoiceUrl}" width="100%" height="450px"></iframe>

@@ -255,6 +255,15 @@ and performing other setup tasks.
               <div data-vl-text="">Aantal PV's</div>
             </div>
           </div>`,
+        },
+         {
+          size: 2,
+          template: html` <div is="vl-infotext" data-cy="infotext">
+            <div>
+              <div data-vl-value="">1.005</div>
+              <div data-vl-text="">Verslagen van vaststelling</div>
+            </div>
+          </div>`,
         }
       )}
       `;
