@@ -242,7 +242,7 @@ and performing other setup tasks.
           size: 2,
           template: html` <div is="vl-infotext" data-cy="infotext">
             <div>
-              <div data-vl-value="">50904</div>
+              <div data-vl-value="">52262</div>
               <div data-vl-text="">Aantal controles</div>
             </div>
           </div>`,
@@ -260,7 +260,7 @@ and performing other setup tasks.
           size: 2,
           template: html` <div is="vl-infotext" data-cy="infotext">
             <div>
-              <div data-vl-value="">1.005</div>
+              <div data-vl-value="">1005</div>
               <div data-vl-text="">Verslagen van vaststelling</div>
             </div>
           </div>`,
