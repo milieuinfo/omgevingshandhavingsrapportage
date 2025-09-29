@@ -131,10 +131,10 @@ __rendercurrentreport() {
                 <td><a href="https://publicaties.vlaanderen.be/view-file/33302" target="new_blank">2011</a></td>
             </tr>
             <tr>
-                <td><a href="https://publicaties.vlaanderen.be/view-file/33305" target="new_blank">2010</a></td>
+                <td><a href="https://publicaties.vlaanderen.be/view-file/33303" target="new_blank">2010</a></td>
             </tr>
             <tr>
-                <td><a href="https://publicaties.vlaanderen.be/view-file/33303" target="new_blank">2009</a></td>
+                <td><a href="https://publicaties.vlaanderen.be/view-file/33305" target="new_blank">2009</a></td>
             </tr>
         </tbody>
     </table>
