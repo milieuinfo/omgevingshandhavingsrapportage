@@ -470,10 +470,10 @@ __roInstrumentFromRecord(r) {
     "Verslag van vaststelling": r["RO Verslag van Vaststelling"] ?? "-",
     "Proces-verbaal": r["RO Proces-verbaal"] ?? "-",
     "Bevel tot staking": r["RO Bevel tot staking"] ?? "-",
-    "Afgesloten minnelijke schikking": r["RO Afgesloten minnelijke schikking"] ?? "-",
-     "Ingeleide herstelvordering bij Openbaar Ministerie":
+    "Minnelijke schikking": r["RO Afgesloten minnelijke schikking"] ?? "-",
+     "Herstelvordering":
       r["RO Ingeleide herstelvordering bij Openbaar Ministerie"] ?? "-",
-      "RO Ambtshalve uitvoering gerechtelijke herstelmaatregel":
+      "Ambtshalve uitvoering":
       r["RO Ambtshalve uitvoering gerechtelijke herstelmaatregel"] ?? "-",
     "Bestuurlijke maatregelen zonder dwangsom":
       r["RO Bestuurlijke maatregelen Zonder Dwangsom"] ?? "-",

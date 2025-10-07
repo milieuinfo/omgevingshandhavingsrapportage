@@ -75,7 +75,9 @@
     "RO Ambtshalve uitvoering gerechtelijke herstelmaatregel": "niet gekend",
     "Ambtshalve uitvoering gerechtelijke herstelmaartegel": "niet gekend",
     "Milieu Bestuurlijke maatregelen": "niet gekend",
-    "RO Herstel gevorderd bij burgerlijk rechter": "niet gekend"
+    "RO Herstel gevorderd bij burgerlijk rechter": "niet gekend",
+    "Verharding": "Geen actie ondernomen",
+    "Ontbossing": "Geen actie ondernomen"
   },
   {
     "Actor": "Agentschap voor Maritieme Dienstverlening en Kust",
@@ -229,7 +231,9 @@
     "RO Ambtshalve uitvoering gerechtelijke herstelmaatregel": "-",
     "Ambtshalve uitvoering gerechtelijke herstelmaartegel": "-",
     "Milieu Bestuurlijke maatregelen": "-",
-    "RO Herstel gevorderd bij burgerlijk rechter": "-"
+    "RO Herstel gevorderd bij burgerlijk rechter": "-",
+    "Ontbossing": "Geen actie ondernomen",
+    "Verharding": "Geen actie ondernomen"
   },
   {
     "Actor": "Vlaamse Waterweg",
@@ -384,7 +388,9 @@
     "RO Ambtshalve uitvoering gerechtelijke herstelmaatregel": "0",
     "Ambtshalve uitvoering gerechtelijke herstelmaartegel": "niet gekend",
     "Milieu Bestuurlijke maatregelen": "niet gekend",
-    "RO Herstel gevorderd bij burgerlijk rechter": "niet gekend"
+    "RO Herstel gevorderd bij burgerlijk rechter": "niet gekend",
+    "Ontbossing": "In elk prioritair handhavingsdossier vormt elke vastgestelde ontbossing het voorwerp van een hersteleis. Er werden geen specifieke handhavingsacties opgezet die zich exclusief richten op ontbossing.",
+    "Verharding": "Er werden vanuit de afdeling Handhaving geen specifieke handhavingsacties opgezet die uitsluitend gericht waren op ontharding. Wel zijn er dossiers waarin een illegale verharding de enige vastgestelde schending betreft."
   },
   {
     "Actor": "Departement Zorg",
@@ -849,7 +855,9 @@
     "RO Ambtshalve uitvoering gerechtelijke herstelmaatregel": "-",
     "Ambtshalve uitvoering gerechtelijke herstelmaartegel": "-",
     "Milieu Bestuurlijke maatregelen": "-",
-    "RO Herstel gevorderd bij burgerlijk rechter": "-"
+    "RO Herstel gevorderd bij burgerlijk rechter": "-",
+    "Ontbossing": "Neen",
+    "Verharding": "Neen"
   },
   {
     "Actor": "Departement Mobiliteit en Openbare Werken",

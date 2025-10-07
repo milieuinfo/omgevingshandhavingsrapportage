@@ -146,8 +146,6 @@ class OhrGemeentenAnalyse extends LitElement {
   return obj;
 }
 
-
-
   /* Render ThemaGerichte Acties */
   __renderThemaGerichteActies(data, type) {
     return html`
@@ -308,6 +306,16 @@ class OhrGemeentenAnalyse extends LitElement {
         r["RO VTE Administratieve en Juridische ondersteuning"] ?? "-",
     };
   }
+
+  __roThemaGerichteacties(r) {
+  if(!r) return [];
+  const obj = {
+    "Verharding": r["Verharding"] ?? "-",
+    "Ontbossing": r["Ontbossing"] ?? "-",
+  }
+  return obj;
+}
+
   // Parse numbers like "1,4" or "1.234,56"; treat "-" / "" as 0
   __toNumber(v) {
     const s = String(v ?? "").trim();
@@ -429,11 +437,11 @@ class OhrGemeentenAnalyse extends LitElement {
       "Verslag van vaststelling": r["RO verslag van vaststelling"] ?? "-",
       "Proces-verbaal": r["RO Proces-verbaal"] ?? "-",
       "Bevel tot staking": r["RO Bevel tot Staking"] ?? "-",
-      "Afgesloten minnelijke schikking":
+      "Minnelijke schikking":
         r["RO Afgesloten minnelijke schikking"] ?? "-",
-      "Ingeleide herstelvordering bij Openbaar Ministerie":
+      "Herstelvordering":
         r["RO Ingeleide herstelvordering bij Openbaar Ministerie"] ?? "-",
-      "RO Ambtshalve uitvoering gerechtelijke herstelmaatregel":
+      "Ambtshalve uitvoering":
         r["RO Ambtshalve uitvoering gerechtelijke herstelmaatregel"] ?? "-",
       "Bestuurlijke maatregelen zonder dwangsom":
         r["RO Bestuurlijke maatregelen Zonder Dwangsom"] ?? "-",
@@ -452,7 +460,6 @@ class OhrGemeentenAnalyse extends LitElement {
     } else {
       beleid = this.selectedChoiceUrl;
     }
-
     const renderColumns_milieu = (milieuData,milieuLabel) => {
       return html`<div is="vl-column" data-vl-size="12">${this.__renderDataSection(milieuData, milieuLabel)}</div>`;
   };
@@ -528,7 +535,6 @@ class OhrGemeentenAnalyse extends LitElement {
               ></vl-alert>
             </div>
           </vl-tabs-pane>
-
           <vl-tabs-pane data-vl-id="Klachten" data-vl-title="Klachten">
             <div is="vl-grid">
               <div is="vl-column" data-vl-size="12">
@@ -543,7 +549,6 @@ class OhrGemeentenAnalyse extends LitElement {
               </div>
             </div>
           </vl-tabs-pane>
-
           <vl-tabs-pane data-vl-id="Controles" data-vl-title="Controles">
             <div is="vl-grid">
               <div is="vl-column" data-vl-size="12">
@@ -558,11 +563,9 @@ class OhrGemeentenAnalyse extends LitElement {
               </div>
             </div>
           </vl-tabs-pane>
-
           <vl-tabs-pane
             data-vl-id="Instrumentarium"
-            data-vl-title="Instrumentarium"
-          >
+            data-vl-title="Instrumentarium">
             <div is="vl-grid">
               <div is="vl-column" data-vl-size="12">
                 <vl-alert
@@ -576,11 +579,9 @@ class OhrGemeentenAnalyse extends LitElement {
               </div>
             </div>
           </vl-tabs-pane>
-
           <vl-tabs-pane
             data-vl-id="Themagerichte acties"
-            data-vl-title="Themagerichte acties"
-          >
+            data-vl-title="Themagerichte acties">
             <div is="vl-grid">
               <div is="vl-column" data-vl-size="12">
                 <vl-alert
@@ -594,7 +595,6 @@ class OhrGemeentenAnalyse extends LitElement {
               </div>
             </div>
           </vl-tabs-pane>
-
           <vl-tabs-pane data-vl-id="Opmerkingen" data-vl-title="Opmerkingen">
             <div is="vl-grid">
               <div is="vl-column" data-vl-size="12">
@@ -705,11 +705,12 @@ class OhrGemeentenAnalyse extends LitElement {
             data-vl-id="Themagerichte acties"
             data-vl-title="Themagerichte acties"
           >
-            <div is="vl-grid">
-                 ${(() => {
+        <div is="vl-grid">
+        ${(() => {
       const rec = this.__getActorRecord(this.selectedChoiceUrl);
       const milieu = this.__milieuThemaGerichteacties(rec);
-      return renderColumns_milieu(milieu);
+      const ro = this.__roThemaGerichteacties(rec)
+      return renderColumns(milieu,ro, "Milieu", "Ruimtelijke ordening");
     })()}
             </div>
           </vl-tabs-pane>

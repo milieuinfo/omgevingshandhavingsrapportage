@@ -52,6 +52,7 @@ class OhrAGewest extends LitElement {
     this.selectedChoiceLabel = options.find((o) => o.selected).label;
     this.yearofanalysis = yearofanalsysis.value;
   }
+
   __nonEmpty(o) { return o && typeof o === "object" && Object.keys(o).length > 0; }
 
 
@@ -64,7 +65,6 @@ __deriveBeleid(actor) {
   return "None";
 }
 
-// Safe getter for sections; always returns an object
 __sec(branch, actor, key) {
   return jsonData2?.[branch]?.[actor]?.[key] ?? {};
 }
@@ -120,6 +120,9 @@ __sec(branch, actor, key) {
         </div>
       </section>`;
   }
+
+
+
   /* Render opmerking */
   __renderOpmerkingsection(data,type) {
     return html`
@@ -138,6 +141,8 @@ __sec(branch, actor, key) {
 </vl-typography>
     `
   }
+
+
   /* Render ThemaGerichte Acties */
   __renderThemaGerichteActies(data,type) {
     return html`
@@ -174,6 +179,8 @@ __sec(branch, actor, key) {
     <br />
   `;
   }
+
+  /*ToDelete*/
     /* Render data table String*/
   __renderDataSectionTXT(data) {
       return html`
@@ -207,6 +214,8 @@ __sec(branch, actor, key) {
         <br />
       `;
     }
+  /*ToDelete*/
+  
   /* Render data table Numbers*/
   __renderDataSection(data,type) {
     return html`
@@ -271,6 +280,7 @@ __getActorRecord(actor) {
 }
 
 // Already added earlier (keeps working for flat JSON too)
+/*ToDelete*/
 __getActorRecord(actor) {
   if (Array.isArray(jsonData2)) return jsonData2.find(r => r?.Actor === actor) ?? null;
   const rows = jsonData2?.data || jsonData2?.rows;
@@ -278,6 +288,9 @@ __getActorRecord(actor) {
   if (jsonData2 && typeof jsonData2 === "object" && jsonData2[actor]) return jsonData2[actor];
   return null;
 }
+/*ToDelete*/
+
+
 
 __hasValue(v) {
   if (v === null || v === undefined) return false;
@@ -420,7 +433,6 @@ __roControlesSchendingFromRecord(r) {
   };
 }
 
-
 __milieuKlachtenFromRecord(r) {
   if (!r) return {};
   return {
@@ -469,6 +481,15 @@ __milieuThemaGerichteacties(r) {
   return obj;
 }
 
+__roThemaGerichteacties(r) {
+  if(!r) return [];
+  const obj = {
+    "Verharding": r["Verharding"] ?? "-",
+    "Ontbossing": r["Ontbossing"] ?? "-",
+  }
+  return obj;
+}
+
 __roInstrumentFromRecord(r) {
   if (!r) return {};
   const obj = {
@@ -477,10 +498,10 @@ __roInstrumentFromRecord(r) {
     "Verslag van vaststelling": r["RO Verslag van Vaststelling"] ?? "-",
     "Proces-verbaal": r["RO Proces-verbaal"] ?? "-",
     "Bevel tot staking": r["RO Bevel tot staking"] ?? "-",
-    "Afgesloten minnelijke schikking": r["RO Afgesloten minnelijke schikking"] ?? "-",
-     "Ingeleide herstelvordering bij Openbaar Ministerie":
+    "Minnelijke schikking": r["RO Afgesloten minnelijke schikking"] ?? "-",
+     "Herstelvordering":
       r["RO Ingeleide herstelvordering bij Openbaar Ministerie"] ?? "-",
-      "RO Ambtshalve uitvoering gerechtelijke herstelmaatregel":
+      "Ambtshalve uitvoering":
       r["RO Ambtshalve uitvoering gerechtelijke herstelmaatregel"] ?? "-",
     "Bestuurlijke maatregelen zonder dwangsom":
       r["RO Bestuurlijke maatregelen Zonder Dwangsom"] ?? "-",
@@ -499,13 +520,12 @@ __roOpmerkingenFromRecord(r) {
 }
 
   __renderDynamicContent() {
-  // 1) fixed map first, 2) fallback derive, 3) render-friendly fallback
+
   const mapped = BELEID_MAP[this.selectedChoiceUrl];
   const derived = this.__deriveBeleid(this.selectedChoiceUrl);
   const rawBeleid = mapped ?? derived;
   const beleid = rawBeleid === "None" ? "Both" : rawBeleid;
 
-  // shortcut to safely read sections
   const s = (branch, key) => this.__sec(branch, this.selectedChoiceUrl, key);
 
   const renderColumns = (milieuData, roData, milieuLabel, roLabel) => {
@@ -602,12 +622,14 @@ __roOpmerkingenFromRecord(r) {
     })()}
         </div>
       </vl-tabs-pane>
+      
       <vl-tabs-pane data-vl-id="Themagerichte acties" data-vl-title="Themagerichte acties">
         <div is="vl-grid">
         ${(() => {
       const rec = this.__getActorRecord(this.selectedChoiceUrl);
       const milieu = this.__milieuThemaGerichteacties(rec);
-      return renderColumns_milieu(milieu);
+      const ro = this.__roThemaGerichteacties(rec)
+      return renderColumns(milieu,ro, "Milieu", "Ruimtelijke ordening");
     })()}
         </div>
       </vl-tabs-pane>

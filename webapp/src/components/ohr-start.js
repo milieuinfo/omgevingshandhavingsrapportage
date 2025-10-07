@@ -224,7 +224,7 @@ and performing other setup tasks.
           size: 2,
           template: html` <div is="vl-infotext" data-cy="infotext">
             <div>
-              <div data-vl-value="">1769</div>
+              <div data-vl-value="">2019</div>
               <div data-vl-text="">Aantal handhavers omgevingsinspectie</div>
             </div>
           </div>`,
@@ -233,7 +233,7 @@ and performing other setup tasks.
           size: 2,
           template: html` <div is="vl-infotext" data-cy="infotext">
             <div>
-              <div data-vl-value="">39380</div>
+              <div data-vl-value="">39930</div>
               <div data-vl-text="">Aantal klachten</div>
             </div>
           </div>`,

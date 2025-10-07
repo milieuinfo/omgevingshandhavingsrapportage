@@ -155,7 +155,7 @@ return html`
     <table is="vl-data-table">
       <thead>
         <tr>
-          <th>Thema</th>
+          <th>Tenlastenleggingscode</th>
           <th>Aantal</th>
         </tr>
       </thead>
