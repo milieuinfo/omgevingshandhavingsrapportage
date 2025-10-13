@@ -63,8 +63,8 @@
             },
             "Sepot": {
                 "Opportuniteitssepot": {
-                    "Geen handhavingsprioriteit": 5,
-                    "Volledig geregulariseerd": 5
+                    "Geen handhavingsprioriteit": 64,
+                    "Volledig geregulariseerd": 227
                 },
                 "Technisch sepot": {
                     "Dader onbekend/Overleden/faillissement": 0,
