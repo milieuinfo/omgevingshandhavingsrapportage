@@ -379,25 +379,6 @@ __milieuControlesFromRecord(r) {
   return obj;
 }
 
-__roControlesFromRecord(r) {
-  if (!r) return {};
-  const obj = {
-    "Totaal aantal controles ruimtelijke ordening": r["RO Controles"] ?? "-",
-    "navolgende stedenbouwkundige controles naar aanleiding van schendingen vastgesteld in voorgaande jaren":
-      r["RO Controles Navolgende Aanleiding Schending"] ?? "-",
-    "aanvankelijke stedenbouwkundige controles naar aanleiding van klachten":
-      r["RO Controles Aanvankelijk Aanleiding Klacht"] ?? "-",
-    "navolgende stedenbouwkundige controles voor verdere opvolging van de controles naar aanleiding van klachten":
-      r["RO Controles Navolgende Aanleiding Klacht"] ?? "-",
-    "aanvankelijke stedenbouwkundige controles op eigen initiatief":
-      r["RO Controles Aanvankelijk op eigen initiatief"] ?? "-",
-    "navolgende stedenbouwkundige controles voor verdere opvolging van de controles op eigen initiatief":
-      r["RO Controles Navolgende op eigen initiatief"] ?? "-",
-    
-  };
-  return obj;
-}
-
 // If you want a focused “schending” mini-table like before:
 __milieuControlesSchendingFromRecord(r) {
   if (!r) return {};
@@ -412,13 +393,6 @@ __milieuControlesSchendingFromRecord(r) {
     "Vergunningen": r["Milieu Aanvankelijke Controles Vergunningen"] ?? "-",
     "Water": r["Milieu Aanvankelijke Controles Water"] ?? "-",
     "Andere": r["Milieu Aanvankelijke Controles Andere"] ?? "-"
-  };
-}
-
-__roControlesSchendingFromRecord(r) {
-  if (!r) return {};
-  return {
-    "Totaal aantal aanvankelijke controles ruimtelijke ordening met schending": r["RO Aanvankelijke Controles"] ?? "-"
   };
 }
 
@@ -439,13 +413,6 @@ __milieuKlachtenFromRecord(r) {
   };
 }
 
-__roKlachtenFromRecord(r) {
-  if (!r) return {};
-  return {
-    "Totaal aantal klachten ruimtelijke ordening": r["RO Klachten"] ?? "-"
-  };
-}
-
 __milieuInstrumentFromRecord(r) {
   if (!r) return {};
   const obj = {
@@ -455,30 +422,9 @@ __milieuInstrumentFromRecord(r) {
     "Proces-verbaal": r["Milieu Proces-verbaal"] ?? "-",
     "Bestuurlijke maatregelen zonder dwangsom":
       r["Milieu Bestuurlijke maatregelen Zonder Dwangsom"] ?? "-",
-    "Bestuurlijke maatregelen Met Dwangsom":
+    "Bestuurlijke maatregelen met Dwangsom":
       r["Milieu Bestuurlijke maatregelen met dwangsom"] ?? "-",
     "Veiligheidsmaatregel": r["Milieu Veiligheidsmaatregel"] ?? "-",
-  };
-  return obj;
-}
-
-__roInstrumentFromRecord(r) {
-  if (!r) return {};
-  const obj = {
-    "Raadgeving": r["RO Raadgeving"] ?? "-",
-    "Aanmaning": r["RO Aanmaning"] ?? "-",
-    "Verslag van vaststelling": r["RO Verslag van Vaststelling"] ?? "-",
-    "Proces-verbaal": r["RO Proces-verbaal"] ?? "-",
-    "Bevel tot staking": r["RO Bevel tot staking"] ?? "-",
-    "Minnelijke schikking": r["RO Afgesloten minnelijke schikking"] ?? "-",
-     "Herstelvordering":
-      r["RO Ingeleide herstelvordering bij Openbaar Ministerie"] ?? "-",
-      "Ambtshalve uitvoering":
-      r["RO Ambtshalve uitvoering gerechtelijke herstelmaatregel"] ?? "-",
-    "Bestuurlijke maatregelen zonder dwangsom":
-      r["RO Bestuurlijke maatregelen Zonder Dwangsom"] ?? "-",
-    "Bestuurlijke maatregelen met dwangsom":
-      r["RO Bestuurlijke maatregelen Met Dwangsom"] ?? "-",
   };
   return obj;
 }
@@ -531,8 +477,7 @@ __milieuThemaGerichteacties(r) {
           ${(() => {
       const rec = this.__getActorRecord(this.selectedChoiceUrl);
       const milieuPers = this.__milieuPersoneelFromRecord(rec);
-      const roPers     = this.__roPersoneelFromRecord(rec);
-      return renderColumns(milieuPers, roPers, "Milieu", "Ruimtelijke ordening");
+      return renderColumns(milieuPers, "Milieu", "Ruimtelijke ordening");
       // No RO data in the new JSON, so pass {} for RO
     })()}
         </div>
@@ -543,8 +488,7 @@ __milieuThemaGerichteacties(r) {
              ${(() => {
       const rec = this.__getActorRecord(this.selectedChoiceUrl);
       const milieuK = this.__milieuKlachtenFromRecord(rec);
-      const roK     = this.__roKlachtenFromRecord(rec);
-      return renderColumns(milieuK, roK, "Milieu", "Ruimtelijke ordening");
+      return renderColumns(milieuK, "Milieu", "Ruimtelijke ordening");
     })()}
         </div>
       </vl-tabs-pane>
@@ -554,8 +498,7 @@ __milieuThemaGerichteacties(r) {
           ${(() => {
       const rec = this.__getActorRecord(this.selectedChoiceUrl);
       const milieu = this.__milieuControlesFromRecord(rec);
-      const ro     = this.__roControlesFromRecord(rec);
-      return renderColumns(milieu, ro, "Milieu", "Ruimtelijke ordening");
+      return renderColumns(milieu, "Milieu", "Ruimtelijke ordening");
     })()}
         </div>
         <div is="vl-grid">
@@ -567,8 +510,7 @@ __milieuThemaGerichteacties(r) {
          ${(() => {
       const rec = this.__getActorRecord(this.selectedChoiceUrl);
       const milieu = this.__milieuControlesSchendingFromRecord(rec);
-      const ro     = this.__roControlesSchendingFromRecord(rec);
-      return renderColumns(milieu, ro, "Milieu", "Ruimtelijke ordening");
+      return renderColumns(milieu, "Milieu", "Ruimtelijke ordening");
     })()}
         </div>
       </vl-tabs-pane>
@@ -578,8 +520,7 @@ __milieuThemaGerichteacties(r) {
          ${(() => {
       const rec = this.__getActorRecord(this.selectedChoiceUrl);
       const milieu = this.__milieuInstrumentFromRecord(rec);
-      const ro     = this.__roInstrumentFromRecord(rec);
-      return renderColumns(milieu, ro, "Milieu", "Ruimtelijke ordening");
+      return renderColumns(milieu, "Milieu", "Ruimtelijke ordening");
     })()}
         </div>
       </vl-tabs-pane>
