@@ -55,6 +55,7 @@ class OhrGemeentenAnalyse extends LitElement {
   static get styles() {
     return [...vlElementsStyle];
   }
+
   static get properties() {
     return {
       selectedChoiceLabel: { type: String },
@@ -68,6 +69,7 @@ class OhrGemeentenAnalyse extends LitElement {
     this.selectedChoiceLabel = options.find((o) => o.selected).label;
     this.yearofanalysis = yearofanalsysis.value;
   }
+
   // Safe getter for sections; always returns an object
   __sec(branch, actor, key) {
     return jsonData2?.[branch]?.[actor]?.[key] ?? {};
@@ -80,6 +82,7 @@ class OhrGemeentenAnalyse extends LitElement {
       choices: options,
     });
   }
+
   bindVlSelect() {
     const select = this.shadowRoot.querySelector("#viewselector");
     select.addEventListener("change", this.__changeView.bind(this));
@@ -146,7 +149,6 @@ class OhrGemeentenAnalyse extends LitElement {
   return obj;
 }
 
-  /* Render ThemaGerichte Acties */
   __renderThemaGerichteActies(data, type) {
     return html`
       <table is="vl-data-table">
@@ -182,7 +184,7 @@ class OhrGemeentenAnalyse extends LitElement {
       <br />
     `;
   }
-  /* Render data table String*/
+
   __renderDataSectionTXT(data) {
     return html`
       <table is="vl-data-table">
@@ -215,7 +217,7 @@ class OhrGemeentenAnalyse extends LitElement {
       <br />
     `;
   }
-  /* Render data table Numbers*/
+
   __renderDataSection(data, type) {
     return html`
       <table is="vl-data-table">
@@ -451,8 +453,6 @@ class OhrGemeentenAnalyse extends LitElement {
     return obj;
   }
 
-  
-
   __renderDynamicContent() {
     let beleid;
     if (RESPONS[this.selectedChoiceUrl]) {
@@ -464,8 +464,6 @@ class OhrGemeentenAnalyse extends LitElement {
       return html`<div is="vl-column" data-vl-size="12">${this.__renderDataSection(milieuData, milieuLabel)}</div>`;
   };
 
-
-    // shortcut to safely read sections
     const s = (branch, key) => this.__sec(branch, this.selectedChoiceUrl, key);
 
     const renderColumns = (milieuData, roData, milieuLabel, roLabel) => {

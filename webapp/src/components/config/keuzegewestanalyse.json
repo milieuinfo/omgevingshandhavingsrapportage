@@ -1,12 +1,12 @@
 [
     {
       "label": "Agentschap voor Maritieme Dienstverlening en Kust (aMDK)",
-      "value": "Agentschap voor Maritieme Dienstverlening en Kust",
-      "selected": true
+      "value": "Agentschap voor Maritieme Dienstverlening en Kust"
     },
     {
       "label": "Agentschap voor Natuur en Bos (ANB)",
-      "value": "Agentschap voor Natuur en Bos"
+      "value": "Agentschap voor Natuur en Bos",
+      "selected": true
     },
     {
       "label": "Agentschap Wegen en Verkeer (AWV)",
