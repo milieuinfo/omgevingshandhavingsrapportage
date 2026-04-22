@@ -1,11 +1,11 @@
+/*
 import {html, LitElement} from "../common/commons.js";
-import viz from "../config/strafrechtelijkvervolgtraject.json" assert {type: "json"};
-import filters from "../config/strafrechtelijk-filters.js";
 import "@domg-wc/components/functional-header";
 import "@domg-wc/components/typography";
 import "@domg-wc/components/loader";
 import "@domg-wc/qlik/dashboard-page";
 import {vlElementsStyle} from "@domg-wc/elements";
+
 import "@domg-wc/components/alert";
 import yearofanalsysis from "../config/yearofanalysis.json" assert {type: "json"};
 
@@ -23,6 +23,14 @@ class OhrStrafrechtelijkvervolgtraject extends LitElement {
   constructor() {
     super();
     this.yearofanalysis = yearofanalsysis.value;
+    
+
+const qlikService = new QlikEmbedService({
+  clientId: '<YOUR_OAUTH2_CLIENT_ID>',
+  redirectUri: '[c25cf52b-e624-4fe7-bd86-2107e131cd14-00-1vw91tvgi9ogr.worf.replit.dev](https://c25cf52b-e624-4fe7-bd86-2107e131cd14-00-1vw91tvgi9ogr.worf.replit.dev/oauth_callback.html)',
+});
+    qlikService.initialize();
+
   }
 
   render() {
@@ -35,16 +43,12 @@ class OhrStrafrechtelijkvervolgtraject extends LitElement {
           data-vl-link="/strafrechtelijk-analyse">
       </vl-functional-header>
       <div style="margin: 3rem 0px">
-        <vl-qlik-dashboard-page
-            title="Strafrechtelijke sanctionering"
-            export-id="mkWEU"
-            url="omgevingsloketrapport.omgeving.vlaanderen.be"
-            app-id="3d1e4914-7976-4db7-964e-f3a380444240"
-            .views="${viz}"
-            .filters="${filters}"
-            @initialized="${() => this.initialized = true}">
-          ${this.__renderIntroduction()}
-        </vl-qlik-dashboard-page>
+      <qlik-embed
+  ui="analytics/chart"
+  app-id="<APP_ID>"
+  object-id="<OBJECT_ID>">
+</qlik-embed>
+
       </div></section>`;
   }
 
@@ -77,4 +81,5 @@ class OhrStrafrechtelijkvervolgtraject extends LitElement {
   }
 }
 customElements.define("ohr-strafrechtelijkvervolgtraject", OhrStrafrechtelijkvervolgtraject);
-    
+
+*/

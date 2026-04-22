@@ -75,7 +75,7 @@ render() {
         <vl-typography>
           <h2>Cijfers van het jaar ${this.yearofanalysis}</h2></vl-typography>
         <p is="vl-icon-wrapper">
-          <span is="vl-icon" data-vl-icon="calendar"></span><vl-annotation>&nbsp;Laatste wijziging aan de data: 01/09/2025</vl-annotation>
+          <span is="vl-icon" data-vl-icon="calendar"></span><vl-annotation>&nbsp;Laatste wijziging aan de data: 03/05/2026</vl-annotation>
         </p><br>
         <p is="vl-introduction" data-cy="introduction">
           Deze pagina geeft de cijfers van het bestuurlijk vervolgtraject in ${this.yearofanalysis} weer. 
@@ -162,84 +162,57 @@ __renderViewSelector() {
   `;
 }
   __renderDynamicContent() {
-    console.log(this.selectedChoiceUrl);
-    if (this.selectedChoiceUrl == 'Misdrijven' || this.selectedChoiceUrl == 'Inbreuken') {
+    if (this.selectedChoiceUrl === 'Misdrijven' || this.selectedChoiceUrl === 'Inbreuken') {
+      const tabs = [
+        { id: 'Afval',               title: 'Afval',                                       key: 'Afval' },
+        { id: 'Emissies',            title: 'Emissies',                                    key: 'Emissies' },
+        { id: 'Mest',                title: 'Mest',                                        key: 'Mest' },
+        { id: 'Milieubeheersrecht',  title: 'Milieubeheersrecht',                          key: 'Milieubeheer' },
+        { id: 'Milieuvergunningen',  title: 'Milieuvergunningen',                          key: 'Vergunningen' },
+        { id: 'Ruimtelijke ordening',title: 'Ruimtelijke ordening',                        key: 'RO' },
+        { id: 'Seponering',          title: 'Seponering inzake ruimtelijke ordening',      key: 'Sepot', renderer: (data) => this.__renderDataSectionSepot(data) },
+        { id: 'Prio1',               title: 'Prioriteit 1: De instandhouding van biodiversiteit',                                                                               key: 'Prio1' },
+        { id: 'Prio2',               title: 'Prioriteit 2: De reductie van de emissies van broeikasgassen',                                                                     key: 'Prio2' },
+        { id: 'Prio3',               title: 'Prioriteit 3: De aanpak van de stikstofproblematiek (m.i.v. het bestrijden van nutriëntenverliezen)',                              key: 'Prio3' },
+        { id: 'Prio4',               title: 'Prioriteit 4: Handhaving inzake de droogteproblematiek',                                                                          key: 'Prio4' },
+        { id: 'Prio5',               title: 'Prioriteit 5: Handhaving in functie van duurzaam beheer van materiaalkringlopen en afvalstoffen',                                 key: 'Prio5' },
+        { id: 'Prio6',               title: 'Prioriteit 6: Het doen naleven van de emissie- en kwaliteitsnormen voor gevaarlijke en bioaccumuleerbare stoffen in water, lucht en bodem', key: 'Prio6' },
+        { id: 'Prio7',               title: 'Prioriteit 7: Het behoud en herstel van de goede ruimtelijke ordening',                                                           key: 'Prio7' },
+      ];
       return html`
         <vl-tabs data-vl-active-tab="Afval" data-vl-disable-links="">
-          <vl-tabs-pane data-vl-id="Afval" data-vl-title="Afval">
-            <div is="vl-grid">
-              <div is="vl-column" data-vl-size=12>
-                ${this.renderDataSection(jsonData.GewestelijkeBB[this.selectedChoiceUrl].Afval)}
+          ${tabs.map(({ id, title, key, renderer = (data) => this.renderDataSection(data) }) => html`
+            <vl-tabs-pane data-vl-id="${id}" data-vl-title="${title}">
+              <div is="vl-grid">
+                <div is="vl-column" data-vl-size=12>
+                  ${renderer(jsonData.GewestelijkeBB[this.selectedChoiceUrl][key])}
+                </div>
               </div>
-            </div>
-          </vl-tabs-pane>
-          <vl-tabs-pane data-vl-id="Emissies" data-vl-title="Emissies">
-            <div is="vl-grid">
-              <div is="vl-column" data-vl-size=12>
-                ${this.renderDataSection(jsonData.GewestelijkeBB[this.selectedChoiceUrl].Emissies)}
-              </div>
-            </div>
-          </vl-tabs-pane>
-          <vl-tabs-pane data-vl-id="Mest" data-vl-title="Mest">
-            <div is="vl-grid">
-              <div is="vl-column" data-vl-size=12>
-                ${this.renderDataSection(jsonData.GewestelijkeBB[this.selectedChoiceUrl].Mest)}
-              </div>
-            </div>
-          </vl-tabs-pane>
-          <vl-tabs-pane data-vl-id="Milieubeheersrecht" data-vl-title="Milieubeheersrecht">
-            <div is="vl-grid">
-              <div is="vl-column" data-vl-size=12>
-                ${this.renderDataSection(jsonData.GewestelijkeBB[this.selectedChoiceUrl].Milieubeheer)}
-              </div>
-            </div>
-          </vl-tabs-pane>
-          <vl-tabs-pane data-vl-id="Milieuvergunningen" data-vl-title="Milieuvergunningen">
-            <div is="vl-grid">
-              <div is="vl-column" data-vl-size=12>
-                ${this.renderDataSection(jsonData.GewestelijkeBB[this.selectedChoiceUrl].Vergunningen)}
-              </div>
-            </div>
-          </vl-tabs-pane>
-          <vl-tabs-pane data-vl-id="Ruimtelijke ordening" data-vl-title="Ruimtelijke ordening">
-            <div is="vl-grid">
-              <div is="vl-column" data-vl-size=12>
-                ${this.renderDataSection(jsonData.GewestelijkeBB[this.selectedChoiceUrl].RO)}
-              </div>
-            </div>
-          </vl-tabs-pane>
-          <vl-tabs-pane data-vl-id="Seponering" data-vl-title="Seponering inzake ruimtelijke ordening">
-            <div is="vl-grid">
-              <div is="vl-column" data-vl-size=12>
-                ${this.__renderDataSectionSepot(jsonData.GewestelijkeBB[this.selectedChoiceUrl].Sepot)}
-              </div>
-            </div>
-          </vl-tabs-pane>
+            </vl-tabs-pane>
+          `)}
         </vl-tabs>
       `;
     }
-    else if (this.selectedChoiceUrl === 'HHC') {
+    if (this.selectedChoiceUrl === 'HHC') {
+      const tabs = [
+        { id: 'Misdrijven', title: 'Misdrijven' },
+        { id: 'Inbreuken',  title: 'Inbreuken' },
+      ];
       return html`
         <vl-tabs data-vl-active-tab="Misdrijven" data-vl-disable-links="">
-          <vl-tabs-pane data-vl-id="Misdrijven" data-vl-title="Misdrijven">
-            <div is="vl-grid">
-              <div is="vl-column" data-vl-size=12>
-              ${this.renderDataSection(jsonData[this.selectedChoiceUrl].Misdrijven)}
+          ${tabs.map(({ id, title }) => html`
+            <vl-tabs-pane data-vl-id="${id}" data-vl-title="${title}">
+              <div is="vl-grid">
+                <div is="vl-column" data-vl-size=12>
+                  ${this.renderDataSection(jsonData[this.selectedChoiceUrl][id])}
+                </div>
               </div>
-            </div>
-          </vl-tabs-pane>
-          <vl-tabs-pane data-vl-id="Inbreuken" data-vl-title="Inbreuken">
-            <div is="vl-grid">
-              <div is="vl-column" data-vl-size=12>
-              ${this.renderDataSection(jsonData[this.selectedChoiceUrl].Inbreuken)}
-              </div>
-            </div>
-          </vl-tabs-pane>
+            </vl-tabs-pane>
+          `)}
         </vl-tabs>
       `;
     }
     return 'Selecteer een optie';
-    
   }
 }
 

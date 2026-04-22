@@ -2,172 +2,337 @@
     "GewestelijkeBB": {
         "Misdrijven": {
             "Afval": {
-                "Ontvangen proces-verbalen": 741,
-                "Behandelde proces-verbalen": 717,
-                "Beslissingen technische seponering": 9,
-                "Opgelegde bestuurlijke transacties": 554,
-                "Betaalde bestuurlijke transacties": 382,
-                "Geen geldboete": 72,
-                "Geldboetes met voordeelontneming": 10,
-                "Geldboetes zonder voordeelontneming": 336
+                "Ontvangen proces-verbalen": 670,
+                "Behandelde proces-verbalen": 733,
+                "Beslissingen technische seponering": 17,
+                "Opgelegde bestuurlijke transacties": 600,
+                "Betaalde bestuurlijke transacties": 353,
+                "Geen geldboete": 112,
+                "Geldboetes met voordeelontneming": 6,
+                "Geldboetes zonder voordeelontneming": 291
             },
             "Vergunningen": {
-                "Ontvangen proces-verbalen": 376,
-                "Behandelde proces-verbalen": 314,
+                "Ontvangen proces-verbalen": 412,
+                "Behandelde proces-verbalen": 377,
                 "Beslissingen technische seponering": 10,
-                "Opgelegde bestuurlijke transacties": 273,
-                "Betaalde bestuurlijke transacties": 181,
-                "Geen geldboete": 41,
-                "Geldboetes met voordeelontneming": 16,
-                "Geldboetes zonder voordeelontneming": 174
+                "Opgelegde bestuurlijke transacties": 327,
+                "Betaalde bestuurlijke transacties": 194,
+                "Geen geldboete": 24,
+                "Geldboetes met voordeelontneming": 11,
+                "Geldboetes zonder voordeelontneming": 161
             },
             "Milieubeheer": {
-                "Ontvangen proces-verbalen": 330,
-                "Behandelde proces-verbalen": 309,
-                "Beslissingen technische seponering": 8,
-                "Opgelegde bestuurlijke transacties": 333,
-                "Betaalde bestuurlijke transacties": 252,
-                "Geen geldboete": 16,
+                "Ontvangen proces-verbalen": 393,
+                "Behandelde proces-verbalen": 412,
+                "Beslissingen technische seponering": 16,
+                "Opgelegde bestuurlijke transacties": 414,
+                "Betaalde bestuurlijke transacties": 317,
+                "Geen geldboete": 14,
                 "Geldboetes met voordeelontneming": 2,
-                "Geldboetes zonder voordeelontneming": 115
+                "Geldboetes zonder voordeelontneming": 110
             },
             "Emissies": {
-                "Ontvangen proces-verbalen": 618,
-                "Behandelde proces-verbalen": 448,
-                "Beslissingen technische seponering": 65,
-                "Opgelegde bestuurlijke transacties": 355,
-                "Betaalde bestuurlijke transacties": 269,
-                "Geen geldboete": 16,
-                "Geldboetes met voordeelontneming": 7,
-                "Geldboetes zonder voordeelontneming": 89
+                "Ontvangen proces-verbalen": 551,
+                "Behandelde proces-verbalen": 793,
+                "Beslissingen technische seponering": 77,
+                "Opgelegde bestuurlijke transacties": 760,
+                "Betaalde bestuurlijke transacties": 548,
+                "Geen geldboete": 26,
+                "Geldboetes met voordeelontneming": 13,
+                "Geldboetes zonder voordeelontneming": 138
             },
             "Mest": {
-                "Ontvangen proces-verbalen": 445,
-                "Behandelde proces-verbalen": 406,
-                "Beslissingen technische seponering": 6,
-                "Opgelegde bestuurlijke transacties": 431,
-                "Betaalde bestuurlijke transacties": 332,
-                "Geen geldboete": 1,
+                "Ontvangen proces-verbalen": 442,
+                "Behandelde proces-verbalen": 483,
+                "Beslissingen technische seponering": 3,
+                "Opgelegde bestuurlijke transacties": 617,
+                "Betaalde bestuurlijke transacties": 493,
+                "Geen geldboete": 9,
                 "Geldboetes met voordeelontneming": 0,
-                "Geldboetes zonder voordeelontneming": 32
+                "Geldboetes zonder voordeelontneming": 58
             },
             "RO": {
-                "Ontvangen proces-verbalen": 958,
-                "Behandelde proces-verbalen": 774,
-                "Beslissingen technische seponering": 114,
-                "Opgelegde bestuurlijke transacties": 727,
-                "Betaalde bestuurlijke transacties": 382,
-                "Geen geldboete": 28,
-                "Geldboetes met voordeelontneming": 0,
-                "Geldboetes zonder voordeelontneming": 267
+                "Ontvangen proces-verbalen": 973,
+                "Behandelde proces-verbalen": 934,
+                "Beslissingen technische seponering": 168,
+                "Opgelegde bestuurlijke transacties": 860,
+                "Betaalde bestuurlijke transacties": 473,
+                "Geen geldboete": 38,
+                "Geldboetes met voordeelontneming": 9,
+                "Geldboetes zonder voordeelontneming": 253
             },
             "Sepot": {
                 "Opportuniteitssepot": {
-                    "Geen handhavingsprioriteit": 64,
-                    "Volledig geregulariseerd": 227
+                    "Geen handhavingsprioriteit": 86,
+                    "Volledig geregulariseerd": 248
                 },
                 "Technisch sepot": {
-                    "Dader onbekend/Overleden/faillissement": 0,
-                    "Geen misdrijf": 6,
-                    "Onvoldoende vaststaand": 44,
-                    "Parket te laat": 20
+                    "Dader onbekend/Overleden/faillissement": 2,
+                    "Geen misdrijf": 26,
+                    "Onvoldoende vaststaand": 75,
+                    "Parket te laat": 28,
+                    "Temporele werking": 37
                 }
-            }
+            },
+            "Prio1": {
+                "Ontvangen proces-verbalen": "Aktes niet in te delen",
+                "Behandelde proces-verbalen": 243,
+                "Beslissingen technische seponering": 1,
+                "Opgelegde bestuurlijke transacties": 270,
+                "Betaalde bestuurlijke transacties": 192,
+                "Geen geldboete": 2,
+                "Geldboetes met voordeelontneming": 2,
+                "Geldboetes zonder voordeelontneming": 26
+        },
+         "Prio2": {
+             "Ontvangen proces-verbalen": "Aktes niet in te delen",
+                "Behandelde proces-verbalen": 25,
+                "Beslissingen technische seponering": 1,
+                "Opgelegde bestuurlijke transacties": 18,
+                "Betaalde bestuurlijke transacties": 13,
+                "Geen geldboete": 0,
+                "Geldboetes met voordeelontneming": 1,
+                "Geldboetes zonder voordeelontneming": 4
+        },
+         "Prio3": {
+             "Ontvangen proces-verbalen": "Aktes niet in te delen",
+                "Behandelde proces-verbalen": 562,
+                "Beslissingen technische seponering": 3,
+                "Opgelegde bestuurlijke transacties": 699,
+                "Betaalde bestuurlijke transacties": 550,
+                "Geen geldboete": 5,
+                "Geldboetes met voordeelontneming": 0,
+                "Geldboetes zonder voordeelontneming": 49
+        },
+         "Prio4": {
+             "Ontvangen proces-verbalen": "Aktes niet in te delen",
+                "Behandelde proces-verbalen": 84,
+                "Beslissingen technische seponering": 0,
+                "Opgelegde bestuurlijke transacties": 93,
+                "Betaalde bestuurlijke transacties": 64,
+                "Geen geldboete": 0,
+                "Geldboetes met voordeelontneming": 2,
+                "Geldboetes zonder voordeelontneming": 0
+        },
+         "Prio5": {
+             "Ontvangen proces-verbalen": "Aktes niet in te delen",
+                "Behandelde proces-verbalen": 801,
+                "Beslissingen technische seponering": 13,
+                "Opgelegde bestuurlijke transacties": 636,
+                "Betaalde bestuurlijke transacties": 360,
+                "Geen geldboete": 88,
+                "Geldboetes met voordeelontneming": 0,
+                "Geldboetes zonder voordeelontneming": 229
+        },
+         "Prio6": {
+             "Ontvangen proces-verbalen": "Aktes niet in te delen",
+                "Behandelde proces-verbalen": 318,
+                "Beslissingen technische seponering": 33,
+                "Opgelegde bestuurlijke transacties": 293,
+                "Betaalde bestuurlijke transacties": 227,
+                "Geen geldboete": 6,
+                "Geldboetes met voordeelontneming": 0,
+                "Geldboetes zonder voordeelontneming": 19
+        },
+         "Prio7": {
+             "Ontvangen proces-verbalen": "Aktes niet in te delen",
+                "Behandelde proces-verbalen": 158,
+                "Beslissingen technische seponering": 14,
+                "Opgelegde bestuurlijke transacties": 165,
+                "Betaalde bestuurlijke transacties": 116,
+                "Geen geldboete": 5,
+                "Geldboetes met voordeelontneming": 0,
+                "Geldboetes zonder voordeelontneming": 15
+        }
+
+    },
+    "HHC": {
+        "Misdrijven": {
+            "Ontvangen beroepen": 88,
+            "Beroep geheel of gedeeltelijk gegrond, beslissing gewestelijke entiteit van de afdeling Handhaving van het departement Omgeving vernietigd zonder meer": 5,
+            "Beroep geheel of gedeeltelijk gegrond, met vermindering/kwijtschelding boete": 5,
+            "Beroep ongegrond, boete bevestigd": 24,
+            "Beroep onontvankelijk (na vereenvoudigde procedure)": 9,
+            "Beroep zonder voorwerp verklaard": 0,
+            "Inwilliging afstand van beroep": 4,
+            "Tussenarrest": 0
+        },
+        "Inbreuken": {
+            "Ontvangen beroepen": 8,
+            "Beroep geheel of gedeeltelijk gegrond, beslissing gewestelijke entiteit van de afdeling Handhaving van het departement Omgeving vernietigd zonder meer": 5,
+            "Beroep geheel of gedeeltelijk gegrond, met vermindering/kwijtschelding boete": 5,
+            "Beroep ongegrond, boete bevestigd": 24,
+            "Beroep onontvankelijk (na vereenvoudigde procedure)": 9,
+            "Beroep zonder voorwerp verklaard": 0,
+            "Inwilliging afstand van beroep": 4,
+            "Tussenarrest": 0
+        }
         },
         "Inbreuken": {
             "Afval": {
-                "Ontvangen verslagen van vaststelling": 0,
+                "Ontvangen verslagen van vaststelling": 1,
+                "Behandelde verslagen van vaststelling": 1,
+                "Beslissingen technische seponering": 0,
+                "Opgelegde bestuurlijke transacties": 0,
+                "Betaalde bestuurlijke transacties": 1,
+                "Geen geldboete": 0,
+                "Geldboetes met voordeelontneming": 0,
+                "Geldboetes zonder voordeelontneming": 0
+            },
+            "Vergunningen": {
+                "Ontvangen verslagen van vaststelling": 2,
                 "Behandelde verslagen van vaststelling": 0,
                 "Beslissingen technische seponering": 0,
                 "Opgelegde bestuurlijke transacties": 0,
                 "Betaalde bestuurlijke transacties": 0,
+                "Geen geldboete": 0,
+                "Geldboetes met voordeelontneming": 0,
+                "Geldboetes zonder voordeelontneming": 1
+            },
+            "Milieubeheer":{
+                "Ontvangen verslagen van vaststelling": 510,
+                "Behandelde verslagen van vaststelling": 524,
+                "Beslissingen technische seponering": 18,
+                "Opgelegde bestuurlijke transacties": 526,
+                "Betaalde bestuurlijke transacties": 397,
                 "Geen geldboete": 7,
+                "Geldboetes met voordeelontneming": 11,
+                "Geldboetes zonder voordeelontneming": 132
+            },
+            "Emissies": {
+                "Ontvangen verslagen van vaststelling": 0,
+                "Behandelde verslagen van vaststelling": 1,
+                "Beslissingen technische seponering":0,
+                "Opgelegde bestuurlijke transacties": 0,
+                "Betaalde bestuurlijke transacties": 1,
+                "Geen geldboete": 0,
+                "Geldboetes met voordeelontneming": 0,
+                "Geldboetes zonder voordeelontneming": 2
+            },
+            "Mest": {
+                "Ontvangen verslagen van vaststelling": 0,
+                "Behandelde verslagen van vaststelling": 2,
+                "Beslissingen technische seponering": 0,
+                "Opgelegde bestuurlijke transacties": 4,
+                "Betaalde bestuurlijke transacties": 3,
+                "Geen geldboete": 0,
                 "Geldboetes met voordeelontneming": 0,
                 "Geldboetes zonder voordeelontneming": 3
             },
-            "Vergunningen": {
-                "Ontvangen verslagen van vaststelling": 6,
-                "Behandelde verslagen van vaststelling": 6,
-                "Beslissingen technische seponering": 0,
-                "Opgelegde bestuurlijke transacties": 6,
-                "Betaalde bestuurlijke transacties": 5,
-                "Geen geldboete": 0,
-                "Geldboetes met voordeelontneming": 0,
-                "Geldboetes zonder voordeelontneming": 0
-            },
-            "Milieubeheer": {
-                "Ontvangen verslagen van vaststelling": 514,
-                "Behandelde verslagen van vaststelling": 512,
-                "Beslissingen technische seponering": 2,
-                "Opgelegde bestuurlijke transacties": 512,
-                "Betaalde bestuurlijke transacties": 368,
-                "Geen geldboete": 4,
-                "Geldboetes met voordeelontneming": 27,
-                "Geldboetes zonder voordeelontneming": 27
-            },
-            "Emissies": {
-                "Ontvangen verslagen van vaststelling": 2,
-                "Behandelde verslagen van vaststelling": 1,
-                "Beslissingen technische seponering": 1,
-                "Opgelegde bestuurlijke transacties": 0,
-                "Betaalde bestuurlijke transacties": 0,
-                "Geen geldboete": 0,
-                "Geldboetes met voordeelontneming": 0,
-                "Geldboetes zonder voordeelontneming": 0
-            },
-            "Mest": {
-                "Ontvangen verslagen van vaststelling": 3,
-                "Behandelde verslagen van vaststelling": 1,
-                "Beslissingen technische seponering": 0,
-                "Opgelegde bestuurlijke transacties": 2,
-                "Betaalde bestuurlijke transacties": 2,
-                "Geen geldboete": 0,
-                "Geldboetes met voordeelontneming": 0,
-                "Geldboetes zonder voordeelontneming": 0
-            },
             "RO": {
-                "Ontvangen verslagen van vaststelling": 77,
-                "Behandelde verslagen van vaststelling": 76,
-                "Beslissingen technische seponering": 7,
-                "Opgelegde bestuurlijke transacties": 116,
-                "Betaalde bestuurlijke transacties": 61,
-                "Geen geldboete": 0,
+                "Ontvangen verslagen van vaststelling": 54,
+                "Behandelde verslagen van vaststelling": 57,
+                "Beslissingen technische seponering": 14,
+                "Opgelegde bestuurlijke transacties": 77,
+                "Betaalde bestuurlijke transacties": 56,
+                "Geen geldboete": 4,
                 "Geldboetes met voordeelontneming": 0,
-                "Geldboetes zonder voordeelontneming": 0
+                "Geldboetes zonder voordeelontneming": 13
             },
             "Sepot": {
                 "opportuniteitssepot": {
                     "Geen handhavingsprioriteit": 5,
-                    "Volledig geregulariseerd": 5
+                    "Volledig geregulariseerd": 2
                 },
                 "Technisch sepot": {
-                    "Dader onbekend/Overleden/faillissement": 0,
-                    "Geen misdrijf": 3,
-                    "Onvoldoende vaststaand": 4,
-                    "Parket te laat": 0
+                    "Onvoldoende vaststaand": 12,
+                    "Temporele werking": 2
                 }
             }
         }
     },
+    "Prioriteiten":{
+        "Prio1": {
+            "Ontvangen beroepen": "Aktes niet in te delen",
+            "Beroep geheel of gedeeltelijk gegrond, beslissing gewestelijke entiteit van de afdeling Handhaving van het departement Omgeving vernietigd zonder meer": 5,
+            "Beroep geheel of gedeeltelijk gegrond, met vermindering/kwijtschelding boete": 5,
+            "Beroep ongegrond, boete bevestigd": 24,
+            "Beroep onontvankelijk (na vereenvoudigde procedure)": 9,
+            "Beroep zonder voorwerp verklaard": 0,
+            "Inwilliging afstand van beroep": 4,
+            "Tussenarrest": 0
+        },
+         "Prio2": {
+            "Ontvangen beroepen": "Aktes niet in te delen",
+            "Beroep geheel of gedeeltelijk gegrond, beslissing gewestelijke entiteit van de afdeling Handhaving van het departement Omgeving vernietigd zonder meer": 5,
+            "Beroep geheel of gedeeltelijk gegrond, met vermindering/kwijtschelding boete": 5,
+            "Beroep ongegrond, boete bevestigd": 24,
+            "Beroep onontvankelijk (na vereenvoudigde procedure)": 9,
+            "Beroep zonder voorwerp verklaard": 0,
+            "Inwilliging afstand van beroep": 4,
+            "Tussenarrest": 0
+        },
+         "Prio3": {
+            "Ontvangen beroepen": "Aktes niet in te delen",
+            "Beroep geheel of gedeeltelijk gegrond, beslissing gewestelijke entiteit van de afdeling Handhaving van het departement Omgeving vernietigd zonder meer": 5,
+            "Beroep geheel of gedeeltelijk gegrond, met vermindering/kwijtschelding boete": 5,
+            "Beroep ongegrond, boete bevestigd": 24,
+            "Beroep onontvankelijk (na vereenvoudigde procedure)": 9,
+            "Beroep zonder voorwerp verklaard": 0,
+            "Inwilliging afstand van beroep": 4,
+            "Tussenarrest": 0
+        },
+         "Prio4": {
+            "Ontvangen beroepen": "Aktes niet in te delen",
+            "Beroep geheel of gedeeltelijk gegrond, beslissing gewestelijke entiteit van de afdeling Handhaving van het departement Omgeving vernietigd zonder meer": 5,
+            "Beroep geheel of gedeeltelijk gegrond, met vermindering/kwijtschelding boete": 5,
+            "Beroep ongegrond, boete bevestigd": 24,
+            "Beroep onontvankelijk (na vereenvoudigde procedure)": 9,
+            "Beroep zonder voorwerp verklaard": 0,
+            "Inwilliging afstand van beroep": 4,
+            "Tussenarrest": 0
+        },
+         "Prio5": {
+            "Ontvangen beroepen": "Aktes niet in te delen",
+            "Beroep geheel of gedeeltelijk gegrond, beslissing gewestelijke entiteit van de afdeling Handhaving van het departement Omgeving vernietigd zonder meer": 5,
+            "Beroep geheel of gedeeltelijk gegrond, met vermindering/kwijtschelding boete": 5,
+            "Beroep ongegrond, boete bevestigd": 24,
+            "Beroep onontvankelijk (na vereenvoudigde procedure)": 9,
+            "Beroep zonder voorwerp verklaard": 0,
+            "Inwilliging afstand van beroep": 4,
+            "Tussenarrest": 0
+        },
+         "Prio6": {
+            "Ontvangen beroepen": "Aktes niet in te delen",
+            "Beroep geheel of gedeeltelijk gegrond, beslissing gewestelijke entiteit van de afdeling Handhaving van het departement Omgeving vernietigd zonder meer": 5,
+            "Beroep geheel of gedeeltelijk gegrond, met vermindering/kwijtschelding boete": 5,
+            "Beroep ongegrond, boete bevestigd": 24,
+            "Beroep onontvankelijk (na vereenvoudigde procedure)": 9,
+            "Beroep zonder voorwerp verklaard": 0,
+            "Inwilliging afstand van beroep": 4,
+            "Tussenarrest": 0
+        },
+         "Prio7": {
+            "Ontvangen beroepen": "Aktes niet in te delen",
+            "Beroep geheel of gedeeltelijk gegrond, beslissing gewestelijke entiteit van de afdeling Handhaving van het departement Omgeving vernietigd zonder meer": 5,
+            "Beroep geheel of gedeeltelijk gegrond, met vermindering/kwijtschelding boete": 5,
+            "Beroep ongegrond, boete bevestigd": 24,
+            "Beroep onontvankelijk (na vereenvoudigde procedure)": 9,
+            "Beroep zonder voorwerp verklaard": 0,
+            "Inwilliging afstand van beroep": 4,
+            "Tussenarrest": 0
+        }
+
+    },
     "HHC": {
         "Misdrijven": {
-            "Ontvangen beroepen": 57,
-            "Beroep geheel of gedeeltelijk gegrond, beslissing gewestelijke entiteit van de afdeling Handhaving van het departement Omgeving vernietigd zonder meer": 4,
-            "Beroep geheel of gedeeltelijk gegrond, met vermindering/kwijtschelding boete": 3,
-            "Beroep ongegrond, boete bevestigd": 25,
-            "Beroep onontvankelijk (na vereenvoudigde procedure)": 11,
+            "Ontvangen beroepen": 88,
+            "Beroep geheel of gedeeltelijk gegrond, beslissing gewestelijke entiteit van de afdeling Handhaving van het departement Omgeving vernietigd zonder meer": 5,
+            "Beroep geheel of gedeeltelijk gegrond, met vermindering/kwijtschelding boete": 5,
+            "Beroep ongegrond, boete bevestigd": 24,
+            "Beroep onontvankelijk (na vereenvoudigde procedure)": 9,
             "Beroep zonder voorwerp verklaard": 0,
-            "Inwilliging afstand van beroep": 3,
+            "Inwilliging afstand van beroep": 4,
             "Tussenarrest": 0
         },
         "Inbreuken": {
-            "Ontvangen beroepen": 4,
-            "Beroep geheel of gedeeltelijk gegrond, beslissing gewestelijke entiteit van de afdeling Handhaving van het departement Omgeving vernietigd zonder meer": 0,
-            "Beroep geheel of gedeeltelijk gegrond, met vermindering/kwijtschelding boete": 0,
-            "Beroep ongegrond, boete bevestigd": 1,
-            "Beroep onontvankelijk (na vereenvoudigde procedure)": 0,
+            "Ontvangen beroepen": 8,
+            "Beroep geheel of gedeeltelijk gegrond, beslissing gewestelijke entiteit van de afdeling Handhaving van het departement Omgeving vernietigd zonder meer": 5,
+            "Beroep geheel of gedeeltelijk gegrond, met vermindering/kwijtschelding boete": 5,
+            "Beroep ongegrond, boete bevestigd": 24,
+            "Beroep onontvankelijk (na vereenvoudigde procedure)": 9,
             "Beroep zonder voorwerp verklaard": 0,
-            "Inwilliging afstand van beroep": 1,
+            "Inwilliging afstand van beroep": 4,
             "Tussenarrest": 0
         }
     }

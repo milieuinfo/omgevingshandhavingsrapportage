@@ -33,6 +33,7 @@ import "./dashboards/ohr-bestuurlijkevervolgtraject.js";
 import "./dashboards/ohr-strafrechtelijkdashboard.js";
 import "./viewpages/ohr-bestuurlijk.js";
 import "./viewpages/ohr-omgevingshandhavingsrapporten.js";
+import "./dashboards/ohr-qlikembed.js";
 
 import {getHeaderFooterId} from "./config/header.js";
 
@@ -96,6 +97,8 @@ class OhrApp extends LitElement {
       {path: "/provincie-analyse", component: "ohr-provincieanalyse"},
       {path: "/bestuurlijk", component: "ohr-bestuurlijk"},
       {path: "/omgevingshandhavingsrapporten", component: "ohr-omgevingshandhavingsrapporten"},
+      {path: "/qlikembed", component: "ohr-qlikembed"},
+
       {path: "(.*)", component: "ohr-view404"},
     ]);
     Router.go(window.location.pathname)

@@ -39,7 +39,7 @@ class OhrHogeRaadDashboard extends LitElement {
         <vl-qlik-dashboard-page
             title="Hoge Raad voor de Handhavingsuitvoering"
             url="omgevingsloketrapport.omgeving.vlaanderen.be"
-            app-id="0f578cd6-84ab-46c7-9415-686c3f5aa59f"
+            app-id="d19dbb4b-8e8d-44ad-8293-657d0c778b47"
             selected-view="Instroom"
             .views="${viz}"
             .filters="${filters}"

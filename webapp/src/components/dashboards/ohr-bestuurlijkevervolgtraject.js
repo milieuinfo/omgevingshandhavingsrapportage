@@ -40,7 +40,7 @@ class OhrBestuurlijkevervolgtraject extends LitElement {
             title="Bestuurlijke sanctionering"
             export-id="HwSaGq"
             url="omgevingsloketrapport.omgeving.vlaanderen.be"
-            app-id="3b477102-375f-4ff0-acc2-81438cbefe1d"
+            app-id="8299aa3d-4fbb-4826-8d8d-ab4b7fd2abdb"
             .views="${viz}"
             .filters="${filters}"
             @initialized="${() => this.initialized = true}">
