@@ -171,13 +171,7 @@ __renderViewSelector() {
         { id: 'Milieuvergunningen',  title: 'Milieuvergunningen',                          key: 'Vergunningen' },
         { id: 'Ruimtelijke ordening',title: 'Ruimtelijke ordening',                        key: 'RO' },
         { id: 'Seponering',          title: 'Seponering inzake ruimtelijke ordening',      key: 'Sepot', renderer: (data) => this.__renderDataSectionSepot(data) },
-        { id: 'Prio1',               title: 'Prioriteit 1: De instandhouding van biodiversiteit',                                                                               key: 'Prio1' },
-        { id: 'Prio2',               title: 'Prioriteit 2: De reductie van de emissies van broeikasgassen',                                                                     key: 'Prio2' },
-        { id: 'Prio3',               title: 'Prioriteit 3: De aanpak van de stikstofproblematiek (m.i.v. het bestrijden van nutriëntenverliezen)',                              key: 'Prio3' },
-        { id: 'Prio4',               title: 'Prioriteit 4: Handhaving inzake de droogteproblematiek',                                                                          key: 'Prio4' },
-        { id: 'Prio5',               title: 'Prioriteit 5: Handhaving in functie van duurzaam beheer van materiaalkringlopen en afvalstoffen',                                 key: 'Prio5' },
-        { id: 'Prio6',               title: 'Prioriteit 6: Het doen naleven van de emissie- en kwaliteitsnormen voor gevaarlijke en bioaccumuleerbare stoffen in water, lucht en bodem', key: 'Prio6' },
-        { id: 'Prio7',               title: 'Prioriteit 7: Het behoud en herstel van de goede ruimtelijke ordening',                                                           key: 'Prio7' },
+        { id: 'Prio',               title: 'Prioriteiten',                                                                               key: 'Prio1' },
       ];
       return html`
         <vl-tabs data-vl-active-tab="Afval" data-vl-disable-links="">

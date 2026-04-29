@@ -39,7 +39,7 @@ class OhrInstrumentarium extends LitElement {
             title="Instrumentarium"
             export-id="CdmbBP"
             url="omgevingsloketrapport.omgeving.vlaanderen.be"
-            app-id="f60653ef-014c-4f79-8864-4d13128e5662"
+            app-id="86fa63d8-d5a7-4816-b530-757de909cfe8"
             selected-view="Milieu"
             .views="${viz}"
             .filters="${filters}"

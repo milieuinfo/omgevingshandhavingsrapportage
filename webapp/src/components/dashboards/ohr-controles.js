@@ -41,7 +41,7 @@ class OhrControles extends LitElement {
             title="Controles"
             export-id="eubkp"
             url="omgevingsloketrapport.omgeving.vlaanderen.be"
-            app-id="56259dfc-3460-4cd9-8572-1e3729ef4f64"
+            app-id="18471668-8b52-493d-85fd-52034601ca9f"
             .views="${charts}"
             .filters="${filters}"
             @initialized="${() => this.initialized = true}">

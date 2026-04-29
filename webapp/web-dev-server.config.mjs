@@ -7,6 +7,7 @@ const node = 'node_modules'
 
 export default {
   port: 8080,
+  http2: true,
   watch: true,
   // Om call naar deze super toffe toepassing te laten lukken.
   // Voeg "127.0.0.1 local.omgeving.vlaanderen.be" toe aan /etc/hosts

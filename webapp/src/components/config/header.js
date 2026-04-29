@@ -3,7 +3,7 @@ const headerId = "b77b3e2d-d967-453f-a95b-1e1e235a07d7";
 
 const environments = [
   {
-    match: "http://localhost",
+    match: "https://localhost",
     development: true,
     headerId,
     footerId,

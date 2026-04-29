@@ -41,7 +41,7 @@ class OhrPersoneel extends LitElement {
             title="Personeel"
             export-id="bLvkB"
             url="omgevingsloketrapport.omgeving.vlaanderen.be"
-            app-id="8b128a48-4cf1-4c81-9acf-03dce127d392"
+            app-id="501f77cb-f798-4cd7-8a5f-0b4f5469ced5"
             .views="${viz_personeel}"
             .filters = "${filters}"
             @initialized="${() => this.initialized = true}">
