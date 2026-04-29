@@ -11,7 +11,7 @@ import "@domg-wc/elements/title";
 import "@domg-wc/elements/image";
 import "@domg-wc/elements/link-list";
 import "@domg-wc/elements/link";
-import "@domg-wc/components/accordion";
+/*import "@domg-wc/components/accordion";*/
 import "@domg-wc/components/alert";
 import "@domg-wc/elements/select";
 import "@domg-wc/components/typography";

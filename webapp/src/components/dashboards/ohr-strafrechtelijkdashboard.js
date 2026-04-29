@@ -62,7 +62,7 @@ class OhrStrafrechtelijkvervolgtraject extends LitElement {
         Ze staat in voor de verdere strafrechtelijke afhandeling van de dossiers. <br>
         Deze pagina geeft via een interactieve tool de cijfers van het strafrechtelijk vervolgtraject over de jaren heen weer.
         </p>
-
+        <!--
          <vl-accordion data-vl-toggle-text="Informatie over het gebruik van het dashboard">
           <span>
             Het standaardbeeld geeft de totale cijfers van 2002 voor milieu en 2010 voor ruimtelijke ordening tot en met ${this.yearofanalysis} weer.
@@ -71,7 +71,7 @@ class OhrStrafrechtelijkvervolgtraject extends LitElement {
             Wanneer de gegevens niet gekend zijn, verschijnt “-“ of wordt aangegeven dat de data niet beschikbaar zijn. 
             Bij een evolutie weergave zal de lijn onderbroken zijn.
           </span>
-        </vl-accordion>
+        </vl-accordion> -->
       </vl-typography>
     `;
   }

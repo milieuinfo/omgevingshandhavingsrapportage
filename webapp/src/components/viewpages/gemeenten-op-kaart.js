@@ -8,13 +8,13 @@ import {
 import "@domg-wc/elements/select";
 import "@domg-wc/elements/grid";
 import "@domg-wc/components/functional-header";
-import "@domg-wc/components/accordion";
+/*import "@domg-wc/components/accordion";*/
 import "@domg-wc/components/tabs";
 import "@domg-wc/components/typography";
 import {vlElementsStyle} from "@domg-wc/elements";
 import "@domg-wc/elements/link";
 import "@domg-wc/elements/link-list";
-import "@domg-wc/components/accordion";
+/*import "@domg-wc/components/accordion";*/
 import "@domg-wc/components/typography";
 import options from "../config/gemeente-op-kaart.json" assert {type: "json"};
 import options2 from "../config/gemeente-op-kaart-absolut.json" assert {type:"json"};
@@ -105,6 +105,7 @@ class OhrOpkaart extends LitElement {
         </vl-typography>
         <br>
       <p>
+      <!--
       <vl-accordion data-vl-toggle-text="Hoe interpreteer ik de kaarten?">
        <span>
         De onderstaande kaarten geven per onderwerp in kleurgradaties de absolute cijfers en de cijfers per 1.000 inwoners weer. (inwonersaantal op basis van <a href="https://statbel.fgov.be" target="_blank">Statbel</a>)
@@ -116,7 +117,7 @@ class OhrOpkaart extends LitElement {
         Non-respons: de gemeente heeft de bevraging niet ingevuld.
 
        </span>
-          </vl-accordion></p>
+          </vl-accordion>--></p>
             `;
   }
   __renderBackgroundInformation() {

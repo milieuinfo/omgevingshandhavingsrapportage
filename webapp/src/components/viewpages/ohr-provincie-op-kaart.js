@@ -7,7 +7,7 @@ import {
   } from "../common/commons.js";
   import "@domg-wc/elements/select";
   import "@domg-wc/components/functional-header";
-  import "@domg-wc/components/accordion";
+  /*import "@domg-wc/components/accordion";*/
   import "@domg-wc/components/tabs";
   import "@domg-wc/components/typography";
   import {vlElementsStyle} from "@domg-wc/elements";
@@ -97,11 +97,12 @@ import {
 In de cartografische weergaves wordt gerapporteerd over de uitvoering van hun handhavingsactiviteiten in ${this.yearofanalysis} (handhavingsactiviteiten uitgevoerd tussen 1 januari en 31 december).</p>
       <br>
       <p>
+      <!--
        <vl-accordion data-vl-toggle-text="Hoe interpreteer ik de kaarten?">
           <span>
 De onderstaande kaarten geven per onderwerp in kleurgradaties de absolute cijfers en de cijfers per 1.000 inwoners weer. (inwonersaantal op basis van <a href="https://statbel.fgov.be" target=_blank>Statbel</a>)
 <br>Wanneer u de cursor over een provincie beweegt, worden de cijfers weergegeven.</span>
-        </vl-accordion></p>
+        </vl-accordion>-->/p>
 
 `;
     }

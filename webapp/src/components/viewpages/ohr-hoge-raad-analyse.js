@@ -6,8 +6,9 @@ import "@domg-wc/elements/image";
 import "@domg-wc/elements/grid";
 import "@domg-wc/elements/title";
 import "@domg-wc/components/loader";
+/*
 import "@domg-wc/components/accordion";
-import "@domg-wc/components/accordion-list";
+import "@domg-wc/components/accordion-list";*/
 import "@domg-wc/elements/data-table";
 import "@domg-wc/components/tabs";
 import "@domg-wc/components/functional-header";
@@ -242,6 +243,7 @@ __renderDataSection_BindendeAdviezen_Herstelvordering_Ambtshalve_uitvoering(data
   <vl-tabs-pane data-vl-id="Instroom" data-vl-title="Instroom">
       <div is="vl-grid">
   <div is="vl-column" data-vl-size=12>
+  <!--
    <vl-accordion-list slot="content">
         <vl-accordion data-vl-default-open data-vl-toggle-text="Aanvragen voor advies inzake herstelvorderingen"> 
         ${this.renderDataSection(jsonData.Instroom.Vraag1)}
@@ -367,7 +369,7 @@ een opeisbaar geworden dwangsomschuld">
     ${this.renderDataSectionSpecial(jsonData.Instroom.VraagD1)}
     </vl-accordion>
     </vl-accordion-list>
-  </div>
+  </div> -->
 </div>
   </vl-tabs-pane>
 </vl-tabs>
