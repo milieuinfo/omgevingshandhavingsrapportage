@@ -24,7 +24,7 @@
   "license": "ISC",
   "dependencies": {
     "@domg-wc/common-utilities": "1.37.2",
-    "@domg-wc/components": "1.37.2",
+    "@domg-wc/components": "^2.14.0",
     "@domg-wc/elements": "1.37.2",
     "@domg-wc/qlik": "1.43.1",
     "@domg-wc/sections": "1.37.2",
