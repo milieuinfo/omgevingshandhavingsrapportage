@@ -31,7 +31,9 @@
     "@domg/qlik-lib": "1.0.16",
     "@qlik/embed-web-components": "^1.6.1",
     "@vaadin/router": "1.7.5",
-    "lit": "3.2.0"
+    "lit": "3.2.0",
+    "tiny-emitter": "^2.1.0",
+    "tinymce": "^8.6.0"
   },
   "devDependencies": {
     "@open-wc/rollup-plugin-html": "1.2.5",
