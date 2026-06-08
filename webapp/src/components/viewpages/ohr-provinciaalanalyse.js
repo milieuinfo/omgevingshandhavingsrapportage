@@ -13,7 +13,6 @@ import "@domg-wc/elements/grid";
 import "@domg-wc/components/functional-header";
 import "@domg-wc/elements/title";
 import "@domg-wc/components/loader";
-import "@domg-wc/components/accordion-list";
 import "@domg-wc/components/accordion";
 import "@domg-wc/elements/data-table";
 import "@domg-wc/elements/select";
