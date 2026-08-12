@@ -78,10 +78,11 @@ and performing other setup tasks.
               size: 12,
               template: this.__renderJaarRapportage(),
             },
+            /*
             {
               size: 12,
               template: this.__renderOpKaart(),
-            },
+            },*/
             {
               size: 12,
               template: this.__renderMeerInfo(),
@@ -164,16 +165,16 @@ and performing other setup tasks.
           <div is="vl-grid" data-vl-align-center>
           <div is="vl-column" data-vl-size="6">
             <vl-spotlight
-              data-vl-img-src="images/31e8e1220cdf4edd88aa3031790deac9.png"
+              data-vl-img-src="images/infomilieu.png"
               data-vl-img-alt="spotlight image" download
             >
               <span slot="title">Geconsolideerd beeld milieu</span>
-              <span slot="subtitle">Op basis van de cijfers van 2024</span>
+              <span slot="subtitle">Op basis van de cijfers van ${this.yearofanalysis}</span>
               <span slot="text">
                 De bovenstaande preview van de infographic geeft een overzicht van de
                 verschillende instrumenten binnen het milieubeleid voor het volledige vlaamse gewest.<br />
                 <p>
-                  <a href="images/31e8e1220cdf4edd88aa3031790deac9.png" download
+                  <a href="images/infomilieu.png" download
                     >Download bovenstaande infographic</a>
                 </p>
               </span>
@@ -181,19 +182,19 @@ and performing other setup tasks.
           </div>
           <div is="vl-column" data-vl-size="6">
             <vl-spotlight
-              data-vl-img-src="images/98231c23bfcc4a05a8ce0d374489510f.png"
+              data-vl-img-src="images/inforo.png"
               data-vl-img-alt="spotlight image"
             >
               <span slot="title">
                 Geconsolideerd beeld ruimtelijke ordening
               </span>
-              <span slot="subtitle">Op basis van de cijfers van 2024</span>
+              <span slot="subtitle">Op basis van de cijfers van ${this.yearofanalysis}</span>
               <span slot="text">
                 De bovenstaande preview van de infographic geeft een overzicht van de
                 verschillende instrumenten binnen het ruimtelijke ordening beleid
                 voor het volledige vlaamse gewest.<br />
                 <p>
-                  <a href="images/98231c23bfcc4a05a8ce0d374489510f.png" download
+                  <a href="images/inforo.png" download
                     >Download bovenstaande infographic</a>
                 </p>
               </span>
@@ -215,7 +216,7 @@ and performing other setup tasks.
           size: 2,
           template: html` <div is="vl-infotext" data-cy="infotext">
             <div>
-              <div data-vl-value="">92%</div>
+              <div data-vl-value="">75%</div>
               <div data-vl-text="">Reponsgraad</div>
             </div>
           </div>`,
@@ -224,7 +225,7 @@ and performing other setup tasks.
           size: 2,
           template: html` <div is="vl-infotext" data-cy="infotext">
             <div>
-              <div data-vl-value="">2019</div>
+              <div data-vl-value="">1815</div>
               <div data-vl-text="">Aantal handhavers omgevingsinspectie</div>
             </div>
           </div>`,
@@ -233,7 +234,7 @@ and performing other setup tasks.
           size: 2,
           template: html` <div is="vl-infotext" data-cy="infotext">
             <div>
-              <div data-vl-value="">39930</div>
+              <div data-vl-value="">34835</div>
               <div data-vl-text="">Aantal klachten</div>
             </div>
           </div>`,
@@ -242,7 +243,7 @@ and performing other setup tasks.
           size: 2,
           template: html` <div is="vl-infotext" data-cy="infotext">
             <div>
-              <div data-vl-value="">52262</div>
+              <div data-vl-value="">51556</div>
               <div data-vl-text="">Aantal controles</div>
             </div>
           </div>`,
@@ -251,7 +252,7 @@ and performing other setup tasks.
           size: 2,
           template: html` <div is="vl-infotext" data-cy="infotext">
             <div>
-              <div data-vl-value="">4599</div>
+              <div data-vl-value="">4404</div>
               <div data-vl-text="">Aantal PV's</div>
             </div>
           </div>`,
@@ -260,7 +261,7 @@ and performing other setup tasks.
           size: 2,
           template: html` <div is="vl-infotext" data-cy="infotext">
             <div>
-              <div data-vl-value="">1005</div>
+              <div data-vl-value="">706</div>
               <div data-vl-text="">Verslagen van vaststelling</div>
             </div>
           </div>`,

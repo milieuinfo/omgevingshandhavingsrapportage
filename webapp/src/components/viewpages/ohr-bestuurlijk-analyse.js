@@ -171,7 +171,6 @@ __renderViewSelector() {
         { id: 'Milieuvergunningen',  title: 'Milieuvergunningen',                          key: 'Vergunningen' },
         { id: 'Ruimtelijke ordening',title: 'Ruimtelijke ordening',                        key: 'RO' },
         { id: 'Seponering',          title: 'Seponering inzake ruimtelijke ordening',      key: 'Sepot', renderer: (data) => this.__renderDataSectionSepot(data) },
-        { id: 'Prio',               title: 'Prioriteiten',                                                                               key: 'Prio1' },
       ];
       return html`
         <vl-tabs data-vl-active-tab="Afval" data-vl-disable-links="">

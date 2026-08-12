@@ -7,7 +7,6 @@ import "@domg-wc/elements/grid";
 import "@domg-wc/elements/title";
 import "@domg-wc/components/loader";
 
-import "@domg-wc/components/accordion";
 import "@domg-wc/elements/data-table";
 import "@domg-wc/components/tabs";
 import "@domg-wc/components/functional-header";
@@ -49,7 +48,7 @@ class OhrHogeRaadAnalyse extends LitElement {
         <div is="vl-layout">
         <vl-typography>
         <h2>Cijfers van het jaar ${this.yearofanalysis}</h2></vl-typography>
-        <p is="vl-icon-wrapper"><vl-annotation><span is="vl-icon" data-vl-icon="calendar"></span> Laatste wijziging aan de data: 01/09/2025</vl-annotation></p><br>
+        <p is="vl-icon-wrapper"><vl-annotation><span is="vl-icon" data-vl-icon="calendar"></span> Laatste wijziging aan de data: 01/08/2026</vl-annotation></p><br>
 
     <p is="vl-introduction" data-cy="introduction">
     Deze pagina toont de cijfers van de activiteiten van de Hoge Raad voor de Handhavingsuitvoering in het voorafgaande jaar.
@@ -242,12 +241,16 @@ __renderDataSection_BindendeAdviezen_Herstelvordering_Ambtshalve_uitvoering(data
   <vl-tabs-pane data-vl-id="Instroom" data-vl-title="Instroom">
       <div is="vl-grid">
   <div is="vl-column" data-vl-size=12>
-  <!--
-   <vl-accordion-list slot="content">
-        <vl-accordion data-vl-default-open data-vl-toggle-text="Aanvragen voor advies inzake herstelvorderingen"> 
+        <vl-typography data-cy="typography">
+        <h4>Aanvragen voor advies inzake herstelvorderingen</h4>
+        </vl-typography>
         ${this.renderDataSection(jsonData.Instroom.Vraag1)}
-        </vl-accordion>
-        <vl-accordion data-vl-default-open data-vl-toggle-text="Verzoeken tot heroverweging van een negatief advies inzake herstelvorderingen">
+
+        
+        <vl-typography data-cy="typography">
+        <h4>Verzoeken tot heroverweging van een negatief advies inzake herstelvorderingen</h4>
+        </vl-typography>
+        
          <vl-alert
     data-cy="alert"
     data-vl-naked
@@ -255,8 +258,9 @@ __renderDataSection_BindendeAdviezen_Herstelvordering_Ambtshalve_uitvoering(data
     data-vl-type="warning"
     data-vl-message="Geen aanvragen ontvangen"
 ></vl-alert>
-        </vl-accordion>
-        <vl-accordion data-vl-default-open data-vl-toggle-text="Aanvragen voor advies inzake opeenvolgende herstelvorderingen">
+ <vl-typography data-cy="typography">
+        <h4>Aanvragen voor advies inzake opeenvolgende herstelvorderingen</h4>
+        </vl-typography>
          <vl-alert
     data-cy="alert"
     data-vl-naked
@@ -264,37 +268,39 @@ __renderDataSection_BindendeAdviezen_Herstelvordering_Ambtshalve_uitvoering(data
     data-vl-type="warning"
     data-vl-message="Geen aanvragen ontvangen"
 ></vl-alert>
-        </vl-accordion>
-        <vl-accordion data-vl-default-open data-vl-toggle-text="Aanvragen voor advies inzake een ambtshalve uitvoering van een door de rechter bevolen herstelmaatregel">
-        <vl-alert
+
+    <vl-typography data-cy="typography">
+        <h4>Aanvragen voor advies inzake een ambtshalve uitvoering van een door de rechter bevolen herstelmaatregel</h4>
+        </vl-typography>
+         ${this.renderDataSection(jsonData.Instroom.Vraag4)}
+      
+       
+
+<vl-typography data-cy="typography">
+        <h4>Aanvragen voor advies inzake betekeningen van vonnissen of arresten waarin de rechter het bestuur heeft gemachtigd om ambtshalve in de uitvoering ervan te voorzien</h4>
+        </vl-typography>
+
+    <vl-alert
     data-cy="alert"
     data-vl-naked
     data-vl-icon="warning"
     data-vl-type="warning"
     data-vl-message="Geen aanvragen ontvangen"
 ></vl-alert>
-        </vl-accordion>
-        <vl-accordion data-vl-default-open data-vl-toggle-text="Aanvragen voor advies inzake betekeningen van vonnissen of arresten waarin de rechter het bestuur heeft gemachtigd om ambtshalve in de uitvoering ervan te voorzien">
-         <vl-alert
-    data-cy="alert"
-    data-vl-naked
-    data-vl-icon="warning"
-    data-vl-type="warning"
-    data-vl-message="Geen aanvragen ontvangen"
-></vl-alert>
-        </vl-accordion>
-    </vl-accordion-list>
   </div>
 </div>
   </vl-tabs-pane>
   <vl-tabs-pane data-vl-id="Bindende adviezen" data-vl-title="Bindende adviezen">
           <div is="vl-grid">
   <div is="vl-column" data-vl-size=12>
-  <vl-accordion-list slot="content">
-    <vl-accordion data-vl-default-open data-vl-toggle-text="Herstelvorderingen"> 
+  <vl-typography data-cy="typography">
+    <h4>Herstelvorderingen</h4>
+    </vl-typography>
     ${this.__renderDataSection_BindendeAdviezen_Herstelvordering(jsonData.Instroom.Herstelvorderingen)}
-    </vl-accordion>
-    <vl-accordion data-vl-default-open  data-vl-toggle-text="Herstelvorderingen naar aanleiding van gemotiveerd verzoek tot heroverweging van een negatief advies inzake herstelvorderingen">
+
+    <vl-typography data-cy="typography">
+    <h4>Herstelvorderingen naar aanleiding van gemotiveerd verzoek tot heroverweging van een negatief advies inzake herstelvorderingen</h4>
+    </vl-typography>
 
     <vl-alert
     data-cy="alert"
@@ -303,30 +309,27 @@ __renderDataSection_BindendeAdviezen_Herstelvordering_Ambtshalve_uitvoering(data
     data-vl-type="warning"
     data-vl-message="Geen adviezen uitgebracht"
 ></vl-alert>
-    </vl-accordion>
 
-     <vl-accordion data-vl-default-open  data-vl-toggle-text="Inleiden van opeenvolgende herstelvorderingen">
+     <vl-typography data-cy="typography">
+    <h4>Inleiden van opeenvolgende herstelvorderingen</h4>
+    </vl-typography>
      <vl-alert
     data-cy="alert"
     data-vl-naked
     data-vl-icon="warning"
     data-vl-type="warning"
     data-vl-message="Geen adviezen uitgebracht"
-></vl-alert> 
-    </vl-accordion>
-
-    <vl-accordion data-vl-default-open  data-vl-toggle-text="Vooraleer een ambtshalve uitvoering van een door de rechter bevolen herstelmaatregel kan worden opgestart">
-    <vl-alert
-    data-cy="alert"
-    data-vl-naked
-    data-vl-icon="warning"
-    data-vl-type="warning"
-    data-vl-message="Geen adviezen uitgebracht"
 ></vl-alert>
-    </vl-accordion>
 
-    <vl-accordion data-vl-default-open  data-vl-toggle-text="Voorafgaand aan sommige betekeningen van vonnissen of arresten waarin de rechter het bestuur heeft gemachtigd om ambtshalve in de uitvoering ervan te voorzien">
-   
+    <vl-typography data-cy="typography">
+    <h4>Vooraleer een ambtshalve uitvoering van een door de rechter bevolen herstelmaatregel kan worden opgestart</h4>
+    </vl-typography>
+    ${this.__renderDataSection_BindendeAdviezen_Herstelvordering(jsonData.Instroom.Ambtshalveuitvoering)}
+
+    <vl-typography data-cy="typography">
+    <h4>Voorafgaand aan sommige betekeningen van vonnissen of arresten waarin de rechter het bestuur heeft gemachtigd om ambtshalve in de uitvoering ervan te voorzien</h4>
+    </vl-typography>
+
    <vl-alert
     data-cy="alert"
     data-vl-naked
@@ -334,28 +337,24 @@ __renderDataSection_BindendeAdviezen_Herstelvordering_Ambtshalve_uitvoering(data
     data-vl-type="warning"
     data-vl-message="Geen adviezen uitgebracht"
 ></vl-alert>
-    </vl-accordion>
-
-
-    
-    </vl-accordion-list>
   </div>
 </div>   
   </vl-tabs-pane>
   <vl-tabs-pane data-vl-id="Niet-bindende adviezen" data-vl-title="Niet-bindende adviezen">
     <div is="vl-grid">
   <div is="vl-column" data-vl-size=12>
-  <vl-accordion-list slot="content">
-    <vl-accordion data-vl-default-open data-vl-toggle-text="Over het gemotiveerd verzoek om tijdelijk of definitief af te zien van verdere inning van
-een opeisbaar geworden dwangsomschuld"> 
+  <vl-typography data-cy="typography">
+    <h4>Over het gemotiveerd verzoek om tijdelijk of definitief af te zien van verdere inning van
+een opeisbaar geworden dwangsomschuld</h4>
+    </vl-typography>
  ${this.renderDataSectionSpecial(jsonData.Instroom.VraagC1)}
-    </vl-accordion>
-    <vl-accordion data-vl-default-open  data-vl-toggle-text="Over de herstelmaatregelen in het kader van
+
+    <vl-typography data-cy="typography">
+    <h4>Over de herstelmaatregelen in het kader van
     een beroep ingesteld door de vermoedelijke overtreder tegen de beslissing tot toepassing
-    van bestuursdwang of tot het opleggen van een last onder dwangsom">
+    van bestuursdwang of tot het opleggen van een last onder dwangsom</h4>
+    </vl-typography>
     ${this.renderDataSectionSpecial(jsonData.Instroom.VraagC2)}
-    </vl-accordion>
-    </vl-accordion-list>
   </div>
 </div>
 </div>
@@ -363,12 +362,12 @@ een opeisbaar geworden dwangsomschuld">
    <vl-tabs-pane data-vl-id="Bemiddelingsopdrachten" data-vl-title="Bemiddelingsopdrachten">
     <div is="vl-grid">
   <div is="vl-column" data-vl-size=12>
- <vl-accordion-list slot="content">
-    <vl-accordion data-vl-default-open data-vl-toggle-text="Aantal bemiddelingsopdrachten op verzoek van een vermoedelijke overtreder of de rechtbank"> 
+ <vl-typography data-cy="typography">
+    <h4>Aantal bemiddelingsopdrachten op verzoek van een vermoedelijke overtreder of de rechtbank</h4>
+    </vl-typography>
     ${this.renderDataSectionSpecial(jsonData.Instroom.VraagD1)}
-    </vl-accordion>
-    </vl-accordion-list>
-  </div> -->
+
+  </div>
 </div>
   </vl-tabs-pane>
 </vl-tabs>

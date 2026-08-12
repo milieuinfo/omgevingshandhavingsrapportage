@@ -38,9 +38,9 @@ class OhrKlachten extends LitElement {
       <div style="margin: 3rem 0px">
         <vl-qlik-dashboard-page
             title="Klachten"
-            export-id="VSaSEgy"
+            export-id="gXckNC"
             url="omgevingsloketrapport.omgeving.vlaanderen.be"
-            app-id="7d057b7f-8705-4189-b283-a36a489b24d5"
+            app-id="a335ec75-52c1-43fb-98e5-7dc4cd7406e4"
             .views="${charts}"
             .filters="${filters}"
             @initialized="${() => this.initialized = true}">

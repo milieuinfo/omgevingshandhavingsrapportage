@@ -91,9 +91,12 @@ class OhrApp extends LitElement {
       {path: "/bestuurlijkevervolg-analyse", component: "ohr-bestuurlijkevervolgtraject"},
       {path: "/strafrechtelijke-analyse",component: "ohr-strafrechtelijkanalyse"},
       {path: "/gemeenten-analyse", component: "ohr-gemeentenanalyse"},
+      
       {path: "/gemeenten", component: "ohr-gemeenten"},
+      /*
       {path: "/gemeenten-op-kaart", component: "ohr-opkaart"},
       {path: "/provincie-op-kaart", component: "ohr-opkaartprovincies"},
+      */
       {path: "/provincie-analyse", component: "ohr-provincieanalyse"},
       {path: "/bestuurlijk", component: "ohr-bestuurlijk"},
       {path: "/omgevingshandhavingsrapporten", component: "ohr-omgevingshandhavingsrapporten"},

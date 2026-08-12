@@ -1,8 +1,8 @@
 {
     "Instroom": {
         "Vraag1": {
-            "Gewestelijke stedenbouwkundige inspecteurs": 54,
-            "Gemeentelijke stedenbouwkundige inspecteurs / Burgemeesters": 202,
+            "Gewestelijke stedenbouwkundige inspecteurs": 37,
+            "Gemeentelijke stedenbouwkundige inspecteurs / Burgemeesters": 142,
             "Derde belanghebbende": 0
         },
         "Vraag2": {
@@ -17,7 +17,7 @@
         },
         "Vraag4": {
             "Gewestelijke stedenbouwkundige inspecteurs": "0",
-            "Gemeentelijke stedenbouwkundige inspecteurs / Burgemeesters": "0",
+            "Gemeentelijke stedenbouwkundige inspecteurs / Burgemeesters": "5",
             "Derde belanghebbende": "0"
         },
         "Vraag5": {
@@ -31,20 +31,20 @@
                 "value2": 1
             },
             "Geen advies wegens vrijwillig herstel": {
-                "value1": "0",
-                "value2": 7
+                "value1": "1",
+                "value2": 8
             },
             "Positieve adviezen": {
-                "value1": 41,
-                "value2": 172
+                "value1": 30,
+                "value2": 114
             },
             "Negatieve adviezen": {
-                "value1": 8,
-                "value2": 10
+                "value1": 4,
+                "value2": 12
             },
             "Gecombineerde adviezen (deels positief – deels negatief)": {
-                "value1": 5,
-                "value2": 9
+                "value1": 2,
+                "value2": 7
             }
         },
         "HerstelvorderingenHeroverweging": {
@@ -109,12 +109,12 @@
             },
             "Geen advies wegens vrijwillig herstel": {
                 "value1": 0,
-                "value2": 0,
+                "value2": 1,
                 "value3": 0
             },
             "Positieve adviezen": {
                 "value1": 0,
-                "value2": 0,
+                "value2": 4,
                 "value3": 0
             },
             "Negatieve adviezen": {
@@ -136,12 +136,12 @@
             },
             "Geen advies wegens vrijwillig herstel": {
                 "value1": 0,
-                "value2": 0,
+                "value2": 1,
                 "value3": 0
             },
             "Positieve adviezen": {
                 "value1": 0,
-                "value2": 0,
+                "value2": 4,
                 "value3": 0
             },
             "Negatieve adviezen": {
@@ -160,14 +160,14 @@
             "Aan College van Burgmeester en Schepenen": 1
         },
         "VraagC2": {
-            "Aan Vlaamse Regering": 23,
+            "Aan Vlaamse Regering": 13,
             "Aan College van Burgmeester en Schepenen": 0
         },
         "VraagD1": {
             "In het kader van een dading": 0,
             "In het kader van een minnelijke schikking met de gewestelijke SI": 1,
-            "In het kader van een minnelijke schikking met de gemeentelijke SI": 0,
-            "In het kader van een minnelijke schikking met de burgemeester": 1
+            "In het kader van een minnelijke schikking met de gemeentelijke SI": 1,
+            "In het kader van een minnelijke schikking met de burgemeester": 0
         }
     },
     "Bindend": {

@@ -6,7 +6,7 @@ import json from "@rollup/plugin-json";
 const node = 'node_modules'
 
 export default {
-  port: 8080,
+  port: 5173,
   http2: true,
   watch: true,
   // Om call naar deze super toffe toepassing te laten lukken.

@@ -26,7 +26,7 @@
         [
           {
             "type": "visual",
-            "id": "npYK",
+            "id": "jpAmXd",
             "height": "300px",
             "visual_type": "barchart",
             "label": "Instroom per thema"
@@ -42,14 +42,14 @@
         [
             {
                 "type": "visual",
-                "id": "PeEXsph",
+                "id": "gPrNfWx",
                 "height": "300px",
                 "visual_type": "barchart",
                 "label": "Evolutie percentuele verdeling per thema"
               },
               {
                 "type": "visual",
-                "id": "KPBmpHk",
+                "id": "fwdjpch",
                 "height": "300px",
                 "visual_type": "barchart",
                 "label": "Evolutie percentuele verdeling per tenlastenleggingscode"

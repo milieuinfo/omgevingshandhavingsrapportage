@@ -1,5 +1,5 @@
 import { vlElementsStyle } from "@domg-wc/elements";
-import jsonData2 from "../datafiles/gewesten_dataset_2024.json" assert { type: "json" };
+import jsonData2 from "../datafiles/gewest_dataset_2026.json" assert { type: "json" };
 import options from "../config/keuzegewestanalyse.json" assert { type: "json" };
 import {
   bindVlSelect,
@@ -16,7 +16,7 @@ import "@domg-wc/components/typography";
 import "@domg-wc/components/tabs";
 import "@domg-wc/elements/link";
 import "@domg-wc/elements/link-list";
-import yearofanalsysis from "../config/yearofanalysis.json" assert { type: "json" };
+import yearofanalysis from "../config/yearofanalysis.json" assert { type: "json" };
 import { GEGEVENS_BESCHIKBAAR } from "../config/gegevensBeschikbaar.js";
 import { BELEID_MAP } from "../config/beleidMap.js";
 
@@ -36,7 +36,7 @@ class OhrAGewest extends LitElement {
     super();
     this.selectedChoiceUrl = options.find((o) => o.selected).value;
     this.selectedChoiceLabel = options.find((o) => o.selected).label;
-    this.yearofanalysis = yearofanalsysis.value;
+    this.yearofanalysis = yearofanalysis.value;
   }
 
   /*Main render page*/
@@ -59,7 +59,7 @@ class OhrAGewest extends LitElement {
           <p is="vl-icon-wrapper">
             <span is="vl-icon" data-vl-icon="calendar"></span
             ><vl-annotation
-              >&nbsp;Laatste wijziging aan de data: 01/09/2025</vl-annotation
+              >&nbsp;Laatste wijziging aan de data: 01/08/2025</vl-annotation
             >
           </p>
           <br />
@@ -75,23 +75,6 @@ class OhrAGewest extends LitElement {
           <div>${this.__renderDynamicContent()}</div>
         </div>
       </section>`;
-  }
-
-  __nonEmpty(o) {
-    return o && typeof o === "object" && Object.keys(o).length > 0;
-  }
-
-  __deriveBeleid(actor) {
-    const hasMilieu = this.__nonEmpty(jsonData2?.Milieu?.[actor]);
-    const hasRO = this.__nonEmpty(jsonData2?.RO?.[actor]);
-    if (hasMilieu && hasRO) return "Both";
-    if (hasMilieu) return "Milieu";
-    if (hasRO) return "RO";
-    return "None";
-  }
-
-  __sec(branch, actor, key) {
-    return jsonData2?.[branch]?.[actor]?.[key] ?? {};
   }
 
   firstUpdated(_changedProperties) {
@@ -169,42 +152,6 @@ class OhrAGewest extends LitElement {
     `;
   }
 
-  /*ToDelete*/
-  /* Render data table String*/
-  __renderDataSectionTXT(data) {
-    return html`
-      <table is="vl-data-table">
-        <thead>
-          <tr>
-            <th>Thema</th>
-            <th>Beschrijving</th>
-          </tr>
-        </thead>
-        <tbody>
-          ${Object.entries(data).map(([key, value]) => {
-            if (typeof value === "object") {
-              return html`
-                <tr>
-                  <td data-title="${key}">${key}</td>
-                  <td data-title="${value.value}">${value.value}</td>
-                </tr>
-              `;
-            } else {
-              return html`
-                <tr>
-                  <td data-title="${key}">${key}</td>
-                  <td data-title="${value.value}">${value}</td>
-                </tr>
-              `;
-            }
-          })}
-        </tbody>
-      </table>
-      <br />
-    `;
-  }
-  /*ToDelete*/
-
   /* Render data table Numbers*/
   __renderDataSection(data, type) {
     return html`
@@ -223,7 +170,7 @@ class OhrAGewest extends LitElement {
             if (typeof value === "object") {
               return html`
                 <tr>
-                  <td data-title="${key}">test</td>
+                  <td data-title="${key}">${key}</td>
                   <td data-title="${value.value}">${value.value}</td>
                 </tr>
               `;
@@ -541,12 +488,10 @@ class OhrAGewest extends LitElement {
   __renderDynamicContent() {
     const mapped = BELEID_MAP[this.selectedChoiceUrl];
     const gegevensselectie = GEGEVENS_BESCHIKBAAR[this.selectedChoiceUrl];
-    const deriveddata = this.__deriveBeleid(this.selectedChoiceUrl);
     const derived = this.__deriveBeleid(this.selectedChoiceUrl);
     const rawBeleid = mapped ?? derived;
     const beleid = rawBeleid === "None" ? "Both" : rawBeleid;
-
-    const s = (branch, key) => this.__sec(branch, this.selectedChoiceUrl, key);
+    const rec = this.__getActorRecord(this.selectedChoiceUrl);
 
     const renderColumns = (milieuData, roData, milieuLabel, roLabel) => {
       if (gegevensselectie === 0) {
@@ -572,14 +517,13 @@ class OhrAGewest extends LitElement {
           ${this.__renderDataSection(milieuData, milieuLabel)}
         </div>`;
       } else {
-        // "RO"
         return html`<div is="vl-column" data-vl-size="12">
           ${this.__renderDataSection(roData, roLabel)}
         </div>`;
       }
     };
 
-    const renderColumns_opmerking = (milieuData, milieuLabel) => {
+    const renderColumns_opmerking = (milieuData) => {
       if (gegevensselectie === 0) {
         return html` <div is="vl-column" data-vl-size="12">
           <vl-alert
@@ -593,82 +537,63 @@ class OhrAGewest extends LitElement {
         </div>`;
       } else {
         return html`<div is="vl-column" data-vl-size="12">
-          ${this.__renderDataSectionOpmerking(milieuData, milieuLabel)}
+          ${this.__renderDataSectionOpmerking(milieuData)}
         </div>`;
       }
     };
+
     return html`
       <vl-tabs data-vl-active-tab="Personeel" data-vl-disable-links="">
         <vl-tabs-pane data-vl-id="Personeel" data-vl-title="Personeel">
           <div is="vl-grid">
-            ${(() => {
-              const rec = this.__getActorRecord(this.selectedChoiceUrl);
-              const milieuPers = this.__milieuPersoneelFromRecord(rec);
-              const roPers = this.__roPersoneelFromRecord(rec);
-              return renderColumns(
-                milieuPers,
-                roPers,
-                "Milieu",
-                "Ruimtelijke ordening"
-              );
-              // No RO data in the new JSON, so pass {} for RO
-            })()}
+            ${renderColumns(
+              this.__milieuPersoneelFromRecord(rec),
+              this.__roPersoneelFromRecord(rec),
+              "Milieu",
+              "Ruimtelijke ordening"
+            )}
           </div>
         </vl-tabs-pane>
 
         <vl-tabs-pane data-vl-id="Klachten" data-vl-title="Klachten">
           <div is="vl-grid">
-            ${(() => {
-              const rec = this.__getActorRecord(this.selectedChoiceUrl);
-              const milieuK = this.__milieuKlachtenFromRecord(rec);
-              const roK = this.__roKlachtenFromRecord(rec);
-              return renderColumns(
-                milieuK,
-                roK,
-                "Milieu",
-                "Ruimtelijke ordening"
-              );
-            })()}
+            ${renderColumns(
+              this.__milieuKlachtenFromRecord(rec),
+              this.__roKlachtenFromRecord(rec),
+              "Milieu",
+              "Ruimtelijke ordening"
+            )}
           </div>
         </vl-tabs-pane>
 
         <vl-tabs-pane data-vl-id="Controles" data-vl-title="Controles">
           <div is="vl-grid">
-            ${(() => {
-              const rec = this.__getActorRecord(this.selectedChoiceUrl);
-              const milieu = this.__milieuControlesFromRecord(rec);
-              const ro = this.__roControlesFromRecord(rec);
-              return renderColumns(
-                milieu,
-                ro,
-                "Milieu",
-                "Ruimtelijke ordening"
-              );
-            })()}
+            ${renderColumns(
+              this.__milieuControlesFromRecord(rec),
+              this.__roControlesFromRecord(rec),
+              "Milieu",
+              "Ruimtelijke ordening"
+            )}
           </div>
-             ${(() => {
-              if(gegevensselectie === 1) {
-                return html` <div is="vl-grid">
-            <div is="vl-column" data-vl-size="12">
-              <vl-typography
-                ><h3>Aanvankelijke controles met schending</h3></vl-typography>
-            </div>
-          </div>
-          <div is="vl-grid">
-            ${(() => {
-              const rec = this.__getActorRecord(this.selectedChoiceUrl);
-              const milieu = this.__milieuControlesSchendingFromRecord(rec);
-              const ro = this.__roControlesSchendingFromRecord(rec);
-              return renderColumns(
-                milieu,
-                ro,
-                "Milieu",
-                "Ruimtelijke ordening"
-              );
-            })()}
-          </div>`
-              }
-            })()}
+          ${gegevensselectie === 1
+            ? html`
+                <div is="vl-grid">
+                  <div is="vl-column" data-vl-size="12">
+                    <vl-typography
+                      ><h3>Aanvankelijke controles met schending</h3></vl-typography
+                    >
+                  </div>
+                </div>
+                <div is="vl-grid">
+                  ${renderColumns(
+                    this.__milieuControlesSchendingFromRecord(rec),
+                    this.__roControlesSchendingFromRecord(rec),
+                    "Milieu",
+                    "Ruimtelijke ordening"
+                  )}
+                </div>
+              `
+            : ""}
         </vl-tabs-pane>
 
         <vl-tabs-pane
@@ -676,17 +601,12 @@ class OhrAGewest extends LitElement {
           data-vl-title="Instrumentarium"
         >
           <div is="vl-grid">
-            ${(() => {
-              const rec = this.__getActorRecord(this.selectedChoiceUrl);
-              const milieu = this.__milieuInstrumentFromRecord(rec);
-              const ro = this.__roInstrumentFromRecord(rec);
-              return renderColumns(
-                milieu,
-                ro,
-                "Milieu",
-                "Ruimtelijke ordening"
-              );
-            })()}
+            ${renderColumns(
+              this.__milieuInstrumentFromRecord(rec),
+              this.__roInstrumentFromRecord(rec),
+              "Milieu",
+              "Ruimtelijke ordening"
+            )}
           </div>
         </vl-tabs-pane>
 
@@ -695,27 +615,18 @@ class OhrAGewest extends LitElement {
           data-vl-title="Themagerichte acties"
         >
           <div is="vl-grid">
-            ${(() => {
-              const rec = this.__getActorRecord(this.selectedChoiceUrl);
-              const milieu = this.__milieuThemaGerichteacties(rec);
-              const ro = this.__roThemaGerichteacties(rec);
-              return renderColumns(
-                milieu,
-                ro,
-                "Milieu",
-                "Ruimtelijke ordening"
-              );
-            })()}
+            ${renderColumns(
+              this.__milieuThemaGerichteacties(rec),
+              this.__roThemaGerichteacties(rec),
+              "Milieu",
+              "Ruimtelijke ordening"
+            )}
           </div>
         </vl-tabs-pane>
 
         <vl-tabs-pane data-vl-id="Opmerkingen" data-vl-title="Opmerkingen">
           <div is="vl-grid">
-            ${(() => {
-              const rec = this.__getActorRecord(this.selectedChoiceUrl);
-              const milieu = this.__roOpmerkingenFromRecord(rec);
-              return renderColumns_opmerking(milieu);
-            })()}
+            ${renderColumns_opmerking(this.__roOpmerkingenFromRecord(rec))}
           </div>
         </vl-tabs-pane>
       </vl-tabs>

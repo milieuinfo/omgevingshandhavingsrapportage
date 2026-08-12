@@ -1,5 +1,5 @@
 import { vlElementsStyle } from "@domg-wc/elements";
-import jsonData2 from "../datafiles/gemeenten_dataset_2024_clean.json" assert { type: "json" };
+import jsonData2 from "../datafiles/gemeenten_dataset_2026.json" assert { type: "json" };
 import options from "../config/keuzegemeenteanalyse.json" assert { type: "json" };
 import {
   bindVlSelect,
@@ -22,33 +22,87 @@ import "@domg-wc/components/alert";
 import yearofanalsysis from "../config/yearofanalysis.json" assert { type: "json" };
 
 const RESPONS = {
-  Aartselaar: "non-respons",
-  Alveringem: "non-respons",
-  Arendonk: "non-respons",
-  Bocholt: "non-respons",
-  Brecht: "non-respons",
-  Dilbeek: "non-respons",
-  Drogenbos: "non-respons",
-  Galmaarden: "non-respons",
-  Glabbeek: "non-respons",
-  Gooik: "non-respons",
-  Grimbergen: "non-respons",
-  Herne: "non-respons",
-  Herstappe: "non-respons",
-  Holsbeek: "non-respons",
-  Kalmthout: "non-respons",
-  Kortessem: "non-respons",
-  Liedekerke: "non-respons",
-  Lier: "non-respons",
-  Moerbeke: "non-respons",
-  "Oud-Turnhout": "non-respons",
-  Oudenburg: "non-respons",
-  Pepingen: "non-respons",
-  "Puurs-Sint-Amands": "non-respons",
-  Riemst: "non-respons",
-  "Sint-Martens-Latem": "non-respons",
-  Stabroek: "non-respons",
-  Wetteren: "non-respons"
+  Aalter: "non-respons",
+Aarschot: "non-respons",
+Aartselaar: "non-respons",
+Alken: "non-respons",
+Alveringem: "non-respons",
+Arendonk: "non-respons",
+Assenede: "non-respons",
+Beveren: "non-respons",
+Bilzen: "non-respons",
+Bocholt: "non-respons",
+Boom: "non-respons",
+Borgloon: "non-respons",
+Bornem: "non-respons",
+Borsbeek: "non-respons",
+Brakel: "non-respons",
+Buggenhout: "non-respons",
+"De Pinte": "non-respons",
+Dendermonde: "non-respons",
+Dentergem: "non-respons",
+Destelbergen: "non-respons",
+Dilbeek: "non-respons",
+Edegem: "non-respons",
+Eeklo: "non-respons",
+Evergem: "non-respons",
+Galmaarden: "non-respons",
+Gingelom: "non-respons",
+Glabbeek: "non-respons",
+Gooik: "non-respons",
+Ham: "non-respons",
+Hasselt: "non-respons",
+"Hechtel-Eksel": "non-respons",
+Heers: "non-respons",
+"Heist-op-den-Berg": "non-respons",
+Herne: "non-respons",
+Herselt: "non-respons",
+Hoeselt: "non-respons",
+Hove: "non-respons",
+Kalmthout: "non-respons",
+Kaprijke: "non-respons",
+Kortenaken: "non-respons",
+Kortessem: "non-respons",
+Kruibeke: "non-respons",
+Laarne: "non-respons",
+Lendelede: "non-respons",
+Liedekerke: "non-respons",
+Lier: "non-respons",
+Lokeren: "non-respons",
+Lommel: "non-respons",
+Londerzeel: "non-respons",
+Maaseik: "non-respons",
+Machelen: "non-respons",
+Malle: "non-respons",
+Melle: "non-respons",
+Merelbeke: "non-respons",
+Meulebeke: "non-respons",
+Moerbeke: "non-respons",
+Nazareth: "non-respons",
+Nieuwpoort: "non-respons",
+Pelt: "non-respons",
+Putte: "non-respons",
+"Puurs-Sint-Amands": "non-respons",
+Riemst: "non-respons",
+Roeselare: "non-respons",
+Ruiselede: "non-respons",
+"Sint-Genesius-Rode": "non-respons",
+"Sint-Martens-Latem": "non-respons",
+"Spiere-Helkijn": "non-respons",
+Temse: "non-respons",
+Ternat: "non-respons",
+Tessenderlo: "non-respons",
+Tienen: "non-respons",
+Tongeren: "non-respons",
+Voeren: "non-respons",
+Wachtebeke: "non-respons",
+Wellen: "non-respons",
+Wevelgem: "non-respons",
+"Wezembeek-Oppem": "non-respons",
+Wijnegem: "non-respons",
+Wuustwezel: "non-respons",
+Zoersel: "non-respons",
+Zwijndrecht: "non-respons"
 };
 
 class OhrGemeentenAnalyse extends LitElement {
@@ -529,7 +583,7 @@ class OhrGemeentenAnalyse extends LitElement {
                 data-vl-icon="warning"
                 data-vl-title="Non-respons"
                 data-vl-type="error"
-                data-vl-message="De geselecteerde gemeente heeft niet op de bevraging van 2024 geantwoord."
+                data-vl-message="De geselecteerde gemeente heeft niet op de bevraging van 2025 geantwoord."
               ></vl-alert>
             </div>
           </vl-tabs-pane>
@@ -542,7 +596,7 @@ class OhrGemeentenAnalyse extends LitElement {
                   data-vl-icon="warning"
                   data-vl-title="Non-respons"
                   data-vl-type="error"
-                  data-vl-message="De geselecteerde gemeente heeft niet op de bevraging van 2024 geantwoord."
+                  data-vl-message="De geselecteerde gemeente heeft niet op de bevraging van 2025 geantwoord."
                 ></vl-alert>
               </div>
             </div>
@@ -556,7 +610,7 @@ class OhrGemeentenAnalyse extends LitElement {
                   data-vl-icon="warning"
                   data-vl-title="Non-respons"
                   data-vl-type="error"
-                  data-vl-message="De geselecteerde gemeente heeft niet op de bevraging van 2024 geantwoord."
+                  data-vl-message="De geselecteerde gemeente heeft niet op de bevraging van 2025 geantwoord."
                 ></vl-alert>
               </div>
             </div>
@@ -572,7 +626,7 @@ class OhrGemeentenAnalyse extends LitElement {
                   data-vl-icon="warning"
                   data-vl-title="Non-respons"
                   data-vl-type="error"
-                  data-vl-message="De geselecteerde gemeente heeft niet op de bevraging van 2024 geantwoord."
+                  data-vl-message="De geselecteerde gemeente heeft niet op de bevraging van 2025 geantwoord."
                 ></vl-alert>
               </div>
             </div>
@@ -588,7 +642,7 @@ class OhrGemeentenAnalyse extends LitElement {
                   data-vl-icon="warning"
                   data-vl-title="Non-respons"
                   data-vl-type="error"
-                  data-vl-message="De geselecteerde gemeente heeft niet op de bevraging van 2024 geantwoord."
+                  data-vl-message="De geselecteerde gemeente heeft niet op de bevraging van 2025 geantwoord."
                 ></vl-alert>
               </div>
             </div>
@@ -602,7 +656,7 @@ class OhrGemeentenAnalyse extends LitElement {
                   data-vl-icon="warning"
                   data-vl-title="Non-respons"
                   data-vl-type="error"
-                  data-vl-message="De geselecteerde gemeente heeft niet op de bevraging van 2024 geantwoord."
+                  data-vl-message="De geselecteerde gemeente heeft niet op de bevraging van 2025 geantwoord."
                 ></vl-alert>
               </div>
             </div>

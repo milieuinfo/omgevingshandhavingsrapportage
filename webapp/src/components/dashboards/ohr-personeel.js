@@ -39,7 +39,7 @@ class OhrPersoneel extends LitElement {
       
         <vl-qlik-dashboard-page
             title="Personeel"
-            export-id="bLvkB"
+            export-id="pxupm"
             url="omgevingsloketrapport.omgeving.vlaanderen.be"
             app-id="501f77cb-f798-4cd7-8a5f-0b4f5469ced5"
             .views="${viz_personeel}"

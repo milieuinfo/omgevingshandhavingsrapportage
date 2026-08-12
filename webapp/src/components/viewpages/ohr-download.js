@@ -100,22 +100,12 @@ class OhrDownload extends LitElement {
   __renderdownloadlinks() {
       return html`
       <vl-typography>
-      <b>Download bestanden voor de bevraging</b>
+      <b>Download alle bestanden met de gegevens van de omgevingshandhavingsrapportage</b>
       </vl-typography><br>
       <ul is="vl-link-list" data-cy="link-list">
     <li is="vl-link-list-item">
         <a is="vl-link" href="https://omgeving.vlaanderen.be/sites/default/files/2024-07/omgevingshandhavingscijfers_2021.zip" download>
-            Download de bevraging van 2021
-        </a>
-    </li>
-    <li is="vl-link-list-item">
-        <a is="vl-link" href="https://omgeving.vlaanderen.be/sites/default/files/2024-07/omgevingshandhavingscijfers_2022.zip" download>
-            Download de bevraging van 2022
-        </a>
-    </li>
-     <li is="vl-link-list-item">
-        <a is="vl-link" href="https://omgeving.vlaanderen.be/sites/default/files/2024-07/omgevingshandhavingscijfers_2023.zip" download>
-            Download de bevraging van 2023
+            Download alle bestanden met de gegevens van de omgevingshandhavingsrapportage
         </a>
     </li>
 </ul>

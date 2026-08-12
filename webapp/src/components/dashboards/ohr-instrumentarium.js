@@ -37,7 +37,7 @@ class OhrInstrumentarium extends LitElement {
       <div style="margin: 3rem 0px">
         <vl-qlik-dashboard-page
             title="Instrumentarium"
-            export-id="CdmbBP"
+            export-id="RwVbu"
             url="omgevingsloketrapport.omgeving.vlaanderen.be"
             app-id="86fa63d8-d5a7-4816-b530-757de909cfe8"
             selected-view="Milieu"
