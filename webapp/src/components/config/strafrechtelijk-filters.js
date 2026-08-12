@@ -1,7 +1,9 @@
 import {
-  JAARTALSTRAFRECHTELIJK,
+  YEAROFSTRAFRECHTELIJK,
   HOOFDRUBRIEKSTRAFRECHTELIJK,
+  THEMAOFSTRAFRECHTELIJK,
   BELEIDSDOMEINSTRAFRECHTELIJK,
+  SUBTHEMAOFSTRAFRECHTELIJK,
   Tenlastenleggingscodes
       } from "./qlik_resources.js";
       
@@ -9,7 +11,7 @@ import {
         {
           name: "Bevragingsjaartal",
           id: "Bevragingsjaartal",
-          filter: JAARTALSTRAFRECHTELIJK
+          filter: YEAROFSTRAFRECHTELIJK
         },
         {
           name: "Beleidsdomein",
@@ -19,12 +21,12 @@ import {
         {
           name: "Thema",
           id: "Hoofdrubriek",
-          filter: HOOFDRUBRIEKSTRAFRECHTELIJK
+          filter: THEMAOFSTRAFRECHTELIJK
         },
         {
           name: "Tenlastenleggingscodes",
           id: "Tenlastenleggingscodes",
-          filter: Tenlastenleggingscodes
+          filter: SUBTHEMAOFSTRAFRECHTELIJK
         }
       ]
       export {filters as default};

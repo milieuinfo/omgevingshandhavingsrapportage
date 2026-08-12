@@ -177,7 +177,7 @@ class OhrGemeentenAnalyse extends LitElement {
           <p is="vl-icon-wrapper">
             <span is="vl-icon" data-vl-icon="calendar"></span
             ><vl-annotation
-              >&nbsp;Laatste wijziging aan de data: 01/09/2025</vl-annotation
+              >&nbsp;Laatste wijziging aan de data: 01/08/2026</vl-annotation
             >
           </p>
           <br />
@@ -750,30 +750,6 @@ class OhrGemeentenAnalyse extends LitElement {
                   "Ruimtelijke ordening"
                 );
               })()}
-            </div>
-          </vl-tabs-pane>
-
-          <vl-tabs-pane
-            data-vl-id="Themagerichte acties"
-            data-vl-title="Themagerichte acties"
-          >
-        <div is="vl-grid">
-        ${(() => {
-      const rec = this.__getActorRecord(this.selectedChoiceUrl);
-      const milieu = this.__milieuThemaGerichteacties(rec);
-      const ro = this.__roThemaGerichteacties(rec)
-      return renderColumns(milieu,ro, "Milieu", "Ruimtelijke ordening");
-    })()}
-            </div>
-          </vl-tabs-pane>
-
-          <vl-tabs-pane data-vl-id="Opmerkingen" data-vl-title="Opmerkingen">
-            <div is="vl-grid">
-             ${(() => {
-      const rec = this.__getActorRecord(this.selectedChoiceUrl);
-      const milieu = this.__roOpmerkingenFromRecord(rec);
-      return renderColumns_milieu(milieu);
-    })()}
             </div>
           </vl-tabs-pane>
         </vl-tabs>

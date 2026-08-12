@@ -74,7 +74,7 @@ render() {
         <vl-typography>
           <h2>Cijfers van het jaar ${this.yearofanalysis}</h2></vl-typography>
         <p is="vl-icon-wrapper">
-          <span is="vl-icon" data-vl-icon="calendar"></span><vl-annotation>&nbsp;Laatste wijziging aan de data: 01/09/2025</vl-annotation>
+          <span is="vl-icon" data-vl-icon="calendar"></span><vl-annotation>&nbsp;Laatste wijziging aan de data: 01/08/2026</vl-annotation>
         </p><br>
         <p is="vl-introduction" data-cy="introduction">
         Deze pagina geeft de cijfers van het strafrechtelijk vervolgtraject in ${this.yearofanalysis} weer.

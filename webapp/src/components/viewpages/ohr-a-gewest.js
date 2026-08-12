@@ -59,7 +59,7 @@ class OhrAGewest extends LitElement {
           <p is="vl-icon-wrapper">
             <span is="vl-icon" data-vl-icon="calendar"></span
             ><vl-annotation
-              >&nbsp;Laatste wijziging aan de data: 01/08/2025</vl-annotation
+              >&nbsp;Laatste wijziging aan de data: 01/08/2026</vl-annotation
             >
           </p>
           <br />
@@ -607,26 +607,6 @@ class OhrAGewest extends LitElement {
               "Milieu",
               "Ruimtelijke ordening"
             )}
-          </div>
-        </vl-tabs-pane>
-
-        <vl-tabs-pane
-          data-vl-id="Themagerichte acties"
-          data-vl-title="Themagerichte acties"
-        >
-          <div is="vl-grid">
-            ${renderColumns(
-              this.__milieuThemaGerichteacties(rec),
-              this.__roThemaGerichteacties(rec),
-              "Milieu",
-              "Ruimtelijke ordening"
-            )}
-          </div>
-        </vl-tabs-pane>
-
-        <vl-tabs-pane data-vl-id="Opmerkingen" data-vl-title="Opmerkingen">
-          <div is="vl-grid">
-            ${renderColumns_opmerking(this.__roOpmerkingenFromRecord(rec))}
           </div>
         </vl-tabs-pane>
       </vl-tabs>

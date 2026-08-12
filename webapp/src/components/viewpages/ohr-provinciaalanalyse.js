@@ -252,18 +252,6 @@ class OhrProvincieAnalyse extends LitElement {
             ${col(this.__milieuInstrumentFromRecord(rec))}
           </div>
         </vl-tabs-pane>
-
-        <vl-tabs-pane data-vl-id="Themagerichte acties" data-vl-title="Themagerichte acties">
-          <div is="vl-grid">
-            ${col(this.__milieuThemaGerichteacties(rec))}
-          </div>
-        </vl-tabs-pane>
-
-        <vl-tabs-pane data-vl-id="Opmerkingen" data-vl-title="Opmerkingen">
-          <div is="vl-grid">
-            ${col(this.__opmerkingenFromRecord(rec))}
-          </div>
-        </vl-tabs-pane>
       </vl-tabs>
     `;
   }

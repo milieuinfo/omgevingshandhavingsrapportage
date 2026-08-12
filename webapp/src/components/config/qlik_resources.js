@@ -170,3 +170,24 @@ export const BELEIDSDOMEINSTRAFRECHTELIJK = {
   field: "[beleidsdomein]",
   nrOfValues: 2,
 }
+
+export const YEAROFSTRAFRECHTELIJK = {
+  name: "Bevragingsjaartal",
+  fieldQualifier: "qText",
+  field: "[year]",
+  nrOfValues: 100,
+}
+
+export const THEMAOFSTRAFRECHTELIJK = {
+  name: "Thema",
+  fieldQualifier: "qText",
+  field: "[hoofdcategorie]",
+  nrOfValues: 100,
+}
+
+export const SUBTHEMAOFSTRAFRECHTELIJK = {
+  name: "Tenlastenleggingscodes",
+  fieldQualifier: "qText",
+  field: "[subcategorie]",
+  nrOfValues: 100,
+}
