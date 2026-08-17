@@ -37,7 +37,7 @@ class OhrStrafrechtelijkvervolgtraject extends LitElement {
       <div style="margin: 3rem 0px">
         <vl-qlik-dashboard-page
             title="Strafrechtelijke sanctionering"
-            export-id="mkWEU"
+            export-id="HngXWu"
             url="omgevingsloketrapport.omgeving.vlaanderen.be"
             app-id="3d1e4914-7976-4db7-964e-f3a380444240"
             .views="${viz}"
