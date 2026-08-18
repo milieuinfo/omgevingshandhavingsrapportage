@@ -216,15 +216,6 @@ and performing other setup tasks.
           size: 2,
           template: html` <div is="vl-infotext" data-cy="infotext">
             <div>
-              <div data-vl-value="">75%</div>
-              <div data-vl-text="">Reponsgraad</div>
-            </div>
-          </div>`,
-        },
-        {
-          size: 2,
-          template: html` <div is="vl-infotext" data-cy="infotext">
-            <div>
               <div data-vl-value="">1815</div>
               <div data-vl-text="">Aantal handhavers omgevingsinspectie</div>
             </div>
