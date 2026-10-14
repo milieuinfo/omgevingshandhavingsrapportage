@@ -8,7 +8,7 @@ import "@domg-wc/elements/doormat";
 import "@domg-wc/elements/link";
 import "@domg-wc/elements/link-list";
 import "@domg-wc/components/functional-header";
-import yearofanalsysis from "../config/yearofanalysis.json" assert {type: "json"};
+import yearofanalsysis from "../config/yearofanalysis.json" with {type: "json"};
 
 
 class OhrProvincie extends LitElement {

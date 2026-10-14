@@ -12,9 +12,9 @@ import {
   import "@domg-wc/components/typography";
   import {vlElementsStyle} from "@domg-wc/elements";
   import "@domg-wc/components/accordion";
-  import options from "../config/provincie-op-kaart.json" assert {type: "json"};
-  import options2 from "../config/provincie-op-kaart-absoluut.json" assert {type:"json"};
-  import yearofanalsysis from "../config/yearofanalysis.json" assert {type: "json"};
+  import options from "../config/provincie-op-kaart.json" with {type: "json"};
+  import options2 from "../config/provincie-op-kaart-absoluut.json" with {type:"json"};
+  import yearofanalsysis from "../config/yearofanalysis.json" with {type: "json"};
   
   class OhrOpkaartprovincie extends LitElement {
   

@@ -4,7 +4,7 @@ import "@domg-wc/components/typography";
 import "@domg-wc/components/loader";
 import { vlElementsStyle } from "@domg-wc/elements";
 import "@domg-wc/components/alert";
-import yearofanalsysis from "../config/yearofanalysis.json" assert { type: "json" };
+import yearofanalsysis from "../config/yearofanalysis.json" with { type: "json" };
 
 const QLIK_HOST = "omgevingsloketrapport.omgeving.vlaanderen.be";
 const APP_ID_SELECTIONS = "f60653ef-014c-4f79-8864-4d13128e5662";

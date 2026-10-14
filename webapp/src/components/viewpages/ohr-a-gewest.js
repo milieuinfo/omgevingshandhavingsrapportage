@@ -1,6 +1,6 @@
 import { vlElementsStyle } from "@domg-wc/elements";
-import jsonData2 from "../datafiles/gewest_dataset_2026.json" assert { type: "json" };
-import options from "../config/keuzegewestanalyse.json" assert { type: "json" };
+import jsonData2 from "../datafiles/gewest_dataset_2026.json" with { type: "json" };
+import options from "../config/keuzegewestanalyse.json" with { type: "json" };
 import {
   bindVlSelect,
   html,
@@ -16,7 +16,7 @@ import "@domg-wc/components/typography";
 import "@domg-wc/components/tabs";
 import "@domg-wc/elements/link";
 import "@domg-wc/elements/link-list";
-import yearofanalysis from "../config/yearofanalysis.json" assert { type: "json" };
+import yearofanalysis from "../config/yearofanalysis.json" with { type: "json" };
 import { GEGEVENS_BESCHIKBAAR } from "../config/gegevensBeschikbaar.js";
 import { BELEID_MAP } from "../config/beleidMap.js";
 

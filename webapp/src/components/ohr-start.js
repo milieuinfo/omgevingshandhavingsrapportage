@@ -14,7 +14,7 @@ import "@domg-wc/components/content-header";
 import "@domg-wc/components/alert";
 import "@domg-wc/components/spotlight";
 
-import yearofanalsysis from "./config/yearofanalysis.json" assert {type: "json"};
+import yearofanalsysis from "./config/yearofanalysis.json" with {type: "json"};
 
 class OhrLandingPage extends LitElement {
   //The styles method is a feature provided by Lit Element to encapsulate styles for a specific component.

@@ -1,5 +1,5 @@
 import {vlElementsStyle} from "@domg-wc/elements";
-import options from "../config/keuzestrafrechtelijk.json" assert {type: "json"};
+import options from "../config/keuzestrafrechtelijk.json" with {type: "json"};
 import {
   bindVlSelect,
   html,
@@ -18,8 +18,8 @@ import "@domg-wc/elements/select";
 import "@domg-wc/components/tabs";
 import "@domg-wc/elements/link";
 import "@domg-wc/elements/link-list";
-import yearofanalsysis from "../config/yearofanalysis.json" assert {type: "json"};
-import jsonData from "../datafiles/strafrechtelijk.json" assert {type: "json"};
+import yearofanalsysis from "../config/yearofanalysis.json" with {type: "json"};
+import jsonData from "../datafiles/strafrechtelijk.json" with {type: "json"};
 
 class OhrStrafrechtelijkAnalyse extends LitElement {
 

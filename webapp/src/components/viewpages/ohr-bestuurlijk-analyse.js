@@ -1,5 +1,5 @@
 import {vlElementsStyle} from "@domg-wc/elements";
-import options from "../config/keuzebestuurlijk.json" assert {type: "json"};
+import options from "../config/keuzebestuurlijk.json" with {type: "json"};
 import {
   bindVlSelect,
   html,
@@ -19,8 +19,8 @@ import "@domg-wc/elements/select";
 import "@domg-wc/components/tabs";
 import "@domg-wc/elements/link";
 import "@domg-wc/elements/link-list";
-import yearofanalsysis from "../config/yearofanalysis.json" assert {type: "json"};
-import jsonData from "../datafiles/bestuurlijk.json" assert {type: "json"};
+import yearofanalsysis from "../config/yearofanalysis.json" with {type: "json"};
+import jsonData from "../datafiles/bestuurlijk.json" with {type: "json"};
 
 class OhrBestuurlijkAnalyse extends LitElement {
 

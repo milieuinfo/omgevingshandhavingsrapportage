@@ -1,5 +1,5 @@
 import {html, LitElement} from "../common/commons.js";
-import viz_personeel from "../config/personeel.json" assert {type: "json"};
+import viz_personeel from "../config/personeel.json" with {type: "json"};
 import filters from "../config/personeel-filters.js";
 import "@domg-wc/components/functional-header";
 import "@domg-wc/components/typography";
@@ -7,7 +7,7 @@ import "@domg-wc/components/loader";
 import "@domg-wc/qlik/dashboard-page";
 import {vlElementsStyle} from "@domg-wc/elements";
 import "@domg-wc/components/alert";
-import yearofanalsysis from "../config/yearofanalysis.json" assert {type: "json"};
+import yearofanalsysis from "../config/yearofanalysis.json" with {type: "json"};
 
 class OhrPersoneel extends LitElement {
 

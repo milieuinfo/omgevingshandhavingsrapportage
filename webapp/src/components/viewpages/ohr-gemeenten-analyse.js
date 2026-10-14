@@ -1,6 +1,6 @@
 import { vlElementsStyle } from "@domg-wc/elements";
-import jsonData2 from "../datafiles/gemeenten_dataset_2026.json" assert { type: "json" };
-import options from "../config/keuzegemeenteanalyse.json" assert { type: "json" };
+import jsonData2 from "../datafiles/gemeenten_dataset_2026.json" with { type: "json" };
+import options from "../config/keuzegemeenteanalyse.json" with { type: "json" };
 import {
   bindVlSelect,
   html,
@@ -19,7 +19,7 @@ import "@domg-wc/components/typography";
 import "@domg-wc/elements/link";
 import "@domg-wc/elements/link-list";
 import "@domg-wc/components/alert";
-import yearofanalsysis from "../config/yearofanalysis.json" assert { type: "json" };
+import yearofanalsysis from "../config/yearofanalysis.json" with { type: "json" };
 
 const RESPONS = {
   Aalter: "non-respons",

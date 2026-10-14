@@ -16,8 +16,8 @@ import "@domg-wc/components/alert";
 import "@domg-wc/elements/select";
 import "@domg-wc/components/typography";
 import "@domg-wc/components/functional-header";
-import options from "../config/downloadkeuze.json" assert {type: "json"};
-import yearofanalsysis from "../config/yearofanalysis.json" assert {type: "json"};
+import options from "../config/downloadkeuze.json" with {type: "json"};
+import yearofanalsysis from "../config/yearofanalysis.json" with {type: "json"};
 
 class OhrDownload extends LitElement {
 

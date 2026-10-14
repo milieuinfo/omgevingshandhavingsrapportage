@@ -1,6 +1,6 @@
 import {html, LitElement} from "../common/commons.js";
 import {vlElementsStyle} from "@domg-wc/elements";
-import jsonData from "../datafiles/hogeraad.json" assert {type: "json"};
+import jsonData from "../datafiles/hogeraad.json" with {type: "json"};
 
 import "@domg-wc/elements/image";
 import "@domg-wc/elements/grid";
@@ -14,7 +14,7 @@ import "@domg-wc/elements/link";
 import "@domg-wc/elements/link-list";
 import "@domg-wc/components/alert";
 
-import yearofanalsysis from "../config/yearofanalysis.json" assert {type: "json"};
+import yearofanalsysis from "../config/yearofanalysis.json" with {type: "json"};
 
 class OhrHogeRaadAnalyse extends LitElement {
 

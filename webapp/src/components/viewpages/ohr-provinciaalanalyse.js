@@ -1,6 +1,6 @@
 import {vlElementsStyle} from "@domg-wc/elements";
-import jsonData2 from "../datafiles/provincies_dataset_2026.json" assert {type: "json"};
-import options from "../config/keuzeprovincieanalyse.json" assert {type: "json"};
+import jsonData2 from "../datafiles/provincies_dataset_2026.json" with {type: "json"};
+import options from "../config/keuzeprovincieanalyse.json" with {type: "json"};
 import {
   bindVlSelect,
   html,
@@ -19,7 +19,7 @@ import "@domg-wc/elements/select";
 import "@domg-wc/components/tabs";
 import "@domg-wc/elements/link";
 import "@domg-wc/elements/link-list";
-import yearofanalsysis from "../config/yearofanalysis.json" assert {type: "json"};
+import yearofanalsysis from "../config/yearofanalysis.json" with {type: "json"};
 
 
 class OhrProvincieAnalyse extends LitElement {

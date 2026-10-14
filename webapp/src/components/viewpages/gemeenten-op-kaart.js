@@ -16,9 +16,9 @@ import "@domg-wc/elements/link";
 import "@domg-wc/elements/link-list";
 /*import "@domg-wc/components/accordion";*/
 import "@domg-wc/components/typography";
-import options from "../config/gemeente-op-kaart.json" assert {type: "json"};
-import options2 from "../config/gemeente-op-kaart-absolut.json" assert {type:"json"};
-import yearofanalsysis from "../config/yearofanalysis.json" assert {type: "json"};
+import options from "../config/gemeente-op-kaart.json" with {type: "json"};
+import options2 from "../config/gemeente-op-kaart-absolut.json" with {type:"json"};
+import yearofanalsysis from "../config/yearofanalysis.json" with {type: "json"};
 
 class OhrOpkaart extends LitElement {
 
