@@ -23,9 +23,9 @@ pipeline {
           if (versions.isRelease()) {
             version = versions.bump(version)
           }
+          env.RELEASE = versions.isRelease()
+          env.RELEASE_VERSION = version
         }
-        env.RELEASE = versions.isRelease()
-        env.RELEASE_VERSION = version
       }
     }
     stage("Build Docker image") {
