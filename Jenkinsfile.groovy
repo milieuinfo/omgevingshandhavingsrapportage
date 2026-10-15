@@ -23,7 +23,7 @@ pipeline {
           if (versions.isRelease()) {
             version = versions.bump(version)
           } else {
-            version = 'latest'
+            version = version + ".dev"
           }
           env.RELEASE = versions.isRelease()
           env.RELEASE_VERSION = version
