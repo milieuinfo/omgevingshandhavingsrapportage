@@ -48,36 +48,36 @@ pipeline {
         }
       }
     }
-  }
-  stage("Push Docker image") {
-    steps {
-      script {
-        if (!env.RELEASE_VERSION) {
-          error "Version could not be determined. Aborting pipeline."
-        }
-        if (!versions.isRelease()) {
-          buildkit.pushSnapshotImage([fileName : 'image.tar',
-                                      imageName: env.IMAGE_NAME,
-                                      tag      : 'latest'
-          ])
-        }
-        if (versions.isRelease()) {
-          buildkit.pushReleaseImage([fileName : 'image.tar',
-                                     imageName: env.IMAGE_NAME,
-                                     tag      : env.RELEASE_VERSION
-          ])
+    stage("Push Docker image") {
+      steps {
+        script {
+          if (!env.RELEASE_VERSION) {
+            error "Version could not be determined. Aborting pipeline."
+          }
+          if (!versions.isRelease()) {
+            buildkit.pushSnapshotImage([fileName : 'image.tar',
+                                        imageName: env.IMAGE_NAME,
+                                        tag      : 'latest'
+            ])
+          }
+          if (versions.isRelease()) {
+            buildkit.pushReleaseImage([fileName : 'image.tar',
+                                       imageName: env.IMAGE_NAME,
+                                       tag      : env.RELEASE_VERSION
+            ])
+          }
         }
       }
     }
-  }
-  stage("Tag and update version") {
-    when {
-      versions.isRelease()
-    }
-    steps {
-      script {
-        git.tag(env.RELEASE_VERSION)
-        git.push()
+    stage("Tag and update version") {
+      when {
+        versions.isRelease()
+      }
+      steps {
+        script {
+          git.tag(env.RELEASE_VERSION)
+          git.push()
+        }
       }
     }
   }
