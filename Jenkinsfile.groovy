@@ -25,8 +25,18 @@ pipeline {
           } else {
             version = version + "-dev"
           }
+          dir('webapp') {
+            sh "npm version ${version} --no-git-tag-version --allow-same-version"
+          }
           env.RELEASE = versions.isRelease()
           env.RELEASE_VERSION = version
+        }
+      }
+    }
+    stage("Trivy scan") {
+      steps {
+        script {
+          trivy.scanFilesystem([targetPath: './webapp', ignoreFile: '.trivyignore.yaml'])
         }
       }
     }
@@ -40,13 +50,6 @@ pipeline {
                   VERSION: env.RELEASE_VERSION
               ],
           ])
-        }
-      }
-    }
-    stage("Trivy scan") {
-      steps {
-        script {
-          trivy.scanImage([fileName: 'image.tar', ignoreFile: '.trivyignore.yaml'])
         }
       }
     }
@@ -79,6 +82,7 @@ pipeline {
       }
       steps {
         script {
+          git.commit("Release ${env.RELEASE_VERSION}")
           git.tag(env.RELEASE_VERSION)
           git.push()
         }
