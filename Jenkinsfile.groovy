@@ -71,7 +71,9 @@ pipeline {
     }
     stage("Tag and update version") {
       when {
-        versions.isRelease()
+        expression {
+          versions.isRelease()
+        }
       }
       steps {
         script {
