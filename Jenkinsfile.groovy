@@ -22,6 +22,8 @@ pipeline {
           properties([versions.releaseParameters()])
           if (versions.isRelease()) {
             version = versions.bump(version)
+          } else {
+            version = 'latest'
           }
           env.RELEASE = versions.isRelease()
           env.RELEASE_VERSION = version

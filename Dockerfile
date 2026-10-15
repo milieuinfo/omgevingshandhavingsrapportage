@@ -1,7 +1,6 @@
 FROM acd-docker.repository.milieuinfo.be/milieuinfo/volta:1.1.1.2 AS node_builder
 
 ARG VERSION
-ARG RELEASE=false
 
 WORKDIR /web
 
@@ -9,11 +8,7 @@ COPY ./webapp .
 
 RUN --mount=type=secret,id=npmrc,target=/root/.npmrc \
    --mount=type=cache,target=node_modules \
-   if [ "$RELEASE" = "true" ]; then \
-       npm version "$VERSION" --no-git-tag-version --allow-same-version; \
-   else \
-       npm version "${VERSION}-dev.$(date +%Y%m%d%H%M%S)" --no-git-tag-version --allow-same-version; \
-   fi \
+   npm version "$VERSION" --no-git-tag-version --allow-same-version; \
    npm ci \
    && npm run build
 
