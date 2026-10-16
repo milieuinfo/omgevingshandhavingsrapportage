@@ -50,6 +50,7 @@ pipeline {
               sh "npm version ${version} --no-git-tag-version --allow-same-version"
             }
           }
+          currentBuild.displayName = "Release ${version}"
           env.RELEASE = versions.isRelease()
           env.RELEASE_VERSION = version
         }
