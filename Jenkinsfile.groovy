@@ -1,9 +1,29 @@
 @Library('Cumulus@1.3-stable') _
+
+def node = '''                                                                                                                                                                       
+  apiVersion: v1                                                                                                                                                                     
+  kind: Pod                                                                                                                                                                          
+  spec:                                                                                                                                                                              
+    containers:                                                                                                                                                                      
+      - name: node                                                                                                                                                                   
+        image: node:20-alpine                                                                                                                                                        
+        command: ['cat']                                                                                                                                                             
+        tty: true                                                                                                                                                                    
+        resources:                                                                                                                                                                   
+          requests:                                                                                                                                                                  
+            cpu: 100m                                                                                                                                                                
+            memory: 256Mi                                                                                                                                                            
+          limits:                                                                                                                                                                    
+            cpu: 500m                                                                                                                                                                
+            memory: 512Mi                                                                                                                                                            
+  '''
+
+
 pipeline {
   agent {
     kubernetes {
       inheritFrom 'jenkins-jenkins-agent'
-      yaml podBuilder.from([buildkit, trivy, cypress("16.2.0")])
+      yaml podBuilder.from([buildkit, trivy, node])
     }
   }
 
@@ -25,7 +45,7 @@ pipeline {
           } else {
             version = version + "-dev"
           }
-          container("cypress") {
+          container("node") {
             dir('webapp') {
               sh "npm version ${version} --no-git-tag-version --allow-same-version"
             }
