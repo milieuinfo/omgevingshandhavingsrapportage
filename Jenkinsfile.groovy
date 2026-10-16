@@ -3,7 +3,7 @@ pipeline {
   agent {
     kubernetes {
       inheritFrom 'jenkins-jenkins-agent'
-      yaml podBuilder.from([buildkit, trivy, cypress])
+      yaml podBuilder.from([buildkit, trivy, cypress("16.2.0")])
     }
   }
 

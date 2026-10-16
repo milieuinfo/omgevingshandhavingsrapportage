@@ -8,7 +8,6 @@ COPY ./webapp .
 
 RUN --mount=type=secret,id=npmrc,target=/root/.npmrc \
    --mount=type=cache,target=node_modules \
-   npm version "$VERSION" --no-git-tag-version --allow-same-version; \
    npm ci \
    && npm run build
 
