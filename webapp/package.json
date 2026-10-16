@@ -1,6 +1,6 @@
 {
   "name": "omgevingshandhavingsrapportage",
-  "version": "26.20.8",
+  "version": "26.20.9",
   "description": "",
   "main": "index.js",
   "type": "module",
