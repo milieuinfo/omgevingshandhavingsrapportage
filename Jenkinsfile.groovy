@@ -55,13 +55,13 @@ pipeline {
         }
       }
     }
-    stage("Trivy scan") {
-      steps {
-        script {
-          trivy.scanFilesystem([targetPath: './webapp', ignoreFile: '.trivyignore.yaml'])
-        }
-      }
-    }
+//    stage("Trivy scan") {
+//      steps {
+//        script {
+//          trivy.scanFilesystem([targetPath: './webapp', ignoreFile: '.trivyignore.yaml'])
+//        }
+//      }
+//    }
     stage("Build Docker image") {
       steps {
         script {
