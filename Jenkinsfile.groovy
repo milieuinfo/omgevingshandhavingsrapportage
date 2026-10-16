@@ -3,7 +3,7 @@ pipeline {
   agent {
     kubernetes {
       inheritFrom 'jenkins-jenkins-agent'
-      yaml podBuilder.from([buildkit, trivy])
+      yaml podBuilder.from([buildkit, trivy, cypress])
     }
   }
 
@@ -25,8 +25,10 @@ pipeline {
           } else {
             version = version + "-dev"
           }
-          dir('webapp') {
-            sh "npm version ${version} --no-git-tag-version --allow-same-version"
+          container("cypress") {
+            dir('webapp') {
+              sh "npm version ${version} --no-git-tag-version --allow-same-version"
+            }
           }
           env.RELEASE = versions.isRelease()
           env.RELEASE_VERSION = version
